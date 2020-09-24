@@ -26,9 +26,8 @@ body {
   margin: 10px;
 }
 
-.form-group > button {
-  align-self: flex-end;
-  justify-content: center;
+.form-control {
+  align-self: center;
 }
 
 .main-content {

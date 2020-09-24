@@ -34,7 +34,7 @@
 
     <section class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan" class="sloganClass" >
+        <p id="facebook-slogan" class="sloganClass">
           <strong>
             O Facebook ajuda você a se conectar e compartilhar com as pessoas
             que fazem parte da sua vida.
@@ -45,67 +45,75 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="">
+        <form class="alinhaNome" action="">
           <input
             placeholder="Nome"
             name="firstname"
             type="text"
             required="required"
+            class="inputTextEsp"
           />
           <input
             name="lastname"
             placeholder="Sobrenome"
             type="text"
             required="required"
+            class="inputTextEsp"
           />
           <input
             name="password"
             placeholder="Nova senha"
             type="password"
             required="required"
+            class="inputText"
           />
           <input
             name="phone_email"
             placeholder="Celular ou email"
             type="text"
             required="required"
+            class="inputText"
           />
+
           <label id="label-birthdate" for="">Data de nascimento</label>
           <input
             name="birthdate"
             placeholder="dd/mm/aaaa"
             type="date"
             required="required"
+            class="inputText"
           />
-          <label id="label-gender" for="genero">Gênero </label>
-          <label for="Feminino"
-            ><input
-              id="Feminino"
-              name="genero"
-              value="Feminino"
-              type="radio"
-              required="required"
-            />
-            Feminino</label
-          >
-          <label for="Masculino"
-            ><input
-              id="Masculino"
-              name="genero"
-              value="Masculino"
-              type="radio"
-              required="required"
-            />Masculino</label
-          >
-          <label for="Personalizado"
-            ><input
-              id="Personalizado"
-              name="genero"
-              value="Personalizado"
-              type="radio"
-              required="required"
-            />Personalizado</label
-          >
+          <label id="label-gender" for="genero"
+            >Gênero <br>
+            <label for="Feminino"
+              ><input
+                id="Feminino"
+                name="genero"
+                value="Feminino"
+                type="radio"
+                required="required"
+              />
+              Feminino</label
+            >
+            <label for="Masculino"
+              ><input
+                id="Masculino"
+                name="genero"
+                value="Masculino"
+                type="radio"
+                required="required"
+              />Masculino</label
+            >
+            <label for="Personalizado"
+              ><input
+                id="Personalizado"
+                name="genero"
+                value="Personalizado"
+                type="radio"
+                required="required"
+              />Personalizado</label
+            >
+          </label>
           <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>

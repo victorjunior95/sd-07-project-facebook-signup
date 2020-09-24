@@ -16,10 +16,12 @@
 .left-content {
   width: 800px;
 }
-.login{
+
+.login {
   display: flex;
   flex-wrap: wrap;
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -30,7 +32,7 @@
   width: 300px;
 }
 
-.senha{
+.senha {
   display: flex;
   flex-wrap: wrap;
 }

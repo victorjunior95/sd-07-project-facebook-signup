@@ -1,7 +1,10 @@
 .facebook-login {
   display: flex;
-  
-  /* background-color: yellow; */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-bar {

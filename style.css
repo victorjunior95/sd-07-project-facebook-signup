@@ -29,6 +29,15 @@ header {
   width: 300px;
 }
 
+.field {
+  display: flex;
+}
+
+.input-form-account {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

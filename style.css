@@ -43,3 +43,24 @@ body {
   align-self: flex-end;
   margin-left: 10px;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}

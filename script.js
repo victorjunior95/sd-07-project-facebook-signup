@@ -1,5 +1,5 @@
 const botaoLogin = document.getElementById('button-login');
-botaoLogin.addEventListener('click', function() {
+botaoLogin.addEventListener ('click', function() {
   const emailTelefone = document.querySelector('#user-email-phone').value;
   alert(emailTelefone);
 });
@@ -21,7 +21,7 @@ for (let indexMonth = 1; indexMonth <= 12; indexMonth += 1) {
   monthButton.appendChild(optionMonth);
 }
 
-for (let indexYear = 2020 ; indexYear >= 1905; indexYear -= 1) {
+for (let indexYear = 2020; indexYear >= 1905; indexYear -= 1) {
   const optionYear = document.createElement('option');
   optionYear.setAttribute('value', indexYear);
   optionYear.innerText = indexYear;

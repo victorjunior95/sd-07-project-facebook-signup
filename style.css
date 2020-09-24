@@ -1,6 +1,6 @@
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: space-between;
 }
 
@@ -10,8 +10,13 @@
 
 .main-content {
   display: flex;
+  justify-content: center;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

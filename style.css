@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn_entrar {
+    margin-left: 15px;
+}
+
+.facebook-login {
+    display: flex;
+}
+
+header {
+    background-color: rgb(66, 103, 178);
+    width: 100%;
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 200px;
+
+
+}

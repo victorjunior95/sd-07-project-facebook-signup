@@ -5,7 +5,9 @@
 }
 
 .form-group {
+  align-self: flex-end;
   align-items: center;
+  flex-direction: column;
   display: flex;
 }
 

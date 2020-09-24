@@ -17,3 +17,9 @@ html , body {
   color: white;
   display: flex;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end
+}

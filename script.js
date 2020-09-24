@@ -1,6 +1,6 @@
-const submitBtn = document.querySelector('#button-login');
-const getUser = document.querySelector('#user-email-phone');
-console.log
-// Não funciona!
-submitBtn.addEventListener('click', console.log('funciona');
-);
+const submitBt = document.querySelector("#button-login");
+
+submitBt.addEventListener('click', function() {
+  const getUser = document.querySelector("#user-email-phone").value;
+  alert(getUser);
+});

@@ -10,7 +10,7 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: 700;
-  height: 30px;
+  height: 36px;
   padding: 2px;
   width: 70px;
 }
@@ -19,28 +19,33 @@ body {
   display: flex;
 }
 
-
 .main-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .left-content {
-    flex-direction: column;
-    width: 800px;
+  flex-direction: column;
+  width: 800px;
 }
 
 .right-content {
-    flex-direction: column;
-    width: 300px;
+  flex-direction: column;
+  width: 300px;
 }
 
 .full-name {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .facebook-login input {
   width: 200px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .form-group {
@@ -49,10 +54,24 @@ body {
   margin-right: 10px;
 }
 
+.form-group input {
+  border-radius: 5px;
+  height: 30px;
+  width: 180px;
+}
+
 .form-group label {
   color: white;
   font-weight: 700;
   padding: 5px 0;
+}
+
+.form-group a {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 2px;
+  text-decoration: none;
 }
 
 .top-bar {
@@ -61,11 +80,10 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1366px;
-  padding: 20px 10px 10px 10px;
+  padding: 20px 10px;
+  padding-bottom: 10px;
 }
 
-.form-control {
-  align-self: flex-end;
-  display: flex;
+.left-content img {
+  width: 800px;
 }
-

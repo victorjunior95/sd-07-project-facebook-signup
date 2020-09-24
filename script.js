@@ -3,4 +3,3 @@ const user = document.querySelector('#user-email-phone');
 btnLogin.addEventListener('click', function () {
   alert(user.value);
 });
-

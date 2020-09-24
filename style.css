@@ -1,9 +1,10 @@
 .facebook-login {
-    display: flex;
-  }
+  display: flex;
+}
 
 .form-control {
-  align-self: flex-end;
+  display: flex;
+  align-items: center;
 }
 
 .form-group {
@@ -24,11 +25,11 @@
 
 .right-content {
   width: 300px;
-  background-color: aquamarine;
 }
 
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-between;
 }
 

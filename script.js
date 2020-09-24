@@ -37,7 +37,13 @@ buttonRegister.addEventListener('click', function () {
 
 //----------------------------------------------------------------------
 
-// const personalizado = document.querySelectorAll('.radio-personalizado');
-// personalizado.addEventListener('click',function(){
+const containerRadio = document.querySelector('.div-personalizado');
+const personalizado = document.querySelector('.radio-personalizado');
 
-// })
+personalizado.addEventListener('click', function () {
+  containerRadio.innerHTML = '';
+  const inputPersonalizado = document.createElement('input');
+  inputPersonalizado.placeholder = 'Gênero (opcional)';
+  inputPersonalizado.name = 'gender-custom';
+  containerRadio.appendChild(inputPersonalizado);
+});

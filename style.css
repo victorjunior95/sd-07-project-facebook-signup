@@ -29,17 +29,13 @@ header {
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .left-content {
-  align-self: flex-start;
-  background-color: blueviolet;
   width: 800px;
 }
 
 .right-content {
-  align-self: flex-end;
-  background-color: pink;
-  justify-content: flex-end;
   width: 300px;
 }

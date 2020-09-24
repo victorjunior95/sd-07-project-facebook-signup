@@ -4,7 +4,7 @@ buttonLogin.addEventListener('click', function () {
   alert(value);
 });
 
-window.JustValidate('form-register', {
+new window.JustValidate('form-register', {
   rules: {
     firstname: {
       required: true,
@@ -26,3 +26,8 @@ window.JustValidate('form-register', {
     },
   },
 });
+
+const radioButtons = document.getElementsByClassName('div-radio-buttons');
+radioButtons.addEventListener('change', function () {
+    
+})

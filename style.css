@@ -22,3 +22,8 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.main-contet {
+  display: flex;
+  flex-direction: column;
+}

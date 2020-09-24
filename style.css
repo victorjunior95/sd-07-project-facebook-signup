@@ -46,9 +46,3 @@ body {
 .label-gender-class {
   display: flex;
 }
-/*
-.label-birthdate-class {
-  display: flex;
-  flex-wrap: wrap;
-  clear: both;
-}

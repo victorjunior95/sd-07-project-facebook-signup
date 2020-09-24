@@ -8,12 +8,10 @@ body {
 .facebook-login {
   color: white;
   display: flex;
-  float: right;
-  justify-content: center;
 }
 
 .facebook-logo {
-  float: left;
+  justify-content: flex-start;
 }
 
 .form-control {
@@ -23,6 +21,7 @@ body {
 }
 
 .form-control button {
+  align-items: flex-end;
   background: #0948cf;
   border: solid blue 1px;
   border-radius: 3px;

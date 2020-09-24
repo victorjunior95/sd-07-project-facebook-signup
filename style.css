@@ -3,8 +3,8 @@
 }
 
 .form-control {
- align-self: flex-end;
- display: flex;
+  align-self: flex-end;
+  display: flex;
 }
 
 .form-group {
@@ -17,9 +17,9 @@
   width: 800px;
 }
 .login{
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 .main-content {
   display: flex;
   flex-direction: row;
@@ -31,8 +31,8 @@
 }
 
 .senha{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-bar {

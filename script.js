@@ -32,6 +32,6 @@ window.JustValidate('.js-form', {
     phone_email: 'Campos inválidos',
     password: 'Campos inválidos',
     birthdate: 'Campos inválidos',
-    radio: 'Campos inválidos';
+    radio: 'Campos inválidos',
   },
 });

@@ -6,6 +6,6 @@ buttonLogin.addEventListener('click', function () {
 });
 
 const buttonRegister = document.querySelector('#facebook-register');
-buttonRegister.addEventListener('click', function(){
-    let inputs = document.querySelectorAll('.main-form');
-})
+buttonRegister.addEventListener('click', function () {
+  let inputs = document.querySelectorAll('.main-form input');
+});

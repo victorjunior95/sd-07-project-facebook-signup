@@ -35,15 +35,15 @@ body {
 }
 
 .main-content .left-content {
-  width: 800px;
   display: flex;
   flex-direction: column;
+  width: 800px;
 }
 
 .main-content .right-content {
-  width: 300px;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .main-content .right-content form {

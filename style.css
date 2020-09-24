@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  justify-content: space-between;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-topbar {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}

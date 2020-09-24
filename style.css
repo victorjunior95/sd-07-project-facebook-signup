@@ -50,3 +50,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.gender-option {
+    display: flex;
+}

@@ -1,5 +1,5 @@
-let logBt = document.getElementById('button-login');
+const logBt = document.getElementById('button-login');
 
 logBt.addEventListener('click', function () {
-  alert(document.getElementById('user-email-phone').value)
-})
+  alert(document.getElementById('user-email-phone').value);
+});

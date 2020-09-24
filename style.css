@@ -35,4 +35,17 @@
 
 .user-create {
   display: flex;
+  flex-direction: column;
+}
+
+.username {
+  display: flex;
+}
+
+.user-create-first {
+  width: 50%;
+}
+
+.user-create-last {
+  width: 50%;
 }

@@ -21,7 +21,9 @@
         <label id="user-password-label" for="user-email-phone">Senha</label>
         <input id="user-password" class="form-group" type="password">
       </div>
-      <button id="button-login" type="submit">Entrar</button>
+      <div class="form-control">
+        <button id="button-login" type="submit">Entrar</button>
+      </div>
     </form>
   </header>
   <!-- Conteúdo principal -->
@@ -36,14 +38,14 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form>
         <div class="new-acount">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
+          <input name="firstname" placeholder="Nome" type="text" required>
+          <input name="lastname" placeholder="Sobrenome" type="text" required>
         </div>
         <div lass="new-acount">
-          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
         </div>
         <div class="new-acount">
-          <input name="password" placeholder="Nova senha" type="password">
+          <input name="password" placeholder="Nova senha" type="password" required>
         </div>
         <div class="new-acount date-div">
           <label id="label-birthdate">Data de nascimento</label>

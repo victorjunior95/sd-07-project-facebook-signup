@@ -1,0 +1,1 @@
+Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo "Email ou telefone"

@@ -38,9 +38,16 @@
 .right-content {
   background-color: cadetblue;
   display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
-.name-container {
+.form-container {
   display: flex;
+  flex-direction: column;
+}
+
+.form-container>div {
+  display:flex;
+  justify-content: stretch;
 }

@@ -8,10 +8,6 @@ header {
   padding: 0;
 }
 
-.facebook-login {
-  display: flex;
-}
-
 .left-content {
   width: 800px;
 }
@@ -34,18 +30,18 @@ header {
 
 .top-bar-container {
   align-items: center;
-  display: flex;  
+  display: flex;
   flex-basis: 60%;
   justify-content: space-between;
 }
 
-.facebook-login{
-  flex-basis: 55%;
+.facebook-login {
   display: flex;
-  justify-content: space-between;  
+  flex-basis: 55%;
+  justify-content: space-between;
 }
 
-.label-topbar{
+.label-topbar {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }

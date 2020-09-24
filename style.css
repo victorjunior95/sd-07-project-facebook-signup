@@ -1,11 +1,11 @@
-* {
-  margin: 0px;
-  padding: 0px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: space-between;
 }
 
@@ -40,9 +40,9 @@
   flex-wrap: wrap;
 }
 
-#first-input, #second-input {
-  width: 145px;
+.inputName {
   flex-basis: 48.6%;
+  width: 145px;
 }
 
 .right-content form input:nth-child(3) {
@@ -53,12 +53,13 @@
   flex-basis: 100%;
 }
 
-#label-birthdate {
+.label-birthdate {
   flex-basis: 100%;
 }
 
-#label-gender {
+.label-gender {
   flex-basis: 100%;
+  margin: 10px;
 }
 
 .gender {

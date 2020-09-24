@@ -1,55 +1,48 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .top-bar {
-  background-color: rgb(66 , 103 , 178);
+  background-color: rgb(66, 103, 178);
   display: flex;
   width: 100%;
   justify-content: space-around;
+  padding: 7px;
 }
 
-.email ,
-.password {
+.email, .password {
   display: flex;
-  margin-right: 10px;
   flex-direction: column;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-around;
-    padding: 7px;
+  margin-right: 10px;
 }
 
 .enviar {
-    border-radius: 2px;
-    background-color: rgb(rgb(76 , 113 , 188))
+  background-color: rgb(rgb(76, 113, 188));
+  border-radius: 2px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
-.facebook-login{
-    display: flex;
-    align-self: center;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
+.facebook-login {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
 }
 a {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
-button{
-    height: 2vw;
-    align-self: center;
+button {
+  height: 2vw;
+  align-self: center;
 }
-

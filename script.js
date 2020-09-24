@@ -4,3 +4,17 @@ loginButton.addEventListener('click', function () {
   const emailInput = document.getElementById('user-email-phone').value;
   alert(emailInput);
 });
+
+const enrrolmentButton = document.getElementById('facebook-register');
+
+enrrolmentButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  const inputList = document.getElementsByClassName('form-field');
+
+  for (let index = 0; index < inputList.length; index += 1) {
+
+    if (inputList[index].value === '') {
+      document.getElementById('invalid-field').style.display = "block";
+    }
+  }
+});

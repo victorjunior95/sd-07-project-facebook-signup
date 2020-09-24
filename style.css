@@ -1,8 +1,8 @@
-html , body {
+body , html {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -13,13 +13,13 @@ html , body {
   width: 100%;
 }
 
-.facebook-login {
-  color: white;
-  display: flex;
-}
-
 .form-group {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
+}
+
+.facebook-login {
+  color: white;
+  display: flex;
 }

@@ -9,3 +9,12 @@ body {
   height: 25px;
   width: 100%;
 }
+
+.facebook-login {
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}

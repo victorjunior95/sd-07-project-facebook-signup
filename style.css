@@ -40,3 +40,7 @@
 .person-name {
   display: flex;
 }
+
+.gender-input {
+  display: flex;
+}

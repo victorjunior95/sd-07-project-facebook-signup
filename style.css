@@ -10,13 +10,16 @@ body {
 }
 
 .facebook-login {
-  align-items: center;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
 }

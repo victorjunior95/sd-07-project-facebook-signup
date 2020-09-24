@@ -20,10 +20,10 @@ body {
 }
 
 input {
-  margin: 5px;
+  margin-right: 5px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

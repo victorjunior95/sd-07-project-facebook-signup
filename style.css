@@ -19,9 +19,9 @@
 }
 
 .form-register {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .last-name-form-register , .name-form-register {

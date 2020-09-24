@@ -4,13 +4,13 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
   height: 80px;
   width: 100%;
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 12px;
 }
 
 .form-group {

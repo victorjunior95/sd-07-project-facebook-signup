@@ -8,7 +8,6 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  display: flex;
   justify-content: space-between;
   margin: auto;
   max-width: 100%;
@@ -52,6 +51,9 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
+}
+
+.facebook-logo img {
   width: 170px;
 }
 
@@ -69,8 +71,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   padding: 50px 100px;
+  width: 100%;
 }
 
 .left-content {

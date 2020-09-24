@@ -12,21 +12,23 @@
       <img src="imgs/facebook-logo.png" alt="Logo facebook" class="facebook-logo">
     </div>
 
-    <form class="facebook-login">
+    <div class="form-group">
+      <form class="facebook-login">
+        <div>
+          <label for="user" >usuário:</label>
+          <input type="text" id="user" required="required">
+        </div>
+        <div>
+          <label for="user-password" >Senha:</label>
+          <input type="password" id="user-password" required="required">
 
-      <div>
-        <input type="text" required="required">
-      </div>
+        </div>
+        <div>
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
+    </div>
 
-      <div>
-        <input type="password" required="required">
-      </div>
-
-      <div>
-        <button type="submit">Entrar</button>
-      </div>
-
-    </form>
   </header>
 
 

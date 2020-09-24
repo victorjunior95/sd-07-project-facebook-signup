@@ -12,7 +12,6 @@ body {
 
 .logo {
   display: flex;
-  float: left;
   justify-content: center;
   width: 50%;
 }
@@ -23,7 +22,6 @@ body {
 
 .facebook-login {
   display: flex;
-  float: right;
   height: 100%;
   width: 50%;
 }
@@ -31,4 +29,9 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
 }

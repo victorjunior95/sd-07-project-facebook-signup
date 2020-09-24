@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 .form-group {
     display: flex;
     flex-direction: column;
     align-self: flex-end
 }
-=======
 html , body {
   box-sizing: border-box;
   margin: 0;
@@ -22,4 +20,3 @@ html , body {
 .facebook-login {
   display: flex;
 }
->>>>>>> b357962a3fb1ab19e70eae78603aedf1e898a605

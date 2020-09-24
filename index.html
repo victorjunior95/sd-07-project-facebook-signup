@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>facebook</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Barra de login e logo -->
-  <div class="top-bar">
+  <header class="top-bar">
     <img src="imgs/facebook-logo.png" alt="FaceBook" class="facebook-logo">
     <form class="facebook-login">
-      <label>Email ou telefone:</label>
-      <input class="form-group" type="text" required>
-      <label>Senha:</label>
-      <input class="form-group" type="password" required>
+      <div id="emailAndPhone" class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone:</label>
+        <input id="user-email-phone" class="form-group" type="text" required>
+      </div>
+      <div id="password" class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Senha:</label>
+        <input id="user-email-phone" class="form-group" type="password" required>
+      </div>
     </form>
-  </div>
+  </header>
   <!-- Conteúdo principal -->
   <div class="main-content">
     <div class="left-content">
@@ -31,9 +37,11 @@
           <input name="firstname" placeholder="Nome" type="text">
           <input name="lastname" placeholder="Sobrenome" type="text">
         </div>
+        div.
       </form>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>

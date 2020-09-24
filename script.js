@@ -1,8 +1,8 @@
-let alertText = document.querySelector("#user-email-phone");
-let alertButton = document.querySelector("#button-login");
-
-alertButton.addEventListener("click", sendAlert());
+const alertText = document.querySelector('#user-email-phone');
+const alertButton = document.querySelector('#button-login');
 
 function sendAlert() {
-  alert(alertText);
-}
+    alert(alertText);
+  }
+
+alertButton.addEventListener('click', sendAlert());

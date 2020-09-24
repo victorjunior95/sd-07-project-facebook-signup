@@ -6,13 +6,13 @@ btnLogin.addEventListener('click', function () {
 
 const radioCustomGender = document.getElementsByName('gender')[2];
 radioCustomGender.addEventListener('click', function () {
-  let newAccForm = document.querySelector('.new-account');
-  let genderCustom = document.createElement('input');
-  genderCustom.type = "text";
-  genderCustom.name = "gender-custom";
-  genderCustom.placeholder = "Gênero (opcional)";
+  const newAccForm = document.querySelector('.new-account');
+  const genderCustom = document.createElement('input');
+  genderCustom.type = 'text';
+  genderCustom.name = 'gender-custom';
+  genderCustom.placeholder = 'Gênero (opcional)';
   newAccForm.appendChild(genderCustom);
-  newAccForm.insertBefore(genderCustom,  newAccForm.children[19]);
+  newAccForm.insertBefore(genderCustom, newAccForm.children[19]);
 });
 
 
@@ -24,13 +24,57 @@ const inputBirthdate = document.getElementsByName('birthdate')[0];
 const inputGender = document.getElementsByName('gender');
 const btnSignUp = document.querySelector('#facebook-register');
 
+function compararValor() {
+  let alert = false;
 
-btnSignUp.addEventListener('click', function() {
+  if (inputFirstName.value === null) {
+    alert = true;
+  }
+
+  if (inputLastName.value === null) {
+    alert = true;
+  }
+
+  if (inputPhoneEmail.value === null) {
+    alert = true;
+  }
+
+  return alert;
+}
+
+function compararValor2() {
+  let alert = false;
+
+  if (inputPassword.value === null) {
+    alert = true;
+  }
+
+  if (inputBirthdate.value === null) {
+    alert = true;
+  }
+
+  return alert;
+}
+
+function compararValor3() {
+  let alert = false;
+
   let genderChecked = false;
   if (inputGender[0].checked || inputGender[1].checked || inputGender[2].checked) {
-        genderChecked = true;
+    genderChecked = true;
   }
-    if (inputFirstName.value === null || inputLastName.value === null || inputPhoneEmail.value === null || inputPassword.value === null || inputBirthdate.value === null || genderChecked === false) {
-        alert('Campos inválidos');
-    }
-});
+
+  if (genderChecked === false) {
+    alert = true;
+  }
+
+  return alert;
+}
+
+function alerta() {
+  if (compararValor() || compararValor2() || compararValor3()) {
+    alert('Campos inválidos');
+  }
+}
+
+btnSignUp.addEventListener('click', alerta);

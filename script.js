@@ -25,7 +25,7 @@ window.JustValidate('.js-form', {
     radio: {
       required: true,
     },
-},
+  },
   messages: {
     firstname: 'Campos inválidos',
     lastname: 'Campos inválidos',

@@ -7,8 +7,8 @@ const phoneEmail = document.getElementById('phone_email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 const cadastro = document.getElementById('facebook-register');
-//  const personalizado = document.getElementById('genero');
-//  const gender = document.querySelector('.gender');
+const personalizado = document.getElementById('genero');
+const genderInput = document.querySelector('#input-personalizado');
 
 login.addEventListener('click', function () {
   alert(user.value);
@@ -20,6 +20,9 @@ cadastro.addEventListener('click', function () {
   }
 });
 
-// personalizado.addEventListener('click', function () {
-
-// });
+personalizado.addEventListener('click', function () {
+  const input = document.createElement('input');
+  input.setAttribute('name', 'gender-custom');
+  input.setAttribute('placeholder', 'Gênero');
+  genderInput.appendChild(input);
+});

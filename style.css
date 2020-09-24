@@ -1,30 +1,64 @@
 body {
-  margin: 0;
-  padding: 0;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   justify-content: space-between;
   padding: 10px 15%;
-  color: white;
+}
+
+.facebook-logo {
+  height: 55px;
 }
 
 .esqueceu-conta {
-    color: rgb(155, 171, 204);
-    font-size: smaller;
-    font-weight: 500;
+  color: rgb(155, 171, 204);
+  font-size: smaller;
+  font-weight: 500;
 }
 
-.facebook-login {
+.header-inputs {
+  height: 23px;
+}
+
+.label-header {
+  font-size: smaller;
+  font-weight: 500;
+}
+
+.form-container {
   display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-left: 7px;    
+}
+
+.name {
+  flex-grow: 2;
+}
+.password {
+  flex-grow: 2;
+}
+.button {
+  background-color: rgb(60, 89, 152);
+  border: 1px solid rgb(60, 89, 152);
+  border-radius: 5%;
+  color: white;
+  display: flex;
+  height: 23px;
+  font-size: medium;
+  font-size: smaller;
+  font-weight: 500;
+  margin-top: 19px;
+  width: 52px;
 }
 
 .form-control {

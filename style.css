@@ -65,3 +65,8 @@ body {
   margin: 2px;
   width: 94%;
 }
+
+.radio {
+  display: flex;
+  flex-wrap: nowrap;
+}

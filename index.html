@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <title>Facebook</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div>
       <form class="facebook-login" action="#">
         <div class="form-group">
-          <label for="user-email-phone-label" id="user-email-phone-label">
+          <label for="user-email-phone" id="user-email-phone-label">
               Email ou telefone
           </label>
             <input type="text" id="user-email-phone">
@@ -52,28 +52,54 @@
             É rápido e fácil.
         </h3>
         <form action="">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" placeholder="Nova senha">
-            <label id="label-birthdate" for="">
-                Data de nascimento
-            </label>
-            <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
-            <label id="label-gender" for="genero">
-                Gênero
-            </label>
-            <input type="radio" value="Feminino" name="genero"> Feminino
-            <input type="radio" value="Masculino" name="genero"> Masculino
-            <input type="radio" value="Personalizado" name="genero"> Personalizado
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="text" name="firstname" placeholder="Nome">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="text" name="lastname" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="text" name="phone_email" placeholder="Celular ou email">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="password" name="password" placeholder="Nova senha">
+                </div>
+            </div>
+            <div class="field">
+                <label id="label-birthdate" for="">
+                    Data de nascimento
+                </label>
+                <div class="control">
+                    <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa">
+                </div>
+            </div>
+            <div class="field">
+                <label id="label-gender" for="genero">
+                    Gênero
+                </label>
+                <div class="control">
+                    <input type="radio" value="Feminino" name="genero"> Feminino
+                    <input type="radio" value="Masculino" name="genero"> Masculino
+                    <input type="radio" value="Personalizado" name="genero"> Personalizado
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button is-success" type="submit" id="facebook-register">
+                    Cadastre-se
+                </button>
+            </div>
 
-            <button type="submit" id="facebook-register">
-                Cadastre-se
-            </button>
         </form>
 
     </div>
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>

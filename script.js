@@ -1,5 +1,5 @@
-botaoLogin = document.querySelector("#button-login");
-botaoLogin.addEventListener("click", function(){
-  emailTelefone = document.querySelector("#user-email-phone");
-  alert(emailTelefone.value);
+let botaoLogin = document.getElementById('button-login');
+botaoLogin.addEventListener('click', function() {
+  let emailTelefone = document.querySelector('#user-email-phone').value;
+  alert(emailTelefone);
 });

@@ -6,4 +6,7 @@
   background-color: rgb(66, 103, 178);
 }
 
-
+.form-group{
+    display: flex;
+    flex-direction: row;
+}

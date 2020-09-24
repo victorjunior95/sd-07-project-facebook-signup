@@ -6,6 +6,10 @@ buttonLogin.addEventListener('click', function () {
 });
 
 //----------------------------------------------------------------
+const p = document.createElement('p');
+const mainForm = document.querySelector('.main-form');
+mainForm.appendChild(p);
+
 function verificaRadio() {
   const radios = document.querySelectorAll('.radio');
 
@@ -18,14 +22,9 @@ function verificaRadio() {
   }
 }
 
-const p = document.createElement('p');
-const mainForm = document.querySelector('.main-form');
-mainForm.appendChild(p);
-
 const buttonRegister = document.querySelector('#facebook-register');
 buttonRegister.addEventListener('click', function () {
   const inputs = document.querySelectorAll('.main-form input');
-  const radios = document.querySelectorAll('.radio');
 
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {

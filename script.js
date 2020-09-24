@@ -52,6 +52,7 @@ function verificaRadio() {
     p.innerHTML = 'Campos inválidos';
     return 'false';
   }
+  return 'true';
 }
 
 const buttonRegister = document.querySelector('#facebook-register');
@@ -65,7 +66,7 @@ buttonRegister.addEventListener('click', function (event) {
     }
   }
   verificaRadio();
-  if (verificaRadio() !== 'false') {
+  if (verificaRadio() === 'true') {
     mostraTudo();
   }
 });

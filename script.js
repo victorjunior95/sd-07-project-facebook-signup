@@ -34,3 +34,10 @@ buttonRegister.addEventListener('click', function () {
   }
   verificaRadio();
 });
+
+//----------------------------------------------------------------------
+
+// const personalizado = document.querySelectorAll('.radio-personalizado');
+// personalizado.addEventListener('click',function(){
+
+// })

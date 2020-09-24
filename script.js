@@ -21,13 +21,7 @@ const justValidate = new window.JustValidate('.form-register', {
     birthdate: {
       required: true,
     },
-    masc: {
-      required: true,
-    },
-    fem: {
-      required: true,
-    },
-    pers: {
+    gender: {
       required: true,
     },
   },

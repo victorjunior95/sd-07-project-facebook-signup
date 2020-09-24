@@ -13,3 +13,9 @@ header {
 .facebook-login {
   display: flex;
 }
+
+.main-content {
+  background: linear-gradient(white, #d3d8e8);
+  display: flex;
+  padding: 300px 0;
+}

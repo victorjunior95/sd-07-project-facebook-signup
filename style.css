@@ -16,9 +16,19 @@ body {
 
 .facebook-login {
   display: flex;
+  align-items: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  height: 100%;
+}
+
+.button-login {
+  align-self: ;
 }

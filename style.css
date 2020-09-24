@@ -1,12 +1,11 @@
 body {
-  padding: 0;
-  margin: 0;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   width: 100vw;
- 
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
 }

@@ -20,20 +20,13 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
+  padding: 0.6rem 12.5%;
 }
 
-
-.header-content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 75%;
-}
-
-.header-content img {
+.top-bar img {
   width: 10rem;
 }
+
 
 .main-content {
   display: flex;

@@ -18,6 +18,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 0.5em;
 }
 
 .facebook-login {
@@ -33,19 +34,16 @@ body {
 }
 
 .facebook-logo {
-  display: inline;
+  /* display: inline; */
 }
 
-.login-button {
-  display: flex;
+.form-control {
+  /* display: flex; */
+  align-self: flex-end;
   align-items: center;
 }
 
-.control {
-  padding: 0.5em;
-}
-
-.login-button button {
+.form-control button {
   background-color: #4266b2;
   border: 1px solid #2f4c84;
   border-radius: 1px;
@@ -53,4 +51,5 @@ body {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 12px;
+  padding: 0.3em;
 }

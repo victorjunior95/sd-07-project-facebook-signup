@@ -1,5 +1,9 @@
-.top-bar{
+.facebook-login {
     display: flex;
-    background-color: rgb(66, 103, 178)
-
 }
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+}
+
+

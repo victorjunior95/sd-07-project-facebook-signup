@@ -6,18 +6,21 @@ body {
 }
 
 .top-bar {
+
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  border-bottom: 1px solid rgb(19, 55, 131);
 	display: flex;
-	background-color: rgb(66, 103, 178);
 	justify-content: space-around;
 	height: 80px;
-	border-bottom: 1px solid rgb(19, 55, 131);
-	align-items: center;
+
+
 }
 
 .facebook-logo {
 	display: flex;
+  margin-top: 28px;
 	width: 150px;
-	margin-top: 28px;
 }
 
 .logo-position {
@@ -40,16 +43,16 @@ body {
 }
 
 .div-button-login {
-	display: flex;
 	align-items: center;
+	display: flex;
 	padding: 0 0 0 13px;
 }
 
 .esqueceu-conta {
 	color: rgb(156, 180, 216);
 	cursor: pointer;
-	text-decoration: none;
 	font-size: 13px;
+	text-decoration: none;
 }
 
 .user-email-phone-label {
@@ -104,9 +107,9 @@ body {
 
 .elements-position {
 	background: linear-gradient(white, rgb(211, 216, 232));
-	width: 100%;
-	padding-top: 84px;
 	display: flex;
+	padding-top: 84px;
+	width: 100%;
 }
 
 .section-left-main {
@@ -121,9 +124,9 @@ body {
 }
 
 .section-right-main {
+	font-family: Arial, Helvetica, sans-serif;
 	margin: -13px 11px 0 0;
 	width: 48%;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .nome-sobrenome {

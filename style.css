@@ -1,11 +1,5 @@
-.facebook-login {
-  color: white;
-  display: flex;
-}
-
 .form-group {
   color: white;
-  display: flex;
   flex-direction: column;
 }
 
@@ -22,4 +16,9 @@ input {
   background-color: rgb(66, 103, 178);
   display: flex;
   padding: 10px 0;
+}
+
+.form-control {
+  align-self: flex-end;
+  
 }

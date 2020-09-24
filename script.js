@@ -3,4 +3,4 @@ const userEmailPhone = document.getElementById('user-email-phone');
 
 buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
-})
+});

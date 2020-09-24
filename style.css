@@ -38,7 +38,7 @@ body {
   padding: 0 0 0 13px;
 }
 
-.elements-position {
+.main-content {
   background: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   padding-top: 84px;

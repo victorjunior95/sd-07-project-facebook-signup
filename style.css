@@ -36,8 +36,25 @@ body {
 
 .main-content .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content .right-content {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .right-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content .conteiner-nome-sobrenome {
+  display: flex;
+}
+
+.right-content .conteiner-radio {
+  display: flex;
 }

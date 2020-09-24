@@ -40,3 +40,7 @@ body {
 .nameLastname {
   display: flex;
 }
+
+.gender {
+  display: flex;
+}

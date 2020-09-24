@@ -39,9 +39,7 @@ body {
 }
 
 .form-control {
-  align-items: center;
   align-self: flex-end;
-  justify-content: flex-end;
 }
 
 .login-button button {

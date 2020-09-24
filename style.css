@@ -40,18 +40,18 @@ body {
   justify-content: flex-start;
 }
 
-#facebook-slogan {
-  color: rgb(14, 56, 95);
-  font-size: 20px;
-  width: 50%;
-}
-
 .left-content {
-  width: 800px;
   margin: 50px;
+  width: 800px;
 }
 
 .right-content {
-  width: 300px;
   margin: 50px;
+  width: 300px;
 }
+
+.facebook-sloganClass{
+    color: rgb(14, 56, 95);
+    font-size: 20px;
+    width: 50%;
+  }

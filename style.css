@@ -1,14 +1,14 @@
-* {
-    margin: 0px;
-    padding: 0px;
+body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
 }
 
 .top-bar {
   background-color: rgb(66 , 103 , 178);
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
 }
 
 .email ,
@@ -26,7 +26,7 @@
 
 .enviar {
     border-radius: 2px;
-    background-color: rgb(rgb(76 , 113 , 188))
+    background-color: rgb(76 , 113 , 188);
 }
 
 .form-group {
@@ -38,18 +38,18 @@
     align-self: flex-end;
 }
 
-.facebook-login{
-    display: flex;
+.facebook-login {
     align-self: center;
     color: white;
+    display: flex;
     font-weight: bold;
     font-size: 12px;
 }
+
 a {
     color: rgba(255, 255, 255, 0.5);
 }
-button{
-    height: 2vw;
+button {
     align-self: center;
+    height: 2vw;
 }
-

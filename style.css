@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0;
+  width: 100%;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 1366px;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding-left: 20px;
+}
+
+.form-control {
+  align-content: center;
+}

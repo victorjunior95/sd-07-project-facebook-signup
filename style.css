@@ -3,6 +3,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 20px 50px;
 }
 
 .facebook-login {
@@ -11,7 +12,6 @@
 
 .form-control {
   align-self: flex-end;
-
 }
 
 .form-group {

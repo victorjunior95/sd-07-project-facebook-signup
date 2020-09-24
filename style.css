@@ -14,8 +14,14 @@ header {
   display: flex;
 }
 
+<<<<<<< HEAD
 .main-content {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   padding: 300px 0;
+=======
+.form-group {
+  display: flex;
+  flex-direction: column;
+>>>>>>> a99fe18160c60953ddb9068573f72e3f768d1a61
 }

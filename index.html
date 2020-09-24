@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
 </head>
 <body>
-    <header class="top-bar">
+  <header class="top-bar">
+    <img src="imgs/facebook-logo.png" class="facebook-logo" alt="Logo">
+    
+    <form class="facebook-login">
+      <div class="form-group">
+        <label for="" id="user-email-phone-label">Email ou telefone</label>
+        <input type="text" id="user-email-phone">
+      </div>
 
-    </header>
+      <div class="form-group">
+        <label for="" id="user-password-label">Senha</label>
+        <input type="password" id="user-password">
+      </div>
 
-    <script src="script.js"></script>
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
+      </div>
+    </form>
+  </header>
+
+  <main class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id="facebook-networking" alt="Network Img" src="imgs/networking.png">  
+    </div>
+
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <div class="quick-easy">É rápido e fácil.</div>
+      <form>
+        <input type="text" name="firstname" placeholder="Nome" id="first-input">
+        <input type="text" name="lastname" placeholder="Sobrenome" id="second-input">
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
+        
+        <label id="label-birthdate">Data de nascimento</label>
+        <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+        
+        <label id="label-gender">Gênero</label>
+          <div class="gender">
+            <input type="radio" id="Feminino" name="gender" value="Feminino" />
+            <label for="Feminino">Feminino</label><br />
+            <input type="radio" id="Masculino" name="gender" value="Masculino" />
+            <label for="Masculino">Masculino</label><br />
+            <input type="radio" id="Personalizado" name="gender" value="Personalizado" />
+            <label for="Personalizado">Personalizado</label>
+          </div>
+        <button id="facebook-register" type="submit">Cadastre-se</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

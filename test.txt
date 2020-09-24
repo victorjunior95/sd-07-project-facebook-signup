@@ -1,0 +1,256 @@
+Iniciando processo
+audited 329 packages in 3.36s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 11 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    4.1.0                                                                              │
+  │ Browser:    Electron 78 (headless)                                                             │
+  │ Specs:      1 found (project.spec.js)                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  project.spec.js                                                                 (1 of 1)
+
+
+  Facebook Signup
+    Crie uma barra azul na parte superior da página com a classe top-bar
+      ✓ Esta barra deve possuir a classe top-bar (549ms)
+      ✓ A classe top-bar deve determinar que o elemento é um flex container (443ms)
+      ✓ A classe top-bar deve possuir a propriedade `background-color: rgb(66, 103, 178)` (351ms)
+    A barra superior deve conter o logotipo do Facebook no canto esquerdo com a classe facebook-logo
+      ✓ O logotipo deve estar alinhado a esquerda dentro da barra azul (539ms)
+      ✓ Deve existir um elemento img com a classe facebook-logo (474ms)
+      ✓ O atributo src do logotipo deve apontar para imgs/facebook-logo.png (510ms)
+    A barra superior deve conter um formulário de autenticação no canto direito
+      ✓ O formulário deve estar alinhado a direita dentro da barra azul (497ms)
+      ✓ Existe formulário possui uma classe chamada facebook-login (301ms)
+      ✓ O formulário deve ser um flex container (277ms)
+    Crie uma classe no CSS chamada form-group
+      ✓ Essa classe deve possuir a propriedade `diplay: flex` (313ms)
+      ✓ Alinhe o eixo principal dessa classe para ser o eixo vertical (320ms)
+    Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3
+      ✓ Deve haver um container utilizando a classe `form-group` criada no passo anterior (328ms)
+      ✓ Dentro do container `form-group` criado, deve haver um rótulo com o id user-email-phone-label e o texto "Email ou telefone" (318ms)
+      ✓ Dentro do container `form-group` criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone (396ms)
+    Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo "Senha" dentro do formulário criado na etapa 3
+      ✓ Deve haver um novo container utilizando a classe `form-group` criada no passo 4 (344ms)
+      ✓ Dentro do novo container `form-group` criado, deve haver um rótulo com o id user-password-label e o texto "Senha" (538ms)
+      ✓ Dentro do novo container `form-group` criado, abaixo do rótulo deve haver campo de entrada para senha com o id user-password (285ms)
+    Adicione o terceiro subcontainer com a classe form-control com o botão "Entrar" dentro do formulário criado na etapa 3
+      ✓ Deve haver um novo container utilizando a classe `form-control` criada no passo anterior` (268ms)
+      ✓ Crie uma classe no CSS form-control com a propriedade `align-self: flex-end` (319ms)
+      ✓ Dentro do novo container `form-control` criado, deve haver um botão com o id "button-login" e o texto "Entrar" (422ms)
+      ✓ O botão deve estar alinhado a direita do campo de entrada para senha (351ms)
+      ✓ Ao clicar no botão com o id #button-login deve exibir um alert com o valor do campo "Email ou telefone" (853ms)
+    Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página
+      ✓ Crie um elemento com a classe main-content (278ms)
+      ✓ O elemento deve ser um flex container no eixo horizontal (348ms)
+      ✓ O elemento deve posicionado abaixo da barra azul (258ms)
+    Crie um subcontainer com a classe left-content para colocar o conteúdo do lado esquerdo dentro do container com a classe main-content
+      ✓ O subcontainer deve ter a classe left-content (284ms)
+      ✓ A classe left-content deve ter uma largura de 800px (286ms)
+      ✓ Dentro do container com a classe left-content deve existir um parágrafo com id facebook-slogan e o texto "O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida." (381ms)
+      ✓ Dentro do container com a classe left-content deve existir abaixo do parágrafo com id facebook-slogan uma imagem com id facebook-networking e o src com o endereço `imgs/networking.png`. (289ms)
+    Crie um subcontainer com a classe right-content para colocar o conteúdo do lado direito dentro do container com a classe main-content
+      ✓ O novo subcontainer deve ter a classe right-content (311ms)
+      ✓ A classe right-content deve ter uma largura de 300px (343ms)
+      ✓ Utilize na classe main-content a propriedade justify-content com o valor mais apropriado para alinhar os conteúdos (226ms)
+      ✓ Dentro do subcontainer com a classe right-content deve existir um elemento h1 com o texto "Abra uma conta" (332ms)
+      ✓ Dentro do subcontainer com a classe right-content deve existir um elemento com a classe quick-easy com o texto "É rápido e fácil." posicionado abaixo do texto "Abra uma conta" (322ms)
+      ✓ Dentro do subcontainer com a classe right-content deve existir um elemento form abaixo do texto "É rápido e fácil." (247ms)
+      ✓ O elemento com a classe right-content deve estar a direita do elemento com a classe left-content (335ms)
+    Crie um campo de entrada de texto para o nome do usuário dentro do formulário criado no requisito 10
+      ✓ O campo deve ter o atributo name com o valor "firstname" (267ms)
+      ✓ O campo deve ter um placeholder com o valor "Nome" (262ms)
+    Crie um campo de entrada de texto para o sobrenome do usuário dentro do formulário criado no requisito 10
+      ✓ O campo deve ter o atributo name com o valor "lastname" (354ms)
+      ✓ O campo deve ter um placeholder com o valor "Sobrenome" (238ms)
+      ✓ Esse campo deve estar alinhado a direita do campo de Nome (304ms)
+    Crie um campo de entrada de texto para o celular ou email do usuário dentro do formulário criado no requisito 10
+      ✓ O campo deve ter o atributo name com o valor "phone_email" (380ms)
+      ✓ O campo deve ter um placeholder com o valor "Celular ou email" (281ms)
+      ✓ Posicione esse campo abaixo do campo do nome do usuário (282ms)
+    Crie um campo de entrada para senha do usuário dentro do formulário criado no requisito 10
+      ✓ O campo deve ter o atributo name com o valor "password" (352ms)
+      ✓ O campo deve ser do tipo "password" (300ms)
+      ✓ O campo deve ter um placeholder com o valor "Nova senha" (272ms)
+      ✓ Posicione esse campo abaixo do celular/email (272ms)
+    Crie um campo de entrada para data de nascimento do usuário dentro do formulário criado no requisito 10
+      ✓ Um rótulo abaixo do campo nova senha com o id label-birthdate e o texto "Data de nascimento"  (270ms)
+      ✓ O campo deve ter o atributo name com o valor "birthdate" (297ms)
+      ✓ O campo deve ter um placeholder com o valor "dd/mm/aaaa" (281ms)
+      ✓ Posicione esse campo abaixo do rótulo (276ms)
+    Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10
+      ✓ Um rótulo abaixo do campo nova senha com o id label-gender e o texto "Gênero"  (265ms)
+      ✓ O campo deve ser formado por três `radio buttons` com as opções "Feminino", "Masculino" e "Personalizado" (334ms)
+      ✓ Posicione os radio buttons para ficar na mesma linha (307ms)
+      1) Posicione os radio buttons para ficar abaixo do label
+    Crie um botão para finalizar o cadastro dentro do formulário criado no requisito 10
+      ✓ Um botão com o texto "Cadastre-se" e id "facebook-register" (314ms)
+      ✓ Deve ter a propriedade type igual a submit (249ms)
+    Validar se todos os campos foram preenchidos ao clicar no botão "Cadastre-se"
+      2) Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido
+    Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção "Personalizado" no campo Gênero
+      3) O novo campo dever ser uma campo de texto com o atributo name "gender-custom" e um placeholder "Gênero (opcional)"
+      4) O novo campo deve estar posicionado entre as opções de gênero e o botão "Cadastrar-se"
+    Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado
+      5) "before each" hook for "Deve haver um texto no modelo "Olá, Jonh Doe" (substitua John Doe pelo nome e sobrenome preenchido no formulário)"
+
+
+  57 passing (39s)
+  5 failing
+
+  1) Facebook Signup
+       Crie um campo de entrada para gênero do usuário dentro do formulário criado no requisito 10
+         Posicione os radio buttons para ficar abaixo do label:
+     CypressError: Timed out retrying: expected false to equal true
+      at cypressErr (http://localhost:36555/__cypress/runner/cypress_runner.js:138036:9)
+      at throwErr (http://localhost:36555/__cypress/runner/cypress_runner.js:137969:11)
+      at Object.throwErrByPath (http://localhost:36555/__cypress/runner/cypress_runner.js:138017:3)
+      at retry (http://localhost:36555/__cypress/runner/cypress_runner.js:132299:19)
+      at onFailFn (http://localhost:36555/__cypress/runner/cypress_runner.js:120514:16)
+      at tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Promise._settlePromiseFromHandler (http://localhost:36555/__cypress/runner/cypress_runner.js:162831:31)
+      at Promise._settlePromise (http://localhost:36555/__cypress/runner/cypress_runner.js:162888:18)
+      at Promise._settlePromise0 (http://localhost:36555/__cypress/runner/cypress_runner.js:162933:10)
+      at Promise._settlePromises (http://localhost:36555/__cypress/runner/cypress_runner.js:163008:18)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:36555/__cypress/runner/cypress_runner.js:159620:16)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159630:10)
+      at Async.drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159504:14)
+
+  2) Facebook Signup
+       Validar se todos os campos foram preenchidos ao clicar no botão "Cadastre-se"
+         Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido:
+     CypressError: Timed out retrying: Expected to find content: 'Campos inválidos' within the element: <form> but never did.
+      at cypressErr (http://localhost:36555/__cypress/runner/cypress_runner.js:138036:9)
+      at throwErr (http://localhost:36555/__cypress/runner/cypress_runner.js:137969:11)
+      at Object.throwErrByPath (http://localhost:36555/__cypress/runner/cypress_runner.js:138017:3)
+      at retry (http://localhost:36555/__cypress/runner/cypress_runner.js:132299:19)
+      at onFailFn (http://localhost:36555/__cypress/runner/cypress_runner.js:120514:16)
+      at tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Promise._settlePromiseFromHandler (http://localhost:36555/__cypress/runner/cypress_runner.js:162831:31)
+      at Promise._settlePromise (http://localhost:36555/__cypress/runner/cypress_runner.js:162888:18)
+      at Promise._settlePromise0 (http://localhost:36555/__cypress/runner/cypress_runner.js:162933:10)
+      at Promise._settlePromises (http://localhost:36555/__cypress/runner/cypress_runner.js:163008:18)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:36555/__cypress/runner/cypress_runner.js:159620:16)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159630:10)
+      at Async.drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159504:14)
+
+  3) Facebook Signup
+       Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção "Personalizado" no campo Gênero
+         O novo campo dever ser uma campo de texto com o atributo name "gender-custom" e um placeholder "Gênero (opcional)":
+     CypressError: Timed out retrying: Expected to find element: 'input[name="gender-custom"]', but never found it.
+      at cypressErr (http://localhost:36555/__cypress/runner/cypress_runner.js:138036:9)
+      at throwErr (http://localhost:36555/__cypress/runner/cypress_runner.js:137969:11)
+      at Object.throwErrByPath (http://localhost:36555/__cypress/runner/cypress_runner.js:138017:3)
+      at retry (http://localhost:36555/__cypress/runner/cypress_runner.js:132299:19)
+      at onFailFn (http://localhost:36555/__cypress/runner/cypress_runner.js:120514:16)
+      at tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Promise._settlePromiseFromHandler (http://localhost:36555/__cypress/runner/cypress_runner.js:162831:31)
+      at Promise._settlePromise (http://localhost:36555/__cypress/runner/cypress_runner.js:162888:18)
+      at Promise._settlePromise0 (http://localhost:36555/__cypress/runner/cypress_runner.js:162933:10)
+      at Promise._settlePromises (http://localhost:36555/__cypress/runner/cypress_runner.js:163008:18)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:36555/__cypress/runner/cypress_runner.js:159620:16)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159630:10)
+      at Async.drainQueues (http://localhost:36555/__cypress/runner/cypress_runner.js:159504:14)
+
+  4) Facebook Signup
+       Adicione um novo campo de texto no formulário se a pessoa usuária selecionar a opção "Personalizado" no campo Gênero
+         O novo campo deve estar posicionado entre as opções de gênero e o botão "Cadastrar-se":
+     TypeError: Cannot read property 'getBoundingClientRect' of null
+      at evaluateOffset (http://localhost:36555/__cypress/tests?p=cypress/integration/project.spec.js-237:81:37)
+      at Context.<anonymous> (http://localhost:36555/__cypress/tests?p=cypress/integration/project.spec.js-237:104:12)
+
+  5) Facebook Signup
+       Substituir o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado
+         "before each" hook for "Deve haver um texto no modelo "Olá, Jonh Doe" (substitua John Doe pelo nome e sobrenome preenchido no formulário)":
+     CypressError: Typing into a date input with cy.type() requires a valid date with the format 'yyyy-MM-dd'. You passed: 01/01/1990
+
+Because this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Substituir o conteúdo do co...'
+      at cypressErr (http://localhost:36555/__cypress/runner/cypress_runner.js:138036:9)
+      at throwErr (http://localhost:36555/__cypress/runner/cypress_runner.js:137969:11)
+      at Object.throwErrByPath (http://localhost:36555/__cypress/runner/cypress_runner.js:138017:3)
+      at validateTyping (http://localhost:36555/__cypress/runner/cypress_runner.js:130587:65)
+      at http://localhost:36555/__cypress/runner/cypress_runner.js:130842:35
+      at tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Function.Promise.attempt.Promise.try (http://localhost:36555/__cypress/runner/cypress_runner.js:162170:29)
+      at http://localhost:36555/__cypress/runner/cypress_runner.js:130887:70
+      at tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Object.gotValue (http://localhost:36555/__cypress/runner/cypress_runner.js:164037:18)
+      at Object.gotAccum (http://localhost:36555/__cypress/runner/cypress_runner.js:164026:25)
+      at Object.tryCatcher (http://localhost:36555/__cypress/runner/cypress_runner.js:164895:23)
+      at Promise._settlePromiseFromHandler (http://localhost:36555/__cypress/runner/cypress_runner.js:162831:31)
+      at Promise._settlePromise (http://localhost:36555/__cypress/runner/cypress_runner.js:162888:18)
+      at Promise._settlePromiseCtx (http://localhost:36555/__cypress/runner/cypress_runner.js:162925:10)
+      at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:36555/__cypress/runner/cypress_runner.js:159625:12)
+
+
+
+[mochawesome] Report JSON saved to /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signup/cypress/reports/mochawesome.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        68                                                                               │
+  │ Passing:      57                                                                               │
+  │ Failing:      5                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      6                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     39 seconds                                                                       │
+  │ Spec Ran:     project.spec.js                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signu     (1280x720)
+     p/cypress/screenshots/project.spec.js/Facebook Signup -- Crie um campo de entrad               
+     a para gênero do usuário dentro do formulário criado no requisito 10 -- Posicion               
+     e os radio buttons para ficar abaixo do label (failed).png                                     
+  -  /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signu     (1280x720)
+     p/cypress/screenshots/project.spec.js/Facebook Signup -- Validar se todos os cam               
+     pos foram preenchidos ao clicar no botão Cadastre-se -- Exibir uma mensagem Camp               
+     os inválidos dentro do formulário caso pelo menos um campo não esteja preenchido               
+      (failed).png                                                                                  
+  -  /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signu     (1280x720)
+     p/cypress/screenshots/project.spec.js/Facebook Signup -- Adicione um novo campo                
+     de texto no formulário se a pessoa usuária selecionar a opção Personalizado no c               
+     ampo Gênero -- O novo campo dever ser uma campo de texto com o atributo name gen               
+     der-custom e um pl (failed).png                                                                
+  -  /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signu     (1280x720)
+     p/cypress/screenshots/project.spec.js/Facebook Signup -- Adicione um novo campo                
+     de texto no formulário se a pessoa usuária selecionar a opção Personalizado no c               
+     ampo Gênero -- O novo campo deve estar posicionado entre as opções de gênero e o               
+      botão Cadastrar-s (failed).png                                                                
+  -  /home/wendrick_cardoso/Aulas/Trybe/Projetos/Bloco 6/sd-07-project-facebook-signu     (1280x720)
+     p/cypress/screenshots/project.spec.js/Facebook Signup -- Substituir o conteúdo d               
+     o container com a classe right-content se o formulário estiver completamente pre               
+     enchido e validado -- Deve haver um texto no modelo Olá, Jonh Doe (substitua Joh               
+     n Doe pelo nome e  (failed).png                                                                
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  project.spec.js                          00:39       68       57        5        -        6 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 1 failed (100%)                     00:39       68       57        5        -        6  
+

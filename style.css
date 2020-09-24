@@ -39,4 +39,18 @@ body {
 
 .main-form {
   display: flex;
+  flex-wrap: wrap;
+}
+
+
+.main-form input {
+  width: 100%;
+}
+
+.short-input {
+  display: flex;
+}
+
+.short-input input {
+  width: calc(50% - 16px);
 }

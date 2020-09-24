@@ -32,3 +32,6 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.div-radio-buttons {
+    display: flex;
+}

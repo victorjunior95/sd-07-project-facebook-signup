@@ -39,3 +39,12 @@ body {
 .name {
   display: flex;
 }
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+}
+
+.genre {
+  display: flex;
+}

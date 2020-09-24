@@ -20,7 +20,7 @@ for (let i = 0; i < 3; i += 1) {
     } else {
       document.querySelector('.personalizado').style.display = 'none';
     }
-  })
+  });
 }
 
 document.body.onload = function () {

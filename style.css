@@ -24,23 +24,18 @@
 }
 
 .main-content {
-  background-color: aqua;
   display: flex;
   flex-direction: row;
 }
 
 .left-content {
-  background-color: burlywood;
-  display: flex;
   width: 800px;
 }
 
 .right-content {
-  background-color: cadetblue;
-  display: flex;
   width: 300px;
 }
 
-.name-container {
+.new-acount {
   display: flex;
 }

@@ -6,6 +6,37 @@ buttonLogin.addEventListener('click', function () {
 });
 
 //----------------------------------------------------------------
+
+function conteudoBoasVindas(valores) {
+  for (let i in valores) {
+    rightContent.innerHTML = rightContent.innerHTML + valores[i] + ' ';
+  }
+}
+
+const inputs = document.querySelectorAll('.main-form input');
+const rightContent = document.querySelector('.right-content');
+
+function mostraTudo() {
+  let valores = ['Olá, '];
+  for (let i = 0; i < 5; i += 1) {
+    if (i === 3) {
+    } else {
+      valores.push(inputs[i].value);
+    }
+  }
+  if (inputs[5].checked === true) {
+    valores.push(inputs[5].value);
+  } else if (inputs[6].checked === true) {
+    valores.push(inputs[6].value);
+  } else if (inputs[7].checked === true) {
+    valores.push(inputs[7].value);
+  }
+  rightContent.innerHTML = '';
+  conteudoBoasVindas(valores);
+}
+
+//------------------------------------------------------------------
+
 const p = document.createElement('p');
 const mainForm = document.querySelector('.main-form');
 mainForm.appendChild(p);
@@ -51,27 +82,3 @@ personalizado.addEventListener('click', function () {
 });
 
 //--------------------------------------------------------------------
-
-const inputs = document.querySelectorAll('.main-form input');
-const rightContent = document.querySelector('.right-content');
-
-function mostraTudo() {
-  let valores = ['Olá, '];
-  for (let i = 0; i < 5; i += 1) {
-    if (i === 3) {
-    } else {
-      valores.push(inputs[i].value);
-    }
-  }
-  if (inputs[5].checked === true) {
-    valores.push(inputs[5].value);
-  } else if (inputs[6].checked === true) {
-    valores.push(inputs[6].value);
-  } else if (inputs[7].checked === true) {
-    valores.push(inputs[7].value);
-  }
-  rightContent.innerHTML = '';
-  for (let i in valores) {
-    rightContent.innerHTML = rightContent.innerHTML + valores[i] + ' ';
-  }
-}

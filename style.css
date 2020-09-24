@@ -1,7 +1,7 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
@@ -12,15 +12,16 @@ body {
   padding: 7px;
 }
 
-.email, .password {
+.user-email-phone {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
 }
 
-.enviar {
-    border-radius: 2px;
-    background-color: rgb(76 , 113 , 188);
+.button-login {
+  border-radius: 2px;
+  background-color: rgb(76, 113, 188);
+  align-self: center;
 }
 
 .form-group {
@@ -30,20 +31,21 @@ body {
 
 .form-control {
   align-self: flex-end;
+  display: flex;
 }
 
 .facebook-login {
-    align-self: center;
-    color: white;
-    display: flex;
-    font-weight: bold;
-    font-size: 12px;
+  align-self: center;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 a {
   color: rgba(255, 255, 255, 0.5);
 }
 button {
-    align-self: center;
-    height: 2vw;
+  align-self: center;
+  height: 2vw;
 }

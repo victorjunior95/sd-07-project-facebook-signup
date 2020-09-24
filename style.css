@@ -39,6 +39,10 @@
   justify-content: space-around;
 }
 
+.radio-buttons {
+  display: flex;
+}
+
 .right-content {
   width: 300px;
 }

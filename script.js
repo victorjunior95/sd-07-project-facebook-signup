@@ -5,7 +5,6 @@ const personalizado = document.getElementById('personalizado');
 // const feminino = document.getElementById('feminino');
 const genero = document.getElementById('gender');
 personalizado.addEventListener('change', function () {
-//   document.getElementById('gender-custom').innerText = '';
   const select = document.createElement('input');
   select.style.display = 'block';
   select.placeholder = 'Gênero (opcional)';
@@ -15,10 +14,14 @@ personalizado.addEventListener('change', function () {
   genero.appendChild(select);
 });
 // masculino.addEventListener('change', function () {
-//   select.style.display = 'none';
+//     if(document.getElementById('gender-custom'){
+//   document.getElementById('gender-custom').innerHTML = '';
+//     }
 // });
 // feminino.addEventListener('change', function () {
-//   select.style.display = 'none';
+//     if(document.getElementById('gender-custom'){
+//     document.getElementById('gender-custom').innerHTML = '';
+//     }
 // });
 
 // Alerta do botão login

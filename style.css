@@ -1,12 +1,17 @@
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
 }
 
-.form-group{
-    display: flex;
-    flex-direction: row;
+.form-control {
+    align-self: flex-end;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+

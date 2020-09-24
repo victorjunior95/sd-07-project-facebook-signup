@@ -11,6 +11,7 @@
 }
 
 .facebook-login {
+  align-items: flex-end;
   border: 1px white solid;
   display: flex;
 }
@@ -18,4 +19,8 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }

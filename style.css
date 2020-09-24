@@ -23,7 +23,22 @@ body {
   align-self: flex-end;
 }
 
-.main-contet {
+.main-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+  padding: 10px;
+}
+
+.right-content {
+  width: 300px;
+  padding: 10px;
+}
+
+.fullname-form {
+  display: flex;
 }

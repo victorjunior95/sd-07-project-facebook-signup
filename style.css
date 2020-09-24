@@ -11,12 +11,19 @@ body {
   justify-content: space-between;
 }
 
+/* .facebook-logo {
+
+} */
+
 .facebook-login {
-  align-items: center;
   display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }

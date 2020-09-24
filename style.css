@@ -12,12 +12,8 @@
   display: flex;
 }
 
-.buttonLogin {
-  align-self: center;
-}
-
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   margin: 5px;
 }
 

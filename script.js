@@ -18,4 +18,3 @@ function validateInputs() {
 }
 
 register.addEventListener('click', validateInputs);
-personalizeGender.addEventListener('click', check);

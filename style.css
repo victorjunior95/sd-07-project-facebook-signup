@@ -1,3 +1,8 @@
+.aditional-data {
+  display: flex;
+  flex-direction: column;
+}
+
 .facebook-login {
   display: flex;
 }
@@ -11,6 +16,18 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+}
+
+.form-register {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.last-name-form-register , .name-form-register {
+  border-radius: 3px;
+  margin-left: 5px;
+  width: 120px;
 }
 
 .left-content {

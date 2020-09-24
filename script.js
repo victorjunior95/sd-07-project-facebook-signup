@@ -1,5 +1,5 @@
-let submitBt = document.querySelector("#button-login");
-let userIp = document.querySelector("#user-email-phone").value;
-
+let submitBtn = document.querySelector("#button-login");
+let getUser = document.querySelector("#user-email-phone");
+console.log
 //Não funciona!
-submitBt.addEventListener('click' ,  console.log( 'aqui' ));
+submitBtn.addEventListener('click' , console.log('funciona'));

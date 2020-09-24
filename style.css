@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 .top-bar {
     background-color: rgb(66, 103, 178);
     display: flexbox;
+=======
+.main-content {
+  display: flex;
+>>>>>>> d8396a9bfad65c28dbc0ebdb3ec2b50aa6eb5b9c
 }

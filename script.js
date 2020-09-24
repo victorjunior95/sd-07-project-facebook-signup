@@ -20,3 +20,10 @@ document.querySelector("#facebook-register").addEventListener("click", function 
     }
   }) 
 })
+
+const genderOptions = document.querySelector("#other");
+const otherContainer = document.querySelector(".gender-optional");
+
+genderOptions.addEventListener("click", function () {
+  otherContainer.style.display = "block";
+})

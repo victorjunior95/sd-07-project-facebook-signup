@@ -48,8 +48,17 @@
   align-items: flex-start;
 }
 
+.gender-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .radioButton-Container {
   display: flex;
+}
+
+.gender-optional {
+  display: none;
 }
 
 .required-alert {

@@ -7,12 +7,16 @@ buttonForm.addEventListener("click", function () {
 
 const rightContentInputs = document.querySelector("#sign-up-container").querySelectorAll("input");
 
+
+
 document.querySelector("#facebook-register").addEventListener("click", function () {
   rightContentInputs.forEach(item => {
+    let requiredContainer = document.querySelector(".required-alert");
+
     item.required = "required";
 
     if(item.value == "") {
-      item.value = "Campos inválidos";
+      requiredContainer.innerText = "Campos inválidos";
     }
   }) 
 })

@@ -51,3 +51,7 @@
 .radioButton-Container {
   display: flex;
 }
+
+.required-alert {
+  color: red;
+}

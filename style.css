@@ -13,15 +13,28 @@
 .email ,
 .password {
   display: flex;
-  flex-direction: column;
   margin-right: 10px;
+  flex-direction: column;
 }
 
-.facebook-login {
+.top-bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    padding: 7px;
 }
 
-img {
-    justify-content: flex-start;
+.facebook-login{
+    display: flex;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
+a {
+    color: rgba(255, 255, 255, 0.5);
+}
+button{
+    height: 2vw;
+    align-self: center;
+}
+

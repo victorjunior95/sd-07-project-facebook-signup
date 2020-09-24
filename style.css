@@ -1,12 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 .facebook-login {
     display: flex;
@@ -37,25 +36,29 @@
     flex-wrap: wrap;
 }
 
-#primeiro-input, #segundo-input {
-    width: 145px;
-    flex-basis: 48.6%;
+.inputName {
+  flex-basis: 48.6%;
+  width: 145px;
 }
 
-.right-content form input:nth-child(3) {
-    flex-basis: 100%;
+.right-content form input:nth-child( 3 ) {
+  flex-basis: 100%;
 }
 
-.right-content form input:nth-child(4) {
-    flex-basis: 100%;
+.right-content form input:nth-child( 4 ) {
+  flex-basis: 100%;
 }
 
-#label-birthdate {
-    flex-basis: 100%;
+.label-birthdate {
+  flex-basis: 100%;
 }
 
+.label-gender {
+  flex-basis: 100%;
+  margin: 10px;
+}
 
 .gender {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
+}

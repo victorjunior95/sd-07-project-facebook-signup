@@ -1,7 +1,9 @@
+/* header */
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
 }
+/* header */
 
 /* main-content */
 .main-content {
@@ -22,3 +24,7 @@
 }
 
 /* main-content */
+
+/* footer */
+
+/* footer */

@@ -17,3 +17,8 @@
   justify-content: center;
   margin: 10px;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}

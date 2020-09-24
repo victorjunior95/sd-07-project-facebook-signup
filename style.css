@@ -45,11 +45,11 @@ body {
   width: 145px;
 }
 
-.right-content form input:nth-child(3) {
+.right-content form input:nth-child( 3 ) {
   flex-basis: 100%;
 }
 
-.right-content form input:nth-child(4) {
+.right-content form input:nth-child( 4 ) {
   flex-basis: 100%;
 }
 

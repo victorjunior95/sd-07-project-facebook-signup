@@ -1,7 +1,9 @@
-const login = document.getElementById('user-email-phone-label').value
-const senha = document.getElementById('user-password-label').value
-const button = document.getElementById('button-login')
+document.body.onload = function () {
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+    });
 
-button.addEventListener('click', function(){
-    console.log("sda");
-})
+    document.getElementById('button-login').addEventListener('click', function () {
+        alert(document.getElementById('user-email-phone').value);
+    });
+}

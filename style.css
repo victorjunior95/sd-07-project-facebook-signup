@@ -13,7 +13,7 @@
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   margin: 5px;
 }
 

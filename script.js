@@ -1,9 +1,8 @@
 window.onload = function () {
-  loginBtn = document.querySelector('#button-login')
-  userEmailPhone = document.querySelector('#user-email-phone')
-  userPassword = document.querySelector('#user-password')
-  
+  const loginBtn = document.querySelector('#button-login');
+  const userEmailPhone = document.querySelector('#user-email-phone');
+
   loginBtn.addEventListener('click', function () {
-    alert(userEmailPhone.value)
-  })
-}
+    alert(userEmailPhone.value);
+  });
+};

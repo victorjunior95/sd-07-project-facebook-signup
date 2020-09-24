@@ -16,5 +16,3 @@ function createTextField() {
 
 const buttonCustom = document.getElementById('custom');
 buttonCustom.addEventListener('click', createTextField);
-
-document.getElementById('birthdate').DatePickerX.init({ format: 'dd/mm/yyyy' });

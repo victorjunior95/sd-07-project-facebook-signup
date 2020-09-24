@@ -20,10 +20,31 @@ body {
 }
 
 input {
+  border: solid 1px rgb(9, 9, 138);
   margin-right: 5px;
+}
+
+.logo {
+  margin: auto;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: auto;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.button-login {
+  background-color: rgb(75, 110, 195);
+  border: solid 1px rgb(9, 9, 138);
+  color: white;
+  font-weight: 500;
+}
+
+.button-login:hover {
+  background-color: rgb(95, 130, 215);
 }

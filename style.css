@@ -1,20 +1,21 @@
 body {
-  margin-top: 0;
   margin-left: 0;
+  margin-top: 0;
 }
+
 .top-bar {
-  width: 100vw;
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 80px;
   justify-content: center;
+  width: 100vw;
 }
 
 .header-info {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100vw;
 }
 

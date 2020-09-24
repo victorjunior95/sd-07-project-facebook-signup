@@ -3,7 +3,6 @@
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  height: 20vh;
   justify-content: space-between;
   width: 100vw;
 }
@@ -15,11 +14,9 @@
 .form-group {
   display: flex;
   flex-direction: column;
+
 }
 
-.button-submit {
-  align-self: center;
-  background-color: rgb(66, 103, 178);
-  border: solid 0.5px black;
-  color: white;
+.form-control {
+  align-self: flex-end;
 }

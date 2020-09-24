@@ -25,3 +25,14 @@ body {
 .main-content {
   display: flex;
 }
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+}

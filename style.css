@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(211, 216, 232);
+  background: rgb(211, 216, 232);
   margin: 0;
 }
 
@@ -34,4 +34,20 @@ body {
 .form-control {
   align-self: flex-end;
   display: flex;
+}
+
+.main-content {
+  display: flex;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: wrap column;
+  width: 300px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
 }

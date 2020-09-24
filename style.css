@@ -1,4 +1,9 @@
+body {
+  margin-top: 0;
+  margin-left: 0;
+}
 .top-bar {
+  width: 100vw;
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -9,8 +14,8 @@
 .header-info {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  width: 980px;
+  justify-content: space-evenly;
+  width: 100vw;
 }
 
 .facebook-login {
@@ -23,7 +28,7 @@
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .user-name {

@@ -11,24 +11,43 @@
 <body>
     <header class="top-bar">
         <img src="imgs/facebook-logo.png" alt="Logotipo do facebook" class="facebook-logo" />
-
-        <div class="right-side">
-            <div class="facebook-login">
-                <div class="form-group">
-                    <label id="user-email-phone-label" for="email" class="user-email-phone">Email ou telefone</label>
-                    <input id="user-email-phone" type="email" name="email" class="user-email-phone"/>
-                </div>
-                <div class="form-group">
-                    <label id="user-password-label" for="password">Senha</label>
-                    <input id="user-password" type="password" id="password" name="password" class="password">
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-                <div class="form-control">
-                    <button id="button-login" class="button-login">Entrar</button>
-                </div>
+        <form class="facebook-login">
+            <div class="form-group">
+                <label id="user-email-phone-label" for="email" class="user-email-phone">Email ou telefone</label>
+                <input id="user-email-phone" type="email" name="email" class="user-email-phone" />
             </div>
-        </div>
+            <div class="form-group">
+                <label id="user-password-label" for="password">Senha</label>
+                <input id="user-password" type="password" id="password" name="password" class="password">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <div class="form-control">
+                <button id="button-login" class="button-login">Entrar</button>
+            </div>
+        </form>
     </header>
+
+    <main class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">
+                O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+            </p>
+            <img src="imgs/networking.png" alt="Rede do Facebook" id="facebook-networking" />
+        </div>
+
+        <div class="right-content">
+            <h1>Abra uma conta</h1>
+            <h5 class="quick-easy ">É rápido e fácil. </h5>
+
+            <form action="">
+                <div class="firstname-lastname">
+                    <input type="text" id="firstname" placeholder="Nome">
+                    <input type="text" id="lastname" placeholder="Sobrenome">
+                </div>
+
+            </form>
+        </div>
+    </main>
     <script src="script.js">
     </script>
 </body>

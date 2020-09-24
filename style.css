@@ -7,8 +7,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
   padding: 7px;
   align-items: stretch;
 }
@@ -46,11 +45,36 @@ body {
 .facebook-login {
   color: white;
   display: flex;
-  font-weight: bold;
   font-size: 12px;
+  font-weight: 600;
 }
 
 a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+button {
+  align-self: center;
+  height: 2vw;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  justify-content: flex-end;
+  width: 300px;
+}
+
+.firstname-lastname {
+    display: flex;
+}
+
+.firstname {
+    margin: 5px;
+}

@@ -6,14 +6,12 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  /* height: 80px; */
   justify-content: center;
   width: 100%;
   color:white;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: 700;
-  height: 80px;
   width: 100%;
 }
 
@@ -26,10 +24,16 @@ body {
   display: flex;
 }
 
+
+
 .form-container {
   display: flex;
   width:980px;
   justify-content: space-between;
+}
+
+.facebook-logo {
+  display: inline;
 }
 
 .login-button {

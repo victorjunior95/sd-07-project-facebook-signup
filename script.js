@@ -14,12 +14,8 @@ function validateForm() {
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
 
-  if ((firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '')) {
-    if ((birthdate.value !== '') || (password.value !== '')) {
-      isValid = true;
-    } else {
-      isValid = false;
-    }
+  if ((firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '') || (birthdate.value !== '') || (password.value !== '')) {
+    isValid = true;
   } else {
     isValid = false;
   }

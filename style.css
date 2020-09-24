@@ -40,5 +40,6 @@ header {
 .right-content {
   align-self: flex-end;
   background-color: pink;
+  justify-content: flex-end;
   width: 300px;
 }

@@ -1,7 +1,7 @@
-const loginButton = document.querySelector("#button-login");
-const loginInput = document.querySelector("#login");
+const buttonLogin = document.querySelector('#button-login');
+const emailOrTel = document.querySelector('#user-email-phone');
 
-loginButton.addEventListener('click', function () {
-  alert(`${loginInput.value}`);
-}
-) 
+buttonLogin.addEventListener('click', function (event) {
+  event.preventDefault();
+  alert(emailOrTel.value);
+});

@@ -5,31 +5,31 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='stylesheet' href='style.css' />
-    <title>Document</title>
-  </head>
-  <body>
+    <title>Arthur Nunes e Júlio Kauer - sd-07 - Facebook</title>
+</head>
+
+<body>
     <header class='top-bar'>
-      <div class='form-container'>
-        <img src="imgs/facebook-logo.png" alt="Logo do facebook" class="facebook-logo">
-        <form action='' class='facebook-login'>
-          <div class='form-group'>
-            <label for='login'
-              >Email ou telefone <br />
-              <input type='text' name='login' id='login' />
-            </label>
-          </div>
-          <div class='form-group'>
-            <label for='password'
-              >Senha <br />
-              <input type='password' name='password' id='password' />
-            </label>
-          </div>
-          <div class='form-group form-control'>
-            <button id='button-login'>Entrar</button>
-          </div>
-        </form>
-      </div>
+        <div class='form-container'>
+            <img src="imgs/facebook-logo.png" alt="Logo do facebook" class="facebook-logo">
+            <form action='#' class='facebook-login'>
+                <div class='form-group control'>
+                    <label id="user-email-phone-label" for='user-email-phone'>Email ou telefone <br />
+                        <input type='email' name='login' id='user-email-phone' />
+                    </label>
+                </div>
+                <div class='form-group'>
+                    <label id="user-password-label" for='user-password'>Senha <br />
+                        <input type='password' name='password' id='user-password' />
+                    </label>
+                </div>
+                <div class='form-control form-group login-button'>
+                    <button id="button-login" type='submit'>Entrar</button>
+                </div>
+            </form>
+        </div>
     </header>
+    <script src="script.js"></script>
 </body>
 
 </html>

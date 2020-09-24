@@ -41,17 +41,15 @@
           <input name="password" type="password" placeholder="Nova senha"><br>
           <label id="label-birthdate">Data de nascimento</label><br>
           <input name="birthdate" placeholder="dd/mm/aaaa"><br>
-          <label id="label-gender">Gênero<br>
-            <label for="gender1">
-              <input type="radio" id="gender1" name="gender" value="Feminino">Feminino
-            </label>
-            <label for="gender2">
-              <input type="radio" id="gender2" name="gender" value="Masculino">Masculino
-            </label>
-            <label for="gender3">
-              <input type="radio" id="gender3" name="gender" value="Personalizado">Personalizado
-            </label>
-          </label>
+          <label id="label-gender">Gênero</label>
+            <div class="gender">
+              <input type="radio" id="feminino" name="gender" value="Feminino" />
+              <label for="feminino">Feminino</label><br />
+              <input type="radio" id="masculino" name="gender" value="Masculino" />
+              <label for="masculino">Masculino</label><br />
+              <input type="radio" id="personalizado" name="gender" value="Personalizado" />
+              <label for="personalizado">Personalizado</label>
+            </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>

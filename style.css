@@ -38,3 +38,7 @@
 .names-container {
   display: flex;
 }
+
+.gender {
+  display: flex;
+}

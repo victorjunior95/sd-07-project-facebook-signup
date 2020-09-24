@@ -16,10 +16,10 @@ button.addEventListener('click', function () {
 
 facebookRegister.addEventListener('click', function () {
   let check = false;
-  let array = [firstname, lastname, phoneEmail, password, birthdate];
-  let arrayGender = [female, male, other];
+  const array = [firstname, lastname, phoneEmail, password, birthdate];
+  const arrayGender = [female, male, other];
   for (let index = 0; index < arrayGender.length; index += 1) {
-    if (arrayGender[index].checked == true) {
+    if (arrayGender[index].checked === true) {
       check = true;
     }
   }

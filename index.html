@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="top-bar">
         <img src="imgs/facebook-logo.png" class="facebook-logo" alt="Logo do Facebook">
@@ -34,14 +32,14 @@
         <section class="right-content">
             <h1>Abra uma conta</h1>
             <span class="quick-easy">É rápido e fácil.</span>
-            <form></form>
+            <form>
+                <input type="text" placeholder="Nome" name="firstname">
+                <input type="text" placeholder="Sobrenome" name="lastname">
+                <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+            </form>
         </section>
-        <div>
-            <input type="text" placeholder="Nome" name="firstname">
-            <input type="text" placeholder="Sobrenome" name="lastname">
-        </div>
     </main>
     <script src="script.js"></script>
 </body>
-
 </html>

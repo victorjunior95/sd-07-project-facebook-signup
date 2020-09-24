@@ -1,6 +1,9 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
 .facebook-login {
@@ -13,7 +16,11 @@
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
+}
+
+.user-name {
+  display: flex;
 }
 
 .main-content {
@@ -25,5 +32,5 @@
 }
 
 .right-content {
-  width: 300px;
+  width: 500px;
 }

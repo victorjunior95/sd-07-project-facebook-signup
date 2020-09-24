@@ -19,7 +19,7 @@ function conteudoBoasVindas(valores) {
     valores.push(inputs[7].value);
   }
   for (let i in valores) {
-    rightContent.innerHTML = rightContent.innerHTML + valores[i] + ' ';
+    rightContent.innerHTML = `${rightContent.innerHTML} ${valores[i]}`;
   }
 }
 

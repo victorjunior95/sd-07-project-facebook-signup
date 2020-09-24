@@ -10,7 +10,7 @@ loginButton.addEventListener('click', function () {
 registerButton.addEventListener('click', function () {
   for (let index = 0; index < formInputs.length; index += 1) {
     if (formInputs[index].value === '') {
-      alert("Campos inválidos");
+      alert('Campos inválidos');
       return;
     }
   }

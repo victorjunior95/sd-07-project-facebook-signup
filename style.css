@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 7px;
-  width: 100%;
+  align-items: stretch;
 }
 
 .user-email-phone {
@@ -20,8 +20,9 @@ body {
 
 .button-login {
   align-self: center;
-  background-color: rgb(76, 113, 188);
+  height: 50%;
   border-radius: 2px;
+  background-color: rgb(76, 113, 188);
 }
 
 .form-group {
@@ -29,13 +30,19 @@ body {
   flex-direction: column;
 }
 
+.right-side {
+  display: flex;
+  align-content: center;
+}
+
 .form-control {
   align-self: flex-end;
   display: flex;
+  height: 100%;
+  margin-left: 5px;
 }
 
 .facebook-login {
-  align-self: center;
   color: white;
   display: flex;
   font-size: 12px;

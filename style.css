@@ -6,7 +6,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -21,4 +21,10 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  padding-bottom: 9px;
 }

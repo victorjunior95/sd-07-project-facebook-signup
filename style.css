@@ -26,6 +26,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: stretch;
 }
 
 .left-content {
@@ -38,4 +39,5 @@
 
 .new-acount {
   display: flex;
+  flex-direction: row;
 }

@@ -15,10 +15,6 @@ body {
   display: flex;
 }
 
-.user-password {
-  margin: 10px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

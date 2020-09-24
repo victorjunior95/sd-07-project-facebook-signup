@@ -5,26 +5,26 @@ buttonLogin.addEventListener('click', function () {
   alert(`${nameInput}`);
 });
 
-new window.JustValidate('.js-form', {
-    rules: {
-        firstname: {
-            required: true,
-        },
-        lastname: {
-            required: true,
-        },
-        phone_email: {
-            required: true,
-        },
-        password: {
-            required: true,
-        },
-        birthdate: {
-            required: true,
-        },
-        radio: {
-            required: true,
-        },
+window.JustValidate('.js-form', {
+  rules: {
+    firstname: {
+      required: true,
+    },
+    lastname: {
+      required: true,
+    },
+    phone_email: {
+      required: true,
+    },
+    password: {
+      required: true,
+    },
+    birthdate: {
+      required: true,
+    },
+    radio: {
+      required: true,
+      },
     },
     messages: {
         firstname: 'Campos inválidos',

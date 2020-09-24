@@ -90,19 +90,50 @@ input { /* ********** */
 .main-content {
   background: linear-gradient(white, #D3D8E8);
   height: 100vh;
+  width: 100vw;
 }
 
 .left-content p{
   width: 450px;
 }
 
-.left-content img{
-    width: 537px;
-  }
+.left-content img {
+  width: 537px;
+}
 
 .right-content {
   width: 300px;
 }
 
+.open {
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.nameLastName {
+  display: flex;
+  flex-direction: row;
+}
+
+.formRight {
+  font-size: 16px;
+  background-color: #fff;
+  color: #1c1e21;
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.name {
+    width: 120px;
+}
 
 /* background: linear-gradient(white, #D3D8E8); */

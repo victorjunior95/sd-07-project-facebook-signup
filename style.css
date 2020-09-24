@@ -58,3 +58,8 @@ button {
 .left-content {
   width: 800px;
 }
+
+.right-content {
+  justify-content: flex-end;
+  width: 300px;
+}

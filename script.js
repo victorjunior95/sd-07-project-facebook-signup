@@ -11,6 +11,7 @@ personalizado.addEventListener('change', function () {
   select.placeholder = 'Gênero (opcional)';
   select.name = 'gender-custom';
   select.id = 'gender-custom';
+  select.type = "text";
   genero.appendChild(select);
 });
 // masculino.addEventListener('change', function () {

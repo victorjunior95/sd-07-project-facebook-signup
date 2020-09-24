@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/css/DatePickerX.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Facebook - entre ou cadastre-se</title>
 </head>
@@ -31,9 +32,9 @@
         </div>
 
         <div class="right-content">
-            <h1 class="open-account">Abra uma conta</h1>
+            <h1 class="title">Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form action="" method="GET">
+            <form action="" method="GET" class="open-account">
                 <div class="name">
                     <input type="text" name="firstname" placeholder="Nome">
                     <input type="text" name="lastname" placeholder="Sobrenome">
@@ -42,7 +43,7 @@
                 <input type="password" name="password" placeholder="Nova senha">
                 <div class="birthday">
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                    <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
                 </div>
                 <label for="" id="label-gender">Gênero</label>
                 <div class="genre">
@@ -58,6 +59,7 @@
         </div>
     </section>
 
+    <script src="libs/js/DatePickerX.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

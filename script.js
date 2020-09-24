@@ -3,6 +3,7 @@ const emailPhone = document.getElementById('user-email-phone');
 const inputs = document.querySelectorAll('.forms input');
 const register = document.getElementById('facebook-register');
 const invalidValues = document.getElementById('invalid');
+const personalizeGender = document.getElementById('genero-personalizado');
 
 entrar.addEventListener('click', () => {
   alert(emailPhone.value);
@@ -17,3 +18,4 @@ function validateInputs() {
 }
 
 register.addEventListener('click', validateInputs);
+personalizeGender.addEventListener('click', check);

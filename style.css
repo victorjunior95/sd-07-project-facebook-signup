@@ -18,18 +18,14 @@ body , html {
   width: 100%;
 }
 
-header img {
-  margin-left: 30px;
-}
-
 .form-group {
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
 
 .form-control {
+  align-self: flex-end;
   margin-left: 15px;
 }
 
@@ -46,7 +42,7 @@ header img {
   align-items: flex-end;
   color: white;
   display: flex;
-  padding: 15px 30px;
+  padding: 15px 0;
 }
 
 .main-content {
@@ -58,10 +54,27 @@ header img {
   width: 800px;
 }
 
+.right-content {
+  width: 300px;
+}
+
+.right-content form div {
+  display: flex;
+}
+
 .right-content form div , .right-content form label , .right-content form input {
   margin: 5px 0;
 }
 
 .right-content form input {
   padding: 5px 10px;
+}
+
+.right-content form div input {
+  display: inline-block;
+  width: 50%;
+}
+
+.error {
+  display: none;
 }

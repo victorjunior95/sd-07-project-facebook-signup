@@ -6,8 +6,8 @@ body , html {
 }
 
 .cadastro {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-bar {
@@ -18,15 +18,35 @@ body , html {
   width: 100%;
 }
 
+header img {
+  margin-left: 30px;
+}
+
 .form-group {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+}
+
+.form-control {
+  margin-left: 15px;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid rgb(26, 60, 128);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
 .facebook-login {
+  align-items: flex-end;
   color: white;
   display: flex;
+  padding: 15px 30px;
 }
 
 .main-content {
@@ -36,4 +56,12 @@ body , html {
 
 .left-content {
   width: 800px;
+}
+
+.right-content form div , .right-content form label , .right-content form input {
+  margin: 5px 0;
+}
+
+.right-content form input {
+  padding: 5px 10px;
 }

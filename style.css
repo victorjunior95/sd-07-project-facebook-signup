@@ -40,9 +40,9 @@
 }
 
 .new-acount {
+  align-items: stretch;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
 }
 
 .date-div {

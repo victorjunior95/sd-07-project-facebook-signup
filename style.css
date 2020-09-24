@@ -19,7 +19,7 @@ body {
 }
 
 .facebook-login {
-  align-self: flex-end;
+  justify-content: right;
   display: flex;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .facebook-logo {
-  align-self: flex-start;
+  justify-content: left;
 }
 
 .login-button {

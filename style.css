@@ -3,14 +3,14 @@
 }
 
 .form-control {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .form-group {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .left-content {
@@ -28,8 +28,7 @@
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
+  display: flex;
   justify-content: space-between;
 }
-

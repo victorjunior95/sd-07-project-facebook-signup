@@ -33,3 +33,16 @@ body {
 .right-content {
   width: 300px;
 }
+
+.name-container {
+  display: flex;
+}
+
+.row {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}

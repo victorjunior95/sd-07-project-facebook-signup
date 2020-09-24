@@ -50,7 +50,7 @@ function verificaRadio() {
     radios[2].checked === false
   ) {
     p.innerHTML = 'Campos inválidos';
-    break;
+    return 'false';
   }
 }
 
@@ -65,7 +65,9 @@ buttonRegister.addEventListener('click', function (event) {
     }
   }
   verificaRadio();
-  mostraTudo();
+  if (verificaRadio() !== 'false') {
+    mostraTudo();
+  }
 });
 
 //----------------------------------------------------------------------

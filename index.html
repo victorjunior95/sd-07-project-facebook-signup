@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="top-bar">
+        <!--css .top-bar 
+        display: flex;
+        background-Color: rgb(66, 103, 178);
+    -->
+        <div class="container-logo">
+            <!--css .container-logo
+                display: flex;
+                imagem alinhada a esquerda -->
+            <img src="./imgs/facebook-logo.png" alt="logo do facebook">
+        </div>
+        <form class="facebook-login" action="#" method="POST">
+            <!--css .facebook-login
+                display: flex;
+                alinhado a direita, dentro da barra azul
+            -->
+            <div class="form-group">
+                <!--css .form-group
+                    display: flex;
+                    alinhar o eixo principal para ser o eixo vertical "tipo flex-direction=column" -->
+                <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+                <input id="user-email-phone" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="user-password-label" id="user-password-label">Senha</label>
+                <input id="user-password" type="password" required>
+            </div>
+            <div class="form-control">
+                <!--css .form-control
+                    align-self: flex-end; -->
+                <button id="button-login">Entrar</button>
+                <!--css #button-login
+                    O botão deve estar alinhado a direita do campo de entrada para senha-->
+                <!-- javascript #button-login event click alert com valor do campo E-mail ou Telefone-->
+            </div>
+        </form>
+        <p>Esqueceu a conta?</p>
+        <!--este elemento deve estar abaixo do input senha-->
+    </div>
+    <div class="main-content">
+        <!-- css .main-content
+            display: flex;
+            flex-direction: row;
+            o elemento deve estar posicionado abaixo da barra azul
+        -->
+        <div class="left-content">
+            <!--css .left-content 
+                width: 800px;
+            -->
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
+            <img id="facebook-networking" src="./imgs/networking.png">
+        </div>
+        <div class="right-content">
+            <!--css .right-content
+                width: 300px;
+                justify-content com o valor mais apropriado para alinhar os conteúdos.
+                O elemento com a classe right-content deve estar a direita do elemento com a classe left-content
+            -->
+            <h1>Abra uma conta</h1>
+            <span classe="quick-easy">É rápido e fácil.</span>
+            <form id="" class="registration-form" action="#">
+                <div class="full-name">
+                    <input class="name" type="text" name="firstname" placeholder="Nome" required id="">
+                    <input class="lastname" type="text" name="lastname" placeholder="Sobrenome" required id="">
+                    <!--css #lastname
+                        há direita do nome
+                    -->
+                </div>
+                <div class="form-phone">
+                    <!--css .form-phone
+                        Posicione esse campo abaixo do campo do nome do usuário
+                    -->
+                    <input class="phone_email" type="text" name="phone_email" placeholder="Celular ou email" id=""
+                        required>
+                </div>
+                <div class="form-password">
+                    <!--css .form-password
+                        Posicione esse campo abaixo do celular/email
+                    -->
+                    <input class="password" type="password" name="password" placeholder="Nova senha" id="" required>
+                </div>
+                <div class="form-date">
+                    <!--css .form-date
+                        Posicione esse campo abaixo do rótulo
+                    -->
+                    <label id="abel-birthdate" for="">Data de nascimento</label>
+                    <input type="date" name="birthdate" placeholder="dd/mm/aaaa" id="" required>
+                </div>
+                <div class="form-genero">
+                    <label for="" id="label-gender">Gênero</label>
+                    <div class="gender-options">
+                        <input type="radio" name="gender" id="gender-f" required>
+                        <label for="gender-f">Feminino</label>
+                        <input type="radio" name="gender" id="gender-m" required>
+                        <label for="gender-m">Masculino</label>
+                        <input type="radio" name="gender" id="gender-p" required>
+                        <label for="gender-p">Personalizado</label>
+                        <!-- javascript #gender-p
+                            se clicar em personalizado
+                            input text name="gender-custom placeholder="Gênero (opcional)"
+                            O novo campo deve estar posicionado entre as opções de gênero e o botão "Cadastrar-se"
+                        -->
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                    <!--javascript #facebook-register
+                        validar os campos
+                        alert "Campos inválidos", dentro do formulário caso pelo menos um campo não esteja preenchido
+                    -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

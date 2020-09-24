@@ -8,6 +8,7 @@
   background-color: rgb(66 , 103 , 178);
   display: flex;
   width: 100%;
+  justify-content: space-around;
 }
 
 .email ,
@@ -19,9 +20,18 @@
 
 .facebook-login {
     display: flex;
-    justify-content: flex-end;
 }
 
-img {
-    justify-content: flex-start;
+.enviar {
+    border-radius: 2px;
+    background-color: rgb(rgb(76 , 113 , 188);)
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    align-self: flex-end;
 }

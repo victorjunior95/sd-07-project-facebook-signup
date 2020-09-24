@@ -42,4 +42,10 @@
 .new-acount {
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+}
+
+.date-div {
+  display: flex;
+  flex-direction: column;
 }

@@ -6,18 +6,16 @@ buttonLogin.addEventListener('click', function (event) {
 });
 
 
-function validateForm(){
+function validateForm() {
   let isValid = true;
   const firstName = document.querySelector('#first-name');
   const lastName = document.querySelector('#last-name');
   const phoneEmail = document.querySelector('#phone-email');
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
-  const masculine = document.querySelector('#masculine');
-  const feminine = document.querySelector('#feminine');
-  const custom = document.querySelector('#custom');
-  if ((firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '') ) {
-    if ((birthdate.value!== '') || (password.value !== '') ) {
+
+  if ((firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '')) {
+    if ((birthdate.value !== '') || (password.value !== '')) {
       isValid = true;
     } else {
       isValid = false;
@@ -25,7 +23,7 @@ function validateForm(){
   } else {
     isValid = false;
   }
-  return isValid
+  return isValid;
 }
 
 const buttonRegister = document.querySelector('#facebook-register');

@@ -1,0 +1,36 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  width: 100vw;
+  height: 12vh;
+  background-color: rgb(66, 103, 178);
+  margin: 0 auto;
+}
+
+.topo{
+    display: flex;
+}
+
+form{
+    display: flex;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-control {
+    align-self: flex-end;
+}
+

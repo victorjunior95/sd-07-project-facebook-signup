@@ -52,17 +52,29 @@
               name="firstname"
               placeholder="Nome"
               id="firstname"
+              required
             />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              required
+            />
           </div>
 
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            required
           />
 
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+            required
+          />
 
           <label id="label-birthdate" for="data-nasc">Data de nascimento</label>
           <input
@@ -70,15 +82,16 @@
             name="birthdate"
             placeholder="dd/mm/aaaa"
             id="data-nasc"
+            required
           />
 
           <label id="label-gender" for="">Gênero</label>
           <div class="conteiner-radio">
-            <input type="radio" name="gender" id="feminino" />
+            <input type="radio" name="gender" id="feminino" required />
             <label for="feminino">Feminino</label>
-            <input type="radio" name="gender" id="masculino" />
+            <input type="radio" name="gender" id="masculino" required />
             <label for="masculino">Masculino</label>
-            <input type="radio" name="gender" id="personalizado" />
+            <input type="radio" name="gender" id="personalizado" required />
             <label for="personalizado">Personalizado</label>
           </div>
 

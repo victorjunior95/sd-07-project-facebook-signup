@@ -13,5 +13,19 @@
 .form-group {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  
 }
 
+#user-email-phone-label{
+    justify-content: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content{
+    width: 800px;
+}

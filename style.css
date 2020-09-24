@@ -36,3 +36,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.form-name-lastname {
+    display: flex;
+}

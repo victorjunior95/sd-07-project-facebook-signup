@@ -8,11 +8,12 @@ body {
 .facebook-login {
   color: white;
   display: flex;
+  float: right;
   justify-content: center;
 }
 
 .facebook-logo {
-  align-self: flex-start;
+  float: left;
 }
 
 .form-control {

@@ -1,3 +1,6 @@
 body {
 	background: rgb(211, 216, 232);
 }
+.top-bar {
+	display: flexbox;
+}

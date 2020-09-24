@@ -15,8 +15,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .form-group {
@@ -27,8 +27,4 @@ body {
 .form-control {
   align-self: flex-end;
   height: 100%;
-}
-
-.button-login {
-  align-self: ;
 }

@@ -1,14 +1,10 @@
-.top-bar {
+.top-bar {    
+    background-color: rgb(66 , 103 , 178);
     display: flex;
-    background-color: rgb(66, 103, 178);
 }
 
 .email, .password {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-}
-
-.enviar {
-    
 }

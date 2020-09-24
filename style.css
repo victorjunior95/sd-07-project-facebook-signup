@@ -7,7 +7,7 @@
 
 .facebook-logo {
   display: flex;
-  float: left;
+  justify-content: flex-start;
 
 }
 
@@ -33,7 +33,7 @@
 
 }
 
-.fristname-lastname {
+.firstname-lastname {
   display: flex;
   flex-direction: row;
 

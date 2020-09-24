@@ -16,12 +16,10 @@ function checkForm() {
 for (let i = 0; i < 3; i += 1) {
   document.getElementsByName('genero')[i].addEventListener('click', function () {
     if ((document.querySelector('input[name="genero"]:checked').value) === 'Personalizado') {
-      document.querySelector('.personalizado').style.display = 'block'
+      document.querySelector('.personalizado').style.display = 'block';
+    } else {
+      document.querySelector('.personalizado').style.display = 'none';
     }
-    else {
-      document.querySelector('.personalizado').style.display = 'none'
-    }
-    
   })
 }
 

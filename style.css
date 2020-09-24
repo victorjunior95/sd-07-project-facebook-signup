@@ -37,6 +37,7 @@ body {
   width: 300px;
 }
 
-.form-name-lastname {
+.full-name {
   display: flex;
+  width: 100%;
 }

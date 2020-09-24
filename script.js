@@ -15,7 +15,7 @@ other.addEventListener('change', () => {
 });
 
 document.getElementById('button-login').addEventListener('click', () => {
-    const email = document.getElementById('user-email-phone').value;
-    const password = document.getElementById('user-password').value;
-    alert(email + password)
-})
+  const email = document.getElementById('user-email-phone').value;
+  const password = document.getElementById('user-password').value;
+  alert(email + password);
+});

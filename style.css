@@ -38,10 +38,6 @@ body {
   justify-content: space-around;
 }
 
-.form-group input {
-    align-items: baseline;
-}
-
 .top-bar img {
   align-items: center;
   justify-content: flex-start;

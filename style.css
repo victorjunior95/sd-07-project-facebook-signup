@@ -34,3 +34,8 @@
 .right-content {
   width: 300px;
 }
+
+.form-full-name {
+  display: flex;
+  justify-content: center;
+}

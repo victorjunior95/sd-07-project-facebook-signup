@@ -9,6 +9,7 @@ body {
   font-size: small;
   height: 65px;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .form-control {
@@ -20,10 +21,43 @@ body {
   flex-direction: column;
 }
 
+.left-content {
+  width: 800px;
+}
+
+.main-content {
+  background: linear-gradient(white, #d3d8e8);
+  display: flex;
+  min-height: 530px;
+}
+
+.right-content {
+  width: 300px;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
   min-height: 82px;
+}
+
+@media ( max-width : 480px ) {
+
+  .facebook-login {
+    display: none;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .right-content {
+    display: none;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
 }

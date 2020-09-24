@@ -1,1 +1,9 @@
 node_modules/
+teste.sh
+cypress.json
+package-lock.json
+package.json
+reporter.json
+cypress
+project-tests
+

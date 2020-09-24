@@ -3,7 +3,6 @@ botaoLogin.addEventListener('click', function() {
   let emailTelefone = document.querySelector('#user-email-phone').value;
   alert(emailTelefone);
 });
-
 let dayButton = document.querySelector('#day');
 let monthButton = document.querySelector('#month');
 let yearButton = document.querySelector('#year');

@@ -1,4 +1,10 @@
+body {
+  margin: 0;
+}
+
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  min-height: 82px;
 }

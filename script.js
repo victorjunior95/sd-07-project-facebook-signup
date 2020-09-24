@@ -18,3 +18,15 @@ enrrolmentButton.addEventListener('click', function (event) {
     }
   }
 });
+
+document.getElementById('other').addEventListener('click', function () {
+  document.getElementById('gender-personalized').classList.remove('gender-personalized');
+});
+
+document.getElementById('female').addEventListener('click', function () {
+  document.getElementById('gender-personalized').classList.add('gender-personalized');
+});
+
+document.getElementById('male').addEventListener('click', function () {
+  document.getElementById('gender-personalized').classList.add('gender-personalized');
+});

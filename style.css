@@ -54,3 +54,7 @@ header {
 .gender-option {
   display: flex;
 }
+
+.gender-personalized {
+  display: none;
+}

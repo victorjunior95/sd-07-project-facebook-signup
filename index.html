@@ -38,7 +38,7 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="">
+        <form action="" id="register" novalidate>
           <div class="main-form">
             <div class="short-input">
               <input name="firstname" type="text" placeholder="Nome" />
@@ -57,11 +57,10 @@
               placeholder="dd/mm/aaaa"
               id="data"
             />
-            <label for="" id="label-birthdate">Data de nascimento</label>
+            <label for="" id="label-gender">Data de nascimento</label>
             <div class="gender">
               <input type="radio" id="male" name="gender" value="male" />
               <label for="male">Feminino</label>
-
               <input type="radio" id="female" name="gender" value="female" />
               <label for="female">Masculino</label>
               <input
@@ -73,6 +72,7 @@
               <label for="personalizado" id="label-gender">Personalizado</label>
             </div>
           </div>
+          <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>
     </div>

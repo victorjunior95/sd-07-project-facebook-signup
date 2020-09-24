@@ -48,8 +48,8 @@ body {
 
 .login-button button {
   background-color: #4266b2;
-  border-radius: 1px;
   border: 1px solid #2f4c84;
+  border-radius: 1px;
   color: white;
   font-family: sans-serif;
   font-size: 12px;

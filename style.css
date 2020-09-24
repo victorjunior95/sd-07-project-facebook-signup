@@ -3,7 +3,13 @@ body {
   padding: 0;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
@@ -13,7 +19,6 @@ body {
   display: flex;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+.form-control {
+  align-self: flex-end;
 }

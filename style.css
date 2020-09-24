@@ -39,3 +39,16 @@ header {
 .right-content {
   width: 300px;
 }
+
+.forms {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.name-lastname {
+  flex-flow: row wrap;
+}
+
+.phone_email , .password , .birthdate {
+  width: 91%;
+}

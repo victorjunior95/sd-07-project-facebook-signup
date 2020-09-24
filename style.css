@@ -6,5 +6,17 @@
 
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178)
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-login {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-subcontainer {
+  display: flex;
+  flex-flow: column nowrap;
 }

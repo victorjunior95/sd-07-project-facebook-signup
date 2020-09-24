@@ -1,5 +1,5 @@
-let buttonLogin = document.querySelector('#button-login');
-let emailOrTel = document.querySelector('#user-email-phone');
+const buttonLogin = document.querySelector('#button-login');
+const emailOrTel = document.querySelector('#user-email-phone');
 
 buttonLogin.addEventListener('click', function (event) {
   event.preventDefault();

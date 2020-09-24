@@ -32,6 +32,7 @@ body {
 }
 
 .main-content {
+  align-items: center;
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   min-height: 530px;

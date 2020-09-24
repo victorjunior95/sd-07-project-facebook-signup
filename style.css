@@ -2,35 +2,18 @@ body {
   margin: 0;
 }
 
-header {
-  padding: 0;
-  width: 100%;
-}
-
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
-  width: 1366px;
-}
-
-.facebook-login {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .form-group {
   display: flex;
-  align-content: center;
-  padding-left: 20px;
-}
-
-.form-control {
-  align-self: flex-end;
-  padding-left: 20px;
-}
-
-.form-control {
-  align-content: center;
+  flex-direction: column;
 }

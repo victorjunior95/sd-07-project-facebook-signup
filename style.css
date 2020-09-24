@@ -1,29 +1,29 @@
 .top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: flex-start;
-}
+    align-items: center;
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .facebook-login {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .input {
+    margin: 5px;
+  }
+  
+  .label-top-bar {
+    color: white;
+    font-weight: 800;
+  }
+  
+  .paragraph {
+    color: lightgrey;
+  }
 
-.facebook-login {
-  display: flex;
-  margin-left: auto;
-}
-
-.input {
-  margin: 5px;
-}
-
-.label-top-bar {
-  color: white;
-  font-weight: 800;
-}
-
-.paragraph {
-  color: lightgrey;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
+  .form-group {
+      display: flex;
+      flex-direction: column;
+  }

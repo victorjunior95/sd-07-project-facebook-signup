@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0;
+	padding: 0;
+	font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
 }
 
 .facebook-login {
@@ -17,6 +18,10 @@ body {
   margin-right: 10px;
 }
 
+.form-group label {
+	color: rgb(255, 255, 255);
+}
+
 .top-bar {
   display: flex;
   max-width: 1366px;
@@ -24,4 +29,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5px 10px;
+}
+
+.form-control {
+    display: flex;
+    align-self: flex-end;
 }

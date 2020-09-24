@@ -2,3 +2,16 @@
   background-color: rgb(66, 103, 178);
   display: flex;
 }
+
+.facebook-logo {
+  align-self: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}

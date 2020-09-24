@@ -26,29 +26,38 @@
   <!-- Conteúdo principal -->
   <div class="main-content">
     <div class="left-content">
-      <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" alt="">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <img id="facebook-networking" src="imgs/networking.png" alt="">
     </div>
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rapido e fácil.</p>
       <form>
-        <div class="name-container">
+        <div id="name-container" class="new-acount">
           <input name="firstname" placeholder="Nome" type="text">
           <input name="lastname" placeholder="Sobrenome" type="text">
         </div>
-        <div class="newpassword">
+        <div class="new-acount">
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+        </div>
+        <div class="new-acount">
           <input name="password" placeholder="Nova senha" type="password">
         </div>
-        <div class="genero">
-          <label id="label-gender">
-            <input type="radio" value="Feminino"><label for="Feminino">Feminino</label>
-            <input type="radio" value="Masculino"><label for="Masculino">Masculino</label>
-            <input type="radio" value="Personalizado"><label for="Personalizado">Personalizado</label>
-          </label>
+        <div class="new-acount">
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
-      </form>
     </div>
+    <div class="new-acount">
+      <label id="label-gender">
+        <input type="radio" value="Feminino"><label for="Feminino">Feminino</label>
+        <input type="radio" value="Masculino"><label for="Masculino">Masculino</label>
+        <input type="radio" value="Personalizado"><label for="Personalizado">Personalizado</label>
+      </label>
+    </div>
+    <button id="facebook-register" type="submit">Cadastre-se</button>
+    </form>
+  </div>
   </div>
   <script src="script.js"></script>
 </body>

@@ -1,9 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 .top-bar {
-  background-color: rgb(66 ,103 ,178);
+  background-color: rgb(66 , 103 , 178);
   display: flex;
   width: 100%;
 }
@@ -13,4 +15,8 @@
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+}
+
+.facebook-login {
+    display: flex;
 }

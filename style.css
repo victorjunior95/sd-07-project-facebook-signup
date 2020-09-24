@@ -4,7 +4,7 @@
   color: white;
   display: flex;
   height: 20vh;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100vw;
 }
 

@@ -22,3 +22,4 @@ buttonRegister.addEventListener('click', function () {
     }
   }
 });
+

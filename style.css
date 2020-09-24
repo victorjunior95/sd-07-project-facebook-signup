@@ -83,6 +83,9 @@ body {
   padding: 20px 10px;
   padding-bottom: 10px;
 }
+.top-bar img {
+  height: 100px;
+}
 
 .left-content img {
   width: 800px;

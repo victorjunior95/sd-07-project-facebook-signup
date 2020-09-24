@@ -37,4 +37,10 @@
 
 .forms-register {
   display: flex;
+  flex-direction: column;
+}
+
+.lado-lado {
+  display: flex;
+  flex-direction: row;
 }

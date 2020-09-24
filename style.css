@@ -6,10 +6,15 @@
   align-self: flex-end;
 }
 
+.form-name {
+  display: flex;
+  flex-direction: row;
+}
+
 .form-group {
   align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .left-content {
@@ -23,6 +28,7 @@
 
 .register input {
   width: 50%;
+  flex-direction: row;
 }
 
 .right-content {

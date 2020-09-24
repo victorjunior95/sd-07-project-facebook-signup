@@ -16,22 +16,18 @@ body {
 .facebook-login {
   color: white;
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 input {
   border: solid 1px rgb(9, 9, 138);
-  margin-right: 5px;
-}
-
-.logo {
-  margin: auto;
+  margin-right: 10px;
+  padding: 5px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
 .form-control {
@@ -42,7 +38,8 @@ input {
   background-color: rgb(75, 110, 195);
   border: solid 1px rgb(9, 9, 138);
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 5px;
 }
 
 .button-login:hover {

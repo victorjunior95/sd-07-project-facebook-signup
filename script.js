@@ -13,6 +13,18 @@ function checkForm() {
   }
 }
 
+for (let i = 0; i < 3; i += 1) {
+  document.getElementsByName('genero')[i].addEventListener('click', function () {
+    if ((document.querySelector('input[name="genero"]:checked').value) === 'Personalizado') {
+      document.querySelector('.personalizado').style.display = 'block'
+    }
+    else {
+      document.querySelector('.personalizado').style.display = 'none'
+    }
+    
+  })
+}
+
 document.body.onload = function () {
   document.querySelectorAll('form').forEach((form) => {
     form.addEventListener('submit', (e) => e.preventDefault());

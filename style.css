@@ -78,3 +78,7 @@ body , html {
 .error {
   display: none;
 }
+
+.personalizado {
+    display: none;
+}

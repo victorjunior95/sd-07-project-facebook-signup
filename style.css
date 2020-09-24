@@ -24,12 +24,12 @@
 
 .left-content {
   background-color: burlywood;
-  width: 800px;
   display: flex;
+  width: 800px;
 }
 
 .right-content {
   background-color: cadetblue;
-  width: 300px;
   display: flex;
+  width: 300px;
 }

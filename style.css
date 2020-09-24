@@ -27,9 +27,16 @@
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
 .subscription-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-name {
   display: flex;
 }

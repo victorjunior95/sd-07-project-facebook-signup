@@ -33,3 +33,8 @@
 .right-content {
   width: 300px;
 }
+
+.name {
+  display: flex;
+  flex-direction: row;
+}

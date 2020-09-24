@@ -21,3 +21,7 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
+.left-content {
+  width: 800px;
+}

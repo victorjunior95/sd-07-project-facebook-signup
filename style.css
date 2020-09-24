@@ -1,0 +1,23 @@
+.top-bar{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: rgb(66, 103, 178);
+    height: 100px;
+    width: 100%;        
+}
+.facebook-logo{
+    align-self: flex-start;
+}
+.facebook-login{
+    display: flex;
+    flex-flow: column;
+}
+.form-group{
+    display: flex;
+    flex-flow: column;
+}
+.form-control{
+    align-self: flex-end;
+}

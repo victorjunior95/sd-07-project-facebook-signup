@@ -12,9 +12,8 @@ enrrolmentButton.addEventListener('click', function (event) {
   const inputList = document.getElementsByClassName('form-field');
 
   for (let index = 0; index < inputList.length; index += 1) {
-
     if (inputList[index].value === '') {
-      document.getElementById('invalid-field').style.display = "block";
+      document.getElementById('invalid-field').style.display = 'block';
     }
   }
 });

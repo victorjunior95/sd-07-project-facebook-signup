@@ -1,0 +1,14 @@
+.top-bar {
+    display: flex;
+    background-color: rgb(66, 103, 178);
+}
+
+.email, .password {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.enviar {
+    
+}

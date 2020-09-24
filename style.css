@@ -24,6 +24,10 @@ body {
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
 }

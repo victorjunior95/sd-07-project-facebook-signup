@@ -20,7 +20,7 @@ body {
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .form-container {
@@ -30,7 +30,7 @@ body {
 }
 
 .facebook-logo {
-  justify-content: flex-start;
+  align-self: flex-start;
 }
 
 .login-button {
@@ -43,7 +43,7 @@ body {
 }
 
 .form-control {
-  justify-content: flex-end;
+  align-self: flex-end;
 
 }
 

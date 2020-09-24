@@ -17,4 +17,8 @@
   width: 300px;
 }
 
+.form-name {
+  display: flex;
+}
+
 /* main-content */

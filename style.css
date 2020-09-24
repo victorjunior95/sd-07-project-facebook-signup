@@ -4,11 +4,13 @@
   float: right;
 
 }
+
 .facebook-logo {
   display: flex;
   float: left;
 
 }
+
 .facebook-slogan {
   font-size: 20px;
   line-height: 29px;
@@ -17,43 +19,51 @@
   word-spacing: -1px;
 
 }
+
 .form-control {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
 
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
 
 }
+
 .fristname-lastname {
   display: flex;
   flex-direction: row;
 
 }
+
 .gender {
   display: flex;
   flex-direction: row;
 
 }
+
 .left-content {
   float: left;
   width: 800px;
 
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
 }
+
 .right-content {
   float: right;
   width: 300px;
 
 }
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);

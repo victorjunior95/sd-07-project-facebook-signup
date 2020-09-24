@@ -6,6 +6,7 @@ body {
 .top-bar {
   background-color: rgb(66 , 103 , 178);
   display: flex;
+  justify-content: space-evenly;
 }
 
 .facebook {
@@ -16,3 +17,20 @@ body {
   display: flex;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  
+}

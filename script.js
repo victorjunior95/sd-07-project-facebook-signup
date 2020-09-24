@@ -4,7 +4,7 @@ buttonLogin.addEventListener('click', function () {
   alert(value);
 });
 
-window.JustValidate('form-register', {
+const justValidate = new window.JustValidate('.form-register', {
   rules: {
     firstname: {
       required: true,
@@ -32,3 +32,7 @@ window.JustValidate('form-register', {
     },
   },
 });
+
+window.onload = function () {
+  return justValidate;
+};

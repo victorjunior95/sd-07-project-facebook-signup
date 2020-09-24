@@ -1,20 +1,16 @@
-* {
+ body{
+    background-color: yellow;
     margin: 0;
-    padding: 0;
-    font-size: 100%;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
-
-.btn_entrar {
+ .btn_entrar {
     margin-left: 15px;
 }
 
-.facebook-login {
+ .facebook-login {
     display: flex;
 }
 
-header {
+ header {
     background-color: rgb(66, 103, 178);
     width: 100%;
     position: absolute;
@@ -24,8 +20,6 @@ header {
     justify-content: space-around;
 }
 
-header img {
+ header img {
     width: 200px;
-
-
 }

@@ -6,12 +6,15 @@ body {
 }
 
 .top-bar {
+
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  border-bottom: 1px solid rgb(19, 55, 131);
 	display: flex;
-	background-color: rgb(66, 103, 178);
 	justify-content: space-around;
 	height: 80px;
-	border-bottom: 1px solid rgb(19, 55, 131);
-	align-items: center;
+
+
 }
 
 .facebook-logo {

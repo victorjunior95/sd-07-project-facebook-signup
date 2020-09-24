@@ -17,10 +17,16 @@ body {
   height: 100vh;
 }
 
-.top-bar{
+.top-bar {
+    align-items: center;
     background-color: rgb(66, 103, 178);
-    height: 100px;
+    height: 80px;
     width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 
@@ -30,4 +36,19 @@ header {
     justify-content: center;
     width: 100%;
     height: 100px;
+}
+
+.facebook-logo {
+    
+    
+}
+
+.facebook-login {
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;  
 }

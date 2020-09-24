@@ -1,37 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .top-bar {
-    background-color: rgb(66, 103, 178);
-    display: flex;
-    justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .left-content {
-    width: 800px;
-    background-color: aqua;
+  width: 800px;
 }
 
 .rigth-content {
-    width: 300px;
-    background-color: brown;
+  display: flex;
+  width: 300px;
 }
 
 .main-content {
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }

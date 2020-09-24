@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.top-bar {
+    display: flex;
+    background-color: rgb(66,103,178);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facebook-login {
+    display: flex;
+}
+
+.facebook-login input {
+    width: 200px;
+}

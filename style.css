@@ -5,18 +5,12 @@
   justify-content: space-between;
 }
 
-/*
+
 .facebook-login {
   display: flex;
-  flex-direction: row;
 }
 
 .form-group {
-  align-self: flex-end;
-  color: white;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 10px;
 }
-*/
+

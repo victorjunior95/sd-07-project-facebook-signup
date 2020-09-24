@@ -1,1 +1,7 @@
 node_modules/
+cypress
+package.json
+package-lock.json
+yarn.lock
+cypress.json
+reporter.json

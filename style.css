@@ -30,11 +30,15 @@ body {
 }
 
 .left-content {
-  max-width: 800px;
+  width: 800px;
   padding: 10px;
 }
 
 .right-content {
-  max-width: 300px;
+  width: 300px;
   padding: 10px;
+}
+
+.fullname-form {
+  display: flex;
 }

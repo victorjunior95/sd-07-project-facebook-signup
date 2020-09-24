@@ -26,7 +26,7 @@
             <button id="button-login">Entrar</button>
           </div>
         </form>
-    </div>
+      </div>
     </header>
 
     <section class="main-content">
@@ -41,35 +41,82 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="">
+        <form action="" id="signup-form">
           <div class="user-name">
-            <input type="text" name="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
-        </div>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+              oninvalid="this.setCustomValidity('Campos inválidos')"
+              oninput="setCustomValidity('')"
+              required
+            />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              oninvalid="this.setCustomValidity('Campos inválidos')"
+              oninput="setCustomValidity('')"
+              required
+            />
+          </div>
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            oninvalid="this.setCustomValidity('Campos inválidos')"
+            oninput="setCustomValidity('')"
+            required
           />
           <div>
-            <input type="password" name="password" placeholder="Nova senha" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Nova senha"
+              oninvalid="this.setCustomValidity('Campos inválidos')"
+              oninput="setCustomValidity('')"
+              required
+            />
           </div>
           <div>
             <label for="" id="label-birthdate">Data de nascimento</label>
           </div>
           <div>
-            <input type="date" name="birthdate" placeholder="dd/mm/aaaa" />
+            <input
+              type="date"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+              oninvalid="this.setCustomValidity('Campos inválidos')"
+              oninput="setCustomValidity('')"
+              required
+            />
           </div>
           <div>
             <label for="" id="label-gender">Gênero</label>
           </div>
           <div>
-            <input type="radio" name="Feminino" id="" />
-            <label for="Feminino">Feminino</label>
-            <input type="radio" name="Masculino" id="" />
-            <label for="Masculino">Masculino</label>
-            <input type="radio" name="Personalizado" id="" />
-            <label for="Personalizado">Personalizado</label>
+            <input
+              type="radio"
+              name="gender"
+              value="Feminino"
+              id="feminino"
+              required
+            />
+            <label for="feminino">Feminino</label>
+            <input
+              type="radio"
+              name="gender"
+              value="Masculino"
+              id="masculino"
+            />
+            <label for="masculino">Masculino</label>
+            <input
+              type="radio"
+              name="gender"
+              value="Personalizado"
+              id="personalizado"
+            />
+            <label for="personalizado">Personalizado</label>
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>

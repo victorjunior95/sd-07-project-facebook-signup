@@ -1,4 +1,65 @@
+body {
+
+  background: white;
+}
+.facebook-login {
+
+  display: flex;
+  color: white;
+  float: right;
+}
+.facebook-logo {
+
+  display: flex;
+  float: left;
+}
+.facebook-slogan {
+
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+.form-control {
+
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.form-group {
+
+  display: flex;
+  flex-direction: column;
+}
+.fristname-lastname {
+
+  display: flex;
+  flex-direction: row;
+}
+.gender {
+
+  display: flex;
+  flex-direction: row;
+}
+.left-content {
+
+  width: 800px;
+  float: left;
+}
+.main-content {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.right-content {
+
+  width: 300px;
+  float: right;
+}
 .top-bar {
+
   display: flex;
   justify-content: space-around;
   background-color: rgb(66, 103, 178);
@@ -6,56 +67,4 @@
   padding-top: 13px;
   height: 82px;
   align-items: center;
-}
-.facebook-logo {
-  display: flex;
-  float: left;
-}
-.facebook-login {
-  display: flex;
-  color: white;
-  float: right;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-.form-control {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-}
-.main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.left-content {
-  width: 800px;
-  float: left;
-}
-.right-content {
-  width: 300px;
-  float: right;
-}
-.fristname-lastname {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.gender {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.facebook-slogan {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 29px;
-  margin-top: 40px;
-  width: 450px;
-  word-spacing: -1px;
-}
-body{
-  background:#fff
 }

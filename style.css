@@ -1,5 +1,25 @@
+<<<<<<< HEAD
 .form-group {
     display: flex;
     flex-direction: column;
     align-self: flex-end
 }
+=======
+html , body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+}
+>>>>>>> b357962a3fb1ab19e70eae78603aedf1e898a605

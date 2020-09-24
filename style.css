@@ -46,3 +46,7 @@
   display: flex;
   flex-direction: column;
 }
+
+.new-acount-buttons {
+  flex-direction: column;
+}

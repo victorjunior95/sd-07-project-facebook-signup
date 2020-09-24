@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 7px;
-  align-items: stretch;
 }
 
 .user-email-phone {
@@ -20,19 +19,14 @@ body {
 
 .button-login {
   align-self: center;
-  height: 50%;
   border-radius: 2px;
   background-color: rgb(76, 113, 188);
+  height: 50%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.right-side {
-  display: flex;
-  align-content: center;
 }
 
 .form-control {

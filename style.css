@@ -1,12 +1,11 @@
 body {
-  font-size: 14pt;
   margin: 0;
   padding: 0;
 }
 
 .container-fluid {
-  background: rgb(9,9,121);
-  background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(255,255,255,1) 0%, rgba(148,147,171,1) 100%);
+  background: linear-gradient(180deg, rgba(9, 9, 121, 1) 0%,
+  white 0%, rgba(148, 147, 171, 1) 100%);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -15,8 +14,8 @@ body {
 
 .container {
   height: 100vh;
-  width: 1000px;
   margin: auto;
+  width: 1000px;
 }
 
 .top-bar {
@@ -28,8 +27,8 @@ body {
 header {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: center;
   height: 100px;
+  justify-content: center;
   width: 100%;
 }
 
@@ -40,9 +39,7 @@ header {
 
 .main-content {
   display: flex;
-  /*flex-direction: column;*/
   width: 100%;
-  
 }
 
 footer {
@@ -60,32 +57,34 @@ footer {
 }
 
 .facebook-slogan {
-  font-family: 'Lucida Grande', 'Lucida Sans Regular', 'Lucida sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #0e385f;
+  font-family: Lucida Grande, Lucida Sans Regular, 
+  Lucida sans, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
   font-size: 10pt;
   font-weight: 900;
-  color: #0e385f
 }
 
 .right-content {
-  width: 300px;
   padding-top: 20px;
-  
+  width: 300px;
 }
 
 .right-content h1 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(20, 20, 20);
+  font-family: Lucida Sans, Lucida Sans Regular, 
+  Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;  
 }
+
 .right-content p {
-  font-family: 'Lucida Grande', 'Lucida Sans Regular','Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(20, 20, 20);
+  font-family: Lucida Grande, Lucida Sans Regular, 
+  Lucida Sans, Lucida Sans Unicode , Geneva, Verdana, sans-serif;
   font-size: 10pt;
   margin-top: 10px;
-  color: rgb(20, 20, 20);
 }
 
 .facebook-networking {
   width: 400px;
 }
-

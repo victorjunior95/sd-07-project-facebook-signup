@@ -4,10 +4,10 @@
   display: flex;
 }
 
-/* .form-group {
+.form-group {
+  align-items: center;
   display: flex;
-
-} */
+}
 
 /* main-content */
 .main-content {

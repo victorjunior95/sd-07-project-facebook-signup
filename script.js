@@ -15,8 +15,6 @@ btnValidate.addEventListener('click', function () {
   const birthdate = document.forms['form-facebook'].birthdate.value;
   const gender = document.forms['form-facebook'].gender.value;
 
-  console.log(document.forms['form-facebook'].firstname.value);
-
   if (verifyEmpty([firstname, lastname, phoneEmail, password, birthdate, gender])) {
     const p = document.getElementsByClassName('invalided')[0];
     p.innerText = 'Campos inválidos';

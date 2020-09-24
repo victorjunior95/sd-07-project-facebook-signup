@@ -34,7 +34,7 @@ header {
 
 }
 
-.field-group-login {
+.form-group {
   display: flex;
   flex-direction: column;
   padding: 10px;

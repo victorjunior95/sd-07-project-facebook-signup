@@ -15,17 +15,15 @@
 
 .left-content {
   width: 800px;
-  background-color: yellow;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .right-content {
   width: 300px;
-  background-color: teal;
 }
 
 .top-bar {

@@ -2,12 +2,11 @@
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .facebook-login {
-  display: flex;
-  margin: 5px;
+  margin-left: auto;
 }
 
 .input {

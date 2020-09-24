@@ -60,3 +60,7 @@ header {
     display: flex;
     flex-direction: column;  
 }
+
+.class-teste {
+  padding: 5px;
+}

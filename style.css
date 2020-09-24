@@ -16,7 +16,7 @@
   flex-flow: row nowrap;
 }
 
-.form-subcontainer {
+.form-group {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }

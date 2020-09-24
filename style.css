@@ -6,3 +6,12 @@
 .facebook-login {
   display:flex;
 }
+
+.facebook-logo {
+  justify-content: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}

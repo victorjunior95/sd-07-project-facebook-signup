@@ -1,5 +1,5 @@
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .form-control {
@@ -12,12 +12,25 @@
     flex-direction: column;
 }
 
+.left-content {
+    width: 800px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.right-content {
+    width: 300px;
+}
+
 .top-bar {
     background-color: rgb(66, 103, 178);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
 }
+
 
 

@@ -35,24 +35,24 @@
             <h4 class="quick-easy">É rápido e fácil.</h4>
             <form method="get">
                 <div>
-                    <input type="text" placeholder="Nome" name="firstname">
-                    <input type="text" placeholder="Sobrenome" name="lastname">
+                    <input type="text" placeholder="Nome" name="firstname" required="required">
+                    <input type="text" placeholder="Sobrenome" name="lastname" required="required">
                 </div>
                 <div>
-                    <input type="text" placeholder="Celular ou email" name="phone_email">
+                    <input type="text" placeholder="Celular ou email" name="phone_email" required="required">
                 </div>
                 <div>
-                    <input type="password" placeholder="Nova senha" name="password">
+                    <input type="password" placeholder="Nova senha" name="password" required="required">
                 </div>
                 <div>
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input type="date" placeholder="dd/mm/aaaa" name="birthdate">
+                    <input type="date" placeholder="dd/mm/aaaa" name="birthdate" required="required">
                 </div>
                 <div>
-                    <label id="label-gender">Gênero</label><br>
-                    <input  id="feminino" type="radio"name="feminino" value="feminino"><label for="feminino" >Feminino</label>
-                    <input  id="masculino" type="radio" name="masculino" value="masculino"><label for="masculino" >Masculino</label>
-                    <input  id="personalizado" type="radio" name="personalizado" value="personalizado" ><label for="personalizado" >Personalizado</label>
+                    <label required="required" id="label-gender">Gênero</label><br>
+                    <label for="feminino" ><input  id="feminino" type="radio"name="feminino" value="feminino">Feminino</label>
+                    <label for="masculino" ><input  id="masculino" type="radio" name="masculino" value="masculino">Masculino</label>
+                    <label for="personalizado" ><input  id="personalizado" type="radio" name="personalizado" value="personalizado" >Personalizado</label>
                     <input id="genero-personalizado" class="genero-personalizado" type="text" name="gender-custom" placeholder="Gênero (opcional)">
                 </div>
                 <div>

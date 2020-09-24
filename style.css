@@ -19,8 +19,8 @@ body {
 }
 
 .facebook-login {
-  justify-content: right;
   display: flex;
+  justify-content: flex-end;
 }
 
 .form-container {
@@ -30,7 +30,7 @@ body {
 }
 
 .facebook-logo {
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .login-button {

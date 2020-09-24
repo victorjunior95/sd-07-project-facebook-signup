@@ -24,3 +24,12 @@
   align-self: flex-end;
   display: flex;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
+}

@@ -40,13 +40,18 @@
                 <p class="quick-easy">É rápido e fácil</p>
                 <form action="" method="GET">
                     <div class="fullname-form">
+
                         <label for="firstname"></label>
                         <input name="firstname" type="text" pattern="[A-Za-z{1,})" title = "Campos inválidos" placeholder="Nome" required="required">
 
                         <label for="lastname"></label>
                         <input name="lastname" type="text" pattern="[A-Za-z{1,})" title = "Campos inválidos" placeholder="Sobrenome" required="required">
 
-                    </div>                    
+                    </div>
+                    <div>
+                        <label for="phone_email"></label>
+                        <input name="phone_email" type="text" pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$" title = "Campos inválidos" placeholder="Celular ou email" required="required">
+                    </div>
                 </form>
             </div>
         </section>

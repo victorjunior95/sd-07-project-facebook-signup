@@ -4,9 +4,14 @@
   display: flex;
   justify-content: space-between;
 }
-  
+
 .facebook-login {
   display: flex;
   justify-content: flex-end;
   width: 45%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }

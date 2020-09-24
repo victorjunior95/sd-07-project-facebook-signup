@@ -15,11 +15,15 @@ body {
   display: flex;
 }
 
+.facebook-login label {
+  color: white;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group .label {
-  color: white;
+.form-control {
+  align-self: flex-end;
 }

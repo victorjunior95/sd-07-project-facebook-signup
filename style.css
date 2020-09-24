@@ -19,8 +19,8 @@ body {
 }
 
 .facebook-login {
-  display: flex;
   align-self: flex-end;
+  display: flex;
 }
 
 .form-container {
@@ -44,7 +44,6 @@ body {
 
 .form-control {
   align-self: flex-end;
-
 }
 
 .login-button button {

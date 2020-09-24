@@ -39,3 +39,13 @@
 .genero-personalizado {
   display: none;
 }
+
+.full-name{
+  display: flex;
+  flex-direction: row;
+}
+
+.create-account-form{
+  display: flex;
+  flex-direction: column;
+}

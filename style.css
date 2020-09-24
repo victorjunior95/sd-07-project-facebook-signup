@@ -24,7 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  
 }
 
 .form-group > button {
@@ -41,10 +40,28 @@ body {
 }
 
 .rigth-content {
-  width: 300px;
   justify-content: flex-end;
+  width: 300px;
 }
 
 .quick-easy {
   font-size: medium;
+}
+
+.main-content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.form-input {
+  margin: 2px;
+  width: 45%;
+}
+
+.form-input-big {
+  margin: 2px;
+  width: 94%;
 }

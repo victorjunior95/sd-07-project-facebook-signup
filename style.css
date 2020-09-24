@@ -1,30 +1,38 @@
+.facebook-login {
+    display: flex;
+  }
+
 .form-control {
   align-self: flex-end;
 }
-.facebook-login {
-  display: flex;
-}
+
 .form-group {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .left-content {
   width: 800px;
 }
+
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .right-content {
   width: 300px;
   background-color: aquamarine;
 }
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
 }
-#user-email-phone-label {
+
+/* #user-email-phone-label {
   justify-content: center;
 }
+ */

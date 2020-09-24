@@ -33,3 +33,7 @@ body {
 .right-content {
   width: 300px;
 }
+
+.birthdate {
+  flex-direction: column;
+}

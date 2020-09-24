@@ -40,6 +40,7 @@
 
 .name-container {
   display: flex;
+  flex-flow: row nowrap;
 }
 
 .date-container {
@@ -55,10 +56,6 @@
 
 .radioButton-Container {
   display: flex;
-}
-
-.gender-optional {
-  display: none;
 }
 
 .required-alert {

@@ -1,29 +1,48 @@
-const buttonForm = document.querySelector("#button-login");
-const loginInput = document.querySelector("#user-email-phone");
+function alertLogin() {
+  const buttonForm = document.querySelector("#button-login");
+  const loginInput = document.querySelector("#user-email-phone");
 
-buttonForm.addEventListener("click", function () {
-  alert(loginInput.value);
-})
+  buttonForm.addEventListener("click", function () {
+    alert(loginInput.value);
+  });
+}
 
-const rightContentInputs = document.querySelector("#sign-up-container").querySelectorAll("input");
+function registerAlert() {
+  const rightContentInputs = document.querySelector("#sign-up-container").querySelectorAll("input");
+  const buttonRegister = document.querySelector("#facebook-register");
 
+  buttonRegister.addEventListener("click", function () {
+    rightContentInputs.forEach((item) => {
+      let requiredContainer = document.querySelector(".required-alert");
 
+      item.required = "required";
+      if (item.value == "") {
+        requiredContainer.innerText = "Campos inválidos";
+      }
+    });
+  });
+}
 
-document.querySelector("#facebook-register").addEventListener("click", function () {
-  rightContentInputs.forEach(item => {
-    let requiredContainer = document.querySelector(".required-alert");
+function createInputGender() {
+  const genderOptions = document.querySelector("#other");
+  const genderContainer = document.querySelector(".gender-container");
 
-    item.required = "required";
+  genderOptions.addEventListener("click", function () {
+    let divOtherGender = document.createElement("div");
+    let inputOtherGender = document.createElement("input");
 
-    if(item.value == "") {
-      requiredContainer.innerText = "Campos inválidos";
-    }
-  }) 
-})
+    inputOtherGender.name = "gender-custom";
+    inputOtherGender.placeholder = "Gênero (opcional)";
+    inputOtherGender.required = "required";
 
-const genderOptions = document.querySelector("#other");
-const otherContainer = document.querySelector(".gender-optional");
+    divOtherGender.appendChild(inputOtherGender);
+    genderContainer.appendChild(divOtherGender);
+  });
+}
+// const sectionRightContainer
 
-genderOptions.addEventListener("click", function () {
-  otherContainer.style.display = "block";
-})
+window.onload = function () {
+  alertLogin();
+  createInputGender();
+  registerAlert();
+}

@@ -50,3 +50,11 @@ button {
   align-self: center;
   height: 2vw;
 }
+
+.main-content {
+    display: flex;
+}
+
+.left-content {
+    width: 800px;
+}

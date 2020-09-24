@@ -1,10 +1,10 @@
-const buttonLogin = document.getElementById("button-login");
-buttonLogin.addEventListener("click", function () {
-  const value = document.getElementById("user-email-phone").value;
+const buttonLogin = document.getElementById('button-login');
+buttonLogin.addEventListener('click', function () {
+  const value = document.getElementById('user-email-phone').value;
   alert(value);
 });
 
-window.JustValidate("form-register", {
+window.JustValidate('form-register', {
   rules: {
     firstname: {
       required: true,

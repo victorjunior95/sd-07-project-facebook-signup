@@ -5,27 +5,46 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  height: auto;
-  justify-content: space-around;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 .facebook-logo {
-  align-items: center;
   color: white;
   display: flex;
+  justify-content: flex-start;
+
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  
 }
 
 .form-group > button {
   align-self: flex-end;
+  justify-content: center;
 }
 
 .main-content {
-  background-color: aqua;
   display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.rigth-content {
+  width: 300px;
+  justify-content: flex-end;
+}
+
+.quick-easy {
+  font-size: medium;
 }

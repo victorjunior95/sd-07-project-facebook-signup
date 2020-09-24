@@ -25,7 +25,7 @@
           <input type="text" id="user-password" />
         </div>
         <div class="form-control">
-          <input type="submit" value="Entrar" id="button-login" />
+          <button type="submit" id="button-login">Entrar</button>
         </div>
       </form>
     </header>
@@ -50,56 +50,63 @@
               required
             />
           </div>
-          <input
-            type="text"
-            name="phone_email"
-            placeholder="Celular ou email"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Nova senha"
-            required
-          />
-          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input
-            name="birthdate"
-            placeholder="dd/mm/aaaa"
-            id="birthdate"
-            required
-          />
-          <label id="label-gender">Gênero</label>
-          <div class="div-radio-buttons">
-            <label
-              ><input
+          <div>
+            <input
+              type="text"
+              name="phone_email"
+              placeholder="Celular ou email"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              placeholder="Nova senha"
+              required
+            />
+          </div>
+          <div>
+            <label for="birthdate" id="label-birthdate"
+              >Data de nascimento</label
+            ><br />
+            <input
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+              id="birthdate"
+              required
+            />
+          </div>
+          <div>
+            <label id="label-gender">Gênero</label>
+            <div class="div-radio-buttons">
+              <input
                 type="radio"
                 id="masc"
                 name="genero"
                 value="masculino"
                 required
-              />Masculino</label
-            >
-            <label
-              ><input
+              />
+              <label for="masc">Masculino</label>
+              <input
                 type="radio"
                 id="fem"
                 name="genero"
                 value="feminino"
                 required
-              />Feminino</label
-            >
-            <label
-              ><input
+              />
+              <label for="fem">Feminino</label>
+              <input
                 type="radio"
                 id="pers"
                 name="genero"
                 value="personalizado"
                 required
-              />Personalizado</label
-            >
+              />
+              <label for="pers">Personalizado</label>
+            </div>
           </div>
-          <input type="submit" id="facebook-register" value="Cadastre-se" />
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </section>

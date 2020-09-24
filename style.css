@@ -49,6 +49,6 @@ header {
   flex-flow: row wrap;
 }
 
-.phone_email , .password , .birthdate {
+.phone_email , .password , .birthdate , .genero {
   width: 91%;
 }

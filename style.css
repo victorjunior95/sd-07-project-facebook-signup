@@ -37,14 +37,14 @@ body {
 }
 
 .form-control input {
-    background-color: rgb(75, 115, 195);
-    border-style: none;
-    border: 1px solid rgb(29, 52, 97);
-    color: white;
-    cursor: pointer;
-    height: 26px;
-    width: 60px;
-  }
+  background-color: rgb(75, 115, 195);
+  border-style: none;
+  border: 1px solid rgb(29, 52, 97);
+  color: white;
+  cursor: pointer;
+  height: 26px;
+  width: 60px;
+}
 
 .form-group .user-password-label input {
   height: 20px;
@@ -64,5 +64,3 @@ body {
   align-self: flex-end;
   margin-left: 10px;
 }
-
-

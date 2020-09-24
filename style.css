@@ -5,6 +5,11 @@ body , html {
   padding: 0;
 }
 
+.cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -19,10 +24,6 @@ body , html {
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .facebook-login {
   color: white;
   display: flex;
@@ -30,17 +31,8 @@ body , html {
 
 .main-content {
   display: flex;
-  justify-content: center;
-}
-
-.nome-complet {
-    display: flex;
 }
 
 .left-content {
   width: 800px;
-}
-
-.right-content {
-  width: 300px;
 }

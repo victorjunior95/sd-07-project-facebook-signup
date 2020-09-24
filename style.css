@@ -1,21 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-.top-bar {
-    display: flex;
-    background-color: rgb(66,103,178);
-    align-items: center;
-    justify-content: space-between;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .facebook-login input {
-    width: 200px;
+  width: 200px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.top-bar {
+  display: flex;
+  max-width: 1366px;
+  background-color: rgb(66, 103, 178);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
 }

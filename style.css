@@ -23,3 +23,11 @@ body , html {
   color: white;
   display: flex;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}

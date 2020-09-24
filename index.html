@@ -33,14 +33,14 @@
       <h2 class="quick-easy">É rápido e fácil.</h2>
       <form action="">
         <div class="form-name">
-          <input name="firstname" type="text" placeholder="Nome">
-          <input name="lastname" type="text" placeholder="Sobrenome">
+          <input id="firstname" name="firstname" type="text" placeholder="Nome">
+          <input id="lastname" name="lastname" type="text" placeholder="Sobrenome">
         </div>
-        <input name="phone_email" type="text" placeholder="Celular ou email">
-        <input name="password" type="password" placeholder="Nova senha">
+        <input id="phone-email" name="phone_email" type="text" placeholder="Celular ou email">
+        <input id="password" name="password" type="password" placeholder="Nova senha">
         <div class="form-birth">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input name="birthdate" type="text" placeholder="dd/mm/aaaa">
+          <input id="birthdate" name="birthdate" type="text" placeholder="dd/mm/aaaa">
         </div>
         <label id="label-gender" for="">Gênero</label>
         <div>
@@ -51,7 +51,8 @@
           <input id="other" type="radio" name="gender" value="Personalizado">
           <label for="other">Personalizado</label>
         </div>
-        </form>
+        <input type="submit" id="facebook-register" value="Cadastre-se">
+      </form>
     </div>
   </section>
 

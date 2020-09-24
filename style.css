@@ -72,9 +72,9 @@ button {
 }
 
 .firstname-lastname {
-    display: flex;
+  display: flex;
 }
 
 .firstname {
-    margin: 5px;
+  margin: 5px;
 }

@@ -10,8 +10,16 @@
   flex-direction: column;
 }
 
+.left-content {display: flex;
+  width: 800px;
+}
+
 .login { display: flex;
   flex-wrap: nowrap;
+}
+
+.main-content { display: flex;
+  flex-direction: row;
 }
 
 .top-bar { background-color: rgb(66, 103, 178);

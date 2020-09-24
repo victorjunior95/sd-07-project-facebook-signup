@@ -20,6 +20,10 @@ header {
   padding: 300px 0;
 }
 
+.left-content {
+  width: 800px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

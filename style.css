@@ -31,3 +31,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+.quick-easy { display: flex; }
+
+.forms-rigth { display: flex; }

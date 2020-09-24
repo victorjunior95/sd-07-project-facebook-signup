@@ -17,6 +17,20 @@
   flex-direction: column;
 }
 
+.form-group input {
+  width: 100%;
+}
+
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.form-group-row input {
+  width: 50%;
+}
+
 .left-content {
   width: 800px;
 }
@@ -26,9 +40,8 @@
   justify-content: space-between;
 }
 
-.register input {
+.form-name input {
   width: 50%;
-  flex-direction: row;
 }
 
 .right-content {

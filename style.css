@@ -42,7 +42,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .main-form input {
   width: 100%;
 }
@@ -53,4 +52,12 @@ body {
 
 .short-input input {
   width: calc(50% - 16px);
+}
+
+.gender {
+  display: flex;
+}
+
+.gender input {
+  width: 15px;
 }

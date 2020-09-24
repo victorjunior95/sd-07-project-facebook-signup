@@ -7,8 +7,8 @@ const phoneEmail = document.getElementById('phone_email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 const cadastro = document.getElementById('facebook-register');
-const personalizado = document.getElementById('genero');
-const gender = document.querySelector('.gender');
+//  const personalizado = document.getElementById('genero');
+//  const gender = document.querySelector('.gender');
 
 login.addEventListener('click', function () {
   alert(user.value);

@@ -45,3 +45,8 @@ header {
 .form-name {
   display: flex;
 }
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}

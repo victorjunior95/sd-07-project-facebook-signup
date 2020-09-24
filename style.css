@@ -4,6 +4,17 @@ body {
   padding: 0;
 }
 
+.btn-login {
+  background-color: rgb(74, 113, 193);
+  border: 1px solid rgb(34, 48, 76);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+  padding: 2px;
+  width: 70px;
+}
+
 .facebook-login {
   display: flex;
 }
@@ -20,6 +31,8 @@ body {
 
 .form-group label {
   color: white;
+  font-weight: 700;
+  padding: 5px 0;
 }
 
 .top-bar {

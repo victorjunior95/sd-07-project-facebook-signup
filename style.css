@@ -28,10 +28,14 @@
 
 .main-content {
   display: flex;
-  height: 100px;
+  justify-content: center;
   width: 100%;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

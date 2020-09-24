@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook - Log In or Sign Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - Log In or Sign Up</title>
 
-    <link rel="stylesheet" type="text/css" href="/libs/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/libs/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="top-bar">
+  <header class="top-bar">
 
-    </header>
+    <img class="facebook-logo" src="/imgs/facebook-logo.png" alt="logo facebook">
 
-    <script src="/script.js"></script>
+    <section class="section">
+      <form class="facebook-login" action="">
+
+        <div class="field">
+          <label for="email-telefone">Email ou Telefone</label>
+          <div class="control">
+            <input id="email-telefone" type="text" name="email-telefone" maxlength="40" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="control">
+            <input id="password" type="password" name="password" maxlength="40" required>
+          </div>
+        </div>
+
+
+      </form>
+  </section>
+
+
+  </header>
+
+  <script src="/script.js"></script>
 </body>
 </html>

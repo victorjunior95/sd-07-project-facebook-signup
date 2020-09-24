@@ -19,4 +19,9 @@
 
 .facebook-login {
     display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    justify-content: flex-start;
 }

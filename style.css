@@ -64,6 +64,10 @@ button {
   width: 300px;
 }
 
+.right-content form * {
+    margin: 10px;
+    padding: 5px;
+}
 .firstname-lastname {
   display: flex;
 }

@@ -16,11 +16,46 @@
   <main class="main-content">
     <div class="left-content">
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" alt="networking" class="facebook-networking">
+      <img src="imgs/networking.png" alt="networking" id="facebook-networking">
     </div>
     <div class="right-content">
       <h1>Abra uma conta"</h1>
       <p class="quick-easy">É rápido e fácil.</p>
+      <form>
+        <div class="field">
+          <div class="fullname">
+            <input type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="field">
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+        </div>
+        <div class="field">
+          <input type="password" name="password" placeholder="Nova senha">
+        </div>
+        <div class="field">
+          <label id="label-birthdate">Data de nascimento</label>
+          <input type="password" name="birthdate" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="field">
+          <label class="radio">
+            <input type="radio" name="gender">
+            Feminino
+          </label>
+          <label class="radio">
+            <input type="radio" name="gender">
+            Masculino
+          </label>
+          <label class="radio">
+            <input type="radio" name="gender">
+            Personalizado
+          </label>
+        </div>
+        <div class="field">
+					<button id="facebook-register" type="submit">Cadastre-se</button>		
+				</div>
+      </form>
     </div>
   </main>
   <script src="script.js"></script>

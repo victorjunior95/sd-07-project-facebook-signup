@@ -19,3 +19,22 @@
 .facebook-login input {
     width: 200px;
 }
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.left-content {
+    flex-direction: column;
+    width: 800px;
+}
+
+.right-content {
+    flex-direction: column;
+    width: 300px;
+}
+
+.full-name {
+    flex-direction: row;
+}

@@ -10,6 +10,7 @@ body {
   justify-content: space-around;
   width: 100%;
   padding: 7px;
+  align-items: stretch;
 }
 
 .user-email-phone {
@@ -19,9 +20,10 @@ body {
 }
 
 .button-login {
+  align-self: center;
+  height: 50%;
   border-radius: 2px;
   background-color: rgb(76, 113, 188);
-  align-self: center;
 }
 
 .form-group {
@@ -29,13 +31,19 @@ body {
   flex-direction: column;
 }
 
+.right-side {
+  display: flex;
+  align-content: center;
+}
+
 .form-control {
   align-self: flex-end;
   display: flex;
+  height: 100%;
+  margin-left: 5px;
 }
 
 .facebook-login {
-  align-self: center;
   color: white;
   display: flex;
   font-weight: bold;
@@ -45,7 +53,4 @@ body {
 a {
   color: rgba(255, 255, 255, 0.5);
 }
-button {
-  align-self: center;
-  height: 2vw;
-}
+

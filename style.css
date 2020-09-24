@@ -32,13 +32,13 @@ header {
 }
 
 .left-content {
-  width: 800px;
   align-self: flex-start;
   background-color: blueviolet;
+  width: 800px;
 }
 
 .right-content {
-  width: 300px;
   align-self: flex-end;
   background-color: pink;
+  width: 300px;
 }

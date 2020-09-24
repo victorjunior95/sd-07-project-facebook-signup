@@ -31,3 +31,12 @@
 .right-content {
   width: 300px;
 }
+
+.first-last {
+  display: flex;
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+}

@@ -23,7 +23,7 @@ body {
   align-self: flex-end;
 }
 
-.main-contet {
+.main-content {
   display: flex;
   flex-direction: column;
 }

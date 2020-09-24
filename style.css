@@ -4,7 +4,7 @@
 }
 
 .facebook-login {
-  display:flex;
+  display: flex;
 }
 
 .facebook-logo {
@@ -26,13 +26,10 @@
   background-color: burlywood;
   width: 800px;
   display: flex;
-
 }
 
 .right-content {
   background-color: cadetblue;
   width: 300px;
-  justify-content: center;
   display: flex;
-
 }

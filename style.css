@@ -27,27 +27,20 @@
   background-color: aqua;
   display: flex;
   flex-direction: row;
+  justify-content: stretch;
 }
 
 .left-content {
   background-color: burlywood;
-  display: flex;
   width: 800px;
 }
 
 .right-content {
   background-color: cadetblue;
-  display: flex;
-  flex-direction: column;
   width: 300px;
 }
 
-.form-container {
+.new-account {
   display: flex;
-  flex-direction: column;
-}
-
-.form-container>div {
-  display:flex;
-  justify-content: stretch;
+  flex-direction: row;
 }

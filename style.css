@@ -19,8 +19,8 @@ body {
 
 .facebook-logo {
 	display: flex;
+  margin-top: 28px;
 	width: 150px;
-	margin-top: 28px;
 }
 
 .logo-position {
@@ -43,16 +43,16 @@ body {
 }
 
 .div-button-login {
-	display: flex;
 	align-items: center;
+	display: flex;
 	padding: 0 0 0 13px;
 }
 
 .esqueceu-conta {
 	color: rgb(156, 180, 216);
 	cursor: pointer;
-	text-decoration: none;
 	font-size: 13px;
+	text-decoration: none;
 }
 
 .user-email-phone-label {
@@ -107,9 +107,9 @@ body {
 
 .elements-position {
 	background: linear-gradient(white, rgb(211, 216, 232));
-	width: 100%;
-	padding-top: 84px;
 	display: flex;
+	padding-top: 84px;
+	width: 100%;
 }
 
 .section-left-main {
@@ -124,16 +124,16 @@ body {
 }
 
 .section-right-main {
+	font-family: Arial, Helvetica, sans-serif;
 	margin: -13px 11px 0 0;
 	width: 48%;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 .nome-sobrenome {
-	width: 153px;
 	margin-bottom: 10px;
 	padding: 8px 10px;
 	padding-bottom: 8px;
+	width: 153px;
 }
 
 .celular-email-novasenha {
@@ -165,16 +165,16 @@ body {
 }
 .image-moreinfo {
 	height: 19px;
-	width: 19px;
 	margin-left: 10px;
 	margin-top: 5px;
+	width: 19px;
 }
 
 .genero-label {
 	color: #90949c;
-	margin-bottom: 9px;
-	font-weight: 700;
 	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 9px;
 }
 
 .escolha-genero {

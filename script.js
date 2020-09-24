@@ -23,7 +23,8 @@ function verificaRadio() {
 }
 
 const buttonRegister = document.querySelector('#facebook-register');
-buttonRegister.addEventListener('click', function () {
+buttonRegister.addEventListener('click', function (event) {
+  event.preventDefault();
   const inputs = document.querySelectorAll('.main-form input');
 
   for (let i = 0; i < inputs.length; i += 1) {
@@ -33,6 +34,7 @@ buttonRegister.addEventListener('click', function () {
     }
   }
   verificaRadio();
+  mostraTudo();
 });
 
 //----------------------------------------------------------------------
@@ -47,3 +49,29 @@ personalizado.addEventListener('click', function () {
   inputPersonalizado.name = 'gender-custom';
   containerRadio.appendChild(inputPersonalizado);
 });
+
+//--------------------------------------------------------------------
+
+const inputs = document.querySelectorAll('.main-form input');
+const rightContent = document.querySelector('.right-content');
+
+function mostraTudo() {
+  let valores = ['Olá, '];
+  for (let i = 0; i < 5; i += 1) {
+    if (i === 3) {
+    } else {
+      valores.push(inputs[i].value);
+    }
+  }
+  if (inputs[5].checked === true) {
+    valores.push(inputs[5].value);
+  } else if (inputs[6].checked === true) {
+    valores.push(inputs[6].value);
+  } else if (inputs[7].checked === true) {
+    valores.push(inputs[7].value);
+  }
+  rightContent.innerHTML = '';
+  for (let i in valores) {
+    rightContent.innerHTML = rightContent.innerHTML + valores[i] + ' ';
+  }
+}

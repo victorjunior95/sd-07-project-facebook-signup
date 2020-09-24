@@ -63,13 +63,14 @@ body {
 .main-container {
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(#FFFFFF, #3b5998);
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   padding: 50px 100px;
 }
 

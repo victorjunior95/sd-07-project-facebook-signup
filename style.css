@@ -2,11 +2,14 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
+  height: 70px;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .facebook-login {
@@ -20,4 +23,8 @@
 
 .left-content {
   width: 800px;
+}
+
+.form-control {
+  align-self: flex-end;
 }

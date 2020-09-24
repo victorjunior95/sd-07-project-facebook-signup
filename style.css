@@ -13,3 +13,7 @@ body {
 .facebook-logo {
   align-self: center;
 }
+
+.facebook-login {
+  display: flex;
+}

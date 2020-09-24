@@ -12,3 +12,12 @@
 .facebook-login {
   display: flex;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
+}

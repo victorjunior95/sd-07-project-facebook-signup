@@ -42,25 +42,14 @@
 
 .facebook-signup {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
-.facebook-signup input {
+.facebook-signup div {
+  display: flex;
+}
+
+.facebook-signup div input {
   box-sizing: border-box;
   width: 50%;
-}
-
-.facebook-signup input:nth-of-type( 3 ) {
-  box-sizing: border-box;
-  flex-basis: 100%;
-}
-
-.facebook-signup input:nth-of-type( 4 ) {
-  box-sizing: border-box;
-  flex-basis: 100%;
-}
-
-.facebook-signup input:nth-of-type( 5 ) {
-  box-sizing: border-box;
-  flex-basis: 100%;
 }

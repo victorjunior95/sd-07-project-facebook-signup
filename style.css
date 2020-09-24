@@ -27,3 +27,8 @@
 .paragraph {
   color: lightgrey;
 }
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}

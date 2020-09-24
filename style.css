@@ -2,7 +2,9 @@
   justify-content: flex-start;
 }
 
-.facebook-login { align-items: center; }
+.facebook-login { align-items: baseline; }
+
+.form-control { align-self: flex-end; }
 
 .form-group { display: flex;
   flex-direction: column;

@@ -76,3 +76,7 @@ button {
 .firstname {
   margin: 5px;
 }
+
+.gender-group {
+    display: flex;
+}

@@ -11,3 +11,8 @@ body {
 .facebook-logo {
   text-align: left;
 }
+
+.facebook-login {
+  display: flex;
+  text-align: right;
+}

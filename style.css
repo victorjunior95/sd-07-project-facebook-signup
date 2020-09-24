@@ -11,6 +11,9 @@
 .facebook-logo {
   display: flex;
 }
+.buttonLogin {
+  align-self: center;
+}
 
 .form-control {
   align-self: flex-end;

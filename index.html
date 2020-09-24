@@ -21,7 +21,9 @@
         <label id="user-password-label" for="user-email-phone">Senha</label>
         <input id="user-password" class="form-group" type="password" required>
       </div>
-      <button id="button-login" type="submit">Entrar</button>
+      <div class="buttonLogin">
+        <button id="button-login" type="submit">Entrar</button>
+      </div>
     </form>
   </header>
   <!-- Conteúdo principal -->
@@ -36,23 +38,23 @@
       <p class="quick-easy">É rapido e fácil.</p>
       <form>
         <div class="new-acount">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
+          <input name="firstname" placeholder="Nome" type="text" required>
+          <input name="lastname" placeholder="Sobrenome" type="text" required>
         </div>
         <div lass="new-acount">
-          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
         </div>
         <div class="new-acount">
-          <input name="password" placeholder="Nova senha" type="password">
+          <input name="password" placeholder="Nova senha" type="password" required>
         </div>
         <div class="new-acount">
-          <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
         <div class="new-acount">
           <label id="label-gender">
-            <input type="radio" value="Feminino"><label for="Feminino">Feminino</label>
-            <input type="radio" value="Masculino"><label for="Masculino">Masculino</label>
-            <input type="radio" value="Personalizado"><label for="Personalizado">Personalizado</label>
+            <input type="radio" value="Feminino"><label for="Feminino" required>Feminino</label>
+            <input type="radio" value="Masculino"><label for="Masculino" required>Masculino</label>
+            <input type="radio" value="Personalizado"><label for="Personalizado" required>Personalizado</label>
           </label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>

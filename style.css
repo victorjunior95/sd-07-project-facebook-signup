@@ -1,34 +1,41 @@
-.top-bar{
-    display:flex;
-    background-color: rgb(66, 103, 178);
-    justify-content: space-between
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
-.facebook-logo{
 
+.facebook-logo {
+  height: 100%;
 }
-.facebook-login{
-    display:flex;
+
+.facebook-login {
+  display: flex;
 }
-.form-group{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.form-control{
-    align-self: flex-end;
+
+.form-control {
+  align-self: flex-end;
 }
-.main-content{
-    display: flex;
-    flex-direction: row;
-    /* position: relative; */
-    justify-content: space-between;
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.left-content{
-    width: 800px;
+
+.left-content {
+  width: 800px;
 }
-.right-content{
-    width: 300px;
+
+.right-content {
+  width: 300px;
 }
-#genero-personalizado{
-    display: none;
+
+.genero-personalizado {
+  display: none;
 }

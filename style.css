@@ -25,7 +25,6 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .left-content {
@@ -39,3 +38,5 @@
 .forms-register {
   display: flex;
 }
+
+

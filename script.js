@@ -13,3 +13,9 @@ other.addEventListener('change', () => {
   father.appendChild(customGender);
   father.insertBefore(customGender, father.childNodes[14]);
 });
+
+document.getElementById('button-login').addEventListener('click', () => {
+    const email = document.getElementById('user-email-phone').value;
+    const password = document.getElementById('user-password').value;
+    alert(email + password)
+})

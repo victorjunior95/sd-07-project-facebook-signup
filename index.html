@@ -77,7 +77,24 @@
                     Data de nascimento
                 </label>
                 <div class="control">
-                    <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa">
+                    <div class="select">
+                        <select name="birthdate" id="day" placeholder="dd/mm/aaaa">
+                            <option value="day" disabled>Dia</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="birthdate" id="month">
+                            <option value="month" disabled>Mês</option>
+
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="birthdate" id="year">
+                        <option value="ano" disabled>Ano</option>
+                        </select>
+                    </div>
+
+                    <!-- <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa"> -->
                 </div>
             </div>
             <div class="field">

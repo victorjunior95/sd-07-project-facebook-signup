@@ -2,6 +2,17 @@ body {
   margin: 0;
 }
 
+.facebook-login {
+  display: flex;
+  height: 65px;
+  width: 392px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);

@@ -28,6 +28,10 @@ body , html {
   display: flex;
 }
 
+.nome-complet {
+    display: flex;
+}
+
 .left-content {
   width: 800px;
 }

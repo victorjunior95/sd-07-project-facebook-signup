@@ -17,6 +17,22 @@
 }
 
 .main-content {
+  background-color: aqua;
   display: flex;
   flex-direction: row;
+}
+
+.left-content {
+  background-color: burlywood;
+  width: 800px;
+  display: flex;
+  float: left;
+}
+
+.right-content {
+  background-color: cadetblue;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  float: right;
 }

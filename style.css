@@ -4,6 +4,14 @@ a {
   text-decoration: none;
 }
 
+body {
+    background: linear-gradient( #3b5998, #ffffff);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", Arial, Helvetica,
+    sans-serif;
+}
+
 .facebook-login {
   align-items: center;
   color: white;
@@ -35,10 +43,18 @@ a {
   justify-content: flex-start;
 }
 
+#facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  width: 50%;
+}
+
 .left-content {
   width: 800px;
+  margin: 50px;
 }
 
 .right-content {
   width: 300px;
+  margin: 50px;
 }

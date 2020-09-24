@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1366px;
-  padding: 5px 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .form-control {

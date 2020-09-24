@@ -15,3 +15,8 @@
   display: flex;
   width: 100px;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}

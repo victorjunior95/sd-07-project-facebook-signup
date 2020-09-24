@@ -8,8 +8,11 @@
     <body>
         <header>
             <div class="top-bar">
-                <img class="facebook-logo" src="facebook-logo.png" alt="facebook">
-                <form class="facebook-login" action="" method="GET">
+                <div class="top-bar-left">
+                    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook">
+                </div>
+                <div class="top-bar-right">
+                    <form class="facebook-login" action="" method="GET">
                     <div class="form-group">
                         <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
                         <input id="user-email-phone" name="user-email-phone-input" type="text" pattern="^([0-9]{9})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,3})$" title = "Campos inválidos" required="required">
@@ -23,6 +26,7 @@
                         <input id="button-login" name="enter-button" type="button" onclick="alert(document.getElementById('user-email-phone').value)" value="Entrar">
                     </div>
                 </form>
+                </div>
             </div>
         </header>
     </body>

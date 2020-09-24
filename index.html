@@ -56,6 +56,20 @@
                         <label for="password"></label>
                         <input name="password" type="password" pattern="[A-zÀ-ÿ0-9´`~^,\p{P}\p{S} ]{1,}" title = "Campos inválidos" placeholder="Nova senha" required="required">
                     </div>
+                    <div>
+                        <label id="label-birthdate" for="birthdate"></label>
+                        <input name="birthdate" type="date" title = "Campos inválidos" placeholder="dd/mm/aaaa" required="required">
+                    </div>
+                    <div>
+                        <label id="label-gender" class="label-gender-class" for="gender">
+                            <input name="gender" id="man" type="radio" value="man" title = "Campos inválidos" required="required">Masculino
+                            <input name="gender" id="woman" type="radio" value="woman" title = "Campos inválidos" required="required">Feminino
+                            <input name="gender" id="custom" type="radio" value="custom" title = "Campos inválidos" required="required">Personalizado
+                        </label>
+                    </div>
+                    <div>
+                        <button id="facebook-register" name="send" value="1" type="submit">Cadastre-se</button>
+                    </div>
                 </form>
             </div>
         </section>

@@ -7,7 +7,7 @@ const phoneEmail = document.getElementById('phone_email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 const cadastro = document.getElementById('facebook-register');
-
+const personalizado = document.getElementById('genero');
 
 login.addEventListener('click', function () {
   alert(user.value);
@@ -18,3 +18,7 @@ cadastro.addEventListener('click', function () {
     alert('Campos inválidos');
   }
 });
+
+// personalizado.addEventListener('click', function () {
+
+// });

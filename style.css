@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -23,8 +28,17 @@ header {
 
 .main-content {
   display: flex;
+  flex-direction: row;
 }
 
 .left-content {
   width: 800px;
+  align-self: flex-start;
+  background-color: blueviolet;
+}
+
+.right-content {
+  width: 300px;
+  align-self: flex-end;
+  background-color: pink;
 }

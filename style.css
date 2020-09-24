@@ -28,3 +28,7 @@ body {
   align-self: flex-end;
   height: 100%;
 }
+
+.main-content {
+  display: flex;
+}

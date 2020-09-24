@@ -5,11 +5,8 @@ a {
 }
 
 body {
-    background: linear-gradient( #3b5998, #ffffff);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", Arial, Helvetica,
-    sans-serif;
+  background: linear-gradient(#3b5998, white);
+  font-family: Arial, sans-serif;
 }
 
 .facebook-login {

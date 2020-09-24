@@ -18,16 +18,15 @@ function conteudoBoasVindas(valores) {
   } else if (inputs[7].checked === true) {
     valores.push(inputs[7].value);
   }
-  for (let i in valores) {
+  for (let i = 0; i < valores.length; i += 1) {
     rightContent.innerHTML = `${rightContent.innerHTML} ${valores[i]}`;
   }
 }
 
 function mostraTudo() {
-  let valores = ['Olá, '];
+  const valores = ['Olá, '];
   for (let i = 0; i < 5; i += 1) {
-    if (i === 3) {
-    } else {
+    if (i !== 3) {
       valores.push(inputs[i].value);
     }
   }
@@ -57,7 +56,6 @@ function verificaRadio() {
 const buttonRegister = document.querySelector('#facebook-register');
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
-  const inputs = document.querySelectorAll('.main-form input');
 
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {

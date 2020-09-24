@@ -2,7 +2,9 @@
   justify-content: flex-start;
 }
 
-.facebook-login { align-items: baseline; }
+.facebook-login { align-items: baseline;
+  display: flex;
+}
 
 .form-control { align-self: flex-end; }
 
@@ -20,7 +22,10 @@
 
 .main-content { display: flex;
   flex-direction: row;
+  justify-content: center;
 }
+
+.right-content { width: 300px; }
 
 .top-bar { background-color: rgb(66, 103, 178);
   display: flex;

@@ -50,6 +50,7 @@ function verificaRadio() {
     radios[2].checked === false
   ) {
     p.innerHTML = 'Campos inválidos';
+    break;
   }
 }
 

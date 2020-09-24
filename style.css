@@ -42,4 +42,10 @@
 
 .facebook-signup {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.facebook-signup input {
+  box-sizing: border-box;
+  width: 50%;
 }

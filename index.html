@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontrar grupos e comunidades</title>
     <link rel="stylesheet" href="style.css">
+    <script src="libs/node_modules/just-validate/dist/js/just-validate.js"></script>
 </head>
 <body>
     <header class='top-bar'>
@@ -34,29 +35,29 @@
         <div class='right-content'>
             <h1>Abra uma conta</h1>
             <p class='quick-easy'>É rápido e fácil.</p>
-            <form>
+            <form class="js-form form">
                 <div class='name'>
-                    <input name='firstname' placeholder='Nome' type="text">
-                    <input name='lastname' placeholder='Sobrenome' type="text">
+                    <input name='firstname' data-validate-field="firstname" placeholder='Nome' type="text">
+                    <input name='lastname' data-validate-field="lastname" placeholder='Sobrenome' type="text">
                 </div>
-                <input name='phone_email' placeholder='Celular ou email' type="text">
-                <input name='password' placeholder='Nova senha' type="password">
+                <input name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email' type="text">
+                <input name='password' data-validate-field="password" placeholder='Nova senha' type="password">
 
                 <div>
-                    <label id='label-birthdate' for="birthdate">Data de nascimento</label>
+                    <label id='label-birthdate'for="birthdate">Data de nascimento</label>
                     <div>
-                        <input name='birthdate' placeholder='dd/mm/aaaa' type="date">
+                        <input name='birthdate' data-validate-field="birthdate" placeholder='dd/mm/aaaa' type="date">
                     </div>
                 </div>
                 <div>
                     <label id='label-gender' for="">Gênero</label>
                     <div class='gender-input'>
-                        <input type="radio" name='Feminino' value='Feminino'>
-                        <label for="Feminino">Feminino</label>
-                        <input type="radio" name='Masculino' value='Masculino'>
-                        <label for="Masculino">Masculino</label>
-                        <input type="radio" name='Personalizado' value='Personalizado'>
-                        <label for="Personalizado">Personalizado</label>
+                        <input id='feminino' data-validate-field="radio" type="radio" name='gender' value='Feminino'>
+                        <label for="feminino">Feminino</label>
+                        <input id='masculino' data-validate-field="radio" type="radio" name='gender' value='Masculino'>
+                        <label for="masculino">Masculino</label>
+                        <input id='personalizado' data-validate-field="radio" type="radio" name='gender' value='Personalizado'>
+                        <label for="parsonalizado">Personalizado</label>
                     </div>
                 <div>
                     <button id='facebook-register' type='submit'>Cadastre-se</button>
@@ -67,5 +68,6 @@
     </section>
 
     <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>

@@ -6,10 +6,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-}
-
-.facebook-logo {
-  text-align: left;
+  justify-content: space-between;
 }
 
 .facebook-login {

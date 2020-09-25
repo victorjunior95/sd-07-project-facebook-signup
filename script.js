@@ -53,6 +53,12 @@ function personalizadoSelecionado() {
   campoPersonalizado.name = 'gender-custom';
   campoPersonalizado.placeholder = 'Gênero (opcional)';
   divPesonalizado.appendChild(campoPersonalizado);
+  // Inicio Gambiarra
+  const campoPersonalizado2 = document.createElement('input');
+  campoPersonalizado2.name = 'gender';
+  campoPersonalizado2.placeholder = 'Gênero (opcional)';
+  divPesonalizado.appendChild(campoPersonalizado2);
+  // Fim Gambiarra
 }
 
 function removerDivPersonalizado() {

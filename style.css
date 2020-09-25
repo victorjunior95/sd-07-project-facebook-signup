@@ -73,11 +73,7 @@ input {
 }
 
 .name-lastname {
-  flex-flow: row;
-}
-
-.lastname {
-  justify-content: flex-end;
+  display: flex;
 }
 
 .phone_email , .password , .birthdate , .genero {

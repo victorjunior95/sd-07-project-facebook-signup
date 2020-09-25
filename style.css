@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -7,7 +8,6 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   justify-content: space-between;
@@ -40,4 +40,34 @@ body {
   font-size: 12px;
   font-weight: 700;
   padding: 0.3em;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.main-form-name {
+  display: flex;
+}
+
+.main-form-name input {
+  margin-right: 10px;
+}
+
+.form-others input {
+  margin-top: 10px;
+}
+
+.form-others label {
+  display: inline-block;
+  margin-top: 10px;
 }

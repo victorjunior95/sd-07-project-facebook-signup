@@ -70,8 +70,8 @@ body {
 }
 
 .facebook-logo {
-  width: 150px;
   display: flex;
+  width: 150px;
 }
 
 .top-bar {
@@ -86,7 +86,9 @@ body {
 .logo-position {
   margin-right: 128px;
 }
-
+.position-nome-sobrenome{
+  display: flex;
+}
 .senha-login {
   color: white;
   font-size: 15px;
@@ -139,13 +141,7 @@ body {
   font-weight: 700;
 }
 
-.nome-sobrenome {
-  margin-bottom: 10px;
-  padding: 8px 10px;
-  padding-bottom: 8px;
-  width: 153px;
 
-}
 
 .input-data-nascimento {
   font-size: 13px;

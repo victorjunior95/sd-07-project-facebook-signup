@@ -13,23 +13,30 @@
 }
 
 .facebook-login {
+  align-items: flex-start;
   display: flex;
 }
 
+.facebook-login input {
+  height: 20px;
+}
+
 .facebook-networking {
-  width: 50%;
+  width: 70%;
 }
 
 .facebook-slogan {
   color: rgb(66, 103, 178);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
-  width: 50%;
+  width: 70%;
 }
 
 .form-control {
   align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .form-group {
@@ -37,6 +44,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .form-register {
@@ -62,6 +70,13 @@
   justify-content: flex-start;
 }
 
+.miss-account {
+  color: #9cb4d8;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
 .name-form-register {
   display: flex;
   justify-content: space-between;
@@ -80,6 +95,8 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-wrap: wrap;
+  height: 70px;
   justify-content: space-between;
   width: 100%;
 }
@@ -89,12 +106,25 @@ body {
   padding: 0;
 }
 
+.button-login {
+  height: 25px;
+  background-color: #3f61a5;
+  border-color: #3f61a5;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
 h1 {
   margin-bottom: 5px;
   margin-left: 5px;
 }
 
-input {
+.main-content input {
   border-radius: 3px;
   height: 30px;
   margin-bottom: 10px;

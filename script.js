@@ -25,10 +25,10 @@ function validateForm() {
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
 
-  if ((!validateRadios()) || (firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '') || (birthdate.value !== '') || (password.value !== '')) {
-    isValid = true;
-  } else {
+  if ((validateRadios()) || (firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
     isValid = false;
+  } else {
+    isValid = true;
   }
   return isValid;
 }

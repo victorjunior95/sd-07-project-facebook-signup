@@ -24,8 +24,9 @@ function validateForm() {
   const phoneEmail = document.querySelector('#phone-email');
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
+  const validateRadiosResult = validateRadios();
 
-  if ((validateRadios()) || (firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
+  if ((validateRadiosResult) || (firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
     isValid = false;
   } else {
     isValid = true;

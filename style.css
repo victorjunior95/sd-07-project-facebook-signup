@@ -1,5 +1,5 @@
 body {
-  background: rgb(211, 216, 232);
+  background: linear-gradient(white, rgb(211, 216, 232));
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ body {
 
 .logo {
   display: flex;
-  justify-content: center;
+  float: left;
   width: 50%;
 }
 
@@ -23,6 +23,7 @@ body {
 .facebook-login {
   display: flex;
   height: 100%;
+  justify-content: flex-end;
   width: 50%;
 }
 
@@ -38,6 +39,8 @@ body {
 
 .main-content {
   display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 .right-content {
@@ -50,4 +53,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 800px;
+}
+
+.radio-button {
+  font-size: 15px;
 }

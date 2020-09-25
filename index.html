@@ -11,7 +11,7 @@
 <body>
 	<header>
 		<div class="top-bar">
-			<div class="logo"><img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook"></div>
+			<img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
 			<form class="facebook-login">
 				<div class="form-group">
 					<label id="user-email-phone-label">Email ou telefone</label>
@@ -36,9 +36,25 @@
 			</p>
 			<img src="imgs/networking.png" id="facebook-networking">
 		</div>
-		<div class= "right-content">
+		<div class="right-content">
 			<h1>Abra uma conta</h1>
 			<h3 class="quick-easy">É rápido e fácil.</h3>
+			<form>
+				<input type="text" name="fistname" placeholder="Nome" size="15">
+				<input type="text" name="lastname" placeholder="Sobrenome" size="15">
+				<input type="text" name="phone_email" placeholder="Celular ou email" size="15">
+				<input type="password" name="password" placeholder="Nova senha" size="15">
+				<input type="date" name="birthdate" placeholder="dd/mm/aaaa" max="2002-01-01"><br>
+				<label id="label-gender">Gênero</label>
+				<div class="radio-button">
+					<input type="radio" name="feminino">
+					<label>Feminino</label>
+					<input type="radio" name="masculino">
+					<label>Masculino</label>
+					<input type="radio" name="personalizado">
+					<label>Personalizado</label>
+				</div>
+			</form>
 		</div>
 	</main>
 </body>

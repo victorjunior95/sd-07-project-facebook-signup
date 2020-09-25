@@ -43,7 +43,9 @@ function validateNewAccountFormLessRadioButton() {
 
 function validateNewAccountForm() {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
-    alert('Campos inválidos');
+    document.getElementById('invalidation').innerText = 'Campos inválidos';
+  } else {
+    document.getElementById('invalidation').innerText = '';
   }
 }
 

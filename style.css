@@ -2,6 +2,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  margin: auto 0.5em;
 }
 
 .top-bar {
@@ -35,4 +36,15 @@
 
 .right-content {
   width: 300px;
+}
+
+.first-last-name {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.first-last-name > input {
+  width: 50%;
+  margin: 0.5em;
 }

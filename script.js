@@ -16,7 +16,7 @@ function checkRadio() {
   if (counter === 3) {
     validation = false;
   } else {
-    vaidation = true;
+    validation = true;
   }
   return validation;
 }
@@ -27,7 +27,7 @@ function validateNewAccountFormLessRadioButton() {
   inputArray.splice(0, 2);
   inputArray.splice(5, 3);
   let counter = 0;
-  let validation = 0
+  let validation = 0;
   for (let index = 0; index < inputArray.length; index += 1) {
     if (inputArray[index].value === '') {
       counter += 1;

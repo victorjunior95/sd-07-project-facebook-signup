@@ -55,4 +55,4 @@ const justValidate = new window.JustValidate('.new-account', {
 
 });
 
-justValidate.init();
+justValidate();

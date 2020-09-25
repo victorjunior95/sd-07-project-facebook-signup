@@ -9,7 +9,7 @@ const female = document.querySelector('#female');
 const male = document.querySelector('#male');
 const other = document.querySelector('#other');
 const facebookRegister = document.querySelector('#facebook-register');
-const answer = document.querySelector('#answer');
+const answer = document.querySelector('.answer');
 
 button.addEventListener('click', function () {
   alert(user.value);
@@ -27,3 +27,8 @@ facebookRegister.addEventListener('click', function () {
   }
   if (check === false) answer.style.display = 'block';
 });
+
+other.addEventListener(`click`, function() {
+  const custom = document.querySelector("#gender-custom");
+  custom.disabled = false;
+})

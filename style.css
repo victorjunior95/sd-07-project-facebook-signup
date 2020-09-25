@@ -9,14 +9,21 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10%;
+  padding: 10px 15%;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .facebook-logo {
+  align-items: flex-start;
   height: 55px;
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
 }
 
@@ -53,17 +60,14 @@ body {
   align-self: flex-end;
 }
 
-
-.button-singin {
+.button {
   background-color: rgb(60, 89, 152);
   border: 1px solid rgb(60, 89, 152);
-  border-radius: 3px;
   color: white;
   display: flex;
   font-size: smaller;
   font-weight: 500;
   height: 23px;
-  margin-bottom: 20px;
   margin-left: 10px;
   margin-top: 19px;
   width: 52px;

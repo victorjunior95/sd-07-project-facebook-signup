@@ -4,11 +4,11 @@ const regForm = document.querySelector('#reg-form');
 const regFormBtn = document.querySelector('#facebook-register');
 const invalidMsg = document.querySelector('#invalid-msg');
 const genderContainer = document.querySelector('#gender-container');
-const genderF = genderContainer.querySelector('input[value="Feminino"]');
-const genderM = genderContainer.querySelector('input[value="Masculino"]');
+// const genderF = genderContainer.querySelector('input[value="Feminino"]');
+// const genderM = genderContainer.querySelector('input[value="Masculino"]');
 const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
 const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
-let customInput = document.querySelector('#custom-input');
+// let customInput = document.querySelector('#custom-input');
 
 btnLgn.addEventListener('click', function () {
   alert(inputEmailPh.value);

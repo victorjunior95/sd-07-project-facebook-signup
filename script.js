@@ -11,9 +11,9 @@ buttonSignUp.addEventListener('click', validaCadastro);
 
 function validaCadastro() {
   const formFields = document.querySelectorAll('.right-content input');
-  const rightContent = document.querySelector('.right-content')
+  const rightContent = document.querySelector('.right-content form')
   let emptyFieldMsg = document.createElement('h5');
-  emptyFieldMsg.innerText = 'Campos inválidos!'
+  emptyFieldMsg.innerText = 'Campos inválidos'
   emptyFieldMsg.className = 'msg-campo-vazio'
   let resetPause = false;
 
@@ -24,7 +24,7 @@ function validaCadastro() {
 
   for (let index = 0; index < formFields.length; index += 1) {
     if (document.querySelector('input[type=radio]:checked') == null && resetPause == false){
-      rightContent.insertBefore(emptyFieldMsg, rightContent.children[2]);
+      rightContent.insertBefore(emptyFieldMsg, rightContent.children[0]);
     } else if (formFields[index].value == ""){       
         if (formFields[index].getAttribute('type') != 'radio'){
           rightContent.insertBefore(emptyFieldMsg, rightContent.children[2]);

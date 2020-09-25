@@ -9,8 +9,7 @@ function verifyEmptyInput(values) {
 function login(user) {
   const rightContent = document.getElementById('right-content');
 
-  rightContent.innerHTML = '';
-  rightContent.innerHTML += `<p>Olá, ${user.firstname} ${user.lastname}</p>`;
+  rightContent.innerHTML = `<p>Olá, ${user.firstname} ${user.lastname}</p>`;
   rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
   rightContent.innerHTML += `<p>${user.birthdate}</p>`;
   rightContent.innerHTML += `<p>${user.gender}</p>`;

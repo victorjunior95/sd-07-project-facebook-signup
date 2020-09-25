@@ -12,11 +12,6 @@ body {
   padding: 10px 15%;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .facebook-logo {
   align-items: flex-start;
   height: 55px;

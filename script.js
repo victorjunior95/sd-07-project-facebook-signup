@@ -48,12 +48,30 @@ function validateForm() {
   return isValid;
 }
 
+function getRadioChecked() {
+  const radios = [document.querySelector('#feminine'), document.querySelector('#masculine'), document.querySelector('#custom')];
+  let radioChecked = null;
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      radioChecked = radios[index].value;
+    }
+  }
+  return radioChecked;
+}
+
 function showResults() {
   const rightContent = document.querySelector('.right-content');
   const infos = [];
   infos[0] = `Olá, ${document.querySelector('#first-name').value} ${document.querySelector('#last-name').value}`;
+  infos[1] = document.querySelector('#phone-email').value;
+  infos[2] = document.querySelector('#birthdate').value;
+  infos[3] = getRadioChecked();
   rightContent.innerHTML = '';
-  rightContent.innerText = infos;
+  for (let index = 0; index < infos.length; index += 1) {
+    const newP = document.createElement('p');
+    newP.innerText = infos[index];
+    rightContent.appendChild(newP);
+  }
 }
 
 const buttonRegister = document.querySelector('#facebook-register');

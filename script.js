@@ -9,7 +9,6 @@ function verifyEmptyInput(values) {
 const btnLogin = document.getElementById('button-login');
 btnLogin.addEventListener('click', function () {
   const email = document.forms['form-login'].email.value;
-  const passLogin = document.forms['form-login'].password.value;
 
   if (!verifyEmptyInput([email])) {
     alert(email);

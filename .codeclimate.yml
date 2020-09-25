@@ -34,6 +34,11 @@ exclude_patterns:
   - "**/libs/*.js"
   - "**/*.{gif,png,jpeg,jpg}"
   - "node_modules/"
+  - "cypress/"
+  - "sd-0x-project-facebook-signup-tests-master/cypress/integration/project.spec.js"
+  - "sd-0x-project-facebook-signup-tests-master/cypress/plugins/index.js"
+  - "sd-0x-project-facebook-signup-tests-master/cypress/support/commands.js"
+  - "sd-0x-project-facebook-signup-tests-master/cypress/support/index.js"
 plugins:
   csslint:
     enabled: true

@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+header {
+  padding: 0 110px;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -28,7 +32,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .form-control {
@@ -37,6 +41,7 @@ body {
 
 .button-login {
   background-color: rgb(66, 103, 178);
+  border-radius: 3px;
   color: white;
 }
 
@@ -48,9 +53,26 @@ body {
 }
 
 .left-content {
+  padding-top: 70px;
   width: 800px;
 }
 
+.facebook-slogan {
+  color: navy;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  padding-bottom: 20px;
+  padding-right: 180px;
+  word-spacing: -1px;
+}
+
+.facebook-networking {
+  padding-top: 20px;
+  width: 600px;
+}
+
 .right-content {
+  padding-top: 70px;
   width: 300px;
 }

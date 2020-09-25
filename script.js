@@ -12,13 +12,13 @@ function checkForm() {
   } else {
     const nome = document.createTextNode(`Olá, ${document.querySelectorAll('.name')[0].value} ${document.querySelectorAll('.name')[1].value}`);
     const email = document.createTextNode(document.querySelector('.email').value);
-    const data = document.createTextNode(document.querySelector('.data').value)
+    const data = document.createTextNode(document.querySelector('.data').value);
     const genero = document.createTextNode(document.querySelector('input[name="gender"]:checked').value);
     document.querySelector('.cadastro').style.display = 'none';
     document.querySelector('.intro').style.display = 'none';
     document.querySelector('#um').appendChild(nome);
     document.querySelector('#dos').appendChild(email);
-    document.querySelector('#tres').appendChild(data)
+    document.querySelector('#tres').appendChild(data);
     document.querySelector('#quatro').appendChild(genero);
   }
 }

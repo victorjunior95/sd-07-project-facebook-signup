@@ -1,5 +1,5 @@
-let signUp = document.getElementById('button-login');
+const signIn = document.getElementById('button-login');
 
-signUp.addEventListener('click', function () {
-  
-})
+signIn.addEventListener('click', function () {
+  alert(document.getElementById('user-email-phone').value);
+});

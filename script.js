@@ -59,4 +59,4 @@ document.getElementById('custom').addEventListener('click', function () {
   genderCustom.placeholder = 'Gênero (opcional)';
   genderCustom.required = true;
   document.getElementById('gender-custom').appendChild(genderCustom);
-})
+});

@@ -38,7 +38,7 @@ function resetMsg() {
 
 function registrarUsuario() {
   // const primeiroNome = document.querySelector('#firstname').value
-  // const ultimoNome = document.querySelector('#lastname').value  
+  // const ultimoNome = document.querySelector('#lastname').value
   // const nomeUsuario = primeiroNome.value + ' ' + ultimoNome.value;
   // const emailOuTelefone = document.querySelector('#phone_email').value;
   // const birthDate = document.querySelector('#input-birthdate').value;
@@ -49,6 +49,10 @@ function registrarUsuario() {
   }
 }
 
+function testeCampoVazio(itemValue, itemType) {
+  return itemValue === '' && itemType !== 'radio';
+}
+
 function percorreInputs() {
   for (let index = 0; index < formFields.length; index += 1) {
     const validandoInput = formFields[index];
@@ -56,14 +60,9 @@ function percorreInputs() {
     const formType = validandoInput.getAttribute('type');
     if (testeCampoVazio(formValue, formType) === true) {
       return true;
-    } else {
-      return false;
-    }
+    } 
   }
-}
-
-function testeCampoVazio(itemValue, itemType) {
-  return itemValue === '' && itemType !== 'radio';
+  return false;
 }
 
 function validaCadastro() {
@@ -71,9 +70,9 @@ function validaCadastro() {
 
   if (genero() === '') {
     msgCampoInvalido();
-  }else if (percorreInputs() === true) {
+  } else if (percorreInputs() === true) {
     msgCampoInvalido();
-  }else {
+  } else {
     registrarUsuario();
   }
 }

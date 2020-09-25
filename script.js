@@ -79,7 +79,7 @@ function validaCadastro() {
 
 const removeTagChild = function () {
   const tagSon = document.getElementById('text-gender-custom');
-  const tagFather = document.querySelector('.gender-group');
+  const tagFather = document.querySelector('.right-content');
   if (tagSon !== null) {
     tagFather.removeChild(tagSon);
   }
@@ -101,7 +101,7 @@ genderCustom.addEventListener('click', function () {
     newInput.classList.add('gender-custom');
     newInput.placeholder = 'Gênero (opcional)';
 
-    const tagFather = document.querySelector('.gender-group');
-    tagFather.appendChild(newInput);
+    const tagFather = document.querySelector('.right-content');
+    tagFather.insertBefore(newInput, tagFather.lastElementChild);
   }
 });

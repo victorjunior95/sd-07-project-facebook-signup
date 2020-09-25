@@ -70,7 +70,7 @@ body {
 }
 
 .facebook-logo {
-  float: left;
+  display: inline-block;
   margin-top: 28px;
   width: 150px;
 }

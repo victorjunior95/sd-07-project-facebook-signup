@@ -47,3 +47,84 @@ function addYears() {
         selectYear.appendChild(createElement);
     }
 } */
+const getForm = document.querySelector('.rightFormInputs');
+const getRightSide = document.querySelector('.right-content');
+const getFirstName = document.querySelector('#firstName');
+const getLastName = document.querySelector('#lastName');
+const getPhoneEmail = document.querySelector('#phoneEmail');
+const getBirthdate = document.querySelector('#birthdate');
+const radioFem = document.querySelector('#gender1');
+const radioMas = document.querySelector('#gender2');
+
+const rulesValidate = {
+  firstname: {
+    required: true,
+  },
+  lastname: {
+    required: true,
+  },
+  phone_email: {
+    required: true,
+  },
+  password: {
+    required: true,
+  },
+  birthdate: {
+    required: true,
+  },
+  gender: {
+    required: true,
+  },
+};
+
+const messagesValidate = {
+  firstname: {
+    required: 'Campo inválido',
+  },
+  lastname: {
+    required: 'Campo inválido',
+  },
+  phone_email: {
+    required: 'Campo inválido',
+  },
+  password: {
+    required: 'Campo inválido',
+  },
+  birthdate: {
+    required: 'Campo inválido',
+  },
+  gender: {
+    required: 'Campo inválido',
+  },
+};
+
+function letItBe() {
+  const createElementMessage = document.createElement('p');
+  createElementMessage.innerText = 'Campos inválidos';
+  createElementMessage.className = 'error';
+  getForm.appendChild(createElementMessage);
+}
+
+function letsDoIt() {
+  getRightSide.innerHTML = '';
+  const firstNameInput = getFirstName.value;
+  const lastNameInput = getLastName.value;
+  const phoneEmailInput = getPhoneEmail.value;
+  const birthdateInput = getBirthdate.value;
+  let genderInput = '';
+  if (radioFem.checked === true) { genderInput = 'Feminino'; } else if (radioMas.checked === true) { genderInput = 'Masculino'; } else { genderInput = 'Personalizado'; }
+  const createNewElementMessage = document.createElement('p');
+  createNewElementMessage.innerHTML = `Olá, ${firstNameInput} ${lastNameInput} \n ${phoneEmailInput} \n ${birthdateInput} \n ${genderInput}`;
+  createNewElementMessage.className = 'newRightElement';
+  getRightSide.appendChild(createNewElementMessage);
+}
+
+window.onload = function () {
+  const newValidateFunction = new window.JustValidate('.rightFormInputs', {
+    rules: rulesValidate,
+    messages: messagesValidate,
+    invalidFormCallback: letItBe,
+    submitHandler: letsDoIt,
+  });
+  newValidateFunction();
+};

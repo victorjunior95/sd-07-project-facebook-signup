@@ -4,8 +4,9 @@ logBt.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-function checkRadio () {
+function checkRadio() {
   let counter = 0;
+  let validation = 0;
   const genderList = document.getElementsByName('gender');
   for (let index = 0; index < genderList.length; index += 1) {
     if (genderList[index].checked === false) {
@@ -13,37 +14,40 @@ function checkRadio () {
     }
   }
   if (counter === 3) {
-    return false;
+    validation = false;
   } else {
-    return true;
+    vaidation = true;
   }
+  return validation;
 }
 
-function validateNewAccountFormLessRadioButton () {
+function validateNewAccountFormLessRadioButton() {
   const inputCollection = document.getElementsByTagName('input');
-  let inputArray = [].slice.call(inputCollection);
+  const inputArray = [].slice.call(inputCollection);
   inputArray.splice(0, 2);
   inputArray.splice(5, 3);
   let counter = 0;
+  let validation = 0
   for (let index = 0; index < inputArray.length; index += 1) {
-    if (inputArray[index].value === "") {
+    if (inputArray[index].value === '') {
       counter += 1;
     }
   }
   if (counter === 5) {
-    return false;
+    validation = false;
   } else {
-    return true;
+    validation = true;
   }
+  return validation;
 }
 
-function validateNewAccountForm () {
+function validateNewAccountForm() {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
-    alert("Campos inválidos");
-  } 
+    alert('Campos inválidos');
+  }
 }
 
 const createAccountBt = document.getElementById('facebook-register');
 
-  createAccountBt.addEventListener('click', validateNewAccountForm);
+createAccountBt.addEventListener('click', validateNewAccountForm);
   

@@ -58,7 +58,7 @@ function birthdate() {
   const day = birthDt[8] + birthDt[9];
   const month = birthDt[5] + birthDt[6];
   const year = birthDt[0] + birthDt[1] + birthDt[2] + birthDt[3];
-  birthDt = day + '/' + month + '/' + year;
+  birthDt = `${day}/${month}/${year}`;
   return birthDt;
 }
 
@@ -67,7 +67,7 @@ function createDivHello() {
   const helloFullname = document.createElement('p');
   const firstName = document.getElementsByName('firstname')[0].value;
   const lastName = document.getElementsByName('lastname')[0].value;
-  helloFullname.innerText = 'Olá, ' + firstName + ' ' + lastName;
+  helloFullname.innerText = `Olá, ${firstName} ${lastName}`;
   hello.appendChild(helloFullname);
   const mailPhone = document.createElement('p');
   mailPhone.innerText = document.getElementsByName('phone_email')[0].value;

@@ -8,7 +8,7 @@ const iten = document.getElementsByClassName('iten-register');
 const invalid = document.getElementsByClassName('invalid-forms');
 personalizado.addEventListener('change', function () {
   select.style.display = 'block';
-  //document.getElementById('gender-custom').innerText = '';
+  // document.getElementById('gender-custom').innerText = '';
   // const select = document.createElement('input');
   // select.style.display = 'block';
   // select.placeholder = 'Gênero (opcional)';

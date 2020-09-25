@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .invalid-forms {
   display: none;
 }

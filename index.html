@@ -44,12 +44,14 @@
         <label for="birthdate" id="label-birthdate">Data de nascimento</label><br>
         <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
         <br>
-        <label for="gender" id="label-gender">Gênero</label>
-        <br>
+        <label id="label-gender">Gênero</label>
         <div class="gender-container" id="gender-container">
-          <input type="radio" name="gender" id="feminino"><label for="gender">Feminino</label>
-          <input type="radio" name="gender" id="masculino"><label for="gender">Masculino</label>
-          <input type="radio" name="gender" id="personalizado" class="personalizado"><label for="gender">Personalizado</label>
+          <input type="radio" id="Feminino" name="gender" value="female">
+          <label for="Feminino">Feminino</label><br>
+          <input type="radio" id="Masculino" name="gender" value="male">
+          <label for="Masculino">Masculino</label><br>
+          <input type="radio" id="Personalizado" name="gender" value="other">
+          <label for="Personalizado">Personalizado</label>
         </div>
       </form>
     </section>

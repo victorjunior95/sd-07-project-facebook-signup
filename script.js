@@ -6,12 +6,12 @@ buttonLogin.addEventListener('click', function (event) {
 });
 
 function validateRadios() {
-  const radioGroup = document.querySelector('.genders').children;
-  let validRadio = true;
-  for (let index = 0; index < radioGroup.index; index += 1) {
-    if (radioGroup[index].checked === false) {
-      validRadio = false;
-    }
+  const radioFemale = document.querySelector('#feminine');
+  const radioMale = document.querySelector('#masculine');
+  const radioCustom = document.querySelector('#custom');
+  let validRadio = false;
+  if ((radioFemale.checked) || (radioCustom.checked) || (radioCustom.checked)) {
+    validRadio = true;
   }
   return validRadio;
 }
@@ -40,12 +40,20 @@ function validateOthers() {
 function validateForm() {
   let isValid = true;
 
-  if ((validateName()) || (validateOthers()) || (validateRadios())) {
-    isValid = false;
-  } else {
+  if ((validateName()) && (validateOthers()) && (validateRadios())) {
     isValid = true;
+  } else {
+    isValid = false;
   }
   return isValid;
+}
+
+function showResults() {
+  const rightContent = document.querySelector('.right-content');
+  const infos = [];
+  infos[0] = 'Olá, '+document.querySelector('#first-name').value+' '+document.querySelector('#last-name').value;
+  rightContent.innerHTML = '';
+  rightContent.innerText = infos;
 }
 
 const buttonRegister = document.querySelector('#facebook-register');
@@ -56,5 +64,7 @@ buttonRegister.addEventListener('click', function (event) {
   submitError.innerText = '';
   if (!validateForm()) {
     submitError.innerText = 'Campos inválidos';
+  } else {
+    showResults();
   }
 });

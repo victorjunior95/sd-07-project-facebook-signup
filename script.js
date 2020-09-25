@@ -15,6 +15,7 @@ function buttonSelected() {
       return (selectedValue = radioButtons[u].value);
     }
   }
+
   return selectedValue;
 }
 

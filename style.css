@@ -50,10 +50,6 @@ header {
   margin: 3px;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
 .form-control button {
   border-radius: 3px;
   margin: 3px;

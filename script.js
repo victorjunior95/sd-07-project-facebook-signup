@@ -96,7 +96,7 @@ genderCustom.addEventListener('click', function () {
   if (tagSon === null) {
     const newInput = document.createElement('input');
     newInput.type = 'text';
-    newInput.name = 'gender-custom';
+    newInput.name = 'gender';
     newInput.id = 'text-gender-custom';
     newInput.classList.add('gender-custom');
     newInput.placeholder = 'Gênero (opcional)';

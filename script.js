@@ -44,10 +44,10 @@ function validateNewAccountFormLessRadioButton() {
       counter += 1;
     }
   }
-  if (counter === 5) {
-    validation = false;
-  } else {
+  if (counter === 0) {
     validation = true;
+  } else {
+    validation = false;
   }
   return validation;
 }

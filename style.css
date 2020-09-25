@@ -80,7 +80,7 @@ body {
 
 .left-content {
   justify-content: center;
-  min-width: 800px;
+  width: 800px;
 }
 
 .paragrafo {

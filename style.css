@@ -12,7 +12,10 @@ header {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
+  font-family: sans-serif;
+  font-size: small;
   justify-content: space-between;
   width: 70%;
 }

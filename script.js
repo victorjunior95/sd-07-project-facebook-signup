@@ -7,12 +7,19 @@ const genderContainer = document.querySelector('#gender-container');
 const genderF = genderContainer.querySelector('input[value="Feminino"]');
 const genderM = genderContainer.querySelector('input[value="Masculino"]');
 const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
-const genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
+let genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
 let customInput = document.querySelector('#custom-input');
+const rightContent = document.querySelector('.right-content');
 
 btnLgn.addEventListener('click', function () {
   alert(inputEmailPh.value);
 });
+
+function showData() {
+  const camposForm = regForm.getElementsByTagName('input');
+  genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
+  rightContent.innerHTML = `Olá, ${camposForm[0].value}  ${camposForm[1].value}<br>  ${camposForm[2].value}<br> ${camposForm[4].value}<br> ${genderChecked.value}`
+}
 
 function preventSubmit() {
   regForm.addEventListener('submit', function (e) {
@@ -27,6 +34,7 @@ function inputCheck() {
     if (camposForm[i].value === '') {
       invalidMsg.innerHTML = 'Campos inválidos';
       preventSubmit();
+      return false;
     }
   }
 }
@@ -35,6 +43,7 @@ function genderCheck() {
   if (genderChecked === null) {
     invalidMsg.innerHTML = 'Escolha um gender';
     preventSubmit();
+    return false;
   }
 }
 
@@ -42,6 +51,9 @@ function checkForm() {
   regFormBtn.addEventListener('click', function () {
     genderCheck();
     inputCheck();
+    if (inputCheck() !== false && genderCheck() !== false) {
+      showData();
+    }
   });
 }
 

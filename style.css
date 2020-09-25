@@ -9,14 +9,12 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  justify-content: space-between;
   padding: 10px 15%;
 }
 
 .container {
-  align-content: flex-start;
-  display: flex;
   justify-content: flex-end;
+  display: flex;
 }
 
 .facebook-logo {

@@ -6,12 +6,11 @@ buttonLogin.addEventListener('click', function () {
 
 function createTextField() {
   const newField = document.createElement('input');
-  const buttonRegister = document.querySelector('#facebook-register');
-  const form = document.querySelector('.open-account');
+  const genreOpcional = document.querySelector('#genre-opcional');
   newField.type = 'text';
   newField.name = 'gender-custom';
   newField.placeholder = 'Gênero (opcional)';
-  form.insertBefore(newField, buttonRegister);
+  genreOpcional.appendChild(newField);
 }
 
 const buttonCustom = document.getElementById('custom');

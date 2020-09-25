@@ -14,8 +14,20 @@ enrrolmentButton.addEventListener('click', function (event) {
   for (let index = 0; index < inputList.length; index += 1) {
     if (inputList[index].value === '') {
       document.getElementById('invalid-field').style.display = 'block';
-    }
+      return;
+    } 
   }
+  const formData = document.getElementById('form-data');
+  new FormData(formData);
+  console.log(formData.gender.value);
+  document.getElementById('sign-up-completed').classList.remove('gender-personalized');
+  document.getElementById('sign-up-form').classList.add('gender-personalized');
+  const outputList = document.getElementsByClassName('output-form');
+  const outputDiv = document.getElementById('sign-up-completed');
+  outputDiv.innerHTML = `Olá ${outputList[0].value} ${outputList[1].value}<br>
+  Email: ${outputList[2].value}<br>
+  Data de nascimento: ${outputList[3].value}<br>
+  Gênero: ${formData.gender.value}`;
 });
 
 document.getElementById('other').addEventListener('click', function () {
@@ -29,3 +41,5 @@ document.getElementById('female').addEventListener('click', function () {
 document.getElementById('male').addEventListener('click', function () {
   document.getElementById('gender-personalized').classList.add('gender-personalized');
 });
+
+document

@@ -18,8 +18,10 @@
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-weight: 700;
 }
 
 .form-control {
@@ -27,16 +29,22 @@
 }
 
 .main-content {
+  background-image: linear-gradient(to top, rgb(59, 89, 152), white);
   display: flex;
+  height: 100vh;
   justify-content: center;
   width: 100%;
 }
 
 .left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .right-content {
+  display: flex;
   width: 300px;
 }
 

@@ -52,3 +52,11 @@ function validateNewAccountForm() {
 const createAccountBt = document.getElementById('facebook-register');
 
 createAccountBt.addEventListener('click', validateNewAccountForm);
+
+document.getElementById('custom').addEventListener('click', function () {
+  const genderCustom = document.createElement('input');
+  genderCustom.name = 'gender-custom';
+  genderCustom.placeholder = 'Gênero (opcional)';
+  genderCustom.required = true;
+  document.getElementById('gender-custom').appendChild(genderCustom);
+})

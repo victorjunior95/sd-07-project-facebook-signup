@@ -1,22 +1,22 @@
 function validar() {
   // Leitura dos dados
-  const userLogin = document.getElementById("user-email-phone").value;
-  const userPassord = document.getElementById("user-password").value;
+  const userLogin = document.getElementById('user-email-phone').value;
+  const userPassord = document.getElementById('user-password').value;
 
   let mensagem = '';
   // Comparações
   if (userLogin === '') {
-    mensagem += "Campo nome é obrigatório!!!\n";
+    mensagem += 'Campo nome é obrigatório!!!\n';
   }
   if (userPassord === '') {
-    mensagem += "Campo e-mail é obrigatório!!!\n";
+    mensagem += 'Campo e-mail é obrigatório!!!\n';
   }
 
   if (mensagem !== '') {
     alert('Email ou telefone');
   }
 
-  if (mensagem == "") {
+  if (mensagem == '') {
     alert('login efetuado com sucesso ');
   }
 }

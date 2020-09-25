@@ -3,14 +3,20 @@
 }
 
 .form-control {
-  align-self: flex-end;
   display: flex;
+  flex-direction: column;
 }
 
 .form-group {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.genero{
+  display: flex;
+  flex-direction: row;
+
 }
 
 .left-content {
@@ -30,7 +36,7 @@
 
 .right-content {
   width: 300px;
-}
+ }
 
 .senha {
   display: flex;
@@ -42,3 +48,4 @@
   display: flex;
   justify-content: space-between;
 }
+

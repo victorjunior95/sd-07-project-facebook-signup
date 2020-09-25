@@ -27,10 +27,9 @@ body {
   width: 10rem;
 }
 
-
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 2rem auto 0;
   width: 75%;
 }
@@ -44,7 +43,8 @@ body {
   display: flex;
 }
 
-.facebook-login button {
+.form-control button {
+  align-self: flex-end;
   background-color: rgb(86, 115, 201);
   border: 1px solid rgb(44, 44, 44);
   color: white;

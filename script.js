@@ -17,6 +17,6 @@ function createCustom() {
 const authenticationButton = document.getElementById('button-login');
 const buttonRadio = document.querySelector('#personalizado');
 
-authenticationButton.addEventListener('change', alertEmailOrPhone);
+authenticationButton.addEventListener('click', alertEmailOrPhone);
 
-buttonRadio.addEventListener('click', createCustom);
+buttonRadio.addEventListener('change', createCustom);

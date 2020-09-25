@@ -5,10 +5,17 @@ function plotInvalid() {
   formField.appendChild(msgError);
 }
 
+function createCustomGender() {
+  const genderCustom = document.querySelector('.hidden-input');
+  genderCustom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+}
 
 const btnLogin = document.querySelector('#button-login');
 const formElements = document.querySelectorAll('.create-account [name]');
 const btnFormSubmit = document.querySelector('#facebook-register');
+const btnCustomGender = document.querySelector('#Personalizado');
+
+btnCustomGender.addEventListener('click', createCustomGender);
 
 btnLogin.addEventListener('click', () => {
   const emailValue = document.querySelector('#user-email-phone');

@@ -13,3 +13,11 @@ btnValidate.addEventListener('click', function(){
   }
 });
 /* validate form empty end */
+
+const clickButton = document.getElementById('button-login')
+const userEmail = document.getElementById('user-email-phone-label'.value)
+
+clickButton.addEventListener('click', function() {
+  alert(userEmail.value)
+})
+

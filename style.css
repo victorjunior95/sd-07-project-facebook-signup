@@ -62,6 +62,7 @@ body {
 
 .main-form-name input {
   margin-right: 10px;
+  width: 130px;
 }
 
 .form-others input {
@@ -75,6 +76,8 @@ body {
 
 .gender-container {
   display: flex;
+  width: 280px;
+  font-size: 13px;
 }
 
 .gender-container input {

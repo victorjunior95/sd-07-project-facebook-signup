@@ -48,31 +48,31 @@ submitBotao.addEventListener('click', function (evt) {
 });
 
 function personalizadoSelecionado() {
-  // const divPesonalizado = document.querySelector('#pesonalizado-selecionado');
-  // const campoPersonalizado = document.createElement('input');
-  // campoPersonalizado.name = 'gender-custom';
-  // campoPersonalizado.placeholder = 'Gênero (opcional)';
-  // campoPersonalizado.id = 'idgenero';
-  // divPesonalizado.appendChild(campoPersonalizado);
+  const divPesonalizado = document.querySelector('#pesonalizado-selecionado');
+  const campoPersonalizado = document.createElement('input');
+  campoPersonalizado.name = 'gender-custom';
+  campoPersonalizado.placeholder = 'Gênero (opcional)';
+  campoPersonalizado.id = 'idgenero';
+  divPesonalizado.appendChild(campoPersonalizado);
   // Inicio Gambiarra
   // const campoPersonalizado2 = document.createElement('input');
   // campoPersonalizado2.name = 'gender';
   // campoPersonalizado2.placeholder = 'Gênero (opcional)';
   // divPesonalizado.appendChild(campoPersonalizado2);
   // Fim Gambiarra
-  const idgenero = document.getElementById('idgenero');
-  idgenero.style.display = '';
+  // const idgenero = document.getElementById('idgenero');
+  // idgenero.style.display = '';
 }
 
 function removerDivPersonalizado() {
-  // document.querySelector('#pesonalizado-selecionado').innerHTML = '';
+  document.querySelector('#pesonalizado-selecionado').innerHTML = '';
   // Gambiarra
   // const idgenero = document.getElementById('idgenero');
   // if (idgenero != null) {
   //   idgenero.remove();
   // }
-  const idgenero = document.getElementById('idgenero');
-  idgenero.style.display = 'none';
+  // const idgenero = document.getElementById('idgenero');
+  // idgenero.style.display = 'none';
 }
 
 const personalizadoForm = document.querySelector('#personalizado');

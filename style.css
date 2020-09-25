@@ -25,16 +25,11 @@
   color: white;
   cursor: pointer;
   height: 25px;
+  margin-top: 25px;
 }
 
 .button-login:hover {
   background-color: rgb(66, 103, 178);
-}
-
-.button-login-form {
-  align-items: center;
-  display: flex;
-  height: 33%;
 }
 
 .button-register {
@@ -95,6 +90,7 @@
 
 .form-control {
   align-self: flex-end;
+  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
 }

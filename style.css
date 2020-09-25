@@ -17,9 +17,12 @@ body {
   height: 80px;
   justify-content: space-between;
   margin: auto;
-  width: 65%;
+  width: 82%;
 }
 
+.facebook-logo {
+  justify-content: left;
+}
 .user-label {
   font-size: small;
   margin-bottom: 8px;
@@ -48,6 +51,7 @@ body {
 }
 
 .form-control {
+  align-self: flex-end;
   display: flex;
   margin: auto;
   padding: 5px;
@@ -71,12 +75,10 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width: 65%;
+  width: 82%;
 }
 
-.main-content .left-content {
-  display: flex;
-  flex-direction: column;
+aside .left-content {
   width: 800px;
 }
 

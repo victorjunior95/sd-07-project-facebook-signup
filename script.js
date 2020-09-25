@@ -42,7 +42,7 @@ const mainForm = document.querySelector('.main-form');
 mainForm.appendChild(p);
 
 function verificaRadio() {
-  const radios = document.querySelectorAll('.radio');
+  const radios = document.querySelectorAll('.radios');
 
   if (
     radios[0].checked === false &&
@@ -74,7 +74,7 @@ buttonRegister.addEventListener('click', function (event) {
 //----------------------------------------------------------------------
 
 const containerRadio = document.querySelector('.div-personalizado');
-const personalizado = document.querySelector('.radio-personalizado');
+const personalizado = document.querySelector('#personalizado');
 
 personalizado.addEventListener('click', function () {
   containerRadio.innerHTML = '';

@@ -124,3 +124,7 @@ button {
 .msg-campo-vazio {
   color: red;
 }
+
+.gender-custom{
+  display: none;
+}

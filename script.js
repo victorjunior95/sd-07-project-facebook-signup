@@ -78,11 +78,8 @@ function validaCadastro() {
 }
 
 const removeTagChild = function () {
-  const tagSon = document.getElementById('text-gender-custom');
-  const tagFather = document.querySelector('.right-content');
-  if (tagSon !== null) {
-    tagFather.removeChild(tagSon);
-  }
+  const tagInput = document.querySelector('.gender-custom');
+  tagInput.style.display = 'none';
 };
 
 buttonSignUp.addEventListener('click', validaCadastro);
@@ -92,16 +89,6 @@ genderFeminine.addEventListener('click', removeTagChild);
 genderMale.addEventListener('click', removeTagChild);
 
 genderCustom.addEventListener('click', function () {
-  const tagSon = document.getElementById('text-gender-custom');
-  if (tagSon === null) {
-    const newInput = document.createElement('input');
-    newInput.type = 'text';
-    newInput.name = 'gender';
-    newInput.id = 'text-gender-custom';
-    newInput.classList.add('gender-custom');
-    newInput.placeholder = 'Gênero (opcional)';
-
-    const tagFather = document.querySelector('.right-content');
-    tagFather.insertBefore(newInput, tagFather.lastElementChild);
-  }
+  const tagInput = document.querySelector('.gender-custom');
+  tagInput.style.display = 'inline';
 });

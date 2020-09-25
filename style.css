@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.facebook-logo {
+  width: 150px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.facebook-slogan {
+  display: flex;
+}
+
+.left-content {
+  text-align: center;
+  width: 800px;
+}
+
+.rigth-content {
+  width: 300px;
+}
+
+.nomes {
+  display: flex;
+}
+
+.fone_mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.entrada_nome {
+  width: 150px;
+}

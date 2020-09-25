@@ -13,7 +13,7 @@ function validar() {
   }
 
   if (mensagem !== '') {
-    alert('Email ou telefone');
+    alert('"Email ou telefone"');
   }
 
   if (mensagem === '') {

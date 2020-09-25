@@ -5,6 +5,8 @@ const name = document.querySelector('#name').value;
 const lastName = document.querySelector('#lastname').value;
 const email = document.querySelector('#email').value;
 const birthdate = document.querySelector('#birthdate').value;
+const submit = document.querySelector('#facebook-register');
+const content = document.querySelector('.rigth-content');
 
 button.addEventListener('click', function () {
   const userEmail = document.getElementById('user-email-phone').value;
@@ -17,4 +19,13 @@ custom.addEventListener('click', function () {
   campoTexto.name = 'gender';
   campoTexto.placeholder = 'Gênero (opcional)';
   labelCustom.appendChild(campoTexto);
+});
+
+
+submit.addEventListener('click', function () {
+  content.innerHTML = '';
+  content.innerText = name;
+  content.innerText = email;
+  content.innerText = lastName;
+  content.innerText = birthdate;
 });

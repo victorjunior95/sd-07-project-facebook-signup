@@ -10,12 +10,16 @@ const buttonRegister = document.getElementById('facebook-register');
 buttonRegister.addEventListener('click', function () {
   event.preventDefault();
   const inputItems = document.getElementsByClassName('input-item');
+  const counter = 0
   for (let index = 0; index < inputItems.length; index += 1) {
     const result = inputItems[index];
     if (result.value === '') {
       result.value = 'Campos inválidos';
+      counter += 1
     }
   }
+  const masculino = document.getElementById('masculino')
+  if (counter > 1 || )
 });
 
 const personal = document.getElementById('personal');

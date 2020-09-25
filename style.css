@@ -4,13 +4,18 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  height: 100px;
+  height: 80px;
   justify-content: space-between;
-  width: 100%;
+  margin: auto;
+  max-width: 800px;
 }
 
 .facebook-login {
@@ -22,7 +27,7 @@ body {
 input {
   border: solid 1px rgb(9, 9, 138);
   margin-right: 10px;
-  padding: 5px;
+  width: 150px;
 }
 
 .form-group {
@@ -39,9 +44,17 @@ input {
   border: solid 1px rgb(9, 9, 138);
   color: white;
   font-weight: 600;
-  padding: 5px;
 }
 
 .button-login:hover {
   background-color: rgb(95, 130, 215);
+}
+
+.main-content {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 600px;
+  padding: 100px;
 }

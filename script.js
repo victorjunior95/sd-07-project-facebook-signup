@@ -42,3 +42,9 @@ let tarefa = document.createElement('li');
         tarefa.textContent = novaTarefa.value;
         tarefa.classList.add('tarefas');
         lista.appendChild(tarefa);
+const btnLogin = document.getElementById('button-login');
+const inputText = document.querySelector('#user-email-phone');
+
+btnLogin.addEventListener('click', function () {
+  alert(inputText.value);
+});

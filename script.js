@@ -61,7 +61,7 @@ function addCustomGenderInput() {
   });
 }
 
-function removeCustomGenderInput() { // pode dar erro com o cypress
+function removeCustomGenderInput() { // pode dar erro com o cypress!
   genderM.addEventListener('click', function () {
     customInput = document.querySelector('#custom-input');
     if (customInput !== null) {

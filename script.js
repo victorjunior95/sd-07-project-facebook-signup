@@ -19,6 +19,7 @@ function validar() {
   if (mensagem === "") {
     alert("login efetuado com sucesso ");
   }
+  return 
 }
 function validarNovoUsuario() {
   let listaForm = {};

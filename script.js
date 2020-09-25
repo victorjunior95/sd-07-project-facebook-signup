@@ -5,17 +5,13 @@ submitBt.addEventListener('click', function () {
   alert(getUser);
 });
 
-let personalGenre = document.querySelector('#personalized');
+const personalGenre = document.querySelector('#personalized');
 /* Podemos adicionar outros elementos na hora do layout */
-personalGenre.addEventListener('change',() => {
-  
-  let perGen = document.createElement('input'),
-      container = document.querySelector('#personalize-container');
-
-  perGen.name = "gender-custom";
-  perGen.placeholder = "Gênero (opcional)";
-  perGen.type = "text";
-  
+personalGenre.addEventListener('change', () => {
+  const perGen = document.createElement('input');
+  const container = document.querySelector('#personalize-container');
+  perGen.name = 'gender-custom';
+  perGen.placeholder = 'Gênero (opcional)';
+  perGen.type = 'text';
   container.appendChild(perGen);
-
 });

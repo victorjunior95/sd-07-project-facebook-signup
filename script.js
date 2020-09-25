@@ -3,7 +3,7 @@ botaoLogin.addEventListener('click', function () {
   const emailTelefone = document.querySelector('#user-email-phone').value;
   alert(emailTelefone);
 });
-const dayButton = document.querySelector('#day');
+/* const dayButton = document.querySelector('#day');
 const monthButton = document.querySelector('#month');
 const yearButton = document.querySelector('#year');
 
@@ -26,7 +26,7 @@ for (let indexYear = 2020; indexYear >= 1905; indexYear -= 1) {
   optionYear.setAttribute('value', indexYear);
   optionYear.innerText = indexYear;
   yearButton.appendChild(optionYear);
-}
+} */
 
 const customButton = document.querySelector('#custom-button');
 const genderOptions = document.querySelectorAll('.gender-options')[0];

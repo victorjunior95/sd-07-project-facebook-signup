@@ -96,3 +96,14 @@ input {
 .facebook-register:hover {
   background-color: rgb(90, 165, 90);
 }
+
+.radio-gender {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 8px;
+}
+
+.radio-gender input {
+  margin: 0;
+}

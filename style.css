@@ -1,38 +1,42 @@
-* {
+/* GERAL */
+body {
     padding: 0px;
     margin: 0px;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-}
-
+/* BARRA SUPERIOR */
 .top-bar {
     display: flex;
-    width: 100vw;
-    height: 12vh;
     background-color: rgb(66, 103, 178);
-    margin: 0 auto;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.topo{
-    display: flex;
+.facebook-logo {
+    align-items: flex-start;
 }
 
 .facebook-login {
     display: flex;
+    background-color: rgb(66, 103, 178);
+    align-items: center;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .form-group {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    margin-left: 5px;
 }
 
 .form-control {
+    margin-left: 5px;
     align-self: flex-end;
 }
+
+/* CORPO */
 
 .main-content {
     display: flex;
@@ -41,20 +45,20 @@ body{
 
 .left-content {
     width: 800px;
+    text-align: center;
 }
 
 .right-content {
     width: 300px;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 100px;
+    margin-top: 10px;
 }
 
 .especiais {
     display: flex;
-}
-
-#label-gender {
-    width: 100%;
 }
 
 .opcoes {

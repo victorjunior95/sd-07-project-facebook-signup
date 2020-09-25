@@ -12,23 +12,15 @@ body {
 
 .facebook-logo {
   display: flex;
-<<<<<<< HEAD
   width: 150px;
-=======
-  justify-content: flex-start;
->>>>>>> 351ffa3880ae995e8187fc17ddc7893568d9b009
 }
 
 .facebook-login {
   align-items: baseline;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   flex-wrap: nowrap;
   justify-content: flex-start;
-=======
-  justify-content: flex-end;
->>>>>>> 351ffa3880ae995e8187fc17ddc7893568d9b009
 }
 
 .facebook-login label {

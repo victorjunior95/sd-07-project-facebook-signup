@@ -1,67 +1,61 @@
 body {
-/*   background-color: yellow; */
+  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  display: flex;
-  justify-content: space-between;
-/*   align-items: baseline; */
-  width: 100vw;
   border-bottom: 1px solid #133783;
+  display: flex;
   height: 82px;
+  justify-content: space-between;
+  width: 100vw;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  justify-content: space-evenly;
-  margin: 8px;
-  color: white;
+  justify-content: center;
+  margin: 10px;
 }
 
-.form-control #button-login {
+.labelHeader {
+  margin-bottom: 5px;
+}
+
+.buttonLogin {
   background-color: #4267b2;
-  color: white;
   border: 1px solid #29487d;
   border-radius: 2px;
+  color: white;
+  cursor: pointer;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 17px;
+  margin-left: 5px;
   padding: 2px 6px;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  margin-left: 5px;
 }
 
 .form-control {
-    align-self: flex-end;
-    margin-bottom: 18px;
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 .facebook-logo {
-/*     width: 170px;
-    height: 33px; */
-    height: 30px;
-    width: auto;
-    align-self: flex-end;
-    margin-bottom: 17px;
-/*     margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
+  align-self: flex-end;
+  height: 30px;
+  margin-bottom: 20px;
+  width: auto;
 }
 
-
-
-input { /* ********** */
+input {
   border: 1px solid #ccd0d5;
   border-color: #1d2a5b;
   padding: 3px;
@@ -69,32 +63,28 @@ input { /* ********** */
 }
 
 .facebook-login {
-    display: flex;
-    justify-content: baseline;
+  display: flex;
 }
 
 .main-content {
+  background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-
-.left-content {
-  width: 800px;
-  color: #0e385f;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 29px;
-  margin-top: 40px;
-}
-
-.main-content {
-  background: linear-gradient(white, #D3D8E8);
   height: 100vh;
+  justify-content: space-between;
   width: 100vw;
 }
 
-.left-content p{
+.left-content {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 800px;
+}
+
+.left-content p {
   width: 450px;
 }
 
@@ -107,10 +97,11 @@ input { /* ********** */
 }
 
 .open {
-  padding-top: 20px;
+  color: #333;
   font-size: 36px;
   font-weight: 600;
-  color: #333;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .quick-easy {
@@ -124,15 +115,15 @@ input { /* ********** */
 }
 
 .formRight {
-  font-size: 16px;
-  background-color: #fff;
-  color: #1c1e21;
-  padding: 8px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  min-width: 271px;
+  background-color: white;
   border: solid 1px rgb(195, 195, 195);
+  border-radius: 5px;
+  color: #1c1e21;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  min-width: 271px;
+  padding: 8px;
 }
 
 .name {
@@ -142,74 +133,73 @@ input { /* ********** */
 .formLabel {
   color: #90949c;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
 .dateType {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 14px;
   color: #1c1e21;
   font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .divGender {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   width: 300px;
-
 }
 
 .formRadio {
-  padding: 0;
   flex: 0 1 auto;
+  padding: 0;
 }
 
 .submitButton {
-    background: linear-gradient(#67ae55, #578843);
-    background-color: #69a74e;
-    box-shadow: inset 0 1px 1px #a4e388;
-    border-color: #3b6e22 #3b6e22 #2c5115;
-    min-width: 194px;
-    padding: 7px 20px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    border: 1px solid;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  border: 1px solid;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px #a4e388;
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  min-width: 194px;
+  padding: 7px 20px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .textBottom {
   color: #666;
-  text-align: left;
-  line-height: 1.34em;
   font-size: 10px;
-  width: 290px;
-  padding-top: 5px;
+  line-height: 1.34em;
   padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: left;
+  width: 290px;
 }
 
 .textBottom2 {
   color: #666;
-  text-align: left;
-  line-height: 1.34em;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
+  line-height: 1.34em;
   margin-top: 10px;
-  padding-top: 5px;
   padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: left;
 }
 
 span {
@@ -217,8 +207,8 @@ span {
 }
 
 .questionMark {
-  width: 16px;
   height: auto;
   margin-left: 3px;
   margin-right: 15px;
+  width: 16px;
 }

@@ -16,65 +16,43 @@ radioCustomGender.addEventListener('click', function () {
 });
 
 
-const inputFirstName = document.getElementsByName('firstname')[0];
-const inputLastName = document.getElementsByName('lastname')[0];
-const inputPhoneEmail = document.getElementsByName('phone_email')[0];
-const inputPassword = document.getElementsByName('password')[0];
-const inputBirthdate = document.getElementsByName('birthdate')[0];
-const inputGender = document.getElementsByName('gender');
-const btnSignUp = document.querySelector('#facebook-register');
+const justValidate = new window.JustValidate('.new-account', {
+  messages: {
+    primeiroNome: {
+      required: 'Campos inválidos',
+    },
+    ultimoNome: {
+      required: 'Campos inválidos',
+    },
+    email: {
+      required: 'Campos inválidos',
+    },
+    password: {
+      required: 'Campos inválidos',
+    },
+    birthdate: {
+      required: 'Campos inválidos',
+    },
+    radio: {
+      required: 'Campos inválidos',
+    },
+  },
 
-function compararValor() {
-  let alert = false;
+  rules: {
+    primeiroNome: {
+      required: true,
+    },
+    ultimoNome: {
+      required: true,
+    },
+    birthdate: {
+      required: true,
+    },
+    radio: {
+      required: true,
+    },
+  },
 
-  if (inputFirstName.value === null) {
-    alert = true;
-  }
+});
 
-  if (inputLastName.value === null) {
-    alert = true;
-  }
-
-  if (inputPhoneEmail.value === null) {
-    alert = true;
-  }
-
-  return alert;
-}
-
-function compararValor2() {
-  let alert = false;
-
-  if (inputPassword.value === null) {
-    alert = true;
-  }
-
-  if (inputBirthdate.value === null) {
-    alert = true;
-  }
-
-  return alert;
-}
-
-function compararValor3() {
-  let alert = false;
-
-  let genderChecked = false;
-  if (inputGender[0].checked || inputGender[1].checked || inputGender[2].checked) {
-    genderChecked = true;
-  }
-
-  if (genderChecked === false) {
-    alert = true;
-  }
-
-  return alert;
-}
-
-function alerta() {
-  if (compararValor() || compararValor2() || compararValor3()) {
-    alert('Campos inválidos');
-  }
-}
-
-btnSignUp.addEventListener('click', alerta);
+justValidate.init();

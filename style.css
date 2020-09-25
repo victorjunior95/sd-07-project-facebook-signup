@@ -69,6 +69,13 @@ body {
   align-self: flex-end;
 }
 
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+}
+
 .left-content {
   width: 800px;
 }
@@ -76,13 +83,6 @@ body {
 .rigth-content {
   display: flex;
   width: 300px;
-}
-
-.main-content {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  width: 80%;
 }
 
 .left-content p {

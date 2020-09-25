@@ -30,3 +30,19 @@ botaoLogin.addEventListener('click', function () {
   const EmailTelefone = document.getElementById('user-email-phone').value;
   alert(EmailTelefone);
 });
+
+// Mensagem "Campos inválidos"
+
+const registre = document.getElementById('facebook-register');
+
+registre.addEventListener('click', function () {
+  const firstname = document.getElementById('firstname');
+  const lastname = document.getElementById('lastname');
+  const password = document.getElementById('password');
+  const birthdate = document.getElementById('birthdate');
+  const h4 = document.querySelector('h4');
+
+  if (firstname.value === '' || lastname.value === '' || password.value === '' || birthdate.value === '') {
+    h4.innerText = 'Campos inválidos';
+  }
+});

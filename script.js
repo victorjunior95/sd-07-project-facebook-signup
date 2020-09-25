@@ -58,3 +58,29 @@ buttonRegister.addEventListener('click', function (event) {
     submitError.innerText = 'Campos inválidos';
   }
 });
+
+const allRadioBtns = document.querySelectorAll('input[name="gender"]');
+
+function genderSelected(e) {
+  const gender = e.srcElement.id;
+  const formRegister = document.querySelector('.form-register');
+  const totalChildrensForm = formRegister.children.length - 3;
+  const inputCustomGender = document.querySelector('.custom-gender');
+
+  if (gender === 'custom') {
+    if (!inputCustomGender) {
+      const newInputCustomGender = document.createElement('input');
+
+      newInputCustomGender.className = 'custom-gender';
+      newInputCustomGender.name = 'gender';
+      formRegister.children[totalChildrensForm].appendChild(newInputCustomGender);
+    }
+  }
+
+  if (inputCustomGender) {
+    inputCustomGender.remove();
+  }
+}
+for (let i = 0; i < allRadioBtns.length; i += 1) {
+  allRadioBtns[i].addEventListener('click', genderSelected);
+}

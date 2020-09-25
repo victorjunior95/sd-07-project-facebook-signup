@@ -1,36 +1,44 @@
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 
-buttonLogin.addEventListener('click', function () {
-  alert(userEmailPhone.value);
+buttonLogin.addEventListener('click', function (event) {
+  if (userEmailPhone.value === '') {
+    event.preventDefault();
+  } else {
+    alert(userEmailPhone.value);
+  }
+
 });
 
+let buttonRegister = document.getElementById('facebook-register');
+const firstname = document.getElementById('firstname');
+const lastname = document.getElementById('lastname');
+const phoneEmail = document.getElementById('phone-email');
+const password = document.getElementById('password');
+const birthdate = document.getElementById('birthdate');
+// const gender = document.getElementsByClassName('radio');  identificar qual index eu selecionei
 
-// 18 - Validar se todos os campos foram preenchidos ao clicar no botão "Cadastre-se"
-// Pontos importantes:
-
-// Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido
-
-const buttonRegister = document.getElementById('facebook-register');
-const nameFormRegister = document.getElementById('name-form-register');
-const lastNameFormRegister = document.getElementById('last-name-form-register');
-const phoneEmailFormRegister = document.getElementsById('phone_email')[0];
-const passwordFormRegister = document.getElementsById('password')[0];
-const birthdateFormRegister = document.getElementsById('birthdate')[0];
-const genderFormRegister = document.getElementsById('gender'); // [index]
-
-buttonRegister.addEventListener('click', function () {
-  console.log(nameFormRegister.value);
-  // console.log(lastNameFormRegister.value);
-  // console.log(phoneEmailFormRegister.value);
-  // console.log(passwordFormRegister.value);
-  // console.log(birthdateFormRegister.value);
-  // console.log(genderFormRegister.value);
+buttonRegister.addEventListener('click', function (event) {
+  event.preventDefault();
+  const error = document.querySelector('.error-form');
+  const values = [firstname.value, lastname.value, phoneEmail.value, password.value, birthdate.value];
+  for (let index = 0; index < values.length; index += 1) {
+    if (values[index] === '') {
+      error.style.display = 'initial';
+    }
+  }
 });
 
-// pego todos os elementos inseridos no form
-// const formRegister = document.getElementsByClassName('form-register');
-// criar um for para pegar os valores de cada elemento
+const showGenderCustom = document.querySelector('#Personalizado');
+const classesRadioButtons = document.querySelectorAll('.radio');
 
-// se o valor de algum for '', exibir a msg 'Campos inválidos'
-
+for (let index = 0; index < classesRadioButtons.length; index += 1) {
+  classesRadioButtons[index].addEventListener('click', function (event) {
+    const genderCustom = document.querySelector('.gender-custom');
+    if (event.target.id === 'Personalizado') {
+      genderCustom.style.display = 'initial';
+    } else {
+      genderCustom.style.display = 'none';
+    }
+  });
+}

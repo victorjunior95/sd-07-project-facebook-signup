@@ -3,7 +3,10 @@ const personalizado = document.getElementById('personalizado');
 const select = document.getElementById('genero-personalizado');
 const masculino = document.getElementById('masculino');
 const feminino = document.getElementById('feminino');
-const genero = document.getElementById('gender');
+const cadastro = document.getElementById('facebook-register');
+const iten = document.getElementsByClassName('iten-register');
+const invalid = document.getElementById('invalid-forms');
+const fullname = document.getElementsByClassName('full-name');
 personalizado.addEventListener('change', function () {
   select.style.display = 'block';
 //   document.getElementById('gender-custom').innerText = '';
@@ -27,4 +30,14 @@ const botaoLogin = document.getElementById('button-login');
 botaoLogin.addEventListener('click', function () {
   const EmailTelefone = document.getElementById('user-email-phone').value;
   alert(EmailTelefone);
+});
+
+
+cadastro.addEventListener('click', function () {
+  for(let index = 0; index < iten.length; index += 1){
+    if (iten[index].value === ''){
+       invalid.style.display = 'block';
+    }
+  }
+
 });

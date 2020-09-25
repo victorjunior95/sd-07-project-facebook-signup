@@ -5,6 +5,17 @@ buttonLogin.addEventListener('click', function (event) {
   alert(document.querySelector('#user-email-phone').value);
 });
 
+function validateRadios() {
+  const radioGroup = document.querySelector('.genders').children;
+  let validRadio = true;
+  for (let index = 0; index < radioGroup.index; index += 1) {
+    if (radioGroup[index].checked === false) {
+      validRadio = false;
+    }
+  }
+  return validRadio;
+}
+
 
 function validateForm() {
   let isValid = true;
@@ -14,7 +25,7 @@ function validateForm() {
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
 
-  if ((firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '') || (birthdate.value !== '') || (password.value !== '')) {
+  if ((!validateRadios()) || (firstName.value !== '') || (lastName.value !== '') || (phoneEmail.value !== '') || (birthdate.value !== '') || (password.value !== '')) {
     isValid = true;
   } else {
     isValid = false;

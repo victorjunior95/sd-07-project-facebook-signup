@@ -6,6 +6,17 @@ function verifyEmptyInput(values) {
   return false;
 }
 
+function login(user) {
+  const rightContent = document.getElementById('right-content');
+
+  rightContent.innerHTML = '';
+  rightContent.innerHTML += `Olá, ${user.firstname} ${user.lastname}`;
+  rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
+  rightContent.innerHTML += `<p>${user.birthdate}</p>`;
+  rightContent.innerHTML += `<p>${user.gender}</p>`;
+
+}
+
 const btnLogin = document.getElementById('button-login');
 btnLogin.addEventListener('click', function () {
   const email = document.forms['form-login'].email.value;
@@ -27,6 +38,8 @@ btnValidate.addEventListener('click', function () {
   if (verifyEmptyInput([firstname, lastname, phoneEmail, password, birthdate, gender])) {
     const formRegister = document.getElementsByClassName('facebook-register')[0];
     formRegister.innerHTML += 'Campos inválidos';
+  } else {
+    login({firstname, lastname, phoneEmail, birthdate, gender});
   }
 });
 

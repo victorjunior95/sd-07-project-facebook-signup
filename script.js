@@ -68,7 +68,6 @@ function newUserData() {
 ${phoneEmail.value}
 ${birthdate.value}
 ${gender}`;
-  rightContent.appendChild(p);
 }
 
 buttonRegister.addEventListener('click', function (event) {

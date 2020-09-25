@@ -99,10 +99,21 @@ const messagesValidate = {
 };
 
 function letItBe() {
-  const createElementMessage = document.createElement('p');
-  createElementMessage.innerText = 'Campos inválidos';
-  createElementMessage.className = 'error';
-  getForm.appendChild(createElementMessage);
+  const getError = document.querySelector('#errorMessage');
+  if (getError == null) {
+    const createElementMessage = document.createElement('p');
+    createElementMessage.innerText = 'Campos inválidos';
+    createElementMessage.className = 'error';
+    createElementMessage.id = 'errorMessage';
+    getForm.appendChild(createElementMessage);
+  } else {
+    getError.remove();
+    const createElementMessage = document.createElement('p');
+    createElementMessage.innerText = 'Campos inválidos';
+    createElementMessage.className = 'error';
+    createElementMessage.id = 'errorMessage';
+    getForm.appendChild(createElementMessage);
+  }
 }
 
 function letsDoIt() {
@@ -115,8 +126,8 @@ function letsDoIt() {
   if (radioFem.checked === true) { genderInput = 'Feminino'; } else if (radioMas.checked === true) { genderInput = 'Masculino'; } else { genderInput = 'Personalizado'; }
   const createNewElementMessage = document.createElement('p');
   createNewElementMessage.innerHTML = `Olá, ${firstNameInput} ${lastNameInput} \n ${phoneEmailInput} \n ${birthdateInput} \n ${genderInput}`;
-  createNewElementMessage.className = 'newRightElement';
-  getRightSide.appendChild(createNewElementMessage);
+  getRightSide.innerHTML = createNewElementMessage.innerHTML;
+  getRightSide.classList.add('newRightElement');
 }
 
 const helpMePlease = {

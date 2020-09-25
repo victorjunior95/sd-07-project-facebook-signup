@@ -6,28 +6,48 @@ body {
 
 .top-bar {
   align-items: center;
+  align-content: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 80px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .facebook-logo {
-  
+  width: 180px
 }
 
 .facebook-login {
   display: flex;
   flex-flow: row nowrap;
+  /* align-items: baseline; */
+  /* align-content: initial; */
+  /* background-color: aqua; */
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.form-group label {
+  color: white;
+}
+
+.form-group span {
+  color: white;
+  opacity: 0.6;
 }
 
 .form-control {
   align-self: flex-end;
+}
+
+.button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
 }
 
 .main-content {

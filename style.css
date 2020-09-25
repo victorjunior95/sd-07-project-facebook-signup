@@ -11,6 +11,11 @@
 .aditional-data p {
   color: #777;
   font-size: 11px;
+  text-align: justify;
+}
+
+.create-page {
+  font-size: 13px
 }
 
 .button-login {
@@ -40,8 +45,8 @@
   font-size: 18px;
   font-weight: 900;
   height: 45px;
+  margin-bottom: 10px;
   width: 60%;
-
 }
 
 .date {
@@ -129,6 +134,7 @@
 }
 
 .main-content {
+  background: linear-gradient(white, #D3D8E8);
   display: flex;
   justify-content: flex-start;
 }

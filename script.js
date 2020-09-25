@@ -52,17 +52,22 @@ function personalizadoSelecionado() {
   const campoPersonalizado = document.createElement('input');
   campoPersonalizado.name = 'gender-custom';
   campoPersonalizado.placeholder = 'Gênero (opcional)';
+  campoPersonalizado.id = 'idgenero';
   divPesonalizado.appendChild(campoPersonalizado);
   // Inicio Gambiarra
-  const campoPersonalizado2 = document.createElement('input');
-  campoPersonalizado2.name = 'gender';
-  campoPersonalizado2.placeholder = 'Gênero (opcional)';
-  divPesonalizado.appendChild(campoPersonalizado2);
+  // const campoPersonalizado2 = document.createElement('input');
+  // campoPersonalizado2.name = 'gender';
+  // campoPersonalizado2.placeholder = 'Gênero (opcional)';
+  // divPesonalizado.appendChild(campoPersonalizado2);
   // Fim Gambiarra
 }
 
 function removerDivPersonalizado() {
-  document.querySelector('#pesonalizado-selecionado').innerHTML = '';
+  // document.querySelector('#pesonalizado-selecionado').innerHTML = '';
+  const idgenero = document.getElementById('idgenero');
+  if (idgenero != null) {
+    idgenero.remove();
+  }
 }
 
 const personalizadoForm = document.querySelector('#personalizado');

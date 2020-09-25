@@ -20,6 +20,60 @@ const phoneEmail = document.getElementById('phone-email');
 const password = document.getElementById('password');
 const birthdate = document.getElementById('birthdate');
 
+function radioEvents(event) {
+  if (event.target.id === 'Personalizado') {
+    genderCustom.style.display = 'initial';
+    gender = 'Personalizado';
+  } else {
+    genderCustom.style.display = 'none';
+    switch (event.target.id) {
+      case 'Feminino':
+        gender = 'Feminino';
+        break;
+      default:
+        gender = 'Masculino';
+        break;
+    }
+  }
+}
+
+for (let index = 0; index < classesRadioButtons.length; index += 1) {
+  classesRadioButtons[index].addEventListener('click', radioEvents);
+}
+
+function validationRadioButton() {
+  let check = 0;
+  const radio0 = classesRadioButtons[0].checked;
+  const radio1 = classesRadioButtons[1].checked;
+  const radio2 = classesRadioButtons[2].checked;
+
+  if (radio0 || radio1 || radio2) {
+    check = 1;
+  }
+
+  switch (true) {
+    case (check > 0 && classesRadioButtons[2].checked && genderCustom.value === ''):
+      return false;
+    case (check > 0 && classesRadioButtons[2].checked && genderCustom.value !== ''):
+      return true;
+    case (check > 0):
+      return true;
+    default:
+      return false;
+  }
+}
+
+function newUserData() {
+  rightContent.innerHTML = '';
+  const p = document.createElement('p');
+  p.className = 'register';
+  p.innerHTML = `Olá, ${firstname.value} ${lastname.value}
+${phoneEmail.value}
+${birthdate.value}
+${gender}`;
+  rightContent.appendChild(p);
+}
+
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
   const firstnameV = firstname.value;
@@ -42,54 +96,3 @@ buttonRegister.addEventListener('click', function (event) {
     error.style.display = 'initial';
   }
 });
-
-for (let index = 0; index < classesRadioButtons.length; index += 1) {
-  classesRadioButtons[index].addEventListener('click', function (event) {
-    if (event.target.id === 'Personalizado') {
-      genderCustom.style.display = 'initial';
-      gender = 'Personalizado';
-    } else {
-      genderCustom.style.display = 'none';
-      switch (event.target.id) {
-        case 'Feminino':
-          gender = 'Feminino';
-          break;
-        default:
-          gender = 'Masculino';
-          break;
-      }
-    }
-  });
-}
-
-function validationRadioButton() {
-  let check = 0;
-  for (let index = 0; index < classesRadioButtons.length; index += 1) {
-    if (classesRadioButtons[index].checked) {
-      check += 1;
-    }
-  }
-
-  if (check > 0) {
-    if (classesRadioButtons[2].checked) {
-      if (genderCustom.value === '') {
-        return false;
-      }
-    } else {
-      return true;
-    }
-  } else {
-    return false;
-  }
-}
-
-function newUserData() {
-  rightContent.innerHTML = '';
-  const p = document.createElement('p');
-  p.className = 'register';
-  p.innerHTML = `Olá, ${firstname.value} ${lastname.value}
-${phoneEmail.value}
-${birthdate.value}
-${gender}`;
-  rightContent.appendChild(p);
-}

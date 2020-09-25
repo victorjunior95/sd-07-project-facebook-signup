@@ -1,10 +1,6 @@
 const button = document.querySelector('#button-login');
 const custom = document.querySelector('#Personalizado');
 const labelCustom = document.querySelector('#labelCustom');
-const name = document.querySelector('#name').value;
-const lastName = document.querySelector('#lastname').value;
-const email = document.querySelector('#email').value;
-const birthdate = document.querySelector('#birthdate').value;
 const submit = document.querySelector('#facebook-register');
 const content = document.querySelector('.rigth-content');
 
@@ -17,14 +13,7 @@ custom.addEventListener('click', function () {
   const campoTexto = document.createElement('input');
   campoTexto.type = 'text';
   campoTexto.name = 'gender';
-  campoTexto.id = "gender-custom"
+  campoTexto.id = 'gender-custom';
   campoTexto.placeholder = 'Gênero (opcional)';
   labelCustom.appendChild(campoTexto);
-});
-
-
-submit.addEventListener('click', function () {
-  if (content !== true) {
-    return alert('Campos inválidos');
-  }
 });

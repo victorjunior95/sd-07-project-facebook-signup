@@ -29,7 +29,8 @@
 
     <section class="main-content">
       <aside class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+          vida.</p>
         <img id="facebook-networking" src="imgs/networking.png">
       </aside>
       <div class="right-content">
@@ -37,15 +38,17 @@
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form action="" method="GET" id="form-box">
           <div>
-          <input class="form-input" type="text" name="firstname" placeholder="Nome" required="required">
-          <input class="form-input" type="text" name="lastname" placeholder="Sobrenome" required="required">
-          <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email" required="required">
-          <input class="form-input-big" type="password" name="password" placeholder="Nova senha" required="required">
-          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required="required">
-        </div>
-            <label for ="" class= "genero" id="label-gender">Gênero</label>
-            <div class="radio">
+            <input class="form-input" type="text" name="firstname" placeholder="Nome" required="required">
+            <input class="form-input" type="text" name="lastname" placeholder="Sobrenome" required="required">
+            <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email"
+              required="required">
+            <input class="form-input-big" type="password" name="password" placeholder="Nova senha" required="required">
+            <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required="required">
+          </div>
+
+          <label for="" class="genero" id="label-gender">Gênero</label>
+          <div class="radio">
             <input id="feminino" type="radio" name="gender" required="required" value="Feminino">
             <label for="feminino">Feminino</label>
             <input id="masculino" type="radio" name="gender" required="required" value="Masculino">
@@ -53,6 +56,8 @@
             <input id="personalizado" type="radio" name="gender" required="required" value="Personalizado">
             <label for="personalizado">Personalizado</label>
           </div>
+
+          <div id="gender-box"></div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
@@ -60,4 +65,5 @@
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>

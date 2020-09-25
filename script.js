@@ -10,11 +10,11 @@ function sexo() {
   const genderMale = document.getElementById('gender-male');
   const genderCustom = document.getElementById('gender-custom');
   if (genderFeminine) {
-    return 'Feminino'
+    return 'Feminino';
   } else if (genderMale) {
-    return 'Masculino'
+    return 'Masculino';
   } else if (genderCustom) {
-    return 'Personalizado'
+    return 'Personalizado';
   }
 }
 
@@ -25,10 +25,21 @@ function validaCampos() {
   const password = document.getElementById('current-password');
   const inputBirthdate = document.getElementById('input-birthdate');
 
-    if(!(firstName && lastName && phoneEmail && password && inputBirthdate && sexo())){
+  let ehValido = false;
+
+  if(firstName && lastName){
+      ehValido = true;
+  }
+  if(phoneEmail && password){
+    ehValido = true;
+  }
+  if(inputBirthdate && sexo()){
+      ehValido = true;
+  }
+
+    if(!ehValido){
         document.getElementById('messager-user').innerText = 'Campos inválidos';
     }
-    console.log('entrou')
 }
 
 document.getElementById('facebook-register').addEventListener('click', validaCampos);

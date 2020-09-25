@@ -23,6 +23,7 @@
     </div>
     </form>
   </header>
+  <div id="invalid-msg" class="invalid-msg"></div>
   <div class='main-content'>
     <div class='left-content'>
       <p id='facebook-slogan'>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
@@ -31,7 +32,7 @@
     <div class='right-content'>
       <h1>Abra uma conta</h1>
       <span class="quick-easy">É rápido e fácil.</span>
-      <form>
+      <form id="reg-form">
         <div class='first-last-name'>
           <input type='text' name='firstname' placeholder='Nome'>
           <input type='text' name='lastname' placeholder='Sobrenome' id="last-name">
@@ -41,12 +42,12 @@
         <label for='birthdate' id='label-birthdate'>Data de nascimento</label>
         <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
         <label for='' id='label-gender'>Gênero</label>
-        <div>
-          <input type='radio' id='feminino' value='Feminino'>
+        <div id="gender-container">
+          <input type='radio' id='feminino' name="genero" value='Feminino'>
           <label for='feminino'>Feminino</label>
-          <input type='radio' id='masculino'value='Masculino'>
+          <input type='radio' id='masculino' name="genero" value='Masculino'>
           <label for='masculino'>Masculino</label>
-          <input type='radio' id='personalizado' value='Personalizado'>
+          <input type='radio' id='personalizado' name="genero" value='Personalizado'>
           <label for='personalizado'>Personalizado</label>
         </div>
         <button type='submit' id='facebook-register'>Cadastre-se</button>

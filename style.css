@@ -28,6 +28,14 @@ body {
   align-self: flex-end;
 }
 
+.invalid-msg {
+  background-color: rgba(255, 233, 136, 0.3);
+  border-bottom: 1px solid  rgb(194, 155, 29);
+  color: rgb(80, 64, 13);
+  display: none;
+  padding: 5px 0 5px 5px;
+}
+
 .main-content {
   display: flex;
   justify-content: center;

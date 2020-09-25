@@ -29,4 +29,3 @@ function emptyInput(event) {
   genderCostum();
 }
 btnRegister.addEventListener('click', emptyInput); // ao clicar faz a verificação
-

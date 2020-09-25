@@ -18,9 +18,8 @@ function genero() {
     return 'Masculino';
   } else if (genderCustom.checked) {
     return 'Personalizado';
-  } else {
-    return ''
   }
+  return '';
 }
 
 function msgCampoInvalido() {
@@ -33,7 +32,7 @@ function msgCampoInvalido() {
 function resetMsg() {
   if (document.querySelector('.msg-campo-vazio') != null) {
     const msgCampoVazio = document.querySelector('.msg-campo-vazio');
-    msgApagada = rightContentInputs.removeChild(msgCampoVazio);
+    let msgApagada = rightContentInputs.removeChild(msgCampoVazio);
   }
 }
 
@@ -54,10 +53,9 @@ function percorreInputs() {
     const formValue = validandoInput.value;
     const formType = validandoInput.getAttribute('type');
     if (testeCampoVazio(formValue, formType) === true) {
-      break;
+      return true;
     }
   }
-  return true;
 }
 
 function testeCampoVazio(itemValue, itemType) {
@@ -69,10 +67,10 @@ function validaCadastro() {
 
   if (genero() === '') {
     msgCampoInvalido();
-  } 
+  }
   else if (percorreInputs() === true) {
     msgCampoInvalido();
-  } 
+  }
   else {
     registrarUsuario();
   }

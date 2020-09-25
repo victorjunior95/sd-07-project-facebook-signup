@@ -18,7 +18,6 @@ enrrolmentButton.addEventListener('click', function (event) {
     }
   }
   const formData = document.getElementById('form-data');
-  const data = new FormData(formData);
   document.getElementById('sign-up-completed').classList.remove('gender-personalized');
   document.getElementById('sign-up-form').classList.add('gender-personalized');
   const outputList = document.getElementsByClassName('output-form');
@@ -26,7 +25,7 @@ enrrolmentButton.addEventListener('click', function (event) {
   outputDiv.innerHTML = `Olá ${outputList[0].value} ${outputList[1].value}<br>
   Email: ${outputList[2].value}<br>
   Data de nascimento: ${outputList[3].value}<br>
-  Gênero: ${data.gender.value}`;
+  Gênero: ${formData.gender.value}`;
 });
 
 document.getElementById('other').addEventListener('click', function () {

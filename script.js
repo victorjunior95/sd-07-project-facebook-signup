@@ -1,5 +1,8 @@
 const inputs = document.querySelectorAll('.right-content input');
 
+const gender = document.querySelector('#cust-gender');
+gender.style.display = 'none';
+
 document.querySelector('#button-login').addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
@@ -14,3 +17,7 @@ document
       }
     }
   });
+
+document.querySelector('#Personalizado').addEventListener('click', () => {
+  gender.style.display = 'block';
+});

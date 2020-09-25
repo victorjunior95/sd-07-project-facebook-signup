@@ -3,10 +3,18 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  width: 70%;
 }
 
 .facebook {
@@ -38,4 +46,27 @@ body {
 
 .right-content {
   width: 300px;
+}
+
+.full-name {
+  display: flex;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.sex {
+  display: flex;
+  flex-direction: column;
+}
+
+.sex-options {
+  display: flex;
 }

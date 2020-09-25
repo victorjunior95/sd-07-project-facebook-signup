@@ -47,3 +47,12 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group-row input {
+  width: 50%;
+}

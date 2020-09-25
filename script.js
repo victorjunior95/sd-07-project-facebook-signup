@@ -14,7 +14,7 @@ function checkForm() {
     const email = document.createTextNode(document.querySelector('.email').value);
     const genero = document.createTextNode(document.querySelector('input[name="gender"]:checked').value);
     document.querySelector('.cadastro').style.display = 'none';
-    document.querySelector('.intro').style.display = 'none'
+    document.querySelector('.intro').style.display = 'none';
     document.querySelector('#um').appendChild(nome);
     document.querySelector('#dos').appendChild(email);
     document.querySelector('#tres').appendChild(genero);

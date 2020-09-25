@@ -6,20 +6,29 @@ buttonLogin.addEventListener('click', function () {
 });
 
 const buttonRegister = document.getElementById('facebook-register');
-
+const personal = document.getElementById('personal');
+const form = document.getElementById('form');
 buttonRegister.addEventListener('click', function () {
   event.preventDefault();
   const inputItems = document.getElementsByClassName('input-item');
+  let counter = 0;
   for (let index = 0; index < inputItems.length; index += 1) {
     const result = inputItems[index];
     if (result.value === '') {
-      result.value = 'Campos inválidos';
+      counter += 1;
     }
+  }
+  const feminino = document.getElementById('feminino').checked;
+  const masculino = document.getElementById('masculino').checked;
+  const gen = ((feminino) === false && (masculino) === false && (personal.checked) === false);
+  if (counter > 0 || gen === true) {
+    const tagP = document.createElement('p');
+    tagP.innerText = 'Campos inválidos';
+    form.appendChild(tagP);
   }
 });
 
-const personal = document.getElementById('personal');
-const form = document.getElementById('form');
+
 const buttonBox = document.getElementById('button-box');
 personal.addEventListener('click', function () {
   const newInput = document.createElement('input');

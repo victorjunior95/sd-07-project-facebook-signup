@@ -31,9 +31,9 @@ function createInputGender() {
     const divOtherGender = document.createElement('div');
     const inputOtherGender = document.createElement('input');
 
-    inputOtherGender.name = 'gender-custom';
-    inputOtherGender.placeholder = 'Gênero (opcional)';
     inputOtherGender.required = 'required';
+    inputOtherGender.placeholder = 'Gênero (opcional)';
+    inputOtherGender.name = 'gender';
 
     divOtherGender.appendChild(inputOtherGender);
     genderContainer.appendChild(divOtherGender);

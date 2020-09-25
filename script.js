@@ -64,10 +64,7 @@ function validationRadioButton() {
 }
 
 function newUserData() {
-  rightContent.innerHTML = '';
-  const p = document.createElement('p');
-  p.className = 'register';
-  p.innerHTML = `Olá, ${firstname.value} ${lastname.value}
+  rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}
 ${phoneEmail.value}
 ${birthdate.value}
 ${gender}`;

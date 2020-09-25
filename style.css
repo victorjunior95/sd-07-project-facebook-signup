@@ -22,16 +22,26 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 
+/* Atributos abaixo do align-self são um quebra galho para centralizar o botão. */
 .form-control {
+  align-items: center;
   align-self: flex-end;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  margin-left: 10px;
 }
 
+/* width é pra centralizar o conteúdo e ficar mais parecido com o proposto. */
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .left-content {
@@ -46,6 +56,19 @@ body {
   display: flex;
 }
 
-.wrapper input {
+input {
+  margin-bottom: 10px;
   margin-left: 10px;
+}
+
+/* Fiz essa classe pra encapsular os ítens da header e centralizar */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.button-login {
+  align-self: auto;
 }

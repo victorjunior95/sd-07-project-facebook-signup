@@ -1,3 +1,8 @@
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
 .facebook-login {
   display: flex;
 }

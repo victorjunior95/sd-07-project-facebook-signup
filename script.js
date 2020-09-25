@@ -10,7 +10,7 @@ button.addEventListener('click', function () {
 custom.addEventListener('click', function () {
   const campoTexto = document.createElement('input');
   campoTexto.type = 'text';
-  campoTexto.name = 'gender';
+  campoTexto.name = 'gender-custom';
   campoTexto.id = 'gender-custom';
   campoTexto.placeholder = 'Gênero (opcional)';
   labelCustom.appendChild(campoTexto);

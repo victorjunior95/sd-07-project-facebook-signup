@@ -50,14 +50,10 @@ body {
 
 .name {
   flex-direction: column;
-
-  /* flex-grow: 1; */
 }
 
 .password {
   flex-direction: column;
-  
-  /* flex-grow: 1; */
 }
 
 .form-control {

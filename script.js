@@ -10,7 +10,7 @@ function validateRadios() {
   const radioMale = document.querySelector('#masculine');
   const radioCustom = document.querySelector('#custom');
   let validRadio = false;
-  if ((radioFemale.checked) || (radioCustom.checked) || (radioCustom.checked)) {
+  if ((radioFemale.checked) || (radioMale.checked) || (radioCustom.checked)) {
     validRadio = true;
   }
   return validRadio;
@@ -51,7 +51,7 @@ function validateForm() {
 function showResults() {
   const rightContent = document.querySelector('.right-content');
   const infos = [];
-  infos[0] = 'Olá, '+document.querySelector('#first-name').value+' '+document.querySelector('#last-name').value;
+  infos[0] = `Olá, ${document.querySelector('#first-name').value} ${document.querySelector('#last-name').value}`;
   rightContent.innerHTML = '';
   rightContent.innerText = infos;
 }

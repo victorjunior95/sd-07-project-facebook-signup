@@ -38,7 +38,7 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form action="" enctype="multipart/form-data">
         <section class="first-last-name">
-          <input type="text" name="firstname" value="Nome">
+          <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
         </section>
 
@@ -51,22 +51,23 @@
         </div>
 
         <div>
-          <p id="label-birthdate">Data de nascimento</p>
+          <label id="label-birthdate">Data de nascimento</label>
           <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
         </div>
 
         <label id="label-gender">Gênero</label>
         <div class="all-genders">
-          <input name="gender" type="radio" value="feminino">
-          <label for="feminino">Feminino</label>
+          <input name="gender" type="radio" value="Feminino">
+          <label for="Feminino">Feminino</label>
 
-          <input name="gender" type="radio" value="masculino">
-          <label for="masculino">Masculino</label>
+          <input name="gender" type="radio" value="Masculino">
+          <label for="Masculino">Masculino</label>
 
-          <input name="gender" type="radio" value="personalizado">
-          <label for="personalizado">Personalizado</label>
+          <input name="gender" type="radio" value="Personalizado">
+          <label for="Personalizado">Personalizado</label>
         </div>
-
+      </form>
+      <button id="facebook-register" type="submit">Cadastre-se</button>
     </section>
   </div>
 

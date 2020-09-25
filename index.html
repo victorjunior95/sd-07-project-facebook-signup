@@ -42,8 +42,10 @@
       </div>
 
       <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil</p>
+        <div class="righ-text-content">
+          <h1>Abra uma conta</h1>
+          <h2 class="quick-easy">É rápido e fácil</h2>
+        </div>
         <form>
           <div class="name-form">
             <input type="text" name="firstname" placeholder="Nome" />
@@ -59,25 +61,24 @@
             name="user_password"
             placeholder="Nova senha"
             name="password"
+            id="password"
           />
-          <label for="birthdate" id="birthdate">Data de nascimento</label>
-          <input
-            type="date"
-            id="datepicker"
-            name="birthdate"
-            placeholder="dd/mm/aaaa"
-          />
+          <div class="birth-form">
+            <label for="birthdate" id="birthdate">Data de nascimento</label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+            />
+          </div>
           <label id="label-gender">Gênero</label>
           <div class="gender-group">
-            <input type="radio" id="female" name="gender" value="female" />
+            <input type="radio" id="female" name="gender" value="female"/>
             <label for="female">Feminino</label>
-          </div>
-          <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="male"/>
             <label for="male">Masculino</label>
-            <input type="radio" id="male" name="gender" value="male" />
-          </div>
-          <div class="gender-group">
-            <input type="radio" id="other" name="gender" value="other" />
+            <input type="radio" id="other" name="gender" value="other"/>
             <label for="other">Personalizado</label>
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>

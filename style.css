@@ -44,7 +44,7 @@ body {
   flex-direction: row;
 }
 
-.form-gender {
+.gender-group {
   display: flex;
   flex-flow: row wrap;
 }

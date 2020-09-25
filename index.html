@@ -9,21 +9,26 @@
 </head>
 
 <body>
-    <header class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="Logotipo do facebook" class="facebook-logo" />
-        <form class="facebook-login">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="email" class="user-email-phone">Email ou telefone</label>
-                <input id="user-email-phone" type="email" name="email" class="user-email-phone" />
+    <header class="top-bar-topo">
+        <div class="top-bar-centro">
+            <div class="top-bar">
+                <img src="imgs/facebook-logo.png" alt="Logotipo do facebook" class="facebook-logo" />
+                <form class="facebook-login">
+                    <div class="form-group">
+                        <label id="user-email-phone-label" for="email" class="user-email-phone">Email ou
+                            telefone</label>
+                        <input id="user-email-phone" type="email" name="email" class="user-email-phone" />
+                    </div>
+                    <div class="form-group">
+                        <label id="user-password-label" for="password">Senha</label>
+                        <input id="user-password" type="password" id="password" name="password" class="password">
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <div class="form-control">
+                        <button id="button-login" class="button-login">Entrar</button>
+                    </div>
             </div>
-            <div class="form-group">
-                <label id="user-password-label" for="password">Senha</label>
-                <input id="user-password" type="password" id="password" name="password" class="password">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
-            <div class="form-control">
-                <button id="button-login" class="button-login">Entrar</button>
-            </div>
+        </div>
         </form>
     </header>
 
@@ -39,30 +44,55 @@
             <h1>Abra uma conta</h1>
             <h5 class="quick-easy ">É rápido e fácil. </h5>
 
-            <form action="">
+            <form>
                 <div class="container-register">
                     <div class="firstname-lastname">
-                        <input type="text" id="firstname" name="firstname" placeholder="Nome" class="register">
-                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" class="register">
+                        <input type="text" id="firstname" name="firstname" placeholder="Nome"
+                            class="register firstname">
+                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome"
+                            class="register lastname">
                     </div>
 
+                    <div class="phone_email_password">
+                        <input type="text" id="phone_email" name="phone_email" placeholder="Celular ou email"
+                            class="register phone_email_password">
+                        <input type="password" name="password" placeholder="Nova senha"
+                            class="register phone_email_password" id="password">
+                    </div>
+
+<<<<<<< HEAD
                     <input type="text" value="" placeholder="Celular ou email" class="register phone_email_password">
                     <input type="password" name="password" placeholder="Nova senha" class="register phone_email_password">
+=======
+>>>>>>> 3651104772a435933e6706cc9f9130d587e37f07
                 </div>
 
-                <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                <input type="date" name="birthdate" id="input-birthdate" placeholder="dd/mm/aaaa">
+                <div class="container-birthdate">
+                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <input type="date" name="birthdate" id="input-birthdate" class="input-birthdate"
+                        placeholder="dd/mm/aaaa">
+                </div>
+
 
                 <label for="" id="label-gender">Gênero</label>
                 <div class="gender-group">
-                    <input type="radio" name="gender-group" id="gender-feminine" /><label
-                        for="gender-feminine">Feminino</label>
+                    <input type="radio" name="gender-group" id="gender-feminine" value="Feminino" />
+                    <label for="gender-feminine">Feminino</label>
 
-                    <input type="radio" name="gender-group" id="gender-male"> <label for="gender-male">Masculino</label>
+                    <input type="radio" name="gender-group" id="gender-male" value="Masculino">
+                    <label for="gender-male">Masculino</label>
 
+<<<<<<< HEAD
                     <input type="radio" name="gender-group" id="gender-custom"> <label
                         for="gender-custom">Personalizado</label>
                 </div>                
+=======
+                    <input type="radio" name="gender-group" id="gender-custom" value="Personalizado">
+                    <label for="gender-custom">Personalizado</label>
+                </div>
+                <button type="submit" id="facebook-register">Cadastre-se</button>
+                <p id="messager-user"></p>
+>>>>>>> 3651104772a435933e6706cc9f9130d587e37f07
             </form>
             <button id="facebook-register" class="facebook-register" type="submit">Cadastre-se</button>
         </div>

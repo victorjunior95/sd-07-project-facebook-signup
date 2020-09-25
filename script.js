@@ -99,7 +99,7 @@ function genderSelected(e) {
     if (!inputCustomGender) {
       const newInputCustomGender = document.createElement('input');
 
-      newInputCustomGender.className = 'custom-gender';
+      newInputCustomGender.className = 'gender-custom';
       newInputCustomGender.name = 'gender';
       formRegister.children[totalChildrensForm].appendChild(newInputCustomGender);
     }

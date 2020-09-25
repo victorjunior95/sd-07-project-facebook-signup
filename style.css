@@ -14,7 +14,7 @@ body {
   min-height: 100px;
 }
 
-.form-login {
+.facebook-login {
   display: flex;
   justify-content: center;
 }

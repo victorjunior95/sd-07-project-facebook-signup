@@ -1,14 +1,12 @@
+form > input {
+  margin: 0.5em 0;
+}
+
 .form-group {
   color: white;
+  display: flex;
   flex-direction: column;
-}
-
-label {
-  display: table-cell;
-}
-
-input {
-  display: table-cell;
+  margin: auto 0.5em;
 }
 
 .top-bar {
@@ -38,6 +36,7 @@ input {
 
 .right-content {
   margin-left: 20px;
+  width: 300px;
 }
 
 .right-content div {
@@ -47,4 +46,23 @@ input {
 .right-content p {
   color: slategray;
   margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.first-last-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-last-name > input {
+  width: 45%;
+}
+
+.all-genders > label {
+width: 10%;
 }

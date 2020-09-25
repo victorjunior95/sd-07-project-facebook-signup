@@ -34,23 +34,12 @@ form > input {
   justify-content: center;
 }
 
-.right-content {
-  margin-left: 20px;
-  width: 300px;
-}
-
-.right-content div {
-  margin-top: 5px;
-}
-
-.right-content p {
-  color: slategray;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .first-last-name {
@@ -63,6 +52,7 @@ form > input {
   width: 45%;
 }
 
-.all-genders > label {
-  width: 10%;
+.all-genders {
+  display: flex;
+  margin: auto 0.5em;
 }

@@ -34,40 +34,38 @@
     </section>
 
     <section class="right-content">
-
       <h1>Abra uma conta</h1>
-
       <span class="quick-easy">É rápido e fácil.</span>
+      <form action="" enctype="multipart/form-data">
+        <section class="first-last-name">
+          <input type="text" name="firstname" value="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </section>
 
-      <div class="first-last-name">
-        <input type="text" name="firstname" value="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
-      </div>
+        <input type="text" name="phone_email" placeholder="Celular ou email">
 
-      <div>
-        <input name="phone_email" required="required" placeholder="Celular ou email" type="text">
-      </div>
+        <input type="password" name="password" placeholder="Nova senha">
 
-      <div>
-        <input name="password" required="required" placeholder="Nova senha" type="password">
-      </div>
+        <div>
+          <input name="password" required="required" placeholder="Nova senha" type="password">
+        </div>
 
-      <div>
-        <p id="label-birthdate">Data de nascimento</p>
-        <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
-      </div>
+        <div>
+          <p id="label-birthdate">Data de nascimento</p>
+          <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
+        </div>
 
-      <div class="all-genders">
-        <p id="label-gender">Gênero</p>
-        <input id="feminino" name="gender" type="radio" value="feminino">
-        <label for="feminino">Feminino</label>
+        <label id="label-gender">Gênero</label>
+        <div class="all-genders">
+          <input name="gender" type="radio" value="feminino">
+          <label for="feminino">Feminino</label>
 
-        <input id="masculino" name="gender" type="radio" value="masculino">
-        <label for="masculino">Masculino</label>
+          <input name="gender" type="radio" value="masculino">
+          <label for="masculino">Masculino</label>
 
-        <input id="personalizado" name="gender" type="radio" value="personalizado">
-        <label for="personalizado">Personalizado</label>
-      </div>
+          <input name="gender" type="radio" value="personalizado">
+          <label for="personalizado">Personalizado</label>
+        </div>
 
     </section>
   </div>

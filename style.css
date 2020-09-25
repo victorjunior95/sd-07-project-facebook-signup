@@ -1,8 +1,9 @@
 body {
   background-image: linear-gradient(white, rgb(213, 218, 233));
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
 .top-bar-topo {
@@ -12,7 +13,7 @@ body {
 
 .top-bar-centro {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 
 .top-bar {
@@ -28,11 +29,21 @@ body {
   margin-right: 10px;
 }
 
+.user-email-phone-label {
+  font-size: 9px;
+  margin: 4px;
+}
+
 .button-login {
   align-self: center;
-  background-color: rgb(76, 113, 188);
-  border-radius: 2px;
-  height: 50%;
+  background-color: rgb(0, 105, 203);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgb(37, 84, 180);
+  color: white;
+  font-weight: 600;
+  height: 40%;
+
 }
 
 .form-group {
@@ -56,15 +67,13 @@ body {
 
 a {
   color: rgba(255, 255, 255, 0.5);
-}
-
-button {
-  align-self: center;
-  height: 2vw;
+  text-decoration: none;
 }
 
 .main-content {
   display: flex;
+  margin: 0 auto;
+  width: 1120px;
 }
 
 .left-content {
@@ -76,6 +85,19 @@ button {
   flex-direction: column;
   justify-content: flex-end;
   width: 300px;
+}
+
+.right-content-super h1, h5{
+  margin: 0;
+  color: rgb(5, 23, 63);
+}
+
+.right-content-super h1 {
+  margin-top: 24px;
+}
+
+.right-content-super h5 {
+  margin-bottom: 20px;
 }
 
 .container-register {
@@ -128,4 +150,9 @@ button {
 
 .gender-custom {
   display: none;
+}
+
+.container-register input {
+  border: 1px solid rgb(191, 203, 238);
+  border-radius: 4px;
 }

@@ -15,13 +15,14 @@
                 <img src="imgs/facebook-logo.png" alt="Logotipo do facebook" class="facebook-logo" />
                 <form class="facebook-login">
                     <div class="form-group">
-                        <label id="user-email-phone-label" for="email" class="user-email-phone">Email ou telefone</label>
+                        <label id="user-email-phone-label" for="email" class="user-email-phone user-email-phone-label">Email ou
+                            telefone</label>
                         <input id="user-email-phone" type="email" name="email" class="user-email-phone" />
                     </div>
                     <div class="form-group">
-                        <label id="user-password-label" for="password">Senha</label>
+                        <label id="user-password-label" for="password" class="user-email-phone-label">Senha</label>
                         <input id="user-password" type="password" id="password" name="password" class="password">
-                        <a href="#">Esqueceu a senha?</a>
+                        <a href="#" class="user-email-phone-label">Esqueceu a senha?</a>
                     </div>
                     <div class="form-control">
                         <button id="button-login" class="button-login">Entrar</button>
@@ -41,9 +42,10 @@
         </div>
 
         <div class="right-content">
-            <h1>Abra uma conta</h1>
-            <h5 class="quick-easy ">É rápido e fácil. </h5>
-
+            <div class="right-content-super">
+                <h1>Abra uma conta</h1>
+                <h5 class="quick-easy ">É rápido e fácil. </h5>
+            </div>
             <form>
                 <div class="container-register">
                     <div class="firstname-lastname">
@@ -79,8 +81,16 @@
                     <label for="gender-custom">Personalizado</label>
                 </div>
             </form>
-            <input type="text" name="gender-custom" placeholder="Gênero (opcional)" class="gender-custom">
+            <input type="text" name="gender gender-custom" placeholder="Gênero (opcional)" class="gender-custom">
+
+            <div class="termos-politicas">
+                <p class="termos-politicas"> Ao clicar em Cadastre-se, você concorda com nossos <span>termos, Políticas de Dados e Políticas de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</span></p>
+            </div>
             <button type="submit" id="facebook-register">Cadastre-se</button>
+
+            <div class="sugestao">
+                <p class="sugestao"><span>Criar uma Página para uma celebridade, banda ou empresa.</span></p>
+            </div>
         </div>
     </main>
     <script src="script.js">

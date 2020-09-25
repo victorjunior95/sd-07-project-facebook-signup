@@ -86,7 +86,6 @@ body {
 .left-content {
   min-width: 800px;
   width: 800px;
-  
 }
 
 .left-content p {
@@ -106,5 +105,5 @@ body {
 }
 
 .button-radio {
-  font-size: x-small;  
+  font-size: x-small;
 }

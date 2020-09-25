@@ -26,11 +26,11 @@ function changeRightContent() {
   document.getElementById('welcome-user').innerText = `Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}`;
   let genderValue = '';
   if (document.getElementById('radio-p').checked) {
-    genderValue = document.getElementById('radio-p').value;
+    genderValue = 'Personalizado';
   } else if (document.getElementById('radio-f').checked) {
-    genderValue = document.getElementById('radio-f').value;
+    genderValue = 'Feminino';
   } else {
-    genderValue = document.getElementById('radio-m').value;
+    genderValue = 'Masculino';
   }
   document.getElementById('info-user').innerHTML = `E-mail ou Telefone: ${document.getElementById('phone_email').value} <br> Data de Nacimento: ${document.getElementById('birthdate').value} <br> Gênero: ${genderValue}`;
 

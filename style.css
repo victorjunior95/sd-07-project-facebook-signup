@@ -32,7 +32,6 @@ body {
 }
 
 .main-content {
-  /* align-items: baseline; */
   display: flex;
   flex-direction: row;
 }

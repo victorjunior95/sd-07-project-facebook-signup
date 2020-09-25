@@ -61,14 +61,6 @@ input {
   margin-left: 10px;
 }
 
-/* Fiz essa classe pra encapsular os ítens da header e centralizar */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 70%;
-}
-
 .button-login {
   align-self: auto;
 }

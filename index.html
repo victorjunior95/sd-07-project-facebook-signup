@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="top-bar">
-        <img
-          class="facebook-logo"
-          src="imgs/facebook-logo.png"
-          alt="Logo facebook"
-        />
-        <form class="form-container facebook-login" onsubmit="return false">
-          <section class="form-group">
-            <label id="user-email-phone-label" class="labelText" for="email"
-              >Email ou telefone</label
-            >
-            <input
-              id="user-email-phone"
-              class="inputText"
-              type="text"
-              id="email"
-            />
-          </section>
-          <section class="form-group">
-            <label id="user-password-label" class="labelText" for="pass"
-              >Senha</label
-            >
-            <input id="user-password" class="inputText" type="text" id="pass" />
-            <a class="forget" href="#">Esqueceu a conta?</a>
-          </section>
-          <a class="buttonEnter" href="#">Entrar</a>
-        </form>
-      </div>
-    </header>
-    <main></main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook" />
+      <form class="facebook-login" onsubmit="return false">
+        <section class="form-group">
+          <label id="user-email-phone-label" class="labelText" for="email">Email ou telefone</label>
+          <input id="user-email-phone" class="inputText" type="text" />
+        </section>
+        <section class="form-group">
+          <label id="user-password-label" class="labelText" for="pass">Senha</label>
+          <input id="user-password" class="inputText" type="text" />
+          <a class="forget" href="#">Esqueceu a conta?</a>
+        </section>
+        <section class="form-control">
+          <button data-click="alertButton" id="button-login" class="buttonEnter" type="button">Entrar</button>
+        </section>
+      </form>
+    </div>
+  </header>
+  <main></main>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -12,13 +12,13 @@
       "description": "Crie uma classe no CSS chamada form-group",
       "bonus": false
     },{
-      "description": "Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3",
+      "description": "Adicione um subcontainer com a classe form-group para agrupar o rótulo e campo \"E-mail ou telefone\" dentro do formulário criado na etapa 3",
       "bonus": false
     },{
-      "description": "Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3",
+      "description": "Adicione um subcontainer com a classe form-group para agrupar o rótulo e campo \"Senha\" dentro do formulário criado na etapa 3",
       "bonus": false
     },{
-      "description": "Adicione o terceiro subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3",
+      "description": "Adicione um subcontainer com a classe form-control com o botão \"Entrar\" dentro do formulário criado na etapa 3",
       "bonus": false
     },{
       "description": "Crie um container com a classe main-content abaixo da barra azul para agrupar o conteúdo principal da página",

@@ -36,10 +36,23 @@ function stopDefAction(evt) {
   evt.preventDefault();
 }
 
+function checkRadioGenderCustom() {
+  if (document.getElementById('radio-p').checked) {
+    document.getElementById('gender-custom').classList.remove('invisible');
+  } else {
+    document.getElementById('gender-custom').classList.add('invisible');
+  }
+}
+
 window.onload = function () {
   document.getElementById('button-login').addEventListener('click', function () {
     alert(document.getElementById('user-email-phone').value);
   });
+
+  const inputsRadio = document.querySelectorAll('.facebook-signup input[type=radio]');
+  for (let index = 0; index < inputsRadio.length; index += 1) {
+    inputsRadio[index].addEventListener('click', checkRadioGenderCustom);
+  }
 
   document.getElementById('facebook-register').addEventListener('click', stopDefAction, false);
 };

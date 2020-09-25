@@ -10,7 +10,7 @@ document
     for (let i = 0; i < inputs.length; i += 1) {
       if (inputs[i].value === '') {
         event.preventDefault();
-        document.querySelector('.handle-error').innerHTML = 'Campo inválido';
+        document.querySelector('.handle-error').innerHTML = 'Campos inválidos';
       }
     }
   });

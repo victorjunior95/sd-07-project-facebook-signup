@@ -13,9 +13,8 @@ function sexo() {
     return 'Feminino';
   } else if (genderMale) {
     return 'Masculino';
-  } else if (genderCustom) {
-    return 'Personalizado';
   }
+    return 'Personalizado';
 }
 
 function validaCampos() {

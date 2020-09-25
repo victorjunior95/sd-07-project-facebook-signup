@@ -98,3 +98,8 @@ header {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
+.gender {
+  display: flex;
+  padding-bottom: 50px;
+}

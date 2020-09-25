@@ -57,6 +57,6 @@ registre.addEventListener('click', function () {
     form.appendChild(novo);
   } else {
     const text = `Olá, ${firstname.value} ${lastname.value}. Email/telefone: ${email.value} DDN: ${birthdate.value}. Gênero: ${gender[index].value}.`;
-    right.innerHTML = text;
+    right.innerText = text;
   }
 });

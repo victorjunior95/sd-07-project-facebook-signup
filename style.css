@@ -8,6 +8,42 @@
   font-size: 16px;
 }
 
+.aditional-data p {
+  color: #777;
+  font-size: 11px;
+}
+
+.button-login {
+  background-color: #3f61a5;
+  border-color: rgb(63, 97, 165, 0.45);;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  height: 25px;
+}
+
+.button-login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
+.button-login-form {
+  align-items: center;
+  display: flex;
+  height: 33%;
+}
+
+.date {
+  display: flex;
+}
+
+.date input {
+  width: 70%;
+}
+
+.date span {
+  color: rgb(14, 56, 95);
+}
+
 .date-value {
   width: 55%;
 }
@@ -19,12 +55,17 @@
 }
 
 .facebook-login {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
 }
 
 .facebook-login input {
+  border-color: rgb(63, 97, 165, 0.45);
   height: 20px;
+}
+
+.facebook-logo {
+  width: 150px;
 }
 
 .facebook-networking {
@@ -32,7 +73,7 @@
 }
 
 .facebook-slogan {
-  color: rgb(66, 103, 178);
+  color: rgb(14, 56, 95);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 25px;
   font-weight: 700;
@@ -40,17 +81,24 @@
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .form-group {
+  align-self: baseline;
   color: white;
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-top: 5px;
+}
+
+.form-group label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 2px;
 }
 
 .form-register {
@@ -89,6 +137,10 @@
   justify-content: space-between;
 }
 
+.question {
+  font-size: 12px;
+}
+
 .radio-buttons {
   align-items: center;
   display: flex;
@@ -108,22 +160,14 @@
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(14, 56, 95);
+}
+
 body {
   margin: 0;
   padding: 0;
-}
-
-.button-login {
-  background-color: #3f61a5;
-  border-color: #3f61a5;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-  height: 25px;
-}
-
-.button-login:hover {
-  background-color: rgb(66, 103, 178);
 }
 
 h1 {
@@ -133,6 +177,7 @@ h1 {
 
 .main-content input {
   border-radius: 3px;
+  border-color: rgb(63, 97, 165, 0.45);
   height: 30px;
   margin-bottom: 10px;
   opacity: 0.8;

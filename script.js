@@ -119,12 +119,14 @@ function letsDoIt() {
   getRightSide.appendChild(createNewElementMessage);
 }
 
+const helpMePlease = {
+  rules: rulesValidate,
+  messages: messagesValidate,
+  invalidFormCallback: letItBe,
+  submitHandler: letsDoIt,
+};
+
 window.onload = function () {
-  const newValidateFunction = new window.JustValidate('.rightFormInputs', {
-    rules: rulesValidate,
-    messages: messagesValidate,
-    invalidFormCallback: letItBe,
-    submitHandler: letsDoIt,
-  });
-  newValidateFunction();
+  const godSaveMe = new window.JustValidate('.rightFormInputs', helpMePlease);
+  return godSaveMe;
 };

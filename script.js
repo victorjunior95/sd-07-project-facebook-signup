@@ -7,21 +7,20 @@ buttonLogin.addEventListener('click', function (event) {
   } else {
     alert(userEmailPhone.value);
   }
-
 });
 
-let buttonRegister = document.getElementById('facebook-register');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
-const phoneEmail = document.getElementById('phone-email');
-const password = document.getElementById('password');
-const birthdate = document.getElementById('birthdate');
+const buttonRegister = document.getElementById('facebook-register');
+const firstname = document.getElementById('firstname').value;
+const lastname = document.getElementById('lastname').value;
+const phoneEmail = document.getElementById('phone-email').value;
+const password = document.getElementById('password').value;
+const birthdate = document.getElementById('birthdate').value;
 // const gender = document.getElementsByClassName('radio');  identificar qual index eu selecionei
 
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
   const error = document.querySelector('.error-form');
-  const values = [firstname.value, lastname.value, phoneEmail.value, password.value, birthdate.value];
+  const values = [firstname, lastname, phoneEmail, password, birthdate];
   for (let index = 0; index < values.length; index += 1) {
     if (values[index] === '') {
       error.style.display = 'initial';
@@ -29,7 +28,6 @@ buttonRegister.addEventListener('click', function (event) {
   }
 });
 
-const showGenderCustom = document.querySelector('#Personalizado');
 const classesRadioButtons = document.querySelectorAll('.radio');
 
 for (let index = 0; index < classesRadioButtons.length; index += 1) {

@@ -49,6 +49,22 @@
             <input class="registration registration-name" name="lastname" type="text" placeholder="Sobrenome" />
             <input class="registration information" name="phone_email" type="text" placeholder="Celular ou email" />
             <input class="registration information" name="password" type="password" placeholder="Nova senha" />
+            <div>
+                <label class="registration information" id="birthdate-label" for="birthdate">Data de nascimento</label>
+                <input class="date" id="birthdate" name="birthdate" type="date" placeholder="dd/mm/aaaa" />
+            </div>
+            <div>
+                <label class="registration information" id="label-gender">Gênero</label>
+                <label>
+                    <input name="gender" type="radio" value="female" />Feminino
+                </label>
+                <label>
+                    <input name="gender" type="radio" value="male" />Masculino
+                </label>
+                <label>
+                    <input name="gender" type="radio" value="custom" />Personalizado
+                </label>
+            </div>
         </form>
       </div>
     </section>

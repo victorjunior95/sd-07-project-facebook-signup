@@ -12,17 +12,15 @@ body {
 
 .facebook-logo {
   display: flex;
-  width: 150px;
 }
 
-.facebook-login {
+.login {
   align-items: baseline;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.facebook-login label {
+.login label {
   align-self: flex-start;
 }

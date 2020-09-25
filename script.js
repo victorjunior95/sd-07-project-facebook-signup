@@ -1,17 +1,15 @@
-const mensagem='';
-const listaForm = {};
-function validar(mensagem) {
+function validar() {
   // Leitura dos dados
   const userLogin = document.getElementById('user-email-phone').value;
   const userPassord = document.getElementById('user-password').value;
 
-   this.mensagem = '';
+  let mensagem = '';
   // Comparações
   if (userLogin === '') {
-    this.mensagem += 'Campo nome é obrigatório!!!\n';
+    mensagem += 'Campo nome é obrigatório!!!\n';
   }
   if (userPassord === '') {
-    this.mensagem += 'Campo e-mail é obrigatório!!!\n';
+    mensagem += 'Campo e-mail é obrigatório!!!\n';
   }
 
   if (mensagem !== '') {
@@ -21,10 +19,9 @@ function validar(mensagem) {
   if (mensagem === '') {
     alert('login efetuado com sucesso');
   }
-  
 }
 function validarNovoUsuario() {
-  this.listaForm='';
+  const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
   listaForm.lastName = document.getElementById('lastname').value;
   listaForm.email = document.getElementById('phone_email').value;

@@ -30,8 +30,15 @@ body , html {
 
 .main-content {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1150px;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }

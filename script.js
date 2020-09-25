@@ -17,15 +17,14 @@ custom.addEventListener('click', function () {
   const campoTexto = document.createElement('input');
   campoTexto.type = 'text';
   campoTexto.name = 'gender';
+  campoTexto.id = "gender-custom"
   campoTexto.placeholder = 'Gênero (opcional)';
   labelCustom.appendChild(campoTexto);
 });
 
 
 submit.addEventListener('click', function () {
-  content.innerHTML = '';
-  content.innerText = name;
-  content.innerText = email;
-  content.innerText = lastName;
-  content.innerText = birthdate;
+  if (content !== true) {
+    return alert('Campos inválidos');
+  }
 });

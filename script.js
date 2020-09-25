@@ -55,6 +55,6 @@ buttonSubmit.addEventListener('click', () => {
       if (!this.validity.valid) {
         this.setCustomValidity('Campos inválidos');
       }
-    }
+    };
   }
 });

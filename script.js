@@ -20,6 +20,7 @@ function checkForm() {
     document.querySelector('#dos').appendChild(email);
     document.querySelector('#tres').appendChild(data);
     document.querySelector('#quatro').appendChild(genero);
+    console.log(data);
   }
 }
 

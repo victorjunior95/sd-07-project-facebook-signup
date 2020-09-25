@@ -4,6 +4,7 @@
 <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="stylesheet" href="justValidateTooltip.min.css">
     <link rel='stylesheet' href='style.css' />
     <title>Arthur Nunes e Júlio Kauer - sd-07 - Facebook</title>
 </head>
@@ -28,6 +29,7 @@
         </div>
     </header>
     <main>
+<<<<<<< HEAD
         <div class='main-content'>
             <div class='left-content'>
                 <p id='facebook-slogan'>
@@ -59,9 +61,75 @@
                         <button id='facebook-register' type='submit'>Cadastre-se</button>
                     </div>
                 </form>
+=======
+      <div class='main-content'>
+        <div class='left-content'>
+          <p id='facebook-slogan'>
+            O Facebook ajuda você a se conectar e compartilhar com as pessoas
+            que fazem parte da sua vida.
+          </p>
+          <img
+            id='facebook-networking'
+            src='imgs/networking.png'
+            alt='Imagem com slogan do Facebook'
+          />
+        </div>
+        <div class='right-content'>
+          <h1>Abra uma conta</h1>
+          <p class='quick-easy'>É rápido e fácil.</p>
+          <form id='form-signup' action='#'>
+            <div class='main-form-name'>
+              <input type='text' name='firstname' placeholder='Nome' data-validate-field='firstname'/>
+              <input type='text' name='lastname' placeholder='Sobrenome' data-validate-field='lastname'/>
+            </div>
+            <div class='form-others'>
+              <input
+                type='text'
+                name='phone_email'
+                placeholder='Celular ou email'
+              />
+              <input type='password' name='password' placeholder='Nova senha' />
+              <br />
+              <label id='label-birthdate' for='birthdate'
+                >Data de nascimento</label
+              >
+              <input
+                id='birthdate'
+                type='text'
+                name='birthdate'
+                placeholder='dd/mm/aaaa'
+              /><br />
+              <label id='label-gender' for='gender'>Gênero</label><br />
+              <label for='female'
+                ><input
+                  type='radio'
+                  name='gender'
+                  value='female'
+                  id='female'
+                />Feminino</label
+              >
+              <label for='male'
+                ><input
+                  type='radio'
+                  name='gender'
+                  value='male'
+                  id='male'
+                />Masculino</label
+              >
+              <label for='custom'
+                ><input
+                  type='radio'
+                  name='gender'
+                  value='custom'
+                  id='custom'
+                />Personalizado</label
+              ><br>
+              <button id='facebook-register' type='submit' class='form__btn btn btn-primary'>Cadastre-se</button>
+>>>>>>> c753ad91a6a8d650545334d832084f341fa24642
             </div>
         </div>
     </main>
+    <script src="just-validate.min.js"></script>
     <script src='script.js'></script>
 </body>
 

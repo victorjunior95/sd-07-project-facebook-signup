@@ -44,6 +44,15 @@ body {
   flex-direction: row;
 }
 
+.name-form input {
+  width: 50%;
+}
+
+.birth-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .gender-group {
   display: flex;
   flex-flow: row wrap;

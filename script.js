@@ -50,9 +50,9 @@ function addCustomGenderInput() {
     customInput = document.querySelector('#custom-input');
     if (genderChecked !== null) {
       if (customInput === null) {
-        const newCustomInput = document.createElement('input[name="gender"]');
+        const newCustomInput = document.createElement('input');
         newCustomInput.id = 'custom-input';
-        newCustomInput.name = 'gender-custom';
+        newCustomInput.name = 'gender';
         newCustomInput.placeholder = 'Genero';
         newCustomInput.type = 'text'; // por default ja é text, mas eu quero especificar na msm
         genderContainer.appendChild(newCustomInput);

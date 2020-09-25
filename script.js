@@ -20,7 +20,7 @@ function checkRadio() {
   }
   return validation;
 }
-
+/*
 function radioOption() {
   let option = 0;
   const genderList = document.getElementsByName('gender');
@@ -30,7 +30,7 @@ function radioOption() {
     }
   }
   if (option === 'man') {
-    option = 'Masculino'
+    option = 'Masculino';
   }
   if (option === 'woman') {
     option = 'Feminino';
@@ -39,7 +39,7 @@ function radioOption() {
     option = 'Personalizado';
   }
   return option;
-}
+} */
 
 function validateNewAccountFormLessRadioButton() {
   const inputCollection = document.getElementsByTagName('input');
@@ -60,17 +60,17 @@ function validateNewAccountFormLessRadioButton() {
   }
   return validation;
 }
-
+/*
 function birthdate() {
-  let birthdate = document.getElementsByName('birthdate')[0].value;
-  birthdate = birthdate.split('');
-  const day = birthdate[8] + birthdate[9];
-  const month = birthdate[5] + birthdate[6];
-  const year = birthdate[0] + birthdate[1] + birthdate[2] + birthdate[3];
-  birthdate = day + '/' + month + '/' + year;
-  return birthdate;
+  let birthDt = document.getElementsByName('birthdate')[0].value;
+  birthDt = birthDt.split('');
+  const day = birthDt[8] + birthDt[9];
+  const month = birthDt[5] + birthDt[6];
+  const year = birthDt[0] + birthDt[1] + birthDt[2] + birthDt[3];
+  birthDt = day + '/' + month + '/' + year;
+  return birthDt;
 }
-
+/*
 function createDivWelcome() {
   const welcome = document.createElement('div');
   const welcomeFullname = document.createElement('p');
@@ -88,15 +88,16 @@ function createDivWelcome() {
   return welcome;
 }
 
+/*
 function welcome() {
   const target = document.getElementsByClassName('right-content')[0];
   const welcome = createDivWelcome();
   while (target.lastElementChild) {
     target.removeChild(target.lastElementChild);
   }
-  target.appendChild(welcome)
+  target.appendChild(welcome);
   return target;
-}
+}*/
 
 function validateNewAccountForm() {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
@@ -111,9 +112,11 @@ const createAccountBt = document.getElementById('facebook-register');
 createAccountBt.addEventListener('click', validateNewAccountForm);
 
 document.getElementById('custom').addEventListener('click', function () {
-  const genderCustom = document.createElement('input');
-  genderCustom.name = 'gender-custom';
-  genderCustom.placeholder = 'Gênero (opcional)';
-  genderCustom.required = true;
-  document.getElementById('gender-custom').appendChild(genderCustom);
+  if (document.getElementById('gender-custom').childElementCount === 0) {
+    const genderCustom = document.createElement('input');
+    genderCustom.name = 'gender-custom';
+    genderCustom.placeholder = 'Gênero (opcional)';
+    genderCustom.required = true;
+    document.getElementById('gender-custom').appendChild(genderCustom);
+  }
 });

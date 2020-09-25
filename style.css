@@ -21,8 +21,9 @@ body {
 }
 
 .facebook-logo {
-  justify-content: left;
+  justify-content: flex-start;
 }
+
 .user-label {
   font-size: small;
   margin-bottom: 8px;

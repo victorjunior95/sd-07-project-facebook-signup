@@ -3,7 +3,6 @@
     addMonths();
     addYears();
 }
-
 let days = ['Dia', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
 '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
 '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'];
@@ -19,11 +18,9 @@ let years = ['Ano', '1940', '1941', '1942', '1943', '1944', '1945', '1946',
 '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009',
 '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018',
 '2019', '2020'];
-
 selectDay = document.querySelector(".chooseDay");
 selectMonth = document.querySelector(".chooseMonth");
 selectYear = document.querySelector(".chooseYear");
-
 function addDays() {
     for (index = 0; index < days.length; index += 1) {
         let createElement = document.createElement("option");
@@ -31,7 +28,6 @@ function addDays() {
         selectDay.appendChild(createElement);
     }
 }
-
 function addMonths() {
     for (index = 0; index < months.length; index += 1) {
         let createElement = document.createElement("option");
@@ -39,7 +35,6 @@ function addMonths() {
         selectMonth.appendChild(createElement);
     }
 }
-
 function addYears() {
     for (index = 0; index < years.length; index += 1) {
         let createElement = document.createElement("option");
@@ -150,9 +145,10 @@ function clickFormLogin() {
 }
 
 function genderRadio() {
+  const getNewGenderCamp = document.querySelector('#newGender');
   const inputGender = document.createElement('input');
   const textBefore = document.querySelector('#facebook-register');
-  if (getGender.checked) {
+  if (getGender.checked && getNewGenderCamp == null) {
     inputGender.setAttribute('name', 'gender-custom');
     inputGender.setAttribute('class', 'formRight');
     inputGender.setAttribute('id', 'newGender');

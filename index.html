@@ -40,13 +40,15 @@
             <h5 class="quick-easy ">É rápido e fácil. </h5>
 
             <form action="">
-                <div class="firstname-lastname">
-                    <input type="text" id="firstname" name="firstname" placeholder="Nome">
-                    <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
-                </div>
+                <div class="container-register">
+                    <div class="firstname-lastname">
+                        <input type="text" id="firstname" name="firstname" placeholder="Nome" class="register">
+                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" class="register">
+                    </div>
 
-                <input type="text" value="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                    <input type="text" value="phone_email" placeholder="Celular ou email" class="register phone_email_password">
+                    <input type="password" name="password" placeholder="Nova senha" class="register phone_email_password">
+                </div>
 
                 <label for="birthdate" id="label-birthdate">Data de nascimento</label>
                 <input type="date" name="birthdate" id="input-birthdate" placeholder="dd/mm/aaaa">

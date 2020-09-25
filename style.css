@@ -65,10 +65,11 @@ button {
   width: 300px;
 }
 
-.right-content form * {
+.register {
   margin: 10px;
   padding: 5px;
 }
+
 .firstname-lastname {
   display: flex;
 }
@@ -77,6 +78,10 @@ button {
   margin: 5px;
 }
 
+.phone_email_password {
+  width: 100%;
+}
+
 .gender-group {
-    display: flex;
+  display: flex;
 }

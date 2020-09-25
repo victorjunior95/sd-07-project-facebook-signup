@@ -42,30 +42,17 @@
         <input type='password' name='password' placeholder='Nova senha' required>
         <div class='birthday'>
           <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-          <input type='date' name='birthdate' id='birthdate' placeholder='dd/mm/aaaa' required>
-          <table class='u-gender-option' id='label-gender'>
-            <h2>Gênero</h2>
-            <tr>
-              <td><label for='female'>Feminino</label></td>
-              <td><label for='male'>Masculino</label></td><td><label for='custon'>Personalizado</label></td>
-            </tr>
-            <tr>
-              <td><input type='radio' name='gender' id='female'></td>
-              <td><input type='radio' name='gender' id='male'></td>
-              <td><input type='radio' name='gender' id='custon'></td>
-            </tr>
-          </table>
-        <!-- </div>
-          <h3 id='label-gender'>Gênero</h3>
-          <div class='u-gender-option'>
-            <label class='label-gender' for='female'>Feminino</label>
-            <input type='radio' name='gender' id='female'>
-            <label class='label-gender' for='male'>Masculino</label>
-            <input type='radio' name='gender' id='male'>
-            <label class='label-gender' for='other'>Personalizado</label>
-            <input type='radio' name='gender' id='other'>
-          </div>
-        </div> -->
+          <input type='date' name='birthdate' id='birthdate' placeholder='dd/mm/aaaa' required><br><br>
+          <label id='label-gender'>Gênero
+            <div class='u-gender-option'></div>
+              <label for='female'>Feminino</label>
+              <input type='radio' name='gender' id='female'>
+              <label for='male'>Masculino</label>
+              <input type='radio' name='gender' id='male'>
+              <label for='other'>Personalizado</label>
+              <input type='radio' name='gender' id='other'>
+            </div>
+        </label>
         <button id='facebook-register' type='submit'>Cadastre-se</button>
       </form>
     </section>

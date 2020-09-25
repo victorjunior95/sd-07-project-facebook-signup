@@ -53,7 +53,7 @@ h1 , h2 {
   align-items: flex-start;
   background: linear-gradient(white, #d3e8d8);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .quick-easy {
@@ -63,7 +63,6 @@ h1 , h2 {
 .right-content {
   display: flex;
   flex-direction: column;
-  height: 700px;
   margin: 5px;
   width: 300px;
 }
@@ -71,11 +70,11 @@ h1 , h2 {
 .right-content input {
   border: #d3e8d8 solid 1px;
   border-radius: 4px;
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 700;
   height: 30px;
   margin-top: 6px;
-  width: 100%;
 }
 
 .right-content button {
@@ -115,19 +114,10 @@ h1 , h2 {
 .u-gender-option {
   align-items: center;
   display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-.u-gender-option input {
-  margin-bottom: 5px;
-  margin-right: 12px;
-  width: 15px;
-}
-
-.u-gender-option label {
-  margin-right: 10px;
-}
 
 .user-name {
   display: flex;

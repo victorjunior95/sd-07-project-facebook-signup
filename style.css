@@ -14,9 +14,9 @@ body {
 }
 
 .container {
+  align-content: flex-start;
   display: flex;
   justify-content: flex-end;
-  align-content: flex-start;
 }
 
 .facebook-logo {
@@ -30,8 +30,8 @@ body {
 }
 
 .form-group {
-  display: flex;
   align-self: flex-start;
+  display: flex;
   margin-left: 7px;
 }
 

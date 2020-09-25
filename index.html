@@ -53,7 +53,7 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form>
+      <form class="js-form">
         <div class="form-account">
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
@@ -72,13 +72,15 @@
               <input type="radio" id="personalizado" name="gender" value="Personalizado"/>
               <label for="personalizado">Personalizado</label>
             </div>
+            <input type="hidden" id="gender-custom" name="gender-custom" placeholder="Gênero (opcional)"/>
+
             <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
 
     </div>
 
   </section>
-
+  <script src="libs/just-validate.min.js"></script>
   <script src="/script.js"></script>
 </body>
 </html>

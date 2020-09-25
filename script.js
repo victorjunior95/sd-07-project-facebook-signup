@@ -16,7 +16,7 @@ radioCustomGender.addEventListener('click', function () {
 });
 
 
-const justValidate = new window.JustValidate('.new-account', {
+const validate = new window.JustValidate('.new-account', {
   messages: {
     primeiroNome: {
       required: 'Campos inválidos',
@@ -55,4 +55,6 @@ const justValidate = new window.JustValidate('.new-account', {
 
 });
 
-justValidate();
+window.onload = function () {
+  return validate;
+};

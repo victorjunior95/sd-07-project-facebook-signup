@@ -6,7 +6,7 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px;
 }
 
@@ -14,13 +14,7 @@ body {
   display: flex;
 }
 
-.login {
-  align-items: baseline;
+.form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.login label {
-  align-self: flex-start;
 }

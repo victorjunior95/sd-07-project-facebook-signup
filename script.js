@@ -64,15 +64,19 @@ function registrarUsuario() {
   }
 }
 
-function percorreInputs(){
-  var formEmpty;
+function percorreInputs() {
+  let formEmpty;
   for (let index = 0; index < formFields.length; index += 1) {
-    let formValue = formFields[index].value;
-    let formType = formFields[index].getAttribute('type'); 
-    formEmpty = (formValue === '' && formType != 'radio') ? ('true') : ('false');
-    if (formEmpty === 'true'){
+    let validandoInput = formFields[index]
+    let formValue = validandoInput.value;
+    let formType = validandoInput.getAttribute('type'); 
+    if (testeCampoVazio(formValue, formType) === 'true'){
       break;
     }
   }
   return formEmpty;
+}
+
+function testeCampoVazio(itemValue, itemType) {
+  return itemValue === '' && itemType != 'radio';
 }

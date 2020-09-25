@@ -1,4 +1,4 @@
-function verifyEmpty(values) {
+function verifyEmptyInput(values) {
   for (let index = 0; index < values.length; index += 1) {
     if (values[index] === '') return true;
   }
@@ -11,7 +11,7 @@ btnLogin.addEventListener('click', function () {
   const email = document.forms['form-login'].email.value;
   const passLogin = document.forms['form-login'].password.value;
 
-  if (!verifyEmpty([email, passLogin])) {
+  if (!verifyEmptyInput([email])) {
     alert(email);
   }
 });
@@ -25,7 +25,7 @@ btnValidate.addEventListener('click', function () {
   const birthdate = document.forms['form-register'].birthdate.value;
   const gender = document.forms['form-register'].gender.value;
 
-  if (verifyEmpty([firstname, lastname, phoneEmail, password, birthdate, gender])) {
+  if (verifyEmptyInput([firstname, lastname, phoneEmail, password, birthdate, gender])) {
     const p = document.getElementsByClassName('invalided')[0];
     p.innerText = 'Campos inválidos';
   }

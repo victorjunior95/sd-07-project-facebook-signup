@@ -20,15 +20,13 @@ body {
 }
 
 .top-bar {
-    align-items: center;
-    background-color: rgb(66, 103, 178);
-    height: 80px;
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  width: 1000px;
 }
 
 header {
@@ -42,6 +40,34 @@ header {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.botao {
+  align-self: center;
+}
+
+.btn-login {
+  background-color: #4267B2;
+  border: 1px solid  #2a487d;
+  border-radius: 2px;
+  color: white;
+  font-size: 8pt;
+  padding: 4px;
+}
+
+.forget-password {
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.form-group label {
+  color: white;
+  padding-bottom: 5px;
 }
 
 .main-content {
@@ -104,13 +130,18 @@ footer {
 }
 
 .facebook-login {
-  background-color: red;
   display: flex;
-  justify-content: space-evenly;
+  font-family: Lucida Grande, Lucida Sans Regular, 
+  Lucida sans, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-size: 9pt;
+  justify-content: space-around;
 }
+
 .form-group {
-    display: flex;
-    flex-direction: column;  
+  display: flex;
+  flex-direction: column; 
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .class-teste {

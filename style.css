@@ -12,6 +12,12 @@
   width: 55%;
 }
 
+.error-form {
+  background-color: rgba(187, 188, 190, 0.63);
+  display: none;
+  text-align: center;
+}
+
 .facebook-login {
   align-items: flex-start;
   display: flex;
@@ -55,6 +61,7 @@
 
 .gender-custom {
   align-self: flex-end;
+  display: none;
   width: 50%;
 }
 

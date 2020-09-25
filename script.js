@@ -17,6 +17,7 @@ function sexo() {
 }
 
 function validaCampos() {
+  sexo();
   document.getElementById('messager-user').textContent = 'Campos inválidos';
 }
 

@@ -33,7 +33,7 @@ function createInputGender() {
 
     inputOtherGender.required = 'required';
     inputOtherGender.placeholder = 'Gênero (opcional)';
-    inputOtherGender.name = 'gender-custom';
+    inputOtherGender.name = 'gender';
 
     divOtherGender.appendChild(inputOtherGender);
     genderContainer.appendChild(divOtherGender);

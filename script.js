@@ -77,4 +77,31 @@ function validaCadastro() {
   }
 }
 
+const removeTagChild = function () {
+  const tagSon = document.getElementById('text-gender-custom');
+  const tagFather = document.querySelector('.gender-group');
+  if (tagSon !== null) {
+    tagFather.removeChild(tagSon);
+  }
+};
+
 buttonSignUp.addEventListener('click', validaCadastro);
+
+genderFeminine.addEventListener('click', removeTagChild);
+
+genderMale.addEventListener('click', removeTagChild);
+
+genderCustom.addEventListener('click', function () {
+  const tagSon = document.getElementById('text-gender-custom');
+  if (tagSon === null) {
+    const newInput = document.createElement('input');
+    newInput.type = 'text';
+    newInput.name = 'gender-custom';
+    newInput.id = 'text-gender-custom';
+    newInput.classList.add('gender-custom');
+    newInput.placeholder = 'Gênero (opcional)';
+
+    const tagFather = document.querySelector('.gender-group');
+    tagFather.appendChild(newInput);
+  }
+});

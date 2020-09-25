@@ -34,12 +34,13 @@
 }
 
 .right-content form {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .line {
-  align-self: flex-end;
+  align-self: flex-start;
   display: flex;
 }
 
@@ -50,5 +51,9 @@
 
 .gender-content {
   align-self: flex-start;
+  flex-direction: column;
+}
+
+.data {
   flex-direction: column;
 }

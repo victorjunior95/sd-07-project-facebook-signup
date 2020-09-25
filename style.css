@@ -1,12 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
-header img {
-  width: 200px;
-}
-
-header {
+.top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
@@ -16,10 +13,44 @@ header {
   width: 100%;
 }
 
-.btn_entrar {
-  margin-left: 15px;
+.facebook-logo {
+  width: 150px;
 }
 
 .facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+  padding: 10px;
+}
+
+.main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 60vh;
+}
+
+.facebook-slogan {
+  align-self: flex-end;
+  display: flex;
+}
+
+.left-content {
+  text-align: center;
+  width: 800px;
+}
+
+.rigth-content {
+  width: 300px;
 }

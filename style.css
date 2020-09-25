@@ -15,7 +15,7 @@
 }
 
 .create-page {
-  font-size: 13px
+  font-size: 13px;
 }
 
 .button-login {
@@ -126,6 +126,17 @@
   width: 50%;
 }
 
+.idiomas ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.idiomas ul li {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
 .left-content {
   align-items: center;
   display: flex;
@@ -134,7 +145,7 @@
 }
 
 .main-content {
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, rgb(211, 216, 232));
   display: flex;
   justify-content: flex-start;
 }
@@ -199,6 +210,11 @@ h1 {
 
 .name-form-register input {
   width: 45%;
+}
+
+hr {
+  color: rgb(197, 207, 226);
+  width: 90%;
 }
 
 span {

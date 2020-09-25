@@ -36,25 +36,25 @@
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='sing-up'>
         <div class='user-name'>
-          <input type='text' name='firstname' placeholder='Nome' required>
-          <input type='text' name='lastname' placeholder='Sobrenome' required>
+          <input type='text' id='firstname' name='firstname' placeholder='Nome'>
+          <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
         </div>
-        <input type='text' name='phone_email' placeholder='Celular ou email' required>
-        <input type='password' name='password' placeholder='Nova senha' required>
+        <input type='text' id='phone_email' name='phone_email' placeholder='Celular ou email'>
+        <input type='password' id='password' name='password' placeholder='Nova senha'>
         <div class='birthday'>
           <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-          <input type='date' name='birthdate' id='birthdate' placeholder='dd/mm/aaaa' required>
+          <input type='date' id='birthdate' name='birthdate' placeholder='dd/mm/aaaa'>
         </div><br>
           <label id='label-gender'><h3>Gênero</h3></label>
         <div class='u-gender-option'>
           <label for='female'>Feminino</label>
-          <input type='radio' value='Feminino' name='gender' id='female'>
+          <input type='radio' id='female' value='Feminino' name='gender'>
           <label for='male'>Masculino</label>
-          <input type='radio' value='Masculino' name='gender' id='male'>
+          <input type='radio' id='male' value='Masculino' name='gender'>
           <label for='other'>Personalizado</label>
-          <input type='radio' value='Personalizado' name='gender' id='other'>
+          <input type='radio' id='other' value='Personalizado' name='gender'>
         </div><br>
-        <button id='facebook-register' type='submit'>Cadastre-se</button>
+        <button type='submit' id='facebook-register'>Cadastre-se</button>
       </form>
     </section>
   </main>

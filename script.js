@@ -6,12 +6,12 @@ buttonLogin.addEventListener('click', function (event) {
 });
 
 function validateRadios() {
-  const radioGroup = document.querySelector('.genders').children;
-  let validRadio = true;
-  for (let index = 0; index < radioGroup.index; index += 1) {
-    if (radioGroup[index].checked === false) {
-      validRadio = false;
-    }
+  const radioFemale = document.querySelector('#feminine');
+  const radioMale = document.querySelector('#masculine');
+  const radioCustom = document.querySelector('#custom');
+  let validRadio = false;
+  if ((radioFemale.checked) || (radioMale.checked) || (radioCustom.checked)) {
+    validRadio = true;
   }
   return validRadio;
 }
@@ -40,12 +40,38 @@ function validateOthers() {
 function validateForm() {
   let isValid = true;
 
-  if ((validateName()) || (validateOthers()) || (validateRadios())) {
-    isValid = false;
-  } else {
+  if ((validateName()) && (validateOthers()) && (validateRadios())) {
     isValid = true;
+  } else {
+    isValid = false;
   }
   return isValid;
+}
+
+function getRadioChecked() {
+  const radios = [document.querySelector('#feminine'), document.querySelector('#masculine'), document.querySelector('#custom')];
+  let radioChecked = null;
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      radioChecked = radios[index].value;
+    }
+  }
+  return radioChecked;
+}
+
+function showResults() {
+  const rightContent = document.querySelector('.right-content');
+  const infos = [];
+  infos[0] = `Olá, ${document.querySelector('#first-name').value} ${document.querySelector('#last-name').value}`;
+  infos[1] = document.querySelector('#phone-email').value;
+  infos[2] = document.querySelector('#birthdate').value;
+  infos[3] = getRadioChecked();
+  rightContent.innerHTML = '';
+  for (let index = 0; index < infos.length; index += 1) {
+    const newP = document.createElement('p');
+    newP.innerText = infos[index];
+    rightContent.appendChild(newP);
+  }
 }
 
 const buttonRegister = document.querySelector('#facebook-register');
@@ -56,6 +82,8 @@ buttonRegister.addEventListener('click', function (event) {
   submitError.innerText = '';
   if (!validateForm()) {
     submitError.innerText = 'Campos inválidos';
+  } else {
+    showResults();
   }
 });
 

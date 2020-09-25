@@ -18,6 +18,7 @@ function validar() {
   }
 }
 validar();
+
 function validarNovoUsuario() {
   const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;

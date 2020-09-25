@@ -57,16 +57,19 @@
               placeholder="dd/mm/aaaa"
               id="data"
             />
-            <label for="" id="label-gender">Gênero</label>
+            <label id="label-gender">Gênero</label>
             <div class="gender">
-              <input type="radio" id="male" name="gender" value="male" ><label for="male">Masculino</label></input>
-              <input type="radio" id="female" name="gender" value="female" ><label for="female">Feminino</label></input>    
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Feminino</label>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Masculino</label>
               <input
                 type="radio"
                 id="personalizado"
                 name="gender"
-                value="personali"
-              ><label for="personalizado" id="label-gender">Personalizado</label></input>         
+                value="other"
+              />
+              <label for="personalizado" id="label-gender">Personalizado</label>
             </div>
           </div>
           <p class="handle-error"></p>

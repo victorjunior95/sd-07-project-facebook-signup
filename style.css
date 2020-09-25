@@ -107,12 +107,12 @@ body {
 }
 
 .button-login {
-  height: 25px;
   background-color: #3f61a5;
   border-color: #3f61a5;
   border-radius: 4px;
   color: white;
   cursor: pointer;
+  height: 25px;
 }
 
 .button-login:hover {

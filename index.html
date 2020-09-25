@@ -10,12 +10,13 @@
      <img class="facebook-logo" src="imgs/facebook-logo.png">
     <form class="facebook-login">
         <div class="form-group">
-        <label id="user-email-phone-label">Email ou telefone</label>
+        <label class="cabecalho" id="user-email-phone-label">Email ou telefone</label>
         <input type="text" id="user-email-phone">
     </div>
     <div class="form-group">
-        <label id="user-password-label">Senha</label>
+        <label class="cabecalho" id="user-password-label">Senha</label>
         <input type="text" id="user-password">
+        <!-- <label id="forgot-password-label">Esqueceu a conta?</label> -->
     </div>
     <div class="form-control">
         <button type ="submit" id="button-login">Entrar</button>
@@ -26,8 +27,8 @@
     <section class ="main-content">
 
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img id="facebook-networking" src="imgs/networking.png">
+            <p class="slogan" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking" class="facebook-networking" src="imgs/networking.png">
         </div>
 
         <div class="right-content">
@@ -56,7 +57,13 @@
                     <!-- <input id="genero-personalizado" class="genero-personalizado" type="text" name="gender-custom" placeholder="Gênero (opcional)"> -->
                 </div>
                 <div>
+                    <p class="agreement">Ao clicar em Cadastre-se, você concorda com nossos<span style="color: darkblue;"> Termos</span>, <span style="color: darkblue;">Política de Dados</span> e <span style="color: darkblue;">Política de Cookies</span>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                </div>
+                <div>
                     <button type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+                <div>
+                    <p class="crie"> <span style="color: darkblue;">Crie uma página</span> para uma celebridade, banda ou empresa.</p>
                 </div>
             </form>
         </div>

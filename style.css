@@ -79,8 +79,6 @@ body {
 }
 
 .facebook-logo {
-  align-self: flex-end;
-  justify-content: left;
   display: flex;
   width: 150px;
 }

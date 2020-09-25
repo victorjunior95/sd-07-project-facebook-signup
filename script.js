@@ -33,13 +33,20 @@ function createInputGender() {
 
     inputOtherGender.required = 'required';
     inputOtherGender.placeholder = 'Gênero (opcional)';
-    inputOtherGender.name = 'gender';
+    inputOtherGender.name = 'gender-custom';
+
+    if (genderContainer.children.length === 3) {
+      genderContainer.removeChild(genderContainer.lastChild);
+    }
 
     divOtherGender.appendChild(inputOtherGender);
     genderContainer.appendChild(divOtherGender);
+
+    // console.log(genderContainer.children.length);
   });
+  
 }
-// const sectionRightContainer
+
 
 window.onload = function () {
   alertLogin();

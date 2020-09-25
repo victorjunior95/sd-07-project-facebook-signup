@@ -50,14 +50,11 @@ const buttonSubmit = document.querySelector('#facebook-register');
 buttonSubmit.addEventListener('click', () => {
   const inputsValidation = document.querySelectorAll('.validation');
   for (let index = 0; index < inputsValidation.length; index += 1) {
-    inputsValidation[index].oninvalid = function() { 
-      // remove mensagens de erro padrão
-      this.setCustomValidity("");
-      // faz a validação novamente
+    inputsValidation[index].oninvalid = function () {
+      this.setCustomValidity('');
       if (!this.validity.valid) {
-      // se estiver inválido, coloca a mensagem
-      this.setCustomValidity("Campos inválidos");
-      };
-    }; 
-  };
+        this.setCustomValidity('Campos inválidos');
+      }
+    }
+  }
 });

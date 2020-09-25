@@ -100,6 +100,7 @@ function genderSelected(e) {
       const newInputCustomGender = document.createElement('input');
 
       newInputCustomGender.className = 'gender-custom';
+      newInputCustomGender.placeholder = 'Gênero (opcional)';
       newInputCustomGender.name = 'gender';
       formRegister.children[totalChildrensForm].appendChild(newInputCustomGender);
     }

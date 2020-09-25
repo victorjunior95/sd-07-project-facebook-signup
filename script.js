@@ -15,7 +15,7 @@ buttonLogin.addEventListener('click', function () {
 function makeRightContentUserCreated() {
   const rightContentAfterCreate = document.createElement('div');
   rightContentAfterCreate.classList.add('right-content');
-  
+
   for (let index = 0; index < inputFormCreate.length; index += 1) {
     if (inputFormCreate[index].name !== 'password') {
       const pToShow = document.createElement('p');

@@ -13,7 +13,6 @@
     <img src="imgs/facebook-logo.png" alt="logo do facebook" class="facebook-logo">
 
     <form action="" class="facebook-login">
-
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
         <input type="text" id="user-email-phone">
@@ -27,7 +26,6 @@
       <div class="form-control">
         <button type="submit" id="button-login">Entrar</button>
       </div>
-
     </form>
 
   </header>
@@ -69,9 +67,10 @@
           <label for="" id="label-gender">Gênero</label>
 
           <div class="radioButton-Container">
-            <input type="radio" id="female" name="radioGender">
-            <label for="female">Feminino</label>
-            <input type="radio" id="male" name="radioGender">
+            <label>
+              <input type="radio" name="radioGender">
+              Feminino</label>
+            <input type="radio" id="male" name="radioGender" selected="selected">
             <label for="male">Masculino</label>
             <input type="radio" id="other" name="radioGender">
             <label for="other">Personalizado</label>

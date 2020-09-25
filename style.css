@@ -1,4 +1,5 @@
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -7,6 +8,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 6px 15px;
+}
+
+input {
+  border: 1px solid rgb(42, 73, 125);
+  border-radius: 2px;
+  height: 17px;
+  margin: 2px;
 }
 
 .top-bar {
@@ -15,15 +24,33 @@ header {
 
 .facebook-login {
   display: flex;
+  justify-content: flex-end;
 }
 
 .form-group {
+  align-self: flex-end;
+  color: white;
   display: flex;
   flex-direction: column;
 }
 
+.form-group label {
+  font-size: 15px;
+  margin: 2px;
+}
+
 .form-control {
   align-self: flex-end;
+}
+
+.form-control button {
+  align-content: center;
+  background-color: rgb(143, 167, 214);
+  border: 1px solid rgb(42, 73, 125);
+  border-radius: 2px;
+  height: 22px;
+  justify-content: flex-start;
+  margin: 2px 4px;
 }
 
 .main-content {
@@ -46,7 +73,11 @@ header {
 }
 
 .name-lastname {
-  flex-flow: row wrap;
+  flex-flow: row;
+}
+
+.lastname {
+  justify-content: flex-end;
 }
 
 .phone_email , .password , .birthdate , .genero {

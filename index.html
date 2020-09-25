@@ -51,7 +51,7 @@
       <div class="main-content right-content">
         <h1 class="right-content-title">Abra uma conta</h1>
         <div class="quick-easy">É rápido e fácil.</div>
-        <form action="" class="new-account">
+        <form action="" class="new-account" id="new-account">
           <div class="main-content right-content full-name">
             <input
               type="text"
@@ -69,6 +69,7 @@
           </div>
 
           <input
+            data-validate-field="email"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
@@ -76,6 +77,7 @@
           />
 
           <input
+            data-validate-field="password"
             type="password"
             name="password"
             placeholder="Nova senha"
@@ -120,18 +122,23 @@
             >
           </div>
           <p class="accept-terms">
-            Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos</a>, <a href="">Política
-            de Dados</a> e <a href="#">Política de Cookies</a>. Você pode receber notificações por
-            SMS e pode cancelar isso quando quiser.
+            Ao clicar em Cadastre-se, você concorda com nossos
+            <a href="">Termos</a>, <a href="">Política de Dados</a> e
+            <a href="#">Política de Cookies</a>. Você pode receber notificações
+            por SMS e pode cancelar isso quando quiser.
           </p>
           <button type="submit" id="facebook-register" class="button-register">
             Cadastre-se
           </button>
-          <p class="accept-terms"><a href="#">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+          <p class="accept-terms">
+            <a href="#">Criar uma Página</a> para uma celebridade, banda ou
+            empresa.
+          </p>
         </form>
       </div>
     </div>
 
+    <script src="libs/just-validate.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

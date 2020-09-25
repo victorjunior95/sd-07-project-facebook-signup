@@ -39,6 +39,10 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;

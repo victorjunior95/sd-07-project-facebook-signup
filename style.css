@@ -27,11 +27,12 @@ body {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .main-content {
   display: flex;
+  flex-direction: row;
 }
 
 .left-content {

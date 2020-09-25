@@ -64,6 +64,7 @@ header {
 .forget {
   color: azure;
   font-size: 14px;
+  font-weight: 700px;
   margin-top: 10px;
   text-decoration: none;
 }
@@ -89,4 +90,8 @@ header {
   display: flex;
   background-image: linear-gradient(white, #d3d8e8);
   min-height: 100vh;
+}
+
+.left-content {
+  flex-basis: 800px;
 }

@@ -42,6 +42,6 @@ body {
   width: 370px;
 }
 
-#first-last-name {
+.first-last-name {
   display: flex;
 }

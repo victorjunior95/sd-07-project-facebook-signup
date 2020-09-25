@@ -20,7 +20,7 @@ function checkRadio() {
   }
   return validation;
 }
-/*
+
 function radioOption() {
   let option = 0;
   const genderList = document.getElementsByName('gender');
@@ -28,8 +28,9 @@ function radioOption() {
     if (genderList[index].checked === true) {
       option = genderList[index].value;
     }
-  return option;
-} */
+}
+return option;
+}
 
 function validateNewAccountFormLessRadioButton() {
   const inputCollection = document.getElementsByTagName('input');
@@ -50,7 +51,7 @@ function validateNewAccountFormLessRadioButton() {
   }
   return validation;
 }
-/*
+
 function birthdate() {
   let birthDt = document.getElementsByName('birthdate')[0].value;
   birthDt = birthDt.split('');
@@ -60,7 +61,7 @@ function birthdate() {
   birthDt = day + '/' + month + '/' + year;
   return birthDt;
 }
-/*
+
 function createDivWelcome() {
   const welcome = document.createElement('div');
   const welcomeFullname = document.createElement('p');
@@ -80,16 +81,15 @@ function createDivWelcome() {
   return welcome;
 }
 
-/*
 function welcome() {
   const target = document.getElementsByClassName('right-content')[0];
-  const welcome = createDivWelcome();
+  const welcomeDiv = createDivWelcome();
   while (target.lastElementChild) {
     target.removeChild(target.lastElementChild);
   }
-  target.appendChild(welcome);
+  target.appendChild(welcomeDiv);
   return target;
-}*/
+}
 
 function validateNewAccountForm() {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
@@ -110,5 +110,11 @@ document.getElementById('custom').addEventListener('click', function () {
     genderCustom.placeholder = 'Gênero (opcional)';
     genderCustom.required = true;
     document.getElementById('gender-custom').appendChild(genderCustom);
+  }
+});
+
+document.getElementById('facebook-register').addEventListener('click', function () {
+  if ((validateNewAccountFormLessRadioButton() && checkRadio()) === true) {
+    welcome();
   }
 });

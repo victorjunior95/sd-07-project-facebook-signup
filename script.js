@@ -56,7 +56,9 @@ registre.addEventListener('click', function () {
     novo.innerText = 'Campos inválidos';
     form.appendChild(novo);
   } else {
-    const text = `Olá, ${firstname.value} ${lastname.value}. Email/telefone: ${email.value} DDN: ${birthdate.value}. Gênero: ${gender[index].value}.`;
-    right.innerText = text;
+    const text = document.createElement('p');
+    text.innerText = `Olá, ${firstname.value} ${lastname.value}. Email/telefone: ${email.value} DDN: ${birthdate.value}. Gênero: ${gender[index].value}.`;
+    right.innerHTML = '';
+    right.appendChild(text);
   }
 });

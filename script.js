@@ -19,10 +19,9 @@ function validar() {
   if (mensagem === '') {
     alert('login efetuado com sucesso');
   }
-
 }
 function validarNovoUsuario() {
-  let listaForm = {};
+  const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
   listaForm.lastName = document.getElementById('lastname').value;
   listaForm.email = document.getElementById('phone_email').value;
@@ -30,7 +29,7 @@ function validarNovoUsuario() {
   listaForm.genero = document.querySelector('[type=radio]:checked');
   listaForm.dataNasc = document.getElementById('birthdate').value;
   if (listaForm !== '') {
-    alert("nao tem nada aqui");
+    alert('nao tem nada aqui');
   }
   return listaForm;
 }

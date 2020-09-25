@@ -24,21 +24,6 @@ buttonLogin.addEventListener('click', function () {
   alert(userData.value);
 });
 
-function sexValidate() {
-  const sex = genderInputs;
-  sex[0].addEventListener('click', function () {
-    sexvar = 'Feminino';
-  });
-
-  sex[1].addEventListener('click', function () {
-    sexvar = 'Masculino';
-  });
-
-  sex[2].addEventListener('click', function () {
-    sexvar = 'Outros';
-  });
-}
-
 registerButton.addEventListener('click', function (xis) {
   let count = 0;
   formInput.forEach((key) => {

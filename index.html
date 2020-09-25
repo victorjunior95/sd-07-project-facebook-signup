@@ -32,6 +32,7 @@
   </header>
 
   <section class="main-content">
+    
       <div class="left-content">
         <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
         </p>
@@ -41,9 +42,33 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <h2 class="quick-easy">É rápido e fácil.</h2>
-        <form></form>
+
+        <form>
+          <div><input name="firstname" placeholder="Nome"></div>
+          <!--Alinhar a esquerda do nome  -->
+          <div><input name="lastname" placeholder="Sobrenome"></div>
+          <div><input name="phone_email" placeholder="Celular ou email"></div>
+          <div><input name="password" type="password" autocomplete="on" placeholder="Nova senha"></div>
+          <!--Revisar-->
+          <label id="label-birthdate" for="birthdate">Data de nascimento<br>
+            <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+          </label>
+          <!--Revisar-->
+          <label id="label-gender">Gênero<br>
+            <input type="radio" id="female" name="genre">
+            <label for="female">Feminino</label>
+            <input type="radio" id="male" name="genre">
+            <label for="male">Masculino</label>
+            <input type="radio" id="personalized" name="genre">
+            <label for="personalized" name="genre">Personalizado</label>
+          </label>
+
+          <div><button type="submit" id="facebook-register">Cadastre-se</button></div>
+
+        </form>
       </div>
   </section>
+  
   <script src="script.js"></script>
 </body>
 </html>

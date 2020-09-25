@@ -10,10 +10,10 @@ function login(user) {
   const rightContent = document.getElementById('right-content');
 
   rightContent.innerHTML = '';
-  rightContent.innerHTML += `Olá, ${user.firstname} ${user.lastname}`;
-  rightContent.innerHTML += ` ${user.phoneEmail}`;
-  rightContent.innerHTML += ` ${user.birthdate}`;
-  rightContent.innerHTML += ` ${user.gender}`;
+  rightContent.innerHTML += `<p>Olá, ${user.firstname} ${user.lastname}</p>`;
+  rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
+  rightContent.innerHTML += `<p>${user.birthdate}</p>`;
+  rightContent.innerHTML += `<p>${user.gender}</p>`;
 }
 
 const btnLogin = document.getElementById('button-login');

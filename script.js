@@ -8,11 +8,18 @@ const genderF = genderContainer.querySelector('input[value="Feminino"]');
 const genderM = genderContainer.querySelector('input[value="Masculino"]');
 const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
 const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
-const customInput = document.querySelector('#custom-input');
+let customInput = document.querySelector('#custom-input');
 
 btnLgn.addEventListener('click', function () {
   alert(inputEmailPh.value);
 });
+
+function preventSubmit() {
+  regForm.addEventListener('submit', function (e) {
+    invalidMsg.style.display = 'flex';
+    e.preventDefault();
+  });
+}
 
 function inputCheck() {
   const camposForm = regForm.getElementsByTagName('input');
@@ -38,17 +45,10 @@ function checkForm() {
   });
 }
 
-function preventSubmit() {
-  regForm.addEventListener('submit', function (e) {
-    invalidMsg.style.display = 'flex';
-    e.preventDefault();
-  });
-}
-
 function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
+    customInput = document.querySelector('#custom-input');
     if (genderChecked !== null) {
-      const customInput = document.querySelector('#custom-input');
       if (customInput === null) {
         const newCustomInput = document.createElement('input');
         newCustomInput.id = 'custom-input';
@@ -58,21 +58,22 @@ function addCustomGenderInput() {
         genderContainer.appendChild(newCustomInput);
       }
     }
-  })
+  });
 }
 
 function removeCustomGenderInput() { // pode dar erro com o cypress
   genderM.addEventListener('click', function () {
+    customInput = document.querySelector('#custom-input');
     if (customInput !== null) {
-      const customInput = genderContainer.lastChild;
       genderContainer.removeChild(customInput);
     }
   });
 
   genderF.addEventListener('click', function () {
+    customInput = document.querySelector('#custom-input');
     if (customInput !== null) {
-      const customInput = genderContainer.lastChild;
-      genderContainer.removeChild(customInput);
+      const removeInput = genderContainer.lastChild;
+      genderContainer.removeChild(removeInput);
     }
   });
 }

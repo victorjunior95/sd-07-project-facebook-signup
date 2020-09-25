@@ -20,8 +20,8 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .main-content {

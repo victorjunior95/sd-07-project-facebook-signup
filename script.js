@@ -14,7 +14,7 @@ function checkForm() {
 }
 
 for (let i = 0; i < 3; i += 1) {
-  document.getElementsByName('genero')[i].addEventListener('click', function () {
+  document.getElementsByName('gender')[i].addEventListener('click', function () {
     if ((document.querySelector('input[name="gender"]:checked').value) === 'Personalizado') {
       document.querySelector('.personalizado').style.display = 'block';
     } else {

@@ -40,11 +40,11 @@ registre.addEventListener('click', function () {
   const lastname = document.getElementById('lastname');
   const password = document.getElementById('password');
   const birthdate = document.getElementById('birthdate');
-  const h4 = document.querySelector('h4');
+  const form = document.querySelector('.create-account-form');
 
   if (firstname.value === '' || lastname.value === '' || password.value === '' || birthdate.value === '') {
     const novo = document.createElement('h3');
     novo.innerText = 'Campos inválidos';
-    h4.appendChild(novo);
+    form.appendChild(novo);
   }
 });

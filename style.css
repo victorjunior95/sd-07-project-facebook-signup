@@ -8,11 +8,11 @@ body , html {
   display: flex;
   height: 100px;
   justify-content: space-between;
-  padding: 0 10%;
 }
 
 .facebook-logo {
   height: 50px;
+
 }
 
 .facebook-login {

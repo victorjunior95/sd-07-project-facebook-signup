@@ -74,8 +74,9 @@ function birthdate() {
 function createDivWelcome() {
   const welcome = document.createElement('div');
   const welcomeFullname = document.createElement('p');
-  welcomeFullname.innerText = 
-  'Olá, ' + document.getElementsByName('firstname')[0].value + ' ' + document.getElementsByName('lastname')[0].value;
+  const firstName = document.getElementsByName('firstname')[0].value;
+  const lastName = document.getElementsByName('lastname')[0].value;
+  welcomeFullname.innerText = 'Olá, ' + firstName + ' ' + lastName;
   welcome.appendChild(welcomeFullname);
   const mailPhone = document.createElement('p');
   mailPhone.innerText = document.getElementsByName('phone_email')[0].value;

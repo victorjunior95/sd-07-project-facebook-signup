@@ -41,10 +41,22 @@ registre.addEventListener('click', function () {
   const password = document.getElementById('password');
   const birthdate = document.getElementById('birthdate');
   const form = document.querySelector('.create-account-form');
+  const right = document.querySelector('.right-content');
+  const email = document.getElementById('user-email-phone');
+  const gender = document.getElementsByName('gender');
+  let index = 0;
+  for (let i = 0; i < gender.length; i += 1) {
+    if (gender[i].checked) {
+      index = i;
+    }
+  }
 
   if (firstname.value === '' || lastname.value === '' || password.value === '' || birthdate.value === '') {
     const novo = document.createElement('h3');
     novo.innerText = 'Campos inválidos';
     form.appendChild(novo);
+  } else {
+    const text = `Olá, ${firstname.value} ${lastname.value}. Email/telefone: ${email.value} DDN: ${birthdate.value}. Gênero: ${gender[index].value}.`;
+    right.innerHTML = text;
   }
 });

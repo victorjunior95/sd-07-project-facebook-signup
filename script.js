@@ -14,7 +14,6 @@ function login(user) {
   rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
   rightContent.innerHTML += `<p>${user.birthdate}</p>`;
   rightContent.innerHTML += `<p>${user.gender}</p>`;
-
 }
 
 const btnLogin = document.getElementById('button-login');
@@ -39,7 +38,7 @@ btnValidate.addEventListener('click', function () {
     const formRegister = document.getElementsByClassName('facebook-register')[0];
     formRegister.innerHTML += 'Campos inválidos';
   } else {
-    login({firstname, lastname, phoneEmail, birthdate, gender});
+    login({ firstname, lastname, phoneEmail, birthdate, gender });
   }
 });
 

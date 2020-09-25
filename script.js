@@ -34,7 +34,7 @@ const gender = document.forms['form-register'].gender;
 gender[2].addEventListener('click', function () {
   const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
 
-  if (divGenderPersonalized.innerHTML) { }
+  if (divGenderPersonalized.innerHTML) return;
   else {
     const inputTextGender = document.createElement('input');
     inputTextGender.id = 'o-text';

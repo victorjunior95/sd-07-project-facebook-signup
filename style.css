@@ -5,16 +5,16 @@ body {
 }
 
 .top-bar-topo {
-    background-color: rgb(66, 103, 178);
-    width: 100%;
+  background-color: rgb(66, 103, 178);
+  width: 100%;
 }
 
 .top-bar-centro {
-    margin: 0 auto;
-    width: 70%;
+  margin: 0 auto;
+  width: 70%;
 }
 
-.top-bar {  
+.top-bar {
   display: flex;
   justify-content: space-between;
   padding: 7px;

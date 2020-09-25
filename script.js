@@ -5,7 +5,8 @@ buttonLogin.addEventListener('click', function () {
   alert(`${nameInput}`);
 });
 
-window.JustValidate('.js-form', {
+//  solução com a ajuda da colega Samata Below
+const validate = new window.JustValidate('.js-form', {
   rules: {
     firstname: {
       required: true,
@@ -26,12 +27,8 @@ window.JustValidate('.js-form', {
       required: true,
     },
   },
-  messages: {
-    firstname: 'Campos inválidos',
-    lastname: 'Campos inválidos',
-    phone_email: 'Campos inválidos',
-    password: 'Campos inválidos',
-    birthdate: 'Campos inválidos',
-    radio: 'Campos inválidos',
-  },
 });
+
+window.onload = function () {
+  return validate;
+};

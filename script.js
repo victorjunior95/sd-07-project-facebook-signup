@@ -32,12 +32,14 @@ function msgCampoInvalido() {
 function resetMsg() {
   if (document.querySelector('.msg-campo-vazio') != null) {
     const msgCampoVazio = document.querySelector('.msg-campo-vazio');
-    let msgApagada = rightContentInputs.removeChild(msgCampoVazio);
+    rightContentInputs.removeChild(msgCampoVazio);
   }
 }
 
 function registrarUsuario() {
-  // const nomeUsuario = document.querySelector('#firstname').value + ' ' + document.querySelector('#lastname').value;
+  // const primeiroNome = document.querySelector('#firstname').value
+  // const ultimoNome = document.querySelector('#lastname').value  
+  // const nomeUsuario = primeiroNome.value + ' ' + ultimoNome.value;
   // const emailOuTelefone = document.querySelector('#phone_email').value;
   // const birthDate = document.querySelector('#input-birthdate').value;
   // const generoEscolhido = genero();
@@ -54,6 +56,8 @@ function percorreInputs() {
     const formType = validandoInput.getAttribute('type');
     if (testeCampoVazio(formValue, formType) === true) {
       return true;
+    } else {
+      return false;
     }
   }
 }
@@ -67,11 +71,9 @@ function validaCadastro() {
 
   if (genero() === '') {
     msgCampoInvalido();
-  }
-  else if (percorreInputs() === true) {
+  }else if (percorreInputs() === true) {
     msgCampoInvalido();
-  }
-  else {
+  }else {
     registrarUsuario();
   }
 }

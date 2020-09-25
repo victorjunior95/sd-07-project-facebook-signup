@@ -18,6 +18,10 @@ window.onload = function () {
     },
     focusWrongField: true,
   });
+
+  // POG - Programação Orientada a Gambiarra
+  // Dica Samanta Below
+  // https://trybecourse.slack.com/archives/C017W4EDD4K/p1600990300157300
   function letCodeClimateHappy() {
     return validate;
   }

@@ -52,28 +52,28 @@
       <div class="main-content right-content">
         <h1>Abra uma conta</h1>
         <div class="quick-easy">É rápido e fácil.</div>
-        <form action="" class="new-account">
+        <form action="" class="new-account" id="new-account">
           <div class="main-content right-content full-name">
-            <input type="text" name="firstname" placeholder="Nome" />
+            <input data-validate-field="primeiroNome" type="text" name="firstname" placeholder="Nome" />
 
-            <input type="text" name="lastname" placeholder="Sobrenome" />
+            <input data-validate-field="ultimoNome" type="text" name="lastname" placeholder="Sobrenome" />
           </div>
           <br />
 
-          <input
+          <input data-validate-field="email"
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
           /><br /><br />
 
-          <input
+          <input data-validate-field="password"
             type="password"
             name="password"
             placeholder="Nova senha"
           /><br /><br />
 
           <label id="label-birthdate">Data de nascimento</label><br />
-          <input
+          <input data-validate-field="birthdate"
             type="date"
             name="birthdate"
             placeholder="dd/mm/aaaa"
@@ -82,18 +82,18 @@
           <label id="label-gender">Gênero</label><br />
 
           <label
-            ><input type="radio" name="gender" value="Feminino" />Feminino</label
+            ><input data-validate-field="radio"  type="radio" name="gender" value="Feminino" />Feminino</label
           >
 
           <label
-            ><input type="radio" name="gender" value="Masculino" />Masculino</label
+            ><input data-validate-field="radio" type="radio" name="gender" value="Masculino" />Masculino</label
           >
 
           <label
-            ><input
+            ><input data-validate-field="radio"
               type="radio"
               name="gender"
-              value="other"
+              value="Personalizado"
             />Personalizado</label
           >
 
@@ -104,6 +104,7 @@
       </div>
     </div>
 
+    <script src="libs/just-validate.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

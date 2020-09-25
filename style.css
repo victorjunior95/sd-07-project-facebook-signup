@@ -17,7 +17,7 @@ body {
   height: 80px;
   justify-content: space-between;
   margin: auto;
-  width: 82%;
+  width: 1120px;
 }
 
 .facebook-logo {
@@ -75,12 +75,12 @@ body {
   align-items: center;
   display: flex;
   margin: auto;
-  width: 82%;
+  width: 1120px;
 }
 
 .left-content {
   justify-content: center;
-  width: 800px;
+  min-width: 800px;
 }
 
 .paragrafo {
@@ -117,19 +117,20 @@ h4 {
 }
 
 .main-content .right-content form {
-  display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .inputs-nome {
   border-radius: 4px;
+  display: flex;
   height: 23px;
   margin: 0 10px 10px 0;
-  width: 141px;
+  width: 136px;
 }
 
 .inputs-form {
-  width: 100%;
+  width: 290px;
 }
 
 .label {
@@ -140,8 +141,7 @@ h4 {
 }
 
 .radios {
-  margin-bottom: 15px;
-  margin-right: 5px;
+  margin: 5px 3px 5px 3px;
 }
 
 .right-content .conteiner-nome-sobrenome {
@@ -150,6 +150,7 @@ h4 {
 
 .right-content .conteiner-radio {
   display: flex;
+  width: 300px;
 }
 
 .botao-cadastrar {

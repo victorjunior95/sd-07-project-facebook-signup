@@ -26,15 +26,22 @@ for (let indexYear = 2020; indexYear >= 1905; indexYear -= 1) {
   optionYear.setAttribute('value', indexYear);
   optionYear.innerText = indexYear;
   yearButton.appendChild(optionYear);
-} */
+} 
 
 const customButton = document.querySelector('#custom-button');
 const genderOptions = document.querySelectorAll('.gender-options')[0];
-const customInput = document.querySelector('#custom-input');
+const customInput = document.querySelector('#custom-input')
 customButton.addEventListener('change', function () {
-  // if(customButton.isChecked) {
   customInput.removeAttribute('type', 'hidden');
   customInput.setAttribute('type', 'text');
   genderOptions.appendChild(customInput);
-  // };
+}); */
+const customButton = document.querySelector('#custom-button');
+customButton.addEventListener('change', function () {
+  const containerNewImput = document.querySelector('#custom-container');
+  const inputCustom = document.createElement('input');
+  inputCustom.setAttribute('type', 'text');
+  inputCustom.setAttribute('placeholder', 'Gênero (opcional)');
+  inputCustom.setAttribute('name', 'gender-custom')
+  containerNewImput.appendChild(inputCustom);
 });

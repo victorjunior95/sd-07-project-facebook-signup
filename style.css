@@ -2,10 +2,6 @@
   margin-top: 10px;
 }
 
-.birthday input {
-  width: 70%;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
@@ -24,7 +20,7 @@ body {
 .form-control {
   align-self: flex-end;
   margin: 5px;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 .form-control button {
@@ -35,20 +31,13 @@ body {
   color: white;
   font-weight: 700;
   padding: 3px 18px;
+  text-shadow: 0.12em 0.12em #0d2c6e;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 5px;
-}
-
-.u-gender-option {
-  align-items: center;
-  display: flex;
-  flex-flow: nowrap;
-  justify-content: center;
-  margin-bottom: 10px;
 }
 
 h1 , h3 {
@@ -82,10 +71,24 @@ h1 , h3 {
 .right-content input {
   border: #d3e8d8 solid 1px;
   border-radius: 4px;
-  font-size: 700;
+  font-size: 18px;
+  font-weight: 700;
   height: 30px;
   margin-top: 6px;
   width: 100%;
+}
+
+.right-content button {
+  background-color: rgb(9, 139, 27);
+  border: none;
+  border-bottom: rgb(3, 83, 3) solid 1px;
+  border-radius: 3px;
+  border-top: rgb(3, 83, 3) solid 1px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 3px 20px;
+  text-shadow: 0.12em 0.12em rgb(3, 83, 3);
 }
 
 .sing-up {
@@ -109,9 +112,17 @@ h1 , h3 {
   width: 100%;
 }
 
+.u-gender-option {
+  align-items: center;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 .u-gender-option input {
   margin-bottom: 5px;
-  margin-right: 8px;
+  margin-right: 12px;
   width: 15px;
 }
 

@@ -6,23 +6,26 @@
     <title>Facebook</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
   </head>
   <body>
     <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" />
 
-      <form action="" class="facebook-login">
+      <form class="facebook-login">
         <div class="form-group">
-          <label for="user-email-phone" id="user-email-phone-label">
-            Email ou telefone</label
+          <label for="user-email-phone" id="user-email-phone-label"
+            >Email ou telefone</label
           >
-          <input type="text" id="user-email-phone" />
+          <input type="text" id="user-email-phone" name="password" />
         </div>
         <div class="form-group">
           <label for="user-password" id="user-password-label">Senha</label>
-          <input type="password" id="user-password" />
+          <input type="password" id="user-password" name="password" />
         </div>
         <div class="form-control">
           <button type="submit" id="button-login">Entrar</button>
@@ -31,39 +34,51 @@
     </header>
     <main class="main-content">
       <div class="left-content">
-        <p>
-          "O Facebook ajuda você a se conectar e compartilhar com as pessoas que
-          fazem parte da sua vida."
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
         </p>
-        <img src="imgs/networking.png" alt="" />
+        <img src="imgs/networking.png" id="facebook-networking" />
       </div>
 
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil</p>
-        <form action="">
+        <form>
           <div class="name-form">
             <input type="text" name="firstname" placeholder="Nome" />
             <input type="text" name="lastname" placeholder="Sobrenome" />
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="user_password" placeholder="Nova senha" >
-
-          <input type="date" id="datepicker" name="birthdate">
+          <input
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input
+            type="password"
+            name="user_password"
+            placeholder="Nova senha"
+            name="password"
+          />
+          <label for="birthdate" id="birthdate">Data de nascimento</label>
+          <input
+            type="date"
+            id="datepicker"
+            name="birthdate"
+            placeholder="dd/mm/aaaa"
+          />
           <label id="label-gender">Gênero</label>
-          <div class="form-gender">
-            <div class="gender-group">
-              <input type="radio" id="female" name="gender" value="female">
-              <label for="female">Feminino</label><br>
-            </div>
-            <div class="gender-group">
-              <label for="male">Masculino</label><br>
-              <input type="radio" id="male" name="gender" value="male">
-            </div>
-            <div class="gender-group">
-              <input type="radio" id="other" name="gender" value="other">
-              <label for="other">Personalizado</label>
-            </div>
+          <div class="gender-group">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Feminino</label><br />
+          </div>
+          <div class="gender-group">
+            <label for="male">Masculino</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+          </div>
+          <div class="gender-group">
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Personalizado</label>
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>

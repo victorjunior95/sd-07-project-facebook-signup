@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c85c45d2-9df5-4f99-842c-cbb74a9e428e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +37,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -49,6 +49,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +62,11 @@
       <option name="presentableId" value="Default" />
       <updated>1600977037611</updated>
       <workItem from="1600977038739" duration="1000000" />
-      <workItem from="1600978066228" duration="3496000" />
+      <workItem from="1600978066228" duration="4330000" />
+      <workItem from="1600982415571" duration="1454000" />
+      <workItem from="1600984137707" duration="1578000" />
+      <workItem from="1600985740169" duration="714000" />
+      <workItem from="1600996079661" duration="105000" />
     </task>
     <servers />
   </component>
@@ -77,11 +83,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="245" y="133" width="919" height="535" key="IDE.errors.dialog" timestamp="1600978033599">
+    <state x="445" y="239" width="520" height="323" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600982504609">
       <screen x="54" y="27" width="1312" height="741" />
     </state>
-    <state x="245" y="133" width="919" height="535" key="IDE.errors.dialog/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600978033599" />
+    <state x="445" y="239" width="520" height="323" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600982504609" />
+    <state x="245" y="133" width="919" height="535" key="IDE.errors.dialog" timestamp="1600996173323">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="245" y="133" width="919" height="535" key="IDE.errors.dialog/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600996173323" />
+    <state x="1694" y="237" width="1024" height="737" key="SettingsEditor" timestamp="1600982832654">
+      <screen x="1366" y="77" width="1680" height="1050" />
+    </state>
+    <state x="1694" y="237" width="1024" height="737" key="SettingsEditor/54.27.1312.741/1366.77.1680.1050@1366.77.1680.1050" timestamp="1600982253194" />
+    <state x="1694" y="237" width="1024" height="737" key="SettingsEditor/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600982832654" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1600982691564">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600982691564" />
   </component>
 </project>

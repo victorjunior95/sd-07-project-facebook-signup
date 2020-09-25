@@ -44,9 +44,7 @@ function createInputGender() {
 
     // console.log(genderContainer.children.length);
   });
-  
 }
-
 
 window.onload = function () {
   alertLogin();

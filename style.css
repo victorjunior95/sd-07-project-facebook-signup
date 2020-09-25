@@ -95,5 +95,6 @@ header {
   display: flex;
   flex-basis: 10%;
   flex-direction: row;
+  padding-bottom: 20px;
   padding-top: 20px;
 }

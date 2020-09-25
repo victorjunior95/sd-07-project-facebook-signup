@@ -2,15 +2,17 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient( white, rgba(115, 120, 150, 0.466));
+  height: 100vh;
 }
 
 .top-bar {
   align-items: center;
-  align-content: center;
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 80px;
   justify-content: space-around;
+  width: 100%;
 }
 
 .facebook-logo {
@@ -20,16 +22,14 @@ body {
 .facebook-login {
   display: flex;
   flex-flow: row nowrap;
-  /* align-items: baseline; */
-  /* align-content: initial; */
-  /* background-color: aqua; */
+  align-items: baseline;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .form-group label {
@@ -42,7 +42,7 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .button-login {
@@ -52,15 +52,58 @@ body {
 
 .main-content {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: red;
 }
 
 .left-content {
   width: 800px;
+  max-width: 800px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: blueviolet;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-size: large;
+  font-weight: 700;
+  width: 400px;
+  text-align: left;
+}
+
+.left-content img {
+  width: 400px;
 }
 
 .right-content {
   width: 300px;
+  max-width: 300px;
+  /* background-color: blue; */
+}
+
+.right-content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.right-content p {
+  margin: 5px;
+}
+
+.form-container {
+  /* background-color: red; */
+  margin-top: 20px;
+}
+
+.form-container input {
+  margin:  5px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 .name-container {
@@ -68,10 +111,33 @@ body {
   flex-flow: row nowrap;
 }
 
+.name-container input {
+  width: 50%;
+}
+
+.adress-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.adress-container input {
+  width: 100%;
+}
+
+.password-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.password-container input {
+  width: 100%;
+}
+
 .date-container {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .gender-container {
@@ -81,6 +147,20 @@ body {
 
 .radioButton-Container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.button-register {
+  background-color: green;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .required-alert {

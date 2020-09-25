@@ -43,7 +43,7 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
 
-      <form action="" id="sign-up-container">
+      <form action="" id="sign-up-container" class="form-container">
 
         <div class="required-alert"></div>
 
@@ -52,11 +52,11 @@
           <input type="text" name="lastname" placeholder="Sobrenome">
         </section>
 
-        <section>
+        <section class="adress-container">
           <input type="text" name="phone_email" placeholder="Celular ou email">
         </section>
 
-        <section>
+        <section class="password-container">
           <input type="password" name="password" placeholder="Nova senha">
         </section>
 
@@ -69,10 +69,9 @@
           <label for="" id="label-gender">Gênero</label>
 
           <div class="radioButton-Container">
-            <label>
-              <input type="radio" name="radioGender">
-              Feminino</label>
-            <input type="radio" id="male" name="radioGender" selected="selected">
+            <input type="radio" id="female" name="radioGender">
+            <label for="female">Feminino</label>
+            <input type="radio" id="male" name="radioGender">
             <label for="male">Masculino</label>
             <input type="radio" id="other" name="radioGender">
             <label for="other">Personalizado</label>
@@ -80,7 +79,7 @@
 
         </section>
 
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+        <button type="submit" id="facebook-register" class="button-register">Cadastre-se</button>
       </form>
     </section>
   </main>

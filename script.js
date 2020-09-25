@@ -101,7 +101,7 @@ function genderSelected(e) {
 
       newInputCustomGender.className = 'gender-custom';
       newInputCustomGender.placeholder = 'Gênero (opcional)';
-      newInputCustomGender.name = 'gender';
+      newInputCustomGender.name = 'gender-custom';
       formRegister.children[totalChildrensForm].appendChild(newInputCustomGender);
     }
   }

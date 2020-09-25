@@ -3,7 +3,10 @@ const emailInput = document.querySelector('#user-email-phone');
 const registerFB = document.querySelector('#facebook-register');
 const tagFormCreate = document.querySelector('.user-create');
 const inputFormCreate = document.querySelectorAll('.create-form');
-let createFormValid = false;
+let createFormValid = true;
+const invalidFieldsP = document.createElement('p');
+const rightContentCreateAUser = document.querySelector('#right-content-create')
+const mainContent = document.querySelector('.main-content')
 
 buttonLogin.addEventListener('click', function () {
   alert(emailInput.value);
@@ -11,22 +14,33 @@ buttonLogin.addEventListener('click', function () {
 
 function showAllInformations() {
   if(createFormValid === true) {
-    console.log('DEU CERTO');
+    rightContentCreateAUser.style.display = 'none';
+    const rightContentAfterCreate = document.createElement('div');
+    rightContentAfterCreate.classList.add('right-content');
+
+    for (let index = 0; index < inputFormCreate.length; index += 1) {
+      if (inputFormCreate[index].name !== 'password'){
+        let pToShow = document.createElement('p');
+        pToShow.innerText = inputFormCreate[index].value;
+        rightContentAfterCreate.appendChild(pToShow);
+      }      
+    }
+    mainContent.appendChild(rightContentAfterCreate);
   }
 }
 
 function CheckIfAllfieldsAreFilled(e) {
+   
    e.preventDefault();
-   console.log(document.querySelector('input[name="gender"]:checked').value);
-  for (let index = 0; index < inputFormCreate.length; index += 1) {
-    if (inputFormCreate[index].value === '' || inputFormCreate[index].checked === false) {
-      const invalidFieldsP = document.createElement('p');
-      invalidFieldsP.innerText = 'Campos inválidos';
-      tagFormCreate.appendChild(invalidFieldsP);
-      break;
-    }
-  }  
-  createFormValid = true;
+   for (let index = 0; index < inputFormCreate.length; index += 1) {
+    let genderInput = document.querySelector('input[name="gender"]:checked');
+      if (inputFormCreate[index].value === '' || genderInput === null) {
+        invalidFieldsP.innerText = 'Campos inválidos';
+        tagFormCreate.appendChild(invalidFieldsP);
+        createFormValid = false;
+        break;
+      }
+    }  
   showAllInformations();
 }
 

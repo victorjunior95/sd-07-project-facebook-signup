@@ -16,17 +16,31 @@ function validateRadios() {
   return validRadio;
 }
 
-
-function validateForm() {
-  let isValid = true;
+function validateName() {
   const firstName = document.querySelector('#first-name');
   const lastName = document.querySelector('#last-name');
+  let isValid = true;
+  if ((firstName.value === '') || (lastName.value === '')){
+    isValid = false;
+  }
+  return isValid;
+}
+
+function validateOthers() {
   const phoneEmail = document.querySelector('#phone-email');
   const password = document.querySelector('#password');
   const birthdate = document.querySelector('#birthdate');
-  const validateRadiosResult = validateRadios();
+  let isValid = true;
+  if ((phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
+    isValid = false;
+  }
+  return isValid;
+}
 
-  if ((firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
+function validateForm() {
+  let isValid = true;  
+
+  if ((validateName()) || (validateOthers()) || (validateRadios())) {
     isValid = false;
   } else {
     isValid = true;

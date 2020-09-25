@@ -18,13 +18,17 @@ function sexo() {
   }
 }
 
-function validaNome() {
+function validaCampos() {
   const firstName = document.getElementById('firstname');
   const lastName = document.getElementById('lastname');
   const phoneEmail = document.getElementById('phone_email');
-  const password = document.getElementById('password');
+  const password = document.getElementById('current-password');
   const inputBirthdate = document.getElementById('input-birthdate');
 
-
-
+    if(!(firstName && lastName && phoneEmail && password && inputBirthdate && sexo())){
+        document.getElementById('messager-user').innerText = 'Campos inválidos';
+    }
+    console.log('entrou')
 }
+
+document.getElementById('facebook-register').addEventListener('click', validaCampos);

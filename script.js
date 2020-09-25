@@ -27,6 +27,14 @@ const validate = new window.JustValidate('.js-form', {
       required: true,
     },
   },
+  messages: {
+    firstname: 'Campos inválidos',
+    lastname: 'Campos inválidos',
+    phone_email: 'Campos inválidos',
+    password: 'Campos inválidos',
+    birthdate: 'Campos inválidos',
+    radio: 'Campos inválidos',
+  },
 });
 
 window.onload = function () {

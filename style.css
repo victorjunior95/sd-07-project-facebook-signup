@@ -49,16 +49,16 @@ body {
 
 .form-control {
   display: flex;
-  padding: 5px;
   margin: auto;
+  padding: 5px;
 }
 
 .botao-entrar {
   background-color: rgb(72, 122, 221);
-  color: white;
-  font-weight: bold;
   border: 1px solid rgb(36, 79, 165);
   border-radius: 2px;
+  color: white;
+  font-weight: 900;
   padding: 2px 7px;
 }
 
@@ -82,9 +82,9 @@ body {
 
 .paragrafo {
   color: rgb(14, 14, 104);
-  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-family: Franklin Gothic Medium, sans-serif;
   font-size: xx-large;
-  font-weight: bold;
+  font-weight: 500;
   padding: 10px 10px 5px 0;
 }
 
@@ -94,17 +94,17 @@ body {
 
 .main-content .right-content {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  height: 100%;
   width: 300px;
 }
 
 h1 {
   color: rgb(11, 6, 85);
   font-size: xx-large;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 15px;
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 h4 {
@@ -133,13 +133,13 @@ h4 {
 .label {
   color: rgba(75, 75, 75, 0.63);
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 7px;
 }
 
 .radios {
-  margin-right: 5px;
   margin-bottom: 15px;
+  margin-right: 5px;
 }
 
 .right-content .conteiner-nome-sobrenome {
@@ -155,15 +155,15 @@ h4 {
   border-radius: 6px;
   color: white;
   font-size: medium;
-  font-weight: bold;
+  font-weight: 500;
   padding: 10px 5px;
   width: 150px;
 }
 
 .rodape {
   color: rgba(75, 75, 75, 0.63);
-  font-weight: 500;
   display: flex;
+  font-weight: 500;
   justify-content: center;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
 }

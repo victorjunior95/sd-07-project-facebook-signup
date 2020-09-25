@@ -18,26 +18,16 @@ buttonLogin.addEventListener('click', function () {
 // https://stackoverflow.com/questions/24391078/how-to-change-the-default-message-of-the-required-field-in-the-popover-of-form-c/24392931
 // https://stackoverflow.com/questions/5272433/html5-form-required-attribute-set-custom-validation-message
 
-// function checkIfAllFieldsAreFilled(element) {
-//       element.setCustomValidity('');
-//     if (element.validity.valid === false || element.value === '') {
-//       element.setCustomValidity('Campos inválidos');
-//     } else {
-//       element.setCustomValidity('');
-//     }
-//   };
-
 function checkIfAllFieldsAreFilled() {
-  for (let index = 0; index < inputFormCreate.length; index += 1) {
-    inputFormCreate[index].setCustomValidity('');
-    if (inputFormCreate[index].validity.valid === false || inputFormCreate[index].value === '') {
-      inputFormCreate[index].setCustomValidity('Campos inválidos');
+  inputFormCreate.forEach((element) => {
+    element.setCustomValidity('');
+    if (element.validity.valid === false || element.value === '') {
+      element.setCustomValidity('Campos inválidos');
     } else {
-      inputFormCreate[index].setCustomValidity('');
+      element.setCustomValidity('');
     }
-  }
+  });
 }
-
 registerFB.addEventListener('click', function () {
   checkIfAllFieldsAreFilled();
 });

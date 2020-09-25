@@ -46,6 +46,7 @@ body {
 .form-control {
   align-self: flex-end;
 }
+
 .form-control button {
   background-color: rgb(86, 115, 201);
   border: 1px solid rgb(44, 44, 44);

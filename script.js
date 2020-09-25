@@ -29,3 +29,28 @@ btnValidate.addEventListener('click', function () {
     formRegister.innerHTML += 'Campos inválidos';
   }
 });
+
+const gender = document.forms['form-register'].gender;
+gender[2].addEventListener('click', function () {
+  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
+
+  if (divGenderPersonalized.innerHTML) { }
+  else {
+    const inputTextGender = document.createElement('input');
+    inputTextGender.id = 'o-text';
+    inputTextGender.name = 'gender-custom';
+    inputTextGender.placeholder = 'Gênero (opcional)';
+
+    divGenderPersonalized.appendChild(inputTextGender);
+  }
+});
+
+gender[1].addEventListener('click', function () {
+  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
+  divGenderPersonalized.innerHTML = '';
+});
+
+gender[0].addEventListener('click', function () {
+  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
+  divGenderPersonalized.innerHTML = '';
+});

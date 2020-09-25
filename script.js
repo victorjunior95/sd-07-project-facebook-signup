@@ -64,11 +64,10 @@ function validationRadioButton() {
 }
 
 function newUserData() {
-  const originalDate = birthdate.value;
   const year = birthdate.value.slice(0, 4);
   const day = birthdate.value.slice(8, 10);
   const month = birthdate.value.slice(5, 7);
-  const adjustDate = `${day}/${month}/${year}`
+  const adjustDate = `${day}/${month}/${year}`;
   rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}
 ${phoneEmail.value}
 ${adjustDate}

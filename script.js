@@ -4,11 +4,11 @@ const regForm = document.querySelector('#reg-form');
 const regFormBtn = document.querySelector('#facebook-register');
 const invalidMsg = document.querySelector('#invalid-msg');
 const genderContainer = document.querySelector('#gender-container');
-// const genderF = genderContainer.querySelector('input[value="Feminino"]');
-// const genderM = genderContainer.querySelector('input[value="Masculino"]');
-// const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
+const genderF = genderContainer.querySelector('input[value="Feminino"]');
+const genderM = genderContainer.querySelector('input[value="Masculino"]');
+const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
 const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
-// let customInput = document.querySelector('#custom-input');
+let customInput = document.querySelector('#custom-input');
 
 btnLgn.addEventListener('click', function () {
   alert(inputEmailPh.value);
@@ -45,12 +45,12 @@ function checkForm() {
   });
 }
 
-/* function addCustomGenderInput() {
+function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
     customInput = document.querySelector('#custom-input');
     if (genderChecked !== null) {
       if (customInput === null) {
-        const newCustomInput = document.createElement('input');
+        const newCustomInput = document.createElement('input[name="gender"]');
         newCustomInput.id = 'custom-input';
         newCustomInput.name = 'gender-custom';
         newCustomInput.placeholder = 'Genero';
@@ -76,10 +76,10 @@ function removeCustomGenderInput() { // pode dar erro com o cypress
       genderContainer.removeChild(removeInput);
     }
   });
-} */
+}
 
 window.onload = function () {
   checkForm();
-  // addCustomGenderInput();
-  // removeCustomGenderInput();
+  addCustomGenderInput();
+  removeCustomGenderInput();
 };

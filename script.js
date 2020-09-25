@@ -10,8 +10,26 @@ function createTextField() {
   newField.type = 'text';
   newField.name = 'gender-custom';
   newField.placeholder = 'Gênero (opcional)';
-  genreOpcional.appendChild(newField);
+  if (genreOpcional.firstChild === null) {
+    genreOpcional.appendChild(newField);
+  }
 }
 
 const buttonCustom = document.getElementById('custom');
 buttonCustom.addEventListener('click', createTextField);
+
+const buttonFemale = document.getElementById('female');
+buttonFemale.addEventListener('click', function () {
+  const genreOpcional = document.querySelector('#genre-opcional');
+  if (genreOpcional.lastChild !== null) {
+    genreOpcional.lastChild.remove();
+  }
+});
+
+const buttonMale = document.getElementById('male');
+buttonMale.addEventListener('click', function () {
+  const genreOpcional = document.querySelector('#genre-opcional');
+  if (genreOpcional.lastChild !== null) {
+    genreOpcional.lastChild.remove();
+  }
+});

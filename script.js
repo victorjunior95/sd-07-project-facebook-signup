@@ -26,7 +26,7 @@ function validateForm() {
   const birthdate = document.querySelector('#birthdate');
   const validateRadiosResult = validateRadios();
 
-  if ((validateRadiosResult) || (firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
+  if ((firstName.value === '') || (lastName.value === '') || (phoneEmail.value === '') || (birthdate.value === '') || (password.value === '')) {
     isValid = false;
   } else {
     isValid = true;

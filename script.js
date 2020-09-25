@@ -19,6 +19,31 @@ function checkRadio () {
   }
 }
 
-function validateForm () {
-  let inputArray = document.getElementsByTagName('input');
+function validateNewAccountFormLessRadioButton () {
+  const inputCollection = document.getElementsByTagName('input');
+  let inputArray = [].slice.call(inputCollection);
+  inputArray.splice(0, 2);
+  inputArray.splice(5, 3);
+  let counter = 0;
+  for (let index = 0; index < inputArray.length; index += 1) {
+    if (inputArray[index].value === "") {
+      counter += 1;
+    }
+  }
+  if (counter === 5) {
+    return false;
+  } else {
+    return true;
+  }
 }
+
+function validateNewAccountForm () {
+  if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
+    alert("Campos inválidos");
+  } 
+}
+
+const createAccountBt = document.getElementById('facebook-register');
+
+  createAccountBt.addEventListener('click', validateNewAccountForm);
+  

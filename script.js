@@ -5,42 +5,45 @@ const tagFormCreate = document.querySelector('.user-create');
 const inputFormCreate = document.querySelectorAll('.create-form');
 let createFormValid = true;
 const invalidFieldsP = document.createElement('p');
-const rightContentCreateAUser = document.querySelector('#right-content-create')
-const mainContent = document.querySelector('.main-content')
+const rightContentCreateAUser = document.querySelector('#right-content-create');
+const mainContent = document.querySelector('.main-content');
 
 buttonLogin.addEventListener('click', function () {
   alert(emailInput.value);
 });
 
-function showAllInformations() {
-  if(createFormValid === true) {
-    rightContentCreateAUser.style.display = 'none';
-    const rightContentAfterCreate = document.createElement('div');
-    rightContentAfterCreate.classList.add('right-content');
-
-    for (let index = 0; index < inputFormCreate.length; index += 1) {
-      if (inputFormCreate[index].name !== 'password'){
-        let pToShow = document.createElement('p');
-        pToShow.innerText = inputFormCreate[index].value;
-        rightContentAfterCreate.appendChild(pToShow);
-      }      
+function makeRightContentUserCreated() {
+  const rightContentAfterCreate = document.createElement('div');
+  rightContentAfterCreate.classList.add('right-content');
+  
+  for (let index = 0; index < inputFormCreate.length; index += 1) {
+    if (inputFormCreate[index].name !== 'password') {
+      const pToShow = document.createElement('p');
+      pToShow.innerText = inputFormCreate[index].value;
+      rightContentAfterCreate.appendChild(pToShow);
     }
-    mainContent.appendChild(rightContentAfterCreate);
+  }
+  mainContent.appendChild(rightContentAfterCreate);
+}
+
+function showAllInformations() {
+  if (createFormValid === true) {
+    rightContentCreateAUser.style.display = 'none';
+    makeRightContentUserCreated();
   }
 }
 
 function CheckIfAllfieldsAreFilled(e) {
-   
-   e.preventDefault();
-   for (let index = 0; index < inputFormCreate.length; index += 1) {
-    let genderInput = document.querySelector('input[name="gender"]:checked');
-      if (inputFormCreate[index].value === '' || genderInput === null) {
-        invalidFieldsP.innerText = 'Campos inválidos';
-        tagFormCreate.appendChild(invalidFieldsP);
-        createFormValid = false;
-        break;
-      }
-    }  
+  e.preventDefault();
+  for (let index = 0; index < inputFormCreate.length; index += 1) {
+    const genderInput = document.querySelector('input[name="gender"]:checked');
+    if (inputFormCreate[index].value === '' || genderInput === null) {
+      invalidFieldsP.innerText = 'Campos inválidos';
+      tagFormCreate.appendChild(invalidFieldsP);
+      createFormValid = false;
+      break;
+    }
+  }
   showAllInformations();
 }
 

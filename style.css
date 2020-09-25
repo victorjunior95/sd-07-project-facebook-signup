@@ -4,8 +4,11 @@ a {
   text-decoration: none;
 }
 
+.termos {
+  font-size: 10px;
+}
+
 body {
-  background: linear-gradient(#3b5998, white);
   font-family: Arial, sans-serif;
 }
 
@@ -44,19 +47,19 @@ body {
 
 .main-content {
   align-items: center;
+  background: linear-gradient(white, #aec2ec);
   display: flex;
-  justify-content: space-around;
-}
-
-.alinhaNome {
-  padding: 50px;
 }
 
 .left-content {
+  margin-left: 100px;
+  margin-top: -120px;
   width: 800px;
 }
 
 .right-content {
+  align-items: center;
+  flex-direction: column;
   width: 300px;
 }
 
@@ -67,12 +70,33 @@ body {
 }
 
 .inputTextEsp {
-  border-radius: 3px;
+  border-radius: 5px;
   height: 30px;
-  width: 82px;
+  margin-bottom: 15px;
+  margin-left: 0.9px;
+  width: 46.3%;
 }
 
 .inputText {
-  border-radius: 3px;
+  border-radius: 5px;
   height: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.inputRadio {
+  display: flex;
+  font-size: 12.5px;
+  justify-content: space-around;
+}
+
+.main-content button {
+  background: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+  border-color: rgb(59, 110, 34) rgb(59, 110, 34) rgb(44, 81, 21);
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgb(164, 227, 136);
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  width: 80%;
 }

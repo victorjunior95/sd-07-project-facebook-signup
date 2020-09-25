@@ -42,16 +42,24 @@
             <form action="">
                 <div class="container-register">
                     <div class="firstname-lastname">
-                        <input type="text" id="firstname" name="firstname" placeholder="Nome" class="register">
-                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" class="register">
+                        <input type="text" id="firstname" name="firstname" placeholder="Nome" class="register firstname">
+                        <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" class="register lastname">
                     </div>
 
-                    <input type="text" value="phone_email" placeholder="Celular ou email" class="register phone_email_password">
-                    <input type="password" name="password" placeholder="Nova senha" class="register phone_email_password">
+                    <div class="phone_email_password">
+                        <input type="text" name="phone_email" placeholder="Celular ou email"
+                            class="register phone_email_password">
+                        <input type="password" name="password" placeholder="Nova senha"
+                            class="register phone_email_password">
+                    </div>
+
                 </div>
 
-                <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                <input type="date" name="birthdate" id="input-birthdate" placeholder="dd/mm/aaaa">
+                <div class="container-birthdate">
+                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <input type="date" name="birthdate" id="input-birthdate" class="input-birthdate" placeholder="dd/mm/aaaa">
+                </div>
+
 
                 <label for="" id="label-gender">Gênero</label>
                 <div class="gender-group">

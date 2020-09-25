@@ -65,21 +65,44 @@ button {
   width: 300px;
 }
 
-.register {
-  margin: 10px;
-  padding: 5px;
-}
-
-.firstname-lastname {
+.container-register {
   display: flex;
-}
-
-.firstname {
-  margin: 5px;
+  flex-direction: column;
 }
 
 .phone_email_password {
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  margin: 5px;
+  line-height: 25px;
+}
+
+.firstname-lastname {
+  box-sizing: border-box;
+  display: flex;
   width: 100%;
+}
+
+.firstname {
+  width: 45%;
+}
+
+.lastname {
+  width: 45%;
+}
+
+.container-birthdate {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  max-width: 50%;  
+}
+
+.input-birthdate {
+    line-height: 25px;
 }
 
 .gender-group {

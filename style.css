@@ -38,3 +38,13 @@
 .name {
   display: flex;
 }
+
+.gender {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-radio {
+  flex-wrap: nowrap;
+  font-size: 15px;
+}

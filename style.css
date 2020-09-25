@@ -32,7 +32,7 @@ body {
 }
 
 .main-content {
-  align-items: baseline;
+  /* align-items: baseline; */
   display: flex;
   flex-direction: row;
 }
@@ -60,5 +60,5 @@ body {
 }
 
 .entrada_nome {
-  width: 125px;
+  width: 142px;
 }

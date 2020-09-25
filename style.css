@@ -1,0 +1,81 @@
+
+.top-bar {
+    background-color: rgb(66, 103, 178);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .facebook-logo {
+    display: flex;
+  }
+  .facebook-login {
+    display: flex;
+   
+  }
+    
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control {
+    align-self: flex-end
+  }
+
+
+  .main-content {
+    justify-content: space-between;
+    display: flex;
+    
+  }
+
+  .left-content {
+    width: 800px;
+
+  }
+
+  .right-content{
+    width: 300px;
+  
+  }
+
+.button-login {
+  height: auto;
+  margin-right: 30px;
+  border: none;
+
+}
+
+.flex {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+
+}
+
+.half-box{
+  margin: 10px;
+}
+
+.box {
+  width:250px;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+
+.firstAndLastName {
+  width: 125px;
+
+}
+
+.email {
+  color: white;
+  font-size: 12px;
+}
+
+.senha {
+  color: white;
+  font-size: 12px;
+}

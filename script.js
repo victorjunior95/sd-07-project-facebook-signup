@@ -30,7 +30,7 @@ function validarNovoUsuario() {
   listaForm.genero = document.querySelector('[type=radio]:checked');
   listaForm.dataNasc = document.getElementById('birthdate').value;
   if (listaForm !== '') {
-    alert('nao tem nada aqui');
+    alert('Campos inválidos');
   }
   return listaForm;
 }

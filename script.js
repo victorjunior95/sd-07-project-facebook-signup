@@ -8,6 +8,7 @@ const genderF = genderContainer.querySelector('input[value="Feminino"]');
 const genderM = genderContainer.querySelector('input[value="Masculino"]');
 const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
 const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
+const customInput = document.querySelector('#custom-input');
 
 btnLgn.addEventListener('click', function () {
   alert(inputEmailPh.value);
@@ -24,38 +25,36 @@ function inputCheck() {
 }
 
 function genderCheck() {
-  const genderContainer = document.querySelector('#gender-container');
-  const genderOptions = genderContainer.querySelector('input[name="genero"]:checked');
-  if(genderOptions === null) {
+  if (genderChecked === null) {
     invalidMsg.innerHTML = 'Escolha um gender';
     preventSubmit();
   }
-}
-
-function preventSubmit() {
-  regForm.addEventListener('submit', function (e) {
-    invalidMsg.style.display = 'flex';
-    e.preventDefault();
-  })
 }
 
 function checkForm() {
   regFormBtn.addEventListener('click', function () {
     genderCheck();
     inputCheck();
-  })
+  });
+}
+
+function preventSubmit() {
+  regForm.addEventListener('submit', function (e) {
+    invalidMsg.style.display = 'flex';
+    e.preventDefault();
+  });
 }
 
 function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
-    if(genderChecked !== null) {
+    if (genderChecked !== null) {
       const customInput = document.querySelector('#custom-input');
-      if(customInput === null) {
+      if (customInput === null) {
         const newCustomInput = document.createElement('input');
         newCustomInput.id = 'custom-input';
         newCustomInput.name = 'gender-custom';
         newCustomInput.placeholder = 'Genero';
-        newCustomInput.type = 'text' // por default ja é text, mas eu quero especificar na msm
+        newCustomInput.type = 'text'; // por default ja é text, mas eu quero especificar na msm
         genderContainer.appendChild(newCustomInput);
       }
     }
@@ -64,23 +63,22 @@ function addCustomGenderInput() {
 
 function removeCustomGenderInput() { // pode dar erro com o cypress
   genderM.addEventListener('click', function () {
-    const customInput = document.querySelector('#custom-input');
-    if(customInput !== null) {
+    if (customInput !== null) {
       const customInput = genderContainer.lastChild;
       genderContainer.removeChild(customInput);
     }
-  })
+  });
+
   genderF.addEventListener('click', function () {
-    const customInput = document.querySelector('#custom-input');
-    if(customInput !== null) {
+    if (customInput !== null) {
       const customInput = genderContainer.lastChild;
       genderContainer.removeChild(customInput);
     }
-  })
+  });
 }
 
 window.onload = function () {
   checkForm();
   addCustomGenderInput();
   removeCustomGenderInput();
-}
+};

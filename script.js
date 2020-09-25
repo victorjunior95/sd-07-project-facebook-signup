@@ -24,11 +24,13 @@ function createMessage(name, lastName, email, date, gender) {
   deleteForm();
   const rightContent = document.getElementsByClassName('right-content')[0];
   const message = document.createElement('p');
-  message.innerText = `Olá, ${name} ${lastName}
-  ${email}
+  const message2 = document.createElement('p');
+  message.innerText = `Olá, ${name} ${lastName}`;
+  message2.innerText = `${email}
   ${date}
   ${gender}`;
   rightContent.appendChild(message);
+  rightContent.appendChild(message2);
 }
 
 function checkGender(feminino, masculino) {

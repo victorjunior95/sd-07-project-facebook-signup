@@ -69,10 +69,6 @@ body {
   padding: 0 0 0 14px;
 }
 
-.facebook-logo {
-  width: 150px;
-}
-
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -80,6 +76,13 @@ body {
   display: flex;
   height: 80px;
   justify-content: space-around;
+}
+
+.facebook-logo {
+  align-self: flex-end;
+  justify-content: left;
+  display: flex;
+  width: 150px;
 }
 
 .logo-position {
@@ -143,7 +146,6 @@ body {
   padding: 8px 10px;
   padding-bottom: 8px;
   width: 153px;
-
 }
 
 .input-data-nascimento {

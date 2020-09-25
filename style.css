@@ -94,6 +94,6 @@ header {
 .form-account {
   display: flex;
   flex-basis: 10%;
+  flex-direction: row;
   padding-top: 20px;
-  width: 250px;
 }

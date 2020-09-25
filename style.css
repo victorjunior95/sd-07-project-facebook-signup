@@ -63,7 +63,6 @@ body {
 .button {
   background-color: rgb(60, 89, 152);
   border: 1px solid rgb(60, 89, 152);
-  border-radius: 5%;
   color: white;
   display: flex;
   font-size: smaller;
@@ -93,7 +92,12 @@ body {
 
 .rigth-content {
   display: flex;
-  min-width: 300px;
+  max-width: 300px;
+  width: 300px;
+}
+
+.form-singup {
+  max-width: 300px;
   width: 300px;
 }
 

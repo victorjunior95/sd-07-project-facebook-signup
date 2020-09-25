@@ -1,14 +1,48 @@
 .aditional-data {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.aditional-data label , .radio {
+  font-size: 16px;
+}
+
+.date-value {
+  width: 55%;
+}
+
+.error-form {
+  background-color: rgba(187, 188, 190, 0.63);
+  display: none;
+  text-align: center;
 }
 
 .facebook-login {
+  align-items: flex-start;
   display: flex;
 }
 
+.facebook-login input {
+  height: 20px;
+}
+
+.facebook-networking {
+  width: 70%;
+}
+
+.facebook-slogan {
+  color: rgb(66, 103, 178);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 70%;
+}
+
 .form-control {
-  align-self: flex-end;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .form-group {
@@ -16,31 +50,49 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .form-register {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.last-name-form-register , .name-form-register {
-  border-radius: 3px;
-  margin-left: 5px;
-  width: 120px;
+.gender-custom {
+  align-self: flex-end;
+  display: none;
+  width: 50%;
 }
 
 .left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.miss-account {
+  color: #9cb4d8;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.name-form-register {
+  display: flex;
+  justify-content: space-between;
 }
 
 .radio-buttons {
+  align-items: center;
   display: flex;
+  font-size: 15px;
 }
 
 .right-content {
@@ -50,6 +102,8 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-wrap: wrap;
+  height: 70px;
   justify-content: space-between;
   width: 100%;
 }
@@ -59,6 +113,37 @@ body {
   padding: 0;
 }
 
-label {
-  font-weight: 500;
+.button-login {
+  background-color: #3f61a5;
+  border-color: #3f61a5;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  height: 25px;
+}
+
+.button-login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
+h1 {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.main-content input {
+  border-radius: 3px;
+  height: 30px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.name-form-register input {
+  width: 45%;
+}
+
+span {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }

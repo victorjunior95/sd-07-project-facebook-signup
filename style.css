@@ -6,7 +6,9 @@ body {
 }
 
 input {
+  border: 2px grey;
   border-radius: 3px;
+  height: 2em;
   margin: 3px;
 }
 
@@ -17,12 +19,17 @@ input {
   width: 100%;
 }
 
+.quick-easy {
+  margin-top: 0;
+}
+
 .facebook-logo {
   height: 100%;
 }
 
 .facebook-login {
   display: flex;
+  flex-basis: 400px;
 }
 
 .form-group {
@@ -44,14 +51,16 @@ input {
 .left-content {
   align-items: flex-end;
   display: flex;
+  flex-basis: 55%;
   flex-direction: column;
   width: 800px;
 }
 
 .right-content {
-  width: 300px;
   display: flex;
+  flex-basis: 45%;
   flex-direction: column;
+  width: 300px;
 }
 
 .genero-personalizado {
@@ -90,10 +99,10 @@ input {
 }
 
 .create-account-form {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   width: 300px;
-  align-items: stretch;
 }
 
 .birthdate {

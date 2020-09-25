@@ -37,22 +37,23 @@
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form action="" method="GET">
           <div>
-          <input class="form-input" type="text" name="firstname" placeholder="Nome">
-          <input class="form-input" type="text" name="lastname" placeholder="Sobrenome">
-          <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email">
-          <input class="form-input-big" type="password" name="password" placeholder="Nova Senha">
+          <input class="form-input" type="text" name="firstname" placeholder="Nome" required="required">
+          <input class="form-input" type="text" name="lastname" placeholder="Sobrenome" required="required">
+          <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email" required="required">
+          <input class="form-input-big" type="password" name="password" placeholder="Nova Senha" required="required">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required="required">
         </div>
             <label for ="" class= "genero" id="label-gender">Gênero</label>
             <div class="radio">
-            <input id="feminino" type="radio" name="gender">
+            <input id="feminino" type="radio" name="gender" required="required">
             <label for="feminino">Feminino</label>
-            <input id="masculino" type="radio" name="gender">
+            <input id="masculino" type="radio" name="gender" required="required">
             <label for="masculino">Masculino</label>
-            <input id="personalizado" type="radio" name="gender">
+            <input id="personalizado" type="radio" name="gender" required="required">
             <label for="personalizado">Personalizado</label>
           </div>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </section>

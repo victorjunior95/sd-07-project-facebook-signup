@@ -126,6 +126,17 @@
   width: 50%;
 }
 
+.idiomas ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.idiomas ul li {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
 .left-content {
   align-items: center;
   display: flex;
@@ -199,6 +210,11 @@ h1 {
 
 .name-form-register input {
   width: 45%;
+}
+
+hr {
+  width: 90%;
+  color: rgb(197, 207, 226);
 }
 
 span {

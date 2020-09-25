@@ -1,65 +1,61 @@
+
 function validar() {
   // Leitura dos dados
-  const userLogin = document.getElementById("user-email-phone").value;
-  const userPassord = document.getElementById("user-password").value;
+  const userLogin = document.getElementById('user-email-phone').value;
+  const userPassord = document.getElementById('user-password').value;
 
-  let mensagem = "";
+  let mensagem = '';
   // Comparações
-  if (userLogin == "") {
-    mensagem += "Campo nome é obrigatório!!!\n";
+  if (userLogin == '') {
+    mensagem += 'Campo nome é obrigatório!!!\n';
   }
-  if (userPassord == "") {
-    mensagem += "Campo e-mail é obrigatório!!!\n";
-  }
-
-  if (mensagem != "") {
-    alert("Email ou telefone");
+  if (userPassord == '') {
+    mensagem += 'Campo e-mail é obrigatório!!!\n';
   }
 
-  if (mensagem == "") {
-    alert("login efetuado com sucesso ");
+  if (mensagem != '') {
+    alert('Email ou telefone');
+  }
+
+  if (mensagem == '') {
+    alert('login efetuado com sucesso ');
   }
 }
-function validarNovoUsuario() {
-  let firstName = document.getElementById("firstname").value;
-  let lastName = document.getElementById("lastname").value;
-  let email = document.getElementById("phone_email").value;
-  let password = document.getElementById("password").value;
-  let genero = document.querySelector("[type=radio]:checked");
-  let dataNasc = document.getElementById("birthdate").value;
-
-  let mensagem = "";
-
+function validarNovoUsuario () {
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const email = document.getElementById('phone_email').value;
+  const password = document.getElementById('password').value;
+  const genero = document.querySelector('[type=radio]:checked');
+  const dataNasc = document.getElementById('birthdate').value;
+  let mensagem = '';
   // Comparações
-  if (firstName == "") {
-    mensagem += "Campo nome é obrigatório!!!\n";
+  if (firstName == '') {
+    mensagem += 'Campo nome é obrigatório!!!\n';
   }
-
-  if (lastName == "") {
-    mensagem += "Campo sobrenome é obrigatório!!!\n";
+  
+  if (lastName == '') {
+    mensagem += 'Campo sobrenome é obrigatório!!!\n';
   }
-
-  if (email == null) {
-    mensagem += "Selecione pelo menos um curso!!!\n";
+  
+  if (email == '') {
+    mensagem += 'Selecione pelo menos um curso!!!\n';
   }
-
-  if (password == "") {
-    mensagem += "Selecione o Password!!!\n";
+  
+  if (password == '') {
+    mensagem += 'Selecione o Password!!!\n';
   }
-
-  if (genero == null) {
-    mensagem += "Selecione o genero!!!\n";
+  
+  if (genero == '') {
+    mensagem += 'Selecione o genero!!!\n';
   }
-
-  if (dataNasc == "") {
-    mensagem += "Selecione a data de nascimento!!!\n";
+  
+  if (dataNasc == '') {
+    mensagem += 'Selecione a data de nascimento!!!\n';
   }
-
-  if (mensagem != "") {
+  
+  if (mensagem != '') {
     alert(mensagem);
   }
-
-  if (mensagem == "") {
-    alert("cadastro efetuado com sucesso ");
-  }
+ 
 }

@@ -21,6 +21,26 @@ function checkRadio() {
   return validation;
 }
 
+function radioOption() {
+  let option = 0;
+  const genderList = document.getElementsByName('gender');
+  for (let index = 0; index < genderList.length; index += 1) {
+    if (genderList[index].checked === true) {
+      option = genderList[index].value;
+    }
+  }
+  if (option === 'man') {
+    option = 'Masculino'
+  }
+  if (option === 'woman') {
+    option = 'Feminino';
+  }
+  if (option === 'custom') {
+    option = 'Personalizado';
+  }
+  return option;
+}
+
 function validateNewAccountFormLessRadioButton() {
   const inputCollection = document.getElementsByTagName('input');
   const inputArray = [].slice.call(inputCollection);
@@ -39,6 +59,43 @@ function validateNewAccountFormLessRadioButton() {
     validation = true;
   }
   return validation;
+}
+
+function birthdate() {
+  let birthdate = document.getElementsByName('birthdate')[0].value;
+  birthdate = birthdate.split('');
+  const day = birthdate[8] + birthdate[9];
+  const month = birthdate[5] + birthdate[6];
+  const year = birthdate[0] + birthdate[1] + birthdate[2] + birthdate[3];
+  birthdate = day + '/' + month + '/' + year;
+  return birthdate;
+}
+
+function createDivWelcome() {
+  const welcome = document.createElement('div');
+  const welcomeFullname = document.createElement('p');
+  welcomeFullname.innerText = 'Olá, ' + document.getElementsByName('firstname')[0].value + ' ' + document.getElementsByName('lastname')[0].value;
+  welcome.appendChild(welcomeFullname);
+  const mailPhone = document.createElement('p');
+  mailPhone.innerText = document.getElementsByName('phone_email')[0].value;
+  welcome.appendChild(mailPhone);
+  const birthDate = document.createElement('p');
+  birthDate.innerText = birthdate();
+  welcome.appendChild(birthDate);
+  const gender = document.createElement('p');
+  gender.innerText = radioOption();
+  welcome.appendChild(gender);
+  return welcome;
+}
+
+function welcome() {
+  const target = document.getElementsByClassName('right-content')[0];
+  const welcome = createDivWelcome();
+  while (target.lastElementChild) {
+    target.removeChild(target.lastElementChild);
+  }
+  target.appendChild(welcome)
+  return target;
 }
 
 function validateNewAccountForm() {

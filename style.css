@@ -14,11 +14,6 @@ body {
   min-height: 100px;
 }
 
-.facebook-login {
-  display: flex;
-  justify-content: center;
-}
-
 .form-group {
   color: white;
   display: flex;

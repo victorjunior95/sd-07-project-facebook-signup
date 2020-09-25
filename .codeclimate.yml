@@ -1,4 +1,4 @@
-version: "2"         # required to adjust maintainability checks
+version: '2' # required to adjust maintainability checks
 checks:
   argument-count:
     config:
@@ -30,11 +30,11 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 exclude_patterns:
-  - "**/libs/*.css"
-  - "**/libs/*.js"
-  - "**/*.{gif,png,jpeg,jpg}"
-  - "node_modules/"
-  - "/cypress"
+  - '**/libs/*.css'
+  - '**/libs/*.js'
+  - '**/*.{gif,png,jpeg,jpg}'
+  - 'node_modules/'
+  - 'cypress/'
 plugins:
   csslint:
     enabled: true

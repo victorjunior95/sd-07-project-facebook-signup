@@ -79,7 +79,9 @@ body {
 }
 
 .facebook-logo {
+  align-self: flex-end;
   display: flex;
+  justify-content: left;
   width: 150px;
 }
 

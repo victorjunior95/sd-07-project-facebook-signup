@@ -7,7 +7,7 @@ const genderContainer = document.querySelector('#gender-container');
 const genderF = genderContainer.querySelector('input[value="Feminino"]');
 const genderM = genderContainer.querySelector('input[value="Masculino"]');
 const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
-const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
+const genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
 let customInput = document.querySelector('#custom-input');
 
 btnLgn.addEventListener('click', function () {
@@ -48,16 +48,15 @@ function checkForm() {
 function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
     customInput = document.querySelector('#custom-input');
-    if (genderChecked !== null) {
+    console.log(customInput)
       if (customInput === null) {
         const newCustomInput = document.createElement('input');
         newCustomInput.id = 'custom-input';
-        newCustomInput.name = 'gender';
+        newCustomInput.name = 'gender-custom';
         newCustomInput.placeholder = 'Genero';
         newCustomInput.type = 'text'; // por default ja é text, mas eu quero especificar na msm
         genderContainer.appendChild(newCustomInput);
       }
-    }
   });
 }
 

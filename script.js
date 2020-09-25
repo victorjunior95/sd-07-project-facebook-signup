@@ -1,5 +1,6 @@
 const signIn = document.getElementById('button-login');
+const emailPhoneInput = document.getElementById('user-email-phone');
 
-signIn.addEventListener('click', function () {
-  alert(document.getElementById('user-email-phone').value);
+signIn.addEventListener('click', () => {
+  alert(emailPhoneInput.value);
 });

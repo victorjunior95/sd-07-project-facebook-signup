@@ -11,7 +11,7 @@
 <body>
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" class="facebook-logo" alt="Facebook logo">
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form class="facebook-login" action="" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
         <input id="user-email-phone" required="required" type="text">
@@ -38,6 +38,25 @@
       <div>
         <input name="firstname" required="required" maxlength="40" placeholder="Nome" type="text">
         <input name="lastname" required="required" maxlength="80" placeholder="Sobrenome" type="text">
+      </div>
+      <div>
+        <input name="phone_email" required="required" placeholder="Celular ou email" type="text">
+      </div>
+      <div>
+        <input name="password" required="required" placeholder="Nova senha" type="password">
+      </div>
+      <div>
+        <p id="label-birthdate">Data de nascimento</p>
+        <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
+      </div>
+      <div>
+        <p id="label-gender">Gênero</p>
+        <label for="feminino">Feminino</label>
+        <input id="feminino" name="gender" type="radio" value="feminino">
+        <label for="masculino">Masculino</label>
+        <input id="masculino" name="gender" type="radio" value="masculino">
+        <label for="personalizado">Personalizado</label>
+        <input id="personalizado" name="gender" type="radio" value="personalizado">
       </div>
     </section>
   </div>

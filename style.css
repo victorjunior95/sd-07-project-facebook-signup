@@ -15,11 +15,19 @@ input {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 .form-control {
   align-self: flex-end;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
@@ -28,10 +36,15 @@ input {
   justify-content: center;
 }
 
-.left-content {
-  width: 800px;
+.right-content {
+  margin-left: 20px;
 }
 
-.right-content {
-  width: 300px;
+.right-content div {
+  margin-top: 5px;
+}
+
+.right-content p {
+  color: slategray;
+  margin-bottom: 0;
 }

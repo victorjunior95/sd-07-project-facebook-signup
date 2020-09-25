@@ -16,7 +16,7 @@ window.onload = function () {
         required: true,
       },
     },
-    focusWrongField: true,
+    messages: 'Campos inválidos'
   });
 
   // POG - Programação Orientada a Gambiarra

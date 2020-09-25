@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.fullName {
+  display: flex;
+}
+
 .left-content {
   width: 800px;
 }
@@ -28,4 +32,5 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+
 }

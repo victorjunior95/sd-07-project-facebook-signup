@@ -41,5 +41,14 @@
 .line {
   align-self: flex-end;
   display: flex;
-  flex-direction: row;
+}
+
+.gender {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gender-content {
+  align-self: flex-start;
+  flex-direction: column;
 }

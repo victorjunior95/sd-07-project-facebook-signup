@@ -37,20 +37,30 @@
                 <p class="quick-easy">É rápido e fácil.</p>
             </div>
             <form action="">
-                <div class='line'><input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                <div class='line'><input type="text" name="firstname" placeholder="Nome" required>
+                    <input type="text" name="lastname" placeholder="Sobrenome" required>
                 </div>
                 <div class='line'>
-                    <input type="text" name="phone_email" placeholder="Celular ou email">
-                    <input type='password' placeholder='Nova Senha' name='password'>
+                    <input type="text" name="phone_email" placeholder="Celular ou email" required>
+                    <input type='password' placeholder='Nova Senha' name='password' required>
                 </div>
                 <div class='line data'>
                     <label id='label-birthdate'>Data de nascimento</label>
-                    <input type='date' name='birthdate' placeholder='dd/mm/aaaa'>
+                    <input type='date' name='birthdate' placeholder='dd/mm/aaaa' required>
                 </div>
+                <div class='line gender-content'>
+                    <label id='label-gender' for="gender">Gênero</label>
+                    <div class='line gender'>
+                        <label for="M"><input type="radio" id='M' name='gender' value='M' required>Masculino</label>
+                        <label for="F"><input type="radio" id='F' name='gender' value='F' required>Feminino</label>
+                        <label for="X"><input type="radio" id='X' name='gender' value='X' required>Outros</label>
+                    </div>
+                </div>
+                <button type='submit' id='facebook-register'>Cadastrar-se</button>
             </form>
         </section>
     </section>
     <script src='script.js'></script>
 </body>
+
 </html>

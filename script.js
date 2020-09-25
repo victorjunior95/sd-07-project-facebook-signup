@@ -22,11 +22,9 @@ enrrolmentButton.addEventListener('click', function (event) {
   document.getElementById('sign-up-form').classList.add('gender-personalized');
   const outputList = document.getElementsByClassName('output-form');
   const outputDiv = document.getElementById('sign-up-completed');
-  const date = outputList[4].value;
-  const newDate = date.split('/').reverse().join('-');
   outputDiv.innerHTML = `Olá, ${outputList[0].value} ${outputList[1].value}<br>
   Email: ${outputList[2].value}<br>
-  Data de nascimento: ${newDate}<br>
+  Data de nascimento: ${outputList[4].value}<br>
   Gênero: ${formData.gender.value}`;
 });
 

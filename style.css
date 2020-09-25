@@ -76,8 +76,8 @@ button {
 }
 
 .register {
-  margin: 5px;
   line-height: 25px;
+  margin: 5px;
 }
 
 .firstname-lastname {
@@ -98,11 +98,11 @@ button {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
-  max-width: 50%;  
+  max-width: 50%;
 }
 
 .input-birthdate {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 .gender-group {

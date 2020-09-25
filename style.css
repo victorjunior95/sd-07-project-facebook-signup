@@ -37,12 +37,10 @@ body {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .facebook-slogan {
-  align-self: flex-end;
   display: flex;
 }
 
@@ -53,4 +51,18 @@ body {
 
 .rigth-content {
   width: 300px;
+}
+
+.info {
+  min-height: 18vh;
+  width: 350px;
+}
+
+.nomes {
+  display: flex;
+}
+
+.fone_mail {
+  display: flex;
+  flex-direction: column;
 }

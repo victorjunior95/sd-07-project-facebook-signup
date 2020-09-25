@@ -27,3 +27,13 @@ for (let indexYear = 2020; indexYear >= 1905; indexYear -= 1) {
   optionYear.innerText = indexYear;
   yearButton.appendChild(optionYear);
 }
+
+const customButton = document.querySelector('#custom-button');
+const genderOptions = document.querySelectorAll('.gender-options')[0];
+customButton.addEventListener('change', function () {
+  const customInput = document.createElement('input');
+  customInput.setAttribute('type', 'text');
+  customInput.setAttribute('name', 'gender-custom');
+  customInput.setAttribute('placeholder', 'Gênero(opcional)');
+  genderOptions.appendChild(customInput);  
+})

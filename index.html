@@ -11,6 +11,7 @@
 <body>
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
+    <div class="container">
         <form class="facebook-login" action="#">
             <div class="form-group name">
                 <label for="user-email-phone" id="user-email-phone-label" class="label-header">Email ou telefone</label>
@@ -25,6 +26,7 @@
                 <button id="button-login" class="button">Entrar</button>
             </div>
         </form>
+    </div>    
 </header>
 
 <main class="main-content">
@@ -76,7 +78,6 @@
                     <div class="select">
                         <select name="birthdate" id="month">
                             <option value="month" disabled>Mês</option>
-
                         </select>
                     </div>
                     <div class="select">
@@ -88,14 +89,14 @@
                     <!-- <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa"> -->
                 </div>
             </div>
-            <div class="field">
+            <div class="field gender-options">
                 <label id="label-gender" for="genero">
                     Gênero
                 </label>
                 <div class="control">
                     <input type="radio" value="Feminino" name="genero"> Feminino
                     <input type="radio" value="Masculino" name="genero"> Masculino
-                    <input type="radio" value="Personalizado" name="genero"> Personalizado
+                    <input type="radio" value="Personalizado" name="genero" id="custom-button"> Personalizado
                 </div>
             </div>
             <div class="buttons">
@@ -103,9 +104,7 @@
                     Cadastre-se
                 </button>
             </div>
-
         </form>
-
     </div>
 </main>
 <script src="script.js"></script>

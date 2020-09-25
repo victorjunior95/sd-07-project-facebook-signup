@@ -35,7 +35,12 @@ body {
   width: 300px;
 }
 
-.form-content {
+.form-content-row {
   display: flex;
   justify-content: center;
+}
+
+.form-content-column{
+  display: flex;
+  flex-direction: column;
 }

@@ -42,7 +42,7 @@
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
             <form>
-                <div class="form-content">
+                <div class="form-content-row">
 
                     <input id="firstname" type="text" placeholder="Nome"></input>
 
@@ -51,11 +51,15 @@
 
                 </div>
                 
+                    
+                 <div class="form-content-column">
                     <input id="phone_email" type="text" placeholder="Celular ou email"></input>   
                     
                     <input id="password" type="password" placeholder="Nova senha"></input>   
                
-                 
+                    <label id="label-birthdate" for="user">Data de nascimento</label>
+                    <input id="user" type="date" name="birthdate" placeholder="dd/mm/aaaa"></input>
+                 </div>
             </form>
 
         

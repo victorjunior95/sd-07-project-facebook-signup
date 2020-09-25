@@ -47,6 +47,21 @@ body {
   flex-direction: column;
 }
 
+.gender {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.gender input {
+  margin: 0;
+  padding: 0;
+}
+
+.gender-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .information {
   width: 100%;
 }

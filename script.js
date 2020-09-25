@@ -28,16 +28,6 @@ function radioOption() {
     if (genderList[index].checked === true) {
       option = genderList[index].value;
     }
-  }
-  if (option === 'man') {
-    option = 'Masculino';
-  }
-  if (option === 'woman') {
-    option = 'Feminino';
-  }
-  if (option === 'custom') {
-    option = 'Personalizado';
-  }
   return option;
 } */
 

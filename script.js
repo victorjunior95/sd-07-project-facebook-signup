@@ -24,8 +24,8 @@ buttonRadio.addEventListener('change', createCustom);
 const inputField = document.querySelectorAll('input');
 const btnEnv = document.querySelector('#facebook-register');
 const msg = document.createElement('p');
-const mainContent = document.querySelector('.main-content');
-mainContent.appendChild(msg);
+const centralForm = document.querySelector('.central-form');
+centralForm.appendChild(msg);
 
 function checkedRadio() {
   const radio = document.querySelectorAll('.gender-radio');

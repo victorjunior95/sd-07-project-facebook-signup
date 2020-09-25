@@ -35,15 +35,27 @@
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='sing-up'>
         <div class='user-name'>
-          <input type='text' name='firstname' placeholder='Nome'>
-          <input type='text' name='lastname' placeholder='Sobrenome'>
+          <input type='text' name='firstname' placeholder='Nome' required>
+          <input type='text' name='lastname' placeholder='Sobrenome' required>
         </div>
-        <input type='text' name='phone_email' placeholder='Celular ou email'>
-        <input type='password' name='password' placeholder='Nova senha'>
+        <input type='text' name='phone_email' placeholder='Celular ou email' required>
+        <input type='password' name='password' placeholder='Nova senha' required>
         <div class='birthday'>
           <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-          <input type='date' name='birthdate' id='birthdate' placeholder='dd/mm/aaaa'>
-        </div>
+          <input type='date' name='birthdate' id='birthdate' placeholder='dd/mm/aaaa' required>
+          <table class='u-gender-option' id='label-gender'>
+            <h2>Gênero</h2>
+            <tr>
+              <td><label for='female'>Feminino</label></td>
+              <td><label for='male'>Masculino</label></td><td><label for='custon'>Personalizado</label></td>
+            </tr>
+            <tr>
+              <td><input type='radio' name='gender' id='female'></td>
+              <td><input type='radio' name='gender' id='male'></td>
+              <td><input type='radio' name='gender' id='custon'></td>
+            </tr>
+          </table>
+        <!-- </div>
           <h3 id='label-gender'>Gênero</h3>
           <div class='u-gender-option'>
             <label class='label-gender' for='female'>Feminino</label>
@@ -53,7 +65,7 @@
             <label class='label-gender' for='other'>Personalizado</label>
             <input type='radio' name='gender' id='other'>
           </div>
-        </div>
+        </div> -->
         <button id='facebook-register' type='submit'>Cadastre-se</button>
       </form>
     </section>

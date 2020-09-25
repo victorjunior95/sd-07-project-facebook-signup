@@ -4,14 +4,6 @@
   flex-direction: column;
 }
 
-label {
-  display: table-cell;
-}
-
-input {
-  display: table-cell;
-}
-
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);

@@ -25,7 +25,7 @@ btnValidate.addEventListener('click', function () {
   const gender = document.forms['form-register'].gender.value;
 
   if (verifyEmptyInput([firstname, lastname, phoneEmail, password, birthdate, gender])) {
-    const p = document.getElementsByClassName('invalided')[0];
-    p.innerText = 'Campos inválidos';
+    let formRegister = document.getElementsByClassName('facebook-register')[0];
+    formRegister.innerHTML += 'Campos inválidos';
   }
 });

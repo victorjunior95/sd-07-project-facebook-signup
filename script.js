@@ -6,7 +6,7 @@ const invalidMsg = document.querySelector('#invalid-msg');
 const genderContainer = document.querySelector('#gender-container');
 // const genderF = genderContainer.querySelector('input[value="Feminino"]');
 // const genderM = genderContainer.querySelector('input[value="Masculino"]');
-const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
+// const genderCustom = genderContainer.querySelector('input[value="Personalizado"]');
 const genderChecked = genderContainer.querySelector('input[name="genero"]:checked');
 // let customInput = document.querySelector('#custom-input');
 

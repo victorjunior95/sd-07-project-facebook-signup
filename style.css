@@ -70,11 +70,30 @@ input {
   flex-direction: column;
 }
 
-.nameLastName {
+.name-last-name {
   display: flex;
+}
+
+.name {
+  width: 50%;
+}
+
+.last-name {
+  width: 50%;
 }
 
 .genders {
   display: flex;
   flex-direction: row;
+}
+
+.facebook-register {
+  background-color: rgb(80, 155, 80);
+  border: solid 1px rgb(60, 135, 60);
+  padding: 5px;
+  width: 200px;
+}
+
+.facebook-register:hover {
+  background-color: rgb(90, 165, 90);
 }

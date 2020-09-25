@@ -41,27 +41,28 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form class="register">
-          <div class="nameLastName">
-            <input type="text" name="firstname" placeholder="Nome"/>
-            <input type="text" name="lastname" placeholder="Sobrenome"/>
+          <div class="name-last-name">
+            <input type="text" name="firstname" class="name" placeholder="Nome"/>
+            <input type="text" name="lastname" class="last-name" placeholder="Sobrenome"/>
           </div>
-          <div class="email">
+          <div class="form-group">
             <input type="text" name="phone_email" placeholder="Celular ou email">
           </div>
-          <div class="password">
-            <input type="password" name="password" placeholder="Nova Senha">
+          <div class="form-group">
+            <input type="password" name="password" placeholder="Nova senha">
           </div>
-          <div class="birthdate">
-            <label for="" id="label-birthdate">Data de nascimento</label><br>
+          <div class="form-group">
+            <label for="" id="label-birthdate">Data de nascimento</label>
             <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
           </div>
-          <div class="gender">
+          <div class="genders">
             <label for="" id="label-gender">Gênero</label>
-            <div class="genders">
-              <label for="f"><input type="radio" name="gender" id="f" value="f">Feminino</label>
-              <label for="m"><input type="radio" name="gender" id="m" value="m">Masculino</label>
-              <label for="p"><input type="radio" name="gender" id="p" value="p">Personalizado</label>
-            </div>
+            <label for="f"><input type="radio" name="gender" id="f" value="f">Feminino</label>
+            <label for="m"><input type="radio" name="gender" id="m" value="m">Masculino</label>
+            <label for="p"><input type="radio" name="gender" id="p" value="p">Personalizado</label>
+          </div>
+          <div class="register-button">
+            <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button>
           </div>
         </form>
       </div>

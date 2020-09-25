@@ -48,15 +48,14 @@ function checkForm() {
 function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
     customInput = document.querySelector('#custom-input');
-    console.log(customInput)
-      if (customInput === null) {
-        const newCustomInput = document.createElement('input');
-        newCustomInput.id = 'custom-input';
-        newCustomInput.name = 'gender-custom';
-        newCustomInput.placeholder = 'Genero';
-        newCustomInput.type = 'text'; // por default ja é text, mas eu quero especificar na msm
-        genderContainer.appendChild(newCustomInput);
-      }
+    if (customInput === null) {
+      const newCustomInput = document.createElement('input');
+      newCustomInput.id = 'custom-input';
+      newCustomInput.name = 'gender-custom';
+      newCustomInput.placeholder = 'Genero';
+      newCustomInput.type = 'text'; // por default ja é text, mas eu quero especificar na msm
+      genderContainer.appendChild(newCustomInput);
+    }
   });
 }
 

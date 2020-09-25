@@ -75,18 +75,18 @@ ${gender}`;
 }
 
 function validationDate() {
-switch (true) {
-  case (birthdate.value[2] !== "/" || birthdate.value[5] !== "/" || birthdate.value.length !== 10):
-    return false;
-  case (birthdate.value.slice(0,2) < 0 || birthdate.value.slice(0,2) > 31):
-    return false;
-  case (birthdate.value.slice(3,5) < 0 || birthdate.value.slice(3,5) > 12):
-    return false;
-  case (birthdate.value.slice(6,10) < 0):
-    return false;
-  default:
-    return true;
-}
+  switch (true) {
+    case (birthdate.value[2] !== '/' || birthdate.value[5] !== '/' || birthdate.value.length !== 10):
+      return false;
+    case (birthdate.value.slice(0, 2) < 0 || birthdate.value.slice(0, 2) > 31):
+      return false;
+    case (birthdate.value.slice(3, 5) < 0 || birthdate.value.slice(3, 5) > 12):
+      return false;
+    case (birthdate.value.slice(6, 10) < 0):
+      return false;
+    default:
+      return true;
+  }
 
   // if (birthdate.value[2] !== "/" || birthdate.value[5] !== "/" || birthdate.value.length !== 10) {
   //   return false;
@@ -99,7 +99,7 @@ switch (true) {
   // } else {
   //   return true;
   // }
-};
+}
 
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();

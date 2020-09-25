@@ -16,19 +16,31 @@ button.addEventListener('click', function () {
 });
 
 facebookRegister.addEventListener('click', function () {
+  event.preventDefault();
   let check = false;
+  let gender = '';
   const array = [firstname, lastname, phoneEmail, password, birthdate];
   const arrayGender = [female, male, other];
   for (let index = 0; index < arrayGender.length; index += 1) {
-    if (arrayGender[index].checked === true) check = true;
+    if (arrayGender[index].checked === true) {
+      check = true;
+      gender = arrayGender[index].value;
+    }
   }
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].value.length === 0) check = false;
   }
-  if (check === false) answer.style.display = 'block';
+  if (check === false) {
+    answer.style.display = 'block';
+  } else {
+    const welcome = document.querySelector('#welcome');
+    welcome.innerHTML = `Olá, ${firstname.value} ${lastname.value}<br>
+    ${phoneEmail.value} ${birthdate.value}<br>
+    ${gender}`;
+  }
 });
 
-other.addEventListener(`click`, function() {
-  const custom = document.querySelector("#gender-custom");
+other.addEventListener('click', function () {
+  const custom = document.querySelector('#gender-custom');
   custom.disabled = false;
-})
+});

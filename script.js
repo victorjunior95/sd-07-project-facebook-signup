@@ -50,4 +50,3 @@ function validateNewAccountForm() {
 const createAccountBt = document.getElementById('facebook-register');
 
 createAccountBt.addEventListener('click', validateNewAccountForm);
-  

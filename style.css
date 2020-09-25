@@ -7,7 +7,10 @@ body {
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
-  background-image: linear-gradient(rgba(78,105,162, 1),rgba(59,89,152, 1) 50%);
+  background-image: linear-gradient(
+    rgba(78, 105, 162, 1),
+    rgba(59, 89, 152, 1) 50%
+  );
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -57,7 +60,7 @@ body {
 }
 
 .main-container {
-  background-image: linear-gradient(to bottom, white, rgba(59,89,152, 1));
+  background-image: linear-gradient(to bottom, white, rgba(59, 89, 152, 1));
   display: flex;
   justify-content: center;
 }
@@ -109,7 +112,7 @@ body {
 }
 
 .facebook-register {
-  background-color: rgba(66,183,42, 1);
+  background-color: rgba(66, 183, 42, 1);
   border-radius: 6px;
   color: white;
   font-weight: 600;

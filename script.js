@@ -3,5 +3,5 @@ document.getElementById('button-login').addEventListener('click', function () {
   alert(inputText.value);
 });
 
-document.querySelector('facebook-regiset').addEventListener('click', function () {  
-});
+// document.querySelector('facebook-regiset').addEventListener('click', function () {  
+// });

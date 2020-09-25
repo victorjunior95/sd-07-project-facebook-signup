@@ -95,14 +95,19 @@
                 </label>
                 <div class="control button-radio">
                     <input type="radio" value="Feminino" name="genero"> Feminino
-                    <input type="radio" value="Masculino" name="genero"> Masculino
+                    <input type="radio" value="Masculino" name="genero" checked> Masculino
                     <input type="radio" value="Personalizado" name="genero" id="custom-button"> Personalizado
+                </div>  
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input id="custom-input" type="hidden" name="gender-custom" placeholder="Gênero (opcional)">
                 </div>
             </div>
             <div class="buttons">
                 <button class="button is-success" type="submit" id="facebook-register">Cadastre-se</button>
             </div>
-        </form>
+        </form>    
     </div>
 </main>
 <script src="script.js"></script>

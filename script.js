@@ -43,6 +43,8 @@ registre.addEventListener('click', function () {
   const h4 = document.querySelector('h4');
 
   if (firstname.value === '' || lastname.value === '' || password.value === '' || birthdate.value === '') {
-    h4.innerText = 'Campos inválidos';
+    const novo = document.createElement('h3');
+    novo.innerText = 'Campos inválidos';
+    h4.appendChild(novo);
   }
 });

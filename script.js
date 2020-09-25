@@ -20,6 +20,7 @@ function validar() {
     alert('login efetuado com sucesso');
   }
 }
+validar();
 function validarNovoUsuario() {
   const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
@@ -33,3 +34,4 @@ function validarNovoUsuario() {
   }
   return listaForm;
 }
+validarNovoUsuario();

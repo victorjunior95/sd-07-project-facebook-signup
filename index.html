@@ -39,15 +39,14 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form id="signup-form">
+        <form id="signup-form" novalidate>
+          <span id="firstname-error" aria-live="polite"></span>
           <div class="user-name">
             <input
               type="text"
               name="firstname"
               id="firstname"
               placeholder="Nome"
-              oninvalid="this.setCustomValidity('Campos inválidos')"
-              oninput="setCustomValidity('')"
               required
             />
             <input
@@ -63,6 +62,7 @@
           <input
             type="text"
             name="phone_email"
+            id="phone_email"
             placeholder="Celular ou email"
             oninvalid="this.setCustomValidity('Campos inválidos')"
             oninput="setCustomValidity('')"
@@ -72,6 +72,7 @@
             <input
               type="password"
               name="password"
+              id="password"
               placeholder="Nova senha"
               oninvalid="this.setCustomValidity('Campos inválidos')"
               oninput="setCustomValidity('')"
@@ -84,6 +85,7 @@
           <div>
             <input
               type="date"
+              id="birthdate"
               name="birthdate"
               placeholder="dd/mm/aaaa"
               oninvalid="this.setCustomValidity('Campos inválidos')"

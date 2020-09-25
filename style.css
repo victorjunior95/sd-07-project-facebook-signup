@@ -63,3 +63,7 @@ input {
 .button-login {
   align-self: auto;
 }
+
+.gender-container {
+  display: inline-flex;
+}

@@ -4,10 +4,10 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   height: 60px;
   justify-content: space-between;
-  color: white;
 }
 
 .facebook-login {
@@ -30,6 +30,7 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+
 .left-content {
   align-items: center;
   display: flex;
@@ -38,11 +39,7 @@ body {
 
 .left-content p {
   align-self: center;
-  max-width: 300px;;
-}
-
-.left-content {
-  width: 800px;
+  max-width: 300px;
 }
 
 .right-content {

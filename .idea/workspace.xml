@@ -38,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -67,6 +68,7 @@
       <workItem from="1600984137707" duration="1578000" />
       <workItem from="1600985740169" duration="714000" />
       <workItem from="1600996079661" duration="105000" />
+      <workItem from="1600996202710" duration="781000" />
     </task>
     <servers />
   </component>
@@ -86,6 +88,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="221" width="577" height="359" key="#Notifications" timestamp="1600996229782">
+      <screen x="54" y="27" width="1312" height="741" />
+    </state>
+    <state x="416" y="221" width="577" height="359" key="#Notifications/54.27.1312.741/1366.77.1680.1050@54.27.1312.741" timestamp="1600996229782" />
     <state x="445" y="239" width="520" height="323" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600982504609">
       <screen x="54" y="27" width="1312" height="741" />
     </state>

@@ -7,7 +7,7 @@ function verifyEmptyInput(values) {
 }
 
 function login(user) {
-  const rightContent = document.getElementById('right-content');
+  const rightContent = document.getElementsByClassName('right-content')[0];
 
   rightContent.innerHTML = `<p>Olá, ${user.firstname} ${user.lastname}</p>`;
   rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;

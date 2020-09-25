@@ -11,26 +11,26 @@ body {
 }
 
 .top-bar {
-  display: flex;
-  background-Color: rgb(66, 103, 178);
-  color: white;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
   align-items: center;
+  background-color: rgb(66, 103, 178);
+  color: white;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .container-logo {
   display: flex;
-  width: 40%;
-  justify-content: center;
   height: auto;
+  justify-content: center;
+  width: 40%;
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   width: 35%;
 }
 
@@ -39,8 +39,8 @@ body {
   flex-direction: column;
 }
 
-form-group input {
-  border: 1px solid #1877f2;;
+.form-group input {
+  border: 1px solid #1877f2;
   margin-bottom: 5px;
   width: 80%;
 }
@@ -55,12 +55,12 @@ form-group input {
 }
 
 .form-control button {
+  align-items: center;
   background: #1877f2;
-  border: 1px solid #1877f2;;
+  border: 1px solid #1877f2;
   color: white;
   cursor: pointer;
   font-weight: 700;
   height: 20px;
   margin-left: 20px;
-  align-items: center;
 }

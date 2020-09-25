@@ -16,6 +16,7 @@ input {
   border-radius: 2px;
   height: 17px;
   margin: 2px;
+  margin-bottom: 5px;
 }
 
 .top-bar {
@@ -70,10 +71,16 @@ input {
 .forms {
   display: flex;
   flex-flow: wrap;
+  margin: 10px 0;
 }
 
 .name-lastname {
   display: flex;
+  flex-flow: row nowrap;
+}
+
+.name-lastname input {
+  width: 50%;
 }
 
 .phone_email , .password , .birthdate , .genero {

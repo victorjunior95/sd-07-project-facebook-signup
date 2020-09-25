@@ -68,4 +68,9 @@ input {
 
 .register {
   display: flex;
+  flex-direction: column;
+}
+
+.nameLastName {
+  display: flex;
 }

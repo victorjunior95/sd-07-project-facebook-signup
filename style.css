@@ -1,5 +1,9 @@
 body {
+  background: white;
+  height: 768px;
   margin: 0;
+  max-width: 100%;
+  width: 100%;
 }
 
 .top-bar {
@@ -29,4 +33,18 @@ body {
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-gender {
+  display: flex;
+  flex-flow: row nowrap;
 }

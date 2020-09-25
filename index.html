@@ -37,30 +37,41 @@
     </div>
     <!-- CONTEUDO LADO DIREITO -->
     <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" method="" class="facebook-signup" id="form-signup">
-        <div>
-          <input type="text" name="firstname" id="firstname" placeholder="Nome" >
-          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" >
-        </div>
-        <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" >
-        <input type="password" name="password" id="password" placeholder="Nova senha" >
-        <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" >
-        <label id="label-gender" for="">Gênero</label>
-        <div>
-          <input type="radio" name="radio-gender" id="radio-f" >
-          <label for="radio-f">Feminino</label>
-          <input type="radio" name="radio-gender" id="radio-m" >
-          <label for="radio-m">Masculino</label>
-          <input type="radio" name="radio-gender" id="radio-p" >
-          <label for="radio-p">Personalizado</label>
-        </div>
-        <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="invisible" >
-        <button type="submit" id="facebook-register">Cadastre-se</button>
-        <p id="messagem-erro"></p>
-      </form>
+      <div id="divForm" >
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" method="" class="facebook-signup" id="form-signup">
+          <div>
+            <input type="text" name="firstname" id="firstname" placeholder="Nome" >
+            <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" >
+          </div>
+          <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" >
+          <input type="password" name="password" id="password" placeholder="Nova senha" >
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" >
+          <label id="label-gender" for="">Gênero</label>
+          <div>
+            <input type="radio" name="radio-gender" id="radio-f" value="Feminino">
+            <label for="radio-f">Feminino</label>
+            <input type="radio" name="radio-gender" id="radio-m" value="'Masculino">
+            <label for="radio-m">Masculino</label>
+            <input type="radio" name="radio-gender" id="radio-p" >
+            <label for="radio-p">Personalizado</label>
+          </div>
+          <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" class="invisible" >
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <p id="messagem-erro"></p>
+        </form>
+      </div>
+      <div id="divSignIn" class="invisible">
+        <h1 id="welcome-user"></h1>
+        <p id="info-user">
+          Email: qerqwerqewr@asdfas <br>
+          Data de Nascimento: dd/mm/aaaa <br>
+          Gênero: Personalizado <br>
+        </p>
+      </div>
+
     </div>
   </section>
 

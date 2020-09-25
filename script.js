@@ -1,7 +1,7 @@
 function validateInputTextEmpty(inputTexts) {
   let anyEmpty = false;
   for (let index = 0; index < inputTexts.length; index += 1) {
-    if (inputTexts[index].value === '') {
+    if (inputTexts[index].value === '' && window.getComputedStyle(inputTexts[index]).display !== 'none') {
       anyEmpty = true;
       break;
     }
@@ -20,6 +20,24 @@ function validateInputRadioUnchecked(inputRadios) {
   return !anyChecked;
 }
 
+function changeRightContent() {
+  document.getElementById('divForm').classList.add('invisible');
+
+  document.getElementById('welcome-user').innerText = `Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}`;
+  let genderValue = '';
+  if (document.getElementById('radio-p').checked) {
+    genderValue = document.getElementById('gender-custom').value;
+  } else if (document.getElementById('radio-f').checked) {
+    genderValue = document.getElementById('radio-f').value;
+  } else {
+    genderValue = document.getElementById('radio-m').value;
+  }
+  document.getElementById('info-user').innerHTML = `E-mail ou Telefone: ${document.getElementById('phone_email').value} <br> Data de Nacimento: ${document.getElementById('birthdate').value} <br> Gênero: ${genderValue}`;
+
+  document.getElementById('divSignIn').classList.remove('invisible');
+}
+
+
 function stopDefAction(evt) {
   let validateTextsOK = true;
   let validateRadiosOK = true;
@@ -29,6 +47,7 @@ function stopDefAction(evt) {
 
   if (validateTextsOK && validateRadiosOK) {
     document.getElementById('messagem-erro').innerText = '';
+    changeRightContent();
   } else {
     document.getElementById('messagem-erro').innerText = 'Campos inválidos';
   }

@@ -50,7 +50,6 @@ body {
 }
 
 .main-content {
-  background-color: red;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -98,8 +97,8 @@ body {
 .form-container input {
   border: 1px solid gray;
   border-radius: 5px;
-  margin: 5px;
   height: 25px;
+  margin: 5px;
 }
 
 .name-container {

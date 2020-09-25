@@ -32,13 +32,23 @@
             <img id="facebook-networking" src="imgs/networking.png" alt="Rede de Pessoas">
         </section>
         <section class="right-content">
-            <h1>Abra uma conta</h1>
-            <p class="quick-easy">É rápido e fácil</p>
+            <div class='register-text'>
+                <h1>Abra uma conta</h1>
+                <p class="quick-easy">É rápido e fácil</p>
+            </div>
             <form action="">
-                <div class='line1'><input type="text" name="firstname" placeholder="Nome">
+                <div class='line'><input type="text" name="firstname" placeholder="Nome">
                     <input type="text" name="lastname" placeholder="Sobrenome">
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
+                <div class='line'>
+                    <input type="text" name="phone_email" placeholder="Celular ou email">
+                    <input type='password' placeholder='Nova Senha' name='password'>
+                </div>
+                <div class='line data'>
+                    <label id='label-birthdate'>Data de nascimento</label>
+                    <input type='date' name='birthdate' placeholder='dd/mm/aaaa'>
+                </div>
+
             </form>
         </section>
     </section>

@@ -45,7 +45,7 @@ function checkForm() {
   });
 }
 
-function addCustomGenderInput() {
+/* function addCustomGenderInput() {
   genderCustom.addEventListener('click', function () {
     customInput = document.querySelector('#custom-input');
     if (genderChecked !== null) {
@@ -76,10 +76,10 @@ function removeCustomGenderInput() { // pode dar erro com o cypress
       genderContainer.removeChild(removeInput);
     }
   });
-}
+} */
 
 window.onload = function () {
   checkForm();
-  addCustomGenderInput();
-  removeCustomGenderInput();
+  // addCustomGenderInput();
+  // removeCustomGenderInput();
 };

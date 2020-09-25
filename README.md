@@ -156,21 +156,21 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   * Alinhe o eixo principal dessa classe para ser o eixo vertical
 
 
-### 5 - Adicione o primeiro subcontainer com a classe form-group para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3
+### 5 - Adicione um subcontainer com a classe form-group para agrupar o rótulo e campo "E-mail ou telefone" dentro do formulário criado na etapa 3
 
   Pontos importantes:
   * Deve haver um container utilizando a classe `form-group` criada no passo anterior
   * Dentro do container `form-group` criado, deve haver um rótulo com o id user-email-phone-label e o texto "Email ou telefone"
   * Dentro do container `form-group` criado, abaixo do rótulo deve haver campo de entrada de texto para receber o email ou o telefone do usuário com o id user-email-phone'
 
-### 6 - Adicione o segundo subcontainer com a classe form-group para agrupar o rótulo e campo "Senha" dentro do formulário criado na etapa 3
+### 6 - Adicione um subcontainer com a classe form-group para agrupar o rótulo e campo "Senha" dentro do formulário criado na etapa 3
 
   Pontos importantes:
   * Deve haver um novo container utilizando a classe `form-group` criada no passo 4
   * Dentro do novo container `form-group` criado, deve haver um rótulo com o id user-password-label e o texto "Senha"
   * Dentro do novo container `form-group` criado, abaixo do rótulo deve haver campo de entrada para senha com o id user-password
 
-### 7 - Adicione o terceiro subcontainer com a classe form-control com o botão "Entrar" dentro do formulário criado na etapa 3
+### 7 - Adicione um subcontainer com a classe form-control com o botão "Entrar" dentro do formulário criado na etapa 3
 
   Pontos importantes:
   * Deve haver um novo container utilizando a classe `form-control` criada no passo anterior
@@ -253,6 +253,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   Pontos importantes:
   * Um rótulo abaixo do campo nova senha com o id label-gender e o texto "Gênero"
   * O campo deve ser formado por três `radio buttons` com as opções "Feminino", "Masculino" e "Personalizado"
+  * Os `radio buttons` devem ter o atributo name com o valor "gender"
   * Posicione os radio buttons para ficar na mesma linha
   * Posicione os radio buttons para ficar abaixo do label
 

@@ -1,4 +1,3 @@
-// const button = document.getElementById('button-login');
 const other = document.getElementById('personalizado');
 
 other.addEventListener('change', () => {
@@ -14,8 +13,12 @@ other.addEventListener('change', () => {
   father.insertBefore(customGender, father.childNodes[14]);
 });
 
+const rightContent = document.querySelector('.right-content');
 document.getElementById('button-login').addEventListener('click', () => {
   const email = document.getElementById('user-email-phone').value;
   const password = document.getElementById('user-password').value;
   alert(email + password);
+  for (let index = 0; index < rightContent.childElementCount; index += 1) {
+    rightContent.removeChild(rightContent.childNodes[0]);
+  }
 });

@@ -30,11 +30,11 @@ for (let indexYear = 2020; indexYear >= 1905; indexYear -= 1) {
 
 const customButton = document.querySelector('#custom-button');
 const genderOptions = document.querySelectorAll('.gender-options')[0];
-const customInput = document.querySelector('#custom-input')
+const customInput = document.querySelector('#custom-input');
 customButton.addEventListener('change', function () {
   // if(customButton.isChecked) {
-    customInput.removeAttribute('type', 'hidden');
-    customInput.setAttribute('type', 'text');
-    genderOptions.appendChild(customInput);
+  customInput.removeAttribute('type', 'hidden');
+  customInput.setAttribute('type', 'text');
+  genderOptions.appendChild(customInput);
   // };
 });

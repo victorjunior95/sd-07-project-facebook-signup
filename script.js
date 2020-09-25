@@ -55,6 +55,8 @@ const getPhoneEmail = document.querySelector('#phoneEmail');
 const getBirthdate = document.querySelector('#birthdate');
 const radioFem = document.querySelector('#gender1');
 const radioMas = document.querySelector('#gender2');
+const getGender = document.querySelector('#gender3');
+const getLoginButton = document.querySelector('#button-login');
 
 const rulesValidate = {
   firstname: {
@@ -141,3 +143,32 @@ window.onload = function () {
   const godSaveMe = new window.JustValidate('.rightFormInputs', helpMePlease);
   return godSaveMe;
 };
+
+function clickFormLogin() {
+  const getInfoPhoneEmail = document.querySelector('#user-email-phone');
+  alert(getInfoPhoneEmail.value);
+}
+
+function genderRadio() {
+  const inputGender = document.createElement('input');
+  const textBefore = document.querySelector('#facebook-register');
+  if (getGender.checked) {
+    inputGender.setAttribute('name', 'gender-custom');
+    inputGender.setAttribute('class', 'formRight');
+    inputGender.setAttribute('id', 'newGender');
+    inputGender.setAttribute('placeholder', 'Gênero (opcional)');
+    textBefore.parentNode.insertBefore(inputGender, textBefore);
+  }
+}
+
+function clearNewGender() {
+  const getNewGenderCamp = document.querySelector('#newGender');
+  if (getNewGenderCamp !== null) {
+    getNewGenderCamp.remove();
+  }
+}
+
+getGender.addEventListener('click', genderRadio);
+radioFem.addEventListener('click', clearNewGender);
+radioMas.addEventListener('click', clearNewGender);
+getLoginButton.addEventListener('click', clickFormLogin);

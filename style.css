@@ -1,14 +1,35 @@
 .aditional-data {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.aditional-data label , .radio {
+  font-size: 15px;
+}
+
+.date-value {
+  width: 55%;
 }
 
 .facebook-login {
   display: flex;
 }
 
+.facebook-networking {
+  width: 50%;
+}
+
+.facebook-slogan {
+  color: rgb(66, 103, 178);
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  width: 50%;
+}
+
 .form-control {
-  align-self: flex-end;
+  align-self: center
 }
 
 .form-group {
@@ -21,26 +42,39 @@
 .form-register {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.last-name-form-register , .name-form-register {
-  border-radius: 3px;
-  margin-left: 5px;
-  width: 120px;
+.gender-custom {
+  width: 50%;
+  align-self: flex-end;
 }
 
 .left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.name-form-register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-form-register input {
+  width: 45%;
 }
 
 .radio-buttons {
   display: flex;
+  align-items: center;
+  font-size: 15px;
 }
 
 .right-content {
@@ -50,15 +84,30 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
 body {
+  font-family: Calibri;
   margin: 0;
   padding: 0;
 }
 
-label {
-  font-weight: 500;
+h1 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+input {
+  border-radius: 3px;
+  height: 30px;
+  margin-bottom: 5px;
+  opacity: 80%;
+}
+
+span {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }

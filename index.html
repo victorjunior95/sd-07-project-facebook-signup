@@ -11,7 +11,7 @@
     <header class="top-bar">
       <div class="header-info">
         <img src="imgs/facebook-logo.png" class="facebook-logo" alt="" />
-        <form class="facebook-login">
+        <form class="facebook-login" id="facebook-login">
           <div class="form-group">
             <label for="" id="user-email-phone-label">Email ou telefone</label>
             <input type="text" id="user-email-phone" />
@@ -44,6 +44,7 @@
             <input
               type="text"
               name="firstname"
+              id="firstname"
               placeholder="Nome"
               oninvalid="this.setCustomValidity('Campos inválidos')"
               oninput="setCustomValidity('')"
@@ -51,6 +52,7 @@
             />
             <input
               type="text"
+              id="lastname"
               name="lastname"
               placeholder="Sobrenome"
               oninvalid="this.setCustomValidity('Campos inválidos')"

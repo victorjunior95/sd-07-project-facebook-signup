@@ -9,7 +9,7 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 15%;
+  padding: 10px
 }
 
 .facebook-logo {
@@ -53,6 +53,11 @@ body {
 
 .form-control {
   align-self: flex-end;
+}
+
+.button {
+  align-self: flex-start;
+  margin-bottom: 20px;
 }
 
 .button {

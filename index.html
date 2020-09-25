@@ -46,13 +46,12 @@
         <span class="quick-easy">É rápido e fácil.</span>
         <form action="" class="cadastro">
           <div class="nameComplete">
-            <input name="firstname" type="text" placeholder="Nome" required/>
+            <input name="firstname" type="text" placeholder="Nome" class="required" />
             <input
               name="lastname"
               type="text"
               placeholder="Sobrenome"
-              class="lastname"
-              required
+              class="lastname required"
             />
           </div>
           <input
@@ -60,25 +59,24 @@
             name="phone_email"
             id="phone_email"
             placeholder="Celular ou email"
-            class="complemento"
-            required
+            class="complemento required"
           />
           <input
             type="password"
             name="password"
             id="password"
             placeholder="Nova senha"
-            class="complemento"
-            required
+            class="complemento required"
           />
           <label for="" id="label-birthdate">Data de nascimento</label>
-          <input name="birthdate" type="text" placeholder="dd/mm/aaaa" required>
+          <input name="birthdate" type="text" placeholder="dd/mm/aaaa" class="required">
           <label for="genero" id="label-gender">Gênero</label>
           <div class="radius">
-            <input type="radio" name="genero" class="radio buttons" value="Feminino">Feminino </input>
-            <input type="radio" name="genero" class="radio buttons" value="Masculino">Masculino</input>
-            <input type="radio" name="genero" class="radio buttons" value="Personalizado">Personalizado</input>
+            <input type="radio" name="genero" value="Feminino">Feminino </input>
+            <input type="radio" name="genero" value="Masculino">Masculino</input>
+            <input type="radio" name="genero" value="Personalizado" class="personalizado">Personalizado</input>
           </div>
+          <div class="input-gender"></div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>

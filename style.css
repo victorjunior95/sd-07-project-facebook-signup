@@ -73,7 +73,6 @@ body {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 80%;
 }
 
 .left-content {

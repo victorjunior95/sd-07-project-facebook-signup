@@ -4,17 +4,24 @@ body {
   padding: 0;
 }
 
+.facebook-login {
+  display: flex;
+  align-items: flex-end;
+}
+
 .top-bar {
+  display: flex;
   background-color: rgb(66, 103, 178);
   color: white;
-  display: flex;
   justify-content: space-between;
   padding: 10px 15%;
 }
 
 .facebook-logo {
   height: 55px;
+  align-items: flex-start;
 }
+
 
 .esqueceu-conta {
   color: rgb(155, 171, 204);
@@ -29,10 +36,6 @@ body {
 .label-header {
   font-size: smaller;
   font-weight: 500;
-}
-
-.form-container {
-  display: flex;
 }
 
 .form-group {
@@ -78,4 +81,13 @@ body {
 .main-content {
   display: flex;
   justify-content: space-around;
+  width: 80%;
+  text-align: center;
+}
+
+.left-content p {
+  color: rgb(23,63,100);
+  font-size: larger;
+  font-weight: 550;
+  
 }

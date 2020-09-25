@@ -1,57 +1,71 @@
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
+const rightContentInputs = document.querySelector('.right-content form')
+const formFields = document.querySelectorAll('.right-content input');
+const genderFeminine = document.getElementById('gender-feminine');
+const genderMale = document.getElementById('gender-male');
+const genderCustom = document.getElementById('gender-custom');
+const buttonSignUp = document.querySelector('#facebook-register');
 
 buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
 
-const buttonSignUp = document.querySelector('#facebook-register');
-
-buttonSignUp.addEventListener('click', validaCadastro);
-
 function validaCadastro() {
-  const formFields = document.querySelectorAll('.right-content input');
-  const rightContent = document.querySelector('.right-content form')
-  let emptyFieldMsg = document.createElement('h5');
-  emptyFieldMsg.innerText = 'Campos inválidos'
-  emptyFieldMsg.className = 'msg-campo-vazio'
-  let resetPause = false;
-
-  if (document.querySelector('.msg-campo-vazio') != null ){
-    let msgCampoVazio = document.querySelector('.msg-campo-vazio');
-    let msgApagada = rightContent.removeChild(msgCampoVazio);
-  }
-
+  resetMsg(); 
   for (let index = 0; index < formFields.length; index += 1) {
-    if (document.querySelector('input[type=radio]:checked') == null && resetPause == false){
-      rightContent.insertBefore(emptyFieldMsg, rightContent.children[0]);
-    } else if (formFields[index].value == ""){       
-        if (formFields[index].getAttribute('type') != 'radio'){
-          rightContent.insertBefore(emptyFieldMsg, rightContent.children[2]);
-          break;
-        }
+
+    if (genero() === ''){
+      msgCampoInvalido();
+      break;
+
+    } else if (formFields[index].value === '' && formFields[index].getAttribute('type') != 'radio'){
+        msgCampoInvalido();
+        break;
+
     } else {
-        if (formFields[index].getAttribute('type') == 'radio'){
-          formFields[index].checked = false;
-          resetPause = true;
-        }
-      formFields[index].value = "";
+        registrarUsuario();
+        break;
     }  
   }
 }
 
-function sexo() {
-  const genderFeminine = document.getElementById('gender-feminine');
-  const genderMale = document.getElementById('gender-male');
-  if (genderFeminine) {
+buttonSignUp.addEventListener('click', validaCadastro);
+
+function genero() {
+  if (genderFeminine.checked) {
     return 'Feminino';
-  } else if (genderMale) {
+  } else if (genderMale.checked) {
     return 'Masculino';
+  } else if (genderCustom.checked) {
+    return 'Personalizado';
+  } else {
+    return ''
   }
-  return 'Personalizado';
 }
 
-// function validaCampos() {
-//   sexo();
-//   document.getElementById('messager-user').textContent = 'Campos inválidos';
-// } Acredito que foi implementado pela function validaCadastro;
+function msgCampoInvalido() {
+  const emptyFieldMsg = document.createElement('h5');
+  emptyFieldMsg.innerText = 'Campos inválidos';
+  emptyFieldMsg.className = 'msg-campo-vazio';
+  rightContentInputs.insertBefore(emptyFieldMsg, rightContentInputs.children[0]);
+}
+
+function resetMsg() {
+  if (document.querySelector('.msg-campo-vazio') != null){    
+    var msgCampoVazio = document.querySelector('.msg-campo-vazio');
+    let msgApagada = rightContentInputs.removeChild(msgCampoVazio);
+  }
+}
+
+function registrarUsuario () {
+  let nomeUsuario = document.querySelector('#firstname').value + ' ' + document.querySelector('#lastname').value;
+  let emailOuTelefone = document.querySelector('#phone_email').value;
+  let birthDate = document.querySelector('#input-birthdate').value;
+  let generoEscolhido = genero();
+  for (let index = 0; index < formFields.length; index += 1){
+    formFields[index].value = '';
+    formFields[index].checked = false;
+  }
+}
+

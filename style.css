@@ -27,7 +27,6 @@ header {
 input {
   border: solid 1px rgb(9, 9, 138);
   margin-right: 10px;
-  width: 150px;
 }
 
 .form-group {
@@ -73,4 +72,9 @@ input {
 
 .nameLastName {
   display: flex;
+}
+
+.genders {
+  display: flex;
+  flex-direction: row;
 }

@@ -6,11 +6,13 @@ buttonLogin.addEventListener('click', function () {
 });
 
 const buttonCustomGender = document.getElementById('personalizado');
-const genderBox = document.getElementById('gender-box');
+const formBox = document.getElementById('form-box');
+const facebookRegister = document.getElementById('facebook-register');
 
 buttonCustomGender.addEventListener('click', function () {
   const genderCustom = document.createElement('input');
+  genderCustom.className = 'form-input-big';
   genderCustom.setAttribute('name', 'gender-custom');
   genderCustom.setAttribute('placeholder', 'Gênero');
-  genderBox.appendChild(genderCustom);
+  formBox.insertBefore(genderCustom, facebookRegister);
 });

@@ -11,9 +11,9 @@ function login(user) {
 
   rightContent.innerHTML = '';
   rightContent.innerHTML += `Olá, ${user.firstname} ${user.lastname}`;
-  rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
-  rightContent.innerHTML += `<p>${user.birthdate}</p>`;
-  rightContent.innerHTML += `<p>${user.gender}</p>`;
+  rightContent.innerHTML += ` ${user.phoneEmail}`;
+  rightContent.innerHTML += ` ${user.birthdate}`;
+  rightContent.innerHTML += ` ${user.gender}`;
 }
 
 const btnLogin = document.getElementById('button-login');

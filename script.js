@@ -11,11 +11,14 @@ function registerAlert() {
   const rightContentInputs = document.querySelector('#sign-up-container').querySelectorAll('input');
   const buttonRegister = document.querySelector('#facebook-register');
 
-  buttonRegister.addEventListener('click', function () {
+  buttonRegister.addEventListener('click', function (event) {
+    event.preventDefault();
+
     rightContentInputs.forEach((item) => {
       const requiredContainer = document.querySelector('.required-alert');
 
       item.required = 'required';
+
       if (item.value === '') {
         requiredContainer.innerText = 'Campos inválidos';
       }
@@ -46,8 +49,26 @@ function createInputGender() {
   });
 }
 
+const newInformationUser = () => {
+  const rightContainer = document.querySelector(".right-content");
+  const buttonSend = document.querySelector("#facebook-register");
+  const name = document.querySelector(".name");
+
+  const newMemberContainer = document.createElement("div");
+  const paragraphy = document.createElement("p");
+
+  buttonSend.addEventListener("click", () => {
+    paragraphy.innerText = `Olá, ${name.value}`;
+    newMemberContainer.appendChild(paragraphy);
+  
+    rightContainer.innerHTML = paragraphy.innerText;
+    console.log(name.value);
+  })
+}
+
 window.onload = function () {
   alertLogin();
   createInputGender();
   registerAlert();
+  newInformationUser();
 };

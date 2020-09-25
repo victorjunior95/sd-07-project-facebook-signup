@@ -60,7 +60,7 @@ function percorreInputs() {
     const formType = validandoInput.getAttribute('type');
     if (testeCampoVazio(formValue, formType) === true) {
       return true;
-    } 
+    }
   }
   return false;
 }

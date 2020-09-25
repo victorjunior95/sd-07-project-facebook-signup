@@ -42,23 +42,23 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form name="user-create" class="user-create">
                 <div class="username">
-                <input class="user-create-first" type="text" name="firstname" placeholder="Nome">
-                <input class="user-create-last" type="text" name="lastname" placeholder="Sobrenome">
+                <input required class="user-create-first create-form" type="text" name="firstname" placeholder="Nome">
+                <input required class="user-create-last create-form" type="text" name="lastname" placeholder="Sobrenome">
                 </div>
-                <input class="user-phone" type="number" name="phone_email" placeholder="Celular ou email">
-                <input class="user-new-password" type="password" name="password" placeholder="Nova senha">
+                <input required class="user-phone create-form" type="number" name="phone_email" placeholder="Celular ou email">
+                <input required class="user-new-password create-form" type="password" name="password" placeholder="Nova senha">
                 <label id="label-birthdate" class="label-birthdate">Data de nascimento</label>
-                <input class="user-birthdate" type="date" name="birthdate" placeholder="dd/mm/aaaa">
+                <input required class="user-birthdate create-form" type="date" name="birthdate" placeholder="dd/mm/aaaa">
                 <label id="label-gender" class="label-gender">Gênero</label>
                     <div class="genders">
-                    <input type="radio" id="female" name="gender" value="Feminino">
+                    <input required type="radio" class="genders create-form" id="female" name="gender" value="Feminino">
                     <label for="female">Feminino</label>
-                    <input type="radio" id="male" name="gender" value="Masculino">
+                    <input required type="radio" class="genders create-form" id="male" name="gender" value="Masculino">
                     <label for="male">Masculino</label>
-                    <input type="radio" id="custom" name="gender" value="Personalizado">
+                    <input required type="radio" class="genders create-form" id="custom" name="gender" value="Personalizado">
                     <label for="custom">Personalizado</label>
                 </div>
-                <input type="text" name="gender-custom" id="" placeholder="Gênero (opcional)">
+                <input  type="text" name="gender-custom" id="custom-gender-text"  placeholder="Gênero (opcional)">
                 <button id="facebook-register" class="facebook-register" type="submit" value="Validate">Cadastre-se</button>
             </form>
         </div>

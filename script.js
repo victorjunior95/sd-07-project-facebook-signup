@@ -52,16 +52,6 @@ function validateNewAccountFormLessRadioButton() {
   return validation;
 }
 
-function birthdate() {
-  let birthDt = document.getElementsByName('birthdate')[0].value;
-  birthDt = birthDt.split('');
-  const day = birthDt[8] + birthDt[9];
-  const month = birthDt[5] + birthDt[6];
-  const year = birthDt[0] + birthDt[1] + birthDt[2] + birthDt[3];
-  birthDt = `${day}/${month}/${year}`;
-  return birthDt;
-}
-
 function createDivHello() {
   const hello = document.createElement('div');
   const helloFullname = document.createElement('p');
@@ -73,7 +63,7 @@ function createDivHello() {
   mailPhone.innerText = document.getElementsByName('phone_email')[0].value;
   hello.appendChild(mailPhone);
   const birthDate = document.createElement('p');
-  birthDate.innerText = birthdate();
+  birthDate.innerText = document.getElementsByName('birthdate')[0].value;
   hello.appendChild(birthDate);
   const gender = document.createElement('p');
   gender.innerText = radioOption();

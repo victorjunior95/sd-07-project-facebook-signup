@@ -1,6 +1,6 @@
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
-const rightContentInputs = document.querySelector('.right-content form')
+const rightContentInputs = document.querySelector('.right-content form');
 const formFields = document.querySelectorAll('.right-content input');
 const genderFeminine = document.getElementById('gender-feminine');
 const genderMale = document.getElementById('gender-male');
@@ -10,22 +10,6 @@ const buttonSignUp = document.querySelector('#facebook-register');
 buttonLogin.addEventListener('click', function () {
   alert(userEmailPhone.value);
 });
-
-function validaCadastro() {
-  resetMsg(); 
-
-    if (genero() === ''){
-      msgCampoInvalido();
-
-    } else if (percorreInputs() === 'true'){
-        msgCampoInvalido();
-
-    } else {
-        registrarUsuario();
-    }  
-  }
-
-buttonSignUp.addEventListener('click', validaCadastro);
 
 function genero() {
   if (genderFeminine.checked) {
@@ -47,36 +31,51 @@ function msgCampoInvalido() {
 }
 
 function resetMsg() {
-  if (document.querySelector('.msg-campo-vazio') != null){    
-    var msgCampoVazio = document.querySelector('.msg-campo-vazio');
-    let msgApagada = rightContentInputs.removeChild(msgCampoVazio);
+  if (document.querySelector('.msg-campo-vazio') != null) {
+    const msgCampoVazio = document.querySelector('.msg-campo-vazio');
+    msgApagada = rightContentInputs.removeChild(msgCampoVazio);
   }
 }
 
 function registrarUsuario() {
-  let nomeUsuario = document.querySelector('#firstname').value + ' ' + document.querySelector('#lastname').value;
-  let emailOuTelefone = document.querySelector('#phone_email').value;
-  let birthDate = document.querySelector('#input-birthdate').value;
-  let generoEscolhido = genero();
-  for (let index = 0; index < formFields.length; index += 1){
+  // const nomeUsuario = document.querySelector('#firstname').value + ' ' + document.querySelector('#lastname').value;
+  // const emailOuTelefone = document.querySelector('#phone_email').value;
+  // const birthDate = document.querySelector('#input-birthdate').value;
+  // const generoEscolhido = genero();
+  for (let index = 0; index < formFields.length; index += 1) {
     formFields[index].value = '';
     formFields[index].checked = false;
   }
 }
 
 function percorreInputs() {
-  let formEmpty;
   for (let index = 0; index < formFields.length; index += 1) {
-    let validandoInput = formFields[index]
-    let formValue = validandoInput.value;
-    let formType = validandoInput.getAttribute('type'); 
-    if (testeCampoVazio(formValue, formType) === 'true'){
+    const validandoInput = formFields[index];
+    const formValue = validandoInput.value;
+    const formType = validandoInput.getAttribute('type');
+    if (testeCampoVazio(formValue, formType) === true) {
       break;
     }
   }
-  return formEmpty;
+  return true;
 }
 
 function testeCampoVazio(itemValue, itemType) {
-  return itemValue === '' && itemType != 'radio';
+  return itemValue === '' && itemType !== 'radio';
 }
+
+function validaCadastro() {
+  resetMsg();
+
+  if (genero() === '') {
+    msgCampoInvalido();
+  } 
+  else if (percorreInputs() === true) {
+    msgCampoInvalido();
+  } 
+  else {
+    registrarUsuario();
+  }
+}
+
+buttonSignUp.addEventListener('click', validaCadastro);

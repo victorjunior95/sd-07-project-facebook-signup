@@ -64,15 +64,29 @@ function validationRadioButton() {
 }
 
 function newUserData() {
-  const year = birthdate.value.slice(0, 4);
-  const day = birthdate.value.slice(8, 10);
-  const month = birthdate.value.slice(5, 7);
-  const adjustDate = `${day}/${month}/${year}`;
+  // const year = birthdate.value.slice(0, 4);
+  // const day = birthdate.value.slice(8, 10);
+  // const month = birthdate.value.slice(5, 7);
+  // const adjustDate = `${day}/${month}/${year}`;
   rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}
 ${phoneEmail.value}
-${adjustDate}
+${birthdate.value}
 ${gender}`;
 }
+
+function validationDate() {
+  if (birthdate.value[2] !== "/" || birthdate.value[5] !== "/" || birthdate.value.length !== 10) {
+    return false;
+  } else if (birthdate.value.slice(0,2) < 0 || birthdate.value.slice(0,2) > 31) {
+    return false;
+  } else if (birthdate.value.slice(3,5) < 0 || birthdate.value.slice(3,5) > 12) {
+    return false;
+  } else if (birthdate.value.slice(6,10) < 0) {
+    return false;
+  } else {
+    return true;
+  }
+};
 
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
@@ -90,7 +104,7 @@ buttonRegister.addEventListener('click', function (event) {
     }
   }
 
-  if (validationRadioButton() && check === 0) {
+  if (validationRadioButton() && validationDate() && check === 0) {
     newUserData();
   } else {
     error.style.display = 'initial';

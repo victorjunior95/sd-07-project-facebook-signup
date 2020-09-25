@@ -17,6 +17,11 @@
 
 .main-content {
   display: flex;
+  justify-content: center;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .top-bar {

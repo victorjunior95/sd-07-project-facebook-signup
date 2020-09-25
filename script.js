@@ -1,4 +1,4 @@
-// Comentando para não tiltar o CC
+// para teste
 const enterButton = document.querySelector('#button-login');
 const inputValue = document.querySelector('#user-email-phone');
 

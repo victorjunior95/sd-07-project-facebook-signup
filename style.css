@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+.radios {
+  display: flex;
+}
+
 .right-content {
   width: 300px;
 }

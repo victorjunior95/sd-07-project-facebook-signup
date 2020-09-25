@@ -150,9 +150,10 @@ function clickFormLogin() {
 }
 
 function genderRadio() {
+  const getNewGenderCamp = document.querySelector('#newGender');
   const inputGender = document.createElement('input');
   const textBefore = document.querySelector('#facebook-register');
-  if (getGender.checked) {
+  if (getGender.checked && getNewGenderCamp == null) {
     inputGender.setAttribute('name', 'gender-custom');
     inputGender.setAttribute('class', 'formRight');
     inputGender.setAttribute('id', 'newGender');

@@ -60,6 +60,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-#invalid-forms{
+.invalid-forms {
   display: none;
 }

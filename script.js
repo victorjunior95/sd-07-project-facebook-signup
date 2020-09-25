@@ -5,18 +5,17 @@ const masculino = document.getElementById('masculino');
 const feminino = document.getElementById('feminino');
 const cadastro = document.getElementById('facebook-register');
 const iten = document.getElementsByClassName('iten-register');
-const invalid = document.getElementById('invalid-forms');
-const fullname = document.getElementsByClassName('full-name');
+const invalid = document.getElementsByClassName('invalid-forms');
 personalizado.addEventListener('change', function () {
   select.style.display = 'block';
-//   document.getElementById('gender-custom').innerText = '';
- /* const select = document.createElement('input');
-  select.style.display = 'block';
-  select.placeholder = 'Gênero (opcional)';
-  select.name = 'gender-custom';
-  select.id = 'gender-custom';
-  select.type = 'text';
-  genero.appendChild(select);*/
+  //document.getElementById('gender-custom').innerText = '';
+  // const select = document.createElement('input');
+  // select.style.display = 'block';
+  // select.placeholder = 'Gênero (opcional)';
+  // select.name = 'gender-custom';
+  // select.id = 'gender-custom';
+  // select.type = 'text';
+  // genero.appendChild(select);
 });
 masculino.addEventListener('change', function () {
   select.style.display = 'none';
@@ -34,10 +33,9 @@ botaoLogin.addEventListener('click', function () {
 
 
 cadastro.addEventListener('click', function () {
-  for(let index = 0; index < iten.length; index += 1){
-    if (iten[index].value === ''){
-       invalid.style.display = 'block';
+  for (let index = 0; index < iten.length; index += 1) {
+    if (iten[index].value === '') {
+      invalid.style.display = 'block';
     }
   }
-
 });

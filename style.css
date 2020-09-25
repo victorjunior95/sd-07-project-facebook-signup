@@ -31,11 +31,6 @@ body {
   flex-direction: row;
 }
 
-.right-text {
-  display: flex;
-  display: column;
-}
-
 .left-content {
   width: 800px;
 }

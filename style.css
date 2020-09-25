@@ -88,9 +88,11 @@ body {
 .logo-position {
   margin-right: 128px;
 }
-.position-nome-sobrenome{
+
+.position-nome-sobrenome {
   display: flex;
 }
+
 .senha-login {
   color: white;
   font-size: 15px;

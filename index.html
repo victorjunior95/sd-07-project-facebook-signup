@@ -33,7 +33,7 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <h2 class="quick-easy">É rápido e fácil.</h2>
-      <form action="">
+      <form action="" id="form2">
         <div class="wrapper">
           <input type="text" name="firstname" class="firstname" placeholder="Nome">
           <input type="text" name="lastname" class="lastname" placeholder="Sobrenome">
@@ -46,11 +46,11 @@
         <br>
         <label for="gender" id="label-gender">Gênero</label>
         <br>
-        <div class="gender-container">
-        <input type="radio" name="gender" id="">Feminino
-        <input type="radio" name="gender" id="">Masculino
-        <input type="radio" name="gender" id="">Personalizado
-      </div>
+        <div class="gender-container" id="gender-container">
+          <input type="radio" name="gender" id="feminino"><label for="gender">Feminino</label>
+          <input type="radio" name="gender" id="masculino"><label for="gender">Masculino</label>
+          <input type="radio" name="gender" id="personalizado" class="personalizado"><label for="gender">Personalizado</label>
+        </div>
       </form>
     </section>
   </div>

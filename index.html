@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Facebook - entre ou cadastre-se</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="fb-header">
-        <div class="top-bar">
-            <div class="logo">
-                <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook">
+      <div class="top-bar">
+        <div class="logo">
+          <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook"/>
+        </div>
+        <div class="form-group">
+          <form class="facebook-login">
+            <div class="form-group">
+              <label for="" id="user-email-phone-label">Email ou telefone</label>
+              <input type="text" id="user-email-phone" />
             </div>
             <div class="form-group">
-                <form class="facebook-login">
-                    <div class="form-group">
-                        <label for="" id="user-email-phone-label">Email ou telefone</label>
-                        <input type="text" id="user-email-phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="" id="user-password-label">Senha</label>
-                        <input type="password" id="user-password">
-                    </div>
-                    <div class="form-control">
-                        <button type="submit" id="button-login" class="button-login">Entrar</button>
-                    </div>
-            </form>
+              <label for="" id="user-password-label">Senha</label>
+              <input type="password" id="user-password" />
             </div>
+            <div class="form-control">
+              <button type="submit" id="button-login" class="button-login">
+                Entrar
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
     </header>
     <div class="main-content">
-       <div class="left-content">
-           <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-           <img src="imgs/networking.png" alt="facebook-networking" id="facebook-networking">
-       </div>
-       <div class="right-content">
-           <h1>Abra uma conta</h1>
-           <p class="quick-easy">É rápido e fácil.</p>
-           <form>
-               <input type="text" name="firstname" placeholder="Nome">
-           </form>
-       </div>
+      <div class="left-content">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+        <img src="imgs/networking.png" alt="facebook-networking" id="facebook-networking"/>
+      </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form class="register">
+          <div class="name">
+            <input type="text" name="firstname" placeholder="Nome"/>
+          </div>
+          <div class="lastName">
+            <input type="text" name="lastname" placeholder="Sobrenome"/>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
+</html>

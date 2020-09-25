@@ -85,11 +85,13 @@ body {
 
 .left-content {
   min-width: 800px;
+  width: 800px;
 }
 
 .rigth-content {
   display: flex;
   min-width: 300px;
+  width: 800px;
 }
 
 .left-content p {

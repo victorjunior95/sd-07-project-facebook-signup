@@ -85,3 +85,7 @@ button {
 .gender-group {
   display: flex;
 }
+
+.msg-campo-vazio {
+  color: red;
+}

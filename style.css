@@ -7,35 +7,27 @@ body {
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(rgba(78,105,162, 1),rgba(59,89,152, 1) 50%);
   display: flex;
   justify-content: space-between;
-  margin: auto;
   max-width: 100%;
   min-height: 100px;
 }
 
 .form-login {
   display: flex;
+  justify-content: center;
 }
 
 .form-group {
   color: white;
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-}
-
-.form-group .user-email-phone-label {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group .user-password-label {
-  display: flex;
-  flex-direction: column;
+  margin-right: 10px;
 }
 
 .form-control button {
+  align-self: flex-end;
   background-color: rgb(75, 115, 195);
   border: 1px solid rgb(29, 52, 97);
   color: white;
@@ -51,10 +43,12 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
+  width: 170px;
 }
 
-.facebook-logo img {
-  width: 170px;
+.facebook-login {
+  display: flex;
+  justify-content: center;
 }
 
 .form-control {
@@ -63,18 +57,18 @@ body {
 }
 
 .main-container {
+  background-image: linear-gradient(to bottom, white, rgba(59,89,152, 1));
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #FFFFFF, #3b5998);
 }
 
 .main-content {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 80%;
   padding: 50px;
+  width: 80%;
 }
 
 .left-content {
@@ -82,9 +76,9 @@ body {
 }
 
 .left-content p {
-  width: 70%;
   color: rgb(66, 103, 178);
-  font-weight: bold;
+  font-weight: 600;
+  width: 70%;
 }
 
 .right-content {
@@ -98,8 +92,8 @@ body {
 }
 
 .form-row input {
-  margin-right: 10px;
   height: 20px;
+  margin-right: 10px;
   width: 120px;
 }
 
@@ -109,15 +103,15 @@ body {
   margin-bottom: 10px;
 }
 
-.form-column input{
+.form-column input {
   height: 20px;
   width: 260px;
 }
 
-#facebook-register {
-  background-color: #42b72a;
-  width: 50%;
+.facebook-register {
+  background-color: rgba(66,183,42, 1);
   border-radius: 6px;
-  font-weight: bold;
   color: white;
+  font-weight: 600;
+  width: 50%;
 }

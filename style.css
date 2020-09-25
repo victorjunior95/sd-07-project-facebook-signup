@@ -8,7 +8,6 @@ body {
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  display: flex;
   justify-content: space-between;
   margin: auto;
   max-width: 100%;
@@ -52,6 +51,9 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
+}
+
+.facebook-logo img {
   width: 170px;
 }
 
@@ -63,21 +65,59 @@ body {
 .main-container {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(#FFFFFF, #3b5998);
+  background-image: linear-gradient(to bottom, #FFFFFF, #3b5998);
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   width: 80%;
-  padding: 50px 100px;
+  padding: 50px;
 }
 
 .left-content {
   width: 800px;
 }
 
+.left-content p {
+  width: 70%;
+  color: rgb(66, 103, 178);
+  font-weight: bold;
+}
+
 .right-content {
   width: 300px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  margin-right: 10px;
+  height: 20px;
+  width: 120px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-column input{
+  height: 20px;
+  width: 260px;
+}
+
+#facebook-register {
+  background-color: #42b72a;
+  width: 50%;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
 }

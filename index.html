@@ -41,10 +41,16 @@
         <form action="" id="register" novalidate>
           <div class="main-form">
             <div class="short-input">
-              <input name="firstname" type="text" placeholder="Nome" />
-              <input name="lastname" type="text" placeholder="Sobrenome" />
+              <input id="fn" name="firstname" type="text" placeholder="Nome" />
+              <input
+                id="ln"
+                name="lastname"
+                type="text"
+                placeholder="Sobrenome"
+              />
             </div>
             <input
+              id="phone-email"
               name="phone_email"
               type="text"
               placeholder="Celular ou email"
@@ -81,12 +87,14 @@
               />
               <label for="Personalizado" id="per">Personalizado</label>
             </div>
-            <input
-              id="cust-gender"
-              type="text"
-              name="gender-custom"
-              placeholder="Gênero"
-            />
+            <div id="cg">
+              <!-- <input
+                id="cust-gender"
+                type="text"
+                name="gender-custom"
+                placeholder="Gênero"
+              /> -->
+            </div>
           </div>
           <p class="handle-error"></p>
           <button id="facebook-register" type="submit">Cadastre-se</button>

@@ -81,7 +81,7 @@ body {
 .facebook-logo {
   align-self: flex-end;
   display: flex;
-  justify-content: left;
+  justify-content: flex-end;
   width: 150px;
 }
 

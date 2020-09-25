@@ -6,19 +6,8 @@ btnLogin.addEventListener('click', function () {
 const allInputs = document.querySelectorAll('.required');
 const btnRegister = document.querySelector('#facebook-register');
 // função para saber se tem algum input vazio
-
-function genderCostum() {
-  const personalizado = document.querySelector('.personalizado');
-  if (personalizado.checked) {
-    const gender = document.createElement('input');
-    gender.name = 'gender-custom';
-    gender.placeholder = 'Gênero (opcional)';
-    document.querySelector('.input-gender').appendChild(gender);
-  }
-} // referência http://devfuria.com.br/javascript/manipulando-radios-buttons-com-javascript/
-
 function emptyInput(event) {
-  event.preventDefault();
+  event.preventDefault(); // para que não atualize a página ao clique do botão
   const errorMessage = document.createElement('p');
   document.querySelector('.cadastro').appendChild(errorMessage);
   for (let i = 0; i < allInputs.length; i += 1) {
@@ -26,6 +15,17 @@ function emptyInput(event) {
       errorMessage.innerText = 'Campos inválidos';
     }
   }
-  genderCostum();
 }
 btnRegister.addEventListener('click', emptyInput); // ao clicar faz a verificação
+
+
+const radioGender = document.querySelector('.personalizado');
+function genderCostum() {
+  if (radioGender.checked) {
+    const gender = document.createElement('input');
+    gender.name = 'gender-custom';
+    gender.placeholder = 'Gênero (opcional)';
+    document.querySelector('.input-gender').appendChild(gender);
+  }
+} // referência http://devfuria.com.br/javascript/manipulando-radios-buttons-com-javascript/
+radioGender.addEventListener('click', genderCostum);

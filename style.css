@@ -1,9 +1,9 @@
 body {
+  background-image: linear-gradient(white, rgba(115, 120, 150, 0.466));
   box-sizing: border-box;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient( white, rgba(115, 120, 150, 0.466));
-  height: 100vh;
 }
 
 .top-bar {
@@ -16,20 +16,19 @@ body {
 }
 
 .facebook-logo {
-  width: 180px
+  width: 180px;
 }
 
 .facebook-login {
+  align-items: baseline;
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 5px;
-  /* border: 2px solid black; */
 }
 
 .form-group label {
@@ -51,28 +50,27 @@ body {
 }
 
 .main-content {
+  background-color: red;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   margin: 20px 0;
-  background-color: red;
 }
 
 .left-content {
-  width: 800px;
-  max-width: 800px;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  background-color: blueviolet;
+  max-width: 800px;
+  width: 800px;
 }
 
 .left-content p {
   color: rgb(66, 103, 178);
   font-size: large;
   font-weight: 700;
-  width: 400px;
   text-align: left;
+  width: 400px;
 }
 
 .left-content img {
@@ -80,12 +78,11 @@ body {
 }
 
 .right-content {
-  width: 300px;
   max-width: 300px;
-  /* background-color: blue; */
+  width: 300px;
 }
 
-.right-content h1 {
+.right-content .title-right-container {
   font-size: 2em;
   margin: 0;
 }
@@ -95,15 +92,14 @@ body {
 }
 
 .form-container {
-  /* background-color: red; */
   margin-top: 20px;
 }
 
 .form-container input {
-  margin:  5px;
-  height: 25px;
-  border-radius: 5px;
   border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  height: 25px;
 }
 
 .name-container {
@@ -146,21 +142,21 @@ body {
 }
 
 .radioButton-Container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 5px;
 }
 
 .button-register {
   background-color: green;
-  width: 200px;
-  height: 50px;
-  font-size: 20px;
-  color: white;
-  font-weight: 700;
   border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
   margin-top: 20px;
+  width: 200px;
 }
 
 .required-alert {

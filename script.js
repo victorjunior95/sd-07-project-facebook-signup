@@ -20,3 +20,31 @@ const buttonRadio = document.querySelector('#personalizado');
 authenticationButton.addEventListener('click', alertEmailOrPhone);
 
 buttonRadio.addEventListener('change', createCustom);
+
+const inputField = document.querySelectorAll('input');
+const btnEnv = document.querySelector('#facebook-register');
+const msg = document.createElement('p');
+const mainContent = document.querySelector('.main-content');
+mainContent.appendChild(msg);
+
+function checkedRadio() {
+  const radio = document.querySelectorAll('.gender-radio');
+  for (let i = 0; i < radio.length; i += 1) {
+    if (radio[i].checked === true) {
+      return 'true';
+    }
+  }
+  msg.innerHTML = 'Campos inválidos';
+  return 'false';
+}
+
+btnEnv.addEventListener('click', function (e) {
+  e.preventDefault();
+  for (let i = 0; i < inputField.length; i += 1) {
+    if (inputField[i].value === '') {
+      msg.innerText = 'Campos inválidos';
+      break;
+    }
+  }
+  checkedRadio();
+});

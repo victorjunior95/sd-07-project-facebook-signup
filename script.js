@@ -28,8 +28,8 @@ function radioOption() {
     if (genderList[index].checked === true) {
       option = genderList[index].value;
     }
-}
-return option;
+  }
+  return option;
 }
 
 function validateNewAccountFormLessRadioButton() {
@@ -62,28 +62,28 @@ function birthdate() {
   return birthDt;
 }
 
-function createDivWelcome() {
-  const welcome = document.createElement('div');
-  const welcomeFullname = document.createElement('p');
+function createDivHello() {
+  const hello = document.createElement('div');
+  const helloFullname = document.createElement('p');
   const firstName = document.getElementsByName('firstname')[0].value;
   const lastName = document.getElementsByName('lastname')[0].value;
-  welcomeFullname.innerText = 'Olá, ' + firstName + ' ' + lastName;
-  welcome.appendChild(welcomeFullname);
+  helloFullname.innerText = 'Olá, ' + firstName + ' ' + lastName;
+  hello.appendChild(helloFullname);
   const mailPhone = document.createElement('p');
   mailPhone.innerText = document.getElementsByName('phone_email')[0].value;
-  welcome.appendChild(mailPhone);
+  hello.appendChild(mailPhone);
   const birthDate = document.createElement('p');
   birthDate.innerText = birthdate();
-  welcome.appendChild(birthDate);
+  hello.appendChild(birthDate);
   const gender = document.createElement('p');
   gender.innerText = radioOption();
-  welcome.appendChild(gender);
-  return welcome;
+  hello.appendChild(gender);
+  return hello;
 }
 
 function welcome() {
   const target = document.getElementsByClassName('right-content')[0];
-  const welcomeDiv = createDivWelcome();
+  const welcomeDiv = createDivHello();
   while (target.lastElementChild) {
     target.removeChild(target.lastElementChild);
   }

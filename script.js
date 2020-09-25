@@ -50,7 +50,7 @@ submitBotao.addEventListener('click', function (evt) {
 function personalizadoSelecionado() {
   const divPesonalizado = document.querySelector('#pesonalizado-selecionado');
   const campoPersonalizado = document.createElement('input');
-  campoPersonalizado.name = 'gender';
+  campoPersonalizado.name = 'gender-custom';
   campoPersonalizado.placeholder = 'Gênero (opcional)';
   divPesonalizado.appendChild(campoPersonalizado);
 }

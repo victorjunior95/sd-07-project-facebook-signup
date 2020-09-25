@@ -45,23 +45,23 @@
             <div class="name-lastname-container">
                 <div class="field">
                     <div class="control">
-                        <input class="input" type="text" name="firstname" placeholder="Nome">
+                        <input class="input validation" type="text" name="firstname" placeholder="Nome" required>
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                        <input class="input" type="text" name="lastname" placeholder="Sobrenome">
+                        <input class="input validation" type="text" name="lastname" placeholder="Sobrenome" required>
                     </div>
                 </div>
             </div>
             <div class="field">
                 <div class="control">
-                    <input class="input" type="text" name="phone_email" placeholder="Celular ou email">
+                    <input class="input validation" type="text" name="phone_email" placeholder="Celular ou email" required>
                 </div>
             </div>
             <div class="field">
                 <div class="control">
-                    <input class="input" type="password" name="password" placeholder="Nova senha">
+                    <input class="input validation" type="password" name="password" placeholder="Nova senha" required>
                 </div>
             </div>
             <div class="field">
@@ -69,7 +69,7 @@
                     Data de nascimento
                 </label>
                 <div class="control">
-                    <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa">
+                    <input class="input validation" type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
                     <!-- <div class="select">
                         <select name="birthdate" id="day" placeholder="dd/mm/aaaa">
                             <option value="day" disabled>Dia</option>
@@ -92,9 +92,9 @@
                     Gênero
                 </label>
                 <div class="control button-radio">
-                    <input type="radio" value="Feminino" name="genero"> Feminino
-                    <input type="radio" value="Masculino" name="genero"> Masculino
-                    <input type="radio" value="Personalizado" name="genero" id="custom-button"> Personalizado
+                    <input type="radio" value="Feminino" name="genero" required> Feminino
+                    <input type="radio" value="Masculino" name="genero" required> Masculino
+                    <input type="radio" value="Personalizado" name="genero" id="custom-button" required> Personalizado
                 </div>
             </div>
             <div class="field">

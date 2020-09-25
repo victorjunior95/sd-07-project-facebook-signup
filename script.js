@@ -11,11 +11,17 @@ const form = document.getElementById('form');
 
 
 function deleteForm() {
-  const rightContent = document.getElementsByClassName('right-content')[0];
-  rightContent.removeChild(form);
+  const rightContentDelete = document.getElementsByClassName('right-content');
+
+  const counter = rightContentDelete[0].childElementCount;
+  for (let index = 0; index < counter; index += 1) {
+    const childItem = rightContentDelete[0].children[0];
+    rightContentDelete[0].removeChild(childItem);
+  }
 }
 
 function createMessage(name, lastName, email, date, gender) {
+  deleteForm();
   const rightContent = document.getElementsByClassName('right-content')[0];
   const message = document.createElement('p');
   message.innerText = `Olá, ${name} ${lastName}
@@ -65,7 +71,6 @@ buttonRegister.addEventListener('click', function () {
     tagP.innerText = 'Campos inválidos';
     form.appendChild(tagP);
   } else {
-    deleteForm();
     createMessage(name, lastName, email, date, gender);
   }
 });

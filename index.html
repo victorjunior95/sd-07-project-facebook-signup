@@ -44,14 +44,16 @@
             É rápido e fácil.
         </h3>
         <form action="">
-            <div class="field">
-                <div class="control">
-                    <input class="input" type="text" name="firstname" placeholder="Nome">
+            <div class="name-lastname-container">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="firstname" placeholder="Nome">
+                    </div>
                 </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <input class="input" type="text" name="lastname" placeholder="Sobrenome">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" type="text" name="lastname" placeholder="Sobrenome">
+                    </div>
                 </div>
             </div>
             <div class="field">
@@ -69,7 +71,8 @@
                     Data de nascimento
                 </label>
                 <div class="control">
-                    <div class="select">
+                    <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa">
+                    <!-- <div class="select">
                         <select name="birthdate" id="day" placeholder="dd/mm/aaaa">
                             <option value="day" disabled>Dia</option>
                         </select>
@@ -83,25 +86,21 @@
                         <select name="birthdate" id="year">
                         <option value="ano" disabled>Ano</option>
                         </select>
-                    </div>
-
-                    <!-- <input class="input" type="date" name="birthdate" placeholder="dd/mm/aaaa"> -->
+                    </div> -->
                 </div>
             </div>
             <div class="field gender-options">
                 <label id="label-gender" for="genero">
                     Gênero
                 </label>
-                <div class="control">
+                <div class="control button-radio">
                     <input type="radio" value="Feminino" name="genero"> Feminino
                     <input type="radio" value="Masculino" name="genero"> Masculino
                     <input type="radio" value="Personalizado" name="genero" id="custom-button"> Personalizado
                 </div>
             </div>
             <div class="buttons">
-                <button class="button is-success" type="submit" id="facebook-register">
-                    Cadastre-se
-                </button>
+                <button class="button is-success" type="submit" id="facebook-register">Cadastre-se</button>
             </div>
         </form>
     </div>

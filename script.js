@@ -34,6 +34,6 @@ customButton.addEventListener('change', function () {
   const customInput = document.createElement('input');
   customInput.setAttribute('type', 'text');
   customInput.setAttribute('name', 'gender-custom');
-  customInput.setAttribute('placeholder', 'Gênero(opcional)');
+  customInput.setAttribute('placeholder', 'Gênero (opcional)');
   genderOptions.appendChild(customInput);
 });

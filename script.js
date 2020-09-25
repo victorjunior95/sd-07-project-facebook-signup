@@ -20,7 +20,7 @@ function validateName() {
   const firstName = document.querySelector('#first-name');
   const lastName = document.querySelector('#last-name');
   let isValid = true;
-  if ((firstName.value === '') || (lastName.value === '')){
+  if ((firstName.value === '') || (lastName.value === '')) {
     isValid = false;
   }
   return isValid;
@@ -38,7 +38,7 @@ function validateOthers() {
 }
 
 function validateForm() {
-  let isValid = true;  
+  let isValid = true;
 
   if ((validateName()) || (validateOthers()) || (validateRadios())) {
     isValid = false;

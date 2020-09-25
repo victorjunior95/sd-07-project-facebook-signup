@@ -9,12 +9,7 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 10px 15%;
-}
-
-.container {
-  display: flex;
-  justify-content: flex-end;
+  padding: 10px;
 }
 
 .facebook-logo {

@@ -35,17 +35,17 @@ document.getElementById('facebook-register').addEventListener('click', function 
   event.preventDefault();
   const errorMessage = document.getElementById('error-message');
   if (document.getElementById('firstname').value === '') {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else if (document.getElementById('lastname').value === '') {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else if (document.getElementById('phone_email').value === '') {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else if (document.getElementById('password').value === '') {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else if (document.getElementById('birthdate').value === '') {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else if (btFemale.checked === false && btMale.checked === false && btCustom.checked === false) {
-    errorMessage.textContent = 'Campos Inválidos';
+    errorMessage.textContent = 'Campos inválidos';
   } else {
     errorMessage.textContent = '';
   }

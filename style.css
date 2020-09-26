@@ -14,11 +14,11 @@ body {
   display: flex;
 }
 
+.facebook-login {
+  display: flex;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.facebook-login {
-  display: flex;
 }

@@ -38,6 +38,15 @@ document.getElementById('facebook-register').addEventListener('click', function 
   const lastname = document.getElementById('lastname').value;
   const phoneMail = document.getElementById('phone_email').value;
   const birthdate = document.getElementById('birthdate').value;
+  let genre = null;
+  if (btFemale.checked) {
+    genre = 'Feminino';
+  } else if (btMale.checked) {
+    genre = 'Masculino';
+  } else if (btCustom.checked) {
+    genre = 'Personalizado';
+  }
+
   if (firstname === '') {
     errorMessage.textContent = 'Campos inválidos';
   } else if (lastname === '') {
@@ -52,6 +61,6 @@ document.getElementById('facebook-register').addEventListener('click', function 
     errorMessage.textContent = 'Campos inválidos';
   } else {
     document.querySelector('.right-content').innerHTML = `Olá, ${firstname} ${lastname}
-    Telefone ou e-mail: ${phoneMail} Data de Nascimento: ${birthdate}`;
+    Telefone ou e-mail: ${phoneMail} Data de Nascimento: ${birthdate} Gênero: ${genre}`;
   }
 });

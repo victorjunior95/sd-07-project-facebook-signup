@@ -1,11 +1,8 @@
-const userEmailPhone = document.getElementById('user-email-phone');
-const rightContentInputs = document.querySelector('.right-content form');
 const genderFeminine = document.getElementById('gender-feminine');
 const genderMale = document.getElementById('gender-male');
 const genderCustom = document.getElementById('gender-custom');
-const buttonSignUp = document.querySelector('#facebook-register');
 
-function genero() {
+function gender() {
   if (genderFeminine.checked) {
     return 'Feminino';
   } else if (genderMale.checked) {
@@ -17,13 +14,15 @@ function genero() {
 }
 
 function msgCampoInvalido() {
+  const rightContentInputs = document.querySelector('.facebook-register-msnError');
   const emptyFieldMsg = document.createElement('h5');
   emptyFieldMsg.innerText = 'Campos inválidos';
   emptyFieldMsg.className = 'msg-campo-vazio';
-  rightContentInputs.insertBefore(emptyFieldMsg, rightContentInputs.children[0]);
+  rightContentInputs.insertBefore(emptyFieldMsg, rightContentInputs.lastChild);
 }
 
 function resetMsg() {
+  const rightContentInputs = document.querySelector('.facebook-register-msnError');
   if (document.querySelector('.msg-campo-vazio') != null) {
     const msgCampoVazio = document.querySelector('.msg-campo-vazio');
     rightContentInputs.removeChild(msgCampoVazio);
@@ -31,11 +30,31 @@ function resetMsg() {
 }
 
 function registrarUsuario() {
-  const formFields = document.querySelectorAll('.right-content input');
-  for (let index = 0; index < formFields.length; index += 1) {
-    formFields[index].value = '';
-    formFields[index].checked = false;
-  }
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const phoneEmail = document.getElementById('phone_email').value;
+  const labelBirthdate = document.getElementById('input-birthdate').value;
+  const sexo = gender();
+  alert(labelBirthdate)
+
+  const divPai = document.querySelector('.right-content')
+  const divFilho = document.getElementById('container-cadastro')
+
+  const novaDiv = document.createElement('div');
+  novaDiv.classList.add('container-cadastro-feito');
+
+  const novaH4 = document.createElement('h4');
+  novaH4.classList.add('mensagem-cadastro-feito');
+
+  novaH4.innerText = `Olá, ${firstName} ${lastName}!
+  Confira seus dados:
+  E-mail/Telefone: ${phoneEmail}
+  Data de Nascimento: ${labelBirthdate}
+  Genero: ${sexo}`;
+
+  novaDiv.appendChild(novaH4);
+  divPai.removeChild(divFilho);
+  divPai.appendChild(novaDiv);
 }
 
 function testeCampoVazio(itemValue, itemType) {
@@ -44,7 +63,7 @@ function testeCampoVazio(itemValue, itemType) {
 
 function percorreInputs() {
   const formFields = document.querySelectorAll('.right-content input');
-  for (let index = 0; index < formFields.length; index += 1) {
+  for (let index = 0; index < formFields.length - 1; index += 1) {
     const validandoInput = formFields[index];
     const formValue = validandoInput.value;
     const formType = validandoInput.getAttribute('type');
@@ -58,7 +77,7 @@ function percorreInputs() {
 function validaCadastro() {
   resetMsg();
 
-  if (genero() === '') {
+  if (gender() === '') {
     msgCampoInvalido();
   } else if (percorreInputs() === true) {
     msgCampoInvalido();
@@ -77,8 +96,8 @@ const displayOtherGender = function () {
 };
 
 window.onload = function () {
-  document.getElementById('button-login').addEventListener('click', () => alert(userEmailPhone.value));
-  buttonSignUp.addEventListener('click', validaCadastro);
+  document.getElementById('button-login').addEventListener('click', () => alert(document.getElementById('user-email-phone').value));
+  document.querySelector('#facebook-register').addEventListener('click', validaCadastro);
   genderFeminine.addEventListener('click', removeTagChild);
   genderMale.addEventListener('click', removeTagChild);
   genderCustom.addEventListener('change', displayOtherGender);

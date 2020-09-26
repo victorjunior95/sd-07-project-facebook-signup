@@ -4,7 +4,7 @@ logBt.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-const checkRadio = () => {
+function checkRadio() {
   let counter = 0;
   let validation = 0;
   const genderList = document.getElementsByName('gender');
@@ -21,7 +21,7 @@ const checkRadio = () => {
   return validation;
 }
 
-const radioOption = () => {
+function radioOption() {
   let option = 0;
   const genderList = document.getElementsByName('gender');
   for (let index = 0; index < genderList.length; index += 1) {
@@ -32,7 +32,7 @@ const radioOption = () => {
   return option;
 }
 
-const validateNewAccountFormLessRadioButton = () => {
+function validateNewAccountFormLessRadioButton() {
   const inputCollection = document.getElementsByTagName('input');
   const inputArray = [].slice.call(inputCollection);
   inputArray.splice(0, 2);
@@ -52,7 +52,7 @@ const validateNewAccountFormLessRadioButton = () => {
   return validation;
 }
 
-const createDivHello = () => {
+function createDivHello() {
   const hello = document.createElement('div');
   const helloFullname = document.createElement('p');
   const firstName = document.getElementsByName('firstname')[0].value;
@@ -71,7 +71,7 @@ const createDivHello = () => {
   return hello;
 }
 
-const welcome = () => {
+function welcome() {
   const divRightContent = document.getElementsByClassName('right-content')[0];
   const welcomeDiv = createDivHello();
   while (divRightContent.lastElementChild) {
@@ -81,7 +81,7 @@ const welcome = () => {
   return divRightContent;
 }
 
-const validateNewAccountForm = () => {
+function validateNewAccountForm() {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
     document.getElementById('invalidation').innerText = 'Campos inválidos';
   } else {

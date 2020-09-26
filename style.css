@@ -57,3 +57,7 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
+
+.gender-text {
+  display: none;
+}

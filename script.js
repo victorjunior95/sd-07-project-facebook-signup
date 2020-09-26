@@ -21,24 +21,43 @@ const inputTextsValidation = () => {
 
 const femaleRadio = document.querySelector('#female');
 const maleRadio = document.querySelector('#male');
-const other = document.querySelector('#other');
+const otherRadio = document.querySelector('#other');
 let radioChecked = false;
 
 const inputRadioValidation = () => {
-  if (femaleRadio.checked || maleRadio.checked || other.checked) {
+  if (femaleRadio.checked || maleRadio.checked || otherRadio.checked) {
     radioChecked = true;
   }
   return radioChecked;
+};
+
+const otherGender = document.querySelector('#otherGender');
+
+let genderChoose = '';
+const genderVerify = () => {
+  if (femaleRadio.checked) {
+    genderChoose = 'Feminino';
+  } else if (maleRadio.checked) {
+    genderChoose = 'Masculino';
+  } else if (otherRadio.checked) {
+    genderChoose = 'Personalizado';
+  }
 };
 
 const validateForm = () => {
   event.preventDefault();
   inputTextsValidation();
   inputRadioValidation();
-  const errorMessage = document.querySelector('#errorMessage');
+  genderVerify();
 
-  if (textChecked || radioChecked) {
-    //
+  const errorMessage = document.querySelector('#errorMessage');
+  const mainContent = document.querySelector('#right-content');
+
+  if (textChecked && radioChecked) {
+    mainContent.innerHTML = `<p>Olá, ${fisrtName.value} ${lastName.value}
+    ${phoneEmail.value}
+    ${birthDate.value}
+    ${genderChoose}</p>`;
   } else {
     errorMessage.innerText = 'Campos inválidos';
   }
@@ -47,4 +66,11 @@ const validateForm = () => {
 window.onload = function () {
   loginBtn.addEventListener('click', () => alert(userEmailPhone.value));
   submitButton.addEventListener('click', validateForm);
+  otherRadio.addEventListener('change', () => {
+    if (otherRadio.checked) {
+      otherGender.style.display = 'block';
+    } else {
+      otherGender.style.display = 'none';
+    }
+  });
 };

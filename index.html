@@ -40,7 +40,7 @@
         <img src="imgs/networking.png" id="facebook-networking" />
       </div>
 
-      <div class="right-content">
+      <div class="right-content" id="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form>
@@ -72,13 +72,13 @@
           </div>
           <label id="label-gender">Gênero</label>
           <div class="gender-group">
-            <input type="radio" id="female" name="gender" value="Female"/>
+            <input type="radio" id="female" name="gender" value="Feminino"/>
             <label for="female">Feminino</label>
             <input type="radio" id="male" name="gender" value="Masculino"/>
             <label for="male">Masculino</label>
             <input type="radio" id="other" name="gender" value="Personalizado"/>
-            <input type="text" name="gender-custom" id="otherGender" disabled>
             <label for="other">Personalizado</label>
+            <input type="text" name="gender-custom" id="otherGender" placeholder="Gênero (opcional)" class="gender-text">
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
           <p id="errorMessage"></p>

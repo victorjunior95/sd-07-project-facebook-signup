@@ -16,7 +16,7 @@ function removeChild() {
 function createElementOptionalSex() {
   const div = document.createElement('div');
   const input = document.createElement('input');
-  input.id = 'gender-custom';
+  input.name = 'gender-custom';
   input.placeholder = 'Gênero (opcional)';
   div.appendChild(input);
   genderContent.appendChild(div);
@@ -74,5 +74,7 @@ registerButton.addEventListener('click', function (xis) {
   if (count >= 1 || sexvar === '') {
     xis.preventDefault();
     formAlert();
+  }else{
+
   }
 });

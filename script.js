@@ -30,6 +30,5 @@ function validarNovoUsuario() {
   if (listaForm !== '') {
     alert('Campos inválidos');
   }
-  return listaForm;
 }
 validarNovoUsuario();

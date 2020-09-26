@@ -52,7 +52,6 @@ body {
   align-self: flex-end;
   height: 30px;
   margin-bottom: 20px;
-  margin-left: 50px;
   width: auto;
 }
 
@@ -64,8 +63,6 @@ input {
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 80px;
 }
 
 .main-content {
@@ -97,7 +94,6 @@ input {
 
 .right-content {
   margin-right: 120px;
-  padding-right: 100px;
   width: 300px;
 }
 

@@ -42,16 +42,12 @@ function registrarUsuario() {
   const novaDiv = document.createElement('div');
   novaDiv.classList.add('container-cadastro-feito');
 
-  const novaH4 = document.createElement('h4');
-  novaH4.classList.add('mensagem-cadastro-feito');
-
-  novaH4.innerText = `Olá, ${firstName} ${lastName}!
+  novaDiv.innerText = `Olá, ${firstName} ${lastName}!
   Confira seus dados:
   E-mail/Telefone: ${phoneEmail}
   Data de Nascimento: ${labelBirthdate}
   Genero: ${sexo}`;
 
-  novaDiv.appendChild(novaH4);
   divPai.removeChild(divFilho);
   divPai.appendChild(novaDiv);
 }

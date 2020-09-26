@@ -150,6 +150,10 @@ a {
 
 .msg-campo-vazio {
   color: red;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .register {
@@ -214,7 +218,7 @@ a {
 .facebook-register-msnError {
   align-items: center;
   display: flex;
-  height: 50px;
+  height: 15px;
   justify-content: space-between;
 }
 
@@ -232,14 +236,9 @@ a {
 
 .container-cadastro-feito {
   align-items: center;
-  color: blue;
-  display: flex;
-  font-size: 30px;
-  min-height: 545px;
-}
-
-.mensagem-cadastro-feito {
   color: rgb(3, 37, 110);
+  display: flex;
   font-size: 20px;
   line-height: 30px;
+  min-height: 545px;
 }

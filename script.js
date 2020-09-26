@@ -6,7 +6,7 @@ loginButton.addEventListener('click', function () {
   alert(loginInfo.value);
 });
 
-const adicionaMensagem = document.querySelector('.open-account');
+// const adicionaMensagem = document.querySelector('.open-account');
 
 genderCustom.addEventListener('click', () => {
   const customInput = document.createElement('input');
@@ -60,17 +60,17 @@ const valida = new window.JustValidate('.open-account', {
 
   colorWrong: 'red',
 
-  submitHandler: () => {
-    const mensagem = document.createElement('p');
-    mensagem.innerHTML = '<strong>campos validos</strong>';
-    adicionaMensagem.appendChild(mensagem);
-  },
+  // submitHandler: () => {
+  //   const mensagem = document.createElement('p');
+  //   mensagem.innerHTML = '<strong>campos validos</strong>';
+  //   adicionaMensagem.appendChild(mensagem);
+  // },
 
-  invalidFormCallback: (errors) => {
-    const mensagem = document.createElement('p');
-    mensagem.innerHTML = `<strong>Campos inválidos</strong> ${errors}`;
-    adicionaMensagem.appendChild(mensagem);
-  },
+  // invalidFormCallback: (errors) => {
+  //   const mensagem = document.createElement('p');
+  //   mensagem.innerHTML = `<strong>Campos inválidos</strong> ${errors}`;
+  //   adicionaMensagem.appendChild(mensagem);
+  // },
 });
 
 window.onload = () => {

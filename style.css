@@ -37,7 +37,7 @@ body {
   width: 300px;
 }
 
-.full-name{
+.full-name {
   display: flex;
   justify-content: space-between;
 }

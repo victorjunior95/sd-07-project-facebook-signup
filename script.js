@@ -10,9 +10,10 @@ radioCustomGender.addEventListener('click', function () {
   const genderCustom = document.createElement('input');
   genderCustom.type = 'text';
   genderCustom.name = 'gender-custom';
+  genderCustom.className = 'account-input';
   genderCustom.placeholder = 'Gênero (opcional)';
   newAccForm.appendChild(genderCustom);
-  newAccForm.insertBefore(genderCustom, newAccForm.children[19]);
+  newAccForm.insertBefore(genderCustom, newAccForm.children[7]);
 });
 
 

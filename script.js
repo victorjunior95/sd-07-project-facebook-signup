@@ -33,7 +33,7 @@ validar();
   if (mensagem === '') {
     alert('login efetuado com sucesso');
   }
-}
+
 validar();
 function validarNovoUsuario() {
   const listaForm = {};

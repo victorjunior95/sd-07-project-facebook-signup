@@ -7,6 +7,7 @@ const genderInputs = document.querySelectorAll('.gender input');
 const genderContent = document.getElementById('genderx');
 const rightContent = document.querySelectorAll('.right-content')[0];
 document.getElementById('data').DatePickerX.init();
+document.getElementById('data').removeAttribute('readonly');
 
 let sexvar = '';
 let bool = false;

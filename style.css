@@ -32,7 +32,7 @@
   justify-content: space-between;
 }
 
-.nomeDeUsuario{
+.nomeDeUsuario {
   display: flex;
   justify-content: flex-start;
 }

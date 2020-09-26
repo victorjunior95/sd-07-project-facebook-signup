@@ -1,6 +1,5 @@
 const button = document.querySelector('#button-login');
 
-<<<<<<< HEAD
   let mensagem = '';
   // Comparações
   if (userLogin === '') {
@@ -50,9 +49,7 @@ function validarNovoUsuario() {
   return listaForm;
 }
 validarNovoUsuario();
-=======
 button.addEventListener('click', function () {
   const userLogin = document.querySelector('#user-email-phone').value;
   alert(userLogin);
 });
->>>>>>> cad8b2884ff3b9e7e8f187c4ae048e4ce920cdfa

@@ -1,5 +1,6 @@
 const loginButton = document.querySelector('#button-login');
 const loginInfo = document.querySelector('#user-email-phone');
+const genderCustom = document.querySelector('#Personalizado');
 
 loginButton.addEventListener('click', function () {
   alert(loginInfo.value);
@@ -7,63 +8,63 @@ loginButton.addEventListener('click', function () {
 
 const adicionaMensagem = document.querySelector('.open-account');
 
-
-
-
-
-
-
+genderCustom.addEventListener('click', () => {
+  const customInput = document.createElement('input');
+  customInput.setAttribute('name', 'gender-custom');
+  customInput.placeholder = 'Gênero (opcional)';
+  document.querySelector('#custom').appendChild(customInput);
+});
 
 const valida = new JustValidate('.open-account', {
   rules: {
     firstname: {
-      required: true,
+      required: true
     },
     lastname: {
-      required: true,
+      required: true
     },
     phone_email: {
-      required: true,
+      required: true
     },
     password: {
-      required: true,
-      strength: {
-        default: true,
-      }    
+      required: true     
     },
     birthdate: {
-      required: true,
+      required: true
     },
     gender: {
-      required: true,
+      required: true
     },
   },
 
   messages: {
     firstname: {
-      required: 'Campos inválidos',
+      required: 'Campos inválidos'
     },
     lastname: {
-      required: 'Campos inválidos',
+      required: 'Campos inválidos'
     },
     phone_email: {
-      required: 'Campos inválidos',
+      required: 'Campos inválidos'
     },
     password: {
-      required: 'Campos inválidos',
-      strength: {
-        default: 'Senha fraca',
-      }    
+      required: 'Campos inválidos'   
     },
     birthdate: {
-      required: 'Campos inválidos',
+      required: 'Campos inválidos'
     },
     gender: {
-      required: 'Campos inválidos',
+      required: 'Campos inválidos'
     },
   },
 
   colorWrong: 'red',
+
+  submitHandler: () => {
+    let mensagem = document.createElement('p')
+    mensagem.innerHTML = '<strong>campos validos</strong>'
+    adicionaMensagem.appendChild(mensagem)
+  },
 
   invalidFormCallback: function (errors) {
     let mensagem = document.createElement('p')
@@ -77,3 +78,4 @@ const valida = new JustValidate('.open-account', {
 window.onload = () => {
   valida();
 }
+

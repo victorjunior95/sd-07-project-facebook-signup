@@ -32,7 +32,45 @@
             <div class="right-content">
                 <h1>Abra uma conta</h1>
                 <p class="quick-easy">É rápido e fácil.</p>
-                <form action="">aaa</form>
+                <form action="" class="form-content">
+                    <div>
+                        <input type="text" placeholder="Nome" name="firstname" class="inputSmall">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Sobrenome" name="lastname" class="inputSmall">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Celular ou email" name="phone_email" class="inputLarge">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Nova senha" name="password" class="inputLarge">
+                    </div>
+                    <div>
+                        <label for="inputDate" id="label-birthdate">Data de nascimento</label>
+                        <input type="text" placeholder="dd/mm/aaaa" name="birthdate" id="inputDate" class="inputLarge">
+                    </div>
+                    <div>
+                        <label for="" id="label-gender">Gênero</label>
+                    </div>
+                    <div class="radio-grand-parents">
+                        <div class="radio-parents">
+                            <input type="radio" name="gender" id="female" value="Feminino">
+                            <label for="female" class="radio-text">Feminino</label>
+                        </div>
+                        <div class="radio-parents">
+                            <input type="radio" name="gender" id="male" value="Masculino">
+                            <label for="male" class="radio-text">Masculino</label>
+                        </div>
+                        <div class="radio-parents">
+                            <input type="radio" name="gender" id="person" value="Personalizado">
+                            <label for="person" class="radio-text">Personalizado</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" id="facebook-register">Cadastre-se</button>
+                    </div>
+
+                </form>
             </div>
         </div>
     </main>

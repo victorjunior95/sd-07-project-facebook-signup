@@ -81,19 +81,10 @@ registerButton.addEventListener('click', function (xis) {
     const lastname = document.getElementsByName('lastname')[0].value;
     const contactinf = document.getElementsByName('phone_email')[0].value;
     const bd = document.getElementsByName('birthdate')[0].value;
-    const paragraph = document.createElement('p');
-
-    paragraph.innerText = `Olá, ${name} ${lastname}`;
-    rightContent.appendChild(paragraph);
-    paragraph.innerText += `
+    rightContent.innerHTML =
+      `Olá, ${name} ${lastname}
     Contato: ${contactinf}
     Data de Nascimento: ${bd}
     Gênero: ${sexvar}`;
   }
 });
-
-
-/* rightContent.innerText = `Olá, ${name} ${lastname}
-Contato: ${contactinf}
-Aniversário: ${bd}
-Gênero: ${sexvar}`; */

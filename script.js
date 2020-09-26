@@ -5,6 +5,8 @@ const formContent = document.querySelector('.right-content form');
 const registerButton = document.querySelector('#facebook-register');
 const genderInputs = document.querySelectorAll('.gender input');
 const genderContent = document.getElementById('genderx');
+const rightContent = document.querySelectorAll('.right-content')[0];
+
 let sexvar = '';
 let bool = false;
 let counter = 0;
@@ -43,7 +45,7 @@ function sexValidate() {
   });
 
   sex[2].addEventListener('click', function () {
-    sexvar = 'Outros';
+    sexvar = 'Personalizado';
     bool = true;
     counter += 1;
     if (bool && counter <= 1) {
@@ -74,5 +76,15 @@ registerButton.addEventListener('click', function (xis) {
   if (count >= 1 || sexvar === '') {
     xis.preventDefault();
     formAlert();
+  } else {
+    const name = document.getElementsByName('firstname')[0].value;
+    const lastname = document.getElementsByName('lastname')[0].value;
+    const contactinf = document.getElementsByName('phone_email')[0].value;
+    const bd = document.getElementsByName('birthdate')[0].value;
+
+    rightContent.innerHTML = `Olá, ${name} ${lastname}
+    Contato: ${contactinf}
+    Aniversário: ${bd}
+    Gênero: ${sexvar}`;
   }
 });

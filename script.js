@@ -43,8 +43,7 @@ const validateForm = () => {
   const genderChoose = document.querySelector('[type=radio]:checked')
 
   if (textChecked && radioChecked) {
-    mainContent.innerHTML = `Olá, ${fisrtName.value}
-    ${lastName.value}
+    mainContent.innerHTML = `Olá, ${fisrtName.value} ${lastName.value}
     ${phoneEmail.value}
     ${birthDate.value}
     ${genderChoose.value}`;

@@ -32,19 +32,19 @@
         </section>
         <section class = "right-content">
             <h1>Abra uma conta</h1>
-            <div class = "quick-easy">É rápido e fácil</div>
-        <form class="form-register">
-            <div class="form-full-name">
-                <input id="first-name" type="text" name="firstname" placeholder="Nome">
-                <input id="last-name" type="text" name="lastname" placeholder="Sobrenome">
+            <p class = "quick-easy">É rápido e fácil.</p>
+        <form class="create-account">
+            <div class="full-name">
+                <input class = "fname" id="first-name" type="text" name="firstname" placeholder="Nome">
+                <input class = "lname" id="last-name" type="text" name="lastname" placeholder="Sobrenome">
             </div>
-            <input id="phone-email" type="text" name="phone_email" placeholder="Celular ou email">
-            <input type="password" name="password" id="password" placeholder="Nova senha">
-            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+            <input class = "contact" id="phone-email" type="text" name="phone_email" placeholder="Celular ou email">
+            <input class = "contact"  type="password" name="password" id="password" maxlength = "11" placeholder="Nova senha">
+            <label class = "born" for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input class = "date-born" type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
             <div>
-                <label id="label-gender">Gênero</label>
-                <div class="genders">
+                <label class = "gender" id="label-gender">Gênero</label>
+                <div class="setup-gender">
                     <input type="radio" name="gender" id="feminine" value="Feminino">
                     <label for="feminine">Feminino</label>
                     <input type="radio" name="gender" id="masculine" value="Masculino">
@@ -53,9 +53,9 @@
                     <label for="custom">Personalizado</label>
                 </div>
             </div>
-            <button id="facebook-register" type="submit">Cadastre-se</button>
-            <p id="submit-error"></p>
+            <button class = "button2" id="facebook-register" type="submit">Cadastre-se</button>
         </form>
+        </section>
     </main>
 
 

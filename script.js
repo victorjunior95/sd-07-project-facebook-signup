@@ -1,7 +1,7 @@
 function newContentRight(data) {
   if (data.length >= 4) {
     const parentRightContent = document.querySelectorAll('.main-content')[0];
-    const divOldRightContent  = document.querySelector('#right-content');
+    const divOldRightContent = document.querySelector('#right-content');
     parentRightContent.removeChild(divOldRightContent);
     const newDivRight = document.createElement('div');
     newDivRight.className = 'new-content-right';
@@ -35,9 +35,8 @@ const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', function () {
   const inputsFormRegister = document.querySelectorAll('.validation');
   const validationMsg = document.querySelector('#validation-msg');
-  let valuesCaptured = []
+  const valuesCaptured = []
   for (let index = 0; index < inputsFormRegister.length; index += 1) {
-    /* 
     if (inputsFormRegister[index].value === '') {
       validationMsg.innerText = 'Campos inválidos';
       validationMsg.style.color = 'red';
@@ -46,8 +45,6 @@ registerButton.addEventListener('click', function () {
        valuesCaptured.push(inputsFormRegister[index].value);
       }
     }
-    */
-  // console.log(inputsFormRegister[index])
   }
-  // newContentRight(valuesCaptured);
+  newContentRight(valuesCaptured)
 });

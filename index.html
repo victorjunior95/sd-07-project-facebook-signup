@@ -38,6 +38,7 @@
         <h1>Abra uma conta</h1>
         <h4 class="quick-easy">É rápido e fácil.</h4>
         <form action="" class="facebook-register">
+          <p class="alert"></p>
           <div class="main-name">
             <input type="text" name="firstname" placeholder="Nome" id="" required />
             <input type="text" name="lastname" placeholder="Sobrenome" id="" required />
@@ -57,7 +58,13 @@
             <input type="radio" id="other" name="gender" value="Personalizado" />
             <label for="other">Personalizado</label>
           </div>
-          <p class="alert"></p>
+          <input
+            type="text"
+            class="gender-custom"
+            name="gender-custom"
+            placeholder="Gênero (opcional)"
+          />
+          <br />
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>

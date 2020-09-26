@@ -1,5 +1,8 @@
 const buttonLogin = document.getElementById('button-login');
 const emailInput = document.querySelector('#user-email-phone');
+const genders = document.querySelector('.genders');
+const gendersInputs = genders.querySelectorAll('input');
+const inputGender = document.querySelector('.gender-custom');
 
 buttonLogin.addEventListener('click', () => {
   alert(`${emailInput.value}`);
@@ -10,8 +13,6 @@ const buttonSubmit = document.querySelector('#facebook-register');
 
 buttonSubmit.addEventListener('click', () => {
   const inputs = document.querySelectorAll('input');
-  const genders = document.querySelector('.genders');
-  const gendersInputs = genders.querySelectorAll('input');
 
   inputs.forEach((element) => {
     if (element.required === true) {

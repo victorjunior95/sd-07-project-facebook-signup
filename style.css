@@ -32,6 +32,11 @@
   justify-content: space-between;
 }
 
+.nomeDeUsuario{
+  display: flex;
+  justify-content: flex-start;
+}
+
 .right-content {
   width: 300px;
 }

@@ -83,7 +83,7 @@ a {
   width: 800px;
 }
 
-.facebook-slogan {  
+.facebook-slogan {
   margin: 0 auto;
   width: 545px;
 }
@@ -209,13 +209,13 @@ a {
   color: rgb(12, 47, 117);
 }
 
-.facebook-register {    
+.facebook-register {
   background-color: #3c8824;
   border: none;
-  border-radius: 4px;  
+  border-radius: 4px;
   box-shadow: 2px 2px 2px #204116;
   color: white;
   font-weight: 600;
-  height: 30px;  
+  height: 30px;
   width: 50%;
 }

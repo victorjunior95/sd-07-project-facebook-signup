@@ -8,26 +8,26 @@ function alertLogin() {
 }
 
 function registerAlert() {
-  const rightContentInputs = document.querySelector('#sign-up-container').querySelectorAll('input');
+  const rightContentInputs = document
+    .querySelector('#sign-up-container')
+    .querySelectorAll('input');
   const buttonRegister = document.querySelector('#facebook-register');
-  
   buttonRegister.addEventListener('click', function (event) {
     event.preventDefault();
     let refimputcheck = 0;
     rightContentInputs.forEach((item) => {
       const requiredContainer = document.querySelector('.required-alert');
-      
-      item.required = 'required';
 
+      item.required = 'required';
       if (item.value === '') {
         requiredContainer.innerText = 'Campos inválidos';
       } else {
-        refimputcheck +=1;
-        console.log(refimputcheck)
-      }      
+        refimputcheck += 1;
+        console.log(refimputcheck);
+      }
     });
     if (refimputcheck >= 8) {
-    newInformationUser();
+      newInformationUser();
     }
   });
 }
@@ -55,30 +55,28 @@ function createInputGender() {
   });
 }
 
-
 const newInformationUser = () => {
   const rightContainer = document.querySelector('.right-content');
-  const name = document.querySelector('.name') , 
-  lastname = document.querySelector('.lastname') ,
-  phone = document.querySelector('.phoneEmail'),
-  birthdate = document.querySelector('.birthdate');
+  const name = document.querySelector('.name'),
+    lastname = document.querySelector('.lastname'),
+    phone = document.querySelector('.phoneEmail'),
+    birthdate = document.querySelector('.birthdate');
   const newMemberContainer = document.createElement('div');
   const paragraphy = document.createElement('p');
-  
-    let gender = document.querySelector('input[name="gender"]:checked');
-    if (gender.value === "Personalizado") {
-      gender = document.querySelector('input[name="gender-custom"]');
-    
-    }
-    paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
+
+  let gender = document.querySelector('input[name="gender"]:checked');
+  if (gender.value === 'Personalizado') {
+    gender = document.querySelector('input[name="gender-custom"]');
+  }
+  paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
     ${phone.value}<br>
     ${birthdate.value}<br>
     ${gender.value}`;
-    newMemberContainer.appendChild(paragraphy);
-  
-    rightContainer.innerHTML = paragraphy.innerText;
-    console.log(name.value);
-}
+  newMemberContainer.appendChild(paragraphy);
+
+  rightContainer.innerHTML = paragraphy.innerText;
+  console.log(name.value);
+};
 
 window.onload = function () {
   alertLogin();

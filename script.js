@@ -54,10 +54,7 @@ const validateForm = () => {
   const mainContent = document.querySelector('#right-content');
 
   if (textChecked && radioChecked) {
-    mainContent.innerHTML = `Olá, ${fisrtName.value} ${lastName.value}
-    ${phoneEmail.value}
-    ${birthDate.value}
-    ${genderChoose.value}`;
+    mainContent.innerHTML = `Olá, ${fisrtName.value} ${lastName.value} ${phoneEmail.value} ${birthDate.value} ${genderChoose.value}`;
   } else {
     errorMessage.innerText = 'Campos inválidos';
   }

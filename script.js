@@ -18,7 +18,7 @@ btnLgn.addEventListener('click', function () {
 function showData() {
   const camposForm = regForm.getElementsByTagName('input');
   genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
-  rightContent.innerHTML = `Olá, ${camposForm[0].value}  ${camposForm[1].value}<br>  ${camposForm[2].value}<br> ${camposForm[4].value}<br> ${genderChecked.value}`
+  rightContent.innerHTML = `Olá, ${camposForm[0].value}  ${camposForm[1].value}<br>  ${camposForm[2].value}<br> ${camposForm[4].value}<br> ${genderChecked.value}`;
 }
 
 function preventSubmit() {
@@ -29,22 +29,26 @@ function preventSubmit() {
 }
 
 function inputCheck() {
+  let res 
   const camposForm = regForm.getElementsByTagName('input');
   for (let i = 0; i < camposForm.length; i += 1) {
     if (camposForm[i].value === '') {
       invalidMsg.innerHTML = 'Campos inválidos';
       preventSubmit();
-      return false;
+      res = false;
     }
   }
+  return res
 }
 
 function genderCheck() {
+  let res
   if (genderChecked === null) {
     invalidMsg.innerHTML = 'Escolha um gender';
     preventSubmit();
-    return false;
+    res = false;
   }
+  return res
 }
 
 function checkForm() {

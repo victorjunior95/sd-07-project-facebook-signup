@@ -68,8 +68,11 @@ header {
 }
 
 .form-group label {
-  color: white;
   padding-bottom: 5px;
+}
+
+.color-label {
+  color: white;
 }
 
 .main-content {
@@ -118,9 +121,9 @@ footer {
 
 .title {
   color: rgb(20, 20, 20);
-  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif ! important;
+  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif;
   font-size: 36px;
-  font-weight: 700 ! important;
+  font-weight: 700;
   letter-spacing: 400;
   margin-bottom: 0;
   margin-top: 0;
@@ -168,11 +171,11 @@ footer {
   display: none;
 }
 
-.conteiner-int-form {
+.container-int-form {
   width: 100%;
 }
 
-.conteiner-int-form input {
+.form-input {
   border: 1px solid;
   border-radius: 5px;
   color: rgb(255, 254, 254);
@@ -215,7 +218,7 @@ footer {
 }
 
 .gender-label {
-  color: rgb(95, 94, 94) ! important;
+  color: rgb(95, 94, 94);
   font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 10pt;
@@ -224,7 +227,7 @@ footer {
 }
 
 .radio-label-gender {
-  color: black ! important;
+  color: black;
   font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   margin-right: 10px;
@@ -246,12 +249,18 @@ footer {
 .btn-sucess {
   background: linear-gradient(180deg, rgba(101, 169, 82, 1) 0%, rgba(88, 138, 68, 1)
   100%);
-  border: none ! important;
+  border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: white;
   font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
-    Geneva, Verdana, sans-serif;
+  Geneva, Verdana, sans-serif;
   font-size: 15pt;
   font-weight: 700;
   margin-top: 10px;
+  padding: 10px;
   width: 40%;
+}
+
+.border-btn {
+  border: none;
 }

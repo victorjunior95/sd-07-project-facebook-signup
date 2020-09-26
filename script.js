@@ -16,23 +16,22 @@ const button = document.querySelector('#button-login');
   }
 
 validar();
+let mensagem = '';
+// Comparações
+if (userLogin === '') {
+mensagem += 'Campo nome é obrigatório!!!\n';
+}
+if (userPassord === '') {
+  mensagem += 'Campo e-mail é obrigatório!!!\n';
+}
 
-  let mensagem = '';
-  // Comparações
-  if (userLogin === '') {
-    mensagem += 'Campo nome é obrigatório!!!\n';
-  }
-  if (userPassord === '') {
-    mensagem += 'Campo e-mail é obrigatório!!!\n';
-  }
+if (mensagem !== '') {
+  alert('"Email ou telefone"');
+}
 
-  if (mensagem !== '') {
-    alert('"Email ou telefone"');
-  }
-
-  if (mensagem === '') {
-    alert('login efetuado com sucesso');
-  }
+if (mensagem === '') {
+  alert('login efetuado com sucesso');
+}
 
 validar();
 function validarNovoUsuario() {
@@ -48,6 +47,7 @@ function validarNovoUsuario() {
   }
   return listaForm;
 }
+
 validarNovoUsuario();
 button.addEventListener('click', function () {
   const userLogin = document.querySelector('#user-email-phone').value;

@@ -1,12 +1,9 @@
-const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 const rightContentInputs = document.querySelector('.right-content form');
 const genderFeminine = document.getElementById('gender-feminine');
 const genderMale = document.getElementById('gender-male');
 const genderCustom = document.getElementById('gender-custom');
 const buttonSignUp = document.querySelector('#facebook-register');
-
-
 
 function genero() {
   if (genderFeminine.checked) {
@@ -77,17 +74,12 @@ const removeTagChild = function () {
 
 const displayOtherGender = function () {
   document.getElementById('gender-custom-other').style.display = 'block'
-}
+};
 
 window.onload = function () {
-
   document.getElementById('button-login').addEventListener('click', () => alert(userEmailPhone.value));
-
   buttonSignUp.addEventListener('click', validaCadastro);
-
   genderFeminine.addEventListener('click', removeTagChild);
-
   genderMale.addEventListener('click', removeTagChild);
-
   genderCustom.addEventListener('change', displayOtherGender);
 };

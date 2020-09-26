@@ -8,7 +8,9 @@ const birthdate = document.querySelector('#birthdate');
 const rigthContent = document.querySelector('.right-content');
 const submit = document.querySelector('#facebook-register');
 const input = document.querySelectorAll('.formInput');
-const gender = document.getElementsByName('gender');
+const gender = document.querySelector('.genero');
+let valueGender = "";
+let preenchido = false;
 
 button.addEventListener('click', function () {
   const userEmail = document.getElementById('user-email-phone').value;
@@ -30,7 +32,7 @@ function criarmensagem() {
   const conteudoNovo = document.createTextNode(`Olá, ${name.value} ${lastName.value}
   ${email.value}
   ${birthdate.value}
-  ${gender.value}`);
+  ${valueGender}`);
   mensagem.appendChild(conteudoNovo);
   rigthContent.appendChild(mensagem);
 }
@@ -44,5 +46,9 @@ submit.addEventListener('click', function () {
       }
     }
   }
-  criarmensagem();
 });
+
+
+gender.addEventListener('click', function(event) {
+  valueGender = event.target.value;
+})

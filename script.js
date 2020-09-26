@@ -16,7 +16,6 @@ const newInformationUser = () => {
   const newMemberContainer = document.createElement('div');
   const paragraphy = document.createElement('p');
   const gender = document.querySelector('input[name="gender"]:checked');
-  
   paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
     ${phone.value}<br>
     ${birthdate.value}<br>

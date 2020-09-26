@@ -9,16 +9,16 @@ const radioGender = document.querySelector('#other');
 
 radioGender.addEventListener('change', () => {
   if (inputGender.style.display === '' || inputGender.style.display === 'none') {
-   inputGender.style.display = 'block';
+    inputGender.style.display = 'block';
   } else {
-   inputGender.style.display = 'none';
+    inputGender.style.display = 'none';
   }
 });
 
 
 function checkRadio() {
   if (inputGender.style.display === 'block') {
-   inputGender.style.display = 'none';
+    inputGender.style.display = 'none';
   }
 }
 

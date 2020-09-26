@@ -15,11 +15,8 @@ const newInformationUser = () => {
   const birthdate = document.querySelector('.birthdate');
   const newMemberContainer = document.createElement('div');
   const paragraphy = document.createElement('p');
-
-  let gender = document.querySelector('input[name="gender"]:checked');
-  if (gender.value === 'Personalizado') {
-    gender = document.querySelector('input[name="gender-custom"]');
-  }
+  const gender = document.querySelector('input[name="gender"]:checked');
+  
   paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
     ${phone.value}<br>
     ${birthdate.value}<br>

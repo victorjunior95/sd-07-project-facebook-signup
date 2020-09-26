@@ -21,11 +21,29 @@ authenticationButton.addEventListener('click', alertEmailOrPhone);
 
 buttonRadio.addEventListener('change', createCustom);
 
-const inputField = document.querySelectorAll('input');
 const btnEnv = document.querySelector('#facebook-register');
 const msg = document.createElement('p');
 const centralForm = document.querySelector('.central-form');
 centralForm.appendChild(msg);
+
+function welcome(textOla) {
+  const input = document.querySelectorAll('.right-content input');
+  for (let i = 0; i < input.length; i += 1) {
+    input[0].value = `Olá, ${textOla[0]}`;
+    input[3].value = '';
+  }
+}
+
+function adicionarText() {
+  const textOla = [];
+  const input = document.querySelectorAll('.right-content input');
+  for (let i = 0; i < input.length; i += 1) {
+    if (input[i].getAttribute('type') !== 'password') {
+      textOla.push(input[i].value);
+    }
+  }
+  welcome(textOla);
+}
 
 function checkedRadio() {
   const radio = document.querySelectorAll('.gender-radio');
@@ -38,13 +56,21 @@ function checkedRadio() {
   return 'false';
 }
 
-btnEnv.addEventListener('click', function (e) {
-  e.preventDefault();
+function checkedFields() {
+  const inputField = document.querySelectorAll('.right-content input');
   for (let i = 0; i < inputField.length; i += 1) {
     if (inputField[i].value === '') {
       msg.innerText = 'Campos inválidos';
-      break;
+      return 'false';
     }
   }
-  checkedRadio();
+  return 'true';
+}
+
+btnEnv.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (checkedRadio() === 'true' && checkedFields() === 'true') {
+    adicionarText();
+  }
 });

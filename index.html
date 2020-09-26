@@ -33,11 +33,15 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form>
                 <div class="full-name">
-                    <input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <div>
+                        <input type="text" name="firstname" placeholder="Nome">
+                    </div>
+                    <div>
+                        <input type="text" name="lastname" placeholder="Sobrenome">
+                    </div>
                 </div>
                 <di>
-                    <input class="teste" type="text" name="phone_email" placeholder="Celular ou email">
+                    <input type="text" name="phone_email" placeholder="Celular ou email">
                 </di>
                 <div>
                     <input type="password" name="password" placeholder="Nova senha">
@@ -45,6 +49,23 @@
                 <div>
                     <label id="label-birthdate">Data de nascimento</label>
                     <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                </div>
+                <div>
+                    <label id="label-gender">Gênero</label>
+                    <div class="gender">
+                        <div>
+                            <input type="radio" id="masculino" name="gender" value="masculino">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="feminino" name="gender" value="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="personalizado" name="gender" value="personalizado">
+                            <label for="personalizado">Personalizado</label>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

@@ -37,7 +37,12 @@ body {
   width: 300px;
 }
 
-.full-name {
+.full-name{
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-between;
 }

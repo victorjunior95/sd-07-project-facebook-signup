@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/justValidateTooltip.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Facebook Project</title>
 </head>
@@ -31,38 +32,38 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
+            <form class="js-form">
                 <div class="full-name">
                     <div>
-                        <input type="text" name="firstname" placeholder="Nome" required="required">
+                        <input type="text" name="firstname" placeholder="Nome" data-validate-field="name">
                     </div>
                     <div>
-                        <input type="text" name="lastname" placeholder="Sobrenome" required="required">
+                        <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field="last_name">
                     </div>
                 </div>
                 <di>
-                    <input type="text" name="phone_email" placeholder="Celular ou email" required="required">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email_phone">
                 </di>
                 <div>
-                    <input type="password" name="password" placeholder="Nova senha" required="required">
+                    <input type="password" name="password" placeholder="Nova senha" data-validate-field="password">
                 </div>
                 <div>
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required="required">
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
                 </div>
                 <div>
                     <label id="label-gender">Gênero</label>
                     <div class="gender">
                         <div>
-                            <input type="radio" id="feminino" name="gender" value="Feminino" required="required">
+                            <input type="radio" id="feminino" name="gender" value="Feminino" data-validate-field="radio">
                             <label for="feminino">Feminino</label>
                         </div>
                         <div>
-                            <input type="radio" id="masculino" name="gender" value="Masculino" required="required">
+                            <input type="radio" id="masculino" name="gender" value="Masculino" data-validate-field="radio">
                             <label for="masculino">Masculino</label>
                         </div>
                         <div>
-                            <input type="radio" id="personalizado" name="gender" value="Personalizado" required="required">
+                            <input type="radio" id="personalizado" name="gender" value="Personalizado" data-validate-field="radio">
                             <label for="personalizado">Personalizado</label>
                         </div>
                     </div>
@@ -73,6 +74,7 @@
             </form>
         </div>
     </section>
+    <script src="libs/just-validate.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ document.querySelector('#button-login').addEventListener('click', () => {
 });
 
 document.querySelector('#personalized').addEventListener('change', () => {
-  if(document.querySelector('#personalize-container input') === null) {
+  if (document.querySelector('#personalize-container input') === null) {
     const perGen = document.createElement('input');
     const container = document.querySelector('#personalize-container');
     perGen.name = 'gender-custom';
@@ -16,19 +16,19 @@ document.querySelector('#personalized').addEventListener('change', () => {
   }
 });
 
-removeMsgWarning = () => {
+function removeMsgWarning() {
   const container = document.querySelector('#invalidFields');
   const containerP = document.querySelector('#invalidFields p');
-  if( containerP !== null ){container.removeChild(containerP)};
-}
+  if(containerP !== null) { container.removeChild(containerP); }
+};
 
-createMsgWarning = () => {
-  if(document.querySelector('#invalidFields p') === null){
-  const paragraph = document.createElement('p');
-  paragraph.innerText = 'Campos inválidos' ;
-  paragraph.id = "msgError" ;
-  document.querySelector('#invalidFields').appendChild(paragraph);
-  };
+function createMsgWarning() {
+  if (document.querySelector('#invalidFields p') === null) {
+    const paragraph = document.createElement('p');
+    paragraph.innerText = 'Campos inválidos';
+    paragraph.id = 'msgError';
+    document.querySelector('#invalidFields').appendChild(paragraph);
+  }
 };
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
@@ -37,12 +37,11 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   let blankFields = false;
   for (let i = 0; i < formSub.length; i += 1) {
     const element = formSub[i];
-    if (element.value === "") {
+    if (element.value === '') {
       blankFields = true;
-    }
-    else if (document.querySelector('input[name="genre"]:checked') === null){
+    } else if (document.querySelector('input[name="genre"]:checked') === null){
       blankFields = true;
     };
-  };
-  if (blankFields === true) { createMsgWarning();};
+  }
+  if (blankFields === true) { createMsgWarning(); }
 });

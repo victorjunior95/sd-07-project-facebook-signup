@@ -6,7 +6,8 @@ btButtonLogin.addEventListener('click', function () {
 });
 
 const btnSubmit = document.getElementById('facebook-register');
-btnSubmit.addEventListener('click', function () {
+btnSubmit.addEventListener('click', function (event) {
+  event.preventDefault();
   const inpFirstname = document.getElementsByName('firstname')[0];
   const inpLastname = document.getElementsByName('lastname')[0];
   const inpPhoneEmail = document.getElementsByName('phone_email')[0];
@@ -35,11 +36,11 @@ btnSubmit.addEventListener('click', function () {
     innerIf = true;
   }
 
-  if ((inpGender[0].checked === false) && (inpGender[1].checked === false) && (inpGender[2].checked === false)) {
+  if (!(inpGender[0].checked) && !(inpGender[1].checked) && !(inpGender[2].checked)) {
     innerIf = true;
   }
 
   if (innerIf) {
-    pMensageInvalid.innerText = "Campos inválidos";
+    pMensageInvalid.innerText = 'Campos inválidos';
   }
-})
+});

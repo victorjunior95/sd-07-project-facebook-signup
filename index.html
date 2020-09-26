@@ -47,18 +47,51 @@
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form class="create-account" method="" action="">
           <div class="form-name">
+            <div class="first-last">
+              <input
+                class="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Nome"
+              />
+              <input
+                class="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+              />
+            </div>
+
             <input
-              id="firstname"
+              id="phone_email"
               type="text"
-              name="firstname"
-              placeholder="Nome"
+              name="phone_email"
+              placeholder="Celular ou email"
             />
+
             <input
-              id="lastname"
-              type="text"
-              name="lastname"
-              placeholder="Sobrenome"
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Nova senha"
             />
+
+            <label id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+
+            <label id="label-gender">Gênero</label>
+            <div class="gender">
+              <input id="feminino" class="feminino" type="radio" />
+              <label for="feminino" id="feminino">Feminino</label>
+
+              <input id="masculino" class="masculino" type="radio" />
+              <label for="masculino" id="masculino">Masculino</label>
+
+              <input id="personalizado" class="personalizado" type="radio" />
+              <label for="personalizado" id="personalizado"
+                >Personalizado</label
+              >
+            </div>
           </div>
         </form>
       </div>

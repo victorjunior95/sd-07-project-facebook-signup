@@ -3,9 +3,12 @@ body {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   height: 800px;
+=======
+>>>>>>> 892569e62f6029c964d5ad257d16ed47b8f76aef
   margin: 0;
   padding: 0;
 }
@@ -87,4 +90,14 @@ body {
   border-radius: 5px;
   height: 25px;
   margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  color: red;
+  font-size: 18px;
+  font-weight: 900;
 }

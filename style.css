@@ -8,9 +8,17 @@ body {
   justify-content: space-between;
 }
 
+.facebook-login {
+  display: flex;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.user {
+  width: 140px;
 }
 
 .form-control {

@@ -84,11 +84,10 @@ registerButton.addEventListener('click', function (xis) {
     const paragraph = document.createElement('p');
 
     paragraph.innerText = `Olá, ${name} ${lastname}`;
-    rightContent.innerHTML = '';
     rightContent.appendChild(paragraph);
     paragraph.innerText += `
     Contato: ${contactinf}
-    Aniversário: ${bd}
+    Data de Nascimento: ${bd}
     Gênero: ${sexvar}`;
   }
 });

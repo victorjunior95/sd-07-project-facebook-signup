@@ -1,6 +1,7 @@
 const loginButton = document.querySelector('#button-login');
 const loginInfo = document.querySelector('#user-email-phone');
 const genderCustom = document.querySelector('#Personalizado');
+// const subimitButton = document.querySelector('#facebook-register');
 
 loginButton.addEventListener('click', function () {
   alert(loginInfo.value);
@@ -15,6 +16,7 @@ genderCustom.addEventListener('click', () => {
   document.querySelector('#custom').appendChild(customInput);
 });
 
+/*
 const valida = new window.JustValidate('.open-account', {
   rules: {
     firstname: {
@@ -60,19 +62,27 @@ const valida = new window.JustValidate('.open-account', {
 
   colorWrong: 'red',
 
-  // submitHandler: () => {
-  //   const mensagem = document.createElement('p');
-  //   mensagem.innerHTML = '<strong>campos validos</strong>';
-  //   adicionaMensagem.appendChild(mensagem);
-  // },
+  submitHandler: () => {
+    const mensagem = document.createElement('p');
+    mensagem.innerHTML = '<strong>campos validos</strong>';
+    adicionaMensagem.appendChild(mensagem);
+  },
 
-  // invalidFormCallback: (errors) => {
-  //   const mensagem = document.createElement('p');
-  //   mensagem.innerHTML = `<strong>Campos inválidos</strong> ${errors}`;
-  //   adicionaMensagem.appendChild(mensagem);
-  // },
+  invalidFormCallback: (errors) => {
+    const mensagem = document.createElement('p');
+    mensagem.innerHTML = `<strong>Campos inválidos</strong> ${errors}`;
+    adicionaMensagem.appendChild(mensagem);
+  },
 });
 
 window.onload = () => {
   valida();
 };
+*/
+
+/*
+subimitButton.addEventListener('click', function () {
+  const valoresInput = document.querySelectorAll('input');
+  if (index = 0; )
+});
+*/

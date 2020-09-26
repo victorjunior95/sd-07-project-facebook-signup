@@ -75,7 +75,7 @@ function createInputGender() {
 }
 
 const inputDate = document.querySelector('#date');
-inputDate.DatePickerX.init({ format:'yyyy/MM/dd' });
+inputDate.DatePickerX.init({ format: 'yyyy/MM/dd' });
 
 window.onload = function () {
   alertLogin();

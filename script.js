@@ -62,7 +62,7 @@ function required(event) {
 function custom() {
   const customOption = document.createElement('input');
   customOption.name = 'gender-custom';
-  customOption.placeholder = 'Gênero (opcional)';
+  customOption.placeholder = 'Gênero(opcional)';
   if (document.querySelector('.personalizado').classList.contains('selected')) {
     document.querySelector('.gender-radio').appendChild(customOption);
   }

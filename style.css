@@ -54,5 +54,5 @@ form > input {
 
 .all-genders {
   display: flex;
-  margin: auto 0.5em;
+  margin-top: 15px;
 }

@@ -41,11 +41,14 @@ submit.addEventListener('click', function () {
   for (let i = 0; i < input.length; i += 1) {
     if (input[i].type === 'text') {
       if (input[i].value === '') {
-        alert('Campos inválidos');
+        const elemento = document.querySelector('.forms-rigth');
+        const aviso = document.createElement('h3');
+        aviso.innerText = 'Campos inválidos';
+        elemento.appendChild(aviso);
         break;
       }
     }
-  }
+  } 
 });
 
 

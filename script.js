@@ -1,31 +1,78 @@
 const buttonLogin = document.getElementById('button-login');
 const userData = document.getElementById('user-email-phone');
-const fname = document.getElementsByName('firstname')[0].value;
-const lname = document.getElementsByName('lastname')[0].value;
-const contact = document.getElementsByName('phone_email')[0].value;
-const pass = document.getElementsByName('password')[0].value;
-const data = document.getElementsByName('birthdate')[0].value;
-const sex = document.getElementsByName('gender');
-let sexvar = "";
+const formInput = document.querySelectorAll('.right-content form input');
+const formContent = document.querySelector('.right-content form');
+const registerButton = document.querySelector('#facebook-register');
+const genderInputs = document.querySelectorAll('.gender input');
+const genderContent = document.getElementById('genderx');
+let sexvar = '';
+let bool = false;
+let counter = 0;
 
-sex[0].addEventListener('click', function () {
-  sexvar = "Feminino";
-})
+function removeChild() {
+  genderContent.removeChild(genderContent.lastChild);
+}
 
-sex[1].addEventListener("click", function () {
-  sexvar = "Masculino";
-})
+function createElementOptionalSex() {
+  const div = document.createElement('div');
+  const input = document.createElement('input');
+  input.id = 'gender-custom';
+  input.placeholder = 'Gênero (opcional)';
+  div.appendChild(input);
+  genderContent.appendChild(div);
+}
 
-sex[2].addEventListener("click", function () {
-  sexvar = "Outros";
-})
+function sexValidate() {
+  const sex = genderInputs;
+  sex[0].addEventListener('click', function () {
+    sexvar = 'Feminino';
+    if (bool) {
+      counter = 0;
+      bool = false;
+      removeChild();
+    }
+  });
+
+  sex[1].addEventListener('click', function () {
+    sexvar = 'Masculino';
+    if (bool) {
+      counter = 0;
+      bool = false;
+      removeChild();
+    }
+  });
+
+  sex[2].addEventListener('click', function () {
+    sexvar = 'Outros';
+    bool = true;
+    counter += 1;
+    if (bool && counter <= 1) {
+      createElementOptionalSex();
+    }
+  });
+}
+
+sexValidate();
 
 buttonLogin.addEventListener('click', function () {
-  if (condition) {
-
-  } else {
-
-  }
-
   alert(userData.value);
+});
+
+function formAlert() {
+  const alert = document.createElement('p');
+  alert.innerText = 'Campos inválidos';
+  formContent.appendChild(alert);
+}
+
+registerButton.addEventListener('click', function (xis) {
+  let count = 0;
+  formInput.forEach((key) => {
+    if (key.value === '') {
+      count += 1;
+    }
+  });
+  if (count >= 1 || sexvar === '') {
+    xis.preventDefault();
+    formAlert();
+  }
 });

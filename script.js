@@ -1,15 +1,16 @@
 const buttonLogin = document.querySelector('#button-login');
 const emailOrPhone = document.querySelector('#user-email-phone');
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('.print');
 const buttonRegister = document.querySelector('#facebook-register');
-const formRegister = document.querySelector('#form-register');
+const formRegister = document.querySelector('.main-content form');
 const customGender = document.querySelector('#personalizado');
 const gender = document.querySelector('#generos');
+
 const divRight = document.querySelector('.right-content');
 const name = document.querySelector('#name');
 const lastname = document.querySelector('#lastname');
 const phoneOrEmail = document.querySelector('#login');
-const birthdate = document.querySelector('input[type="date"]');
+const birthdate = document.querySelector('#aniversario');
 const genderSelected = document.getElementsByName('gender');
 
 // alert('funcionou);
@@ -27,12 +28,6 @@ function selectedGender() {
   return genderChosen;
 }
 
-function formatDate() {
-  const correctBirthdate = birthdate.value.split('-');
-  const inputBirthdate = `${correctBirthdate[2]}/${correctBirthdate[1]}/${correctBirthdate[0]}`;
-  return inputBirthdate;
-}
-
 function createInputForGender() {
   const newInput = document.createElement('input');
   newInput.setAttribute('type', 'text');
@@ -44,26 +39,25 @@ function createInputForGender() {
 
 function validate() {
   event.preventDefault();
-  const message = document.createElement('h1');
+  const genero = selectedGender();
+  const message = document.createElement('p');
+  message.innerText = '';
+  let campoInvalido = 0;
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       message.innerText = 'Campos inválidos';
+      campoInvalido = 1;
     }
   }
-  formRegister.appendChild(message);
-  return true;
-}
 
-function includeData() {
-  const emptyInputs = validate();
-  const nascimento = formatDate();
-  const genero = selectedGender();
-  if (!emptyInputs) {
+  if (campoInvalido !== 1) {
     divRight.innerHTML = `Olá, ${name.value} ${lastname.value}!
-    ${phoneOrEmail.value} ${nascimento} ${genero}`;
+    ${phoneOrEmail.value} ${birthdate.value} ${genero}`;
+  } else {
+    formRegister.appendChild(message);
   }
 }
 
-buttonRegister.addEventListener('click', includeData);
+buttonRegister.addEventListener('click', validate);
 
 customGender.addEventListener('click', createInputForGender);

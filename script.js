@@ -6,4 +6,5 @@ button.addEventListener('click', function () {
 const buttonRegister = document.querySelector('facebook-register');
 buttonRegister.addEventListener('click', function () {
   alert('Campos inválidos');
+  //alert do registro
 });

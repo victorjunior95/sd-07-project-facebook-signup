@@ -35,35 +35,35 @@
             <form class="js-form">
                 <div class="full-name">
                     <div>
-                        <input type="text" name="firstname" placeholder="Nome" data-validate-field="name">
+                        <input type="text" name="firstname" placeholder="Nome" data-validate-field="name" required oninvalid="this.setCustomValidity('Campos inválidos')">
                     </div>
                     <div>
-                        <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field="last_name">
+                        <input type="text" name="lastname" placeholder="Sobrenome" data-validate-field="last_name" required oninvalid="this.setCustomValidity('Campos inválidos')">
                     </div>
                 </div>
                 <di>
-                    <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email_phone">
+                    <input type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email_phone" required oninvalid="this.setCustomValidity('Campos inválidos')">
                 </di>
                 <div>
-                    <input type="password" name="password" placeholder="Nova senha" data-validate-field="password">
+                    <input type="password" name="password" placeholder="Nova senha" data-validate-field="password" required oninvalid="this.setCustomValidity('Campos inválidos')">
                 </div>
                 <div>
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate" required oninvalid="this.setCustomValidity('Campos inválidos')">
                 </div>
                 <div class="gender">
                     <label id="label-gender">Gênero</label>
                     <div class="radio">
                         <div>
-                            <input type="radio" id="feminino" name="gender" value="Feminino" data-validate-field="radio">
+                            <input type="radio" id="feminino" name="gender" value="Feminino" data-validate-field="radio" required oninvalid="this.setCustomValidity('Campos inválidos')">
                             <label for="feminino">Feminino</label>
                         </div>
                         <div>
-                            <input type="radio" id="masculino" name="gender" value="Masculino" data-validate-field="radio">
+                            <input type="radio" id="masculino" name="gender" value="Masculino" data-validate-field="radio" required oninvalid="this.setCustomValidity('Campos inválidos')">
                             <label for="masculino">Masculino</label>
                         </div>
                         <div class="personalizado">
-                            <input type="radio" id="personalizado" name="gender" value="Personalizado" data-validate-field="radio">
+                            <input type="radio" id="personalizado" name="gender" value="Personalizado" data-validate-field="radio" required oninvalid="this.setCustomValidity('Campos inválidos')">
                             <label for="personalizado">Personalizado</label>
                         </div>
                     </div>

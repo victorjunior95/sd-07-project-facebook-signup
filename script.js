@@ -16,6 +16,16 @@ buttonSignUp.addEventListener('click', (event) => {
 
     }
   });
+     if (document.querySelector('#invalid-camp').textContent === ''){
+       const name = document.ga
+
+     }
+
+
+
+  //   const validContent = document.querySelector('.right-content');
+  //   validContent.remove();
+  // }
 })
 
 const inputCustom = document.querySelector('#Personalizado');
@@ -27,3 +37,4 @@ inputCustom.addEventListener('click', () => {
   document.getElementById('label-gender').appendChild(genderCustom);
 
 })
+

@@ -36,23 +36,24 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <span class="quick-easy">É rápido e fácil.</span>
-      <form action="" enctype="multipart/form-data">
+      <form class="register-form" action="" enctype="multipart/form-data">
+        <p style="display: none;">Campos inválidos</p>
         <section class="first-last-name">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input class="register-input" type="text" name="firstname" placeholder="Nome">
+          <input class="register-input" type="text" name="lastname" placeholder="Sobrenome">
         </section>
 
-        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input class="register-input"  type="text" name="phone_email" placeholder="Celular ou email">
 
-        <input type="password" name="password" placeholder="Nova senha">
+        <input class="register-input" type="password" name="password" placeholder="Nova senha">
 
         <div>
-          <input name="password" required="required" placeholder="Nova senha" type="password">
+          <input class="register-input" name="password" required="required" placeholder="Nova senha" type="password">
         </div>
 
         <div>
           <label id="label-birthdate">Data de nascimento</label><br>
-          <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
+          <input class="register-input" name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
         </div>
 
         <label id="label-gender">Gênero</label>

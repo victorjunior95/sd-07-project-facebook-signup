@@ -13,3 +13,16 @@ document.querySelector('#custom-gender').addEventListener('click', () => {
   customGender.placeholder = 'Gênero (opcional)';
   document.querySelector('.all-genders').appendChild(customGender);
 });
+
+function checkUserInputs() {
+  const inputs = document.querySelectorAll('.register-input');
+  // const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+  inputs.forEach((item) => {
+    if (item.length === 0) {
+      document.querySelector('p').style.display = 'block';
+    }
+  });
+}
+
+document.querySelector('#facebook-register').addEventListener('click', checkUserInputs);

@@ -253,6 +253,7 @@ Caso você faça o _download_ de bibliotecas externas, utilize o diretório _lib
   Pontos importantes:
   * Um rótulo abaixo do campo nova senha com o id label-gender e o texto "Gênero"
   * O campo deve ser formado por três `radio buttons` com as opções "Feminino", "Masculino" e "Personalizado"
+  * Os `radio buttons` devem ter o atributo name com o valor "gender"
   * Posicione os radio buttons para ficar na mesma linha
   * Posicione os radio buttons para ficar abaixo do label
 

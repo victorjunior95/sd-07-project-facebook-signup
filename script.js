@@ -32,10 +32,30 @@ botaoLogin.addEventListener('click', function () {
 });
 
 
-cadastro.addEventListener('click', function () {
-  for (let index = 0; index < iten.length; index += 1) {
-    if (iten[index].value === '') {
-      invalid.style.display = 'block';
+
+const registre = document.getElementById('facebook-register');
+
+registre.addEventListener('click', function () {
+  const firstname = document.getElementById('firstname');
+  const lastname = document.getElementById('lastname');
+  const password = document.getElementById('password');
+  const birthdate = document.getElementById('birthdate');
+  const form = document.querySelector('.create-account-form');
+  const right = document.querySelector('.right-content');
+  const email = document.getElementById('phone_email');
+  const gender = document.getElementsByName('gender');
+  let index = 0;
+  for (let i = 0; i < gender.length; i += 1) {
+    if (gender[i].checked) {
+      index = i;
     }
+  }
+
+  if (firstname.value === '' || lastname.value === '' || password.value === '' || birthdate.value === '') {
+    const novo = document.createElement('h3');
+    novo.innerText = 'Campos inválidos';
+    form.appendChild(novo);
+  } else {
+    right.innerHTML = `Olá, ${firstname.value} ${lastname.value}. Email/telefone: ${email.value} DDN: ${birthdate.value}. Gênero: ${gender[index].value}.`;
   }
 });

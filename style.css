@@ -5,8 +5,8 @@ body {
 }
 
 .container-fluid {
-  background: linear-gradient( 180deg,  rgba(9, 9, 121, 1) 0%,  white 0%,
-    rgba(148, 147, 171, 1) 100%);
+  background: linear-gradient(180deg, rgba(9, 9, 121, 1) 0%, white 0%,
+  rgba(148, 147, 171, 1) 100%);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,8 @@ footer {
   border: 1px solid;
   border-radius: 5px;
   color: rgb(255, 254, 254);
-  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode, Geneva, Verdana,
+    sans-serif;
   font-weight: 500;
   margin-bottom: 10px;
   padding: 10px;
@@ -197,7 +198,7 @@ footer {
 
 .birthday label {
   color: rgb(95, 94, 94);
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 10pt;
   font-weight: 700;
@@ -207,7 +208,7 @@ footer {
   background-color: rgb(114, 114, 114);
   border-radius: 50%;
   color: white;
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   text-align: center;
   width: 20px;
@@ -215,7 +216,7 @@ footer {
 
 .gender-label {
   color: rgb(95, 94, 94) ! important;
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 10pt;
   font-weight: 700;
@@ -224,14 +225,14 @@ footer {
 
 .radio-label-gender {
   color: black ! important;
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   margin-right: 10px;
 }
 
 .polices {
   color: gray;
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 10pt;
   width: 65%;
@@ -243,11 +244,11 @@ footer {
 }
 
 .btn-sucess {
-  background: linear-gradient(180deg,  rgba(101, 169, 82, 1) 0%,  rgba(88, 138, 68, 1)
-    100% );
+  background: linear-gradient(180deg, rgba(101, 169, 82, 1) 0%, rgba(88, 138, 68, 1)
+  100%);
   border: none ! important;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 15pt;
   font-weight: 700;

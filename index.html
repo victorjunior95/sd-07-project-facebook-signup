@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang='en-us'>
+<html lang='parte'>
 
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
+    <link rel="stylesheet" href="libs/DatePickerX.min.css">
     <link rel='stylesheet' href='style.css'>
 </head>
 
@@ -49,7 +50,7 @@
                 </div>
                 <div class='line data'>
                     <label id='label-birthdate'>Data de nascimento</label>
-                    <input type='date' name='birthdate' placeholder='dd/mm/aaaa' value='2012-10-01'>
+                    <input type='text' id='data' name='birthdate' placeholder='dd/mm/aaaa'>
                 </div>
                 <div class='line gender-content' id="genderx">
                     <label id='label-gender' for="gender">Gênero</label>
@@ -66,7 +67,9 @@
             </form>
         </section>
     </section>
+    <script src="libs/DatePickerX.min.js"></script>
     <script src='script.js'></script>
+    
 </body>
 
 </html>

@@ -1,22 +1,7 @@
-const button = document.querySelector('#button-login');
-
-<<<<<<< HEAD
-  let mensagem = '';
-  // Comparações
-  if (userLogin === '') {
-    mensagem += 'Campo nome é obrigatório!!!\n';
-  }
-  if (userPassord === '') {
-    mensagem += 'Campo e-mail é obrigatório!!!\n';
-  }
-  if (mensagem !== '') {
-    alert('"Email ou telefone"');
-  }
-  if (mensagem === '') {
-    alert('login efetuado com sucesso');
-  }
-}
-validar();
+function validar() {
+  // Leitura dos dados
+  const userLogin = document.getElementById('user-email-phone').value;
+  const userPassord = document.getElementById('user-password').value;
 
   let mensagem = '';
   // Comparações
@@ -50,9 +35,3 @@ function validarNovoUsuario() {
   return listaForm;
 }
 validarNovoUsuario();
-=======
-button.addEventListener('click', function () {
-  const userLogin = document.querySelector('#user-email-phone').value;
-  alert(userLogin);
-});
->>>>>>> cad8b2884ff3b9e7e8f187c4ae048e4ce920cdfa

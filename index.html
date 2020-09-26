@@ -37,7 +37,8 @@
                 <p class="quick-easy">É rápido e fácil.</p>
             </div>
             <form action="">
-                <div class='line'><input type="text" name="firstname" placeholder="Nome" required>
+                <div class='line'>
+                    <input type="text" name="firstname" placeholder="Nome" required>
                     <input type="text" name="lastname" placeholder="Sobrenome" required>
                 </div>
                 <div class='line'>
@@ -49,13 +50,16 @@
                 <div class='line data'>
                     <label id='label-birthdate'>Data de nascimento</label>
                     <input type='date' name='birthdate' placeholder='dd/mm/aaaa' required>
-                     </div>
+                </div>
                 <div class='line gender-content'>
                     <label id='label-gender' for="gender">Gênero</label>
                     <div class='line gender'>
-                        <label for="Feminino"><input type="radio" id='Feminino' name='gender' value='Feminino' required>Masculino</label>
-                        <label for="Masculino"><input type="radio" id='Masculino' name='gender' value='Masculino' required>Feminino</label>
-                        <label for="Personalizado"><input type="radio" id='Personalizado' name='gender' value='Personalizado' required>Personalizado</label>
+                        <label for="Feminino"><input type="radio" id='Feminino' name='gender' value='Feminino'
+                                required>Feminino</label>
+                        <label for="Masculino"><input type="radio" id='Masculino' name='gender' value='Masculino'
+                                required>Masculino</label>
+                        <label for="Personalizado"><input type="radio" id='Personalizado' name='gender'
+                                value='Personalizado' required>Personalizado</label>
                     </div>
                 </div>
                 <button type='submit' id='facebook-register'>Cadastre-se</button>
@@ -64,4 +68,5 @@
     </section>
     <script src='script.js'></script>
 </body>
+
 </html>

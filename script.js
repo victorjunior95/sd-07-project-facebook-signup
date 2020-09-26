@@ -74,7 +74,5 @@ registerButton.addEventListener('click', function (xis) {
   if (count >= 1 || sexvar === '') {
     xis.preventDefault();
     formAlert();
-  }else{
-
   }
 });

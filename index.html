@@ -34,28 +34,28 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
+            <form class="form-register">
                 <div class="name">
-                    <input type="text" name="firstname" id="" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input class='check' type="text" name="firstname" id="" placeholder="Nome" data-validate-field="name">
+                    <input class='check' type="text" name="lastname"  placeholder="Sobrenome" data-validate-field="last-name">
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" id="" placeholder="Nova senha">
+                <input class='check' type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email">
+                <input class='check' type="password" name="password" id="" placeholder="Nova senha" data-validate-field="password">
                 <div class="date">
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input type="text" placeholder="dd/mm/aaaa" name="birthdate">
+                    <input class='check' type="text" placeholder="dd/mm/aaaa"  name="birthdate" data-validate-field="date" >
                 </div>
                 <div class="gender">
                     <label id="label-gender" for="">Gênero</label>
                     <div class="gender-radio">
                         <label>
-                            <input type="radio" name="gender" value="Feminino">
+                            <input  class="radio-button"type="radio" name="gender" value="Feminino">
                             Feminino</label>
                         <label>
-                            <input type="radio" name="gender" value="Masculino">
+                            <input type="radio" class="radio-button" name="gender" value="Masculino">
                             Masculino</label>
                         <label>
-                            <input type="radio" name="gender" value="Personalizado">
+                            <input type="radio" class="radio-button" name="gender" value="Personalizado">
                             Personalizado</label>
                     </div>
                 </div>

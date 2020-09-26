@@ -76,7 +76,16 @@ a {
 }
 
 .left-content {
+  color: rgb(3, 37, 110);
+  font-size: 25px;
+  font-weight: 600;
+  padding-right: 50px;
   width: 800px;
+}
+
+.facebook-slogan {  
+  margin: 0 auto;
+  width: 545px;
 }
 
 .right-content {
@@ -86,17 +95,18 @@ a {
   width: 300px;
 }
 
-.right-content-super .titulo , .quick-easy {
+.right-content-super .titulo,
+.quick-easy {
   color: rgb(5, 23, 63);
   margin: 0;
 }
 
-.right-content-super .titulo {
+.right-content-super .titulo1 {
   margin-top: 24px;
 }
 
 .right-content-super .quick-easy {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .container-register {
@@ -181,11 +191,31 @@ a {
   margin: 5px 0;
 }
 
-.termos-politicas {
+.termos-politicas,
+.sugestao {
   font-size: 11px;
 }
 
 .termos-politicas span {
   color: rgb(66, 103, 178);
   font-weight: 600;
+}
+
+.sugestao {
+  font-weight: 600;
+}
+
+.sugestao span {
+  color: rgb(12, 47, 117);
+}
+
+.facebook-register {    
+  background-color: #3c8824;
+  border: none;
+  border-radius: 4px;  
+  box-shadow: 2px 2px 2px #204116;
+  color: white;
+  font-weight: 600;
+  height: 30px;  
+  width: 50%;
 }

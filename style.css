@@ -14,12 +14,7 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: rgb(66, 103, 178);
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 2%;
-}
+
 
 .facebook-login {
   color: white;
@@ -86,7 +81,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  max-width: 1336px;
+  
 }
 
 .quick-easy {

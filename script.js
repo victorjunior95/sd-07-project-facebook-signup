@@ -1,4 +1,6 @@
 const button = document.querySelector('#button-login');
+
 button.addEventListener('click', function () {
-  alert('Email ou telefone');
+const userLogin=document.querySelector('#user-email-phone').value;
+alert(userLogin);
 });

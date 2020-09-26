@@ -34,7 +34,7 @@ inputCustom.addEventListener('click', () => {
   genderCustom.name = 'gender-custom';
   genderCustom.placeholder = 'Gênero (opcional)';
   genderCustom.type = 'text';
-  document.getElementById('label-gender').appendChild(genderCustom);
+  document.getElementById('custom-gender').appendChild(genderCustom);
 
 })
 

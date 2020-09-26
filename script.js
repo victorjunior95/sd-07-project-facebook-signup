@@ -1,11 +1,11 @@
 
-document.querySelector('#button-login').addEventListener('click', _ => {
+document.querySelector('#button-login').addEventListener('click', () => {
   const getUser = document.querySelector('#user-email-phone').value;
   alert(getUser);
 
 });
 
-document.querySelector('#personalized').addEventListener('change', _ => {
+document.querySelector('#personalized').addEventListener('change', () => {
 
   if( document.querySelector('#personalize-container input') === null){
   const perGen = document.createElement('input');
@@ -19,7 +19,7 @@ document.querySelector('#personalized').addEventListener('change', _ => {
 
 });
 
-document.querySelector('#facebook-register').addEventListener('click', _ => {
+document.querySelector('#facebook-register').addEventListener('click', () => {
 
   removeMsgWarning();
 
@@ -47,12 +47,12 @@ document.querySelector('#facebook-register').addEventListener('click', _ => {
 
 });
 
-removeMsgWarning = _ => {
+removeMsgWarning = () => {
 const container = document.querySelector('#invalidFields');
 const containerP = document.querySelector('#invalidFields p');
 if( containerP !== null ){container.removeChild(containerP)};
 }
-createMsgWarning = _ => {
+createMsgWarning = () => {
   if(document.querySelector('#invalidFields p') === null){
   const paragraph = document.createElement('p');
   paragraph.innerText = 'Campos inválidos' ;

@@ -31,14 +31,14 @@ function welcome(fields) {
   rightContent.innerHTML = `<p>Olá, ${fields.firstname} ${fields.lastname}</p>`;
   rightContent.innerHTML += `<p>${fields.phoneEmail}</p>`;
   rightContent.innerHTML += `<p>${fields.birthdate}</p>`;
-  rightContent.innerHTML += `<p>${fields.gender}</p>`;
+  rightContent.innerHTML += `<p>${fields.radioSelected}</p>`;
 }
 
 function checkedRadio() {
   const radio = document.querySelectorAll('.gender-radio');
   for (let i = 0; i < radio.length; i += 1) {
     if (radio[i].checked === true) {
-      return 'true';
+      return radio[i].value;
     }
   }
   msg.innerHTML = 'Campos inválidos';
@@ -63,9 +63,9 @@ btnEnv.addEventListener('click', function (e) {
   const lastname = document.querySelector('.lastname').value;
   const phoneEmail = document.querySelector('.phone_email').value;
   const birthdate = document.querySelector('.birthdate').value;
-  const gender = document.querySelector('.gender-radio').value;
+  const radioSelected = checkedRadio();
 
-  if (checkedRadio() === 'true' && checkedFields() === 'true') {
-    welcome({ firstname, lastname, phoneEmail, birthdate, gender });
+  if (radioSelected !== '' && checkedFields() === 'true') {
+    welcome({ firstname, lastname, phoneEmail, birthdate, radioSelected });
   }
 });

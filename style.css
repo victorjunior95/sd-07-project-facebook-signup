@@ -15,54 +15,109 @@ body , p {
 
 .left-bar {
   display: flex;
-  width: 50%;
+  width: 55%;
 }
 
 .facebook-logo {
   align-self: center;
   float: left;
+  justify-content: flex-start;
 }
 
 .facebook-login {
   display: flex;
-  width: 50%;
+  width: 45%;
 }
 
 .form-group {
-  align-items: flex-end;
   display: flex;
   flex-direction: column;
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 15px 2px;
-}
-
-.form-group td label {
+.label1 {
   color: white;
+  float: left;
   font-size: 10px;
   font-weight: 800;
+  margin-top: 10px;
 }
 
-.form-group td input {
+.input1 {
+  align-self: flex-end;
   border: 1px solid black;
+  float: left;
   height: 15px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.label2 {
+  color: white;
+  float: right;
+  font-size: 10px;
+  font-weight: 800;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.input2 {
+  align-self: flex-end;
+  border: 1px solid black;
+  float: right;
+  height: 15px;
+  margin-left: 77px;
+  margin-top: 30px;
+  position: absolute;
   width: 100px;
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
+
 }
 
 button {
   background-color: rgb(66, 103, 178);
   color: white;
+  margin-left: 160px;
 }
 
-.forgotten-account {
-  align-self: flex-end;
-  color: rgb(190, 190, 190);
-  font-size: 10px;
-  margin-left: 50px;
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  height: 399px;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-content {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.setup-slogan {
+  color: rgb(23, 35, 60);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  justify-content: flex-start;
+  line-height: 1.2rem;
+  margin-left: 60%;
+  margin-top: 3%;
+}
+
+.set-image {
+  justify-content: center;
+  margin-left: 55%;
+  margin-top: 2%;
+  width: 350px;
+}
+
+.right-content {
+  background-color: aliceblue;
+  width: 300px;
 }

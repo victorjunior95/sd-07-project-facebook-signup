@@ -214,8 +214,8 @@ a {
 .facebook-register-msnError {
   align-items: center;
   display: flex;
-  justify-content: space-between;
   height: 50px;
+  justify-content: space-between;  
 }
 
 .facebook-register {
@@ -233,7 +233,7 @@ a {
 .container-cadastro-feito {
   align-items: center;
   color: blue;
-  display: flex;  
+  display: flex;
   font-size: 30px;
   min-height: 545px;
 }

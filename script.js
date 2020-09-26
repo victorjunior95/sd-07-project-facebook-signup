@@ -43,6 +43,7 @@ function inputCheck() {
 
 function genderCheck() {
   let res;
+  genderChecked = genderContainer.querySelector('input[name="gender"]:checked');
   if (genderChecked === null) {
     invalidMsg.innerHTML = 'Escolha um gender';
     preventSubmit();

@@ -1,26 +1,26 @@
-.top-bar{
-  background-color:rgb(66, 103, 178);
+.top-bar {
+  background-color: rgb(66, 103, 178);
   display: flex;
 }
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-control{
+.form-control {
   align-self: flex-end;
 }
 
-.main-content{
+.main-content {
   flex-direction: row;
   justify-content: space-between;
 }
 
-.left-content{
+.left-content {
   width: 800px;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }

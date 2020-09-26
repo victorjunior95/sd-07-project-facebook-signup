@@ -9,8 +9,7 @@ const rigthContent = document.querySelector('.right-content');
 const submit = document.querySelector('#facebook-register');
 const input = document.querySelectorAll('.formInput');
 const gender = document.querySelector('.genero');
-let valueGender = "";
-let preenchido = false;
+let valueGender = '';
 
 button.addEventListener('click', function () {
   const userEmail = document.getElementById('user-email-phone').value;
@@ -47,11 +46,12 @@ submit.addEventListener('click', function () {
         elemento.appendChild(aviso);
         break;
       }
+    } else {
+      criarmensagem();
     }
-  } 
+  }
 });
 
-
-gender.addEventListener('click', function(event) {
+gender.addEventListener('click', function (event) {
   valueGender = event.target.value;
-})
+});

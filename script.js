@@ -1,9 +1,3 @@
-const buttonLogin = document.querySelector('#button-login');
-buttonLogin.addEventListener('click', function () {
-  const campoEmail = document.querySelector('#user-email-phone').value;
-  alert(campoEmail);
-});
-
 function verifyFormRegisterInputs() {
   const formRegisterInputs = document.getElementsByClassName('required');
   for (let input = 0; input <= formRegisterInputs.length - 1; input += 1) {
@@ -43,6 +37,22 @@ formRegister.addEventListener('submit', (event) => {
   event.preventDefault();
   displayUserData();
   return false;
+});
+
+document.addEventListener('click', function (event) {
+  const genderCustomText = document.getElementById('gender-custom');
+  if (event.target.classList.contains('custom')) {
+    genderCustomText.style = '';
+    return true;
+  }
+  genderCustomText.style = 'display: none;';
+  return false;
+});
+
+const buttonLogin = document.querySelector('#button-login');
+buttonLogin.addEventListener('click', function () {
+  const campoEmail = document.querySelector('#user-email-phone').value;
+  alert(campoEmail);
 });
 
 const buttonFacebookRegister = document.querySelector('#facebook-register');

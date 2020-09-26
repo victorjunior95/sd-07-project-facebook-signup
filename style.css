@@ -48,4 +48,5 @@ body {
 
 .especiais {
   display: flex;
+  flex-direction: column;
 }

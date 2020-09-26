@@ -82,10 +82,11 @@ registerButton.addEventListener('click', function (xis) {
     const contactinf = document.getElementsByName('phone_email')[0].value;
     const bd = document.getElementsByName('birthdate')[0].value;
     const divResult = document.createElement('div');
+    const fullName = `${name} ${lastname}`;
     rightContent.innerHTML = '';
     rightContent.appendChild(divResult);
     divResult.innerHTML =
-    `Olá, ${name} ${lastname}
+    `Olá, ${fullName}
     Contato: ${contactinf}
     Data de Nascimento: ${bd}
     Gênero: ${sexvar}`;

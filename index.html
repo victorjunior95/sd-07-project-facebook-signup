@@ -15,7 +15,8 @@
                 <img src="imgs/facebook-logo.png" alt="Logotipo do facebook" class="facebook-logo" />
                 <form class="facebook-login">
                     <div class="form-group">
-                        <label id="user-email-phone-label" for="email" class="user-email-phone user-email-phone-label">Email ou
+                        <label id="user-email-phone-label" for="email"
+                            class="user-email-phone user-email-phone-label">Email ou
                             telefone</label>
                         <input id="user-email-phone" type="email" name="email" class="user-email-phone" />
                     </div>
@@ -64,12 +65,16 @@
                 </div>
 
                 <div class="container-birthdate">
-                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                    <input type="date" name="birthdate" id="input-birthdate" class="input-birthdate"
-                        placeholder="dd/mm/aaaa">
+                    <label for="birthdate" id="label-birthdate" class="birthdate-gender">Data de nascimento</label>
+                    <div class="birthdate-duvida">
+                        <input type="date" name="birthdate" id="input-birthdate" class="input-birthdate"
+                            placeholder="dd/mm/aaaa">
+                        <img src="./imgs/duvida.png" alt="" class="dividas-dicas">
+                    </div>
+
                 </div>
 
-                <label for="" id="label-gender">Gênero</label>
+                <label for="" id="label-gender" class="birthdate-gender">Gênero</label>
                 <div class="gender-group">
                     <input type="radio" name="gender-group" id="gender-feminine" value="Feminino" />
                     <label for="gender-feminine">Feminino</label>
@@ -79,12 +84,16 @@
 
                     <input type="radio" name="gender-group" id="gender-custom" value="Personalizado" />
                     <label for="gender-custom">Personalizado</label>
+                    
                 </div>
+                <img src="./imgs/duvida.png" alt="" class="dividas-dicas">
             </form>
             <input type="text" name="gender gender-custom" placeholder="Gênero (opcional)" class="gender-custom">
 
             <div class="termos-politicas">
-                <p class="termos-politicas"> Ao clicar em Cadastre-se, você concorda com nossos <span>termos, Políticas de Dados e Políticas de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</span></p>
+                <p class="termos-politicas"> Ao clicar em Cadastre-se, você concorda com nossos <span>termos, Políticas
+                        de Dados e Políticas de Cookies. Você pode receber notificações por SMS e pode cancelar isso
+                        quando quiser.</span></p>
             </div>
             <button type="submit" id="facebook-register">Cadastre-se</button>
 

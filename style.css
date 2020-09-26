@@ -156,3 +156,29 @@ a {
   border: 1px solid rgb(191, 203, 238);
   border-radius: 4px;
 }
+
+.birthdate-gender {
+  color: rgb(102, 116, 138);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.input-birthdate {
+  margin-top: 8px;
+}
+
+.dividas-dicas {
+  height: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 15px;
+}
+
+.birthdate-duvida {
+  display: flex;
+  align-items: center;
+}
+
+.birthdate-duvida img {
+
+}

@@ -94,8 +94,7 @@ a {
   width: 300px;
 }
 
-.right-content-super .titulo,
-.quick-easy {
+.right-content-super .titulo , .quick-easy {
   color: rgb(5, 23, 63);
   margin: 0;
 }
@@ -195,8 +194,7 @@ a {
   margin: 5px 0;
 }
 
-.termos-politicas,
-.sugestao {
+.termos-politicas , .sugestao {
   font-size: 11px;
 }
 
@@ -214,9 +212,9 @@ a {
 }
 
 .facebook-register-msnError {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 50px;
 }
 
@@ -234,8 +232,8 @@ a {
 
 .container-cadastro-feito {
   align-items: center;
-  display: flex;
   color: blue;
+  display: flex;  
   font-size: 30px;
   min-height: 545px;
 }

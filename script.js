@@ -35,10 +35,9 @@ function registrarUsuario() {
   const phoneEmail = document.getElementById('phone_email').value;
   const labelBirthdate = document.getElementById('input-birthdate').value;
   const sexo = gender();
-  alert(labelBirthdate)
 
-  const divPai = document.querySelector('.right-content')
-  const divFilho = document.getElementById('container-cadastro')
+  const divPai = document.querySelector('.right-content');
+  const divFilho = document.getElementById('container-cadastro');
 
   const novaDiv = document.createElement('div');
   novaDiv.classList.add('container-cadastro-feito');

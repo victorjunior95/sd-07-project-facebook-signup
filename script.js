@@ -21,28 +21,17 @@ authenticationButton.addEventListener('click', alertEmailOrPhone);
 
 buttonRadio.addEventListener('change', createCustom);
 
-const btnEnv = document.querySelector('#facebook-register');
 const msg = document.createElement('p');
 const centralForm = document.querySelector('.central-form');
 centralForm.appendChild(msg);
 
-function welcome(textOla) {
-  const input = document.querySelectorAll('.right-content input');
-  for (let i = 0; i < input.length; i += 1) {
-    input[0].value = `Olá, ${textOla[0]}`;
-    input[3].value = '';
-  }
-}
+function welcome(fields) {
+  const rightContent = document.getElementsByClassName('right-content')[0];
 
-function adicionarText() {
-  const textOla = [];
-  const input = document.querySelectorAll('.right-content input');
-  for (let i = 0; i < input.length; i += 1) {
-    if (input[i].getAttribute('type') !== 'password') {
-      textOla.push(input[i].value);
-    }
-  }
-  welcome(textOla);
+  rightContent.innerHTML = `<p>Olá, ${fields.firstname} ${fields.lastname}</p>`;
+  rightContent.innerHTML += `<p>${fields.phoneEmail}</p>`;
+  rightContent.innerHTML += `<p>${fields.birthdate}</p>`;
+  rightContent.innerHTML += `<p>${fields.gender}</p>`;
 }
 
 function checkedRadio() {
@@ -66,11 +55,17 @@ function checkedFields() {
   }
   return 'true';
 }
-
+const btnEnv = document.querySelector('#facebook-register');
 btnEnv.addEventListener('click', function (e) {
   e.preventDefault();
 
+  const firstname = document.querySelector('.firstname').value;
+  const lastname = document.querySelector('.lastname').value;
+  const phoneEmail = document.querySelector('.phone_email').value;
+  const birthdate = document.querySelector('.birthdate').value;
+  const gender = document.querySelector('.gender-radio').value;
+
   if (checkedRadio() === 'true' && checkedFields() === 'true') {
-    adicionarText();
+    welcome({ firstname, lastname, phoneEmail, birthdate, gender });
   }
 });

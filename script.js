@@ -17,16 +17,31 @@ buttonSignUp.addEventListener('click', (event) => {
     }
   });
      if (document.querySelector('#invalid-camp').textContent === ''){
-       const name = document.ga
+       const firstname = document.getElementsByName('firstname')[0].value;
+       const lastname = document.getElementsByName('lastname')[0].value;
+       const phoneEmail = document.getElementsByName('phone_email')[0].value;
+       const birthdate = document.getElementsByName('birthdate')[0].value;
+       let gender = '';
+       const genderList = document.getElementsByName('gender');
+      genderList.forEach(element => {
+        if (element.checked){
+          gender = element.value;
+        }
+      })
+        const validContent = document.querySelector('.right-content');
+        validContent.innerHTML = `
+          Olá, ${firstname} ${lastname}
+          ${phoneEmail}
+          ${birthdate}
+          ${gender}
+        `;
 
-     }
+      }
 
 
-
-  //   const validContent = document.querySelector('.right-content');
-  //   validContent.remove();
-  // }
 })
+
+
 
 const inputCustom = document.querySelector('#Personalizado');
 inputCustom.addEventListener('click', () => {

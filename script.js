@@ -29,7 +29,7 @@ function preventSubmit() {
 }
 
 function inputCheck() {
-  let res 
+  let res;
   const camposForm = regForm.getElementsByTagName('input');
   for (let i = 0; i < camposForm.length; i += 1) {
     if (camposForm[i].value === '') {
@@ -38,17 +38,17 @@ function inputCheck() {
       res = false;
     }
   }
-  return res
+  return res;
 }
 
 function genderCheck() {
-  let res
+  let res;
   if (genderChecked === null) {
     invalidMsg.innerHTML = 'Escolha um gender';
     preventSubmit();
     res = false;
   }
-  return res
+  return res;
 }
 
 function checkForm() {

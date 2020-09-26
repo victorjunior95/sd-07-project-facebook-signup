@@ -33,28 +33,21 @@ const inputRadioValidation = () => {
 
 const otherGender = document.querySelector('#otherGender');
 
-let genderChoose = '';
-const genderVerify = () => {
-  if (femaleRadio.checked) {
-    genderChoose = 'Feminino';
-  } else if (maleRadio.checked) {
-    genderChoose = 'Masculino';
-  } else if (otherRadio.checked) {
-    genderChoose = 'Personalizado';
-  }
-};
-
 const validateForm = () => {
   event.preventDefault();
   inputTextsValidation();
   inputRadioValidation();
-  genderVerify();
 
   const errorMessage = document.querySelector('#errorMessage');
   const mainContent = document.querySelector('#right-content');
+  const genderChoose = document.querySelector('[type=radio]:checked')
 
   if (textChecked && radioChecked) {
-    mainContent.innerHTML = `Olá, ${fisrtName.value} ${lastName.value} ${phoneEmail.value} ${birthDate.value} ${genderChoose.value}`;
+    mainContent.innerHTML = `Olá, ${fisrtName.value}
+    ${lastName.value}
+    ${phoneEmail.value}
+    ${birthDate.value}
+    ${genderChoose.value}`;
   } else {
     errorMessage.innerText = 'Campos inválidos';
   }

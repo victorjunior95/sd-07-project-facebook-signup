@@ -57,3 +57,7 @@
 .data {
   flex-direction: column;
 }
+
+.date-picker-x {
+  transform: scale(0.7);
+}

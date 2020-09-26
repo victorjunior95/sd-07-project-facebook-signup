@@ -31,6 +31,7 @@ function checarCampos() {
   return true;
 }
 
+
 const phoneEmail = document.querySelector('#phone-email');
 const facebookRegister = document.querySelector('#facebook-register');
 let gender = '';

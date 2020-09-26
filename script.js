@@ -4,7 +4,7 @@ loginBtn.addEventListener('click', function (event) {
   const emailInput = document.querySelector('#user-email-phone').value;
   alert(`${emailInput}`);
 });
-/*const validate = new window.JustValidate('.js-form', {
+/* const validate = new window.JustValidate('.js-form', {
   rules: {
     last_name: {
       required: true,
@@ -29,7 +29,7 @@ loginBtn.addEventListener('click', function (event) {
       },
       last_name: {
         required: 'Campos inválidos',
-      }, 
+      },
       phone_email: {
         required: 'Campos inválidos',
       },
@@ -53,4 +53,4 @@ personalizadoRadio.addEventListener('click', function () {
   createField.placeholder = 'Gênero (opcional)';
   gender.appendChild(createField);
 });
-//console.log(validate);
+// console.log(validate);

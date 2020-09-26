@@ -18,7 +18,7 @@ function newContentRight(data) {
     const liDataNascimento = document.createElement('li');
     let date = data[3];
     date.split('/').join('-');
-    liDataNascimento.innerText = data[3];
+    liDataNascimento.innerText = date;
     ulApresentation.appendChild(liDataNascimento);
     const liGenero = document.createElement('li');
     liGenero.innerText = data[4];

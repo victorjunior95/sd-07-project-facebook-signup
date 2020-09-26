@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 .top-bar-topo {
@@ -43,7 +43,6 @@ body {
   color: white;
   font-weight: 600;
   height: 40%;
-
 }
 
 .form-group {
@@ -87,16 +86,17 @@ a {
   width: 300px;
 }
 
-.right-content-super h1, h5{
-  margin: 0;
+.right-content-super .titulo ,
+.quick-easy {
   color: rgb(5, 23, 63);
+  margin: 0;
 }
 
-.right-content-super h1 {
+.right-content-super .titulo {
   margin-top: 24px;
 }
 
-.right-content-super h5 {
+.right-content-super .quick-easy {
   margin-bottom: 20px;
 }
 
@@ -175,10 +175,6 @@ a {
 }
 
 .birthdate-duvida {
-  display: flex;
   align-items: center;
-}
-
-.birthdate-duvida img {
-
+  display: flex;
 }

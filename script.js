@@ -73,7 +73,7 @@ const removeTagChild = function () {
 };
 
 const displayOtherGender = function () {
-  document.getElementById('gender-custom-other').style.display = 'block'
+  document.getElementById('gender-custom-other').style.display = 'block';
 };
 
 window.onload = function () {

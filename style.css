@@ -24,12 +24,16 @@ body {
 }
 
 .form-control {
-  display: flex;
   align-self: flex-end;
+  display: flex;
   margin: 18px 5px;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
 }

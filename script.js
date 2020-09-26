@@ -1,5 +1,4 @@
 function newContentRight(data) {
-  console.log(data)
   if (data.length >= 4) {
     const parentRightContent = document.querySelectorAll('.main-content')[0];
     const divOldRightContent = document.querySelector('#right-content');
@@ -17,7 +16,7 @@ function newContentRight(data) {
     Gênero: ${data[4]}`;
     ulApresentation.appendChild(liItem);
   }
-};
+}
 
 const botaoLogin = document.getElementById('button-login');
 botaoLogin.addEventListener('click', function () {
@@ -42,20 +41,20 @@ registerButton.addEventListener('click', function () {
     if (inputsFormRegister[index].value === '') {
       validationMsg.innerText = 'Campos inválidos';
       validationMsg.style.color = 'red';
-      return
+      return;
     }
     if (inputsFormRegister[index].name !== 'password') {
       valuesCaptured.push(inputsFormRegister[index].value);
     }
   }
-    const radioOptions = document.querySelectorAll('input[name=gender]');
-    let selectedRadioOption;
-    for (let index = 0; index < radioOptions.length; index += 1) {
-      if (radioOptions[index].checked) {
-        selectedRadioOption = radioOptions[index].value;
-        valuesCaptured.push(selectedRadioOption);
-      }
+  const radioOptions = document.querySelectorAll('input[name=gender]');
+  let selectedRadioOption;
+  for (let index = 0; index < radioOptions.length; index += 1) {
+    if (radioOptions[index].checked) {
+      selectedRadioOption = radioOptions[index].value;
+      valuesCaptured.push(selectedRadioOption);
     }
+  }
   newContentRight(valuesCaptured);
   valuesCaptured = [];
 });

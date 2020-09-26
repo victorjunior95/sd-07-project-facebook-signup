@@ -46,16 +46,19 @@
         <h1>Abra uma conta</h1>
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form class="create-account" method="" action="">
+          <span id="invalid-fields"></span>
           <div class="form-name">
             <div class="first-last">
               <input
-                class="firstname"
+                id="first-name"
+                class="firstname input-data"
                 type="text"
                 name="firstname"
                 placeholder="Nome"
               />
               <input
-                class="lastname"
+                id="last-name"
+                class="lastname input-data"
                 type="text"
                 name="lastname"
                 placeholder="Sobrenome"
@@ -63,7 +66,8 @@
             </div>
 
             <input
-              id="phone_email"
+              id="user-email"
+              class="input-data"
               type="text"
               name="phone_email"
               placeholder="Celular ou email"
@@ -71,19 +75,26 @@
 
             <input
               id="password"
+              class="input-data"
               type="password"
               name="password"
               placeholder="Nova senha"
             />
 
             <label id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+            <input
+              id="user-birthdate"
+              class="input-data"
+              type="text"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+            />
 
             <label id="label-gender">Gênero</label>
             <div class="gender">
               <input
                 id="feminino"
-                class="feminino"
+                class="radio"
                 type="radio"
                 name="gender"
                 value="Feminino"
@@ -92,7 +103,7 @@
 
               <input
                 id="masculino"
-                class="masculino"
+                class="radio"
                 type="radio"
                 name="gender"
                 value="Masculino"
@@ -101,7 +112,7 @@
 
               <input
                 id="personalizado"
-                class="personalizado"
+                class="radio"
                 type="radio"
                 name="gender"
                 value="Personalizado"
@@ -110,11 +121,20 @@
                 >Personalizado</label
               >
             </div>
+            <div class="selected-gender-div">
+              <input
+                type="text"
+                id="selected-gender"
+                name="gender-custom"
+                class="hidden"
+                placeholder="Gênero (opcional)"
+              />
+            </div>
           </div>
+          <button id="facebook-register" type="submit" class="button-facebook-register">Cadastre-se</button>
         </form>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

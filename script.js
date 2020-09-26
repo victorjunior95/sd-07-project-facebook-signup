@@ -16,7 +16,7 @@ function newContentRight(data) {
     liEmail.innerText = data[2];
     ulApresentation.appendChild(liEmail);
     const liDataNascimento = document.createElement('li');
-    let date = data[3];
+    const date = data[3];
     date.split('/').join('-');
     liDataNascimento.innerText = date;
     ulApresentation.appendChild(liDataNascimento);

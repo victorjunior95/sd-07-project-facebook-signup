@@ -33,3 +33,8 @@
 .full-name {
   display: flex;
 }
+
+.date-of-birthdate {
+  display: flex;
+  flex-direction: column;
+}

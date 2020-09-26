@@ -43,6 +43,37 @@ customButton.addEventListener('change', function () {
   const inputCustom = document.createElement('input');
   inputCustom.setAttribute('type', 'text');
   inputCustom.setAttribute('placeholder', 'Gênero (opcional)');
-  inputCustom.setAttribute('name', 'gender');
+  inputCustom.setAttribute('name', 'gender-custom');
   registerForm.appendChild(inputCustom);
 });
+
+/*
+const buttonSubmit = document.querySelector('#facebook-register');
+buttonSubmit.addEventListener('click', () => {
+  const inputsValidation = document.getElementsByClassName('form-singup');
+  console.log(inputsValidation);
+  for (let index = 0; index < inputsValidation.length; index += 1) {
+    inputsValidation[index].oninvalid = function () {
+      this.setCustomValidity('');
+      if (!this.validity.valid) {
+        this.setCustomValidity('Campos inválidos');
+      }
+    };
+  }
+}); */
+const buttonSubmit = document.querySelector('#facebook-register');
+buttonSubmit.addEventListener('click', function() {
+  let formInputs = document.getElementsByTagName('input');
+  console.log(formInputs);
+  for (let index = 0; index < formInputs.length; index += 1) {
+      formInputs[index].oninvalid = function(event) {
+          event.target.setCustomValidity('');
+          if (!event.target.validity.valid) {
+              event.target.setCustomValidity('Campos inválidos');
+          }
+      };
+      formInputs[index].oninput = function(event) {
+          event.target.setCustomValidity('');
+      };
+  }
+}); 

@@ -25,11 +25,11 @@ function deleteInput() {
   }
 }
 
-const buttonFemale = document.getElementById('female');
-buttonFemale.addEventListener('click', deleteInput);
+const btFemale = document.getElementById('female');
+btFemale.addEventListener('click', deleteInput);
 
-const buttonMale = document.getElementById('male');
-buttonMale.addEventListener('click', deleteInput);
+const btMale = document.getElementById('male');
+btMale.addEventListener('click', deleteInput);
 
 document.getElementById('facebook-register').addEventListener('click', function (event) {
   event.preventDefault();
@@ -47,6 +47,9 @@ document.getElementById('facebook-register').addEventListener('click', function 
     errorMessage.textContent = 'Campos Inválidos';
   }
   if (document.getElementById('birthdate').value === '') {
+    errorMessage.textContent = 'Campos Inválidos';
+  }
+  if (btFemale.checked === false && btMale.checked === false && buttonCustom.checked === false) {
     errorMessage.textContent = 'Campos Inválidos';
   } else {
     errorMessage.textContent = '';

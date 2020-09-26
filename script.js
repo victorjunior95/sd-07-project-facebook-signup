@@ -1,13 +1,11 @@
 const loginButton = document.querySelector('#button-login');
 const loginInfo = document.querySelector('#user-email-phone');
 const genderCustom = document.querySelector('#Personalizado');
-// const subimitButton = document.querySelector('#facebook-register');
+const subimitButton = document.querySelector('#facebook-register');
 
 loginButton.addEventListener('click', function () {
   alert(loginInfo.value);
 });
-
-// const adicionaMensagem = document.querySelector('.open-account');
 
 genderCustom.addEventListener('click', () => {
   const customInput = document.createElement('input');
@@ -80,9 +78,15 @@ window.onload = () => {
 };
 */
 
-/*
-subimitButton.addEventListener('click', function () {
-  const valoresInput = document.querySelectorAll('input');
-  if (index = 0; )
+subimitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  const adicionaMensagem = document.querySelector('.open-account');
+  const valoresInput = document.querySelectorAll('.custom-control-label');
+  const mensagem = document.createElement('p');
+  adicionaMensagem.appendChild(mensagem);
+  for (let index = 0; index < valoresInput.length; index += 1) {
+    if (valoresInput[index].value === '') {
+      mensagem.innerText = 'Campos inválidos';
+    }
+  }
 });
-*/

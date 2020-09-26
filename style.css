@@ -45,3 +45,7 @@
 .right-content {
   width: 300px;
 }
+
+.alerta {
+  color: red;
+}

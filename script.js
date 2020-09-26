@@ -92,7 +92,7 @@ window.onload = function () {
   genderCustom.addEventListener('change', function () {
     const tagInput = document.getElementById('gender-custom-other');
     if (genderCustom.checked) {
-      tagInput.style.display = 'block'
+      tagInput.style.display = 'block';
     } else {
       tagInput.style.display = 'none';
     }

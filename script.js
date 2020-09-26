@@ -17,7 +17,7 @@ function newContentRight(data) {
     ulApresentation.appendChild(liEmail);
     const liDataNascimento = document.createElement('li');
     liDataNascimento.innerText = data[3];
-    // ulApresentation.appendChild(liDataNascimento);
+    ulApresentation.appendChild(liDataNascimento);
     const liGenero = document.createElement('li');
     liGenero.innerText = data[4];
     ulApresentation.appendChild(liGenero);

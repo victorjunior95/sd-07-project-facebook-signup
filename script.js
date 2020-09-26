@@ -93,5 +93,4 @@ window.onload = function () {
     const tagInput = document.querySelector('.gender-custom');
     tagInput.style.display = 'block';
   });
-
-}
+};

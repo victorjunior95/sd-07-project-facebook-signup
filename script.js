@@ -60,9 +60,9 @@ buttonSubmit.addEventListener('click', () => {
       }
     };
   }
-}); */
+}); 
 const buttonSubmit = document.querySelector('#facebook-register');
-buttonSubmit.addEventListener("click", function() {
+buttonSubmit.addEventListener('click', function() {
   let formInputs = document.getElementsByTagName('input');
   console.log(formInputs);
   for (let index = 0; index < formInputs.length; index += 1) {
@@ -76,4 +76,4 @@ buttonSubmit.addEventListener("click", function() {
           event.target.setCustomValidity('');
       };
   }
-});
+}); */

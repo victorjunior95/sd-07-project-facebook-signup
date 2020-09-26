@@ -12,5 +12,4 @@ customButton.addEventListener('change', function () {
   inputCustom.setAttribute('placeholder', 'Gênero (opcional)');
   inputCustom.setAttribute('name', 'gender-custom');
   registerForm.appendChild(inputCustom);
-  console.log(registerForm)
 });

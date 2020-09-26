@@ -18,7 +18,5 @@ registerButton.addEventListener('click', function () {
   });
   if (valid === false) {
     signupForm.innerHTML = 'Campos inválidos';
-    // const message = document.createTextNode('Campos inválidos');
-    // signupForm.insertBefore(message, signupForm.childNodes[0]);
   }
 });

@@ -22,6 +22,7 @@ function deleteForm() {
 
 function createMessage(name, lastName, email, date, gender) {
   deleteForm();
+
   const rightContent = document.getElementsByClassName('right-content')[0];
   const message = document.createElement('p');
   const message2 = document.createElement('p');

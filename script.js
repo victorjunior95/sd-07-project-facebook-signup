@@ -82,13 +82,16 @@ const removeTagChild = function () {
   tagInput.style.display = 'none';
 };
 
-buttonSignUp.addEventListener('click', validaCadastro);
+window.onload = function () {
+  buttonSignUp.addEventListener('click', validaCadastro);
 
-genderFeminine.addEventListener('click', removeTagChild);
+  genderFeminine.addEventListener('click', removeTagChild);
 
-genderMale.addEventListener('click', removeTagChild);
+  genderMale.addEventListener('click', removeTagChild);
 
-genderCustom.addEventListener('click', function () {
-  const tagInput = document.querySelector('.gender-custom');
-  tagInput.style.display = 'inline';
-});
+  genderCustom.addEventListener('click', function () {
+    const tagInput = document.querySelector('.gender-custom');
+    tagInput.style.display = 'block';
+  });
+
+}

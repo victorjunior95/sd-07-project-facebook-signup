@@ -35,14 +35,14 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form action="" method="GET" class="open-account">
                 <div class="name">
-                    <input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
+                    <input type="text" name="firstname" placeholder="Nome" id="firstname">
+                    <input type="text" name="lastname" placeholder="Sobrenome" id="lastname">
                 </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
+                <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
+                <input type="password" name="password" placeholder="Nova senha" id="password">
                 <div class="birthday">
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
+                    <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
                 </div>
                 <label for="" id="label-gender">Gênero</label>
                 <div class="genre">
@@ -55,6 +55,7 @@
                 </div>
                 <div id="genre-opcional"></div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
+                <p id="error-message"></p>
             </form>
         </div>
     </section>

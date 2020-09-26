@@ -8,7 +8,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## Instruções para entregar seu projeto:
 
-### 🗒ANTES DE COMEÇAR A DESENVOLVER:
+### 🗒ANTES DE COMEÇAR A DESENVOLVER: 
 
 1. Clone o repositório
   * `git clone https://github.com/tryber/sd-0x-block6-project-facebook-signup.git`.

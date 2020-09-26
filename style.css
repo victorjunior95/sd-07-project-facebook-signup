@@ -38,3 +38,15 @@ body {
 .nome-usuario {
   display: flex;
 }
+
+.birthday {
+  display: block;
+}
+
+.genero {
+  display: flex;
+}
+
+.gender {
+  display: block;
+}

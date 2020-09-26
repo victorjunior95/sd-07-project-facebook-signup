@@ -40,9 +40,10 @@ registerButton.addEventListener('click', function () {
     if (inputsFormRegister[index].value === '') {
       validationMsg.innerText = 'Campos inválidos';
       validationMsg.style.color = 'red';
-    }
-    if (inputsFormRegister[index].name !== 'password') {
-      valuesCaptured.push(inputsFormRegister[index].value);
+    } else {
+      if (inputsFormRegister[index].name !== 'password') {
+        valuesCaptured.push(inputsFormRegister[index].value);
+      }
     }
   }
   newContentRight(valuesCaptured);

@@ -1,15 +1,12 @@
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 const rightContentInputs = document.querySelector('.right-content form');
-const formFields = document.querySelectorAll('.right-content input');
 const genderFeminine = document.getElementById('gender-feminine');
 const genderMale = document.getElementById('gender-male');
 const genderCustom = document.getElementById('gender-custom');
 const buttonSignUp = document.querySelector('#facebook-register');
 
-buttonLogin.addEventListener('click', function () {
-  alert(userEmailPhone.value);
-});
+
 
 function genero() {
   if (genderFeminine.checked) {
@@ -37,12 +34,7 @@ function resetMsg() {
 }
 
 function registrarUsuario() {
-  // const primeiroNome = document.querySelector('#firstname').value
-  // const ultimoNome = document.querySelector('#lastname').value
-  // const nomeUsuario = primeiroNome.value + ' ' + ultimoNome.value;
-  // const emailOuTelefone = document.querySelector('#phone_email').value;
-  // const birthDate = document.querySelector('#input-birthdate').value;
-  // const generoEscolhido = genero();
+  const formFields = document.querySelectorAll('.right-content input');
   for (let index = 0; index < formFields.length; index += 1) {
     formFields[index].value = '';
     formFields[index].checked = false;
@@ -54,6 +46,7 @@ function testeCampoVazio(itemValue, itemType) {
 }
 
 function percorreInputs() {
+  const formFields = document.querySelectorAll('.right-content input');
   for (let index = 0; index < formFields.length; index += 1) {
     const validandoInput = formFields[index];
     const formValue = validandoInput.value;
@@ -77,14 +70,24 @@ function validaCadastro() {
   }
 }
 
+const removeTagChild = function () {
+  const tagInput = document.querySelector('.gender-custom');
+  tagInput.style.display = 'none';
+};
+
+const displayOtherGender = function () {
+  document.getElementById('gender-custom-other').style.display = 'block'
+}
+
 window.onload = function () {
+
+  document.getElementById('button-login').addEventListener('click', () => alert(userEmailPhone.value));
+
   buttonSignUp.addEventListener('click', validaCadastro);
-  genderCustom.addEventListener('change', function () {
-    const tagInput = document.getElementById('gender-custom-other');
-    if (genderCustom.checked) {
-      tagInput.style.display = 'block';
-    } else {
-      tagInput.style.display = 'none';
-    }
-  });
+
+  genderFeminine.addEventListener('click', removeTagChild);
+
+  genderMale.addEventListener('click', removeTagChild);
+
+  genderCustom.addEventListener('change', displayOtherGender);
 };

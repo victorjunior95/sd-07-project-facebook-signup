@@ -32,11 +32,11 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" id="form-register">
         <div class="nome-usuario">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
+          <input name="firstname" id="name" placeholder="Nome" type="text" required="required">
+          <input name="lastname" id="lastname" placeholder="Sobrenome" type="text" required="required">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" id="login" name="phone_email" placeholder="Celular ou email" required="required">
+        <input type="password" name="password" placeholder="Nova senha" required="required">
         <label class="birthday" for="" id="label-birthdate">Data de nascimento</label>
         <input type="date" name="birthdate" placeholder="dd/mm/aaaa">
         <label for="Feminino, Masculino, Personalizado" class="gender" id="label-gender">Gênero</label>

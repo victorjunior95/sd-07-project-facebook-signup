@@ -16,6 +16,8 @@ function newContentRight(data) {
     liEmail.innerText = data[2];
     ulApresentation.appendChild(liEmail);
     const liDataNascimento = document.createElement('li');
+    let date = data[3];
+    date.split('/').join('-');
     liDataNascimento.innerText = data[3];
     ulApresentation.appendChild(liDataNascimento);
     const liGenero = document.createElement('li');

@@ -13,7 +13,7 @@
     </div>
 
     <div class="form-group">
-      <form event.preventDefault() method="get" onsubmit="return false" class="facebook-login">
+      <form method="get" onsubmit="return false" class="facebook-login">
         <div>
           <label id="user-email-phone-label" for="user-email-phone" >Email ou telefone</label>
           <input type="text" id="user-email-phone" required="required">
@@ -43,18 +43,18 @@
         <h1>Abra uma conta</h1>
         <h2 class="quick-easy">É rápido e fácil.</h2>
 
-        <form>
-          <div><input name="firstname" placeholder="Nome"></div>
+        <form id="subscribe" onsubmit="return false">
+          <div><input id="teste" type="text" name="firstname" placeholder="Nome"></div>
           <!--Alinhar a esquerda do nome  -->
-          <div><input name="lastname" placeholder="Sobrenome"></div>
-          <div><input name="phone_email" placeholder="Celular ou email"></div>
-          <div><input name="password" type="password" autocomplete="on" placeholder="Nova senha"></div>
+          <div><input type="text" name="lastname" placeholder="Sobrenome"></div>
+          <div><input type="text" name="phone_email" placeholder="Celular ou email"></div>
+          <div><input type="password" name="password" autocomplete="on" placeholder="Nova senha"></div>
           <!--Revisar-->
-          <label id="label-birthdate" for="birthdate">Data de nascimento<br>
+          <label id="label-birthdate" for="birthdate">Data de nascimento
             <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
           </label>
           <!--Revisar-->
-          <label id="label-gender">Gênero<br>
+          <label id="label-gender">Gênero
             <input type="radio" id="female" name="genre">
             <label for="female">Feminino</label>
             <input type="radio" id="male" name="genre">
@@ -63,13 +63,13 @@
             <label for="personalized" name="genre">Personalizado</label>
             <div id="personalize-container"></div>
           </label>
-
+            <div id="invalidFields" ></div>
           <div><button type="submit" id="facebook-register">Cadastre-se</button></div>
 
         </form>
       </div>
   </section>
-
+  <script src="justValidate/just-validate.min.js" ></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -49,16 +49,27 @@ function createInputGender() {
   });
 }
 
-const newInformationUser = () => {
-  const rightContainer = document.querySelector(".right-content");
-  const buttonSend = document.querySelector("#facebook-register");
-  const name = document.querySelector(".name");
 
-  const newMemberContainer = document.createElement("div");
-  const paragraphy = document.createElement("p");
+const newInformationUser = () => {
+  const rightContainer = document.querySelector('.right-content');
+  const buttonSend = document.querySelector('#facebook-register');
+  const name = document.querySelector('.name') , 
+  lastname = document.querySelector('.lastname') ,
+  phone = document.querySelector('.phoneEmail'),
+  birthdate = document.querySelector('.birthdate');
+  let gender = document.querySelector('input[name="gender"]:checked');
+  const newMemberContainer = document.createElement('div');
+  const paragraphy = document.createElement('p');
+
+  if (gender.value === 'Personalizado') {
+    gender = document.querySelector('input[name="gender-custom"]');
+  }
 
   buttonSend.addEventListener("click", () => {
-    paragraphy.innerText = `Olá, ${name.value}`;
+    paragraphy.innerText = `Olá, ${name.value} ${lastname.value}<br>
+    ${phone.value}<br>
+    ${birthdate.value}<br>
+    ${gender.value}`;
     newMemberContainer.appendChild(paragraphy);
   
     rightContainer.innerHTML = paragraphy.innerText;

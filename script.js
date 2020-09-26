@@ -4,7 +4,7 @@ logBt.addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-function checkRadio() {
+const checkRadio = () => {
   let counter = 0;
   let validation = 0;
   const genderList = document.getElementsByName('gender');
@@ -21,7 +21,7 @@ function checkRadio() {
   return validation;
 }
 
-function radioOption() {
+const radioOption = () => {
   let option = 0;
   const genderList = document.getElementsByName('gender');
   for (let index = 0; index < genderList.length; index += 1) {
@@ -32,7 +32,7 @@ function radioOption() {
   return option;
 }
 
-function validateNewAccountFormLessRadioButton() {
+const validateNewAccountFormLessRadioButton = () => {
   const inputCollection = document.getElementsByTagName('input');
   const inputArray = [].slice.call(inputCollection);
   inputArray.splice(0, 2);
@@ -52,7 +52,7 @@ function validateNewAccountFormLessRadioButton() {
   return validation;
 }
 
-function createDivHello() {
+const createDivHello = () => {
   const hello = document.createElement('div');
   const helloFullname = document.createElement('p');
   const firstName = document.getElementsByName('firstname')[0].value;
@@ -71,17 +71,17 @@ function createDivHello() {
   return hello;
 }
 
-function welcome() {
-  const target = document.getElementsByClassName('right-content')[0];
+const welcome = () => {
+  const divRightContent = document.getElementsByClassName('right-content')[0];
   const welcomeDiv = createDivHello();
-  while (target.lastElementChild) {
-    target.removeChild(target.lastElementChild);
+  while (divRightContent.lastElementChild) {
+    divRightContent.removeChild(divRightContent.lastElementChild);
   }
-  target.appendChild(welcomeDiv);
-  return target;
+  divRightContent.appendChild(welcomeDiv);
+  return divRightContent;
 }
 
-function validateNewAccountForm() {
+const validateNewAccountForm = () => {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === false) {
     document.getElementById('invalidation').innerText = 'Campos inválidos';
   } else {
@@ -103,7 +103,7 @@ document.getElementById('custom').addEventListener('click', function () {
   }
 });
 
-document.getElementById('facebook-register').addEventListener('click', function () {
+createAccountBt.addEventListener('click', function () {
   if ((validateNewAccountFormLessRadioButton() && checkRadio()) === true) {
     welcome();
   }

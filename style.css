@@ -5,8 +5,8 @@ body {
 }
 
 .container-fluid {
-  background: linear-gradient( 180deg,  rgba(9, 9, 121, 1) 0%,  white 0%, 
-   rgba(148, 147, 171, 1) 100%);
+  background: linear-gradient( 180deg,  rgba(9, 9, 121, 1) 0%,  white 0%,
+    rgba(148, 147, 171, 1) 100%);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -75,7 +75,6 @@ header {
 
 .main-content {
   display: flex;
-  flex-direction: column;
   flex-flow: row wrap;
   width: 100%;
 }
@@ -123,9 +122,9 @@ footer {
   font-size: 36px;
   font-weight: 700 ! important;
   letter-spacing: 400;
-  text-rendering: optimizeLegibility;
   margin-bottom: 0;
   margin-top: 0;
+  text-rendering: optimizeLegibility;
 }
 
 .facebook-logo {
@@ -152,7 +151,7 @@ footer {
 }
 
 .quick-easy {
-  font-family: 'Freight Sans', Helvetica, Arial, sans-serif;
+  font-family: Freight Sans, Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 400;
   letter-spacing: normal;
@@ -177,7 +176,7 @@ footer {
   border: 1px solid;
   border-radius: 5px;
   color: rgb(255, 254, 254);
-  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
   font-weight: 500;
   margin-bottom: 10px;
   padding: 10px;
@@ -191,7 +190,7 @@ footer {
   display: flex;
 }
 
-.birthday{ 
+.birthday {
   margin-top: 10px;
   width: 50%;
 }
@@ -205,12 +204,12 @@ footer {
 }
 
 .what {
-  border-radius: 50%;
   background-color: rgb(114, 114, 114);
+  border-radius: 50%;
   color: white;
-  text-align: center;
-  font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',
     Geneva, Verdana, sans-serif;
+  text-align: center;
   width: 20px;
 }
 
@@ -239,13 +238,13 @@ footer {
 }
 
 .polices a {
-  text-decoration: none;
   color: #2a487d;
+  text-decoration: none;
 }
 
 .btn-sucess {
-  background: linear-gradient(180deg,  rgba(101, 169, 82, 1) 0%,  rgba(88, 138, 68, 1) 
-   100% );
+  background: linear-gradient(180deg,  rgba(101, 169, 82, 1) 0%,  rgba(88, 138, 68, 1)
+    100% );
   border: none ! important;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode',

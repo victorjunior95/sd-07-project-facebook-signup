@@ -55,3 +55,8 @@ body {
 .genders {
   display: flex;
 }
+
+.alert {
+  color: red;
+  font-weight: 700;
+}

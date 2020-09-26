@@ -15,67 +15,64 @@ genderCustom.addEventListener('click', () => {
   document.querySelector('#custom').appendChild(customInput);
 });
 
-const valida = new JustValidate('.open-account', {
+const valida = new window.JustValidate('.open-account', {
   rules: {
     firstname: {
-      required: true
+      required: true,
     },
     lastname: {
-      required: true
+      required: true,
     },
     phone_email: {
-      required: true
+      required: true,
     },
     password: {
-      required: true     
+      required: true,
     },
     birthdate: {
-      required: true
+      required: true,
     },
     gender: {
-      required: true
+      required: true,
     },
   },
 
   messages: {
     firstname: {
-      required: 'Campos inválidos'
+      required: 'Campos inválidos',
     },
     lastname: {
-      required: 'Campos inválidos'
+      required: 'Campos inválidos',
     },
     phone_email: {
-      required: 'Campos inválidos'
+      required: 'Campos inválidos',
     },
     password: {
-      required: 'Campos inválidos'   
+      required: 'Campos inválidos',
     },
     birthdate: {
-      required: 'Campos inválidos'
+      required: 'Campos inválidos',
     },
     gender: {
-      required: 'Campos inválidos'
+      required: 'Campos inválidos',
     },
   },
 
   colorWrong: 'red',
 
   submitHandler: () => {
-    let mensagem = document.createElement('p')
-    mensagem.innerHTML = '<strong>campos validos</strong>'
-    adicionaMensagem.appendChild(mensagem)
+    const mensagem = document.createElement('p');
+    mensagem.innerHTML = '<strong>campos validos</strong>';
+    adicionaMensagem.appendChild(mensagem);
   },
 
-  invalidFormCallback: function (errors) {
-    let mensagem = document.createElement('p')
-    mensagem.innerHTML = '<strong>Campos inválidos</strong>'
-    adicionaMensagem.appendChild(mensagem)
-    console.log(errors);
+  invalidFormCallback: (errors) => {
+    const mensagem = document.createElement('p');
+    mensagem.innerHTML = `<strong>Campos inválidos</strong> ${errors}`;
+    adicionaMensagem.appendChild(mensagem);
   },
-
 });
 
 window.onload = () => {
   valida();
-}
-
+};

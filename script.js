@@ -81,8 +81,11 @@ registerButton.addEventListener('click', function (xis) {
     const lastname = document.getElementsByName('lastname')[0].value;
     const contactinf = document.getElementsByName('phone_email')[0].value;
     const bd = document.getElementsByName('birthdate')[0].value;
-    rightContent.innerHTML =
-      `Olá, ${name} ${lastname}
+    const divResult = document.createElement('div');
+    rightContent.innerHTML = '';
+    rightContent.appendChild(divResult);
+    divResult.innerHTML =
+    `Olá, ${name} ${lastname}
     Contato: ${contactinf}
     Data de Nascimento: ${bd}
     Gênero: ${sexvar}`;

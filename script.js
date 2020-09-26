@@ -1,6 +1,4 @@
 const buttonLogin = document.querySelector('#button-login');
-const buttonFacebookRegister = document.querySelector('#facebook-register');
-
 buttonLogin.addEventListener('click', function () {
   const campoEmail = document.querySelector('#user-email-phone').value;
   alert(campoEmail);
@@ -26,11 +24,35 @@ function verifyRadioGenderChecked() {
   return false;
 }
 
+function displayUserData() {
+  const formRegister = document.forms[1];
+  const firstName = formRegister.elements.firstname.value;
+  const secondName = formRegister.elements.lastname.value;
+  const emailOrPhone = formRegister.elements.phone_email.value;
+  const birthday = formRegister.elements.birthdate.value;
+  const gender = formRegister.elements.gender.value;
+  const divRightContent = document.querySelector('.right-content');
+  divRightContent.innerHTML = `<p>Olá, ${firstName} ${secondName}</p>`;
+  divRightContent.innerHTML += `<p>${emailOrPhone}</p>`;
+  divRightContent.innerHTML += `<p>${birthday}</p>`;
+  divRightContent.innerHTML += `<p>${gender}</p>`;
+}
+
+const formRegister = document.getElementById('register');
+formRegister.addEventListener('submit', (event) => {
+  event.preventDefault();
+  displayUserData();
+  return false;
+});
+
+const buttonFacebookRegister = document.querySelector('#facebook-register');
 buttonFacebookRegister.addEventListener('click', (event) => {
   const errorMessage = document.getElementById('error-message');
   if (!verifyRadioGenderChecked() || !verifyFormRegisterInputs()) {
     errorMessage.innerHTML = 'Campos inválidos';
     errorMessage.style = '';
     event.preventDefault();
+    return false;
   }
+  return true;
 });

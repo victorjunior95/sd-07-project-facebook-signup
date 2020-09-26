@@ -46,3 +46,12 @@ body {
 .main-name {
   display: flex;
 }
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+}
+
+.genders {
+  display: flex;
+}

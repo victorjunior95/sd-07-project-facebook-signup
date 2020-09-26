@@ -9,13 +9,22 @@ function newContentRight(data) {
     divRightContent.appendChild(newDivRight);
     const ulApresentation = document.createElement('ul');
     newDivRight.appendChild(ulApresentation);
-    const liItem = document.createElement('li');
-    liItem.className = 'welcome-mensage';
-    liItem.innerText = `Olá, ${data[0]} ${data[1]}.
-    E-mail ou telefone: ${data[2]}
-    Data de nascimento: ${data[3]}
-    Gênero: ${data[4]}`;
-    ulApresentation.appendChild(liItem);
+    const liNomes = document.createElement('li');
+    liNomes.className = 'welcome-mensage';
+    liNomes.innerText = `Olá, ${data[0]} ${data[1]}`;
+    ulApresentation.appendChild(liNomes);
+    const liEmail = document.createElement('li');
+    liEmail.className = 'welcome-mensage';
+    liEmail.innerText = data[2];
+    ulApresentation.appendChild(liEmail);
+    const liDataNascimento = document.createElement('li');
+    liDataNascimento.className = 'welcome-mensage';
+    liDataNascimento.innerText = data[3];
+    ulApresentation.appendChild(liDataNascimento);
+    const liGenero = document.createElement('li');
+    liGenero.className = 'welcome-mensage';
+    liGenero.innerText = data[4];
+    ulApresentation.appendChild(liGenero);
   }
 }
 

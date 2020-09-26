@@ -1,13 +1,26 @@
 body {
   background: linear-gradient(white, #d3e8d8);
+  background-size: cover;
   margin: 0;
   padding: 0;
+}
+
+input {
+  border: 2px grey;
+  border-radius: 3px;
+  height: 2em;
+  margin: 3px;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.quick-easy {
+  margin-top: 0;
 }
 
 .facebook-logo {
@@ -16,6 +29,7 @@ body {
 
 .facebook-login {
   display: flex;
+  flex-basis: 400px;
 }
 
 .form-group {
@@ -31,19 +45,52 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-content {
+  align-items: flex-end;
+  display: flex;
+  flex-basis: 55%;
+  flex-direction: column;
   width: 800px;
 }
 
 .right-content {
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
   width: 300px;
 }
 
 .genero-personalizado {
   display: none;
+}
+
+.cabecalho {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.slogan {
+  color: rgb(66, 103, 178);
+  font-weight: 800;
+  margin-right: 50px;
+  padding: 10px;
+  width: 35%;
+}
+
+.crie {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.agreement {
+  font-size: 0.6em;
+  width: 60%;
 }
 
 .full-name {
@@ -52,8 +99,10 @@ body {
 }
 
 .create-account-form {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .birthdate {
@@ -61,6 +110,6 @@ body {
   flex-direction: column;
 }
 
-.invalid-forms {
-  display: none;
+.facebook-networking {
+  width: 50%;
 }

@@ -31,6 +31,8 @@ botaoLogin.addEventListener('click', function () {
   alert(EmailTelefone);
 });
 
+// Mensagem "Campos inválidos"
+
 const registre = document.getElementById('facebook-register');
 
 registre.addEventListener('click', function () {

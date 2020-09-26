@@ -10,12 +10,13 @@
      <img class="facebook-logo" src="imgs/facebook-logo.png">
     <form class="facebook-login">
         <div class="form-group">
-        <label id="user-email-phone-label">Email ou telefone</label>
+        <label class="cabecalho" id="user-email-phone-label">Email ou telefone</label>
         <input type="text" id="user-email-phone">
     </div>
     <div class="form-group">
-        <label id="user-password-label">Senha</label>
+        <label class="cabecalho" id="user-password-label">Senha</label>
         <input type="text" id="user-password">
+        <!-- <label id="forgot-password-label">Esqueceu a conta?</label> -->
     </div>
     <div class="form-control">
         <button type ="submit" id="button-login">Entrar</button>
@@ -26,21 +27,20 @@
     <section class ="main-content">
 
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img id="facebook-networking" src="imgs/networking.png">
+            <p class="slogan" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking" class="facebook-networking" src="imgs/networking.png">
         </div>
 
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <h4 class="quick-easy">É rápido e fácil.</h4>
             <form method="get" class="create-account-form">
-                <p class="invalid-forms">Formulário inválido</p>
                 <div class="full-name">
-                    <input type="text" placeholder="Nome" id="firstname" name="firstname" required="required">
-                    <input type="text" placeholder="Sobrenome" name="lastname" required="required">
+                    <input id="firstname" type="text" placeholder="Nome" name="firstname" >
+                    <input id="lastname" type="text" placeholder="Sobrenome" name="lastname" required="required">
                 </div>
                 <div>
-                    <input id="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required="required">
+                    <input  id="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required="required">
                 </div>
                 <div>
                     <input id="password" type="password" placeholder="Nova senha" name="password" required="required">
@@ -49,15 +49,21 @@
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
                     <input type="text" id="birthdate" placeholder="dd/mm/aaaa" name="birthdate" required="required">
                 </div>
-                <div id="gender" class="iten-register">
+                <div id="gender">
                     <label  id="label-gender">Gênero</label><br>
-                    <label for="feminino" ><input required="required" id="feminino" type="radio"name="gender" value="Feminino">Feminino</label>
-                    <label for="masculino" ><input id="masculino" type="radio" name="gender" value="Masculino">Masculino</label>
-                    <label for="personalizado" ><input id="personalizado" type="radio" name="gender" value="Personalizado" >Personalizado</label>
-                    <input id="genero-personalizado" class="genero-personalizado" type="text" name="gender-custom" placeholder="Gênero (opcional)">
+                    <label for="feminino" ><input checked="checked" value="Feminino" required="required" id="feminino" type="radio"name="gender">Feminino</label>
+                    <label for="masculino" ><input  id="masculino" type="radio" value="Masculino" name="gender">Masculino</label>
+                    <label for="personalizado" ><input  id="personalizado" type="radio"  value="Personalizado" name="gender" >Personalizado</label>
+                    <!-- <input id="genero-personalizado" class="genero-personalizado" type="text" name="gender-custom" placeholder="Gênero (opcional)"> -->
+                </div>
+                <div>
+                    <p class="agreement">Ao clicar em Cadastre-se, você concorda com nossos<span style="color: darkblue;"> Termos</span>, <span style="color: darkblue;">Política de Dados</span> e <span style="color: darkblue;">Política de Cookies</span>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
                 </div>
                 <div>
                     <button type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+                <div>
+                    <p class="crie"> <span style="color: darkblue;">Crie uma página</span> para uma celebridade, banda ou empresa.</p>
                 </div>
             </form>
         </div>

@@ -11,7 +11,7 @@ let textChecked = true;
 const inputTextsValidation = () => {
   if (fisrtName.value === '' || lastName.value === '') {
     textChecked = false;
-}
+  }
 
   if (phoneEmail.value === '' || password.value === '' || birthDate.value === '') {
     textChecked = false;

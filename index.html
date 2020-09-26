@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Facebook - entre ou cadastre-se</title>
 </head>
@@ -17,6 +18,7 @@
             <div class="form-group">
                 <label id="user-password-label"for="user-password">Senha</label>
                 <input id="user-password"type="password">
+                <a href="#">Esqueceu sua conta?</a>
             </div>
             <div class="form-control">
                 <button id="button-login">Entrar</button>
@@ -26,8 +28,8 @@
 
     <section class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img src="imgs/networking.png" alt="Facebook networking" id="facebook-networking">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e <br> compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
+            <img src="imgs/networking.png" alt="Facebook networking" id="facebook-networking" class="facebook-networking">
         </div>
 
         <div class="right-content">
@@ -38,13 +40,15 @@
                     <input type="text" name="firstname" placeholder="Nome" id="firstname">
                     <input type="text" name="lastname" placeholder="Sobrenome" id="lastname">
                 </div>
+                <div class='phone-password'>
                 <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
                 <input type="password" name="password" placeholder="Nova senha" id="password">
+                </div>
                 <div class="birthday">
-                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <label for="birthdate" id="label-birthdate" class="label-birthdate">Data de nascimento</label>
                     <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
                 </div>
-                <label for="" id="label-gender">Gênero</label>
+                <label for="" id="label-gender" class="label-gender">Gênero</label>
                 <div class="genre">
                     <input type="radio" name="gender" id="female" value="Feminino">
                     <label for="female">Feminino</label>
@@ -53,9 +57,9 @@
                     <input type="radio" name="gender" id="custom" value="Personalizado">
                     <label for="custom">Personalizado</label>
                 </div>
-                <div id="genre-opcional"></div>
+                <div id="genre-opcional" class="genre-opcional"></div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>
-                <p id="error-message"></p>
+                <p id="error-message" class="error-message"></p>
             </form>
         </div>
     </section>

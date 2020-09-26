@@ -77,18 +77,8 @@ function validaCadastro() {
   }
 }
 
-const removeTagChild = function () {
-  const tagInput = document.querySelector('.gender-custom');
-  tagInput.style.display = 'none';
-};
-
 window.onload = function () {
   buttonSignUp.addEventListener('click', validaCadastro);
-
-  genderFeminine.addEventListener('click', removeTagChild);
-
-  genderMale.addEventListener('click', removeTagChild);
-
   genderCustom.addEventListener('change', function () {
     const tagInput = document.getElementById('gender-custom-other');
     if (genderCustom.checked) {

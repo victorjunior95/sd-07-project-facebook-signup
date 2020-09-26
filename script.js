@@ -16,21 +16,6 @@ document.querySelector('#personalized').addEventListener('change', () => {
   }
 });
 
-function removeMsgWarning() {
-  const container = document.querySelector('#invalidFields');
-  const containerP = document.querySelector('#invalidFields p');
-  if(containerP !== null) { container.removeChild(containerP); }
-};
-
-function createMsgWarning() {
-  if (document.querySelector('#invalidFields p') === null) {
-    const paragraph = document.createElement('p');
-    paragraph.innerText = 'Campos inválidos';
-    paragraph.id = 'msgError';
-    document.querySelector('#invalidFields').appendChild(paragraph);
-  }
-};
-
 document.querySelector('#facebook-register').addEventListener('click', () => {
   removeMsgWarning();
   const formSub = document.querySelectorAll('#subscribe input');
@@ -39,9 +24,24 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
     const element = formSub[i];
     if (element.value === '') {
       blankFields = true;
-    } else if (document.querySelector('input[name="genre"]:checked') === null){
+    } else if (document.querySelector('input[name="genre"]:checked') === null) {
       blankFields = true;
-    };
+    }
   }
   if (blankFields === true) { createMsgWarning(); }
 });
+
+function removeMsgWarning() {
+  const container = document.querySelector('#invalidFields');
+  const containerP = document.querySelector('#invalidFields p');
+  if (containerP !== null) { container.removeChild(containerP); }
+}
+
+function createMsgWarning() {
+  if (document.querySelector('#invalidFields p') === null) {
+    const paragraph = document.createElement('p');
+    paragraph.innerText = 'Campos inválidos';
+    paragraph.id = 'msgError';
+    document.querySelector('#invalidFields').appendChild(paragraph);
+  }
+}

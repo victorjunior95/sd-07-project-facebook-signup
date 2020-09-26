@@ -34,19 +34,24 @@ btMale.addEventListener('click', deleteInput);
 document.getElementById('facebook-register').addEventListener('click', function (event) {
   event.preventDefault();
   const errorMessage = document.getElementById('error-message');
-  if (document.getElementById('firstname').value === '') {
+  const firstname = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const phoneMail = document.getElementById('phone_email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  if (firstname === '') {
     errorMessage.textContent = 'Campos inválidos';
-  } else if (document.getElementById('lastname').value === '') {
+  } else if (lastname === '') {
     errorMessage.textContent = 'Campos inválidos';
-  } else if (document.getElementById('phone_email').value === '') {
+  } else if (phoneMail === '') {
     errorMessage.textContent = 'Campos inválidos';
   } else if (document.getElementById('password').value === '') {
     errorMessage.textContent = 'Campos inválidos';
-  } else if (document.getElementById('birthdate').value === '') {
+  } else if (birthdate === '') {
     errorMessage.textContent = 'Campos inválidos';
   } else if (btFemale.checked === false && btMale.checked === false && btCustom.checked === false) {
     errorMessage.textContent = 'Campos inválidos';
   } else {
-    errorMessage.textContent = '';
+    document.querySelector('.right-content').innerHTML = `Olá, ${firstname} ${lastname}
+    Telefone ou e-mail: ${phoneMail} Data de Nascimento: ${birthdate}`;
   }
 });

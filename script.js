@@ -1,11 +1,12 @@
 function newContentRight(data) {
   if (data.length >= 4) {
-    const parentRightContent = document.querySelectorAll('.main-content')[0];
-    const divOldRightContent = document.querySelector('#right-content');
-    parentRightContent.removeChild(divOldRightContent);
+    const divRightContent = document.querySelector('#right-content');
+    while (divRightContent.lastElementChild) {
+      divRightContent.removeChild(divRightContent.lastElementChild);
+    }
     const newDivRight = document.createElement('div');
     newDivRight.className = 'new-content-right';
-    parentRightContent.appendChild(newDivRight);
+    divRightContent.appendChild(newDivRight);
     const ulApresentation = document.createElement('ul');
     newDivRight.appendChild(ulApresentation);
     const liItem = document.createElement('li');

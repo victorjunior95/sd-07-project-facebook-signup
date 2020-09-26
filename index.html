@@ -37,22 +37,28 @@
       <form class='sing-up'>
         <div class='user-name'>
           <input type='text' id='firstname' name='firstname' placeholder='Nome'>
+          <p class='alert-erro'></p>
           <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
+          <p class='alert-erro'></p>
         </div>
         <input type='text' id='phone_email' name='phone_email' placeholder='Celular ou email'>
+        <p class='alert-erro'></p>
         <input type='password' id='password' name='password' placeholder='Nova senha'>
+        <p class='alert-erro'></p>
         <div class='birthday'>
           <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
           <input type='date' id='birthdate' name='birthdate' placeholder='dd/mm/aaaa'>
+          <p class='alert-erro'></p>
         </div><br>
           <label id='label-gender'><h3>Gênero</h3></label>
+          <p class='alert-erro'></p>
         <div class='u-gender-option'>
           <label for='female'>Feminino</label>
           <input type='radio' id='female' value='Feminino' name='gender'>
           <label for='male'>Masculino</label>
           <input type='radio' id='male' value='Masculino' name='gender'>
           <label for='other'>Personalizado</label>
-          <input type='radio' id='other' value='Personalizado' name='gender'>
+          <input type='radio' id='custon' value='Personalizado' name='gender'>
         </div><br>
         <button type='submit' id='facebook-register'>Cadastre-se</button>
       </form>

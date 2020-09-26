@@ -1,7 +1,7 @@
 const btnLogin = document.getElementById('button-login');
 btnLogin.addEventListener('click', function () {
   alert(document.querySelector('#user-email-phone').value);
-});
+});//caputo
 
 const allInputs = document.querySelectorAll('.required');
 const btnRegister = document.querySelector('#facebook-register');

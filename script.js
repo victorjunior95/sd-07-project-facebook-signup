@@ -35,16 +35,15 @@ const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', function () {
   const inputsFormRegister = document.querySelectorAll('.validation');
   const validationMsg = document.querySelector('#validation-msg');
-  const valuesCaptured = []
+  const valuesCaptured = [];
   for (let index = 0; index < inputsFormRegister.length; index += 1) {
     if (inputsFormRegister[index].value === '') {
       validationMsg.innerText = 'Campos inválidos';
       validationMsg.style.color = 'red';
-    } else {
-      if (inputsFormRegister[index].name !== 'password') {
-       valuesCaptured.push(inputsFormRegister[index].value);
-      }
+    }
+    if (inputsFormRegister[index].name !== 'password') {
+      aluesCaptured.push(inputsFormRegister[index].value);
     }
   }
-  newContentRight(valuesCaptured)
+  newContentRight(valuesCaptured);
 });

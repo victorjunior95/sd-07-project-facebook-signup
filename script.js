@@ -15,8 +15,8 @@ function createTextField() {
   }
 }
 
-const buttonCustom = document.getElementById('custom');
-buttonCustom.addEventListener('click', createTextField);
+const btCustom = document.getElementById('custom');
+btCustom.addEventListener('click', createTextField);
 
 function deleteInput() {
   const genreOpcional = document.querySelector('#genre-opcional');
@@ -36,20 +36,15 @@ document.getElementById('facebook-register').addEventListener('click', function 
   const errorMessage = document.getElementById('error-message');
   if (document.getElementById('firstname').value === '') {
     errorMessage.textContent = 'Campos Inválidos';
-  }
-  if (document.getElementById('lastname').value === '') {
+  } else if (document.getElementById('lastname').value === '') {
     errorMessage.textContent = 'Campos Inválidos';
-  }
-  if (document.getElementById('phone_email').value === '') {
+  } else if (document.getElementById('phone_email').value === '') {
     errorMessage.textContent = 'Campos Inválidos';
-  }
-  if (document.getElementById('password').value === '') {
+  } else if (document.getElementById('password').value === '') {
     errorMessage.textContent = 'Campos Inválidos';
-  }
-  if (document.getElementById('birthdate').value === '') {
+  } else if (document.getElementById('birthdate').value === '') {
     errorMessage.textContent = 'Campos Inválidos';
-  }
-  if (btFemale.checked === false && btMale.checked === false && buttonCustom.checked === false) {
+  } else if (btFemale.checked === false && btMale.checked === false && btCustom.checked === false) {
     errorMessage.textContent = 'Campos Inválidos';
   } else {
     errorMessage.textContent = '';

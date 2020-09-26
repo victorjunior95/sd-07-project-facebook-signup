@@ -24,7 +24,6 @@ function registerAlert() {
       } else {
         refimputcheck +=1;
         console.log(refimputcheck)
-
       }      
     });
     if (refimputcheck >= 8) {

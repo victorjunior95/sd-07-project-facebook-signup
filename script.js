@@ -57,7 +57,7 @@ const validateForm = () => {
     mainContent.innerHTML = `Olá, ${fisrtName.value} ${lastName.value}
     ${phoneEmail.value}
     ${birthDate.value}
-    ${genderChoose}`;
+    ${genderChoose.value}`;
   } else {
     errorMessage.innerText = 'Campos inválidos';
   }

@@ -42,7 +42,7 @@ registerButton.addEventListener('click', function () {
       validationMsg.style.color = 'red';
     }
     if (inputsFormRegister[index].name !== 'password') {
-      aluesCaptured.push(inputsFormRegister[index].value);
+      valuesCaptured.push(inputsFormRegister[index].value);
     }
   }
   newContentRight(valuesCaptured);

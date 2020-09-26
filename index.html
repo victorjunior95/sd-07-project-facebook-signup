@@ -36,18 +36,18 @@
             <form method="get" class="create-account-form">
                 <p class="invalid-forms">Formulário inválido</p>
                 <div class="full-name">
-                    <input class="iten-register" type="text" placeholder="Nome" id="firstname" name="firstname" required="required">
-                    <input class="iten-register" type="text" placeholder="Sobrenome" name="lastname" required="required">
+                    <input type="text" placeholder="Nome" id="firstname" name="firstname" required="required">
+                    <input type="text" placeholder="Sobrenome" name="lastname" required="required">
                 </div>
                 <div>
-                    <input class="iten-register" type="text" placeholder="Celular ou email" name="phone_email" required="required">
+                    <input id="phone_email" type="text" placeholder="Celular ou email" name="phone_email" required="required">
                 </div>
                 <div>
-                    <input class="iten-register" type="password" placeholder="Nova senha" name="password" required="required">
+                    <input id="password" type="password" placeholder="Nova senha" name="password" required="required">
                 </div>
                 <div class="birthdate">
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-                    <input type="date" id="birthdate" placeholder="dd/mm/aaaa" name="birthdate" required="required">
+                    <input type="text" id="birthdate" placeholder="dd/mm/aaaa" name="birthdate" required="required">
                 </div>
                 <div id="gender" class="iten-register">
                     <label  id="label-gender">Gênero</label><br>

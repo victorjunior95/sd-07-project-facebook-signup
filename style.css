@@ -82,9 +82,11 @@ body {
   height: 25px;
   margin-bottom: 10px;
 }
+
 .hidden {
   display: none;
 }
+
 span {
   color: red;
   font-size: 18px;

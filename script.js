@@ -89,8 +89,8 @@ window.onload = function () {
 
   genderMale.addEventListener('click', removeTagChild);
 
-  genderCustom.addEventListener('click', function () {
-    const tagInput = document.querySelector('.gender-custom');
+  genderCustom.addEventListener('change', function () {
+    const tagInput = document.getElementById('gender-custom-other');
     tagInput.style.display = 'block';
   });
 };

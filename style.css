@@ -150,6 +150,7 @@ a {
 
 .gender-group {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .msg-campo-vazio {
@@ -184,7 +185,7 @@ a {
 }
 
 .label-group {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   margin: 5px 0;
 }

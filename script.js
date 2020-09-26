@@ -91,6 +91,10 @@ window.onload = function () {
 
   genderCustom.addEventListener('change', function () {
     const tagInput = document.getElementById('gender-custom-other');
-    tagInput.style.display = 'block';
+    if (genderCustom.checked) {
+      tagInput.style.display = 'block'
+    } else {
+      tagInput.style.display = 'none';
+    }
   });
 };

@@ -39,17 +39,12 @@ function registrarUsuario() {
   const divPai = document.querySelector('.right-content');
   const divFilho = document.getElementById('container-cadastro');
 
-  const novaDiv = document.createElement('div');
-  novaDiv.classList.add('container-cadastro-feito');
-
-  novaDiv.innerText = `Olá, ${firstName} ${lastName}!
+  divPai.removeChild(divFilho);
+  divPai.innerText = `Olá, ${firstName} ${lastName}!
   Confira seus dados:
   E-mail/Telefone: ${phoneEmail}
   Data de Nascimento: ${labelBirthdate}
   Genero: ${sexo}`;
-
-  divPai.removeChild(divFilho);
-  divPai.appendChild(novaDiv);
 }
 
 function testeCampoVazio(itemValue, itemType) {

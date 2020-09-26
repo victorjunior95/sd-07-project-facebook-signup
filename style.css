@@ -42,7 +42,7 @@ body {
   justify-content: space-between;
 }
 
-.gender {
+.radio {
   display: flex;
   justify-content: space-between;
 }

@@ -14,7 +14,7 @@ const button = document.querySelector('#button-login');
   if (mensagem === '') {
     alert('login efetuado com sucesso');
   }
-}
+
 validar();
 
   let mensagem = '';

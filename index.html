@@ -71,21 +71,6 @@
                 </label>
                 <div class="control">
                     <input class="input validation" type="date" name="birthdate" placeholder="dd/mm/aaaa" required>
-                    <!-- <div class="select">
-                        <select name="birthdate" id="day" placeholder="dd/mm/aaaa">
-                            <option value="day" disabled>Dia</option>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birthdate" id="month">
-                            <option value="month" disabled>Mês</option>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birthdate" id="year">
-                        <option value="ano" disabled>Ano</option>
-                        </select>
-                    </div> -->
                 </div>
             </div>
             <div class="field gender-options">
@@ -93,9 +78,9 @@
                     Gênero
                 </label>
                 <div class="control button-radio">
-                    <input type="radio" value="Feminino" name="gender" required> Feminino
-                    <input type="radio" value="Masculino" name="gender" required> Masculino
-                    <input type="radio" value="Personalizado" name="gender" id="custom-button" required> Personalizado
+                    <input type="radio" class="validation"  value="Feminino" name="gender" required> Feminino
+                    <input type="radio" class="validation" value="Masculino" name="gender" required> Masculino
+                    <input type="radio" class="validation" value="Personalizado" name="gender" id="custom-button" required> Personalizado
                 </div>
             </div>
             <div class="field" class="gender-custom" id="gender-custom" style="visibility: hidden;">

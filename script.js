@@ -9,7 +9,7 @@ customButton.addEventListener('change', function () {
   const registerForm = document.querySelector('.form-singup');
   const inputCustom = document.createElement('input');
   inputCustom.setAttribute('type', 'text');
-  inputCustom.setAttribute('name', 'gender-custom');
+  inputCustom.setAttribute('name', 'gender');
   inputCustom.setAttribute('placeholder', 'Gênero (opcional)');
   registerForm.appendChild(inputCustom);
 });

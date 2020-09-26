@@ -24,7 +24,9 @@ body {
 }
 
 .form-control {
+  display: flex;
   align-self: flex-end;
+  margin: 18px 5px;
 }
 
 .main-content {

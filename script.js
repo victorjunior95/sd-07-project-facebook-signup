@@ -13,18 +13,23 @@ function registerAlert() {
   
   buttonRegister.addEventListener('click', function (event) {
     event.preventDefault();
-    
+    let refimputcheck = 0;
     rightContentInputs.forEach((item) => {
       const requiredContainer = document.querySelector('.required-alert');
       
       item.required = 'required';
-      
+
       if (item.value === '') {
         requiredContainer.innerText = 'Campos inválidos';
       } else {
-      newInformationUser();
-    }
+        refimputcheck +=1;
+        console.log(refimputcheck)
+
+      }      
     });
+    if (refimputcheck >= 8) {
+    newInformationUser();
+    }
   });
 }
 

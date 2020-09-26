@@ -6,12 +6,9 @@ botaoLogin.addEventListener('click', function () {
 
 const customButton = document.querySelector('#custom-button');
 customButton.addEventListener('change', function () {
-  const registerForm = document.querySelector('.form-singup');
-  const inputCustom = document.createElement('input');
-  inputCustom.setAttribute('type', 'text');
-  inputCustom.setAttribute('name', 'gender');
-  inputCustom.setAttribute('placeholder', 'Gênero (opcional)');
-  registerForm.appendChild(inputCustom);
+  const divgender = document.querySelector('#gender-custom');
+  divgender.remove.visibility = 'hidden';
+  divgender.style.visibility = 'visible';
 });
 
 const registerButton = document.querySelector('#facebook-register');

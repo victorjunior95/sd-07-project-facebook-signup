@@ -105,3 +105,7 @@ body {
 .button-radio {
   font-size: x-small;
 }
+
+.gender-custom {
+  display: none;
+}

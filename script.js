@@ -4,35 +4,16 @@ buttonLogin.addEventListener('click', function () {
   alert(user);
 });
 
-// const genderRadio = document.getElementsByClassName('gender');
-
-// genderRadio[0].addEventListener('click', function () {
-//   const genderText = document.getElementById('gender-text');
-//   genderText.style.display = 'none';
-// });
-
-// genderRadio[1].addEventListener('click', function () {
-//   const genderText = document.getElementById('gender-text');
-//   genderText.style.display = 'none';
-// });
-
-// genderRadio[2].addEventListener('click', function () {
-//   const genderText = document.getElementById('gender-text');
-//   genderText.style.display = 'block';
-// });
-
 function createCustomGender() {
-  const registrationForm = document.forms['registration-form'];
+  const genderDiv = document.getElementsByClassName('gender-content')[0];
   const genderText = document.createElement('input');
   genderText.setAttribute('type', 'text');
   genderText.setAttribute('name', 'gender-custom');
   genderText.setAttribute('placeholder', 'Gênero (Opcional)');
   genderText.setAttribute('id', 'gender-text');
-  // genderText.setAttribute('display', 'flex');
   genderText.setAttribute('width', '100%');
   genderText.className = 'registration';
-  registrationForm.appendChild(genderText);
-  registrationForm.insertBefore(genderText, registrationForm.childNodes[12]);
+  genderDiv.appendChild(genderText);
 }
 
 function deleteCustomGender() {
@@ -66,11 +47,9 @@ function validateForm() {
   ];
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
-      alert('Campos inválidos');
-      return false;
+      fields[index].value = 'Campos inválidos';
     }
   }
-  return true;
 }
 
 const buttonRegister = document.getElementById('facebook-register');

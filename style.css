@@ -17,10 +17,6 @@ body {
   flex-direction: column;
 }
 
-.user {
-  width: 140px;
-}
-
 .form-control {
   align-self: flex-end;
 }

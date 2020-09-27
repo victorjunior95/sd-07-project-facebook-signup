@@ -50,12 +50,14 @@ function required(event) {
   event.preventDefault();
   const erro = document.createElement('p');
   erro.innerText = 'Campos inválidos';
+  erro.className = 'invalid';
   const selected = document.querySelector('.selected');
+  const invalid = document.querySelector('.invalid');
   for (let index = 0; index < checks.length; index += 1) {
-    if (checks[index].value === '' || !selected) {
-      document.querySelector('.form-register').appendChild(erro);
-    } else {
+    if (invalid) {
       checks[index].value = check[index].value;
+    } else if (checks[index].value === '' || !selected) {
+      document.querySelector('.form-register').appendChild(erro);
     }
   }
 }
@@ -63,12 +65,15 @@ radioButton2.addEventListener('click', function () {
   const customOption = document.createElement('input');
   customOption.name = 'gender-custom';
   customOption.placeholder = 'Gênero (opcional)';
-  if (document.querySelector('.personalizado').classList.contains('selected')) {
+  customOption.className = 'optional';
+  const optional = document.querySelector('.optional');
+  if (optional) {
+    customOption.name = 'gender-custom';
+  } else if (document.querySelector('.personalizado').classList.contains('selected')) {
     document.querySelector('.gender-radio').appendChild(customOption);
   }
 });
 document.querySelector('#facebook-register').addEventListener('click', required);
-
 
 document.getElementById('button-login').addEventListener('click', function () {
   const emailValue = document.querySelector('#user-email-phone').value;

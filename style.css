@@ -29,6 +29,11 @@ body {
   width: 40%;
 }
 
+.facebook-logo {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .facebook-login {
   align-items: flex-end;
   display: flex;
@@ -39,6 +44,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form-group input {
@@ -67,7 +73,7 @@ body {
 .form-control {
   align-content: center;
   align-items: center;
-  align-self: center;
+  align-self: flex-end;
   display: flex;
 }
 
@@ -79,6 +85,8 @@ body {
   font-weight: 700;
   height: 20px;
   margin-right: 25px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .main-content {

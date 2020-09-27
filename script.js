@@ -4,17 +4,11 @@ document.querySelector('#button-login').addEventListener('click', () => {
   alert(getUser);
 });
 
-document.querySelector('#personalized').addEventListener('change', () => {
-  if (document.querySelector('#personalize-container input') === null) {
-    const perGen = document.createElement('input');
-    const container = document.querySelector('#personalize-container');
-    perGen.name = 'gender-custom';
-    perGen.placeholder = 'Gênero (opcional)';
-    perGen.type = 'text';
-    perGen.id = 'genre';
-    container.appendChild(perGen);
-  }
-});
+document.querySelector('#personalized').addEventListener('change', () => { genrePersonalized(true) });
+
+document.querySelector('#female').addEventListener('change', () => { genrePersonalized(false) });
+
+document.querySelector('#male').addEventListener('change', () => { genrePersonalized(false) });
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
   if (checkBlankFields() === true) {
@@ -24,6 +18,20 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
   }
 });
 
+genrePersonalized = (parameter) => {
+  const container = document.querySelector('#personalize-container');
+  if (parameter === true){
+    const perGen = document.createElement('input');
+    perGen.name = 'gender-custom';
+    perGen.placeholder = 'Gênero (opcional)';
+    perGen.type = 'text';
+    perGen.id = 'genre';
+    container.appendChild(perGen);
+  } else if (parameter === false && document.querySelector('#personalize-container input') !== null) {
+    container.removeChild(document.querySelector('#personalize-container input'));
+  }
+
+}
 checkBlankFields = () => {
   removePInvalidFields();
   const formSub = document.querySelectorAll('#subscribe input');

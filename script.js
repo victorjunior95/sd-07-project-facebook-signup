@@ -65,7 +65,7 @@ function required(event) {
 }
 radioButton2.addEventListener('click', function () {
   const customOption = document.createElement('input');
-  customOption.name = 'gender';
+  customOption.name = 'gender-custom';
   customOption.placeholder = 'Gênero (opcional)';
   customOption.className = 'optional';
   customOption.type = 'text';

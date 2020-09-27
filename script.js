@@ -30,6 +30,7 @@ selectGenderMale.addEventListener('click', customHides);
 
 form.addEventListener('submit', function (action) {
   const messages = [];
+
   if (document.getElementById('firstname').value === '' || document.getElementById('firstname').value == null) {
     messages.push('Nome é requerido');
   }
@@ -57,5 +58,26 @@ form.addEventListener('submit', function (action) {
   if (messages.length > 0) {
     action.preventDefault();
     document.getElementById('message-error').innerText = 'Campos inválidos';
+  }
+
+  if (messages.length === 0) {
+    action.preventDefault();
+    const welcome = [];
+    welcome.push(document.getElementById('firstname').value);
+    welcome.push(document.getElementById('lastname').value);
+    welcome.push(document.getElementById('phone_email').value);
+    welcome.push(document.getElementById('birthdate').value);
+    if (document.getElementById('Feminino').checked === true) {
+      welcome.push('Feminino');
+    } else if (document.getElementById('Masculino').checked === true) {
+      welcome.push('Masculino');
+    } else {
+      welcome.push('Personalizado');
+    }
+    document.getElementsByClassName('right-content')[0].hidden = true;
+    document.getElementById('welcome-message').innerText = `Olá ${welcome[0]} ${welcome[1]}
+    Seu email ou telefone cadastrado é ${welcome[2]}
+    Sua data de nascimento é ${welcome[3]}
+    Seu gênero é ${welcome[4]}`;
   }
 });

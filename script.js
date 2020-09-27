@@ -63,3 +63,20 @@ const justValidate = new window.JustValidate('.js-form', {
 window.onload = function () {
   return justValidate;
 };
+
+function showGenderCustom() {
+  const genderCustomInput = document.getElementById('gender-custom');
+  if (genderCustomInput.style.display === 'none') {
+    genderCustomInput.style.display = 'block';
+  } else {
+    genderCustomInput.style.display = 'none';
+  }
+}
+
+window.onload = function () {
+  const genderCustomInput = document.getElementById('gender-custom');
+  genderCustomInput.style.display = 'none';
+
+  const personalizadoRadio = document.getElementById('personalizado');
+  personalizadoRadio.addEventListener('click', showGenderCustom);
+};

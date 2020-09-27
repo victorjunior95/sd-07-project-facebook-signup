@@ -48,8 +48,10 @@ body {
 
 .especiais {
   display: flex;
+
 }
 
-.opcoes {
+.gender {
   display: flex;
+  flex-direction: row;
 }

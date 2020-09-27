@@ -36,6 +36,9 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     validGender === true
   );
   else {
-    alert('Campos inválidos');
+    const incompleteFields = document.createElement('label');
+    incompleteFields.innerText = 'Campos inválidos';
+    const registerForm = document.querySelector('.setup-gender');
+    registerForm.appendChild(incompleteFields);
   }
 });

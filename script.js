@@ -21,10 +21,10 @@ addCustomGender.addEventListener('click', function () {
 
 document.querySelector('#facebook-register').addEventListener('click', function () {
   const genderSelection = document.querySelector('.setup-gender').children;
-  let validGender = 'false';
+  let validGender = false;
   for (let count = 0; count < genderSelection.length; count += 1) {
-    if (genderSelection[count].checked === 'true') {
-      validGender = 'true';
+    if (genderSelection[count].checked === true) {
+      validGender = true;
     }
   }
 
@@ -33,7 +33,7 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     document.querySelector('#password').value !== '' &&
     document.querySelector('#label-birthdate').value !== '' &&
     document.querySelector('#birthdate').value !== '' &&
-    validGender === 'true'
+    validGender === true
   );
   else {
     alert('Campos inválidos');

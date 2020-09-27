@@ -87,7 +87,13 @@ body {
 }
 
 .left-content {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 40px;
   width: 800px;
+  word-spacing: -1px;
 }
 
 .main-content {
@@ -112,8 +118,12 @@ body {
   width: 100%;
 }
 
-.registration {
-  margin: 10px;
+.open-account .date , .registration {
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 8px 10px;
+  width: 377px;
 }
 
 .registration-name {

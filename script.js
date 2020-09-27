@@ -39,4 +39,3 @@ cadast.addEventListener("click" , () => {
     }
   }
 });
-

@@ -52,9 +52,13 @@ body {
   margin-bottom: 5px;
 }
 
-input[ name = 'fnomeEmail' ] {
+.form-group .telefone-email-usuario {
   margin-bottom: 20px;
 }
+
+/* input[ name = 'fnomeEmail' ] {
+  margin-bottom: 20px;
+} */
 
 .spanPassword {
   font-size: 13px;
@@ -114,9 +118,10 @@ input[ name = 'fnomeEmail' ] {
   width: 300px;
 }
 
-.name, .lastname, .phone_email {
+.name , .lastname , .phone_email {
   width: 140px;
 }
+
 /* .registration-form input[ type = 'text' ] {
   width: 140px;
 } */
@@ -124,6 +129,7 @@ input[ name = 'fnomeEmail' ] {
 .password {
   width: 290px;
 }
+
 /* .registration-form input[ type = 'password' ] {
   width: 290px;
 } */

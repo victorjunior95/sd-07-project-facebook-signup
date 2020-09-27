@@ -37,21 +37,21 @@ const justValidate = new window.JustValidate('.js-form', {
       required: 'Campos inválidos',
     },
     lastname: {
-      required: 'Campo obrigatório',
+      required: 'Campos inválidos',
     },
     email: {
-      required: 'Campo obrigatório',
+      required: 'Campos inválidos',
       email: 'E-mail inválido',
     },
     password: {
-      required: 'Campo obrigatório',
+      required: 'Campos inválidos',
       strength: 'Senha deve ter pelo menos uma letra maiúscula, uma minúscula, e um número',
     },
     birthdate: {
-      required: 'Campo obrigatório',
+      required: 'Campos inválidos',
     },
     gender: {
-      required: 'Campo obrigatório',
+      required: 'Campos inválidos',
     },
   },
 

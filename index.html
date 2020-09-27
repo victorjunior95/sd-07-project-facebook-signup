@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Facebook</title>
+    <link rel="stylesheet" href="dist/justValidateTooltip.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
     <form class='facebook-login'>
       <div class='form-group'>
-        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <label id="user-email-phone-label" for="login">Email ou telefone</label>
         <input id="user-email-phone" type="text">
       </div>
 
@@ -22,7 +23,6 @@
 
       <div class='form-control'>
         <button id="button-login">Entrar</button>
-
       </div>
     </form>
   </header>
@@ -38,25 +38,25 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil.</h3>
-      <form action="">
+      <form action="" class="name">
         <div class='fullName'>
-          <input name='firstname' type="text" placeholder="Nome">
-          <input name='lastname' type="text" placeholder="Sobrenome">
+          <input name='firstname' type="text" placeholder="Nome" data-validate-field="text">
+          <input name='lastname' type="text" placeholder="Sobrenome" data-validate-field="text">
         </div>
-        <input name='phone_email' type="text" placeholder="Celular ou email">
-        <input name='password' type="password" placeholder="Nova senha">
+        <input name='phone_email' type="text" placeholder="Celular ou email" data-validate-field="text">
+        <input name='password' type="password" placeholder="Nova senha" data-validate-field="text">
         <div class="birthdate">
           <label id='label-birthdate' for="">Data de nascimento</label>
-          <input name='birthdate' placeholder="dd/mm/aaaa" type="date">
+          <input name='birthdate' placeholder="dd/mm/aaaa" type="date" data-validate-field="date">
         </div>
         <div>
           <label id="label-gender" for="">Gênero</label>
           <div class='radios'>
-            <input name='Feminino' type="radio">
+            <input value='Feminino' type="radio" data-validate-field="radio">
             <label for="">Feminino</label>
-            <input name='Masculino' type="radio">
+            <input value='Masculino' type="radio" data-validate-field="radio">
             <label for="">Masculino</label>
-            <input name="Personalizado" type="radio">
+            <input value="Personalizado" type="radio" data-validate-field="radio">
             <label for="">Personalizado</label>
           </div>
         </div>
@@ -64,6 +64,7 @@
       </form>
     </div>
   </div>
+  <script src="dist/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

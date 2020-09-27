@@ -14,8 +14,6 @@ body {
   padding: 0;
 }
 
-
-
 .facebook-login {
   color: white;
   display: flex;
@@ -81,7 +79,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  
 }
 
 .quick-easy {
@@ -104,6 +101,7 @@ h3 {
   font-weight: 700;
   height: 30px;
   margin-top: 6px;
+
 }
 
 .right-content .submit {
@@ -141,13 +139,14 @@ h3 {
   display: flex;
   height: 70px;
   justify-content: space-between;
-  padding: 5px 2  50px;
+  padding: 5px 20px;
   width: 100%;
 }
 
 .u-gender-option {
   align-items: center;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -158,6 +157,8 @@ h3 {
 
 .u-gender-option input {
   display: inline-block;
+  margin-bottom: 6px;
+  margin-right: 10px;
 }
 
 .user-name {

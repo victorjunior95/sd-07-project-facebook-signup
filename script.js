@@ -8,6 +8,7 @@ radioButton.addEventListener('click', function () {
     radioButton.classList.add('selected');
     radioButton1.classList.remove('selected');
     radioButton2.classList.remove('selected');
+    document.querySelector('.optional').style.display = 'none';
   } else {
     radioButton.classList.add('selected');
   }
@@ -19,6 +20,7 @@ radioButton1.addEventListener('click', function () {
     radioButton1.classList.add('selected');
     radioButton.classList.remove('selected');
     radioButton2.classList.remove('selected');
+    document.querySelector('.optional').style.display = 'none';
   } else {
     radioButton1.classList.add('selected');
   }

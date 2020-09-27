@@ -8,14 +8,17 @@ button.addEventListener('click', function () {
   alert(inputValue);
 });
 
-custom.addEventListener('focus', function (target) {
-  console.log(genderOptions.childElementCount);
-
+custom.addEventListener('focus', function () {
   if (genderOptions.childElementCount <= 8) {
     const customInput = document.createElement('input');
     customInput.type = 'text';
     customInput.placeholder = 'Gênero(opcional)';
     genderOptions.appendChild(customInput);
   }
-  console.log(genderOptions.childElementCount);
 });
+
+// custom.addEventListener('focusout', function () {
+//   if (genderOptions.childElementCount > 8) {
+//     genderOptions.removeChild(customInput);
+//   }
+// });

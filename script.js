@@ -1,6 +1,6 @@
 const genrePersonalized = (parameter) => {
   const container = document.querySelector('#personalize-container');
-  if (parameter === true){
+  if (parameter === true) {
     const perGen = document.createElement('input');
     perGen.name = 'gender-custom';
     perGen.placeholder = 'Gênero (opcional)';
@@ -10,19 +10,6 @@ const genrePersonalized = (parameter) => {
   } else if (parameter === false && document.querySelector('#personalize-container input') !== null) {
     container.removeChild(document.querySelector('#personalize-container input'));
   }
-
-}
-const checkBlankFields = () => {
-  removePInvalidFields();
-  const formSub = document.querySelectorAll('#subscribe input');
-  let blankFields = false;
-  for (let i = 0; i < formSub.length; i += 1) {
-    if (formSub[i].value === '') {
-      return blankFields = true;
-    } else if (document.querySelector('input[name="gender-custom"]:checked') === null) {
-      return blankFields = true;
-    }
-  }
 };
 
 const removePInvalidFields = () => {
@@ -31,34 +18,47 @@ const removePInvalidFields = () => {
   if (containerP !== null) { container.removeChild(containerP); }
 };
 
+const checkBlankFields = () => {
+  removePInvalidFields();
+  const formSub = document.querySelectorAll('#subscribe input');
+  let blankFields = false;
+  for (let i = 0; i < formSub.length; i += 1) {
+    if (formSub[i].value === '') {
+      blankFields = true;
+    } else if (document.querySelector('input[name="gender-custom"]:checked') === null) {
+      blankFields = true;
+    }
+  }
+  return blankFields;
+};
+
 const createPInvalidFields = () => {
   const paragraph = document.createElement('p');
   paragraph.innerText = 'Campos inválidos';
   paragraph.id = 'msgError';
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
-//refatorar func a seguir
+
 const getValuesInputs = () => {
-  const inputs = {name : "", lastName: "", emailCell: "", birthdate: "", genre: ""};
-  const formSub = document.querySelectorAll('#subscribe input');
-  for(let name in  formSub) {
-    switch (formSub[name].type) {
-      case 'text':
-        inputs[formSub[name].id] = formSub[name].value;
+  const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
+  for (const name in inputObjects) {
+    switch (name) {
+      case 'birthdate':
+        inputObjects[name] = document.querySelector('input[type="date"]').value;
         break;
-      case 'date':
-        inputs.birthdate = document.querySelector('input[type="date"]').value; 
+      case 'genre':
+        inputObjects[name] = document.querySelector('input[name="gender-custom"]:checked').value;
         break;
-      case 'radio':
-        if(document.querySelector('input[name="gender-custom"]:checked').id === formSub[name].id){
-          inputs.genre = document.querySelector(`input[id=${formSub[name].id}]`).value;
-        };
+      default:
+        inputObjects[name] = document.querySelector(`#${name}`).value;
     }
-  };
-  return inputs;
+  }
+  if (inputObjects.genre === 'on') {
+    inputObjects.genre = document.querySelector('input[id="genre"]').value;
+  }
+  return inputObjects;
 };
 
-//refatorar
 const registered = () => {
   const inputs = getValuesInputs();
   const newContainer = document.createElement('div');
@@ -79,10 +79,13 @@ document.querySelector('#button-login').addEventListener('click', () => {
 });
 
 for (let i = 0; i < 3; i += 1) {
-  let element = document.getElementsByName("gender-custom")[i];
-  element.id === 'personalized' ? element.addEventListener('change', () => { genrePersonalized(true) }) :
-  element.addEventListener('change', () => { genrePersonalized(false) });
-};
+  const element = document.getElementsByName('gender-custom')[i];
+  if (element.id === 'personalized') {
+    element.addEventListener('change', () => { genrePersonalized(true); });
+  } else {
+    element.addEventListener('change', () => { genrePersonalized(false); });
+  }
+}
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
   if (checkBlankFields() === true) {

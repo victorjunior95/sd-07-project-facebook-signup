@@ -10,14 +10,14 @@ buttonLogin.addEventListener('click', () => {
 });
 
 function checkInputs() {
-  for (let i in inputs) {
-    if (inputs[i].required && inputs[i].type !== 'radio') {
-      if (inputs[i].value === '') {
+  inputs.forEach((input) => {
+    if (input.required && input.type !== 'radio') {
+      if (input.value === '') {
         pAlert.innerText = 'Campos inválidos';
         return false;
       }
     }
-  }
+  });
   return true;
 }
 
@@ -35,10 +35,10 @@ function checkGender() {
 
   if (count < 3) {
     return true;
-  } else {
-    pAlert.innerText = 'Campos inválidos';
-    return false;
   }
+
+  pAlert.innerText = 'Campos inválidos';
+  return false;
 }
 
 buttonSubmit.addEventListener('click', (e) => {

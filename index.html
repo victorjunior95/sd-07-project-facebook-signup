@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Facebook</title>
 </head>
+<body>
     <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook logo">
         <form class='facebook-login'>
@@ -18,7 +19,7 @@
                 <input type="password" id="user-password"/>
             </div>
             <div class="form-control">
-                <button id="button-login">Entrar</button>
+                <button id="button-login" class="login-button">Entrar</button>
             </div>
         </form>
     </header>
@@ -30,15 +31,43 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
-                <input type="text" name="firstname" placeholder="Nome">
-                <input type="text" name="lastname" placeholder="Sobrenome">
-            </form>
+        <form>
+            <div class="dados-content">
+                <div class="name-content">
+                    <input class="first-Name input-camp" type="text" name="firstName" placeholder="Nome">
+                    <input class="last-Name input-camp" type="text" name="lastName" placeholder="Sobrenome">
+                </div>
+                <div class="login-content">
+                    <input class="phone-email input-camp" type="text" name="phone_email" placeholder="Celular ou Email">
+                    <input class="input-password input-camp" type="password" name="password" placeholder="Nova senha">
+                </div>
+            </div>
+            <div class="birthdate-content">
+              <label id="label-birthdate">Data de nascimento</label>
+              <input class="input-camp" type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+            </div>
+            <div class="gender-content">
+              <label class="gender-label" id="label-gender">Gênero</label><br>
+              <input class="option" type="radio" name="genero" value="female" id="female">
+              <label for="female">Feminino</label>
+              <input class="option" type="radio" name="genero" value="male" id="male">
+              <label for="male">Masculino</label>
+              <input class="option" type="radio" name="genero" value="custom" id="custom">
+              <label for="custom">Personalizado</label>
+            </div>
+            <div class="button-content">
+              <button class="register-button" type="submit" id="facebook-register">Cadastre-se</button>
+            </div>
+          </form>
         </div>
     </section>
-<body>
-  <script src="script.js">
-  </script>
+    <script src="script.js"></script>
 </body>
+
+<footer>
+    <div class="credits">
+        <p>Projeto realizado por Elano & Emerson</p>
+    </div>
+</footer>
 
 </html>

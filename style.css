@@ -57,7 +57,7 @@ body {
 }
 
 #spanPassword {
-  font-size: 13px; 
+  font-size: 13px;
 }
 
 .form-control {
@@ -67,7 +67,7 @@ body {
   align-content: center;
 }
 
-#button-login { 
+#button-login {
   background: #1877f2;
   border: 1px solid #1877f2;
   color: white;
@@ -94,10 +94,9 @@ body {
   height: 100vh;
 }
 
-
 #facebook-slogan {
   margin-left: 200px;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 #facebook-networking {
@@ -107,7 +106,7 @@ body {
 
 .right-content {
   font-size: 12px;
-  width: 300px; 
+  width: 300px;
   white-space: nowrap;
   color: rgb(66, 103, 178);
   overflow: hidden;

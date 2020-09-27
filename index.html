@@ -11,30 +11,35 @@
 <body>
   <header class="top-bar">
 
-  <div>
-    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
-  </div>
+    <div>
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
+    </div>
 
-  <div>
-    <form class="facebook-login" action="">
+    <div>
+      <form class="facebook-login" action="">
 
-      <div class="form-group">
-        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-        <input id="user-email-phone" type="text" name="user-email-phone" maxlength="40" required>
-      </div>
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input id="user-email-phone" class="media" type="text" name="user-email-phone" maxlength="40" required>
+        </div>
 
-       <div class="form-group">
-        <label id="user-password-label" for="user-password">Senha</label>
-        <input id="user-password" type="password" name="user-password" maxlength="40" required>
-      </div>
+        <div class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input id="user-password" class="media" type="password" name="user-password" maxlength="40" required>
+        </div>
 
-      <div class="form-control">
-        <button class="button-login" id="button-login">Entrar</button>
-       </div>
+        <div class="form-control">
+          <button class="button-login" id="button-login">Entrar</button>
+        </div>
 
-    </form>
-  </div>
+      </form>
+    </div>
 
+    <section class="media-footer">
+      <hr>
+      <p class="media-p">ou</p>
+      <button class="media-button">Criar nova conta</button>
+    </section>
 
   </header>
 
@@ -90,9 +95,10 @@
                 <input type="radio" id="personalizado" class="gender-radio" name="gender" value="Personalizado"/>
                 <label class="gender-text" for="personalizado">Personalizado</label>
               </div>
-
             </div>
+
             <div class="gender-custom"></div>
+
         </div>
 
 
@@ -103,6 +109,7 @@
     </div>
 
   </section>
+
   <script src="/script.js"></script>
 </body>
 </html>

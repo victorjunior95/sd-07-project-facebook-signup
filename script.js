@@ -10,7 +10,7 @@ const authenticationButton = document.getElementById('button-login');
 
 authenticationButton.addEventListener('click', alertEmailOrPhone);
 
-//função para quando selecionar a opção de gênero personalizado, criar um input para descrição
+// função para quando selecionar a opção de gênero personalizado, criar um input para descrição
 
 function createCustom() {
   const genderCustom = document.querySelector('.gender-custom');
@@ -26,7 +26,7 @@ const buttonRadio = document.querySelector('#personalizado');
 
 buttonRadio.addEventListener('change', createCustom);
 
-//função para validar campos do registro e retornar dados caso esteja tudo validado
+// função para validar campos do registro e retornar dados caso esteja tudo validado
 
 const msg = document.createElement('p');
 const centralForm = document.querySelector('.central-form');

@@ -114,11 +114,11 @@ body {
   width: 300px;
 }
 
-#myForm1 input[type="text"] {
+#myForm1 input[ type = 'text' ] {
   width: 140px;
 }
 
-#myForm1 input[type="password"] {
+#myForm1 input[ type = 'password' ] {
   width: 290px;
 }
 

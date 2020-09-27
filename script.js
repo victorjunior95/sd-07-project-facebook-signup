@@ -1,14 +1,14 @@
 const buttonAntigo = document.querySelector('#button-login');
 const buttonNovo = document.querySelector('#facebook-register');
 
-function validar () {
+ validar () {
   buttonAntigo.addEventListener('click', function () {
     const userLogin = document.querySelector('#user-email-phone').value;
     alert(userLogin);
   });
 }
-validar();
-function criarFormNovo () {
+
+ criarFormNovo () {
   const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
   listaForm.lastName = document.getElementById('lastname').value;

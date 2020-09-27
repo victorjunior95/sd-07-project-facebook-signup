@@ -63,12 +63,12 @@ function required(event) {
 }
 radioButton2.addEventListener('click', function () {
   const customOption = document.createElement('input');
-  customOption.name = 'gender-custom';
+  customOption.name = 'gender';
   customOption.placeholder = 'Gênero (opcional)';
   customOption.className = 'optional';
   const optional = document.querySelector('.optional');
   if (optional) {
-    customOption.name = 'gender-custom';
+    customOption.name = 'gender';
   } else if (document.querySelector('.personalizado').classList.contains('selected')) {
     document.querySelector('.custom').appendChild(customOption);
   }

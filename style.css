@@ -22,8 +22,13 @@ body {
   width: 100%;
 }
 
+.container-logo {
+  display: flex;
+}
+
 .container-logo img {
-  float: right;
+  float: left;
+  align-items: flex-end;
 }
 
 .facebook-login {

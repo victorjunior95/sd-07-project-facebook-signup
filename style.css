@@ -68,6 +68,11 @@ h3 {
   margin: 0;
 }
 
+.gender-custom {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .left-content {
   height: 100%;
   width: 800px;
@@ -146,13 +151,15 @@ h3 {
 .u-gender-option {
   align-items: center;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 420px;
 }
 
 .u-gender-option label {
   display: inline-block;
   font-size: 20px;
+
 }
 
 .u-gender-option input {

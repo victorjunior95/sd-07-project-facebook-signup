@@ -1,13 +1,13 @@
 const buttonlogin = document.getElementById('button-login');
 buttonlogin.addEventListener('click', () => {
-const emailPhone = document.forms['myForm']['fnomeEmail'].value;
-const passwd = document.forms['myForm']['fpassword'].value;
+    const emailPhone = document.forms.myForm.fnomeEmail.value;
+    const passwd = document.forms.myForm.fpassword.value;
     if (emailPhone !== '' || emailPhone !== null) {
-        if (passwd == '' || passwd == null) {
-        return false;
-       } else {
-        alert(`${emailPhone}`);
-       }
+        if (passwd === '' || passwd === null) {
+            return false;
+        } else {
+            alert(`${emailPhone}`);
+        }
     }
     return emailPhone;
 });
@@ -22,21 +22,6 @@ inputGender.type = 'text';
 genderOptions.appendChild(inputGender);
 });
 
-let count = 0;/* referência projeto higoramorim-facebook-project*/
-const buttonFacebookRegister = document.querySelector('#facebook-register');
-buttonFacebookRegister.addEventListener('click', () => {
-const input = document.querySelectorAll('input')
-let check = false;
-    input.forEach(item => {
-        if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
-            if (item.value === '' || item.value === null) {
-                check = true;
-            }
-        }
-    });
-    addMsgError(check);
-});
-
 function addMsgError(check) {
 const registrationForm = document.querySelector('.registration-form');
     if (check) {
@@ -48,3 +33,18 @@ const registrationForm = document.querySelector('.registration-form');
         }
     }
 }
+
+let count = 0;/* referência projeto higoramorim-facebook-project*/
+const buttonFacebookRegister = document.querySelector('#facebook-register');
+buttonFacebookRegister.addEventListener('click', () => {
+    const input = document.querySelectorAll('input')
+    let check = false;
+    input.forEach(item => {
+        if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
+            if (item.value === '' || item.value === null) {
+                check = true;
+            }
+        }
+    });
+    addMsgError(check);
+});

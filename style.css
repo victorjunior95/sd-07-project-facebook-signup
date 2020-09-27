@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(229, 232, 241);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,6 +18,11 @@ input {
   height: 17px;
   margin: 2px;
   margin-bottom: 5px;
+}
+
+::placeholder {
+  color: rgb(206, 206, 206);
+  padding-left: 5px;
 }
 
 .top-bar {
@@ -51,17 +57,33 @@ input {
   border-radius: 2px;
   height: 22px;
   justify-content: flex-start;
-  margin: 2px 4px;
+  margin: 5px;
 }
 
 .main-content {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+.main-content input {
+  height: 30px;
+}
+
 .left-content {
   width: 800px;
+}
+
+.left-content p {
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 40px;
+}
+
+.left-content img {
+  align-self: center;
+  padding: 60px;
 }
 
 .right-content {
@@ -89,4 +111,19 @@ input {
 
 .genero {
   width: 100%;
+}
+
+.invalid {
+  color: red;
+}
+
+.right-content button {
+  background-color: rgb(91, 148, 73);
+  border: 1px solid rgb(84, 131, 67);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  margin-top: 10px;
+  width: 200px;
 }

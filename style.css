@@ -22,22 +22,14 @@ body {
   width: 100%;
 }
 
-.container-logo {
-  display: flex;
-  height: auto;
-  justify-content: center;
-  width: 40%;
-}
-
-.facebook-logo {
-  align-items: flex-start;
-  justify-content: flex-start;
+.container-logo img {
+  float: right;
 }
 
 .facebook-login {
+  float: left;
   align-items: flex-end;
   display: flex;
-  justify-content: flex-end;
   width: 40%;
 }
 

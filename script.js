@@ -10,15 +10,17 @@ buttonLogin.addEventListener('click', () => {
 });
 
 function checkInputs() {
+  let bool = true;
+
   inputs.forEach((input) => {
     if (input.required && input.type !== 'radio') {
       if (input.value === '') {
         pAlert.innerText = 'Campos inválidos';
-        return false;
+        bool = false;
       }
     }
   });
-  return true;
+  return bool;
 }
 
 function checkGender() {

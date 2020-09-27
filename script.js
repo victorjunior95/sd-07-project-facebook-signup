@@ -59,16 +59,16 @@ function required(event) {
     }
   }
 }
-function custom() {
+radioButton2.addEventListener('click', function () {
   const customOption = document.createElement('input');
   customOption.name = 'gender-custom';
-  customOption.placeholder = 'Gênero(opcional)';
+  customOption.placeholder = 'Gênero (opcional)';
   if (document.querySelector('.personalizado').classList.contains('selected')) {
     document.querySelector('.gender-radio').appendChild(customOption);
   }
-}
+});
 document.querySelector('#facebook-register').addEventListener('click', required);
-document.querySelector('#facebook-register').addEventListener('click', custom);
+
 
 document.getElementById('button-login').addEventListener('click', function () {
   const emailValue = document.querySelector('#user-email-phone').value;

@@ -4,8 +4,19 @@ buttonLogin.addEventListener('click', function () {
   alert(user);
 });
 
-const buttonRegister = document.getElementById('facebook-register');
-buttonRegister.addEventListener('click', function () {
-  const formClass = document.getElementById('registration-form');
-  console.log(formClass.children);
-});
+const genderRadio = document.getElementsByClassName('gender');
+
+genderRadio[0].addEventListener('click', function() {
+  const genderText = document.getElementById('gender-text');
+  genderText.style.display = "none";
+})
+
+genderRadio[1].addEventListener('click', function() {
+  const genderText = document.getElementById('gender-text');
+  genderText.style.display = "none";
+})
+
+genderRadio[2].addEventListener('click', function() {
+  const genderText = document.getElementById('gender-text');
+  genderText.style.display = "block";
+})

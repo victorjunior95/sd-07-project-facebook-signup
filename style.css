@@ -1,7 +1,8 @@
 body , html {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .top-bar {
@@ -17,16 +18,90 @@ body , html {
 }
 
 .facebook-login {
+  align-self: flex-end;
+  background-color: green;
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
+  height: 57px;
+  margin-bottom: 8px;
+  width: 392px;
 }
 
 .form-group {
+  background-color: red;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: 45px;
+}
+
+.label-form-loggin {
+  background-color: blueviolet;
+  box-sizing: border-box;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 0 0 14px;
+}
+
+.input-form-loggin {
+  background-color: white;
+  border: 1px solid #1d2a5b;
+  box-sizing: border-box;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  margin-left: 14px;
+  padding: 3px 3px 4px;
+  width: 150px;
 }
 
 .form-control {
   align-self: flex-end;
+  background-color: coral;
+  margin-left: 14px;
+}
+
+.button-form-loggin {
+
+  /* background-color: rgb(66, 103, 178); */
+  background-image: linear-gradient(rgb(66, 103, 177), rgb(59, 89, 151));
+  border: 1px solid #29487d;
+  border-radius: 2px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 2px 6px;
+}
+
+.button-form-loggin:hover {
+  background-color: rgb(54, 88, 152);
+  background-image: linear-gradient(rgb(54, 88, 152), rgb(54, 88, 152));
+  cursor: pointer;
+}
+
+.remember-account {
+  align-items: center;
+  background-color: crimson;
+  display: flex;
+  font-size: 12px;
+  height: 20px;
+  margin-left: 178px;
+  width: 100%;
+}
+
+.remember-account a , .remember-account a:visited {
+  color: #9cb4d8;
+  text-decoration: none;
+}
+
+.remember-account a:hover {
+  text-decoration: underline;
 }
 
 .main-content {
@@ -42,6 +117,115 @@ body , html {
 
 .right-content {
   width: 300px;
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputSmall {
+  box-sizing: border-box;
+  width: 145px;
+}
+
+.inputLarge {
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.radio-text {
+  font-size: 12px;
+}
+
+.radio-grand-parents {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+/* ========================================= */
+header {
+  background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%);
+  border-bottom: 1px solid #133783;
+  height: 82px;
+  min-width: 1200px;
+}
+
+.top-bar {
+
+  /* background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
+  box-sizing: border-box;
+  height: 82px;
+  margin: 0 auto;
+  padding-top: 13px;
+  width: 1150px;
+}
+
+.div-logo {
+  align-items: flex-end;
+  background-color: green;
+  display: flex;
+  height: 50px;
+  width: 170px;
+}
+
+.link-home {
+  background-color: yellow;
+  height: 34px;
+}
+
+.facebook-logo {
+  background-color: red;
+  height: 34px;
+}
+
+main {
+  background: linear-gradient(white, rgb(211, 216, 232));
+  min-width: 1200px;
+}
+
+.main-content {
+  background-color: green;
+  margin: 30px auto 0;
+}
+
+.left-content {
+  background-color: aqua;
+}
+
+.p-networking {
+  background-color: red;
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.img-networking {
+  background-color: blue;
+  margin: 0;
+  width: 537px;
+}
+
+.right-content {
+  background-color: bisque;
+}
+
+.open-account {
+  background-color: red;
+  margin: 0;
+}
+
+.quick-easy {
+  background-color: blue;
+  margin: 10px 0;
 }
 
 .form-content {

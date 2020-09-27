@@ -7,30 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header  class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="logotipo do facebook-logo" class="facebook-logo">
-        <form action="" class="facebook-login">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-                <input type="text" id="user-email-phone">
+    <header>
+        <div class="top-bar">
+            <div class="div-logo">
+                <a class="link-home" href="" title="Ir para a página inicial do Facebook">
+                    <img src="imgs/facebook-logo.png" alt="logotipo do facebook-logo" class="facebook-logo">
+                </a>
             </div>
-            <div class="form-group">
-                <label id="user-password-label" for="user-password">Senha</label>
-                <input type="text" id="user-password">
-            </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
-            </div>
-        </form>
+            <form action="" class="facebook-login">
+                <div class="form-group">
+                    <label class="label-form-loggin" id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+                    <input class="input-form-loggin" type="text" id="user-email-phone">
+                </div>
+                <div class="form-group">
+                    <label class="label-form-loggin" id="user-password-label" for="user-password">Senha</label>
+                    <input class="input-form-loggin" type="text" id="user-password">
+                </div>
+                <div class="form-control">
+                    <button class="button-form-loggin" id="button-login">Entrar</button>
+                </div>
+                <div class="remember-account">
+                    <a  href="">Esqueceu a conta?</a>
+                </div>
+            </form>
+        </div>
     </header>
     <main>
         <div class="main-content">
             <div class="left-content">
-                <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-                <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
+                <p class="p-networking" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img class="img-networking" src="imgs/networking.png" alt="Mapa mundi com conexões de usuários entre continentes" id="facebook-networking">
             </div>
             <div class="right-content">
-                <h1>Abra uma conta</h1>
+                <h1 class="open-account">Abra uma conta</h1>
                 <p class="quick-easy">É rápido e fácil.</p>
                 <form class="form-content">
                     <div>
@@ -66,12 +75,20 @@
                             <label for="person" class="radio-text">Personalizado</label>
                         </div>
                     </div>
+                    <p>
+                        Ao clicar em Abrir uma conta, você concorda com os nossos
+                        Termos e que leu a nossa Política de Dados, incluindo o nosso
+                         Uso de Cookies.
+                    </p>
                     <div>
                         <button type="submit" id="facebook-register">Cadastre-se</button>
                         <p id="mensage-invalid">aaa</p>
                     </div>
 
                 </form>
+                <p>
+                    Criar uma Página para uma celebridade, banda ou empresa.
+                </p>
             </div>
         </div>
     </main>

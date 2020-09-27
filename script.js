@@ -6,7 +6,7 @@ buttonlogin.addEventListener('click', () => {
     if (passwd === '' || passwd === null) {
       return false;
     }
-      alert(`${emailPhone}`);
+    alert(`${emailPhone}`);
   }
   return emailPhone;
 });

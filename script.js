@@ -25,6 +25,26 @@ const justValidate = new window.JustValidate('.form-register', {
       required: true,
     },
   },
+  messages: {
+    firstname: {
+      required: 'Campos inválidos',
+    },
+    lastname: {
+      required: 'Campos inválidos',
+    },
+    phone_email: {
+      required: 'Campos inválidos',
+    },
+    password: {
+      required: 'Campos inválidos',
+    },
+    birthdate: {
+      required: 'Campos inválidos',
+    },
+    gender: {
+      required: 'Campos inválidos',
+    },
+  },
 });
 
 window.onload = function () {

@@ -41,16 +41,11 @@ const createPInvalidFields = () => {
 
 const getValuesInputs = () => {
   const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
-  for (const name in inputObjects) {
-    switch (name) {
-      case 'birthdate':
-        inputObjects[name] = document.querySelector('input[type="date"]').value;
-        break;
-      case 'genre':
-        inputObjects[name] = document.querySelector('input[name="gender-custom"]:checked').value;
-        break;
-      default:
-        inputObjects[name] = document.querySelector(`#${name}`).value;
+  inputObjects.birthdate = document.querySelector('input[type="date"]').value;
+  inputObjects.genre = document.querySelector('input[name="gender-custom"]:checked').value;
+  for (let i = 0; i < inputObjects.length; i += 1) {
+    if (inputObjects[i] === '') {
+      inputObjects[i] = document.querySelector(`#${i}`).value;
     }
   }
   if (inputObjects.genre === 'on') {

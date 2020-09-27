@@ -4,12 +4,22 @@
     height: max-content;
   }
 
+  .top-bar {
+    align-items: center;
+    flex-flow: column wrap;
+    height: min-content;
+    justify-content: center;
+    width: 100%;
+  }
+
   .facebook-logo {
     margin: 20px;
   }
 
   .facebook-login {
     background-color: rgb(110, 149, 226);
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     width: 100%;
   }
@@ -19,7 +29,7 @@
   }
 
   .form-group label {
-    font-size: xx-small;
+    font-size: 13px;
   }
 
   .form-group span {
@@ -28,26 +38,31 @@
 
   .form-control {
     align-self: center;
-  }
-
-  .top-bar {
-    align-items: center;
-    flex-flow: column wrap;
-    height: min-content;
-    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
   }
 
   .main-content {
     align-items: center;
     flex-flow: column wrap;
+    width: 100%;
   }
 
   .left-content {
     align-items: center;
-    margin: 50px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 80%;
+  }
+
+  .left-content .facebook-slogan {
+    text-align: center;
   }
 
   .right-content {
+    background-color: rgb(245, 243, 243);
     border: 2px solid rgb(66, 103, 178);
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.562);
@@ -81,6 +96,12 @@
   .gender-tittle {
     align-self: center;
     color: rgb(66, 103, 178);
+  }
+
+  .gender-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

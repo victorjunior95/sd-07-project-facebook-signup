@@ -50,3 +50,13 @@ const justValidate = new window.JustValidate('.form-register', {
 window.onload = function () {
   return justValidate;
 };
+
+document.querySelectorAll('.gender').forEach((item) => {
+  item.addEventListener('change', (event) => {
+    if (event.target === document.getElementsByClassName('gender')[2]) {
+      document.getElementById('gender-personal').style.display = 'block';
+    } else {
+      document.getElementById('gender-personal').style.display = 'none';
+    }
+  });
+});

@@ -38,3 +38,7 @@
 .label-gender {
   display: flex;
 }
+
+.gender-personal {
+  display: none;
+}

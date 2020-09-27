@@ -82,11 +82,12 @@
               data-validate-field="birthdate"
             />
           </div>
-          <div>
+          <div id="genderDiv">
             <label id="label-gender" class="label-gender">Gênero</label>
             <input
               type="radio"
               id="fem"
+              class="gender"
               name="gender"
               value="Feminino"
               data-validate-field="gender"
@@ -95,6 +96,7 @@
             <input
               type="radio"
               id="masc"
+              class="gender"
               name="gender"
               value="Masculino"
               data-validate-field="gender"
@@ -103,11 +105,18 @@
             <input
               type="radio"
               id="pers"
+              class="gender"
               name="gender"
               value="Personalizado"
               data-validate-field="gender"
             />
             <label for="pers">Personalizado</label>
+            <input
+              name="gender-custom"
+              placeholder="Gênero (opcional)"
+              class="gender-personal"
+              id="gender-personal"
+            />
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>

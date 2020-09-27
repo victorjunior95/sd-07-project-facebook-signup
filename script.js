@@ -1,23 +1,3 @@
-
-document.querySelector('#button-login').addEventListener('click', () => {
-  const getUser = document.querySelector('#user-email-phone').value;
-  alert(getUser);
-});
-
-for (let i = 0; i < 3; i += 1) {
-  let element = document.getElementsByName("gender-custom")[i];
-  element.id === 'personalized' ? element.addEventListener('change', () => { genrePersonalized(true) }) :
-  element.addEventListener('change', () => { genrePersonalized(false) });
-};
-
-document.querySelector('#facebook-register').addEventListener('click', () => {
-  if (checkBlankFields() === true) {
-    createPInvalidFields();
-  } else {
-    registered();
-  }
-});
-
 genrePersonalized = (parameter) => {
   const container = document.querySelector('#personalize-container');
   if (parameter === true){
@@ -92,3 +72,22 @@ registered = () => {
   newContainer.appendChild(paragraph);
   document.querySelector('#right-content').innerHTML = newContainer.innerHTML;
 };
+
+document.querySelector('#button-login').addEventListener('click', () => {
+  const getUser = document.querySelector('#user-email-phone').value;
+  alert(getUser);
+});
+
+for (let i = 0; i < 3; i += 1) {
+  let element = document.getElementsByName("gender-custom")[i];
+  element.id === 'personalized' ? element.addEventListener('change', () => { genrePersonalized(true) }) :
+  element.addEventListener('change', () => { genrePersonalized(false) });
+};
+
+document.querySelector('#facebook-register').addEventListener('click', () => {
+  if (checkBlankFields() === true) {
+    createPInvalidFields();
+  } else {
+    registered();
+  }
+});

@@ -46,3 +46,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.genderContainer {
+  display: flex;
+  flex-direction: row;
+}

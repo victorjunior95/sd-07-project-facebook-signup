@@ -31,17 +31,13 @@
 
 .left-content {
   width: 800px;
-
 }
 
 .right-content {
   width: 300px;
 }
-.formSub{
-}
-#name,#lastName{
+
+.nameComplete input {
   display: inline-block;
-  width: 40%;
+  width: 45%;
 }
-
-

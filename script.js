@@ -21,7 +21,7 @@ genderP.addEventListener('change', () => {
   genderOptions.appendChild(inputGender);
 });
 
-let count = 0;/*referência projeto higoramorim-facebook-project*/
+let count = 0;/* referência projeto higoramorim-facebook-project*/
 function addMsgError(check) {
   const registrationForm = document.querySelector('.registration-form');
   if (check) {
@@ -29,7 +29,7 @@ function addMsgError(check) {
     count += 1;
     if (count <= 1) {
       p.innerHTML = 'Campos inválidos';
-      registrationForm.appendChild(p); 
+      registrationForm.appendChild(p);
     }
   }
 }
@@ -39,7 +39,7 @@ function cleanRightContentDiv() {
   rightContentDiv.innerHTML = '';
 }
 
-function returnMsg (nome, email, dataNascimento, gender) {
+function returnMsg(nome, email, dataNascimento, gender) {
   const rightContent = document.querySelector('.right-content');
   const p = document.createElement('p');
   p.innerHTML = `Olá ${nome} ${email} ${dataNascimento} ${gender}`;
@@ -54,7 +54,7 @@ let gender;
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 buttonFacebookRegister.addEventListener('click', () => {
   const form = document.forms.myForm1;
-  const input = document.querySelectorAll('input')
+  const input = document.querySelectorAll('input');
   let check = false;
   input.forEach((item) => {
     if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
@@ -63,13 +63,13 @@ buttonFacebookRegister.addEventListener('click', () => {
       }
     }
   });
-    if (check === false) {
-        nome = `${form[0].value} ${form[1].value}`;
-        email = `${form[2].value}`;
-        dataNascimento = `${form[4].value}`;
-        gender = document.querySelector('input[name="gender"]:checked').value;
-        cleanRightContentDiv();
-        returnMsg (nome, email, dataNascimento, gender);
+  if (check === false) {
+      nome = `${form[0].value} ${form[1].value}`;
+      email = `${form[2].value}`;
+      dataNascimento = `${form[4].value}`;
+      gender = document.querySelector('input[name="gender"]:checked').value;
+      cleanRightContentDiv();
+      returnMsg(nome, email, dataNascimento, gender);
     }
-    addMsgError (check);
+    addMsgError(check);
 });

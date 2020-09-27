@@ -52,7 +52,7 @@ body {
   margin-bottom: 5px;
 }
 
-input[name="fnomeEmail"] {
+input[name= 'fnomeEmail'] {
   margin-bottom: 20px;
 }
 
@@ -114,11 +114,11 @@ input[name="fnomeEmail"] {
   width: 300px;
 }
 
-.registration-form input[ type = 'text' ] {
+.registration-form input[ type= 'text' ] {
   width: 140px;
 }
 
-.registration-form input[type = 'password' ] {
+.registration-form input[ type= 'password' ] {
   width: 290px;
 }
 

@@ -40,11 +40,11 @@ buttonFacebookRegister.addEventListener('click', () => {
   const input = document.querySelectorAll('input');
   let check = false;
   input.forEach((item) => {
-      if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
-          if (item.value === '' || item.value === null) {
-          check = true;
-          }
+    if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
+      if (item.value === '' || item.value === null) {
+      check = true;
       }
+    }
   });
   addMsgError(check);
 });

@@ -29,7 +29,7 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 2rem auto 0;
 }
 
@@ -59,4 +59,15 @@ body {
 
 .facebook-login div {
   margin-left: 0.5rem;
+}
+
+.form-register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.form-name {
+  margin: 0 auto;
+  width: 140px;
 }

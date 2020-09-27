@@ -1,3 +1,13 @@
+const checkedohters = document.getElementsByName('gender');
+const genderOp = document.querySelector('.u-gender-option');
+checkedohters.addEventListener('checked', function () {
+  if (!(checkedohters[2].checked)) {
+    let novoInput = document.createElement('input');
+    novoInput = document.getElementById('gender-custom').attributes('placeholder', 'Gênero (opcional)');
+    genderOp.appendChild(novoInput);
+  }
+});
+
 const pMensageInvalid = document.getElementById('mensage-invalid');
 const btButtonLogin = document.getElementById('button-login');
 btButtonLogin.addEventListener('click', function () {

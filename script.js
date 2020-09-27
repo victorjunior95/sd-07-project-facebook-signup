@@ -8,7 +8,7 @@ radioButton.addEventListener('click', function () {
     radioButton.classList.add('selected');
     radioButton1.classList.remove('selected');
     radioButton2.classList.remove('selected');
-    document.querySelector('.optional').style.display = 'none';
+    document.querySelector('.gender-selceted').removeChild(document.querySelector('.optional'));
   } else {
     radioButton.classList.add('selected');
   }
@@ -20,7 +20,7 @@ radioButton1.addEventListener('click', function () {
     radioButton1.classList.add('selected');
     radioButton.classList.remove('selected');
     radioButton2.classList.remove('selected');
-    document.querySelector('.optional').style.display = 'none';
+    document.querySelector('.gender-selceted').removeChild(document.querySelector('.optional'));
   } else {
     radioButton1.classList.add('selected');
   }
@@ -64,11 +64,16 @@ function required(event) {
   }
 }
 radioButton2.addEventListener('click', function () {
+  const customOption = document.createElement('input');
+  customOption.name = 'gender';
+  customOption.placeholder = 'Gênero (opcional)';
+  customOption.className = 'optional';
+  customOption.type = 'text';
   const optional = document.querySelector('.optional');
-  if (optional.style.display === 'flex') {
-    optional.name = 'gender';
+  if (optional) {
+    customOption.name = 'gender';
   } else if (document.querySelector('.personalizado').classList.contains('selected')) {
-    optional.style.display = 'flex';
+    document.querySelector('.gender-selceted').appendChild(customOption);
   }
 });
 document.querySelector('#facebook-register').addEventListener('click', required);

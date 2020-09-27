@@ -36,7 +36,7 @@ Array.prototype.forEach.call(radios, function (radio) {
   radio.addEventListener('change', changeRadio);
 });
 
-function validateForm() {
+function validateForm(event) {
   const warningDiv = document.getElementById('warning');
   if (warningDiv != null) {
     warningDiv.parentElement.removeChild(warningDiv);
@@ -51,16 +51,20 @@ function validateForm() {
   ];
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
-      // fields[index].value = 'Campos inválidos';
       const registrationForm = document.forms['registration-form'];
       const warning = document.createElement('div');
       warning.setAttribute('id', 'warning');
       warning.innerText = 'Campos inválidos';
       registrationForm.appendChild(warning);
-      break;
+      event.preventDefault();
+      return false;
     }
   }
+  return true;
 }
 
-const buttonRegister = document.getElementById('facebook-register');
-buttonRegister.addEventListener('click', validateForm);
+const registrationForm = document.forms['registration-form'];
+registrationForm.addEventListener('submit', validateForm);
+
+// const buttonRegister = document.getElementById('facebook-register');
+// buttonRegister.addEventListener('click', validateForm);

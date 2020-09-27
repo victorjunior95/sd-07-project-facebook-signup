@@ -37,9 +37,9 @@ Array.prototype.forEach.call(radios, function (radio) {
 });
 
 function validateForm() {
-  const warning = document.getElementById('warning');
-  if (warning != null) {
-    warning.parentElement.removeChild(warning);
+  const warningDiv = document.getElementById('warning');
+  if (warningDiv != null) {
+    warningDiv.parentElement.removeChild(warningDiv);
   }
   const fields = [
     document.forms['registration-form'].firstname,

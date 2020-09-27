@@ -53,6 +53,7 @@ body {
 }
 
 .right-content {
+  display: block;
   width: 300px;
 }
 

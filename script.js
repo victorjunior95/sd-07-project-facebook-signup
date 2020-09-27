@@ -3,7 +3,7 @@ document.getElementById('button-login').addEventListener('click', function () {
 });
 
 
-new JustValidate('.js-form', {
+const validate = new JustValidate('.name', {
   rules: {
     text: {
       required: true,
@@ -15,3 +15,7 @@ new JustValidate('.js-form', {
     },
   },
 });
+
+window.onload = function () {
+  return validate;
+}

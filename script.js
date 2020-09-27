@@ -28,13 +28,13 @@ male.addEventListener('change', checkRadio);
 const female = document.querySelector('#female');
 female.addEventListener('change', checkRadio);
 
-const cadast = document.querySelector("#facebook-register");
+const cadast = document.querySelector('#facebook-register');
 
-cadast.addEventListener("click" , () => {
-  const formsValue = document.querySelectorAll(".form-newaccaount input");
-  for(let i = 0 ; i < 5 ; i++) {
-    if(document.querySelectorAll("input:checked").length < 1 || inputGender.style.display == "block" && inputGender.value == "" || formsValue[i].value === "") {
-      alert("Campos inválidos");
+cadast.addEventListener('click', () => {
+  const formsValue = document.querySelectorAll('.form-newaccaount input');
+  for (let i = 0; i < 5; i += 1) {
+    if (document.querySelectorAll('input:checked').length < 1 || inputGender.style.display === 'block' && inputGender.value === '' || formsValue[i].value === '') {
+      alert('Campos inválidos');
       break;
     }
   }

@@ -4,11 +4,11 @@ document.querySelector('#button-login').addEventListener('click', () => {
   alert(getUser);
 });
 
-document.querySelector('#personalized').addEventListener('change', () => { genrePersonalized(true) });
-
-document.querySelector('#female').addEventListener('change', () => { genrePersonalized(false) });
-
-document.querySelector('#male').addEventListener('change', () => { genrePersonalized(false) });
+for (let i = 0; i < 3; i += 1) {
+  let element = document.getElementsByName("gender-custom")[i];
+  element.id === 'personalized' ? element.addEventListener('change', () => { genrePersonalized(true) }) :
+  element.addEventListener('change', () => { genrePersonalized(false) });
+};
 
 document.querySelector('#facebook-register').addEventListener('click', () => {
   if (checkBlankFields() === true) {

@@ -25,7 +25,7 @@ const checkBlankFields = () => {
   for (let i = 0; i < formSub.length; i += 1) {
     if (formSub[i].value === '') {
       blankFields = true;
-    } else if (document.querySelector('input[name="gender-custom"]:checked') === null) {
+    } else if (document.querySelector('input[name="gender"]:checked') === null) {
       blankFields = true;
     }
   }
@@ -42,7 +42,7 @@ const createPInvalidFields = () => {
 const getValuesInputs = () => {
   const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
   inputObjects.birthdate = document.querySelector('input[type="date"]').value;
-  inputObjects.genre = document.querySelector('input[name="gender-custom"]:checked').value;
+  inputObjects.genre = document.querySelector('input[name="gender"]:checked').value;
   for (let i = 0; i < inputObjects.length; i += 1) {
     if (inputObjects[i] === '') {
       inputObjects[i] = document.querySelector(`#${i}`).value;
@@ -74,7 +74,7 @@ document.querySelector('#button-login').addEventListener('click', () => {
 });
 
 for (let i = 0; i < 3; i += 1) {
-  const element = document.getElementsByName('gender-custom')[i];
+  const element = document.getElementsByName('gender')[i];
   if (element.id === 'personalized') {
     element.addEventListener('change', () => { genrePersonalized(true); });
   } else {

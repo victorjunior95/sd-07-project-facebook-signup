@@ -30,7 +30,7 @@
   width: 300px;
 }
 
-.nomeSobrenome {
+.fullName {
   display: flex;
   justify-content: space-around;
 }
@@ -41,4 +41,8 @@
 
 .gender-personal {
   display: none;
+}
+
+.password {
+  display: block;
 }

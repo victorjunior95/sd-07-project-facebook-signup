@@ -37,20 +37,22 @@
         </p>
         <img id="facebook-networking" src=imgs/networking.png>
       </div>
-      <div class="right-content">
+      <div class="right-content" id="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form class="form-register">
-          <div class="nomeSobrenome">
+        <form class="form-register" id="form-register">
+          <div class="fullName">
             <input
               type="text"
               name="firstname"
+              id="firstname"
               placeholder="Nome"
               data-validate-field="firstname"
             />
             <input
               type="text"
               name="lastname"
+              id="lastname"
               placeholder="Sobrenome"
               data-validate-field="lastname"
             />
@@ -59,6 +61,7 @@
             <input
               type="text"
               name="phone_email"
+              id="emailTelephone"
               placeholder="Celular ou email"
               data-validate-field="phone_email"
             />
@@ -67,6 +70,8 @@
             <input
               type="password"
               name="password"
+              id="password"
+              class="password"
               placeholder="Nova senha"
               data-validate-field="password"
             />

@@ -60,3 +60,27 @@ document.querySelectorAll('.gender').forEach((item) => {
     }
   });
 });
+
+const buttonRegister = document.getElementById('form-register');
+buttonRegister.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log('olá');
+  const firstname = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const emailTelephone = document.getElementById("emailTelephone").value;
+  const birthdate = document.getElementById("birthdate").value;
+  const gender = document.getElementsByName("gender");
+  let genderSelected;
+  for (let index = 0; index < gender.length; index += 1) {
+    if (gender[index].checked) {
+      genderSelected = gender[index].value;
+    }
+  }
+  const rightContent = document.getElementById("right-content");
+  rightContent.innerHTML = `Olá, ${firstname} ${lastname}
+  ${emailTelephone}
+  ${birthdate}
+  ${genderSelected}`;
+});
+
+

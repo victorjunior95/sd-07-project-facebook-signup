@@ -7,7 +7,7 @@ function validar () {
     alert(userLogin);
   });
 }
-
+validar();
 function criarFormNovo () {
   const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
@@ -27,8 +27,8 @@ function validarNovoUsuario () {
     }
   });
 }
-
+validarNovoUsuario();
 window.onload = function () {
   validarNovoUsuario();
   validar();
-}
+};

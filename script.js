@@ -30,7 +30,7 @@ document.querySelector('#facebook-register').addEventListener('click', () => {
       blankFields = true;
     }
   }
-  if (blankFields === true) { 
+  if (blankFields === true) {
     if (document.querySelector('#invalidFields p') === null) {
       const paragraph = document.createElement('p');
       paragraph.innerText = 'Campos inválidos';

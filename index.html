@@ -19,12 +19,13 @@
             >Email ou telefone</label
           >
           <input type="text" id="user-email-phone" />
-
+        </div>
+        <div class="form-group">
           <label id="user-password-label" for="user-password">Senha</label>
           <input id="user-password" type="text" />
-          <div class="form-control">
-            <button id="button-login">Entrar</button>
-          </div>
+        </div>
+        <div class="form-control">
+          <button id="button-login" onclick="alertEmail()" value="Email ou telefone">Entrar</button>
         </div>
       </form>
     </header>
@@ -71,5 +72,6 @@
         </form>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

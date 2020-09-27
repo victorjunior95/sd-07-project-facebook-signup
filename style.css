@@ -78,6 +78,7 @@ body {
   display: flex;
   font-size: 13px;
   width: 280px;
+  display: flex;
 }
 
 .gender-container input {

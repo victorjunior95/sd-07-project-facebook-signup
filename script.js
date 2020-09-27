@@ -1,18 +1,18 @@
 const buttonlogin = document.getElementById('button-login');
 buttonlogin.addEventListener('click', () => {
-  const emailPhone = document.forms['myForm']['fnomeEmail'].value;
-  const passwd = document.forms['myForm']['fpassword'].value;
-  if (emailPhone != '' || emailPhone != null) {
-    if (passwd == '' || passwd == null) {
+  const emailPhone = document.forms.myForm.fnomeEmail.value;
+  const passwd = document.forms.myForm.fpassword.value;
+  if (emailPhone !== '' || emailPhone !== null) {
+    if (passwd === '' || passwd === null) {
       return false;
     }
-      alert(`${emailPhone}`);
+    alert(`${emailPhone}`);
   }
-    return emailPhone;
+  return emailPhone;
 });
 
-const genderP = document.querySelector("#gender-p");
-genderP.addEventListener("change", () => {
+const genderP = document.querySelector('#gender-p');
+genderP.addEventListener('change', () => {
   const genderOptions = document.querySelector('.gender-options');
   const inputGender = document.createElement('input');
   inputGender.name = 'gender-custom';
@@ -22,13 +22,13 @@ genderP.addEventListener("change", () => {
 })
 
 function addMsgError (check) {
-    const registrationForm = document.querySelector(".registration-form");
+    const registrationForm = document.querySelector('.registration-form');
     if (check) {
-        let p = document.createElement("p");
+        let p = document.createElement('p');
         count += 1;
         if (count <= 1) {
-            p.innerHTML = "Campos inválidos";
-            registrationForm.appendChild(p); 
+          p.innerHTML = 'Campos inválidos';
+          registrationForm.appendChild(p); 
         }
     }
 }
@@ -40,26 +40,26 @@ function cleanRightContentDiv() {
 
 function returnMsg (nome, email, dataNascimento, gender) {
   const rightContent = document.querySelector(".right-content");
-  let p = document.createElement("p");
+  let p = document.createElement('p');
   p.innerHTML = `Olá ${nome} ${email} ${dataNascimento} ${gender}`
-  rightContent.appendChild(p);     
+  rightContent.appendChild(p);
 }
 
 let nome;
 let email;
 let dataNascimento;
 let gender;
-let count = 0;/*referência projeto higoramorim-facebook-project*/   
+let count = 0;/*referência projeto higoramorim-facebook-project*/
 const buttonFacebookRegister = document.querySelector("#facebook-register");
-buttonFacebookRegister.addEventListener("click", () => {
-    let form = document.forms["myForm1"];
+buttonFacebookRegister.addEventListener('click', () => {
+    let form = document.forms.myForm1;
     const input = document.querySelectorAll('input')
     let check = false;
     input.forEach(item => {
         if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
             if (item.value === '' || item.value === null) {
                 check = true;
-            } 
+            }
         }
     });
     if (check === false) {

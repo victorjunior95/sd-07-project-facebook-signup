@@ -94,7 +94,7 @@ footer {
 .left-content {
   margin: 0;
   padding-right: 50px;
-  padding-top:20px;
+  padding-top: 20px;
   width: 800px;
 }
 
@@ -263,7 +263,7 @@ footer {
   width: 40%;
 }
 
-.btn-sucess:hover{
+.btn-sucess:hover {
   box-shadow: none;
   cursor: pointer;
 }

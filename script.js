@@ -17,5 +17,5 @@ const validate = new JustValidate('.name', {
 });
 
 window.onload = function () {
-  return validate;
+  return validate();
 }

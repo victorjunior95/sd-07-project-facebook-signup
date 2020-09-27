@@ -93,9 +93,8 @@ footer {
 
 .left-content {
   margin: 0;
-  padding-right: 50px;
+  max-width: 800px;
   padding-top: 20px;
-  width: 800px;
 }
 
 .left-content p {
@@ -113,6 +112,7 @@ footer {
     sans-serif;
   font-size: 10pt;
   font-weight: 900;
+  width: 60%;
 }
 
 .right-content {
@@ -147,7 +147,6 @@ footer {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
   margin-right: 8px;
 }
 
@@ -167,6 +166,7 @@ footer {
 .form-newaccaount {
   display: flex;
   flex-wrap: wrap;
+  width: 400px;
 }
 
 .return {
@@ -175,6 +175,7 @@ footer {
 }
 
 .container-int-form {
+  padding: 0;
   width: 100%;
 }
 
@@ -240,7 +241,7 @@ footer {
   font-family: Lucida Grande, Lucida Sans, Lucida Sans Unicode,
     Geneva, Verdana, sans-serif;
   font-size: 10pt;
-  width: 65%;
+  width: 100%;
 }
 
 .polices a {

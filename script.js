@@ -70,7 +70,7 @@ radioButton2.addEventListener('click', function () {
   if (optional) {
     customOption.name = 'gender';
   } else if (document.querySelector('.personalizado').classList.contains('selected')) {
-    document.querySelector('.custom').appendChild(customOption);
+    document.querySelector('.gender').appendChild(customOption);
   }
 });
 document.querySelector('#facebook-register').addEventListener('click', required);

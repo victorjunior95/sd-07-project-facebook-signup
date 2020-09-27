@@ -1,0 +1,78 @@
+@media screen and (max-width:768px) {
+    body{
+        height: max-content;
+    }
+
+    .facebook-logo {
+        margin: 20px;
+    }
+    .facebook-login {
+        background-color: rgb(110, 149, 226);
+        justify-content: center;
+        width: 100%;
+    }
+    .form-group input {
+        font-size: xx-small;
+    }
+    .form-group label {
+        font-size: xx-small;
+    }
+    .form-group span {
+        font-size: xx-small;
+    }
+    .form-control {
+        align-self: center;
+    }
+    .top-bar {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        height: min-content;
+    }
+    .main-content {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .left-content {
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+
+    }
+    .right-content {
+        border: 2px solid rgb(66, 103, 178);
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.562);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 50px 0px;
+    }
+    .right-content h1 {
+        color: rgb(66, 103, 178);
+        align-self: center;
+    }
+    .right-content p {
+        color: rgb(66, 103, 178);
+        align-self: center;
+    }
+    .form-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .date-tittle {
+        color: rgb(66, 103, 178);
+        align-self: center;
+    }
+    .gender-tittle {
+        color: rgb(66, 103, 178);
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:360px) {
+    body {
+        background-color: darkmagenta;
+    }
+}

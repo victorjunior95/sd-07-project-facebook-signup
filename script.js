@@ -62,16 +62,11 @@ function required(event) {
   }
 }
 radioButton2.addEventListener('click', function () {
-  const customOption = document.createElement('input');
-  customOption.name = 'gender';
-  customOption.placeholder = 'Gênero (opcional)';
-  customOption.className = 'optional';
-  customOption.type = 'text';
   const optional = document.querySelector('.optional');
-  if (optional) {
-    customOption.name = 'gender';
+  if (optional.style.display === 'flex') {
+    optional.name = 'gender';
   } else if (document.querySelector('.personalizado').classList.contains('selected')) {
-    document.querySelector('.gender').appendChild(customOption);
+    optional.style.display = 'flex';
   }
 });
 document.querySelector('#facebook-register').addEventListener('click', required);

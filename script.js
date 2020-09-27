@@ -1,18 +1,14 @@
 const buttonAntigo = document.querySelector('#button-login');
 const buttonNovo = document.querySelector('#facebook-register');
-window.onload = function () {
-  validarNovoUsuario();
-  validar();
-};
 
-function validar () {
+function validar() {
   buttonAntigo.addEventListener('click', function () {
     const userLogin = document.querySelector('#user-email-phone').value;
     alert(userLogin);
   });
 }
 
-function criarFormNovo () {
+function criarFormNovo() {
   const listaForm = {};
   listaForm.firstName = document.getElementById('firstname').value;
   listaForm.lastName = document.getElementById('lastname').value;
@@ -22,8 +18,7 @@ function criarFormNovo () {
   listaForm.dataNasc = document.getElementById('birthdate').value;
   return listaForm;
 }
-
-function validarNovoUsuario () {
+function validarNovoUsuario() {
   this.criarFormNovo();
   buttonNovo.addEventListener('click', function () {
     if (this.listaForm !== '') {
@@ -31,5 +26,7 @@ function validarNovoUsuario () {
     }
   });
 }
-
-
+window.onload = function () {
+  validarNovoUsuario();
+  validar();
+};

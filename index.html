@@ -41,41 +41,48 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
+            <form class="js-form">
                 <div class="form-content-row">
-
-                    <input id="firstname" type="text" name="firstname" placeholder="Nome"></input>
-
-                    <input id="lastname" type="text" name="lastname" placeholder="Sobrenome"></input>
-
-
+                    <div class="form-group">
+                        <input id="firstname" type="text" name="firstname" placeholder="Nome" data-validate-field="firstname"></input>
+                    </div>
+                    <div class="form-group">
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" data-validate-field="lastname"></input>
+                    </div>
                 </div>
 
 
                  <div class="form-content-column">
-                    <input id="phone_email" type="text" name="phone_email" placeholder="Celular ou email"></input>
+                    <div class="form-group">
+                        <input id="phone_email" type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email"></input>
+                    </div>
 
-                    <input id="password" type="password" name="password" placeholder="Nova senha"></input>
+                    <div class="form-group">
+                        <input id="password" type="password" name="password" placeholder="Nova senha" data-validate-field="password"></input>
+                    </div>
 
-                    <label id="label-birthdate" for="user">Data de nascimento</label>
-                    <input id="user" type="date" name="birthdate" placeholder="dd/mm/aaaa"></input>
+                    <div class="form-group">
+                        <label id="label-birthdate" for="user">Data de nascimento</label>
+                        <input id="user" type="date" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate"></input>
+                    </div>
+
 
                     <label id="label-gender">Gênero</label>
 
                 </div>
 
                 <div class="form-content-row">
-                    <input id="feminino" type="radio" name="gender" value="Feminino"></input>
+                        <input id="feminino" type="radio" name="gender" value="Feminino" data-validate-field="gender"></input>
 
-                    <label for="feminino">Feminino</label>
+                        <label for="feminino">Feminino</label>
 
-                    <input id="masculino" type="radio" name="gender" value="Masculino"></input>
+                        <input id="masculino" type="radio" name="gender" value="Masculino" data-validate-field="gender"></input>
 
-                    <label for="masculino">Masculino</label>
+                        <label for="masculino">Masculino</label>
 
-                    <input id="personalizado" type="radio" name="gender" value="Personalizado"></input>
+                        <input id="personalizado" type="radio" name="gender" value="Personalizado" data-validate-field="gender"></input>
 
-                    <label for="personalizado">Personalizado</label>
+                        <label for="personalizado">Personalizado</label><br>
 
                 </div>
 
@@ -90,6 +97,6 @@
     </section>
 
 </body>
-
+<script src="/node_modules/just-validate/dist/js/just-validate.min.js"></script>
 <script src="script.js"></script>
 </html>

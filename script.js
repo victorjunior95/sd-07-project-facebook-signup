@@ -20,7 +20,7 @@ const validate = new window.JustValidate('.name', {
 
 document.getElementById('personalizado').addEventListener('click', function () {
   const textInput = document.createElement('input');
-  textInput.name = 'gender-custom';
+  textInput.name = 'gender';
   textInput.placeholder = 'Gênero (opcional)';
   divRadios.appendChild(textInput);
 });

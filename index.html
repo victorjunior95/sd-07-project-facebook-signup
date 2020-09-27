@@ -45,15 +45,16 @@
 
         <form id="subscribe" onsubmit="return false" class="formSub">
           <div class="nameComplete">
-          <input id="name" type="text" name="firstname" placeholder="Nome">
-          <input id="lastName" type="text" name="lastname" placeholder="Sobrenome">
+            <input id="name" type="text" name="firstname" placeholder="Nome">
+            <input id="lastName" type="text" name="lastname" placeholder="Sobrenome">
           </div>
           <div><input id="emailCell" type="text" name="phone_email" placeholder="Celular ou email"></div>
           <div><input type="password" name="password" autocomplete="on" placeholder="Nova senha"></div>
           <!--Revisar-->
-          <label id="label-birthdate" for="birthdate">Data de nascimento
+          <div class="birthday">
+            <label id="label-birthdate" for="birthdate">Data de nascimento</label>
             <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
-          </label>
+          </div>
           <!--Revisar-->
           <label id="label-gender">Gênero
             <input type="radio" id="female" value="Feminino" name="gender-custom">

@@ -41,3 +41,8 @@
   display: inline-block;
   width: 45%;
 }
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+}

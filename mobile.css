@@ -44,7 +44,7 @@
 
   .left-content {
     align-items: center;
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
   }
 
   .right-content {
@@ -53,11 +53,11 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.562);
     display: flex;
     flex-direction: column;
-    margin: 0 0 50px 0px;
+    margin: 0 0 50px 0;
     padding: 50px;
   }
 
-  .right-content h1 {
+  .right-content .title-right-container {
     align-self: center;
     color: rgb(66, 103, 178);
   }

@@ -19,7 +19,7 @@ function criarFormNovo() {
   return listaForm;
 }
 function validarNovoUsuario() {
-  this.criarFormNovo();
+  criarFormNovo();
   buttonNovo.addEventListener('click', function () {
     if (this.listaForm !== '') {
       alert('Campos inválidos');
@@ -29,4 +29,5 @@ function validarNovoUsuario() {
 window.onload = function () {
   validarNovoUsuario();
   validar();
+  criarFormNovo();
 };

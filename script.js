@@ -3,7 +3,7 @@ document.getElementById('button-login').addEventListener('click', function () {
 });
 
 
-const validate = new JustValidate('.name', {
+const validate = new window.JustValidate('.name', {
   rules: {
     text: {
       required: true,
@@ -11,11 +11,11 @@ const validate = new JustValidate('.name', {
   },
   messages: {
     text: {
-      required:  'Campos inválidos',
+      required: 'Campos inválidos',
     },
   },
 });
 
 window.onload = function () {
   return validate();
-}
+};

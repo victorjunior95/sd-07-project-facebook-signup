@@ -1,25 +1,32 @@
+// função para retornar o input email ou telefone quando clicar no botão entrar
+
 function alertEmailOrPhone() {
   const emailOrPhone = document.getElementById('user-email-phone');
 
   alert(emailOrPhone.value);
 }
 
-const genderCustom = document.querySelector('.gender-custom');
+const authenticationButton = document.getElementById('button-login');
+
+authenticationButton.addEventListener('click', alertEmailOrPhone);
+
+//função para quando selecionar a opção de gênero personalizado, criar um input para descrição
 
 function createCustom() {
+  const genderCustom = document.querySelector('.gender-custom');
   genderCustom.innerHTML = '';
+
   const input = document.createElement('input');
   input.setAttribute('name', 'gender-custom');
   input.placeholder = 'Gênero (opcional)';
   genderCustom.appendChild(input);
 }
 
-const authenticationButton = document.getElementById('button-login');
 const buttonRadio = document.querySelector('#personalizado');
 
-authenticationButton.addEventListener('click', alertEmailOrPhone);
-
 buttonRadio.addEventListener('change', createCustom);
+
+//função para validar campos do registro e retornar dados caso esteja tudo validado
 
 const msg = document.createElement('p');
 const centralForm = document.querySelector('.central-form');
@@ -55,9 +62,11 @@ function checkedFields() {
   }
   return 'true';
 }
-const btnEnv = document.querySelector('#facebook-register');
-btnEnv.addEventListener('click', function (e) {
-  e.preventDefault();
+
+const submit = document.querySelector('#facebook-register');
+
+submit.addEventListener('click', function (event) {
+  event.preventDefault();
 
   const firstname = document.querySelector('.firstname').value;
   const lastname = document.querySelector('.lastname').value;
@@ -65,7 +74,7 @@ btnEnv.addEventListener('click', function (e) {
   const birthdate = document.querySelector('.birthdate').value;
   const radioSelected = checkedRadio();
 
-  if (radioSelected !== '' && checkedFields() === 'true') {
+  if (radioSelected !== 'false' && checkedFields() === 'true') {
     welcome({ firstname, lastname, phoneEmail, birthdate, radioSelected });
   }
 });

@@ -1,3 +1,13 @@
+const validationFirstName = document.querySelector('#first-name');
+validationFirstName.setCustomValidity('Campos inválidos');
+const validationLastName = document.querySelector('#last-name');
+validationLastName.setCustomValidity('Campos inválidos');
+const validationPhoneMail = document.querySelector('#phone-email');
+validationPhoneMail.setCustomValidity('Campos inválidos');
+const validationPassword = document.querySelector('#password');
+validationPassword.setCustomValidity('Campos inválidos');
+const validationBirthdate = document.querySelector('#birthdate');
+validationBirthdate.setCustomValidity('Campos inválidos');
 
 const alertButton = document.querySelector('#button-login');
 alertButton.addEventListener('click', function (event) {
@@ -16,31 +26,5 @@ addCustomGender.addEventListener('click', function () {
     customGenderInput.placeholder = 'Gênero (opcional)';
     const containerGender = document.querySelector('.setup-gender');
     containerGender.appendChild(customGenderInput);
-  }
-});
-
-document.querySelector('#facebook-register').addEventListener('click', function () {
-  const genderSelection = document.querySelector('.setup-gender').children;
-  let validGender = false;
-  for (let count = 0; count < genderSelection.length; count += 1) {
-    if (genderSelection[count].checked === true) {
-      validGender = true;
-    }
-  }
-
-  if (
-    document.querySelector('#phone-email').value !== '' &&
-    document.querySelector('#password').value !== '' &&
-    document.querySelector('#label-birthdate').value !== '' &&
-    document.querySelector('#birthdate').value !== '' &&
-    validGender === true
-  );
-  else {
-    const incompleteFields = document.createElement('p');
-    incompleteFields.innerText = 'Campos inválidos';
-    incompleteFields.className = 'error';
-    incompleteFields.id = 'errorMessage';
-    const registerForm = document.querySelector('.setup-gender');
-    registerForm.appendChild(incompleteFields);
   }
 });

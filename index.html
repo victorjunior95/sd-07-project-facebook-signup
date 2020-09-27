@@ -12,25 +12,51 @@
         <img  class="facebook-logo" src="imgs/facebook-logo.png" alt = "Logotipo do facebook">
         </div>
         <form class="facebook-login">
-            <table class="form-group">
-                <tr>
-                    <td><label for = "user-email-phone-label" id="user-email-phone-label">Email ou telefone</label></td>
-                    <td><label for = "user-password" id="user-password-label">Senha</label></td>
-                </tr>
-                <tr>
-                    <td><input class = "first-gap" type="text" id="user-email-phone"></td>
-                    <td><input type="text" id="user-password"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class = "forgotten-account">Esqueceu a conta?</td>
-                </tr>
-            </table>
+            <section class="form-group">
+                <label class = "label1" for = "user-email-phone-label" id = "user-email-phone-label">Email ou telefone</label>
+                <input class = "input1" type="text" id="user-email-phone">
+            </section>
+            <section class="form-group">
+                <label class = "label2" for = "user-password" id="user-password-label">Senha</label>
+                <input class = "input2" type="text" id="user-password">
+            </section>
             <div class="form-control">
                 <button id="button-login">Entrar</button>
             </div>
         </form>
     </header>
+    <main class = "main-content">
+        <section class = "left-content">
+            <p class =  "setup-slogan" id =  "facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img class = "set-image" id = "facebook-networking" src = "imgs/networking.png" alt = "Imagem da networking do Facebook"/>
+        </section>
+        <section class = "right-content">
+            <h1>Abra uma conta</h1>
+            <p class = "quick-easy">É rápido e fácil.</p>
+        <form class="create-account">
+            <div class="full-name">
+                <input class = "fname" id="first-name" type="text" name="firstname" placeholder="Nome">
+                <input class = "lname" id="last-name" type="text" name="lastname" placeholder="Sobrenome">
+            </div>
+            <input class = "contact" id="phone-email" type="text" name="phone_email" placeholder="Celular ou email">
+            <input class = "contact"  type="password" name="password" id="password" maxlength = "11" placeholder="Nova senha">
+            <label class = "born" for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input class = "date-born" type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+            <div>
+                <label class = "gender" id="label-gender">Gênero</label>
+                <div class="setup-gender">
+                    <input type="radio" name="gender" id="feminine" value="Feminino">
+                    <label for="feminine">Feminino</label>
+                    <input type="radio" name="gender" id="masculine" value="Masculino">
+                    <label  for="masculine">Masculino</label>
+                    <input type="radio" name="gender" id="custom" value="Personalizado">
+                    <label for="custom">Personalizado</label>
+                </div>
+            </div>
+            <button class = "button2" id="facebook-register" type="submit">Cadastre-se</button>
+        </form>
+        </section>
+    </main>
 
 
 

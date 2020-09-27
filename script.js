@@ -65,6 +65,3 @@ function validateForm(event) {
 
 const registrationForm = document.forms['registration-form'];
 registrationForm.addEventListener('submit', validateForm);
-
-// const buttonRegister = document.getElementById('facebook-register');
-// buttonRegister.addEventListener('click', validateForm);

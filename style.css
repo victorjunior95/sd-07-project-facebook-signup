@@ -29,6 +29,10 @@ body {
   width: 40%;
 }
 
+.facebook-logo {
+  justify-content: flex-start;
+
+}
 .facebook-login {
   align-items: flex-end;
   display: flex;

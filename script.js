@@ -36,8 +36,10 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     validGender === true
   );
   else {
-    const incompleteFields = document.createElement('label');
+    const incompleteFields = document.createElement('p');
     incompleteFields.innerText = 'Campos inválidos';
+    incompleteFields.className = 'error';
+    incompleteFields.id = 'errorMessage';
     const registerForm = document.querySelector('.setup-gender');
     registerForm.appendChild(incompleteFields);
   }

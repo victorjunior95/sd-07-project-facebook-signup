@@ -74,8 +74,8 @@ form.addEventListener('submit', function (action) {
     } else {
       welcome.push('Personalizado');
     }
-    document.getElementsByClassName('right-content')[0].hidden = true;
-    document.getElementById('welcome-message').innerText = `Olá, ${welcome[0]} ${welcome[1]}
+    document.getElementById('form').hidden = true;
+    document.getElementsByClassName('right-content')[0].innerText = `Olá, ${welcome[0]} ${welcome[1]}
     Seu e-mail é ${welcome[2]}
     Sua data de nascimento é ${welcome[3]}
     Seu gênero é ${welcome[4]}`;

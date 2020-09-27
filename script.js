@@ -1,3 +1,5 @@
+const divRadios = document.querySelector('.radios-container');
+
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
@@ -16,6 +18,13 @@ const validate = new window.JustValidate('.name', {
   },
 });
 
+document.getElementById('personalizado').addEventListener('click', function () {
+  const textInput = document.createElement('input');
+  textInput.name = 'gender-custom';
+  textInput.placeholder = 'Gênero (opcional)';
+  divRadios.appendChild(textInput);
+});
+
 window.onload = function () {
-  return validate();
+  return validate;
 };

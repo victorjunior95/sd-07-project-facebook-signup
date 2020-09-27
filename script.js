@@ -1,4 +1,4 @@
-genrePersonalized = (parameter) => {
+const genrePersonalized = (parameter) => {
   const container = document.querySelector('#personalize-container');
   if (parameter === true){
     const perGen = document.createElement('input');
@@ -12,7 +12,7 @@ genrePersonalized = (parameter) => {
   }
 
 }
-checkBlankFields = () => {
+const checkBlankFields = () => {
   removePInvalidFields();
   const formSub = document.querySelectorAll('#subscribe input');
   let blankFields = false;
@@ -25,20 +25,20 @@ checkBlankFields = () => {
   }
 };
 
-removePInvalidFields = () => {
+const removePInvalidFields = () => {
   const container = document.querySelector('#invalidFields');
   const containerP = document.querySelector('#invalidFields p');
   if (containerP !== null) { container.removeChild(containerP); }
 };
 
-createPInvalidFields = () => {
+const createPInvalidFields = () => {
   const paragraph = document.createElement('p');
   paragraph.innerText = 'Campos inválidos';
   paragraph.id = 'msgError';
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
 //refatorar func a seguir
-getValuesInputs = () => {
+const getValuesInputs = () => {
   const inputs = {name : "", lastName: "", emailCell: "", birthdate: "", genre: ""};
   const formSub = document.querySelectorAll('#subscribe input');
   for(let name in  formSub) {
@@ -59,7 +59,7 @@ getValuesInputs = () => {
 };
 
 //refatorar
-registered = () => {
+const registered = () => {
   const inputs = getValuesInputs();
   const newContainer = document.createElement('div');
   newContainer.id = 'right-content';

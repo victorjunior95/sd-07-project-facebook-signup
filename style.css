@@ -27,9 +27,9 @@ body {
 }
 
 .facebook-login {
-  float: left;
   align-items: flex-end;
   display: flex;
+  float: left;
   width: 40%;
 }
 

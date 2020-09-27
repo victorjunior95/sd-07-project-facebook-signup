@@ -5,9 +5,8 @@ buttonlogin.addEventListener('click', () => {
   if (emailPhone !== '' || emailPhone !== null) {
     if (passwd === '' || passwd === null) {
       return false;
-    } else {
+    } 
       alert(`${emailPhone}`);
-    }
   }
   return emailPhone;
 });
@@ -42,7 +41,7 @@ buttonFacebookRegister.addEventListener('click', () => {
   input.forEach((item) => {
     if (item.id !== 'user-email-phone' && item.id !== 'user-password') {
       if (item.value === '' || item.value === null) {
-      check = true;
+        check = true;
       }
     }
   });

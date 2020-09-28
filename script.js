@@ -18,6 +18,7 @@ function makeRightContentUserCreated() {
   const greetings = document.querySelectorAll('.greetings');
   const rightContentAfterCreate = document.createElement('div');
   rightContentAfterCreate.classList.add('right-content');
+  rightContentAfterCreate.id = 'right-content-create';
   const pToShow = document.createElement('p');
   pToShow.innerText = 'Olá, ';
 

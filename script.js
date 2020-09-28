@@ -10,7 +10,6 @@ const submit = document.querySelector('#facebook-register');
 const input = document.querySelectorAll('.formInput');
 const gender = document.querySelector('.genero');
 let valueGender = '';
-let validador = 0;
 
 button.addEventListener('click', function () {
   const userEmail = document.getElementById('user-email-phone').value;
@@ -45,15 +44,12 @@ submit.addEventListener('click', function () {
         const aviso = document.createElement('h3');
         aviso.innerText = 'Campos inválidos';
         elemento.appendChild(aviso);
-        validador = validador + 1;
         break;
       }
-    } if(validador === input.length) {
+    } else {
       criarmensagem();
     }
   }
-  console.log(input.length)
-    console.log(validador)
 });
 
 gender.addEventListener('click', function (event) {

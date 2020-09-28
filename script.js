@@ -5,20 +5,15 @@ buttonLogin.addEventListener('click', function () {
 });
 
 const replaceRightContent = function replaceRightContent() {
-  const register = document.getElementById('form-register');
-  register.addEventListener('submit', function (event) {
+  document.getElementById('form-register').addEventListener('submit', function (event) {
     event.preventDefault();
     const firstname = document.getElementById('firstname').value;
     const lastname = document.getElementById('lastname').value;
-    const fullName = document.getElementsByClassName('fullName')[0];
-    fullName.innerHTML = `Olá, ${firstname} ${lastname}`;
     document.getElementById('password').innerHTML = '';
     const birthdate = document.getElementById('birthdate').value;
-    const birthdateDiv = document.getElementById('birthdateDiv');
-    birthdateDiv.innerHTML = birthdate;
-    const emailTelephoneDiv = document.getElementById('emailTelephoneDiv');
+    document.getElementById('birthdateDiv').innerHTML = birthdate;
     const emailTelephone = document.getElementById('emailTelephone').value;
-    emailTelephoneDiv.innerHTML = emailTelephone;
+    document.getElementById('emailTelephoneDiv').innerHTML = emailTelephone;
     const gender = document.getElementsByName('gender');
     let genderSelected;
     for (let index = 0; index < gender.length; index += 1) {
@@ -26,7 +21,14 @@ const replaceRightContent = function replaceRightContent() {
         genderSelected = gender[index].value;
       }
     }
-    document.getElementById('genderDiv').innerHTML = genderSelected;
+    const result = document.createElement('div');
+    result.innerHTML = `<p>Olá ${firstname} ${lastname}</p>
+    <p>E-mail e/ou telefone: ${emailTelephone}</p>
+    <p>Data de Nascimento: ${birthdate}</p>
+    <p>Genero: ${genderSelected}.`;
+    const rightContent = document.getElementById('right-content');
+    rightContent.innerHTML = '';
+    rightContent.appendChild(result);
   });
 };
 

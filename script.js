@@ -38,45 +38,43 @@ const createPInvalidFields = () => {
   paragraph.id = 'msgError';
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
-// Qual é o problema com o for in e switch code climate?
-const getValuesInputs = () => {
-  const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
-  for (const names in inputObjects) {
-    switch (names) {
-      case 'genre':
-        const element = document.querySelector('input[name="gender"]:checked').value;
-        if (element === 'on') {
-          inputObjects[names] = document.querySelector('input[id="genre"]').value;
-        } else { inputObjects[names] = element; }
-        break;
-      case 'birthdate':
-        inputObjects[names] = document.querySelector('input[type="date"]').value;
-        break;
-      default:
-        inputObjects[names] = document.querySelector(`#${names}`).value;
-    }
+
+const getValues = (inputName) => {
+  let objectKey = '';
+  switch (inputName) {
+    case 'genre':
+      objectKey = document.querySelector('input[name="gender"]:checked').value;
+      if (objectKey === 'on') {
+        objectKey = document.querySelector('input[id="genre"]').value;
+      }
+      break;
+    case 'birthdate':
+      objectKey = document.querySelector('input[type="date"]').value;
+      break;
+    default:
+      objectKey = document.querySelector(`#${inputName}`).value;
   }
-  return inputObjects;
+  return objectKey;
 };
 
-/* O que vc quer da gente? Já foi tentado enviar tudo colado,
-todos no mesmo container separado junto... E qual é o problema dele com o For in? */
+const createOutput = (inputName) => {
+  const element = document.createElement('output');
+  element.innerText = getValues(inputName);
+  element.id = inputName;
+  element.className = 'outputDisplay';
+  return element;
+};
+
 const registered = () => {
-  const inputs = getValuesInputs();
+  const inputList = ['name', 'lastName', 'emailCell', 'birthdate', 'genre'];
   const outputContainer = document.createElement('div');
   outputContainer.id = 'right-content';
   outputContainer.className = 'right-content';
   const paragraph = document.createElement('p');
-  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}`;
+  paragraph.innerText = `Olá, ${inputList[0]} ${inputList[1]}`;
   outputContainer.appendChild(paragraph);
-  for (const names in inputs) {
-    const nam = inputs[names];
-    if (names !== 'name' && names !== 'lastName') {
-      const element = document.createElement('output');
-      element.value = nam;
-      element.style.margin = '3px';
-      outputContainer.appendChild(element);
-    }
+  for (let i = 0; i < inputList.length; i += 1) {
+    outputContainer.appendChild(createOutput(inputList[i]));
   }
   document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
 };

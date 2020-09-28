@@ -16,7 +16,6 @@ radioCustomGender.addEventListener('click', function () {
   newAccForm.insertBefore(genderCustom, newAccForm.children[7]);
 });
 
-// inicio
 
 function checkedGender() {
   const allGender = document.getElementsByName('gender');
@@ -36,7 +35,6 @@ const inputLastName = document.getElementsByName('lastname')[0];
 const inputPhoneEmail = document.getElementsByName('phone_email')[0];
 const inputBirthdate = document.getElementsByName('birthdate')[0];
 
-// fim
 
 const validate = new window.JustValidate('.new-account', {
   messages: {
@@ -75,19 +73,15 @@ const validate = new window.JustValidate('.new-account', {
     },
   },
 
-  // inicio
   submitHandler() {
     const divRightContent = document.querySelector('.right-content');
-    const saudacoes = `
-    Olá, ${inputFirstName.value} ${inputLastName.value}
-    ${inputPhoneEmail.value}
-    ${inputBirthdate.value}
-    ${checkedGender()}
-    `;
+    const saudacoes = `Olá, ${inputFirstName.value} ${inputLastName.value}.
+    Seu email é, ${inputPhoneEmail.value}.
+    Data de nascimento, ${inputBirthdate.value}.
+    Gênero, ${checkedGender()}`;
     divRightContent.innerHTML = '';
-    divRightContent.innerHTML += saudacoes;
+    divRightContent.innerText += saudacoes;
   },
-  // fim
 });
 
 window.onload = function () {

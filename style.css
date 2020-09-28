@@ -199,6 +199,11 @@ main {
   padding: 8px 10px;
 }
 
+.input-size {
+  margin-left: 10px;
+  width: 100%;
+}
+
 .input-style::placeholder {
   color: rgb(153, 153, 153);
 }

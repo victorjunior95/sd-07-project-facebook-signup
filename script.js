@@ -5,6 +5,29 @@ btButtonLogin.addEventListener('click', function () {
   alert(inpUserEmailPhone.value);
 });
 
+function printData() {
+  const rightContent = document.getElementsByClassName('right-content')[0];
+  rightContent.innerHTML = '';
+  const h1 = document.createElement('h1');
+  h1.innerText = 'Dados do usuário';
+  h1.className = 'open-account'
+  rightContent.appendChild(h1);
+  const nameData = document.createElement('label');
+  const nameLabel = document.createElement('label');
+  nameLabel.innerText = 'Nome:';
+  nameLabel.className = 'label-input';
+  nameData.innerText = 'CARMO';
+  nameData.className = 'input-style input-size';
+  rightContent.appendChild(nameLabel);
+  rightContent.appendChild(nameData);
+  // const sobrenome
+  // const email
+  // const nascimento
+  // const genero 
+
+
+}
+
 const btnSubmit = document.getElementById('facebook-register');
 btnSubmit.addEventListener('click', function (event) {
   event.preventDefault();
@@ -43,7 +66,9 @@ btnSubmit.addEventListener('click', function (event) {
   if (innerIf) {
     pMensageInvalid.innerText = 'Campos inválidos';
   }
+  printData();
 });
+
 
 const radioFemale = document.getElementById('female');
 const radioMale = document.getElementById('male');
@@ -68,3 +93,4 @@ radioPerson.addEventListener('change', function () {
     addDivPerson.appendChild(inputRadio);
   }
 });
+

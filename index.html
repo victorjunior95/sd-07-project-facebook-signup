@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="//db.onlinewebfonts.com/c/27f41f814d3c31007de593898983103c?family=FreightSansW01-Book" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/0af8e49ee67805612a9c8bb762274321?family=FreightSansW01-Bold" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,56 +45,111 @@
                 <p class="quick-easy">É rápido e fácil.</p>
                 <form class="form-content">
                     <div>
-                        <input type="text" placeholder="Nome" name="firstname" class="inputSmall">
+                        <input type="text" placeholder="Nome" name="firstname" class="inputSmall input-style">
                     </div>
                     <div>
-                        <input type="text" placeholder="Sobrenome" name="lastname" class="inputSmall">
+                        <input type="text" placeholder="Sobrenome" name="lastname" class="inputSmall input-style">
                     </div>
                     <div>
-                        <input type="text" placeholder="Celular ou email" name="phone_email" class="inputLarge">
+                        <input type="text" placeholder="Celular ou email" name="phone_email" class="inputLarge input-style">
                     </div>
                     <div>
-                        <input type="password" placeholder="Nova senha" name="password" class="inputLarge">
+                        <input type="password" placeholder="Nova senha" name="password" class="inputLarge input-style">
                     </div>
                     <div>
-                        <label for="inputDate" id="label-birthdate">Data de nascimento</label>
-                        <input type="text" placeholder="dd/mm/aaaa" name="birthdate" id="inputDate" class="inputLarge">
+                        <label for="inputDate" id="label-birthdate" class="label-input">Data de nascimento</label>
+                        <input type="text" placeholder="dd/mm/aaaa" name="birthdate" id="inputDate" class="inputLarge-date input-style">
+                        <div class="information">
+                            <a href="">
+                                <i class="information-icon"></i>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <label for="" id="label-gender">Gênero</label>
+                        <label for="" id="label-gender" class="label-input">Gênero</label>
                     </div>
                     <div class="radio-grand-parents">
                         <div class="radio-parents">
-                            <input type="radio" name="gender" id="female" value="Feminino">
+                            <input type="radio" name="gender" id="female" value="Feminino" class="radio-button">
                             <label for="female" class="radio-text">Feminino</label>
                         </div>
                         <div class="radio-parents">
-                            <input type="radio" name="gender" id="male" value="Masculino">
+                            <input type="radio" name="gender" id="male" value="Masculino" class="radio-button">
                             <label for="male" class="radio-text">Masculino</label>
                         </div>
                         <div class="radio-parents">
-                            <input type="radio" name="gender" id="person" value="Personalizado">
+                            <input type="radio" name="gender" id="person" value="Personalizado" class="radio-button">
                             <label for="person" class="radio-text">Personalizado</label>
                         </div>
+                        <div class="information">
+                            <a href="">
+                                <i class="information-icon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <p>
+                    <p class="policy">
                         Ao clicar em Abrir uma conta, você concorda com os nossos
-                        Termos e que leu a nossa Política de Dados, incluindo o nosso
-                         Uso de Cookies.
+                        <a href="https://www.facebook.com/legal/terms" target="_blank" rel="nofollow">Termos</a>
+                        e que leu a nossa
+                        <a href="https://www.facebook.com/about/privacy" target="_blank" rel="nofollow">Política de Dados</a>
+                        , incluindo o nosso
+                        <a href="https://www.facebook.com/help/cookies" target="_blank" rel="nofollow">Uso de Cookies</a>
+                        .
                     </p>
                     <div>
-                        <button type="submit" id="facebook-register">Cadastre-se</button>
+                        <button type="submit" id="facebook-register" class="button-submit">Cadastre-se</button>
                         <p id="mensage-invalid">aaa</p>
                     </div>
 
                 </form>
-                <p>
-                    Criar uma Página para uma celebridade, banda ou empresa.
-                </p>
+                <div class="create-page">
+                    <a href="/web/20160731234252/https://www.facebook.com/pages/create/?ref_type=registration_form">
+                        Criar uma Página
+                    </a>
+                    para uma celebridade, banda ou empresa.
+                </div>
             </div>
         </div>
     </main>
     <footer>
+        <ul class="countries">
+            <li class="country">Português (Brasil)</li>
+            <li class="country">
+                <a dir="ltr" href="https://www.facebook.com/" title="English (US)">English (US)</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://es-la.facebook.com/" title="Spanish">Español</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://fr-fr.facebook.com/" title="French (France)">Français (France)</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://zh-cn.facebook.com/" title="Simplified Chinese (China)">中文(简体)</a>
+            </li>
+            <li class="country">
+                <a dir="rtl" href="https://ar-ar.facebook.com/" title="Arabic">العربية</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://it-it.facebook.com/" title="Italian">Italiano</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://ko-kr.facebook.com/" title="Korean">한국어</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://de-de.facebook.com/" title="German">Deutsch</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://hi-in.facebook.com/" title="Hindi">हिन्दी</a>
+            </li>
+            <li class="country">
+                <a dir="ltr" href="https://ja-jp.facebook.com/" title="Japanese">日本語</a>
+            </li>
+            <li class="country">
+                <a class="_42ft _4jy0 _517i _517h _51sy" role="button" href="#" rel="dialog" ajaxify="/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebook.com%2F&amp;source=www_list_selector_more" title="Mostrar mais idiomas">
+                    <i class="img sp_ibv3G8N0hcn sx_bd4e7a"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
     <script src="script.js"></script>
 </body>

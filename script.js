@@ -1,30 +1,30 @@
-const buttonLogin = document.querySelector("#button-login");
-const emailOrTel = document.querySelector("#user-email-phone");
-const signupInputs = document.querySelectorAll("#signup-form input");
-const signupForm = document.querySelector("#signup-form");
-const registerButton = document.querySelector("#facebook-register");
-const customRadio = document.querySelector("#custom");
-const femaleRadio = document.querySelector("#female");
-const maleRadio = document.querySelector("#male");
-const genderContainer = document.querySelector(".gender-container");
+const buttonLogin = document.querySelector('#button-login');
+const emailOrTel = document.querySelector('#user-email-phone');
+const signupInputs = document.querySelectorAll('#signup-form input');
+const signupForm = document.querySelector('#signup-form');
+const registerButton = document.querySelector('#facebook-register');
+const customRadio = document.querySelector('#custom');
+const femaleRadio = document.querySelector('#female');
+const maleRadio = document.querySelector('#male');
+const genderContainer = document.querySelector('.gender-container');
 
-buttonLogin.addEventListener("click", function (event) {
+buttonLogin.addEventListener('click', function (event) {
   event.preventDefault();
   alert(emailOrTel.value);
 });
 
 function chooseGender() {
-  let gender = "Personalizado";
+  let gender = 'Personalizado';
   if (femaleRadio.checked === true) {
-    gender = "Feminino";
+    gender = 'Feminino';
   } else if (maleRadio.checked === true) {
-    gender = "Masculino";
+    gender = 'Masculino';
   }
   return gender;
 }
 
 function welcome() {
-  const rightContent = document.querySelector(".right-content");
+  const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = `Olá, ${signupInputs[0].value} ${
     signupInputs[1].value
   } <br>${signupInputs[2].value} <br>${
@@ -32,40 +32,40 @@ function welcome() {
   }<br>${chooseGender()}`;
 }
 
-registerButton.addEventListener("click", function (event) {
+registerButton.addEventListener('click', function (event) {
   let valid = true;
   event.preventDefault();
   signupInputs.forEach((element) => {
-    if (element.value === "") {
+    if (element.value === '') {
       valid = false;
     }
   });
   if (valid === false) {
-    signupForm.innerHTML = "Campos inválidos";
+    signupForm.innerHTML = 'Campos inválidos';
   } else {
     welcome();
   }
 });
 
 let on = false;
-const customInput = document.createElement("input");
+const customInput = document.createElement('input');
 
-customRadio.addEventListener("click", function () {
+customRadio.addEventListener('click', function () {
   if (on === false) {
-    customInput.type = "text";
-    customInput.name = "gender-custom";
-    customInput.placeholder = "Gênero(opcional)";
+    customInput.type = 'text';
+    customInput.name = 'gender-custom';
+    customInput.placeholder = 'Gênero(opcional)';
     genderContainer.appendChild(customInput);
   }
   on = true;
 });
 
-femaleRadio.addEventListener("click", function () {
+femaleRadio.addEventListener('click', function () {
   genderContainer.removeChild(customInput);
   on = false;
 });
 
-maleRadio.addEventListener("click", function () {
+maleRadio.addEventListener('click', function () {
   genderContainer.removeChild(customInput);
   on = false;
 });

@@ -38,7 +38,7 @@ const createPInvalidFields = () => {
   paragraph.id = 'msgError';
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
-
+// refatorar
 const getValuesInputs = () => {
   const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
   inputObjects.birthdate = document.querySelector('input[type="date"]').value;
@@ -54,18 +54,13 @@ const getValuesInputs = () => {
 
 const registered = () => {
   const inputs = getValuesInputs();
-  const newContainer = document.createElement('div');
-  newContainer.id = 'right-content';
-  newContainer.className = 'right-content';
+  const outputContainer = document.createElement('div');
+  outputContainer.id = 'right-content';
+  outputContainer.className = 'right-content';
   const paragraph = document.createElement('p');
-  const paragraph2 = document.createElement('p');
-  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}`;
-  paragraph2.innerText = `O e-mail ou telefone: ${inputs.emailCell};
-  Exibir a data de nascimento: ${inputs.birthdate}
-  Sexo: ${inputs.genre}`;
-  newContainer.appendChild(paragraph);
-  newContainer.appendChild(paragraph2);
-  document.querySelector('#right-content').innerHTML = newContainer.innerHTML;
+  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName} ${inputs.emailCell} ${inputs.birthdate} ${inputs.genre}`;
+  outputContainer.appendChild(paragraph);
+  document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
 };
 
 document.querySelector('#button-login').addEventListener('click', () => {

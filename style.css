@@ -8,9 +8,14 @@ a {
 }
 
 body {
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
   padding: 0;
+}
+
+i {
+  color: rgb(95, 103, 112);
 }
 
 .facebook-login {
@@ -30,19 +35,28 @@ body {
 
 .form-control button {
   align-items: flex-end;
-  background: #0948cf;
-  border: solid blue 1px;
-  border-radius: 3px;
+  background: rgb(67, 103, 178);
+  border: 1px solid rgb(45, 74, 138);
   color: white;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 3px 18px;
-  text-shadow: 0.12em 0.12em #0d2c6e;
+  padding: 3px 5px;
+}
+
+.form-control button:hover {
+  background-color: rgb(46, 77, 144);
+  border: 1px solid rgb(45, 74, 138);
 }
 
 .forgot {
   font-size: 12px;
   margin-top: 2px;
+}
+
+.forgot .aforgot {
+  text-decoration: none;
+}
+
+.forgot .aforgot:hover {
+  text-decoration: underline;
 }
 
 .form-group {
@@ -51,12 +65,34 @@ body {
   margin: 5px;
 }
 
-h1 , h2 {
-  margin-top: 5px;
+.form-group input {
+  border: 1px solid rgb(30, 43, 91);
 }
 
-h3 {
+h1 {
+  color: rgb(51, 51, 51);
+  font-size: 35px;
   margin: 0;
+  margin-top: 10px;
+}
+
+h2 {
+  color: rgb(158, 162, 171);
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.label-birthdate {
+  color: rgb(161, 164, 172);
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.gender-custom {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .left-content {
@@ -64,11 +100,17 @@ h3 {
   width: 800px;
 }
 
+.left-content p {
+  color: rgb(13, 56, 95);
+  font-weight: 900;
+}
+
 .main-content {
   align-items: flex-start;
-  background: linear-gradient(white, #d3e8d8);
+  background: linear-gradient(white, #d3d8e8);
   display: flex;
   justify-content: space-around;
+  margin: auto;
 }
 
 .quick-easy {
@@ -87,24 +129,32 @@ h3 {
   border: #d3e8d8 solid 1px;
   border-radius: 4px;
   box-sizing: border-box;
+  color: rgb(158, 162, 171);
   font-size: 18px;
   font-weight: 700;
   height: 30px;
   margin-top: 6px;
 }
 
-.right-content button {
-  background-color: rgb(9, 139, 27);
-  border: none;
-  border-bottom: rgb(3, 83, 3) solid 1px;
-  border-radius: 3px;
-  border-top: rgb(3, 83, 3) solid 1px;
+.right-content .submit {
+  background: linear-gradient(rgb(102, 171, 84), rgb(88, 139, 68));
+  border: 0;
+  border-top: 2px  rgb(208, 221, 202) double;
   color: white;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 3px 20px;
-  text-shadow: 0.12em 0.12em rgb(3, 83, 3);
+  font-size: 19px;
+  font-weight: 800;
+  height: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  width: 200px;
+}
+
+.right-content .submit:hover {
+  background: linear-gradient(rgb(112, 190, 93), rgb(88, 139, 68));
+  border: 0;
+  border-top: 2px  rgb(208, 221, 202) double;
+  cursor: pointer;
+  font-size: 19px;
 }
 
 .sing-up {
@@ -119,7 +169,7 @@ h3 {
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
+  background: linear-gradient(rgb(77, 104, 162), rgb(60, 90, 153), rgb(19, 55, 130));
   box-sizing: border-box;
   display: flex;
   height: 70px;
@@ -131,14 +181,21 @@ h3 {
 .u-gender-option {
   align-items: center;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 420px;
+}
+
+.u-gender-option label {
+  display: inline-block;
+  font-size: 18px;
 }
 
 .u-gender-option input {
+  display: inline-block;
   margin-bottom: 6px;
   margin-right: 10px;
 }
-
 
 .user-name {
   display: flex;
@@ -149,4 +206,67 @@ h3 {
 .user-name input {
   margin-right: 5px;
   width: 145px;
+}
+
+.linguas {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.linguas a {
+  color: #365899;
+  font-size: 12px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.linguas .selected-lingua {
+  color: #737373;
+}
+
+.linguas .center {
+  border-bottom: 1px solid #ccc;
+  margin: auto;
+  max-width: 1336px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.links {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.links a {
+  color: #365899;
+  font-size: 12px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.links .selected-links {
+  color: #737373;
+}
+
+.links .center {
+  margin: auto;
+  max-width: 1336px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.face .center {
+  background-color: white;
+  color: #737373;
+  margin: auto;
+  max-width: 1336px;
+  padding: 20px 0;
+}
+
+.face .link-final {
+  color: #737373;
+  font-size: 12px;
+  text-decoration: none;
 }

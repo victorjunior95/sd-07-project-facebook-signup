@@ -9,6 +9,7 @@
 <body>
   <div class='top-color'>
   <header class='top-bar'>
+
     <img class='facebook-logo' src='imgs/facebook-logo.png' alt='Facebook log.'>
     <form class='facebook-login'>
       <div class='form-group'>
@@ -18,7 +19,7 @@
       <div class='form-group'>
         <label id='user-password-label' for='user-password'>Senha</label>
         <input id='user-password' name='user-password' type='password'>
-        <p class='forgot'><a href="/">Esqueceu a conta?</a></p>
+        <p class='forgot'><a class="a-forgot" href="#">Esqueceu a conta?</a></p>
       </div>
       <div class='form-control'>
         <button id='button-login'>Entrar</button>
@@ -35,7 +36,6 @@
       <h1>Abra uma conta</h1>
       <p class='quick-easy'>É rápido e fácil.</p>
       <form class='sing-up'>
-        <p id='alert-erro'></p>
         <div class='user-name'>
           <input type='text' id='firstname' name='firstname' placeholder='Nome'>
           <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
@@ -44,22 +44,94 @@
         <input type='password' id='password' name='password' placeholder='Nova senha'>
         <div class='birthday'>
           <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-          <input type='date' id='birthdate' name='birthdate' placeholder='dd/mm/aaaa'>
+          <input type='date' name='birthdate' id='birthdate' placeholder="dd/mm/aaaa">
         </div><br>
           <label id='label-gender'><h3>Gênero</h3></label>
         <div class='u-gender-option'>
           <label for='female'>Feminino</label>
-          <input type='radio' id='female' value='Feminino' name='gender'>
+          <input type='radio' value='Feminino' name='gender' id='female'>
           <label for='male'>Masculino</label>
-          <input type='radio' id='male' value='Masculino' name='gender'>
+          <input type='radio' value='Masculino' name='gender' id='male'>
           <label for='other'>Personalizado</label>
-          <input type='radio' id='custon' value='Personalizado' name='gender'>
-        </div><br>
-        <button type='submit' id='facebook-register'>Cadastre-se</button>
+          <input type='radio' value='Personalizado' name='gender' id='other'>
+          <input type="text" name='gender-custom'id='gender-custom' placeholder='Gênero (opcional)'></input>
+        </div>
+        <button class="submit" id='facebook-register' type='submit'>Cadastre-se</button>
       </form>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <section class="linguas">
+      <div class="center">
+        <a class="selected-lingua" href="#">Portugues (BR)</a>
+        <a dir="ltr" href="https://www.facebook.com/" title="English (US)">English (US)</a>
+        <a dir="ltr" href="https://es-la.facebook.com/" title="Spanish">Español</a>
+        <a dir="ltr" href="https://fr-fr.facebook.com/" title="French (France)">Français (France)</a>
+        <a dir="ltr" href="https://zh-cn.facebook.com/" title="Simplified Chinese (China)">中文(简体)</a>
+        <a dir="rtl" href="https://ar-ar.facebook.com/" title="Arabic">العربية</a>
+        <a dir="ltr" href="https://it-it.facebook.com/" title="Italian">Italiano</a>
+        <a dir="ltr" href="https://ko-kr.facebook.com/" title="Korean">한국어</a>
+        <a dir="ltr" href="https://de-de.facebook.com/" title="German">Deutsch</a>
+        <a dir="ltr" href="https://hi-in.facebook.com/" title="Hindi">हिन्दी</a>
+        <a dir="ltr" href="https://ja-jp.facebook.com/" title="Japanese">日本語</a>
+    </div>
+    </section>
+    <section class="links">
+        <div class="center">
+            <a class="selected-links" href="#">Portugues (BR)</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+            <a href="#">Cadastre-se </a>
+            <a  href="#">Entrar</a>
+            <a  href="#">Facebook - lite</a>
+            <a  href="#">whats</a>
+            <a  href="#">Pessoas</a>
+        </div><!--center-->
+    </section><!--links-->
+    <section class="face">
+        <div class="center">
+            <a class="link-final" href="#">Facebook &copy; 2020</a>
+        </div><!--center-->
+    </section><!--face-->
+</footer>
   <script src='script.js'></script>
 </body>
 </html>

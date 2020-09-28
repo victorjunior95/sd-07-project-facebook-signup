@@ -16,23 +16,6 @@ persInput.addEventListener('click', function () {
   divGender.appendChild(choiceGender);
 });
 
-function clearForms() {
-  const rightContent = document.querySelector('#right-content');
-  rightContent.innerHTML = '';
-}
-
-function creatForms() {
-  const firstname = document.querySelector('#firstname').value;
-  const lastname = document.querySelector('#lastname').value;
-  const phoneMail = document.querySelector('#phone-email').value;
-  const birthdate = document.querySelector('#birthdate').value;
-  const gender = document.querySelector('#forms').gender.value;
-  const resumeForm = document.createElement('div');
-  resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
-  clearForms();
-  const rightContent = document.querySelector('#right-content');
-  rightContent.appendChild(resumeForm);
-}
 //  solução com a ajuda da colega Samata Below
 const validate = new window.JustValidate('.js-form', {
   rules: {
@@ -63,16 +46,31 @@ const validate = new window.JustValidate('.js-form', {
     birthdate: 'Campos inválidos',
     radio: 'Campos inválidos',
   },
-
 });
 
 window.onload = function () {
   return validate;
 };
 
-document.querySelector('#forms').addEventListener('submit', function () {
-  document.querySelector('#facebook-register').addEventListener('click', function (event) {
-    event.preventDefault();
-    creatForms();
-  });
+function clearForms() {
+  const rightContent = document.querySelector('#right-content');
+  rightContent.innerHTML = '';
+}
+
+function creatForms() {
+  const firstname = document.querySelector('#firstname').value;
+  const lastname = document.querySelector('#lastname').value;
+  const phoneMail = document.querySelector('#phone-email').value;
+  const birthdate = document.querySelector('#birthdate').value;
+  const gender = document.querySelector('#forms').gender.value;
+  const resumeForm = document.createElement('div');
+  resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
+  clearForms();
+  const rightContent = document.querySelector('#right-content');
+  rightContent.appendChild(resumeForm);
+}
+
+document.querySelector('#facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
+  creatForms();
 });

@@ -13,18 +13,18 @@
     <div class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook" />
       <form class="facebook-login" onsubmit="return false">
-        <section class="form-group">
+        <p class="form-group">
           <label id="user-email-phone-label" class="labelText" for="email">Email ou telefone</label>
           <input id="user-email-phone" class="inputText" type="text" />
-        </section>
-        <section class="form-group">
+        </p>
+        <p class="form-group">
           <label id="user-password-label" class="labelText" for="pass">Senha</label>
           <input id="user-password" class="inputText" type="text" />
-          <a class="forget" href="#">Esqueceu a conta?</a>
-        </section>
-        <section class="form-control">
+          <a class="forget" href="#"><em>Esqueceu a conta?</em></a>
+        </p>
+        <p class="form-control">
           <button data-click="alertButton" id="button-login" class="buttonEnter" type="button">Entrar</button>
-        </section>
+        </p>
       </form>
     </div>
   </header>
@@ -38,8 +38,13 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form onsubmit="return false"></form>
-
+      <form onsubmit="return false">
+        <fieldset>
+          <p>
+            <input name="firstname" placeholder="Nome" type="text">
+          </p>
+        </fieldset>
+      </form>
     </section>
 
 

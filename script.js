@@ -13,13 +13,13 @@ buttonlogin.addEventListener('click', () => {
 
 const genderP = document.querySelector('#gender-p');
 genderP.addEventListener('change', () => {
-  const newPassword = document.querySelector('.password');
+  const formPassword = document.querySelector('.form-password');
   const inputGender = document.createElement('input');
   inputGender.name = 'gender-custom';
   inputGender.placeholder = 'Gênero (opcional)';
   inputGender.id = 'label-gender';
   inputGender.type = 'text';
-  newPassword.appendChild(inputGender);
+  formPassword.appendChild(inputGender);
 });
 
 let count = 0;/* referência projeto higoramorim-facebook-project*/

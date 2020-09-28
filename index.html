@@ -50,7 +50,7 @@
         <div class="right-content">
           <h1>Abra uma conta</h1>
           <p class="quick-easy">É rápido e fácil.</p>
-          <form action="#">
+          <form id="signup-form" action="#" method="POST">
             <div class="main-form-name">
               <input type="text" name="firstname" placeholder="Nome" />
               <input type="text" name="lastname" placeholder="Sobrenome" />
@@ -73,25 +73,31 @@
                 placeholder="dd/mm/aaaa"
               /><br />
               <label id="label-gender" for="gender">Gênero</label><br />
-              <div class="gender-c-container">
-                <div class="gender-container">
-                  <label for="female">Feminino</label
-                  ><input
+              <div class="gender-container">
+                <label for="female">
+                  <input
                     type="radio"
                     name="gender"
-                    value="female"
+                    value="Feminino"
                     id="female"
-                  />
-                  <label for="male">Masculino</label
-                  ><input type="radio" name="gender" value="male" id="male" />
-                  <label for="custom">Personalizado</label
-                  ><input
+                  />Feminino</label
+                >
+                <label for="male">
+                  <input
                     type="radio"
                     name="gender"
-                    value="custom"
+                    value="Masculino"
+                    id="male"
+                  />Masculino</label
+                >
+                <label for="custom">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Personalizado"
                     id="custom"
-                  />
-                </div>
+                  />Personalizado</label
+                >
               </div>
               <br />
               <button id="facebook-register" type="submit">Cadastre-se</button>

@@ -32,12 +32,12 @@ facebookRegister.addEventListener('click', function (event) {
   event.preventDefault();
   // Verificando existência de campos vazios
   let camposVazios = 0;
-  const campos = document.querySelectorAll(".campo");
-  for (let index = 0; index < campos.length; index +=1){
-    if (campos[index] === ''){
-      camposVazios +=1;
+  const campos = document.querySelectorAll('.campo');
+  for (let index = 0; index < campos.length; index += 1) {
+    if (campos[index] === '') {
+      camposVazios += 1;
     }
-  };
+  }
   // Verificando o campo gênero e definindo o gender
   let gender = '';
   if (feminino.checked !== false ||
@@ -53,7 +53,7 @@ facebookRegister.addEventListener('click', function (event) {
     }
   } else {
     camposVazios += 1;
-  };
+  }
   // Exibir mensagem de alerta caso algum campo esteja vazio, senão mostrar informações do usuário
   if (camposVazios > 0) {
     const campoDeErro = document.createElement('p');
@@ -64,7 +64,6 @@ facebookRegister.addEventListener('click', function (event) {
     const firstname = document.getElementById('firstname');
     const lastname = document.getElementById('lastname');
     const phoneEmail = document.getElementById('phone_email');
-    const password = document.getElementById('password');
     const birthdate = document.getElementById('birthdate');
     const rightContent = document.getElementById('inscricao');
     rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}

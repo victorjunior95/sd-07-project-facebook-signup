@@ -23,8 +23,8 @@ function clearRightContent() {
 
 //  solução com a ajuda da colega Samata Below
 const rightReplace = function creatForms() {
-  const registerButton = document.getElementById('forms');
-  registerButton.addEventListener('submit', function (event) {
+  const submitForm = document.getElementById('forms');
+  submitForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const firstname = document.querySelector('#firstname').value;
     const lastname = document.querySelector('#lastname').value;

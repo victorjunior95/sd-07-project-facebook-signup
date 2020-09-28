@@ -50,9 +50,8 @@ facebookRegister.addEventListener('click', function (event) {
   const birthdate = document.getElementById('birthdate');
   if (firstname.value === '' || lastname.value === '' || phoneEmail.value === '' || password.value === '' ||
   birthdate.value === '' || gender === '') {
-    let campoDeErro = document.createElement('p');
-    const textoDeErro = document.createTextNode('Campos inválidos');
-    campoDeErro.appendChild(textoDeErro);
+    const campoDeErro = document.createElement("p");
+    campoDeErro.innerHTML = 'Campos inválidos';
     campoDeErro.style.color = 'red';
     document.getElementById('formulario').appendChild(campoDeErro);
   } else {

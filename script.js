@@ -16,6 +16,27 @@ radioCustomGender.addEventListener('click', function () {
   newAccForm.insertBefore(genderCustom, newAccForm.children[7]);
 });
 
+// inicio
+
+function checkedGender() {
+  const allGender = document.getElementsByName('gender');
+  let resultado = '';
+  if (allGender[0].checked === true) {
+    resultado = 'Feminino';
+  } else if (allGender[1].checked === true) {
+    resultado = 'Masculino';
+  } else if (allGender[2].checked === true) {
+    resultado = 'Personalizado';
+  }
+  return resultado;
+}
+
+const inputFirstName = document.getElementsByName('firstname')[0];
+const inputLastName = document.getElementsByName('lastname')[0];
+const inputPhoneEmail = document.getElementsByName('phone_email')[0];
+const inputBirthdate = document.getElementsByName('birthdate')[0];
+
+// fim
 
 const validate = new window.JustValidate('.new-account', {
   messages: {
@@ -54,6 +75,19 @@ const validate = new window.JustValidate('.new-account', {
     },
   },
 
+  // inicio
+  submitHandler() {
+    const divRightContent = document.querySelector('.right-content');
+    const saudacoes = `
+    Olá, ${inputFirstName.value} ${inputLastName.value}
+    ${inputPhoneEmail.value}
+    ${inputBirthdate.value}
+    ${checkedGender()}
+    `;
+    divRightContent.innerHTML = '';
+    divRightContent.innerHTML += saudacoes;
+  },
+  // fim
 });
 
 window.onload = function () {

@@ -77,11 +77,11 @@ const validate = new window.JustValidate('.new-account', {
     const divRightContent = document.querySelector('.right-content');
     const fullName = `${inputFirstName.value} ${inputLastName.value}`;
     const saudacoes = `Olá, ${fullName}
-    Seu email é, ${inputPhoneEmail.value}
-    Data de nascimento, ${inputBirthdate.value}
-    Gênero, ${checkedGender()}`;
+    Seu email é: ${inputPhoneEmail.value}
+    Data de nascimento: ${inputBirthdate.value}
+    Gênero: ${checkedGender()}`;
     divRightContent.innerHTML = '';
-    divRightContent.innerText += saudacoes;
+    divRightContent.innerHTML += saudacoes;
   },
 });
 

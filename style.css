@@ -44,9 +44,7 @@
 
 .quick-easy { display: flex; }
 
-.forms-rigth {
-  width: 300px;
-}
+.forms-rigth { width: 300px; }
 
 .full-name { display: flex; }
 

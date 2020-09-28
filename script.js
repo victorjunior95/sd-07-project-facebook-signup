@@ -43,21 +43,17 @@ function getGender() {
 
 function reviewInputs() {
   const rightContent = document.getElementsByClassName('right-content');
-  const name = document.getElementById('firstname');
-  const lastName = document.getElementById('lastname');
+  const firstname = document.getElementById('firstname');
+  const lastname = document.getElementById('lastname');
   const phoneEmail = document.getElementsByClassName('phone_email');
-  const birthDate = document.getElementById('birthdate');
+  const birthdate = document.getElementById('birthdate');
   if (validateRadios() === true && validateInputs() === true) {
     invalidValues.innerText = 'Campos inválidos';
   } else {
-    rightContent[0].innerHTML =
-    `<div>
-      <p>Olá, ${name.value} ${lastName.value}.</p>
-      <p>Os dados informados são:</p>
-      <p>- ${phoneEmail[0].value};</p>
-      <p>- Data de Nascimento: ${birthDate.value};</p>
-      <p>- Gênero: ${getGender()}</p>
-    </div>`;
+    rightContent[0].innerHTML = `Olá, ${firstname.value} ${lastname.value}.
+    - ${phoneEmail[0].value};
+    - Data de Nascimento: ${birthdate.value};
+    - Gênero: ${getGender()}`;
   }
 }
 

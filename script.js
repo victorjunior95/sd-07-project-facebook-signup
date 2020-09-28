@@ -10,6 +10,7 @@ loginButton.addEventListener('click', function () {
 genderCustom.addEventListener('click', () => {
   const customInput = document.createElement('input');
   customInput.setAttribute('name', 'gender-custom');
+  customInput.classList.add('form-control');
   customInput.placeholder = 'Gênero (opcional)';
   document.querySelector('#custom').appendChild(customInput);
 });

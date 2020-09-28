@@ -37,14 +37,11 @@ function registrarUsuario() {
   const sexo = gender();
 
   const divPai = document.querySelector('.right-content');
-  const divFilho = document.getElementById('container-cadastro');
 
-  divPai.removeChild(divFilho);
   divPai.innerText = `Olá, ${firstName} ${lastName}!
-  Confira seus dados:
-  E-mail/Telefone: ${phoneEmail}
-  Data de Nascimento: ${labelBirthdate}
-  Genero: ${sexo}`;
+  ${phoneEmail}
+  ${labelBirthdate}
+  ${sexo}`;
 }
 
 function testeCampoVazio(itemValue, itemType) {
@@ -66,7 +63,6 @@ function percorreInputs() {
 
 function validaCadastro() {
   resetMsg();
-
   if (gender() === '') {
     msgCampoInvalido();
   } else if (percorreInputs() === true) {
@@ -78,11 +74,11 @@ function validaCadastro() {
 
 const removeTagChild = function () {
   const tagInput = document.querySelector('.gender-custom');
-  tagInput.style.display = 'none';
+  tagInput.style.visibility = 'hidden';
 };
 
 const displayOtherGender = function () {
-  document.getElementById('gender-custom-other').style.display = 'block';
+  document.getElementById('gender-custom-other').style.visibility = 'visible';
 };
 
 window.onload = function () {

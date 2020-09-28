@@ -175,8 +175,8 @@ a {
 }
 
 .gender-custom {
-  display: none;
   max-width: 70%;
+  visibility: hidden;
 }
 
 .dividas-dicas {

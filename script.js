@@ -22,7 +22,6 @@ function clearForms() {
 }
 
 function creatForms() {
-  const form = document.querySelector('#forms');
   const firstname = document.querySelector('#firstname').value;
   const lastname = document.querySelector('#lastname').value;
   const phoneMail = document.querySelector('#phone-email').value;
@@ -30,7 +29,9 @@ function creatForms() {
   const gender = document.querySelector('#forms').gender.value;
   const resumeForm = document.createElement('div');
   resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
-  form.appendChild(resumeForm);
+  clearForms();
+  const rightContent = document.querySelector('#right-content');
+  rightContent.appendChild(resumeForm);
 }
 //  solução com a ajuda da colega Samata Below
 const validate = new window.JustValidate('.js-form', {
@@ -72,7 +73,6 @@ window.onload = function () {
 document.querySelector('#forms').addEventListener('submit', function () {
   document.querySelector('#facebook-register').addEventListener('click', function (event) {
     event.preventDefault();
-    clearForms();
     creatForms();
   });
 });

@@ -58,7 +58,8 @@ const registered = () => {
   outputContainer.id = 'right-content';
   outputContainer.className = 'right-content';
   const paragraph = document.createElement('p');
-  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName} ${inputs.emailCell} ${inputs.birthdate} ${inputs.genre}`;
+  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}
+  ${inputs.emailCell} ${inputs.birthdate} ${inputs.genre}`;
   outputContainer.appendChild(paragraph);
   document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
 };

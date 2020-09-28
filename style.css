@@ -80,7 +80,6 @@ body {
   flex-wrap: wrap;
   font-size: 13px;
   width: 280px;
-  display: flex;
 }
 
 .gender-container input {

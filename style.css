@@ -153,6 +153,7 @@ body {
 
   .mobile-login a {
     color: rgb(116, 149, 194);
+    font-size: small;
     font-weight: 900;
     margin-top: 15px;
     text-decoration: none;

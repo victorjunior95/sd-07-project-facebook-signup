@@ -30,6 +30,15 @@ personalizado.addEventListener('click', function () {
 const facebookRegister = document.getElementById('facebook-register');
 facebookRegister.addEventListener('click', function (event) {
   event.preventDefault();
+  // Verificando existência de campos vazios
+  let camposVazios = 0;
+  const campos = document.querySelectorAll(".campo");
+  for (let index = 0; index < campos.length; index +=1){
+    if (campos[index] === ''){
+      camposVazios +=1;
+    }
+  };
+  // Verificando o campo gênero e definindo o gender
   let gender = '';
   if (feminino.checked !== false ||
     masculino.checked !== false ||
@@ -42,19 +51,21 @@ facebookRegister.addEventListener('click', function (event) {
       const generoPersonalizado = document.getElementById('generoPersonalizado');
       gender = generoPersonalizado.value;
     }
-  }
-  const firstname = document.getElementById('firstname');
-  const lastname = document.getElementById('lastname');
-  const phoneEmail = document.getElementById('phone_email');
-  const password = document.getElementById('password');
-  const birthdate = document.getElementById('birthdate');
-  if (firstname.value === '' || lastname.value === '' || phoneEmail.value === '' || password.value === '' ||
-  birthdate.value === '' || gender === '') {
-    const campoDeErro = document.createElement("p");
+  } else {
+    camposVazios += 1;
+  };
+  // Exibir mensagem de alerta caso algum campo esteja vazio, senão mostrar informações do usuário
+  if (camposVazios > 0) {
+    const campoDeErro = document.createElement('p');
     campoDeErro.innerHTML = 'Campos inválidos';
     campoDeErro.style.color = 'red';
     document.getElementById('formulario').appendChild(campoDeErro);
   } else {
+    const firstname = document.getElementById('firstname');
+    const lastname = document.getElementById('lastname');
+    const phoneEmail = document.getElementById('phone_email');
+    const password = document.getElementById('password');
+    const birthdate = document.getElementById('birthdate');
     const rightContent = document.getElementById('inscricao');
     rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}
         ${phoneEmail.value}

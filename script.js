@@ -37,17 +37,13 @@ Array.prototype.forEach.call(radios, function (radio) {
 });
 
 function validateForm(event) {
+  event.preventDefault();
   const warningDiv = document.getElementById('warning');
   if (warningDiv != null) {
     warningDiv.parentElement.removeChild(warningDiv);
   }
   const fields = [
-    document.forms['registration-form'].firstname,
-    document.forms['registration-form'].lastname,
-    document.forms['registration-form'].phone_email,
-    document.forms['registration-form'].password,
-    document.forms['registration-form'].birthdate,
-    document.forms['registration-form'].gender,
+    document.forms['registration-form'].firstname, document.forms['registration-form'].lastname, document.forms['registration-form'].phone_email, document.forms['registration-form'].password, document.forms['registration-form'].birthdate, document.forms['registration-form'].gender,
   ];
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
@@ -56,10 +52,15 @@ function validateForm(event) {
       warning.setAttribute('id', 'warning');
       warning.innerText = 'Campos inválidos';
       registrationForm.appendChild(warning);
-      event.preventDefault();
       return false;
     }
   }
+  const rightContent = document.getElementsByClassName('right-content')[0];
+  const divFormNewUser = document.createElement('div');
+  divFormNewUser.innerText = `Olá, ${fields[0].value} ${fields[1].value}!
+  Seu telefone ou e-mail é: ${fields[2].value}, e sua data de nascimento é: ${fields[4].value}. Você escolheu o ${fields[5].value} como o gênero que se identifica`;
+  rightContent.innerHTML = '';
+  rightContent.appendChild(divFormNewUser);
   return true;
 }
 

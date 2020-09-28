@@ -1,11 +1,26 @@
-
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-// function validarForm() {
+function genderSelected() {
+  let generoSelected = '';
+  if (document.getElementById('feminino').checked) {
+    generoSelected = 'feminino';
+  }
+  if (document.getElementById('masculino').checked) {
+    generoSelected = 'masculino';
+  }
+  if (document.getElementById('personalizado').checked) {
+    generoSelected = 'personalizado';
+  }
+  return generoSelected;
+}
 
-// }
+function formResponse() {
+  const rightContentDiv = document.getElementById('right-content');
+  const msnResponse = `Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}, nascido em ${document.getElementById('user').value}, do gênero: ${genderSelected()}, seu login é: ${document.getElementById('phone-email').value}`;
+  rightContentDiv.innerHTML = msnResponse;
+}
 
 const justValidate = new window.JustValidate('.js-form', {
   rules: {
@@ -55,14 +70,11 @@ const justValidate = new window.JustValidate('.js-form', {
     },
   },
 
-  // submitHandler: function () {
-  //   validarForm();
-  // },
-});
+  submitHandler() {
+    formResponse();
+  },
 
-window.onload = function () {
-  return justValidate;
-};
+});
 
 function showGenderCustom() {
   const genderCustomInput = document.getElementById('gender-custom');
@@ -79,4 +91,7 @@ window.onload = function () {
 
   const personalizadoRadio = document.getElementById('personalizado');
   personalizadoRadio.addEventListener('click', showGenderCustom);
+
+  const jsFormSubmit = document.getElementById('js-form');
+  jsFormSubmit.addEventListener('submit', justValidate);
 };

@@ -1,6 +1,25 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: center;
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.facebook-login {
+  color: white;
   display: flex;
 }
 
@@ -9,12 +28,18 @@
   align-items: center;
   flex-direction: column;
   display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 /* main-content */
 .main-content {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .left-content {

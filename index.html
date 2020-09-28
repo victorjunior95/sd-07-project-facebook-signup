@@ -38,10 +38,10 @@
         <img id="facebook-networking" src="imgs/networking.png" alt="Facebook Networking">
       </div>
 
-      <div class="right-content">
+      <div class="right-content" id="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="" name="form-facebook" onsubmit="return validateForm()">
+        <form action="" name="form-register" class="facebook-register">
           <div class="form-name">
             <input type="text" name="firstname" class="firstname" placeholder="Nome">
             <input type="text" name="lastname" class="lastname" placeholder="Sobrenome">
@@ -59,9 +59,12 @@
           <div>
             <label for="" id="label-gender">Gênero</label>
             <div class="gender">
-              <input type="radio" name="gender" value="Feminino" class="gender" id="f"> <label for="f">Feminino</label>
-              <input type="radio" name="gender" value="Masculino" class="gender" id="m"> <label for="m">Masculino</label>
-              <input type="radio" name="gender" value="Personalizado" class="gender" id="f"> <label for="f">Personalizado</label>
+              <input type="radio" name="gender" value="Feminino" id="f"> <label for="f">Feminino</label>
+              <input type="radio" name="gender" value="Masculino" id="m"> <label
+                for="m">Masculino</label>
+              <input type="radio" name="gender" value="Personalizado" id="o"><label
+                for="o">Personalizado</label>
+              <div class="gender-personalized"></div>
             </div>
           </div>
 
@@ -73,5 +76,5 @@
 
   <script src="script.js"></script>
 </body>
-
+ 
 </html>

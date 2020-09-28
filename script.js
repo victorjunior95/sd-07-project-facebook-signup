@@ -58,9 +58,16 @@ const registered = () => {
   outputContainer.id = 'right-content';
   outputContainer.className = 'right-content';
   const paragraph = document.createElement('p');
-  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}
-  ${inputs.emailCell} ${inputs.birthdate} ${inputs.genre}`;
+  paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}`;
   outputContainer.appendChild(paragraph);
+  // Gostaria de utilizar um for in aqui... Code climate não deixa
+  for (let i = 0; i < 5; i += 1) {
+    if (inputs[i] !== 'name' && inputs[i] !== 'lastName') {
+      const element = document.createElement('output');
+      element.value = inputs[i];
+      outputContainer.appendChild(element);
+    }
+  }
   document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
 };
 

@@ -33,12 +33,15 @@ function validateRadios() {
 function getGender() {
   const feminino = document.getElementById('feminino');
   const masculino = document.getElementById('masculino');
-  if (feminino.checked) {
-    return 'Feminino';
-  } else if (masculino.checked) {
-    return 'Masculino';
+  let gender;
+  if (feminino.checked === true) {
+    gender = 'Feminino';
+  } else if (masculino.checked === true) {
+    gender = 'Masculino';
+  } else {
+    gender = 'Personalizado';
   }
-  return 'Personalizado';
+  return gender;
 }
 
 function reviewInputs() {

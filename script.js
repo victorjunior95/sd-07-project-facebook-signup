@@ -75,9 +75,9 @@ const validate = new window.JustValidate('.new-account', {
 
   submitHandler() {
     const divRightContent = document.querySelector('.right-content');
-    const saudacoes = `Olá, ${inputFirstName.value} ${inputLastName.value}.
-    Seu email é, ${inputPhoneEmail.value}.
-    Data de nascimento, ${inputBirthdate.value}.
+    const saudacoes = `Olá, ${inputFirstName.value} ${inputLastName.value}
+    Seu email é, ${inputPhoneEmail.value}
+    Data de nascimento, ${inputBirthdate.value}
     Gênero, ${checkedGender()}`;
     divRightContent.innerHTML = '';
     divRightContent.innerText += saudacoes;

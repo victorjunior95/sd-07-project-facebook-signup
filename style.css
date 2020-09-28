@@ -34,6 +34,11 @@ body {
   font-weight: 600;
   height: 26px;
   width: 60px;
+  opacity: 0.8;
+}
+
+.form-control button:hover {
+  opacity: 1;
 }
 
 .form-group input {
@@ -67,10 +72,10 @@ body {
 }
 
 .main-container {
-  background-image: linear-gradient(to bottom, white, rgba(59, 89, 152, 1));
+  background-image: linear-gradient(to bottom, white, rgb(111, 126, 156));
   display: flex;
   justify-content: center;
-  min-height: 600px;
+  min-height: 700px;
 }
 
 .main-content {
@@ -138,4 +143,31 @@ body {
   height: 37px;
   margin-top: 10px;
   width: 170px;
+  opacity: 0.8;
+}
+
+.facebook-register:hover {
+  opacity: 1;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.container a {
+ color: rgb(56, 73, 100);
+ font-size: 10pt;
+ padding: 7px;
+ text-decoration: none;
+}
+
+.top-line {
+  color: rgb(109, 109, 109);
+  font-size: 10pt;
+  margin-top: 10px;
+}
+
+.bottom-line a {
+ padding: 12px;
 }

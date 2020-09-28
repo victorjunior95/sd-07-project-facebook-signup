@@ -118,10 +118,10 @@ body {
   color: rgb(66, 103, 178);
   font-size: 12px;
   height: 100vh;
+  justify-content: center;
   overflow: hidden;
   white-space: nowrap;
   width: 300px;
-  justify-content: center;
 }
 
 .name , .lastname , .phone_email {

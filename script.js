@@ -38,20 +38,29 @@ const createPInvalidFields = () => {
   paragraph.id = 'msgError';
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
-// refatorar
+// Qual é o problema com o for in e switch code climate?
 const getValuesInputs = () => {
   const inputObjects = { name: '', lastName: '', emailCell: '', birthdate: '', genre: '' };
-  inputObjects.birthdate = document.querySelector('input[type="date"]').value;
-  inputObjects.genre = document.querySelector('input[name="gender"]:checked').value;
-  inputObjects.name = document.querySelector('#name').value;
-  inputObjects.lastName = document.querySelector('#lastName').value;
-  inputObjects.emailCell = document.querySelector('#emailCell').value;
-  if (inputObjects.genre === 'on') {
-    inputObjects.genre = document.querySelector('input[id="genre"]').value;
+  for (const names in inputObjects) {
+    switch (names) {
+      case 'genre':
+        const element = document.querySelector('input[name="gender"]:checked').value;
+        if (element === 'on') {
+          inputObjects[names] = document.querySelector('input[id="genre"]').value;
+        } else { inputObjects[names] = element; }
+        break;
+      case 'birthdate':
+        inputObjects[names] = document.querySelector('input[type="date"]').value;
+        break;
+      default:
+        inputObjects[names] = document.querySelector(`#${names}`).value;
+    }
   }
   return inputObjects;
 };
 
+/* O que vc quer da gente? Já foi tentado enviar tudo colado,
+todos no mesmo container separado junto... E qual é o problema dele com o For in? */
 const registered = () => {
   const inputs = getValuesInputs();
   const outputContainer = document.createElement('div');
@@ -60,11 +69,12 @@ const registered = () => {
   const paragraph = document.createElement('p');
   paragraph.innerText = `Olá, ${inputs.name} ${inputs.lastName}`;
   outputContainer.appendChild(paragraph);
-  // Gostaria de utilizar um for in aqui... Code climate não deixa
-  for (let i = 0; i < 5; i += 1) {
-    if (inputs[i] !== 'name' && inputs[i] !== 'lastName') {
+  for (const names in inputs) {
+    const nam = inputs[names];
+    if (names !== 'name' && names !== 'lastName') {
       const element = document.createElement('output');
-      element.value = inputs[i];
+      element.value = nam;
+      element.style.margin = '3px';
       outputContainer.appendChild(element);
     }
   }

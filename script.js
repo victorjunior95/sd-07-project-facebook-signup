@@ -10,8 +10,15 @@ const replaceRightContent = function replaceRightContent() {
     event.preventDefault();
     const firstname = document.getElementById('firstname').value;
     const lastname = document.getElementById('lastname').value;
-    const emailTelephone = document.getElementById('emailTelephone').value;
+    const fullName = document.getElementsByClassName('fullName')[0];
+    fullName.innerHTML = `Olá, ${firstname} ${lastname}`;
+    document.getElementById('password').innerHTML = '';
     const birthdate = document.getElementById('birthdate').value;
+    const birthdateDiv = document.getElementById('birthdateDiv');
+    birthdateDiv.innerHTML = birthdate;
+    const emailTelephoneDiv = document.getElementById('emailTelephoneDiv');
+    const emailTelephone = document.getElementById('emailTelephone').value;
+    emailTelephoneDiv.innerHTML = emailTelephone;
     const gender = document.getElementsByName('gender');
     let genderSelected;
     for (let index = 0; index < gender.length; index += 1) {
@@ -19,11 +26,7 @@ const replaceRightContent = function replaceRightContent() {
         genderSelected = gender[index].value;
       }
     }
-    const rightContent = document.getElementById('right-content');
-    rightContent.innerHTML = `Olá, ${firstname} ${lastname}
-  ${emailTelephone}
-  ${birthdate}
-  ${genderSelected}`;
+    document.getElementById('genderDiv').innerHTML = genderSelected;
   });
 };
 

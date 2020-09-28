@@ -8,13 +8,15 @@ button.addEventListener('click', function () {
   alert(inputValue);
 });
 
-buttonOption[2].addEventListener('focusin', function () {
-  const customInput = document.createElement('input');
-  customInput.type = 'text';
-  customInput.placeholder = 'Gênero (opcional)';
-  genderOptions.appendChild(customInput);
-});
-
-buttonOption[2].addEventListener('focusout', function () {
-  genderOptions.removeChild(genderOptions.lastChild);
-});
+for (let index = 0; index < buttonOption.length; index += 1) {
+  buttonOption[index].addEventListener('change', function () {
+    if (buttonOption[index].value === 'personalizado') {
+      const customInput = document.createElement('input');
+      customInput.type = 'text';
+      customInput.placeholder = 'Gênero (opcional)';
+      genderOptions.appendChild(customInput);
+    } else {
+      genderOptions.removeChild(genderOptions.lastChild);
+    }
+  });
+}

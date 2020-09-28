@@ -16,6 +16,11 @@ persInput.addEventListener('click', function () {
   divGender.appendChild(choiceGender);
 });
 
+function clearForms() {
+  const rightContent = document.querySelector('#right-content');
+  rightContent.innerHTML = '';
+}
+
 function creatForms() {
   const form = document.querySelector('#forms');
   const firstname = document.querySelector('#firstname').value;
@@ -67,6 +72,7 @@ window.onload = function () {
 document.querySelector('#forms').addEventListener('submit', function () {
   document.querySelector('#facebook-register').addEventListener('click', function (event) {
     event.preventDefault();
+    clearForms();
     creatForms();
   });
 });

@@ -36,24 +36,23 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <h2 class="quick-easy">É rápido e fácil.</h2>
-        <form action="" method="GET" id="form-box">
+        <form action="" method="GET" id="form-box" class="form-rules">
           <div>
-            <input class="form-input" type="text" name="firstname" placeholder="Nome" required="required">
-            <input class="form-input" type="text" name="lastname" placeholder="Sobrenome" required="required">
-            <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email"
-              required="required">
-            <input class="form-input-big" type="password" name="password" placeholder="Nova senha" required="required">
+            <input class="form-input" type="text" name="firstname" placeholder="Nome" data-validate-field="fitstname">
+            <input class="form-input" type="text" name="lastname" placeholder="Sobrenome" data-validate-field="lastname">
+            <input class="form-input-big" type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="phone_email">
+            <input class="form-input-big" type="password" name="password" placeholder="Nova senha" data-validate-field="password">
             <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required="required">
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" data-validate-field="birthdate">
           </div>
 
           <label for="" class="genero" id="label-gender">Gênero</label>
           <div class="radio">
-            <input id="feminino" type="radio" name="gender" required="required" value="Feminino">
+            <input id="feminino" type="radio" name="gender" value="Feminino" data-validate-field="gender">
             <label for="feminino">Feminino</label>
-            <input id="masculino" type="radio" name="gender" required="required" value="Masculino">
+            <input id="masculino" type="radio" name="gender" value="Masculino" data-validate-field="gender">
             <label for="masculino">Masculino</label>
-            <input id="personalizado" type="radio" name="gender" required="required" value="Personalizado">
+            <input id="personalizado" type="radio" name="gender" value="Personalizado" data-validate-field="gender">
             <label for="personalizado">Personalizado</label>
           </div>
 
@@ -64,6 +63,7 @@
     </section>
   </div>
   <script src="script.js"></script>
+  <script src="/node_modules/just-validate/dist/js/just-validate.min.js"></script>
 </body>
 
 </html>

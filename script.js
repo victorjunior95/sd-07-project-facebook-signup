@@ -5,14 +5,55 @@ buttonLogin.addEventListener('click', function () {
   alert(inputValue.value);
 });
 
-const buttonCustomGender = document.getElementById('personalizado');
-const formBox = document.getElementById('form-box');
-const facebookRegister = document.getElementById('facebook-register');
+const validateFields = {
+  firstname: {
+    required: true,
+  },
+  lastname: {
+    required: true,
+    maxLength: 20,
+  },
+  phone_email: {
+    required: true,
+  },
+  password: {
+    required: true,
+  },
+  birthdate: {
+    required: true,
+  },
+  gender: {
+    required: true,
+  },
+};
 
-buttonCustomGender.addEventListener('click', function () {
-  const genderCustom = document.createElement('input');
-  genderCustom.className = 'form-input-big';
-  genderCustom.setAttribute('name', 'gender-custom');
-  genderCustom.setAttribute('placeholder', 'Gênero');
-  formBox.insertBefore(genderCustom, facebookRegister);
-});
+const warnings = {
+  firstname: {
+    required: 'Campos inválidos',
+  },
+  lastname: {
+    required: 'Campos inválidos',
+  },
+  phone_email: {
+    required: 'Campos inválidos',
+  },
+  password: {
+    required: 'Campos inválidos',
+  },
+  birthdate: {
+    required: 'Campos inválidos',
+  },
+  gender: {
+    required: 'Campos inválidos',
+  },
+};
+
+const rulesValidate = {
+  rules: validateFields,
+  messages: warnings,
+};
+
+window.onload = function () {
+  const formRules = new window.JustValidate('.form-rules', rulesValidate);
+  return formRules;
+};

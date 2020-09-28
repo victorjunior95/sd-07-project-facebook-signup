@@ -4,7 +4,7 @@ document.getElementById('button-login').addEventListener('click', () => {
 });
 
 const genderRamdom = document.querySelector('.personalizado');
-function genderGeneration () {
+function genderGeneration() {
   if (genderRamdom.checked) {
     const newElement = document.createElement('input');
     newElement.name = 'gender-custom';

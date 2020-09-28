@@ -26,7 +26,7 @@ function makeRightContentUserCreated() {
     if (index > 1) {
       pToShow.innerHTML += '<br>';
     }
-    pToShow.innerHTML += `${greetings[index].value} `;
+    pToShow.innerHTML += `${greetings[index].value}`;
     rightContentAfterCreate.appendChild(pToShow);
   }
   mainContent.appendChild(rightContentAfterCreate);

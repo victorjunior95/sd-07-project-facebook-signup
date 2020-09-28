@@ -3,10 +3,10 @@ const emailInput = document.querySelector('#user-email-phone');
 const registerFB = document.querySelector('#facebook-register');
 const tagFormCreate = document.querySelector('.user-create');
 const inputFormCreate = document.querySelectorAll('.create-form');
-let createFormValid = true;
 const invalidFieldsP = document.createElement('p');
 const rightContentCreateAUser = document.querySelector('#right-content-create');
 const mainContent = document.querySelector('.main-content');
+let createFormValid = true;
 
 buttonLogin.addEventListener('click', function () {
   alert(emailInput.value);
@@ -26,7 +26,7 @@ function makeRightContentUserCreated() {
     if (index > 1) {
       pToShow.innerHTML += '<br>';
     }
-    pToShow.innerHTML += `${greetings[index].value} `;
+    pToShow.innerHTML += `${greetings[index].value}`;
     rightContentAfterCreate.appendChild(pToShow);
   }
   mainContent.appendChild(rightContentAfterCreate);

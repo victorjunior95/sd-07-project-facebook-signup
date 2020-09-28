@@ -21,7 +21,7 @@ function clearRightContent() {
   rightContent.innerHTML = '';
 }
 
-//  solução com a ajuda da colega Samata Below
+//  ajuda de Samanta Below e reorganizado depois de consultar Vinicius Muniz
 const validate = new window.JustValidate('.js-form', {
   rules: {
     firstname: {

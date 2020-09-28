@@ -13,15 +13,17 @@ buttonLogin.addEventListener('click', function () {
 });
 
 function makeRightContentUserCreated() {
+  const genderInput = document.querySelector('input[name="gender"]:checked');
+  genderInput.classList.add('greetings');
+  const greetings = document.querySelectorAll('.greetings');
   const rightContentAfterCreate = document.createElement('div');
   rightContentAfterCreate.classList.add('right-content');
+  const pToShow = document.createElement('p');
+  pToShow.innerText = 'Olá, ';
 
-  for (let index = 0; index < inputFormCreate.length; index += 1) {
-    if (inputFormCreate[index].name !== 'password') {
-      const pToShow = document.createElement('p');
-      pToShow.innerText = inputFormCreate[index].value;
-      rightContentAfterCreate.appendChild(pToShow);
-    }
+  for (let index = 0; index < greetings.length; index += 1) {
+    pToShow.innerText += `${greetings[index].value} `;
+    rightContentAfterCreate.appendChild(pToShow);
   }
   mainContent.appendChild(rightContentAfterCreate);
 }

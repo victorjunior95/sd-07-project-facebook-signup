@@ -3,9 +3,9 @@ const emailInput = document.querySelector('#user-email-phone');
 const registerFB = document.querySelector('#facebook-register');
 const tagFormCreate = document.querySelector('.user-create');
 const inputFormCreate = document.querySelectorAll('.create-form');
-let createFormValid = true;
 const invalidFieldsP = document.createElement('p');
 const rightContentCreateAUser = document.querySelector('#right-content-create');
+let createFormValid = true;
 const mainContent = document.querySelector('.main-content');
 
 buttonLogin.addEventListener('click', function () {

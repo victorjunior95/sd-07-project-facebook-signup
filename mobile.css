@@ -105,9 +105,23 @@
   }
 }
 
-@media screen and ( max-width : 360px ) {
+@media screen and ( max-width : 460px ) {
 
-  body {
-    background-color: darkmagenta;
+  .left-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .left-content .facebook-slogan {
+    font-size: medium;
+    width: 100%;
+  }
+
+  .left-content img {
+    width: 100%;
+  }
+
+  .right-content {
+    padding: 10px;
   }
 }

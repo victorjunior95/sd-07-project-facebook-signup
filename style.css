@@ -1,0 +1,51 @@
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+  margin-left: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin: 5px;
+}
+
+.label-top-bar {
+  color: white;
+  font-weight: 800;
+}
+
+.paragraph {
+  color: lightgrey;
+}
+
+.form-control {
+  align-self: flex-end;
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.alerta {
+  color: red;
+}

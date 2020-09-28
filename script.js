@@ -24,7 +24,7 @@ function creatForms() {
   const birthdate = document.querySelector('#birthdate').value;
   const gender = document.querySelector('#forms').gender.value;
   const resumeForm = document.createElement('div');
-  resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/outelefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
+  resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
   form.appendChild(resumeForm);
 }
 //  solução com a ajuda da colega Samata Below
@@ -57,13 +57,16 @@ const validate = new window.JustValidate('.js-form', {
     birthdate: 'Campos inválidos',
     radio: 'Campos inválidos',
   },
+
 });
 
 window.onload = function () {
   return validate;
 };
 
-document.querySelector('#facebook-register').addEventListener('click', function (event) {
-  event.preventDefault();
-  creatForms();
+document.querySelector('#forms').addEventListener('submit', function () {
+  document.querySelector('#facebook-register').addEventListener('click', function (event) {
+    event.preventDefault();
+    creatForms();
+  });
 });

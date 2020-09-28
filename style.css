@@ -6,7 +6,7 @@ body {
 
 .top-bar {
   align-items: center;
-  background-color: rgb(66, 103, 178);
+  background-color: rgb(66 , 103 , 178);
   display: flex;
   height: 80px;
   justify-content: center;
@@ -67,7 +67,7 @@ body {
     width: 100vw;
   }
   .header {
-    background-color: rgb(66, 103, 178);
+    background-color: rgb(66 , 103 , 178);
     text-align: center;
     width: 100%;
   }
@@ -80,9 +80,9 @@ body {
     flex-direction: column;
   }
   .login-mobile input {
-    background-color: rgb(243, 245, 246);
+    background-color: rgb(243 , 245 , 246);
     border-radius: 3px;
-    border: 1px rgb(225, 225, 225) solid;
+    border: 1px rgb(225 , 225 , 225) solid;
     height: 40px;
     margin-top: 0;
     padding: 0;
@@ -94,12 +94,12 @@ body {
     border-bottom-style: none;
   }
   .login-mobile input:nth-child(2) {
-    border-bottom-color: rgb(210, 210, 211);
+    border-bottom-color: rgb(210 , 210 , 211);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
   .login-mobile button {
-    background-color: rgb(22, 112, 235);
+    background-color: rgb(22 , 112 , 235);
     border-radius: 5px;
     border: none;
     color: white;
@@ -122,7 +122,7 @@ body {
     margin: 20px 10px;
   }
   .mobile-create-acc {
-    background-color: rgb(21, 153, 32);
+    background-color: rgb(21 , 153 , 32);
     border-radius: 5px;
     border: none;
     color: white;
@@ -138,7 +138,7 @@ body {
     justify-content: center;
   }
   .mobile-login a {
-    color: rgb(116, 149, 194);
+    color: rgb(116 , 149 , 194);
     font-weight: 900;
     margin-top: 15px;
     text-decoration: none;
@@ -149,27 +149,27 @@ body {
     flex-direction: column;
   }
   .lang {
-    font-size: small;
     display: flex;
     flex-wrap: wrap;
+    font-size: small;
     justify-content: space-around;
+    line-height: 20px;
     margin-top: 50px;
     text-align: center;
     width: 100%;
-    line-height: 20px;
   }
   .lang a {
     color: blue;
     text-decoration: none;
   }
-  .left-lang a:nth-child(1){
-    color: rgb(149, 149, 149);
+  .left-lang a:nth-child(1) {
+    color: rgb(149 , 149 , 149);
     font-weight: 900;
   }
   .mobile-footer {
-    color: rgb(149,149,149);
+    color: rgb(149 , 149 , 149);
+    font-size: small;
     text-align: center;
     width: 100%;
-    font-size: small;
   }
 }

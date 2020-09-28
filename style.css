@@ -121,6 +121,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   width: 300px;
+  justify-content: center;
 }
 
 .name , .lastname , .phone_email {

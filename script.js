@@ -20,13 +20,12 @@ function makeRightContentUserCreated() {
   rightContentAfterCreate.classList.add('right-content');
   rightContentAfterCreate.id = 'right-content-create';
   const pToShow = document.createElement('p');
-  pToShow.innerText = `Olá, `;
+  pToShow.innerText = 'Olá, ';
 
   for (let index = 0; index < greetings.length; index += 1) {
     if (index > 1) {
       pToShow.innerHTML += '<br>';
     }
-    console.log(pToShow.innerHTML);
     pToShow.innerHTML += `${greetings[index].value} `;
     rightContentAfterCreate.appendChild(pToShow);
   }

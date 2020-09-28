@@ -1,14 +1,3 @@
-const validationFirstName = document.querySelector('#first-name');
-validationFirstName.setCustomValidity('Campos inválidos');
-const validationLastName = document.querySelector('#last-name');
-validationLastName.setCustomValidity('Campos inválidos');
-const validationPhoneMail = document.querySelector('#phone-email');
-validationPhoneMail.setCustomValidity('Campos inválidos');
-const validationPassword = document.querySelector('#password');
-validationPassword.setCustomValidity('Campos inválidos');
-const validationBirthdate = document.querySelector('#birthdate');
-validationBirthdate.setCustomValidity('Campos inválidos');
-
 const alertButton = document.querySelector('#button-login');
 alertButton.addEventListener('click', function (event) {
   event.preventDefault();
@@ -26,5 +15,30 @@ addCustomGender.addEventListener('click', function () {
     customGenderInput.placeholder = 'Gênero (opcional)';
     const containerGender = document.querySelector('.setup-gender');
     containerGender.appendChild(customGenderInput);
+  }
+});
+
+document.querySelector('#facebook-register').addEventListener('click', function (event) {
+  let validationError = '';
+  const genderSelection = document.querySelectorAll('.form-input:checked');
+  if (document.querySelector('#first-name').value === '' || document.querySelector('#first-name').value === null) {
+    validationError = 'Campos inválidos';
+  } else if (document.querySelector('#last-name').value === '' || document.querySelector('#last-name').value === null) {
+    validationError = 'Campos inválidos';
+  } else if (document.querySelector('#phone-email').value === '' || document.querySelector('phone-email').value === null) {
+    validationError = 'Campos inválidos';
+  } else if (document.querySelector('#password').value === '' || document.querySelector('#password').value === null) {
+    validationError = 'Campos inválidos';
+  } else if (document.querySelector('#birthdate').value === '' || document.querySelector('#birthdate').value === null) {
+    validationError = 'Campos inválidos';
+  } else if (genderSelection.checked === false) {
+    validationError = 'Campos inválidos';
+  }
+
+  if (validationError !== '') {
+    const errorOutlet = document.createElement('p');
+    errorOutlet.innerText = validationError;
+    document.querySelector('.create-account').appendChild(errorOutlet);
+    event.preventDefault();
   }
 });

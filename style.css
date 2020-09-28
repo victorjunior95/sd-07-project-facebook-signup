@@ -27,8 +27,8 @@ body {
 }
 
 .container-logo img {
-  float: left;
   align-items: flex-end;
+  float: left;
 }
 
 .facebook-login {

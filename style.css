@@ -1,9 +1,9 @@
 body {
   font-family: Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: 800;
   margin: 0;
   padding: 0;
-  font-weight: 800;
-  font-size: 11pt;
 }
 
 .top-bar {
@@ -27,13 +27,13 @@ body {
 .form-control button {
   align-self: flex-end;
   background-color: rgb(75, 115, 195);
+  border-radius: 3px;
   border: 1px solid rgb(29, 52, 97);
   color: white;
   cursor: pointer;
+  font-weight: 600;
   height: 26px;
   width: 60px;
-  font-weight: 600;
-  border-radius: 3px;
 }
 
 .form-group input {
@@ -49,8 +49,8 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  width: 170px;
   margin-left: 280px;
+  width: 170px;
 }
 
 .facebook-login {

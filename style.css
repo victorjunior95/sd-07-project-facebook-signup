@@ -49,14 +49,12 @@ body {
 
 .facebook-logo {
   justify-content: flex-start;
-  /* margin-left: 280px; */
   width: 170px;
 }
 
 .facebook-login {
   display: flex;
   justify-content: center;
-  /* margin-right: 220px; */
 }
 
 .facebook-login label {

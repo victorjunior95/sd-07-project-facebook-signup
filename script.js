@@ -42,7 +42,7 @@ function getGender() {
 }
 
 function reviewInputs() {
-  const rightContent = document.getElementsByClassName('right-content');
+  const rightContent = document.getElementById('right-content');
   const firstname = document.getElementById('firstname');
   const lastname = document.getElementById('lastname');
   const phoneEmail = document.getElementsByClassName('phone_email');
@@ -50,10 +50,10 @@ function reviewInputs() {
   if (validateRadios() === true && validateInputs() === true) {
     invalidValues.innerText = 'Campos inválidos';
   } else {
-    rightContent[0].innerHTML = `Olá, ${firstname.value} ${lastname.value}.
-    - ${phoneEmail[0].value};
-    - Data de Nascimento: ${birthdate.value};
-    - Gênero: ${getGender()}`;
+    rightContent.innerHTML = `Olá, ${firstname.value} ${lastname.value}
+      ${phoneEmail[0].value}
+      ${birthdate.value}
+      ${getGender()}`;
   }
 }
 

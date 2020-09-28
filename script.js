@@ -36,8 +36,6 @@ cadast.addEventListener('click', () => {
     if (document.querySelectorAll('input:checked').length < 1 || (inputGender.style.display === 'block' && inputGender.value === '') || formsValue[i].value === '') {
       document.querySelector('.chek-return').style.display = 'block';
       return false;
-    }else {
-
     }
   }
 });

@@ -19,9 +19,9 @@ function completedForm() {
   const name = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const emailOrPhone = document.getElementById('phone-email').value;
-  const birthdate = document.querySelector('input[type="date"]').value ;
+  const birthdate = document.querySelector('input[type="date"]').value;
   const gender = document.querySelector('input[type="radio"]:checked').value;
-  rightContent.innerHTML = ''; // Apagar conteúdo do lado direito
+  rightContent.innerHTML = '';
   const displayName = document.createElement('p');
   const displayRest = document.createElement('p');
   displayName.innerText = `Olá, ${name} ${lastName}`;

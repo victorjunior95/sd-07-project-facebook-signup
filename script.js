@@ -22,23 +22,6 @@ function clearRightContent() {
 }
 
 //  solução com a ajuda da colega Samata Below
-const rightReplace = function creatForms() {
-  const submitForm = document.getElementById('forms');
-  submitForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    const firstname = document.querySelector('#firstname').value;
-    const lastname = document.querySelector('#lastname').value;
-    const phoneMail = document.querySelector('#phone-email').value;
-    const birthdate = document.querySelector('#birthdate').value;
-    const gender = document.querySelector('#forms').gender.value;
-    const resumeForm = document.createElement('div');
-    resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
-    clearRightContent();
-    const rightContent = document.querySelector('#right-content');
-    rightContent.appendChild(resumeForm);
-  });
-};
-//  solução com a ajuda da colega Samata Below
 const validate = new window.JustValidate('.js-form', {
   rules: {
     firstname: {
@@ -68,7 +51,18 @@ const validate = new window.JustValidate('.js-form', {
     birthdate: 'Campos inválidos',
     radio: 'Campos inválidos',
   },
-  submitHandler: rightReplace,
+  submitHandler() {
+    const firstname = document.querySelector('#firstname').value;
+    const lastname = document.querySelector('#lastname').value;
+    const phoneMail = document.querySelector('#phone-email').value;
+    const birthdate = document.querySelector('#birthdate').value;
+    const gender = document.querySelector('#forms').gender.value;
+    const resumeForm = document.createElement('div');
+    resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
+    clearRightContent();
+    const rightContent = document.querySelector('#right-content');
+    rightContent.appendChild(resumeForm);
+  },
 });
 
 window.onload = function () {

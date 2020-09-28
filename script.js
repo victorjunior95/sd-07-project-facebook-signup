@@ -1,13 +1,13 @@
 function checkForm() {
-  let error = false;
+  let err = false;
   document.querySelectorAll('.cadastro input').forEach((input) => {
     if ((input.type !== 'radio') && (input.className !== 'personalizado')) {
       if (input.value === '') {
-        error = true;
+        err = true;
       }
     }
   });
-  if (error === true) {
+  if (err === true) {
     document.querySelector('.error').style.display = 'block';
   } else {
     const nome = document.createTextNode(`Olá, ${document.querySelectorAll('.name')[0].value} ${document.querySelectorAll('.name')[1].value}`);

@@ -16,6 +16,18 @@ persInput.addEventListener('click', function () {
   divGender.appendChild(choiceGender);
 });
 
+
+function creatForms() {
+  const form = document.querySelector('#forms');
+  const firstname = document.querySelector('#firstname').value;
+  const lastname = document.querySelector('#lastname').value;
+  const phoneMail = document.querySelector('#phone-email').value;
+  const birthdate = document.querySelector('#birthdate').value;
+  const gender = document.querySelector('#forms').gender.value;
+  const resumeForm = document.createElement('div');
+  resumeForm.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/outelefone: ${phoneMail}.<br>Data de Nascimento: ${birthdate}.<br>Genero: ${gender}.`;
+  form.appendChild(resumeForm);
+}
 //  solução com a ajuda da colega Samata Below
 const validate = new window.JustValidate('.js-form', {
   rules: {
@@ -51,3 +63,8 @@ const validate = new window.JustValidate('.js-form', {
 window.onload = function () {
   return validate;
 };
+
+document.querySelector('#facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
+  creatForms();
+});

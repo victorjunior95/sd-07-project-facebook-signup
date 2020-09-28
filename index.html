@@ -34,18 +34,18 @@
         <div class='right-content'>
             <h1>Abra uma conta</h1>
             <p class='quick-easy'>É rápido e fácil.</p>
-            <form class="js-form">
+            <form id='forms' class="js-form form">
                 <div class='name'>
-                    <input name='firstname' data-validate-field="firstname" placeholder='Nome' type="text">
-                    <input name='lastname' data-validate-field="lastname" placeholder='Sobrenome' type="text">
+                    <input id='firstname' name='firstname' data-validate-field="firstname" placeholder='Nome' type="text">
+                    <input id='lastname' name='lastname' data-validate-field="lastname" placeholder='Sobrenome' type="text">
                 </div>
-                <input name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email' type="text">
-                <input name='password' data-validate-field="password" placeholder='Nova senha' type="password">
+                <input id='phone-email' name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email' type="text">
+                <input id='password' name='password' data-validate-field="password" placeholder='Nova senha' type="password">
 
                 <div>
                     <label id='label-birthdate'for="birthdate">Data de nascimento</label>
                     <div>
-                        <input name='birthdate' data-validate-field="birthdate" placeholder='dd/mm/aaaa' type="date">
+                        <input id='birthdate' name='birthdate' data-validate-field="birthdate" placeholder='dd/mm/aaaa' type="date">
                     </div>
                 </div>
                 <div>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 <div>
-                    <button id='facebook-register' type='submit'>Cadastre-se</button>
+                    <button id='facebook-register' class="form__btn btn btn-primary" type='submit'>Cadastre-se</button>
                 </div>
             </form>
 

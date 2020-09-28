@@ -54,10 +54,6 @@ form > input {
 
 .all-genders {
   display: flex;
-<<<<<<< HEAD
-  margin-top: 15px;
-=======
   flex-flow: row wrap;
   margin: auto 0.5em;
->>>>>>> 88b7092216632b2c3b26077713af52190b946a89
 }

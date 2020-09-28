@@ -15,17 +15,17 @@
         <form class="facebook-login">
             <div class="form-row">
                 <div class="form-group">
-                    <label id="user-email-phone-label" class="label-top-bar" for="">Email ou telefone</label> <br>
+                    <label id="user-email-phone-label" class="label-top-bar" for="">Email ou telefone</label>
                     <input class="form-control" id="user-email-phone" class="input" type="text" name="login">
                 </div>
                 <div class="form-group">
-                    <label id="user-password-label" class="label-top-bar" for="">Senha</label> <br>
+                    <label id="user-password-label" class="label-top-bar" for="">Senha</label>
                     <input class="form-control" id="user-password" class="input" type="password" name="passwd">
                     <p class="paragraph">Esqueceu a conta?</p>
                 </div>
                 <div class="form-group">
-                    <label for=""></label>
-                    <button class="form-control" id="button-login">Entrar</button>
+                    <label for="button-login">'</label>
+                    <button class="btn btn-primary form-control" id="button-login">Entrar</button>
                 </div>
             </div>
         </form>
@@ -43,37 +43,36 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col">
-                            <input class="form-control" type="text" name="firstname" placeholder="Nome" data-validate-field="firstname">
+                            <input class="form-control form-col verifica" type="text" name="firstname" placeholder="Nome" data-validate-field="firstname">
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" name="lastname" placeholder="Sobrenome" data-validate-fiel="lastname">
+                            <input class="form-control form-col verifica" type="text" name="lastname" placeholder="Sobrenome" data-validate-fiel="lastname">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="form-group">
-                        <input class="form-control" type="text" name="phone_email" placeholder="Celular ou email" data-validate-fiel="phone_email">
+                        <input class="form-control verifica" type="text" name="phone_email" placeholder="Celular ou email" data-validate-fiel="phone_email">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="password" name="password" placeholder="Nova senha" data-validate-fiel="password">
+                        <input class="form-control verifica" type="password" name="password" placeholder="Nova senha" data-validate-fiel="password">
                     </div>
                 </div>
                 <div class="form-group">
                     <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-                    <input class="form-control" type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-fiel="birthdate">
+                    <input class="form-control verifica" type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-fiel="birthdate">
                 </div>
                 <div class="form-group">
-                    <label id="label-gender" for="">Gênero
-                        <div class="form-check form-check-inline form-control">
-                            <label for="Feminino"><input class="form-check-input custom-radio" type="radio" id="Feminino" name="gender" value="Feminino" data-validate-fiel="birthdate">Feminino</label>
-                            <label for="Masculino"><input class="form-check-input custom-radio" type="radio" id="Masculino" name="gender" value="Masculino" data-validate-fiel="birthdate">Masculino</label>
-                            <label for="Personalizado"><input class="form-check-input custom-radio" type="radio" id="Personalizado" name="gender" Value="Personalizado" data-validate-fiel="birthdate">Personalizado</label>
+                    <label id="label-gender" for="">Gênero</label>
+                        <div class="form-inline">
+                            <input class="custom-radio" type="radio" id="Feminino" name="gender" value="Feminino" data-validate-fiel="birthdate"><label for="Feminino">Feminino</label>
+                            <input class="custom-radio" type="radio" id="Masculino" name="gender" value="Masculino" data-validate-fiel="birthdate"><label for="Masculino">Masculino</label>
+                            <input class="custom-radio" type="radio" id="Personalizado" name="gender" Value="Personalizado" data-validate-fiel="birthdate"><label for="Personalizado">Personalizado</label>
                         </div>
-                    </label>
+                        <div id="custom"></div>
                 </div>
-                <div id="custom"></div>
                 <div class="form-group">
-                    <button class="btn-primary" type="submit" id="facebook-register">Cadastre-se</button>
+                    <button class="btn btn-primary" type="submit" id="facebook-register">Cadastre-se</button>
                 </div>
             </form>
         </div>

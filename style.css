@@ -8,6 +8,7 @@
 .facebook-login {
   display: flex;
   margin-left: auto;
+  padding: 1%;
 }
 
 .form-group {
@@ -17,6 +18,10 @@
 
 .input {
   margin: 5px;
+}
+
+label {
+  padding-right: 6px;
 }
 
 .label-top-bar {

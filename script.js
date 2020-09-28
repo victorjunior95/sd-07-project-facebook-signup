@@ -19,7 +19,7 @@ subimitButton.addEventListener('click', function (event) {
   event.preventDefault();
   const rightForm = document.querySelector('.open-account');
   const rightContent = document.querySelector('.right-content');
-  const valoresInput = document.querySelectorAll('.custom-control-label');
+  const valoresInput = document.querySelectorAll('.verifica');
   const mensagem = document.createElement('p');
   rightForm.appendChild(mensagem);
   for (let index = 0; index < valoresInput.length; index += 1) {

@@ -21,9 +21,8 @@ personalizado.addEventListener('click', function () {
   const novoCampoGenero = document.createElement('input');
   novoCampoGenero.name = 'gender-custom';
   novoCampoGenero.placeholder = 'Gênero (opcional)';
-  novoCampoGenero.id = 'generoPersonalizado';
-  const formulario = document.getElementById('formulario');
-  formulario.insertBefore(novoCampoGenero, formulario.childNodes[formulario.length + 1]);
+  const generoPersonalizado = document.getElementsByClassName('generoPersonalizado');
+  generoPersonalizado[0].appendChild(novoCampoGenero);
 });
 
 // Registro
@@ -48,8 +47,7 @@ facebookRegister.addEventListener('click', function (event) {
     } else if (masculino.checked === true) {
       gender = 'Masculino';
     } else {
-      const generoPersonalizado = document.getElementById('generoPersonalizado');
-      gender = generoPersonalizado.value;
+      gender = 'Personalizado';
     }
   } else {
     camposVazios += 1;

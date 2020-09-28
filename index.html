@@ -38,11 +38,11 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form action="" enctype="multipart/form-data">
         <section class="first-last-name">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" id="first-name" name="firstname" placeholder="Nome">
+          <input type="text" id="last-name" name="lastname" placeholder="Sobrenome">
         </section>
 
-        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="text" id="phone-email" name="phone_email" placeholder="Celular ou email">
 
         <input type="password" name="password" placeholder="Nova senha">
 
@@ -51,8 +51,8 @@
         </div>
 
         <div>
-          <label id="label-birthdate">Data de nascimento</label><br>
-          <input name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
+          <label id="label-birthdate">Data de nascimento</label>
+          <input id="birthdate" name="birthdate" required="required" placeholder="dd/mm/aaaa" type="date">
         </div>
 
         <label id="label-gender">Gênero</label>

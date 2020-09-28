@@ -58,7 +58,7 @@ const justValidate = new window.JustValidate('.form-register', {
       }
     }
     const result = document.createElement('div');
-    result.innerHTML = `<p>Olá ${firstname} ${lastname}</p>
+    result.innerHTML = `<p>Olá, ${firstname} ${lastname}</p>
     <p>E-mail e/ou telefone: ${emailTelephone}</p>
     <p>Data de Nascimento: ${birthdate}</p>
     <p>Genero: ${genderSelected}.`;

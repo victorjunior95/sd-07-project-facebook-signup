@@ -44,3 +44,27 @@ btnSubmit.addEventListener('click', function (event) {
     pMensageInvalid.innerText = 'Campos inválidos';
   }
 });
+
+const radioFemale = document.getElementById('female');
+const radioMale = document.getElementById('male');
+const radioPerson = document.getElementById('person');
+
+function clearInput() {
+  const addDivPerson = document.getElementById('div-person');
+  addDivPerson.innerHTML = '';
+}
+radioFemale.addEventListener('change', clearInput);
+
+radioMale.addEventListener('change', clearInput);
+
+radioPerson.addEventListener('change', function () {
+  const personMargin = document.getElementsByClassName('person-margin').length;
+  if (personMargin === 0) {
+    const inputRadio = document.createElement('input');
+    inputRadio.placeholder = 'Gênero (opcional)';
+    inputRadio.name = 'gender-custom';
+    inputRadio.className = 'inputLarge input-style person-margin';
+    const addDivPerson = document.getElementById('div-person');
+    addDivPerson.appendChild(inputRadio);
+  }
+});

@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+i {
+  color: rgb(95, 103, 112);
+}
+
 .facebook-login {
   color: white;
   display: flex;
@@ -31,14 +35,15 @@ body {
 
 .form-control button {
   align-items: flex-end;
-  background: #1969e5;
-  border: 2px solid #215ab2;
+  background: rgb(67, 103, 178);
+  border: 1px solid rgb(45, 74, 138);
   color: white;
   padding: 3px 5px;
 }
 
 .form-control button:hover {
-  background-color: #215ab2;
+  background-color: rgb(46, 77, 144);
+  border: 1px solid rgb(45, 74, 138);
 }
 
 .forgot {
@@ -60,11 +65,28 @@ body {
   margin: 5px;
 }
 
-h1 , h2 {
-  margin-top: 5px;
+.form-group input {
+  border: 1px solid rgb(30, 43, 91);
 }
 
-h3 {
+h1 {
+  color: rgb(51, 51, 51);
+  font-size: 35px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+h2 {
+  color: rgb(158, 162, 171);
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.label-birthdate {
+  color: rgb(161, 164, 172);
+  font-size: 15px;
+  font-weight: 900;
   margin: 0;
 }
 
@@ -76,6 +98,11 @@ h3 {
 .left-content {
   height: 100%;
   width: 800px;
+}
+
+.left-content p {
+  color: rgb(13, 56, 95);
+  font-weight: 900;
 }
 
 .main-content {
@@ -102,29 +129,32 @@ h3 {
   border: #d3e8d8 solid 1px;
   border-radius: 4px;
   box-sizing: border-box;
+  color: rgb(158, 162, 171);
   font-size: 18px;
   font-weight: 700;
   height: 30px;
   margin-top: 6px;
-
 }
 
 .right-content .submit {
-  background: linear-gradient(#67ae55, #578843);
+  background: linear-gradient(rgb(102, 171, 84), rgb(88, 139, 68));
   border: 0;
+  border-top: 2px  rgb(208, 221, 202) double;
   color: white;
   cursor: pointer;
   font-size: 19px;
+  font-weight: 800;
   height: 40px;
-  max-width: 200px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  width: 200px;
 }
 
 .right-content .submit:hover {
-  background: linear-gradient(#608d55, #68855d);
+  background: linear-gradient(rgb(112, 190, 93), rgb(88, 139, 68));
   border: 0;
+  border-top: 2px  rgb(208, 221, 202) double;
   cursor: pointer;
   font-size: 19px;
-  max-width: 200px;
 }
 
 .sing-up {
@@ -139,7 +169,7 @@ h3 {
 }
 
 .top-bar {
-  background-color: rgb(66, 103, 178);
+  background: linear-gradient(rgb(77, 104, 162), rgb(60, 90, 153), rgb(19, 55, 130));
   box-sizing: border-box;
   display: flex;
   height: 70px;
@@ -158,8 +188,7 @@ h3 {
 
 .u-gender-option label {
   display: inline-block;
-  font-size: 20px;
-
+  font-size: 18px;
 }
 
 .u-gender-option input {
@@ -191,7 +220,7 @@ h3 {
   text-decoration: none;
 }
 
-.selected-lingua {
+.linguas .selected-lingua {
   color: #737373;
 }
 
@@ -216,7 +245,7 @@ h3 {
   text-decoration: none;
 }
 
-.links .selected-link {
+.links .selected-links {
   color: #737373;
 }
 
@@ -237,7 +266,7 @@ h3 {
 }
 
 .face .link-final {
-  color: #365899;
+  color: #737373;
   font-size: 12px;
   text-decoration: none;
 }

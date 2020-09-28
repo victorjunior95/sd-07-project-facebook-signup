@@ -41,3 +41,4 @@ btnSubmit.addEventListener('click', function (event) {
   }
   alert('Campos inválidos');
 });
+

@@ -19,7 +19,7 @@ function completedForm() {
   const name = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const emailOrPhone = document.getElementById('phone-email').value;
-  const birthdate = document.querySelector('input[type="date"]').value;
+  const birthdate = document.getElementById('birthdate').value;
   const gender = document.querySelector('input[type="radio"]:checked').value;
   rightContent.innerHTML = '';
   const displayName = document.createElement('p');

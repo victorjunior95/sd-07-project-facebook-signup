@@ -16,7 +16,6 @@ persInput.addEventListener('click', function () {
   divGender.appendChild(choiceGender);
 });
 
-
 function creatForms() {
   const form = document.querySelector('#forms');
   const firstname = document.querySelector('#firstname').value;

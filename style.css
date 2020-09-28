@@ -41,11 +41,11 @@ body {
   width: 170px;
 }
 
-/* .form-group p {
+.form-group p {
   color: rgb(156, 170, 197);
   margin-top: 49px;
   position: absolute;
-} */
+}
 
 .facebook-logo {
   justify-content: flex-start;

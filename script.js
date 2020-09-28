@@ -40,7 +40,7 @@ function adicionarCampoGender() {
     if (campoPGender === null) {
       const personalizadoGender = document.createElement('input');
       personalizadoGender.id = 'personalizado-input';
-      personalizadoGender.name = 'gender';
+      personalizadoGender.name = 'gender-custom';
       personalizadoGender.placeholder = 'Genero';
       genderContainer.appendChild(personalizadoGender);
     }

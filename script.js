@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 const button = document.getElementById('button-login');
 button.addEventListener('click', function () {
   alert('Email ou telefone');
 });
-=======
+
 const buttonAntigo = document.querySelector('#button-login');
 const buttonNovo = document.querySelector('#facebook-register');
 const genderContainer = document.querySelector('#gender-container');
@@ -54,4 +53,3 @@ window.onload = function () {
   adicionarCampoGender();
   criarFormNovo();
 };
->>>>>>> d502958e6f0ed0f9611fed8f6b95fc8becdc4cc5

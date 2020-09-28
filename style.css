@@ -45,9 +45,9 @@ body {
 }
 
 .form-group p {
-  position: absolute;
-  margin-top: 49px;
   color: rgb(156, 170, 197);
+  margin-top: 49px;
+  position: absolute;
 }
 
 .facebook-logo {

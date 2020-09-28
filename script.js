@@ -10,7 +10,7 @@ button.addEventListener('click', function () {
 
 for (let index = 0; index < buttonOption.length; index += 1) {
   buttonOption[index].addEventListener('change', function () {
-    if (buttonOption[index].value === 'personalizado') {
+    if (buttonOption[index].value === 'Personalizado') {
       const customInput = document.createElement('input');
       customInput.type = 'text';
       customInput.placeholder = 'Gênero (opcional)';

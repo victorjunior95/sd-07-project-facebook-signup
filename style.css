@@ -27,8 +27,8 @@ body {
 .form-control button {
   align-self: flex-end;
   background-color: rgb(75, 115, 195);
-  border-radius: 3px;
   border: 1px solid rgb(29, 52, 97);
+  border-radius: 3px;
   color: white;
   cursor: pointer;
   font-weight: 600;
@@ -130,9 +130,9 @@ body {
 }
 
 .facebook-register {
-  background-image: linear-gradient(rgb(62, 138, 43), rgb(32, 102, 50) 50%);
-  border-radius: 4px;
+  background-image: linear-gradient(rgb(73, 172, 49), rgb(32, 102, 50) 50%);
   border: 1px solid rgb(32, 102, 50);
+  border-radius: 4px;
   color: white;
   cursor: pointer;
   font-size: 13pt;

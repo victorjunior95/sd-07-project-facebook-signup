@@ -53,8 +53,9 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 415px) {
-  .main-content,
+@media screen and ( max-width :415px ) {
+  
+  .main-content, 
   .top-bar {
     display: none;
   }
@@ -94,21 +95,21 @@ body {
     text-indent: 10px;
   }
 
-  .login-mobile input:nth-child(1) {
+  .login-mobile input:nth-child( 1 ) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-style: none;
   }
 
-  .login-mobile input:nth-child(2) {
+  .login-mobile input:nth-child( 2 ) {
     border-bottom-color: rgb(210, 210, 211);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 
   .login-mobile button {
-    border: none;
     background-color: rgb(22, 112, 235);
+    border: none;
     border-radius: 5px;
     color: white;
     font-weight: 700;
@@ -134,8 +135,8 @@ body {
   }
 
   .mobile-create-acc {
-    border: none;
     background-color: rgb(21, 153, 32);
+    border: none;
     border-radius: 5px;
     color: white;
     font-weight: 900;
@@ -158,7 +159,7 @@ body {
     text-decoration: none;
   }
 
-  .left-lang,
+  .left-lang, 
   .right-lang {
     display: flex;
     flex-direction: column;
@@ -180,7 +181,7 @@ body {
     text-decoration: none;
   }
 
-  .left-lang a:nth-child(1) {
+  .left-lang a:nth-child( 1 ) {
     color: rgb(149, 149, 149);
     font-weight: 900;
   }

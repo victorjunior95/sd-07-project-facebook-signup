@@ -4,34 +4,6 @@ buttonLogin.addEventListener('click', function () {
   alert(value);
 });
 
-const replaceRightContent = function replaceRightContent() {
-  document.getElementById('form-register').addEventListener('submit', function (event) {
-    event.preventDefault();
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
-    document.getElementById('password').innerHTML = '';
-    const birthdate = document.getElementById('birthdate').value;
-    document.getElementById('birthdateDiv').innerHTML = birthdate;
-    const emailTelephone = document.getElementById('emailTelephone').value;
-    document.getElementById('emailTelephoneDiv').innerHTML = emailTelephone;
-    const gender = document.getElementsByName('gender');
-    let genderSelected;
-    for (let index = 0; index < gender.length; index += 1) {
-      if (gender[index].checked) {
-        genderSelected = gender[index].value;
-      }
-    }
-    const result = document.createElement('div');
-    result.innerHTML = `<p>Olá ${firstname} ${lastname}</p>
-    <p>E-mail e/ou telefone: ${emailTelephone}</p>
-    <p>Data de Nascimento: ${birthdate}</p>
-    <p>Genero: ${genderSelected}.`;
-    const rightContent = document.getElementById('right-content');
-    rightContent.innerHTML = '';
-    rightContent.appendChild(result);
-  });
-};
-
 const justValidate = new window.JustValidate('.form-register', {
   rules: {
     firstname: {
@@ -73,7 +45,27 @@ const justValidate = new window.JustValidate('.form-register', {
       required: 'Campos inválidos',
     },
   },
-  submitHandler: replaceRightContent,
+  submitHandler() {
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+    const birthdate = document.getElementById('birthdate').value;
+    const emailTelephone = document.getElementById('emailTelephone').value;
+    const gender = document.getElementsByName('gender');
+    let genderSelected;
+    for (let index = 0; index < gender.length; index += 1) {
+      if (gender[index].checked) {
+        genderSelected = gender[index].value;
+      }
+    }
+    const result = document.createElement('div');
+    result.innerHTML = `<p>Olá ${firstname} ${lastname}</p>
+    <p>E-mail e/ou telefone: ${emailTelephone}</p>
+    <p>Data de Nascimento: ${birthdate}</p>
+    <p>Genero: ${genderSelected}.`;
+    const rightContent = document.getElementById('right-content');
+    rightContent.innerHTML = '';
+    rightContent.appendChild(result);
+  },
 });
 
 window.onload = function () {

@@ -27,12 +27,16 @@ function checkRadio() {
 function welcome() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
-  const welcomeUser = `Olá, ${firstName} ${lastName}`;
+  const birthdate = document.getElementById('birthdate').value;
+  const phoneEmail = document.getElementById('phone_email').value;
+  const welcomeUser = `Olá, ${firstName} ${lastName}, ${phoneEmail}, ${birthdate}`;
   const contentReturn = document.querySelector('.right-content');
   for (let index = 0; index < contentReturn.children.length; index += 1) {
     contentReturn.children[index].style.display = 'none';
   }
-  contentReturn.appendChild = welcomeUser;
+  const element = document.createElement('div');
+  element.appendChild(welcomeUser);
+  contentReturn.appendChild(element);
 }
 
 const male = document.querySelector('#male');

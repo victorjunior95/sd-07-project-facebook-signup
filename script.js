@@ -42,13 +42,14 @@ cadast.addEventListener('click', () => {
     ) {
       document.querySelector('.chek-return').style.display = 'block';
     } else {
-      alert('executou');
       const firstName = document.getElementById('firstname').value;
       const lastName = document.getElementById('lastname').value;
-      const phoneMail = document.getElementById('phone_email').value;
-      const birthDate = document.getElementById('birthdate').value;
-      const welcomeUser = `Olá, ${firstName} ${lastName} ${inputGender} ${phoneMail} ${birthDate}`;
-      document.querySelector('.right-content').innerHTML = `${welcomeUser}`;
+      const welcomeUser = `Olá, ${firstName} ${lastName}`;
+      const contentReturn = document.querySelector('.right-content');
+      for (let index = 0; index < contentReturn.children.length; index +=1){
+        contentReturn.children[index].style.display = 'none';
+      } 
+      contentReturn.innerHTML = welcomeUser;
     }
   }
   return false;

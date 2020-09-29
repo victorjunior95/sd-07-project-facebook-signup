@@ -45,7 +45,7 @@ document.querySelector('#facebook-register').addEventListener('click', function 
 
 document.querySelector('.create-account').addEventListener('submit', function (event) {
   event.preventDefault();
-  const formChildren = document.querySelector('.create-account').children;
+  const formChildren = document.querySelector('.right-content').children;
   for (let count = 0; count < formChildren.length; count += 1) {
     formChildren[count].style.display = 'none';
   }

@@ -39,6 +39,15 @@ label {
   display: flex;
 }
 
+.facebook-login div.form-control {
+  width: auto;
+  background-color: rgb(66, 103, 178);
+  border: none;
+  border-radius: none;
+  color: rgb(66, 103, 178);
+  flex-direction: column-reverse;
+}
+
 .main-content {
   display: flex;
   justify-content: space-around;

@@ -119,7 +119,7 @@ btCadastre.addEventListener('click', function (event) {
   const resultGender = valiGender(rdBtGender);
   const inputsArray = [resultName, resultEmail, resultPassword, resultDate, resultGender];
   if (errorMessage(inputsArray)) {
-    alert('Campos invalidos');
+    alert('Campos inválidos');
   } else {
     const divText = `\n \n Olá, ${resultName} \n ${resultEmail} \n ${resultDate} \n ${resultGender}`;
     const divRightContainer = document.querySelector('.right-content');

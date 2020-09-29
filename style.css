@@ -32,13 +32,19 @@
   justify-content: space-between;
 }
 
+.nomeDeUsuario {
+  display: flex;
+}
+
 .right-content {
   width: 300px;
+  margin: auto;
 }
 
 .right-content form {
   display: flex;
   flex-direction: column;
+  width: 350px;
 }
 
 .senha {
@@ -50,5 +56,6 @@
   align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
+  height:60px;
   justify-content: space-between;
 }

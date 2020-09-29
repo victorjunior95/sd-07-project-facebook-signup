@@ -11,7 +11,7 @@ function radioCheked() {
   const novoInput = document.createElement('input');
   const inputsValue = document.querySelectorAll('.u-gender-option input');
   if ((otherGender.checked) && (inputsValue.length < 4)) {
-    novoInput.setAttribute('id', 'gender-custom');
+    novoInput.setAttribute('name', 'gender-custom');
     novoInput.setAttribute('placeholder', 'Gênero (opcional)');
     document.querySelector('.u-gender-option').appendChild(novoInput);
   }

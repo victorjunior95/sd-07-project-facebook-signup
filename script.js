@@ -80,8 +80,10 @@ const validate = new window.JustValidate('.new-account', {
     Seu email é: ${inputPhoneEmail.value}
     Data de nascimento: ${inputBirthdate.value}
     Gênero: ${checkedGender()}`;
+    let divSaudacoes = document.createElement('div');
+    divSaudacoes.innerText = saudacoes;
     divRightContent.innerHTML = '';
-    divRightContent.innerHTML += saudacoes;
+    divRightContent.appendChild(divSaudacoes);
   },
 });
 

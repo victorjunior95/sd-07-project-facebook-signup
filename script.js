@@ -46,7 +46,7 @@ cadast.addEventListener('click', () => {
       const lastName = document.getElementById('lastname').value;
       const welcomeUser = `Olá, ${firstName} ${lastName}`;
       const contentReturn = document.querySelector('.right-content');
-      for (let index = 0; index < contentReturn.children.length; index += 1){
+      for (let index = 0; index < contentReturn.children.length; index += 1) {
         contentReturn.children[index].style.display = 'none';
       }
       contentReturn.innerHTML = welcomeUser;

@@ -39,43 +39,47 @@ const createPInvalidFields = () => {
   document.querySelector('#invalidFields').appendChild(paragraph);
 };
 
-const getValues = (inputName) => {
+const filterValues = (inputName) => {
   let objectKey = '';
   switch (inputName) {
-    case 'genre':
+    case 'gender':
       objectKey = document.querySelector('input[name="gender"]:checked').value;
-      if (objectKey === 'on') {
+      if (objectKey === 'Personalizado') {
         objectKey = document.querySelector('input[id="genre"]').value;
       }
       break;
     case 'birthdate':
       objectKey = document.querySelector('input[type="date"]').value;
       break;
-    default:
-      objectKey = document.querySelector(`#${inputName}`).value;
+    default :
+      break;
   }
   return objectKey;
 };
 
-const createOutput = (inputName) => {
-  const element = document.createElement('output');
-  element.innerText = getValues(inputName);
-  element.id = inputName;
-  element.className = 'outputDisplay';
-  return element;
+const getElements = () => {
+  const objectInputs = {};
+  const elements = document.querySelectorAll('#subscribe input');
+  for (let i = 0; i < elements.length; i += 1) {
+    const element = elements[i];
+    if (element.type === 'text') {
+      objectInputs[element.id] = element.value;
+    } else if (element.id !== '') {
+      objectInputs[element.name] = filterValues(element.name);
+    }
+  }
+  return objectInputs;
 };
 
 const registered = () => {
-  const inputList = ['name', 'lastName', 'emailCell', 'birthdate', 'genre'];
+  const inputList = getElements();
   const outputContainer = document.createElement('div');
   outputContainer.id = 'right-content';
   outputContainer.className = 'right-content';
   const paragraph = document.createElement('p');
-  paragraph.innerText = `Olá, ${inputList[0]} ${inputList[1]}`;
+  paragraph.innerText = `Olá, ${inputList.name} ${inputList.lastName}
+  ${inputList.emailCell} ${inputList.birthdate} ${inputList.gender}`;
   outputContainer.appendChild(paragraph);
-  for (let i = 0; i < inputList.length; i += 1) {
-    outputContainer.appendChild(createOutput(inputList[i]));
-  }
   document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
 };
 

@@ -76,7 +76,7 @@ const registered = () => {
   /* const outputContainer = document.createElement('div');
    outputContainer.id = 'right-content';
   outputContainer.className = 'right-content'; */
-  const paragraph = document.createElement('output');
+  const paragraph = document.createElement('div');
   paragraph.innerText = `Olá, ${inputList.name} ${inputList.lastName}
   ${inputList.emailCell} ${inputList.birthdate} ${inputList.gender}`;
   /* outputContainer.appendChild(paragraph);*/

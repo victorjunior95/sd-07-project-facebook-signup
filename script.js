@@ -40,7 +40,7 @@ cadast.addEventListener('click', () => {
       (inputGender.style.display === 'block' && inputGender.value === '') ||
       formsValue[i].value === ''
     ) {
-      document.querySelector(".chek-return").style.display = "block";
+      document.querySelector('.chek-return').style.display = 'block';
     } else {
       alert('executou');
       const firstName = document.getElementById('firstname').value;

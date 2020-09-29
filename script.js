@@ -71,7 +71,7 @@ document.getElementById('button-login').addEventListener('click', function () {
 function checkEmptyFields() {
   let result = true;
   inputs.forEach((input) => {
-    if (input.value === '') return result = false;
+    if (input.value === '') result = false;
   });
   return result;
 }

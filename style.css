@@ -6,6 +6,10 @@
   padding: 20px 50px;
 }
 
+.facebookRegister {
+  background-color: green;
+}
+
 .facebook-login {
   display: flex;
 }
@@ -39,3 +43,5 @@
 .radios {
   display: flex;
 }
+
+

@@ -67,8 +67,13 @@ const justValidate = new window.JustValidate('.js-form', {
 
   submitHandler() {
     const rightContentDiv = document.getElementById('right-content');
-    const msnResponse = `<div class="form-response">Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}, nascido em ${document.getElementById('user').value}, do gênero: ${genderSelected()}, seu login é: ${document.getElementById('phone-email').value}<div>`;
-    rightContentDiv.innerHTML = msnResponse;
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
+    const msnResponse = document.createElement('div');
+    msnResponse.className = 'form-response';
+    msnResponse.innerHTML = `Olá, ${firstname} ${lastname}, nascido em ${document.getElementById('user').value}, do gênero: ${genderSelected()}, seu login é: ${document.getElementById('phone-email').value}`;
+    rightContentDiv.innerHTML = '';
+    rightContentDiv.appendChild(msnResponse);
   },
 });
 

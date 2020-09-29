@@ -26,15 +26,13 @@ function validarNovoUsuario() {
     listaForm.password = document.getElementById('password').value;
     listaForm.genero = document.querySelector('[type=radio]:checked');
     listaForm.dataNasc = document.getElementById('birthdate').value;
-    let values = Object.values(listaForm);
+    const values = Object.values(listaForm);
 
     values.forEach(element => {
-      console.log(element);
       if (element === null || element === "") {
         alert('Campos inválidos');
       }
-    });  
-    
+    });    
   });
 }
 function adicionarCampoGender() {

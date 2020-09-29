@@ -9,8 +9,8 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  justify-content: center;
   height: 20%;
+  justify-content: center;
   width: 100%;
 }
 
@@ -37,16 +37,18 @@ body {
   align-items: flex-end;
   display: flex;
   font-size: 0.9rem;
-  font-weight: 540;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
 }
 
-.email-container, .password-container, .login-button {
+.email-container , .password-container , .login-button {
   display: flex;
   flex-direction: column;
   margin: 5px 8px;
 }
 
-.email-input, .password-input {
+.email-input , .password-input {
   height: 19px;
   margin-top: 5px;
 }
@@ -86,7 +88,7 @@ main {
 .left-content {
   color: rgb(1, 33, 97);
   font-size: 1.5rem;
-  font-weight: 550;
+  font-weight: 500;
   margin: 2% 0 0;
   width: 35%;
 }

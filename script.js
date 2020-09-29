@@ -39,7 +39,7 @@ function returnMsg(nome, email, dataNascimento, gender) {
   p.innerHTML = `Olá ${nome} ${email} ${dataNascimento} ${gender}`;
   rightContent.appendChild(p);
 }
-function preventDefault (event) {
+function preventDefault(event) {
 
 }
 
@@ -61,7 +61,7 @@ buttonFacebookRegister.addEventListener('click', () => {
     }
   });
   if (check === false) {
-    preventDefault(); 
+    preventDefault(event); 
     nome = `${form[0].value} ${form[1].value}`;
     email = `${form[2].value}`;
     gender = document.querySelector('input[name="gender"]:checked').value;

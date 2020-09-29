@@ -45,11 +45,10 @@ buttonSubmit.addEventListener('click', (e) => {
   }
   if (inputValid && checkRadios(radios)) {
     return true;
-  } else {
-    const form = document.querySelector('.form-register');
-    const error = document.createElement('p');
-    error.innerHTML = 'Campos inválidos';
-    error.style.color = 'red';
-    form.appendChild(error);
   }
+  const form = document.querySelector('.form-register');
+  const error = document.createElement('p');
+  error.innerHTML = 'Campos inválidos';
+  error.style.color = 'red';
+  return form.appendChild(error);
 });

@@ -169,7 +169,7 @@ h2 {
 }
 
 .top-bar {
-  background: linear-gradient(rgb(77, 104, 162), rgb(60, 90, 153), rgb(19, 55, 130));
+  background-color: rgb(66, 103, 178);
   box-sizing: border-box;
   display: flex;
   height: 70px;

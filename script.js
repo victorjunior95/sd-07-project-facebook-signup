@@ -1,3 +1,15 @@
+function radioCheked() {
+  const otherGender = document.getElementById('other');
+  const novoInput = document.createElement('input');
+  const inputsValue = document.querySelectorAll('.u-gender-option input');
+  if ((otherGender.checked) && (inputsValue.length < 4)) {
+    novoInput.setAttribute('id', 'gender-custom');
+    novoInput.setAttribute('placeholder', 'Gênero (opcional)');
+    document.querySelector('.u-gender-option').appendChild(novoInput);
+  }
+}
+document.getElementById('other').addEventListener('click', radioCheked);
+
 const pMensageInvalid = document.getElementById('mensage-invalid');
 const btButtonLogin = document.getElementById('button-login');
 btButtonLogin.addEventListener('click', function () {
@@ -41,4 +53,3 @@ btnSubmit.addEventListener('click', function (event) {
   }
   alert('Campos inválidos');
 });
-

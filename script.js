@@ -36,9 +36,9 @@ document.querySelector('#facebook-register').addEventListener('click', function 
   }
 
   if (validationError !== '') {
-    const errorOutlet = document.createElement('p');
-    errorOutlet.innerText = validationError;
-    document.querySelector('.create-account').appendChild(errorOutlet);
+    const errorOutPut = document.createElement('p');
+    errorOutPut.innerText = validationError;
+    document.querySelector('.create-account').appendChild(errorOutPut);
     event.preventDefault();
   }
 });

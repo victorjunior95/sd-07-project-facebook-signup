@@ -240,3 +240,43 @@ main {
   background-color: green;
   cursor: pointer;
 }
+
+.mobile-form {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .left-content , .login-container {
+    display: none;
+  }
+
+  .header-subcontainer {
+    justify-content: center;
+    height: 70px;
+  }
+
+  .header-subcontainer img {
+    height: 70px;
+    width: 200px;
+  }
+
+  .right-content {
+    display: none;
+  }
+
+  .main-content {
+    justify-content: center;
+    width: 60%;
+  }
+
+  .mobile-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .mobile-form {
+    display: flex;
+    flex-direction: column;
+  }
+}

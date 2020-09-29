@@ -39,14 +39,14 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form class="form-register">
-        <input class="form-name"
+        <input class="form-name valid"
           type="text"
           required
           name="firstname"
           id="name"
           placeholder="Nome"
         />
-        <input class="form-name"
+        <input class="form-name valid"
           type="text"
           required
           name="lastname"
@@ -54,6 +54,7 @@
           placeholder="Sobrenome"
         />
         <input
+          class="valid"
           type="text"
           required
           name="phone_email"
@@ -61,6 +62,7 @@
           placeholder="Celular ou email"
         />
         <input
+          class="valid"
           type="password"
           required
           name="password"
@@ -69,12 +71,12 @@
         />
         <div class="birthdate">
           <label id="label-birthdate">Data de nascimento</label>
-          <input required type="text" name="birthdate" id="birth" placeholder="dd/mm/aaaa">
+          <input required class="valid" type="text" name="birthdate" id="birth" placeholder="dd/mm/aaaa">
         </div>
         <label id="label-gender">Gênero</label>
         <div class="gender">
           <div class="radios">
-            <input type="radio" checked class="selected-radio" name="type-gender" id="female" value="Feminino">
+            <input type="radio" class="selected-radio" name="type-gender" id="female" value="Feminino">
             <label for="female">Feminino</label>
           </div>
           <div class="radios">

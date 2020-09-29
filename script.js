@@ -5,11 +5,6 @@ const phoneEmail = document.getElementById('phoneEmail');
 const birthday = document.getElementById('date');
 const rightContent = document.querySelector('.right-content');
 
-
-birthday.DatePickerX.init({
-});
-
-
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });

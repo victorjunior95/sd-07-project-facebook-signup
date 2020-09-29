@@ -27,47 +27,6 @@ function getValueRadios() {
   return false;
 }
 
-/*
-const validate = new window.JustValidate('.name', {
-  rules: {
-    name: {
-      required: true,
-    },
-    lastname: {
-      required: true,
-    },
-    phoneEmail: {
-      required: true,
-    },
-    password: {
-      required: true,
-    },
-  },
-  messages: {
-    name: {
-      required: 'Campos inválidos',
-    },
-    lastname: {
-      required: 'Campos inválidos',
-    },
-    phoneEmail: {
-      required: 'Campos inválidos',
-    },
-    password: {
-      required: 'Campos inválidos',
-    },
-  },
-  submitHandler() {
-    const valueRadio = getValueRadios();
-    insertValuesParagraph(valueRadio);
-  },
-});
-*/
-
-document.getElementById('button-login').addEventListener('click', function () {
-  alert(document.getElementById('user-email-phone').value);
-});
-
 function checkEmptyFields() {
   let result = true;
   inputs.forEach((input) => {
@@ -75,6 +34,10 @@ function checkEmptyFields() {
   });
   return result;
 }
+
+document.getElementById('button-login').addEventListener('click', function () {
+  alert(document.getElementById('user-email-phone').value);
+});
 
 document.getElementById('facebook-register').addEventListener('click', function (event) {
   event.preventDefault();
@@ -91,9 +54,3 @@ document.getElementById('personalizado').addEventListener('click', function () {
   textInput.placeholder = 'Gênero (opcional)';
   divRadios.appendChild(textInput);
 });
-
-/*
-window.onload = function () {
-  return validate;
-};
-*/

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Facebook</title>
 </head>
 <body>
   <header>
@@ -21,6 +22,7 @@
           <div class="form-group">
             <label id="user-password-label">Senha</label>
             <input id="user-password" type="password">
+            <small>Esqueceu a conta?</small>
           </div>
           <div class="form-control">
             <button id="button-login">Entrar</button>
@@ -31,40 +33,61 @@
   </header>
   <section class="main-content">
     <div class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <div class="align-left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png">
+      </div>
     </div>
+    <!-- AQUI -->
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form>
         <div class="full-name">
-          <input name="firstname" placeholder="Nome" type="text">
-          <input name="lastname" placeholder="Sobrenome" type="text">
+          <input name="firstname" id="firstname" placeholder="Nome" type="text">
+          <input name="lastname" id="lastname" placeholder="Sobrenome" type="text">
         </div>
         <div class="data">
-          <input name="phone_email" placeholder="Celular ou email" type="text">
-          <input name="password" placeholder="Nova senha" type="password">
+          <input name="phone_email" id="phone_email" placeholder="Celular ou email" type="text">
+          <input name="password" id="password" placeholder="Nova senha" type="password">
         </div>
         <div class="date">
-          <label id="label-birthdate">Data de nascimento</label>
-          <input name="birthdate" placeholder="dd/mm/aaaa" type="date">
+          <label for="birthdate" id="label-birthdate" class="title-label">Data de nascimento</label>
+          <input name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" type="date">
         </div>
         <div class="sex">
-          <label id="label-gender">Gênero</label>
-          <div class="sex-options">
-            <input id="genderF" type="radio" name="gender" value="Feminino">
-            <label>Feminino</label>
-            <input id="genderM" type="radio" name="gender" value="Masculino">
-            <label>Masculino</label>
-            <input id="genderP" type="radio" name="gender" value="Personalizado">
-            <label>Personalizado</label>
+          <label id="label-gender" class="title-label">Gênero</label>
+          <div class="container-for-sex-options">
+            <div class="sex-options">
+              <input id="genderF" class="gender" type="radio" name="gender" value="Feminino">
+              <label for="genderF">Feminino</label>
+              <input id="genderM" class="gender" type="radio" name="gender" value="Masculino">
+              <label for="genderM">Masculino</label>
+              <input id="genderP" class="gender" type="radio" name="gender" value="Personalizado">
+              <label for="genderP">Personalizado</label>
+            </div>
           </div>
+          <small>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados</span> e <span>Política de Cookies</span>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</small>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p><span>Criar uma página</span> para uma celebridade, banda ou empresa.</p>
       </form>
     </div>
   </section>
+  <footer>
+    <h2>Projeto facebook - bloco 6</h2>
+    <h3>Moisés Santana e Rita Jeveaux</h3>
+    <address>
+      <div class="inside-address">
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+      <div class="inside-address">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
+    </address>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

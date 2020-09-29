@@ -10,7 +10,6 @@ function createTextField() {
   newField.type = 'text';
   newField.name = 'gender-custom';
   newField.placeholder = 'Gênero (opcional)';
-  newField.className = 'gender-custom';
   if (genreOpcional.firstChild === null) {
     genreOpcional.appendChild(newField);
   }
@@ -61,9 +60,7 @@ document.getElementById('facebook-register').addEventListener('click', function 
   } else if (btFemale.checked === false && btMale.checked === false && btCustom.checked === false) {
     errorMessage.textContent = 'Campos inválidos';
   } else {
-    document.querySelector('.right-content').innerText = `Olá, ${firstname} ${lastname}
-    Telefone ou e-mail: ${phoneMail}
-    Data de Nascimento: ${birthdate}
-    Gênero: ${genre}`;
+    document.querySelector('.right-content').innerHTML = `Olá, ${firstname} ${lastname}
+    Telefone ou e-mail: ${phoneMail} Data de Nascimento: ${birthdate} Gênero: ${genre}`;
   }
 });

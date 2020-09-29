@@ -7,22 +7,12 @@ body {
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  flex-direction: row;
   height: 70px;
   justify-content: space-between;
 }
 
-.facebook-logo {
-  height: 60px;
-  margin-left: 20%;
-  margin-top: 13px;
-  width: 150px;
-}
-
 .facebook-login {
   display: flex;
-  margin-right: 17%;
-  margin-top: 10px;
 }
 
 .facebook-login label {
@@ -74,11 +64,10 @@ body {
   background: linear-gradient(white, #d3d8e8);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .left-content {
-  margin-left: 15%;
   width: 800px;
 }
 
@@ -94,7 +83,6 @@ body {
 }
 
 .right-content {
-  margin-right: 22%;
   width: 300px;
 }
 

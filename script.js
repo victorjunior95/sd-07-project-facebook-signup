@@ -32,7 +32,7 @@ female.addEventListener('change', checkRadio);
 
 const cadast = document.querySelector('#facebook-register');
 
-cadast.addEventListener('click', () => {
+function validateForm() {
   const formsValue = document.querySelectorAll('.form-newaccaount input');
   for (let i = 0; i < 5; i += 1) {
     if (
@@ -42,15 +42,21 @@ cadast.addEventListener('click', () => {
     ) {
       document.querySelector('.chek-return').style.display = 'block';
     } else {
-      const firstName = document.getElementById('firstname').value;
-      const lastName = document.getElementById('lastname').value;
-      const welcomeUser = `Olá, ${firstName} ${lastName}`;
-      const contentReturn = document.querySelector('.right-content');
-      for (let index = 0; index < contentReturn.children.length; index += 1) {
-        contentReturn.children[index].style.display = 'none';
-      }
-      contentReturn.innerHTML = welcomeUser;
+      welcome()
     }
   }
-  return false;
-});
+}
+
+
+cadast.addEventListener('click', validateForm);
+
+function welcome () {
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const welcomeUser = `Olá, ${firstName} ${lastName}`;
+    const contentReturn = document.querySelector('.right-content');
+    for (let index = 0; index < contentReturn.children.length; index += 1) {
+      contentReturn.children[index].style.display = 'none';
+    }
+    contentReturn.appendChild(welcomeUser);  
+}

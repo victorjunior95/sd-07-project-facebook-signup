@@ -20,7 +20,7 @@
         <p class="form-group">
           <label id="user-password-label" class="labelText" for="pass">Senha</label>
           <input id="user-password" class="inputText" type="text" />
-          <a class="forget" href="#"><em>Esqueceu a conta?</em></a>
+          <a class="forget" href="#">Esqueceu a conta?</a>
         </p>
         <p class="form-control">
           <button data-click="alertButton" id="button-login" class="buttonEnter" type="button">Entrar</button>
@@ -36,13 +36,14 @@
       <img id="facebook-networking" src="imgs/networking.png" alt="Rede de usuários">
     </section>
     <section class="right-content">
-      <h1>Abra uma conta</h1>
+      <h1 class="title-form">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form onsubmit="return false">
-        <fieldset>
-          <p>
-            <input name="firstname" placeholder="Nome" type="text">
-          </p>
+        <fieldset class="form-register">
+          <div class="conteiner-open">
+            <input class="brothers" name="firstname" placeholder="Nome" type="text">
+            <input class="brothers second-brother" name="lastname" placeholder="Sobrenome" type="text">
+          </div>
         </fieldset>
       </form>
     </section>

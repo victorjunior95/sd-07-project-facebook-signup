@@ -1,4 +1,4 @@
-body , header , img , form , p , label , input , section , fieldset {
+body , header , img , form , p , label , input , section , fieldset , main , div , h1 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ header {
   background-image: linear-gradient(white, #e4e6ec);
   border: 1px solid black;
   height: 25px;
+  width: 155px;
 }
 
 .inputText:focus {
@@ -54,7 +55,7 @@ header {
 }
 
 .forget {
-  color: azure;
+  color: rgb(141, 166, 206);
   font-size: 14px;
   font-weight: 700;
   margin-top: 10px;
@@ -63,7 +64,7 @@ header {
 }
 
 .forget:hover {
-  color: #9cbaf7;
+  color: #ececec;
   text-decoration: underline;
 }
 
@@ -73,9 +74,10 @@ header {
 
 .buttonEnter {
   align-self: center;
-  background-color: #3960ad;
-  border: 1px solid black;
+  background-color: #4669af;
+  border: 1px solid rgb(46, 44, 44);
   color: azure;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   margin: 0 10px 31px;
@@ -98,4 +100,35 @@ header {
 .right-content {
   background-color: rgb(43, 82, 82);
   flex-basis: 300px;
+}
+
+.title-form {
+  font-size: 32px;
+  padding-bottom: 7px;
+}
+
+.quick-easy {
+  padding-bottom: 25px;
+}
+
+.form-register {
+  border: none;
+  display: flex;
+}
+
+.conteiner-open {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brothers {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 4px;
+  height: 32px;
+  padding: 10px;
+  width: 140px;
+}
+
+.second-brother {
+  margin-right: 10px;
 }

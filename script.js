@@ -61,16 +61,16 @@ buttonFacebookRegister.addEventListener('click', () => {
     }
   });
   if (check === false) {
-    preventDefault(event); 
+    preventDefault(event);
     nome = `${form[0].value} ${form[1].value}`;
     email = `${form[2].value}`;
     gender = document.querySelector('input[name="gender"]:checked').value;
     // if (gender === 'Personalizado') {
     //   dataNascimento = `${form[5].value}`;
     // } else {
-      dataNascimento = `${form[4].value}`;
+    dataNascimento = `${form[4].value}`;
     // }
-    //console.log(gender);
+    // console.log(gender);
     cleanRightContentDiv();
     returnMsg(nome, email, dataNascimento, gender);
   }

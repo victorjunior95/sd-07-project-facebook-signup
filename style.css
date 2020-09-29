@@ -67,7 +67,8 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding-top: 20px;
 }
 
 .left-content {
@@ -77,12 +78,15 @@ body {
   width: 800px;
 }
 
+.left-content img {
+  width: 85%;
+}
+
 .left-content p {
   color: rgb(32, 49, 85);
   font-size: 1.3em;
   font-weight: 900;
   line-height: 1.4em;
-  margin-right: 0;
   text-shadow: 1px 1px 1px rgba(40, 62, 107, 0.384);
 }
 
@@ -90,8 +94,33 @@ body {
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 50px;
-  padding-right: 100px;
   width: 300px;
+}
+
+.main-title {
+  font-size: 1.9em;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+}
+
+.right-content p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.main-label {
+  color: rgb(53, 53, 53);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.input {
+  border: solid 1px rgb(197, 197, 197);
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.281);
+  font-size: 1em;
+  height: 28px;
+  margin: 5px 5px 5px 0;
 }
 
 .name {
@@ -99,6 +128,37 @@ body {
   flex-direction: row;
 }
 
+.name input {
+  width: 55%;
+}
+
+.wild {
+  width: 96%;
+}
+
 .gender-input {
   display: flex;
+  margin-top: 10px;
+}
+
+.major-input {
+  padding-top: 10px;
+}
+
+.radio-label {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.submit-button {
+  background-color: rgb(67, 136, 47);
+  border: solid 1px rgba(197, 197, 197, 0.692);
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.459);
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  height: 33px;
+  margin-top: 30px;
+  width: 55%;
 }

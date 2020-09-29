@@ -8,7 +8,7 @@ buttonLogin.addEventListener('click', function () {
 const persInput = document.getElementById('personalizado');
 persInput.addEventListener('click', function () {
   const choiceGender = document.createElement('input');
-  choiceGender.className = 'personalizado';
+  choiceGender.className = 'input';
   choiceGender.type = 'text';
   choiceGender.placeholder = 'Gênero (opcional)';
   choiceGender.name = 'gender-custom';

@@ -33,37 +33,38 @@
             <p id='facebook-slogan'>O Facebook ajuda você a se conectar e <br> compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
             <img id='facebook-networking' src="imgs/networking.png" alt="facebook networking">
         </div>
+
         <div id='right-content' class='right-content'>
-            <h1>Abra uma conta</h1>
+            <h1 class='main-title'>Abra uma conta</h1>
             <p class='quick-easy'>É rápido e fácil.</p>
             <form id='forms' class="js-form form">
                 <div id='name' class='name'>
-                    <input id='firstname' name='firstname' data-validate-field="firstname" placeholder='Nome' type="text">
-                    <input id='lastname' name='lastname' data-validate-field="lastname" placeholder='Sobrenome' type="text">
+                    <input id='firstname' class='input' name='firstname' data-validate-field="firstname" placeholder='Nome' type="text">
+                    <input id='lastname' class='input' name='lastname' data-validate-field="lastname" placeholder='Sobrenome' type="text">
                 </div>
-                <input id='phone-email' name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email' type="text">
-                <input id='password' name='password' data-validate-field="password" placeholder='Nova senha' type="password">
+                <input id='phone-email' class='wild input' name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email' type="text">
+                <input id='password' class='wild input' name='password' data-validate-field="password" placeholder='Nova senha' type="password">
 
-                <div>
-                    <label id='label-birthdate'for="birthdate">Data de nascimento</label>
+                <div class='major-input'>
+                    <label id='label-birthdate' class='main-label' for="birthdate">Data de nascimento</label>
                     <div>
-                        <input id='birthdate' name='birthdate' data-validate-field="birthdate" placeholder='dd/mm/aaaa' type="text">
+                        <input id='birthdate' class='wild input' name='birthdate' data-validate-field="birthdate" placeholder='dd/mm/aaaa' type="text">
                 </div>
             </div>
-                <div>
-                    <label id='label-gender' for="">Gênero</label>
+                <div class='major-input'>
+                    <label id='label-gender' class='main-label' for="">Gênero</label>
                     <div class='gender-input'>
                         <input id='feminino' data-validate-field="radio" type="radio" name='gender' value='Feminino'>
-                        <label for="feminino">Feminino</label>
+                        <label for="feminino" class='radio-label'>Feminino</label>
                         <input id='masculino' data-validate-field="radio" type="radio" name='gender' value='Masculino'>
-                        <label for="masculino">Masculino</label>
+                        <label for="masculino" class='radio-label'>Masculino</label>
                         <div id='pers-input'>
                             <input id='personalizado' data-validate-field="radio" type="radio" name='gender' value='Personalizado'>
-                            <label for="personalizado">Personalizado</label>
+                            <label class='radio-label' for="personalizado">Personalizado</label>
                         </div>
                     </div>
                 <div>
-                    <button id='facebook-register' class="form__btn btn btn-primary" type='submit'>Cadastre-se</button>
+                    <button id='facebook-register' class="form__btn btn btn-primary submit-button" type='submit'>Cadastre-se</button>
                 </div>
             </form>
 

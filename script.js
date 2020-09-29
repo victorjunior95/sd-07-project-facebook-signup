@@ -18,23 +18,39 @@ function radioCheked() {
 }
 document.getElementById('other').addEventListener('click', radioCheked);
 
+let selectedGender = '';
+function selected() {
+  const gender = document.querySelectorAll('.u-gender-option input');
+  for (let count = 0; count < gender.length; count += 1) {
+    if (gender[count].checked) {
+      selectedGender = gender[count].value;
+    }
+  }
+}
+document.getElementById('female').addEventListener('click', selected);
+document.getElementById('male').addEventListener('click', selected);
+document.getElementById('other').addEventListener('click', selected);
+
 const singUpInputs = document.querySelectorAll('.sing-up input');
 function emptyInput(event) {
   event.preventDefault();
   const errorAlert = document.createElement('p');
   document.querySelector('.sing-up').appendChild(errorAlert);
+  let verifier = 0;
   for (let count = 0; count < 5; count += 1) {
     if (singUpInputs[count].value === '') {
-      errorAlert.innerText = 'Campos inválidos';
-    } else {
-      const firstName = document.getElementById('firstname').value;
-      const lastName = document.getElementById('lastname').value;
-      const phoneMail = document.getElementById('phone_email').value;
-      const birthDate = document.getElementById('birthdate').value;
-      const gender = document.querySelector('input[name="gender"]').value;
-      const welcomeUser = `Olá, ${firstName} ${lastName} ${gender} ${phoneMail} ${birthDate}`;
-      document.querySelector('.right-content').innerHTML = `${welcomeUser}`;
+      verifier += 1;
     }
+  }
+  if (verifier >= 1) {
+    errorAlert.innerText = 'Campos inválidos';
+  } else {
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const phoneMail = document.getElementById('phone_email').value;
+    const birthDate = document.getElementById('birthdate').value;
+    const welcomeUser = `Olá, ${firstName} ${lastName} ${selectedGender} ${phoneMail} ${birthDate}`;
+    document.querySelector('.right-content').innerHTML = `${welcomeUser}`;
   }
 }
 document.getElementById('facebook-register').addEventListener('click', emptyInput);

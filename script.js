@@ -58,14 +58,14 @@ document.querySelector('.create-account').addEventListener('submit', function (e
 
   const showRegistered = document.createElement('p');
   showRegistered.innerText = `Olá, ${registeredName} ${registeredLastName}`;
-  document.querySelector('.create-account').appendChild(showRegistered);
+  document.querySelector('.right-content').appendChild(showRegistered);
   const showPhoneMail = document.createElement('p');
   showPhoneMail.innerText = `${registeredPhoneMail} `;
-  document.querySelector('.create-account').appendChild(showPhoneMail);
+  document.querySelector('.right-content').appendChild(showPhoneMail);
   const showDateOfBirth = document.createElement('p');
   showDateOfBirth.innerText = `${registeredBirthdate}`;
-  document.querySelector('.create-account').appendChild(showDateOfBirth);
+  document.querySelector('.right-content').appendChild(showDateOfBirth);
   const showGender = document.createElement('p');
   showGender.innerText = `${registeredGender}`;
-  document.querySelector('.create-account').appendChild(showGender);
+  document.querySelector('.right-content').appendChild(showGender);
 });

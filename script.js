@@ -8,7 +8,8 @@ const testeRadioButton = document.querySelectorAll('.gender');
 testeRadioButton[2].addEventListener('click', function () {
   const inputProGeneroPersonalizado = document.createElement('input');
   inputProGeneroPersonalizado.id = 'teste';
-  inputProGeneroPersonalizado.placeholder = 'Personalizado';
+  inputProGeneroPersonalizado.name = 'gender-custom'
+  inputProGeneroPersonalizado.placeholder = 'Gênero (opcional)';
   const sex = document.querySelector('.sex');
   sex.appendChild(inputProGeneroPersonalizado);
 });

@@ -76,7 +76,7 @@ const justValidate = new window.JustValidate('.js-form', {
     msnResponse.innerHTML = `<p>Olá, ${firstname} ${lastname}</p>
     <p>E-mail e/ou telefone: ${phoneEmail}</p>
     <p>Data de Nascimento: ${user}</p>
-    <p>Genero: ${genderSelected()}.`;
+    <p>Genero: ${genderSelected()}.</p>`;
     rightContentDiv.innerHTML = '';
     rightContentDiv.appendChild(msnResponse);
   },

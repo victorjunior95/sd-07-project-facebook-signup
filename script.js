@@ -69,12 +69,9 @@ document.getElementById('button-login').addEventListener('click', function () {
 });
 
 function checkEmptyFields() {
-  let result = false;
+  let result = true;
   inputs.forEach((input) => {
-    if (input.value === '') {
-     return result = false;
-    }
-    else result = true;
+    if (input.value === '') return result = false;
   });
   return result;
 }

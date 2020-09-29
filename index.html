@@ -41,15 +41,15 @@
                 <h2 class="form-subtitle">it's free and always will be</h2>
                 <form id="signup-form" class="signup-form">
                     <div class="name-container">
-                        <input name="firstname" classs="first-name-input" type="text" placeholder="Nome" required>
-                        <input name="lastname" classs="last-name-input" type="text" placeholder="Sobrenome" required>
+                        <input name="firstname" classs="first-name-input" type="text" placeholder="First name" required>
+                        <input name="lastname" classs="last-name-input" type="text" placeholder="Surname" required>
                     </div>
-                    <input name="phone_email" type="text" id="email-signup" class="email-input" placeholder="Celular ou email"
-                        required>
-                    <input name="password" type="password" id="new-password-input" class="new-password-input" placeholder="Nova senha"
-                        required>
+                    <input name="phone_email" type="text" id="email-signup" class="email-input"
+                        placeholder="Mobile number or email adress" required>
+                    <input name="password" type="password" id="new-password-input" class="new-password-input"
+                        placeholder="New password" required>
                     <div class="birthday-container">
-                        <label id="label-birthdate" class="birthday-title">Data de nascimento</label>
+                        <label id="label-birthdate" class="birthday-title">Birthday</label>
                         <div class='birthday-wraper'>
                             <input type="date" required>
                             <p>
@@ -58,18 +58,20 @@
                         </div>
                     </div>
                     <div class="gender-container">
-                        <label id="label-gender">Gênero</label>
-                        <div class="female-input">
-                            <input id="female-radio" type="radio" name="gender" value="female" required checked>
-                            <label for="female-radio">Feminino</label>
-                        </div>
-                        <div class="male-input">
-                            <input id="male-radio" type="radio" name="gender" value="male" required>
-                            <label for="male-radio">Masculino</label>
-                        </div>
-                        <div class="custom-input">
-                            <input id="custom-radio" type="radio" name="gender" value="custom" required>
-                            <label for="custom-radio">Personalizado</label>
+                        <label id="label-gender">Gender</label>
+                        <div class="gender-inputs">
+                            <div class="female-input">
+                                <input id="female-radio" type="radio" name="gender" value="female" required checked>
+                                <label for="female-radio">Female</label>
+                            </div>
+                            <div class="male-input">
+                                <input id="male-radio" type="radio" name="gender" value="male" required>
+                                <label for="male-radio">Male</label>
+                            </div>
+                            <div class="custom-input">
+                                <input id="custom-radio" type="radio" name="gender" value="custom" required>
+                                <label for="custom-radio">Custom</label>
+                            </div>
                         </div>
                     </div>
                     <div id="custom-options" class="custom-options hidden-input">
@@ -82,12 +84,12 @@
                         <input type="text" name="gender-custom" id="custom-gender" placeholder="Gênero (opcional)">
                     </div>
                     <div id="hidden-input" class="hidden-input invalid-field">
-                        <p>Campos inválidos!</p>
+                        <p>Invalid fields!</p>
                     </div>
                     <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a
                             href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any
                         time.</p>
-                    <button id="facebook-register" type="submit">Cadastre-se</button>
+                    <button id="facebook-register" type="submit">Sign up</button>
                 </form>
             </section>
         </div>

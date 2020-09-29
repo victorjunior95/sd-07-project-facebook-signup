@@ -24,7 +24,7 @@ function checkRadio() {
   }
 }
 
-function welcome () {
+function welcome() {
   const firstName = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const welcomeUser = `Olá, ${firstName} ${lastName}`;
@@ -43,19 +43,16 @@ female.addEventListener('change', checkRadio);
 
 const cadast = document.querySelector('#facebook-register');
 
-function validateForm() {
-  const formsValue = document.querySelectorAll('.form-newaccaount input');
-  for (let i = 0; i < 5; i += 1) {
-    if (
-      document.querySelectorAll('input:checked').length < 1 ||
-      (inputGender.style.display === 'block' && inputGender.value === '') ||
-      formsValue[i].value === ''
-    ) {
-      document.querySelector('.chek-return').style.display = 'block';
-    } else {
-      welcome();
-    }
+cadast.addEventListener('click', () => {
+const formsValue = document.querySelectorAll('.form-newaccaount input');
+const input = document.querySelectorAll('input:checked').length;
+for (let i = 0; i < 5; i += 1) {
+  if (input < 1 ||
+  (inputGender.style.display === 'block' && inputGender.value === '')
+  || formsValue[i].value === '') {
+    document.querySelector('.chek-return').style.display = 'block';
+  } else {
+    welcome();
   }
 }
-
-cadast.addEventListener('click', validateForm);
+});

@@ -118,10 +118,10 @@ header {
 
 .conteiner-open {
   display: flex;
-  justify-content: space-between;
+
 }
 
-.brothers {
+.input-register {
   border: 1px solid rgb(189, 199, 216);
   border-radius: 4px;
   height: 32px;
@@ -130,5 +130,11 @@ header {
 }
 
 .second-brother {
+  margin: 0 10px;
+}
+
+.phone-email {
   margin-right: 10px;
+  margin-top: 10px;
+  width: 290px;
 }

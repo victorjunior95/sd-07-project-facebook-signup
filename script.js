@@ -3,6 +3,8 @@ function radioCheked() {
   const novoInput = document.createElement('input');
   const inputsValue = document.querySelectorAll('.u-gender-option input');
   if ((otherGender.checked) && (inputsValue.length < 4)) {
+    novoInput.setAttribute('type', 'text');
+    novoInput.setAttribute('name', 'gender-custom');
     novoInput.setAttribute('id', 'gender-custom');
     novoInput.setAttribute('placeholder', 'Gênero (opcional)');
     document.querySelector('.u-gender-option').appendChild(novoInput);
@@ -26,6 +28,8 @@ btnSubmit.addEventListener('click', function (event) {
   const inpPassword = document.getElementsByName('password')[0];
   const inpBirthdate = document.getElementsByName('birthdate')[0];
   const inpGender = document.getElementsByName('gender');
+  // const genderOther = document.getElementsByName('other')
+  // const mensage
   let innerIf = false;
 
   if (inpFirstname.value.trim() === '') {
@@ -43,13 +47,16 @@ btnSubmit.addEventListener('click', function (event) {
   if (inpBirthdate.value.trim() === '') {
     innerIf = true;
   }
-
   if (!(inpGender[0].checked) && !(inpGender[1].checked) && !(inpGender[2].checked)) {
     innerIf = true;
   }
-
-  if (innerIf) {
+  if (!innerIf) {
     pMensageInvalid.innerText = 'Campos inválidos';
   }
+
+  // mensage = document.createElement('p');
+  // mensage.setAttribute('id', 'mensage-invalid');
+  // mensage.innerHTML = 'inválidos'
+  // document.querySelector('.u-gender-option').appendChild(mensage);
   alert('Campos inválidos');
 });

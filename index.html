@@ -39,23 +39,23 @@
 		<div class="right-content">
 			<h1>Abra uma conta</h1>
 			<h3 class="quick-easy">É rápido e fácil.</h3>
-			<form>
-				<input type="text" name="firstname" placeholder="Nome" required size="15">
-				<input type="text" name="lastname" placeholder="Sobrenome" required size="15">
-				<input type="text" name="phone_email" placeholder="Celular ou email" required size="30">
-				<input type="password" name="password" placeholder="Nova senha" required size="30"><br>
+			<form id="formulario" method="post">
+				<input type="text" name="firstname" class="campo" placeholder="Nome" size="15">
+				<input type="text" name="lastname" class="campo" placeholder="Sobrenome" size="15">
+				<input type="text" name="phone_email" class="campo" placeholder="Celular ou email" size="30">
+				<input type="password" name="password" class="campo" placeholder="Nova senha" size="30"><br>
 				<label id="label-birthdate">Data de nascimento</label><br>
-				<input type="date" name="birthdate" placeholder="dd/mm/aaaa" max="2002-01-01"><br>
+				<input type="date" name="birthdate" class="campo" placeholder="dd/mm/aaaa" max="2002-01-01"><br>
 				<label id="label-gender">Gênero</label>
 				<div class="radio-button">
-					<input type="radio" id="feminino" name="genero" required>
+					<input type="radio" id="feminino" name="genero" value="Feminino">
 					<label>Feminino</label>
-					<input type="radio" id="masculino" name="genero" required>
+					<input type="radio" id="masculino" name="genero" value="Masculino">
 					<label>Masculino</label>
-					<input type="radio" id="personalizado" name="genero" required onclick= "addText()">
+					<input type="radio" id="personalizado" name="genero" value="Personaizado">
 					<label>Personalizado</label>
 				</div>
-				<div id="genero"></div>
+				<div class="generoPersonalizado"></div>
 				<button type="submit" id="facebook-register">Cadastre-se</button>
 			</form>
 		</div>

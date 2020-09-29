@@ -138,3 +138,11 @@ header {
   margin-top: 10px;
   width: 290px;
 }
+
+.birthdate {
+  margin: 16px 0 10px;
+}
+
+.input-date {
+  width: 170px;
+}

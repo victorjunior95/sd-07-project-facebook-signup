@@ -21,7 +21,7 @@ function clearRightContent() {
   rightContent.innerHTML = '';
 }
 
-//  ajuda de Samanta Below e reorganizado depois de consultar Vinicius Muniz
+//  ajuda de Samanta e Denner e reorganizado depois de consultar Vinicius Muniz
 const validate = new window.JustValidate('.js-form', {
   rules: {
     firstname: {

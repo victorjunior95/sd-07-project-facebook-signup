@@ -13,12 +13,6 @@ testeRadioButton[2].addEventListener('click', function () {
   const sex = document.querySelector('.sex');
   sex.appendChild(inputProGeneroPersonalizado);
 });
-function formataDate(date) {
-  let data = date;
-  data = data.split('-');
-  data = `${data[2]}/${data[1]}/${data[0]}`;
-  return data;
-}
 function valiName(name, lastName) {
   if (name.length && lastName.length) {
     return `${name} ${lastName}`;
@@ -74,7 +68,6 @@ function valiPass(pass) {
 }
 function valiDate(bDate) {
   if (bDate.length) {
-    bDate = formataDate(bDate);
     return `Data de Nascimento: ${bDate}`;
   }
   return false;

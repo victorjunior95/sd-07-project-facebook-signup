@@ -2,7 +2,7 @@ const buttonlogin = document.getElementById('button-login');
 buttonlogin.addEventListener('click', () => {
   const emailPhone = document.forms.myForm.fnomeEmail.value;
   const passwd = document.forms.myForm.fpassword.value;
-  if (emailPhone !== '' || emailPhone !== null) {
+  if (emailPhone !== '' && emailPhone !== null) {
     if (passwd === '' || passwd === null) {
       return false;
     }

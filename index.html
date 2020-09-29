@@ -65,12 +65,18 @@
         />
         <div class="gender">
           <label id="label-gender">Gênero</label>
-          <input type="radio" name="type-gender" id="female" value="Feminino">
-          <label for="female">Feminino</label>
-          <input type="radio" name="type-gender" id="male" value="Masculino">
-          <label for="male">Masculino</label>
-          <input type="radio" name="type-gender" id="custom" value="Personalizado">
-          <label for="custom">Personalizado</label>
+          <div>
+            <input type="radio" class="selected-radio" name="type-gender" id="female" value="Feminino">
+            <label for="female">Feminino</label>
+          </div>
+          <div>
+            <input type="radio" class="selected-radio" name="type-gender" id="male" value="Masculino">
+            <label for="male">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" class="selected-radio" name="type-gender" id="custom" value="Personalizado">
+            <label for="custom">Personalizado</label>
+          </div>
         </div>
         <div class="birthdate">
           <label id="label-birthdate">Data de nascimento</label>

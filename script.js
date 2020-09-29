@@ -29,10 +29,10 @@ function validarNovoUsuario() {
     const values = Object.values(listaForm);
 
     values.forEach(element => {
-      if (element === null || element === "") {
+      if (element === null || element === '') {
         alert('Campos inválidos');
       }
-    });    
+    });
   });
 }
 function adicionarCampoGender() {

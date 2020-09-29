@@ -67,3 +67,8 @@ body {
 .fullName {
   display: flex;
 }
+
+.radioButtons {
+  display: flex;
+  font-size: medium;
+}

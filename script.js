@@ -3,7 +3,7 @@ const gender = document.querySelector('#custom');
 const buttonSubmit = document.querySelector('#facebook-register');
 
 function checkEmpty(element) {
-  if (element.value === ''){
+  if (element.value === '') {
     return true;
   }
   return false;
@@ -38,13 +38,13 @@ buttonSubmit.addEventListener('click', (e) => {
   const inputs = document.querySelectorAll('.valid');
   const radios = document.querySelectorAll('.selected-radio');
   let inputValid = true;
-  for (let i = 0; i < inputs.length; i += 1){
+  for (let i = 0; i < inputs.length; i += 1) {
     if (checkEmpty(inputs[i])) {
       inputValid = false;
     }
   }
   if (inputValid && checkRadios(radios)) {
-    console.log('tudo ok');
+    return true;
   } else {
     const form = document.querySelector('.form-register');
     const error = document.createElement('p');
@@ -53,5 +53,3 @@ buttonSubmit.addEventListener('click', (e) => {
     form.appendChild(error);
   }
 });
-
-

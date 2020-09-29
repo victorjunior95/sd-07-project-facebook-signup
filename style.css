@@ -139,10 +139,16 @@ header {
   width: 290px;
 }
 
-.birthdate {
+.label-input {
   margin: 16px 0 10px;
 }
 
 .input-date {
   width: 170px;
+}
+
+.conteiner-radio {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
 }

@@ -46,8 +46,17 @@
           </div>
           <input class="input-register input-large" name="phone_email" placeholder="Celular ou email" type="text">
           <input class="input-register input-large" name="password" placeholder="Nova senha" type="password">
-          <label class="birthdate" id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <label class="label-input" id="label-birthdate" for="birthdate">Data de nascimento</label>
           <input class="input-register input-date" name="birthdate" placeholder="dd/mm/aaaa" type="date">
+          <label class="label-input" id="label-gender" for="gender">Gênero</label>
+          <div class="conteiner-radio">
+            <input id="Female" name="gender" value="Feminino" type="radio">
+            <label for="Female">Feminino</label>
+            <input name="gender" value="Masculino" type="radio" id="Male">
+            <label for="Male">Masculino</label>
+            <input name="gender" value="Personalizado" type="radio" id="Person">
+            <label for="Person">Personalizado</label>
+          </div>
         </fieldset>
       </form>
     </section>

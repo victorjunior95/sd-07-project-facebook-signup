@@ -42,15 +42,14 @@ const female = document.querySelector('#female');
 female.addEventListener('change', checkRadio);
 
 const cadast = document.querySelector('#facebook-register');
+const inputes = document.querySelectorAll('input:checked');
+const genderInput = inputGender.style.display;
 
 function validateForm() {
   const formsValue = document.querySelectorAll('.form-newaccaount input');
   for (let i = 0; i < 5; i += 1) {
-    if (
-      document.querySelectorAll('input:checked').length < 1 ||
-      (inputGender.style.display === 'block' && inputGender.value === '') ||
-      formsValue[i].value === ''
-    ) {
+    if (inputes.length < 1 || ( genderInput === 'block' && inputGender.value === '') ||
+      formsValue[i].value === '') {
       document.querySelector('.chek-return').style.display = 'block';
     } else {
       welcome();

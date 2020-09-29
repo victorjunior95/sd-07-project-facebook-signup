@@ -10,7 +10,7 @@ gender.addEventListener('change', () => {
   const form = document.querySelector('#custom-input');
   form.innerHTML = '';
   const text = document.createElement('input');
-  input.setAttribute('name', 'gender-custom');
+  text.setAttribute('name', 'gender-custom');
   text.placeholder = 'Gênero (opcional)';
   text.style.display = 'block';
   form.appendChild(text);

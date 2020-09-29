@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -31,23 +32,32 @@
   <main class="main-content">
 
     <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+      <p class="facebook-slogan" id="facebook-slogan">O Facebook ajuda você a se conectar e <br> compartilhar com as
+        pessoas que fazem parte
+        <br> da sua
         vida.</p>
-      <img id="facebook-networking" src="imgs/networking.png" alt="Rede de usuários">
+      <img class="facebook-networking" id="facebook-networking" src="imgs/networking.png" alt="Rede de usuários">
     </section>
     <section class="right-content">
       <h1 class="title-form">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form onsubmit="return false">
         <fieldset class="form-register">
+
           <div class="conteiner-open">
             <input class="input-register" name="firstname" placeholder="Nome" type="text">
             <input class="input-register second-brother" name="lastname" placeholder="Sobrenome" type="text">
           </div>
+
           <input class="input-register input-large" name="phone_email" placeholder="Celular ou email" type="text">
           <input class="input-register input-large" name="password" placeholder="Nova senha" type="password">
+
           <label class="label-input" id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input class="input-register input-date" name="birthdate" placeholder="dd/mm/aaaa" type="date">
+          <div class="conteiner-birthdate">
+            <input class="input-register input-date" name="birthdate" placeholder="dd/mm/aaaa" type="date">
+            <span id="span" class="material-icons interrogation">help</span>
+          </div>
+
           <label class="label-input" id="label-gender" for="gender">Gênero</label>
           <div class="conteiner-radio">
             <input id="Female" name="gender" value="Feminino" type="radio">
@@ -57,6 +67,12 @@
             <input name="gender" value="Personalizado" type="radio" id="Person">
             <label for="Person">Personalizado</label>
           </div>
+          <span id="span" class="material-icons interrogation2">help</span>
+          <p class="politic">Ao clicar em Cadastre-se, você concorda com nossos <br>
+            <a href="#">Termos, Política de Dados</a>e <a href="#">Política de Cookies</a>. Você pode receber
+            notificações por SMS e pode cancelar isso quando quiser.</p>
+          <button class="button-submit other" id="facebook-register" type="submit">Cadastre-se</button>
+
         </fieldset>
       </form>
     </section>

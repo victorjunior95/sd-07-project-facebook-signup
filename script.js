@@ -98,6 +98,14 @@ window.onload = function () {
   const personalizadoRadio = document.getElementById('personalizado');
   personalizadoRadio.addEventListener('click', showGenderCustom);
 
+  document
+    .querySelectorAll('#feminino, #masculino')
+    .forEach(function (element) {
+      element.addEventListener('click', function () {
+        document.getElementById('gender-custom').style.display = 'none';
+      });
+    });
+
   const jsFormSubmit = document.getElementById('js-form');
   jsFormSubmit.addEventListener('submit', justValidate);
 };

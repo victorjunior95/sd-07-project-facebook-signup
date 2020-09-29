@@ -31,7 +31,7 @@
 
     <section class="main-content">
       <div class="left-content">
-        <p id="facebook-slogan" class="facebook-slogan"">
+        <p id="facebook-slogan" class="facebook-slogan">
           O Facebook ajuda você a se conectar e compartilhar com as pessoas que
           fazem parte da sua vida.
         </p>
@@ -42,67 +42,50 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="js-form" class="js-form">
-          <div class="form-content-row">
-            <div class="form-group">
-              <input
-                id="firstname"
-                class="cadastro"
-                type="text"
-                name="firstname"
-                placeholder="Nome"
-                data-validate-field="firstname"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                id="lastname"
-                class="cadastro"
-                type="text"
-                name="lastname"
-                placeholder="Sobrenome"
-                data-validate-field="lastname"
-              />
-            </div>
-          </div>
-
-          <div class="form-content-column">
-            <div class="form-group">
-              <input
-                id="phone-email"
-                class="cadastro large"
-                type="text"
-                name="phone_email"
-                placeholder="Celular ou email"
-                data-validate-field="email"
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                id="password"
-                class="cadastro large"
-                type="password"
-                name="password"
-                placeholder="Nova senha"
-                data-validate-field="password"
-              />
-            </div>
-
-            <div class="form-group">
-              <label id="label-birthdate" class="label-form" for="user">Data de nascimento</label>
-              <input
-                id="user"
-                class="cadastro"
-                type="text"
-                name="birthdate"
-                placeholder="dd/mm/aaaa"
-                data-validate-field="birthdate"
-              />
-            </div>
-
-            <label id="label-gender" class="label-form">Gênero</label>
-          </div>
-
+          <input
+            id="firstname"
+            class="cadastro"
+            type="text"
+            name="firstname"
+            placeholder="Nome"
+            data-validate-field="firstname"
+          />
+          <input
+            id="lastname"
+            class="cadastro"
+            type="text"
+            name="lastname"
+            placeholder="Sobrenome"
+            data-validate-field="lastname"
+          />
+          <input
+            id="phone-email"
+            class="cadastro large"
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+            data-validate-field="email"
+          />
+          <input
+            id="password"
+            class="cadastro large"
+            type="password"
+            name="password"
+            placeholder="Nova senha"
+            data-validate-field="password"
+          />
+          <label id="label-birthdate" class="label-form" for="user"
+            >Data de nascimento</label
+          >
+          <input
+            id="user"
+            class="cadastro large"
+            type="text"
+            name="birthdate"
+            placeholder="dd/mm/aaaa"
+            data-validate-field="birthdate"
+          />
+          <label id="label-gender" class="label-form">Gênero</label>
           <div class="form-content-row">
             <input
               id="feminino"
@@ -111,9 +94,7 @@
               value="Feminino"
               data-validate-field="gender"
             />
-
             <label for="feminino" class="label-radio">Feminino</label>
-
             <input
               id="masculino"
               type="radio"
@@ -121,9 +102,7 @@
               value="Masculino"
               data-validate-field="gender"
             />
-
             <label for="masculino" class="label-radio">Masculino</label>
-
             <input
               id="personalizado"
               type="radio"
@@ -131,22 +110,26 @@
               value="Personalizado"
               data-validate-field="gender"
             />
-
             <label for="personalizado" class="label-radio">Personalizado</label>
           </div>
-
           <div>
             <input
               id="gender-custom"
+              class="cadastro large"
               type="text"
               name="gender-custom"
               placeholder="Gênero (opcional)"
               data-validate-field="gender_custom"
             />
           </div>
-
           <div>
-            <button type="submit" id="facebook-register" class="button-register">Cadastre-se</button>
+            <button
+              type="submit"
+              id="facebook-register"
+              class="button-register"
+            >
+              Cadastre-se
+            </button>
           </div>
         </form>
       </div>

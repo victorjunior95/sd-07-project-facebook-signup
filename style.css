@@ -3,7 +3,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 82px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -14,13 +14,6 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 0;
-}
-
-input {
-  margin: 0;
-  margin-right: 10px;
-  padding: 2px;
-  width: 142px;
 }
 
 label {
@@ -68,8 +61,8 @@ h1 {
   font-size: 20px;
   font-weight: 600;
   line-height: 29px;
-  margin-top: 40px;
-  width: 450px;
+  margin-top: 35px;
+  max-width: 600px;
   word-spacing: -1px;
 }
 
@@ -77,20 +70,22 @@ h1 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .cadastro {
+  box-sizing: border-box;
   border-color: #bdc7d8;
   border-radius: 5px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-right: 8px;
-  padding: 8px 10px;
-  width: 172px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 2px 4px;
+  width: 130px;
 }
 
 .large {
-  width: 377px;
+  width: 275px;
 }
 
 .form-control {
@@ -103,22 +98,12 @@ h1 {
 }
 
 .left-content {
-  width: 580px;
+  width: 800px;
+  padding-right: 30px;
 }
 
 .right-content {
-  width: 410px;
-}
-
-.form-content-row {
-  display: flex;
-  justify-content: center;
-}
-
-.form-content-column {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
+  width: 300px;
 }
 
 .label-form {
@@ -137,10 +122,13 @@ h1 {
 
 .label-radio {
   color: #1d2129;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 18px;
-  padding: 0 10px 0 3px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0 5px 0 2px;
+}
+input[type='radio'] {
+  display: inline-block;
+  margin: 0;
 }
 
 .button-register {
@@ -151,7 +139,7 @@ h1 {
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 15px 0;
   min-width: 194px;
   padding: 7px 20px;
   text-align: center;

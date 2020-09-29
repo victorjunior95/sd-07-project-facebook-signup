@@ -18,7 +18,13 @@ function genderSelected() {
 
 function formResponse() {
   const rightContentDiv = document.getElementById('right-content');
-  const msnResponse = `Olá, ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}, nascido em ${document.getElementById('user').value}, do gênero: ${genderSelected()}, seu login é: ${document.getElementById('phone-email').value}`;
+  const msnResponse = `Olá, ${document.getElementById('firstname').value} ${
+    document.getElementById('lastname').value
+  }, nascido em ${
+    document.getElementById('user').value
+  }, do gênero: ${genderSelected()}, seu login é: ${
+    document.getElementById('phone-email').value
+  }`;
   rightContentDiv.innerHTML = msnResponse;
 }
 
@@ -60,7 +66,8 @@ const justValidate = new window.JustValidate('.js-form', {
     },
     password: {
       required: 'Campos inválidos',
-      strength: 'Senha deve ter pelo menos uma letra maiúscula, uma minúscula, e um número',
+      strength:
+        'Senha deve ter pelo menos uma letra maiúscula, uma minúscula, e um número',
     },
     birthdate: {
       required: 'Campos inválidos',
@@ -73,7 +80,6 @@ const justValidate = new window.JustValidate('.js-form', {
   submitHandler() {
     formResponse();
   },
-
 });
 
 function showGenderCustom() {

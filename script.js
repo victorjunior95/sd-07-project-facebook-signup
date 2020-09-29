@@ -18,13 +18,13 @@ function genderSelected() {
 
 function formResponse() {
   const rightContentDiv = document.getElementById('right-content');
-  const msnResponse = `Olá, ${document.getElementById('firstname').value} ${
+  const msnResponse = `<div class="form-response">Olá, ${document.getElementById('firstname').value} ${
     document.getElementById('lastname').value
   }, nascido em ${
     document.getElementById('user').value
   }, do gênero: ${genderSelected()}, seu login é: ${
     document.getElementById('phone-email').value
-  }`;
+  }<div>`;
   rightContentDiv.innerHTML = msnResponse;
 }
 

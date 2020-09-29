@@ -25,7 +25,7 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     validationError = 'Campos inválidos';
   } else if (document.querySelector('#last-name').value === '' || document.querySelector('#last-name').value === null) {
     validationError = 'Campos inválidos';
-  } else if (document.querySelector('#phone-email').value === '' || document.querySelector('phone-email').value === null) {
+  } else if (document.querySelector('#phone-email').value === '' || document.querySelector('#phone-email').value === null) {
     validationError = 'Campos inválidos';
   } else if (document.querySelector('#password').value === '' || document.querySelector('#password').value === null) {
     validationError = 'Campos inválidos';
@@ -41,4 +41,21 @@ document.querySelector('#facebook-register').addEventListener('click', function 
     document.querySelector('.create-account').appendChild(errorOutlet);
     event.preventDefault();
   }
+});
+
+document.querySelector('.create-account').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const formChildren = document.querySelector('.create-account').children;
+  for (let count = 0; count < formChildren.length; count += 1) {
+    formChildren[count].style.display = 'none';
+  }
+  const registeredGender = document.querySelector('.form-input:checked').id;
+  const registeredName = document.querySelector('#first-name').value;
+  const registeredLastName = document.querySelector('#last-name').value;
+  const registeredPhoneMail = document.querySelector('#phone-email').value;
+  const registeredBirthdate = document.querySelector('#birthdate').value;
+
+  const showRegistered = document.createElement('p');
+  showRegistered.innerHTML = `Olá, ${registeredName} ${registeredLastName} </br> Phone/Mail: ${registeredPhoneMail} </br> Date of Birth: ${registeredBirthdate} </br> Genero: ${registeredGender}`;
+  document.querySelector('.create-account').appendChild(showRegistered);
 });

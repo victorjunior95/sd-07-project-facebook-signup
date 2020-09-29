@@ -13,7 +13,7 @@ function clearChilds(father) {
   while (father.firstChild) {
     father.removeChild(father.firstChild);
   }
-};
+}
 
 function getValueRadios() {
   const radios = document.querySelectorAll('.inputRadios');

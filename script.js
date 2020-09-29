@@ -5,13 +5,13 @@ document.getElementById('button-login').addEventListener('click', function () {
 function genderSelected() {
   let generoSelected = '';
   if (document.getElementById('feminino').checked) {
-    generoSelected = 'feminino';
+    generoSelected = document.getElementById('feminino').value;
   }
   if (document.getElementById('masculino').checked) {
-    generoSelected = 'masculino';
+    generoSelected = document.getElementById('masculino').value;
   }
   if (document.getElementById('personalizado').checked) {
-    generoSelected = 'personalizado';
+    generoSelected = document.getElementById('personalizado').value;
   }
   return generoSelected;
 }
@@ -30,9 +30,6 @@ const justValidate = new window.JustValidate('.js-form', {
     },
     password: {
       required: true,
-      strength: {
-        default: true,
-      },
     },
     birthdate: {
       required: true,
@@ -54,8 +51,6 @@ const justValidate = new window.JustValidate('.js-form', {
     },
     password: {
       required: 'Campos inválidos',
-      strength:
-        'Senha deve ter pelo menos uma letra maiúscula, uma minúscula, e um número',
     },
     birthdate: {
       required: 'Campos inválidos',

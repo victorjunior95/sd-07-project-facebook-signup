@@ -50,3 +50,7 @@ body {
 .radio-button {
   font-size: 15px;
 }
+
+.visible {
+  display: none;
+}

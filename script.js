@@ -8,7 +8,7 @@ const testeRadioButton = document.querySelectorAll('.gender');
 testeRadioButton[2].addEventListener('click', function () {
   const inputProGeneroPersonalizado = document.createElement('input');
   inputProGeneroPersonalizado.id = 'teste';
-  inputProGeneroPersonalizado.name = 'gender-custom'
+  inputProGeneroPersonalizado.name = 'gender-custom';
   inputProGeneroPersonalizado.placeholder = 'Gênero (opcional)';
   const sex = document.querySelector('.sex');
   sex.appendChild(inputProGeneroPersonalizado);
@@ -119,7 +119,7 @@ btCadastre.addEventListener('click', function (event) {
   const resultGender = valiGender(rdBtGender);
   const inputsArray = [resultName, resultEmail, resultPassword, resultDate, resultGender];
   if (errorMessage(inputsArray)) {
-    alert('Campos Invalidos!');
+    alert('Campos invalidos');
   } else {
     const divText = `\n \n Olá, ${resultName} \n ${resultEmail} \n ${resultDate} \n ${resultGender}`;
     const divRightContainer = document.querySelector('.right-content');

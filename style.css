@@ -66,4 +66,5 @@ input {
 
 .gender-container {
   display: flex;
+  flex-wrap: wrap;
 }

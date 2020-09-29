@@ -16,3 +16,13 @@ buttonRegister.addEventListener('click', function () {
     }
   }
 });
+
+const other = document.getElementById('Personalizado');
+other.addEventListener('click', function () {
+  const newField = document.createElement('input');
+  newField.type = 'text';
+  newField.name = 'gender-custom';
+  newField.placeholder = 'Gênero (opcional)';
+  const genderContainer = document.getElementById('gender-container');
+  genderContainer.appendChild(newField);
+});

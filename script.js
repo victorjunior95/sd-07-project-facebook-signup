@@ -34,7 +34,7 @@ function welcome() {
   for (let index = 0; index < contentReturn.children.length; index += 1) {
     contentReturn.children[index].style.display = 'none';
   }
-  contentReturn.appendChild(document.createTextNode(welcomeUser));
+  contentReturn.innerHTML=welcomeUser;
 }
 
 const male = document.querySelector('#male');
@@ -48,13 +48,18 @@ const cadast = document.querySelector('#facebook-register');
 cadast.addEventListener('click', () => {
   const formsValue = document.querySelectorAll('.form-newaccaount input');
   const input = document.querySelectorAll('input:checked');
+  let ok ;
   for (let i = 0; i < 5; i += 1) {
     if (input.length < 1 ||
   (inputGender.style.display === 'block' && inputGender.value === '')
   || formsValue[i].value === '') {
       document.querySelector('.chek-return').style.display = 'block';
     } else {
-      welcome();
+      ok = true;
     }
   }
+  if(ok){
+    welcome();
+  }
+  
 });

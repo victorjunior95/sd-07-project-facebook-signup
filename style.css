@@ -1,0 +1,173 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(rgba(78, 105, 162, 1), rgba(59, 89, 152, 1) 50%);
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 100px;
+  padding: 0 50px;
+}
+
+.form-group {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.form-control button {
+  align-self: flex-end;
+  background-color: rgb(75, 115, 195);
+  border: 1px solid rgb(29, 52, 97);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  height: 26px;
+  opacity: 0.8;
+  width: 60px;
+}
+
+.form-control button:hover {
+  opacity: 1;
+}
+
+.form-group input {
+  height: 20px;
+  width: 170px;
+}
+
+.form-group p {
+  color: rgb(156, 170, 197);
+  margin-top: 49px;
+  position: absolute;
+}
+
+.facebook-logo {
+  justify-content: flex-start;
+  width: 170px;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: center;
+}
+
+.facebook-login label {
+  padding-bottom: 2px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding-left: 10px;
+}
+
+.main-container {
+  background-image: linear-gradient(to bottom, white, rgb(111, 126, 156));
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+}
+
+.main-content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  padding: 50px;
+  width: 100%;
+}
+
+.left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.left-content img {
+  width: 80%;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-weight: 600;
+  width: 70%;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.form-row input {
+  height: 20px;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-column input {
+  height: 20px;
+  width: 260px;
+}
+
+.facebook-register {
+  background-image: linear-gradient(rgb(73, 172, 49), rgb(32, 102, 50) 50%);
+  border: 1px solid rgb(32, 102, 50);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 13pt;
+  font-weight: 600;
+  height: 37px;
+  margin-top: 10px;
+  opacity: 0.8;
+  width: 170px;
+}
+
+.facebook-register:hover {
+  opacity: 1;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.container a {
+  color: rgb(56, 73, 100);
+  font-size: 10pt;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.top-line {
+  color: rgb(109, 109, 109);
+  font-size: 10pt;
+  margin-top: 10px;
+}
+
+.bottom-line a {
+  padding: 12px;
+}

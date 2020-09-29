@@ -34,9 +34,7 @@ function welcome() {
   for (let index = 0; index < contentReturn.children.length; index += 1) {
     contentReturn.children[index].style.display = 'none';
   }
-  const element = document.createElement('div');
-  element.appendChild(welcomeUser);
-  contentReturn.appendChild(element);
+    contentReturn.appendChild(document.createTextNode(welcomeUser));
 }
 
 const male = document.querySelector('#male');

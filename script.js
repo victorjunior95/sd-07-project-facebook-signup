@@ -16,10 +16,9 @@ enrrolmentButton.addEventListener('click', function (event) {
       return;
     }
   }
-  const data = document.getElementById('signup-form');
-  console.log(data.gender);
-  const outputList = document.getElementsByClassName('output-form');
-  const outputDiv = document.getElementById('sign-up-completed');
+  // const data = document.getElementById('signup-form');
+  // const outputList = document.getElementsByClassName('output-form');
+  // const outputDiv = document.getElementById('sign-up-completed');
   // outputDiv.innerHTML = `Olá, ${outputList[0].value} ${outputList[1].value}<br>
   // Email: ${outputList[2].value}<br>
   // Data de nascimento: ${outputList[4].value}<br>
@@ -28,12 +27,12 @@ enrrolmentButton.addEventListener('click', function (event) {
 
 document.getElementById('custom-radio').addEventListener('click', () => {
   document.getElementById('custom-options').classList.remove('hidden-input');
-})
+});
 
 document.getElementById('male-radio').addEventListener('click', () => {
-  document.getElementById('custom-options').classList.add('hidden-input')
-})
+  document.getElementById('custom-options').classList.add('hidden-input');
+});
 
 document.getElementById('female-radio').addEventListener('click', () => {
-  document.getElementById('custom-options').classList.add('hidden-input')
-})
+  document.getElementById('custom-options').classList.add('hidden-input');
+});

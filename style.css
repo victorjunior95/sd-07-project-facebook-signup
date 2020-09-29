@@ -7,7 +7,7 @@ body {
 
 .header-container {
   background-color: rgb(66, 103, 178);
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: center;
   height: 20%;
@@ -55,7 +55,7 @@ body {
   background-color: rgb(92, 122, 182);
   border: 1px solid rgb(21, 56, 126);
   border-radius: 2px;
-  color: #fff;
+  color: white;
   font-size: 0.9rem;
   font-weight: 600;
   padding: 4px 7px;
@@ -68,7 +68,7 @@ body {
 }
 
 .login-container a {
-  color:  #b1d2ff;
+  color: #b1d2ff;
   font-size: 0.9rem;
   margin-left: 66px;
 }
@@ -87,7 +87,7 @@ main {
   color: rgb(1, 33, 97);
   font-size: 1.5rem;
   font-weight: 550;
-  margin: 2% 0 0 0;
+  margin: 2% 0 0;
   width: 35%;
 }
 
@@ -116,12 +116,12 @@ main {
   padding: 5px 8px;
 }
 
-.right-content h1 {
+.form-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.right-content h2 {
+.form-subtitle {
   font-size: 1.5rem;
   font-weight: 200;
   margin-top: 5px;
@@ -143,9 +143,9 @@ main {
   justify-content: space-between;
 }
 
-.birthday-container h3 {
+.birthday-title {
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .birthday-container p {
@@ -163,21 +163,21 @@ main {
   margin: 3% 0;
 }
 
-.female-input, .male-input, .custom-input {
+.female-input , .male-input , .custom-input {
   align-items: center;
   display: flex;
   margin-right: 5%;
 }
 
-.male-input input, .female-input input, .custom-input input {
+.male-input input , .female-input input , .custom-input input {
   margin-right: 10%;
 }
 
-.female-input input:hover, .male-input input:hover, .custom-input input:hover {
+.female-input input:hover , .male-input input:hover , .custom-input input:hover {
   cursor: pointer;
 }
 
-.female-input label:hover, .male-input label:hover, .custom-input label:hover {
+.female-input label:hover , .male-input label:hover , .custom-input label:hover {
   cursor: pointer;
 }
 
@@ -195,7 +195,7 @@ main {
   display: none;
 }
 
-.invalid-field{
+.invalid-field {
   color: red;
   font-size: 1.1rem;
   margin-bottom: 5px;

@@ -28,7 +28,7 @@ function validarNovoUsuario() {
     listaForm.dataNasc = document.getElementById('birthdate').value;
     const values = Object.values(listaForm);
 
-    values.forEach(element => {
+    values.forEach (element => {
       if (element === null || element === '') {
         alert('Campos inválidos');
       }

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(211, 216, 232);
+  background: linear-gradient(white, rgb(211, 216, 232));
   margin: 0;
 }
 
@@ -14,18 +14,39 @@ body {
 }
 
 .facebook-login {
-  display: flex;
-}
-
-.facebook-login label {
   color: white;
+  display: flex;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 5px 5px 15px 0;
 }
 
 .form-control {
   align-self: flex-end;
+  padding-bottom: 15px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: wrap column;
+  width: 300px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.radio-button {
+  font-size: 15px;
 }

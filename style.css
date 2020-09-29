@@ -55,8 +55,10 @@ body {
 }
 
 .main-content {
+  background-image: linear-gradient(white, rgba(66, 103, 178, 0.37));
   display: flex;
   flex-direction: row;
+  height: 100vh;
   justify-content: space-around;
   padding: 10px 150px;
   width: 100%;
@@ -64,6 +66,14 @@ body {
 
 .left-content {
   width: 800px;
+}
+
+.left-content p {
+  color: rgb(32, 49, 85);
+  font-size: 1.3em;
+  font-weight: 900;
+  line-height: 1.4em;
+  text-shadow: 1px 1px 1px rgba(40, 62, 107, 0.384);
 }
 
 .right-content {

@@ -121,7 +121,7 @@ btCadastre.addEventListener('click', function (event) {
     alert('Todos os campos devem ser preenchidos!');
   } else {
     const divText = `\n \n Olá, ${resultName} \n ${resultEmail} \n ${resultDate} \n ${resultGender}`;
-    let divRightContainer = document.querySelector('.right-content');
+    const divRightContainer = document.querySelector('.right-content');
     const tagP = document.createElement('p');
     tagP.className = 'pFinal';
     tagP.innerText = divText;

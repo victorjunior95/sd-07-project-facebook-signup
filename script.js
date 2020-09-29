@@ -14,9 +14,11 @@ login.addEventListener('click', function () {
   alert(user.value);
 });
 
-cadastro.addEventListener('click', function () {
+cadastro.addEventListener('click', function (event) {
+  event.preventDefault();
+  const spanInvalid = document.querySelector('#invalid');
   if ((name.value === '') || (lastname.value === '') || (phoneEmail.value === '') || (password.value === '') || (birthdate.value === '')) {
-    alert('Campos inválidos');
+    spanInvalid.innerHTML = 'Campos inválidos';
   }
 });
 

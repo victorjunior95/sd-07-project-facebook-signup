@@ -28,7 +28,8 @@ function criarFormNovo() {
 }
 function validarNovoUsuario() {
   criarFormNovo();
-  buttonNovo.addEventListener('click', function () {
+  buttonNovo.addEventListener('click', function (event) {
+    event.preventDefault;
     if (this.listaForm !== '') {
       alert('Campos inválidos');
     }

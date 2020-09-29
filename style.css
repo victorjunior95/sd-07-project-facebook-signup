@@ -43,6 +43,15 @@
   width: 800px;
 }
 
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 70%;
+}
+
+
 .right-content {
   display: flex;
   width: 300px;

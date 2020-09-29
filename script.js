@@ -9,13 +9,12 @@ document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
 
-/*
 function clearChilds(father) {
   while (father.firstChild) {
     father.removeChild(father.firstChild);
   }
 }
-*/
+
 
 function getValueRadios() {
   const radios = document.querySelectorAll('.inputRadios');
@@ -36,9 +35,10 @@ function insertValuesParagraph(valueRadio) {
   rightContent.appendChild(p);
 }
 
-document.getElementById('facebook-register').addEventListener('click', function () {
+document.getElementById('facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
   const valueRadio = getValueRadios();
-  // clearChilds(rightContent);
+  clearChilds(rightContent);
   insertValuesParagraph(valueRadio);
 });
 

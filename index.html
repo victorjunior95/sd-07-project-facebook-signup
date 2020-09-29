@@ -41,32 +41,40 @@
       <form class="form-register">
         <input class="form-name"
           type="text"
+          required
           name="firstname"
           id="name"
           placeholder="Nome"
         />
         <input class="form-name"
           type="text"
+          required
           name="lastname"
           id="lastname"
           placeholder="Sobrenome"
         />
         <input
           type="text"
+          required
           name="phone_email"
           id="email-or-phone"
           placeholder="Celular ou email"
         />
         <input
           type="password"
+          required
           name="password"
           id="password"
           placeholder="Nova senha"
         />
+        <div class="birthdate">
+          <label id="label-birthdate">Data de nascimento</label>
+          <input required type="text" name="birthdate" id="birth" placeholder="dd/mm/aaaa">
+        </div>
         <label id="label-gender">Gênero</label>
         <div class="gender">
           <div class="radios">
-            <input type="radio" class="selected-radio" name="type-gender" id="female" value="Feminino">
+            <input type="radio" checked class="selected-radio" name="type-gender" id="female" value="Feminino">
             <label for="female">Feminino</label>
           </div>
           <div class="radios">
@@ -77,10 +85,6 @@
             <input type="radio" class="selected-radio" name="type-gender" id="custom" value="Personalizado">
             <label for="custom">Personalizado</label>
           </div>
-        </div>
-        <div class="birthdate">
-          <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="birth" placeholder="dd/mm/aaaa">
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>

@@ -41,7 +41,8 @@ body {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
+  margin: auto 3px;
 }
 
 .button-login {

@@ -51,14 +51,17 @@
         </div>
         <div>
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="date" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
         </div>
         <div>
-          <label for="" id="label-gender">Gênero</label>
+          <label id="label-gender">Gênero</label>
           <div class="radioButtons">
-            <input type="radio" name="gender" > Feminino
-            <input type="radio" name="gender" > Masculino
-            <input type="radio" name="gender" > Personalizado
+            <input type="radio" name="gender" id="female">
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="custom">
+            <label for="custom">Personalizado</label>
           </div>
         </div>
         <div>

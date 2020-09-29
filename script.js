@@ -7,10 +7,10 @@ button.addEventListener('click', function () {
 
 function addText() {
   const sexo = document.getElementById('genero');
-  let input = document.createElement('INPUT');
-  input.setAttribute("type", "text");
-  input.setAttribute("name", 'gender-custom');
+  const input = document.createElement('INPUT');
+  input.setAttribute('type', 'text');
+  input.setAttribute('name', 'gender-custom');
   input.setAttribute('placehold', 'Gênero (Opcional)');
-  input.setAttribute("onkeyup", "lsRef()");
+  input.setAttribute('onkeyup', 'lsRef()');
   sexo.appendChild(input);
 }

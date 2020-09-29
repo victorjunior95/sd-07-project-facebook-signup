@@ -7,7 +7,7 @@ login.addEventListener('click', () => {
 });
 
 gender.addEventListener('change', () => {
-  const form  = document.querySelector('.gender');
+  const form = document.querySelector('.gender');
   const text = document.createElement('input');
   text.name = 'gender-custom';
   text.placeholder = 'Gênero (opcional)';

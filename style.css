@@ -19,20 +19,6 @@ body {
   font-weight: 600;
 }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.login a {
-  color: #98b1d6;
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 5px;
-  text-decoration: none;
-}
-
 .image {
   align-items: center;
   display: flex;
@@ -43,4 +29,22 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.form-group a {
+  color: #98b1d6;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.form-control {
+  align-self: flex-end;
 }

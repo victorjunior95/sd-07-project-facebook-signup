@@ -29,7 +29,8 @@ function welcome() {
   const lastName = document.getElementById('lastname').value;
   const birthdate = document.getElementById('birthdate').value;
   const phoneEmail = document.getElementById('phone_email').value;
-  const welcomeUser = `Olá, ${firstName} ${lastName}, ${phoneEmail}, ${birthdate}`;
+  const gender = document.querySelectorAll('input:checked');
+  const welcomeUser = `Olá, ${firstName} ${lastName}, você é do sexo: ${gender[0].value} e seu email/fone é :  ${phoneEmail} e seu aniversario é: ${birthdate}`;
   const contentReturn = document.querySelector('.right-content');
   for (let index = 0; index < contentReturn.children.length; index += 1) {
     contentReturn.children[index].style.display = 'none';

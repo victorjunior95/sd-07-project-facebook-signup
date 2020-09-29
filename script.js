@@ -4,17 +4,18 @@ const lastname = document.getElementById('lastname');
 const phoneEmail = document.getElementById('phoneEmail');
 const birthday = document.getElementById('date');
 const rightContent = document.querySelector('.right-content');
+const formName = document.querySelector('.name');
+const inputs = document.querySelectorAll('.input');
 
-document.getElementById('button-login').addEventListener('click', function () {
-  alert(document.getElementById('user-email-phone').value);
-});
-
-function clearChilds(father) {
-  while (father.firstChild) {
-    father.removeChild(father.firstChild);
-  }
+function insertValuesParagraph(valueRadio) {
+  const p = document.createElement('p');
+  p.innerText = `Olá, ${name.value} ${lastname.value}`;
+  p.innerText += phoneEmail.value;
+  p.innerText += birthday.value;
+  p.innerText += valueRadio;
+  rightContent.innerHTML = '';
+  rightContent.appendChild(p);
 }
-
 
 function getValueRadios() {
   const radios = document.querySelectorAll('.inputRadios');
@@ -26,22 +27,7 @@ function getValueRadios() {
   return false;
 }
 
-function insertValuesParagraph(valueRadio) {
-  const p = document.createElement('p');
-  p.innerText = `Olá, ${name.value} ${lastname.value}`;
-  p.innerText += phoneEmail.value;
-  p.innerText += birthday.value;
-  p.innerText += valueRadio;
-  rightContent.appendChild(p);
-}
-
-document.getElementById('facebook-register').addEventListener('click', function (event) {
-  event.preventDefault();
-  const valueRadio = getValueRadios();
-  clearChilds(rightContent);
-  insertValuesParagraph(valueRadio);
-});
-
+/*
 const validate = new window.JustValidate('.name', {
   rules: {
     name: {
@@ -71,6 +57,35 @@ const validate = new window.JustValidate('.name', {
       required: 'Campos inválidos',
     },
   },
+  submitHandler() {
+    const valueRadio = getValueRadios();
+    insertValuesParagraph(valueRadio);
+  },
+});
+*/
+
+document.getElementById('button-login').addEventListener('click', function () {
+  alert(document.getElementById('user-email-phone').value);
+});
+
+function checkEmptyFields() {
+  let result = false;
+  inputs.forEach((input) => {
+    if (input.value === '') {
+     return result = false;
+    }
+    else result = true;
+  });
+  return result;
+}
+
+document.getElementById('facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
+  const boolean = checkEmptyFields();
+  if (boolean) {
+    const valueRadio = getValueRadios();
+    insertValuesParagraph(valueRadio);
+  } else formName.innerHTML = 'Campos inválidos';
 });
 
 document.getElementById('personalizado').addEventListener('click', function () {
@@ -80,6 +95,8 @@ document.getElementById('personalizado').addEventListener('click', function () {
   divRadios.appendChild(textInput);
 });
 
+/*
 window.onload = function () {
   return validate;
 };
+*/

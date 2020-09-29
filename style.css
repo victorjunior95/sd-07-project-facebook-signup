@@ -8,18 +8,25 @@ body {
   box-sizing: border-box;
   color: white;
   display: flex;
+  height: 80px;
   justify-content: space-between;
-  padding: 2px 100px;
+  padding: 2px 70px;
+}
+
+.logo-top {
+  box-sizing: border-box;
+  margin-right: 0;
+  width: 800px;
 }
 
 .facebook-logo {
-  width: 180px;
+  width: 20%;
 }
 
 .facebook-login {
+  box-sizing: content-box;
   display: flex;
-  padding: 0 100px;
-  width: 300px;
+  width: 400px;
 }
 
 .form-group {
@@ -32,8 +39,9 @@ body {
 .form-group input {
   border-radius: 1px;
   height: 20px;
-  margin-right: 13px;
-  margin-top: 3px;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 150px;
 }
 
 .form-group legend {
@@ -42,7 +50,7 @@ body {
 
 .form-control {
   align-self: flex-end;
-  margin: auto 10px;
+  margin: auto;
 }
 
 .button-login {

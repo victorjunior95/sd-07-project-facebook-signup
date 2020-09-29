@@ -24,6 +24,10 @@ body {
   margin-left: 10px;
 }
 
+.user-email-phone-label , .user-password-label {
+  margin-left: 10px;
+}
+
 /* Atributos abaixo do align-self são um quebra galho para centralizar o botão. */
 .form-control {
   align-items: center;

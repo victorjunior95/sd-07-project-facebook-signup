@@ -73,14 +73,14 @@ const getElements = () => {
 
 const registered = () => {
   const inputList = getElements();
-  const outputContainer = document.createElement('div');
-  /* outputContainer.id = 'right-content';
+  /* const outputContainer = document.createElement('div');
+   outputContainer.id = 'right-content';
   outputContainer.className = 'right-content'; */
   const paragraph = document.createElement('output');
   paragraph.innerText = `Olá, ${inputList.name} ${inputList.lastName}
   ${inputList.emailCell} ${inputList.birthdate} ${inputList.gender}`;
-  outputContainer.appendChild(paragraph);
-  document.querySelector('#right-content').innerHTML = outputContainer.innerHTML;
+  /* outputContainer.appendChild(paragraph);*/
+  document.querySelector('#right-content').innerHTML = paragraph.innerHTML/* outputContainer.innerHTML */;
 };
 
 document.querySelector('#button-login').addEventListener('click', () => {

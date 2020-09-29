@@ -87,7 +87,7 @@ main {
   color: rgb(1, 33, 97);
   font-size: 1.5rem;
   font-weight: 550;
-  margin: 2% 0 0 4%;
+  margin: 2% 0 0 0;
   width: 35%;
 }
 
@@ -137,35 +137,25 @@ main {
   width: 45%;
 }
 
+.birthday-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .birthday-container h3 {
   font-weight: 200;
   margin-bottom: 5px;
 }
 
-.birthday-inputs {
-  display: flex;
-  align-items: center;
+.birthday-container p {
+  margin-right: 15%;
+  width: 40%;
 }
 
-.birthday-wraper {
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-  margin-right: 9%;
-  width: 44%;
-}
-
-.birthday-wraper select {
-  background-color: white;
-  border: 1px solid #b1d2ff;
-  margin-left: 1.5%;
-  padding: 3%;
-}
-
-.birthday-inputs a {
+.birthday-container a {
   font-size: 0.8rem;
   text-decoration: none;
-  width: 40%;
 }
 
 .gender-container {
@@ -198,21 +188,28 @@ main {
   font-size: 1.1rem;
   height: 40px;
   padding: 4px;
-  width: 53.5%;
+  width: 58.9%;
 }
 
 .hidden-input {
   display: none;
 }
 
-.signup-form p {
+.invalid-field{
+  color: red;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.signup-form > p {
   color: grey;
   font-size: 0.7rem;
   margin-bottom: 25px;
   width: 70%;
 }
 
-.signup-form p a {
+.signup-form > p a {
   text-decoration: none;
 }
 

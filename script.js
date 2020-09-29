@@ -10,12 +10,12 @@ const enrrolmentButton = document.getElementById('facebook-register');
 enrrolmentButton.addEventListener('click', function (event) {
   event.preventDefault();
   const inputList = document.querySelectorAll('.signup-form input');
-  // for (let index = 0; index < inputList.length; index += 1) {
-  //   if (inputList[index].value === '') {
-  //     document.getElementById('hidden-input').classList.remove('hidden-input');
-  //     return;
-  //   }
-  // }
+  for (let index = 0; index < inputList.length; index += 1) {
+    if (inputList[index].value === '') {
+      document.getElementById('hidden-input').classList.remove('hidden-input');
+      return;
+    }
+  }
   const data = document.getElementById('signup-form');
   console.log(data.gender);
   const outputList = document.getElementsByClassName('output-form');

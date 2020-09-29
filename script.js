@@ -73,7 +73,10 @@ const justValidate = new window.JustValidate('.js-form', {
     const user = document.getElementById('user').value;
     const msnResponse = document.createElement('div');
     msnResponse.className = 'form-response';
-    msnResponse.innerHTML = `Olá, ${firstname} ${lastname}.<br>E-mail e/ou telefone: ${phoneEmail}.<br>Data de Nascimento: ${user}.<br>Genero: ${genderSelected()}.`;
+    msnResponse.innerHTML = `<p>Olá, ${firstname} ${lastname}</p>
+    <p>E-mail e/ou telefone: ${phoneEmail}</p>
+    <p>Data de Nascimento: ${user}</p>
+    <p>Genero: ${genderSelected()}.`;
     rightContentDiv.innerHTML = '';
     rightContentDiv.appendChild(msnResponse);
   },

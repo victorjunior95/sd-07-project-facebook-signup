@@ -5,6 +5,11 @@ const phoneEmail = document.getElementById('phoneEmail');
 const birthday = document.getElementById('date');
 const rightContent = document.querySelector('.right-content');
 
+
+birthday.DatePickerX.init({
+});
+
+
 document.getElementById('button-login').addEventListener('click', function () {
   alert(document.getElementById('user-email-phone').value);
 });
@@ -36,18 +41,36 @@ function insertValuesParagraph(valueRadio) {
 
 document.getElementById('facebook-register').addEventListener('click', function () {
   const valueRadio = getValueRadios();
-  clearChilds(rightContent);
+  // clearChilds(rightContent);
   insertValuesParagraph(valueRadio);
 });
 
 const validate = new window.JustValidate('.name', {
   rules: {
-    text: {
+    name: {
+      required: true,
+    },
+    lastname: {
+      required: true,
+    },
+    phoneEmail: {
+      required: true,
+    },
+    password: {
       required: true,
     },
   },
   messages: {
-    text: {
+    name: {
+      required: 'Campos inválidos',
+    },
+    lastname: {
+      required: 'Campos inválidos',
+    },
+    phoneEmail: {
+      required: 'Campos inválidos',
+    },
+    password: {
       required: 'Campos inválidos',
     },
   },

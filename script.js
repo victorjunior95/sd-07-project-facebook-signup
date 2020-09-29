@@ -16,23 +16,25 @@ function validar() {
   });
 }
 
-function criarFormNovo() {
-  const listaForm = {};
-  listaForm.firstName = document.getElementById('firstname').value;
-  listaForm.lastName = document.getElementById('lastname').value;
-  listaForm.email = document.getElementById('phone_email').value;
-  listaForm.password = document.getElementById('password').value;
-  listaForm.genero = document.querySelector('[type=radio]:checked');
-  listaForm.dataNasc = document.getElementById('birthdate').value;
-  return listaForm;
-}
 function validarNovoUsuario() {
-  criarFormNovo();
   buttonNovo.addEventListener('click', function (event) {
-    event.preventDefault;
-    if (this.listaForm !== '') {
-      alert('Campos inválidos');
-    }
+    event.preventDefault();
+    const listaForm = {};
+    listaForm.firstName = document.getElementById('firstname').value;
+    listaForm.lastName = document.getElementById('lastname').value;
+    listaForm.email = document.getElementById('phone_email').value;
+    listaForm.password = document.getElementById('password').value;
+    listaForm.genero = document.querySelector('[type=radio]:checked');
+    listaForm.dataNasc = document.getElementById('birthdate').value;
+    let values = Object.values(listaForm);
+
+    values.forEach(element => {
+      console.log(element);
+      if (element === null || element === "") {
+        alert('Campos inválidos');
+      }
+    });  
+    
   });
 }
 function adicionarCampoGender() {
@@ -52,5 +54,4 @@ window.onload = function () {
   validarNovoUsuario();
   validar();
   adicionarCampoGender();
-  criarFormNovo();
 };

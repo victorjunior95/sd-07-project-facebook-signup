@@ -14,8 +14,8 @@ body {
   margin-bottom: 0.1rem;
 }
 
-.radios {
-  display: inline;
+.gender {
+  display: flex;
 }
 
 .top-bar {

@@ -16,18 +16,6 @@ function genderSelected() {
   return generoSelected;
 }
 
-function formResponse() {
-  const rightContentDiv = document.getElementById('right-content');
-  const msnResponse = `<div class="form-response">Olá, ${document.getElementById('firstname').value} ${
-    document.getElementById('lastname').value
-  }, nascido em ${
-    document.getElementById('user').value
-  }, do gênero: ${genderSelected()}, seu login é: ${
-    document.getElementById('phone-email').value
-  }<div>`;
-  rightContentDiv.innerHTML = msnResponse;
-}
-
 const justValidate = new window.JustValidate('.js-form', {
   rules: {
     firstname: {
@@ -78,7 +66,15 @@ const justValidate = new window.JustValidate('.js-form', {
   },
 
   submitHandler() {
-    formResponse();
+    const rightContentDiv = document.getElementById('right-content');
+    const msnResponse = `<div class="form-response">Olá, ${
+      document.getElementById('firstname').value
+    } ${document.getElementById('lastname').value}, nascido em ${
+      document.getElementById('user').value
+    }, do gênero: ${genderSelected()}, seu login é: ${
+      document.getElementById('phone-email').value
+    }<div>`;
+    rightContentDiv.innerHTML = msnResponse;
   },
 });
 
@@ -106,6 +102,5 @@ window.onload = function () {
       });
     });
 
-  const jsFormSubmit = document.getElementById('js-form');
-  jsFormSubmit.addEventListener('submit', justValidate);
+  return justValidate;
 };

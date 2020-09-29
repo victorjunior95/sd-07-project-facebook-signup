@@ -1,5 +1,7 @@
 body {
   font-family: Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: 800;
   margin: 0;
   padding: 0;
 }
@@ -26,15 +28,28 @@ body {
   align-self: flex-end;
   background-color: rgb(75, 115, 195);
   border: 1px solid rgb(29, 52, 97);
+  border-radius: 3px;
   color: white;
   cursor: pointer;
+  font-weight: 600;
   height: 26px;
+  opacity: 0.8;
   width: 60px;
+}
+
+.form-control button:hover {
+  opacity: 1;
 }
 
 .form-group input {
   height: 20px;
   width: 170px;
+}
+
+.form-group p {
+  color: rgb(156, 170, 197);
+  margin-top: 49px;
+  position: absolute;
 }
 
 .facebook-logo {
@@ -47,15 +62,20 @@ body {
   justify-content: center;
 }
 
+.facebook-login label {
+  padding-bottom: 2px;
+}
+
 .form-control {
   align-self: flex-end;
   padding-left: 10px;
 }
 
 .main-container {
-  background-image: linear-gradient(to bottom, white, rgba(59, 89, 152, 1));
+  background-image: linear-gradient(to bottom, white, rgb(111, 126, 156));
   display: flex;
   justify-content: center;
+  min-height: 700px;
 }
 
 .main-content {
@@ -113,9 +133,41 @@ body {
 }
 
 .facebook-register {
-  background-color: rgba(66, 183, 42, 1);
-  border-radius: 6px;
+  background-image: linear-gradient(rgb(73, 172, 49), rgb(32, 102, 50) 50%);
+  border: 1px solid rgb(32, 102, 50);
+  border-radius: 4px;
   color: white;
-  font-weight: bold;
-  width: 50%;
+  cursor: pointer;
+  font-size: 13pt;
+  font-weight: 600;
+  height: 37px;
+  margin-top: 10px;
+  opacity: 0.8;
+  width: 170px;
+}
+
+.facebook-register:hover {
+  opacity: 1;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.container a {
+  color: rgb(56, 73, 100);
+  font-size: 10pt;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.top-line {
+  color: rgb(109, 109, 109);
+  font-size: 10pt;
+  margin-top: 10px;
+}
+
+.bottom-line a {
+  padding: 12px;
 }

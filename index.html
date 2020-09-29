@@ -41,26 +41,27 @@
     <section class="right-content">
       <h1 class="title-form">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form onsubmit="return false">
+      <form action="#" method="POST" onsubmit="return false">
         <fieldset class="form-register">
 
           <div class="conteiner-open">
-            <input class="input-register" name="firstname" placeholder="Nome" type="text">
-            <input class="input-register second-brother" name="lastname" placeholder="Sobrenome" type="text">
+            <input required class="input-register" name="firstname" placeholder="Nome" type="text">
+            <input required class="input-register second-brother" name="lastname" placeholder="Sobrenome" type="text">
           </div>
 
-          <input class="input-register input-large" name="phone_email" placeholder="Celular ou email" type="text">
-          <input class="input-register input-large" name="password" placeholder="Nova senha" type="password">
+          <input required class="input-register input-large" name="phone_email" placeholder="Celular ou email"
+            type="text">
+          <input required class="input-register input-large" name="password" placeholder="Nova senha" type="password">
 
           <label class="label-input" id="label-birthdate" for="birthdate">Data de nascimento</label>
           <div class="conteiner-birthdate">
-            <input class="input-register input-date" name="birthdate" placeholder="dd/mm/aaaa" type="date">
+            <input required class="input-register input-date" name="birthdate" placeholder="dd/mm/aaaa" type="date">
             <span id="span" class="material-icons interrogation">help</span>
           </div>
 
           <label class="label-input" id="label-gender" for="gender">Gênero</label>
           <div class="conteiner-radio">
-            <input id="Female" name="gender" value="Feminino" type="radio">
+            <input required id="Female" name="gender" value="Feminino" type="radio">
             <label for="Female">Feminino</label>
             <input name="gender" value="Masculino" type="radio" id="Male">
             <label for="Male">Masculino</label>

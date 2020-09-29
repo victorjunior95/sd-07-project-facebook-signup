@@ -8,6 +8,7 @@ body , header , img , form , p , label , input , section , fieldset , main , div
 header {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  border-bottom: 1px solid rgb(80, 80, 80);
   display: flex;
   justify-content: center;
 }

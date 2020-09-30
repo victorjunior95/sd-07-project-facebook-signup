@@ -31,6 +31,7 @@ function validarNovoUsuario() {
     values.forEach((element) => {
       if (element === null || element === '') {
         alert('Campos inválidos');
+        exit;
       }
     });
   });

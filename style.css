@@ -1,34 +1,11 @@
-.facebook-login {
-  display: flex;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.form-control {
-  align-self: flex-end;
-}
-
-.form-name {
-  display: flex;
-  flex-direction: row;
-}
-
-.form-group {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group input {
-  width: 100%;
-}
-
-.form-group-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.form-group-row input {
-  width: 50%;
+header {
+  margin: 0;
+  padding: 0;
 }
 
 .left-content {
@@ -40,10 +17,6 @@
   justify-content: space-between;
 }
 
-.form-name input {
-  width: 50%;
-}
-
 .right-content {
   width: 300px;
 }
@@ -52,4 +25,41 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-topbar {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.form-control button {
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group-row input {
+  width: 50%;
 }

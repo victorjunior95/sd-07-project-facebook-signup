@@ -27,7 +27,7 @@ function getGender() {
 }
 
 const btnCadastro = document.getElementById('facebook-register');
-btnCadastro.addEventListener('click', function() {
+btnCadastro.addEventListener('click', function () {
   event.preventDefault();
 
   const pessoa = {
@@ -36,7 +36,7 @@ btnCadastro.addEventListener('click', function() {
     inputPhoneEmail: inputPhoneEmail.value,
     inputPassword: inputPassword.value,
     inputDataNascimento: inputDataNascimento.value,
-    gender: getGender()
+    gender: getGender(),
   };
   if (
     pessoa.inputFirstname === '' ||
@@ -48,7 +48,7 @@ btnCadastro.addEventListener('click', function() {
     campoInvalido.innerHTML = 'Campos inválidos';
   } else {
     document.querySelector(
-      '.right-content'
+      '.right-content',
     ).innerHTML = `<p>Olá, ${pessoa.inputFirstname} ${pessoa.inputLastname}</p>
     <p>${pessoa.inputPhoneEmail}</p>
     <p>${pessoa.inputDataNascimento}</p>
@@ -56,7 +56,7 @@ btnCadastro.addEventListener('click', function() {
   }
 });
 
-radioPersonalizado.addEventListener('click', function() {
+radioPersonalizado.addEventListener('click', function () {
   const ElementInput = document.createElement('input');
   ElementInput.setAttribute('name', 'gender-custom');
   ElementInput.setAttribute('placeholder', 'Gênero (opcional)');

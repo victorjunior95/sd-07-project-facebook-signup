@@ -18,9 +18,6 @@ function returnGender(obj) {
   } else if (obj[1].checked) {
     return ('Masculino');
   }
-
-  // return (document.getElementsByName('gender-custom')[0].value);
-
   return ('Personalizado');
 }
 
@@ -33,7 +30,6 @@ function printData() {
   const birthdate = document.getElementsByName('birthdate')[0].value;
   const gender = document.getElementsByName('gender');
   const genderSelected = returnGender(gender);
-
   rightContent.innerHTML = '';
 
   rightContent.appendChild(createTag('h1', `Olá, ${firstName} ${lastName}`, 'open-account'));
@@ -44,10 +40,10 @@ function printData() {
   rightContent.appendChild(createTag('label', 'Sobrenome:', 'label-input'));
   rightContent.appendChild(createTag('label', lastName, 'input-style input-size'));
 
-  rightContent.appendChild(createTag('label', 'Celular ou email:', 'label-input'));
+  rightContent.appendChild(createTag('label', 'Celular ou e-mail:', 'label-input'));
   rightContent.appendChild(createTag('label', phoneEmail, 'input-style input-size'));
 
-  rightContent.appendChild(createTag('label', 'Data de nascimento:', 'label-input'));
+  rightContent.appendChild(createTag('label', 'Data de Nascimento:', 'label-input'));
   rightContent.appendChild(createTag('label', birthdate, 'input-style input-size'));
 
   rightContent.appendChild(createTag('label', 'Gênero:', 'label-input'));
@@ -95,7 +91,6 @@ btnSubmit.addEventListener('click', function (event) {
     printData();
   }
 });
-
 
 const radioFemale = document.getElementById('female');
 const radioMale = document.getElementById('male');

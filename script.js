@@ -17,6 +17,7 @@ buttonSignUp.addEventListener('click', (e) => {
       counterEmptyField += 1;
     }
   });
+
   if (counterEmptyField > 2) {
     const p = document.createElement('p');
     document.querySelector('#sign-up-form')
@@ -28,7 +29,9 @@ selectOtherGender.addEventListener('click', () => {
   const divGender = document.querySelector('#other-gender');
   const inputGender = document.createElement('input');
 
-  divGender.appendChild(inputGender);
-  inputGender.setAttribute('name', 'gender-custom');
-  inputGender.setAttribute('placeholder', 'Gênero (opcional)');
+  if (!divGender.firstChild) {
+    divGender.appendChild(inputGender);
+    inputGender.setAttribute('name', 'gender-custom');
+    inputGender.setAttribute('placeholder', 'Gênero (opcional)');
+  }
 });

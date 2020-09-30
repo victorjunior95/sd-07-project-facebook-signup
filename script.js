@@ -28,7 +28,7 @@ function getGender() {
 
 const btnCadastro = document.getElementById('facebook-register');
 btnCadastro.addEventListener('click', function () {
-  event.preventDefault();
+  Event.preventDefault();
 
   const pessoa = {
     inputFirstname: inputFirstname.value,

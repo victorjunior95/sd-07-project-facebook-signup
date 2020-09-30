@@ -8,7 +8,7 @@ radioButton.addEventListener('click', function () {
     radioButton.classList.add('selected');
     radioButton1.classList.remove('selected');
     radioButton2.classList.remove('selected');
-    document.querySelector('.gender-selceted').removeChild(document.querySelector('.optional'));
+    document.querySelector('.gender-selected').removeChild(document.querySelector('.optional'));
   } else {
     radioButton.classList.add('selected');
   }

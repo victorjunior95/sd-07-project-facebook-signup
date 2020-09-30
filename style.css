@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.custom-input {
+  width: 100%;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,8 @@ body {
 
 .gender {
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 .top-bar {

@@ -25,11 +25,12 @@ function validarNovoUsuario() {
     values.forEach((element) => {
       if (element === null || element === '') {
         alert('Campos inválidos');
-        exit;
+        break;
       }
     });
   });
 }
+
 function adicionarCampoGender() {
   genderPersonalizado.addEventListener('click', function () {
     campoPGender = document.querySelector('#personalizadoG');

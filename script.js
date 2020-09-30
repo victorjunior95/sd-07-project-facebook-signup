@@ -1,7 +1,5 @@
 const login = document.getElementById('button-login');
-login.addEventListener('click', () => {
-  return alert(`${document.getElementById('user-email-phone').value}`);
-});
+login.addEventListener('click', () => alert(`${document.getElementById('user-email-phone').value}`));
 const buttonSubmit = document.querySelector('#facebook-register');
 function checkRadioButton() {
   const gender = document.querySelectorAll('.selected-radio');
@@ -29,7 +27,9 @@ function submit(e) {
   const lastName = document.querySelector('#lastname').value;
   const phoneOrEmail = document.querySelector('#email-or-phone').value;
   const birth = document.querySelector('#birth').value;
-  return document.querySelector('.right-content').innerHTML = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
+  return rightContent;
 }
 buttonSubmit.addEventListener('click', submit);
 const genderSelect = document.getElementById('custom');

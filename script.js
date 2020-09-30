@@ -19,7 +19,6 @@ genderCustom.addEventListener('click', () => {
 
 subimitButton.addEventListener('click', function (event) {
   event.preventDefault();
-  // const rightForm = document.querySelector('.open-account');
   const rightContent = document.querySelector('.right-content');
   const rightErrorMessage = document.querySelector('#error');
   const imputedValues = document.querySelectorAll('.verifica');

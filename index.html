@@ -41,10 +41,10 @@
           />
           <p class="paragraph">Esqueceu a conta?</p>
         </div>
-        <div class="form-control">
-          <label for="button-login">entrar</label>
-          <button id="button-login" class="form-control btn btn-primary">Entrar</button>
-          <label for="button-login">entrar</label>
+        <div class="form-control control-form">
+          <button id="button-login" class="form-control btn btn-primary">
+            Entrar
+          </button>
         </div>
       </form>
     </header>
@@ -60,21 +60,23 @@
         <h1>Abra uma conta</h1>
         <span class="form-text quick-easy">É rápido e fácil.</span>
         <form class="open-account">
-          <div class="form-inline">
-            <input
-              class="form-control col-md-6 form-inline verifica"
-              type="text"
-              name="firstname"
-              placeholder="Nome"
-              data-validate-field="firstname"
-            />
-            <input
-              class="form-control col-md-6 form-inline verifica"
-              type="text"
-              name="lastname"
-              placeholder="Sobrenome"
-              data-validate-fiel="lastname"
-            />
+          <div class="form-group">
+            <div class="form-inline">
+                <input
+                class="form-control col-md-6 verifica"
+                type="text"
+                name="firstname"
+                placeholder="Nome"
+                data-validate-field="firstname"
+                />
+                <input
+                class="form-control col-md-6 verifica"
+                type="text"
+                name="lastname"
+                placeholder="Sobrenome"
+                data-validate-fiel="lastname"
+                />
+            </div>
           </div>
           <div>
             <div class="form-group">
@@ -146,8 +148,8 @@
             >
               Cadastre-se
             </button>
+            <div id="error"></div>
           </div>
-          <div id="error"></div>
         </form>
       </div>
     </section>

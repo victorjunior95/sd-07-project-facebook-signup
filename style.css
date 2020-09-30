@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(220, 220, 230);
+}
+
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -8,18 +12,12 @@
 .facebook-login {
   display: flex;
   margin-left: auto;
-
-  /* padding: 1%; */
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
 }
-
-/* .input {
-  margin: 5px;
-} */
 
 label {
   padding-right: 6px;
@@ -39,13 +37,12 @@ label {
   display: flex;
 }
 
-.facebook-login div.form-control {
-  width: auto;
+.control-form {
   background-color: rgb(66, 103, 178);
   border: none;
-  border-radius: none;
+  border-radius: 0;
   color: rgb(66, 103, 178);
-  flex-direction: column-reverse;
+  width: auto;
 }
 
 .main-content {
@@ -54,6 +51,7 @@ label {
 }
 
 .left-content {
+  text-align: center;
   width: 800px;
 }
 
@@ -63,4 +61,5 @@ label {
 
 .alert {
   color: red;
+  text-align: center;
 }

@@ -40,9 +40,9 @@ function returnMsg(nome, email, dataNascimento, gender) {
   rightContent.appendChild(p);
 }
 
-function preventDefault() {
+// function preventDefault(event) {
 
-}
+// }
 
 let nome;
 let email;
@@ -50,7 +50,7 @@ let dataNascimento;
 let gender;
 
 const buttonFacebookRegister = document.querySelector('#facebook-register');
-buttonFacebookRegister.addEventListener('click', () => {
+buttonFacebookRegister.addEventListener('click', (event) => {
   const form = document.forms.myForm1;
   const input = document.querySelectorAll('input');
   let check = false;
@@ -62,13 +62,11 @@ buttonFacebookRegister.addEventListener('click', () => {
     }
   });
   if (check === false) {
-    preventDefault();
+    event.preventDefault();
     nome = `${form[0].value} ${form[1].value}`;
     email = `${form[2].value}`;
     gender = document.querySelector('input[name="gender"]:checked').value;
     if (gender === 'Personalizado') {
-      dataNascimento = `${form[5].value}`;
-    } else {
       dataNascimento = `${form[4].value}`;
     }
     cleanRightContentDiv();

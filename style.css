@@ -35,7 +35,6 @@ h2 {
 .facebook-login {
   color: white;
   display: flex;
-  margin-right: 10px;
 }
 
 .form-group {
@@ -335,7 +334,7 @@ span {
 
 @media screen and ( min-width : 680px ) {
 
-  .facebook-login2 {
+  .facebook-login-mobile {
     display: none;
   }
 

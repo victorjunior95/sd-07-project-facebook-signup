@@ -1,14 +1,14 @@
 document.getElementById('button-login').addEventListener('click', function () {
-  alert('Email ou telefone');
+  alert(document.getElementById('user-email-phone').value);
 });
 
 document.getElementById('button-login2').addEventListener('click', function () {
-  alert('Email ou telefone');
+  alert(document.getElementById('user-email-phone2').value);
 });
 
 document.getElementById('facebook-create').addEventListener('click', function () {
   const showRightContent2 = document.querySelector('.main-content2');
-  const deleteContent = document.querySelector('.facebook-login2');
+  const deleteContent = document.querySelector('.facebook-login-mobile');
   const btn = document.getElementById('facebook-create');
   showRightContent2.className = 'display: unset';
   deleteContent.className += ' hidden';
@@ -33,7 +33,7 @@ for (let i = 0; i < inputsRadios.length; i += 1) {
 for (let i = 0; i < inputsRadios2.length; i += 1) {
   inputsRadios2[i].addEventListener('click', function () {
     inputGenderCustom2.value = document.querySelector('input:checked').value;
-    if (inputGenderCustom2.value === 'Personalizado') {
+    if (inputGenderCustom2.value === 'custom') {
       inputGenderCustom2.classList.toggle('hidden');
       inputGenderCustom2.value = '';
     }

@@ -10,7 +10,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
     />
-  </head> 
+  </head>
   <body>
     <header class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" />
@@ -45,8 +45,18 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form>
           <div class="name-form">
-            <input type="text" name="firstname" placeholder="Nome" id="firstName"/>
-            <input type="text" name="lastname" placeholder="Sobrenome" id="lastName" />
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Nome"
+              id="firstName"
+            />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              id="lastName"
+            />
           </div>
           <input
             type="text"
@@ -61,7 +71,9 @@
             id="password"
           />
           <div class="birth-form">
-            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <label for="birthdate" id="label-birthdate"
+              >Data de nascimento</label
+            >
             <input
               type="text"
               id="birthdate"
@@ -71,13 +83,24 @@
           </div>
           <label id="label-gender">Gênero</label>
           <div class="gender-group">
-            <input type="radio" id="female" name="gender" value="Feminino"/>
+            <input type="radio" id="female" name="gender" value="Feminino" />
             <label for="female">Feminino</label>
-            <input type="radio" id="male" name="gender" value="Masculino"/>
+            <input type="radio" id="male" name="gender" value="Masculino" />
             <label for="male">Masculino</label>
-            <input type="radio" id="other" name="gender" value="Personalizado"/>
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="Personalizado"
+            />
             <label for="other">Personalizado</label>
-            <input type="text" name="gender-custom" id="otherGender" placeholder="Gênero (opcional)" class="gender-text">
+            <input
+              type="text"
+              name="gender-custom"
+              id="otherGender"
+              placeholder="Gênero (opcional)"
+              class="gender-text"
+            />
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
           <p id="errorMessage"></p>

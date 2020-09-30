@@ -15,9 +15,9 @@ body {
 .facebook-login {
   color: white;
   display: flex;
+  float: right;
   font-size: 13px;
   font-weight: 600;
-  float: right;
 }
 
 .image {
@@ -29,8 +29,8 @@ body {
 .form-login {
   align-items: center;
   display: flex;
-  justify-content: center;
   flex-flow: column;
+  justify-content: center;
 }
 
 .form-group {
@@ -41,11 +41,11 @@ body {
 
 .form-group a {
   color: #98b1d6;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 600;
   margin-top: 5px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .form-control {
@@ -56,14 +56,14 @@ body {
   background-color: rgb(101, 132, 196);
   border: 1px solid rgb(71, 94, 139);
   color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 12px;
-  padding: 2px 6px;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 6px;
+  text-align: center;
 }
 
-.button-login:hover{
+.button-login:hover {
   background-color: #365899;
   border-color: #29487d;
 }

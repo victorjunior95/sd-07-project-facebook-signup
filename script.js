@@ -86,7 +86,7 @@ radioButton2.addEventListener('click', function () {
   const optional = document.querySelector('.optional');
   if (optional) {
     customOption.name = 'gender';
-  } else if (document.querySelector('.personalizado').classList.contains('selected')) {
+  } else if (document.querySelector('#custom').classList.contains('selected')) {
     document.querySelector('.gender-selected').appendChild(customOption);
   }
 });

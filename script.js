@@ -7,7 +7,8 @@ buttonLogin.addEventListener('click', function () {
   login.innerHTML = '';
 });
 
-buttonSignUp.addEventListener('click', () => {
+buttonSignUp.addEventListener('click', (e) => {
+  e.preventDefault();
   let counterEmptyField = 0;
   const formControl = document.querySelectorAll('#sign-up-form input');
   formControl.forEach(function (form) {
@@ -16,6 +17,8 @@ buttonSignUp.addEventListener('click', () => {
     }
   });
   if (counterEmptyField > 2) {
-    alert('Campos inválidos');
+    const p = document.createElement('p');
+    document.querySelector('#sign-up-form')
+    .appendChild(p).innerText = 'Campos inválidos';
   }
 });

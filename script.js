@@ -14,9 +14,6 @@ const radioMasculino = document.getElementById('male');
 const radioPersonalizado = document.getElementById('other');
 const campoInvalido = document.getElementById('campo-invalido');
 const ContainerPersonalizado = document.getElementById('container-personalizado');
-
-
-
 function getGender() {
   let gender = '';
   if (radioFeminino.checked) {
@@ -64,5 +61,5 @@ radioPersonalizado.addEventListener('click', function () {
   const ElementInput = document.createElement('input');
   ElementInput.setAttribute('name', 'gender-custom');
   ElementInput.setAttribute('placeholder', 'Gênero (opcional)');
-  ContainerPersonalizado.appendChild(input);
+  ContainerPersonalizado.appendChild(ElementInput);
 });

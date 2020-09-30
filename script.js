@@ -1,5 +1,6 @@
 const buttonLogin = document.querySelector('button');
 const buttonSignUp = document.getElementById('facebook-register');
+const selectOtherGender = document.querySelector('#other');
 
 buttonLogin.addEventListener('click', function () {
   const login = document.querySelector('input');
@@ -18,4 +19,13 @@ buttonSignUp.addEventListener('click', () => {
   if (counterEmptyField > 2) {
     alert('Campos inválidos');
   }
+});
+
+selectOtherGender.addEventListener('click', () => {
+  const divGender = document.querySelector('#other-gender');
+  const inputGender = document.createElement('input');
+
+  divGender.appendChild(inputGender);
+  inputGender.setAttribute('name', 'gender-custom');
+  inputGender.setAttribute('placeholder', 'Gênero (opcional)');
 });

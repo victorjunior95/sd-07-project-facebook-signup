@@ -28,7 +28,9 @@ function submit(e) {
   const phoneOrEmail = document.querySelector('#email-or-phone').value;
   const birth = document.querySelector('#birth').value;
   const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
+  const welcome = document.createElement('p');
+  welcome.innerText = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
+  rightContent.innerHTML = welcome;
   return rightContent;
 }
 buttonSubmit.addEventListener('click', submit);

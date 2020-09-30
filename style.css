@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: #3f61a5;
 }
 
 .aditional-data label , .radio {

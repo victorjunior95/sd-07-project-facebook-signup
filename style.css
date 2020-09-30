@@ -68,3 +68,7 @@ input {
   display: flex;
   flex-wrap: wrap;
 }
+
+.user-email-phone-label , .user-password-label {
+  margin-left: 10px;
+}

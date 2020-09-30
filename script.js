@@ -1,8 +1,3 @@
-const button = document.getElementById('button-login');
-button.addEventListener('click', function () {
-  alert('Email ou telefone');
-});
-
 const buttonAntigo = document.querySelector('#button-login');
 const buttonNovo = document.querySelector('#facebook-register');
 const genderContainer = document.querySelector('#gender-container');
@@ -27,19 +22,10 @@ function validarNovoUsuario() {
     listaForm.genero = document.querySelector('[type=radio]:checked');
     listaForm.dataNasc = document.getElementById('birthdate').value;
     const values = Object.values(listaForm);
-    function exit(){
-      return false;
-    };
     values.forEach((element) => {
       if (element === null || element === '') {
         alert('Campos inválidos');
-        exit();
-        listaForm.firstName = '';
-        listaForm.lastName = '';
-        listaForm.phone_email = '';
-        listaForm.password = '';
-        listaForm.genero = '';
-        listaForm.dataNasc = '';
+        exit;
       }
     });
   });

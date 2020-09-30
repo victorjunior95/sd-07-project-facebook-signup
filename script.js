@@ -5,27 +5,49 @@ btButtonLogin.addEventListener('click', function () {
   alert(inpUserEmailPhone.value);
 });
 
+function createTag(tag, text, nameClass) {
+  const obj = document.createElement(tag);
+  obj.innerText = text;
+  obj.className = nameClass;
+  return obj;
+}
+
+function returnGender(obj) {
+  if (obj[0].checked) {
+    return 'Feminino';
+  } else if (obj[1].checked) {
+    return 'Masculino';
+  }
+  return 'Personalizado';
+}
+
 function printData() {
   const rightContent = document.getElementsByClassName('right-content')[0];
+
+  const firstName = document.getElementsByName('firstname')[0].value;
+  const lastName = document.getElementsByName('lastname')[0].value;
+  const phoneEmail = document.getElementsByName('phone_email')[0].value;
+  const birthdate = document.getElementsByName('birthdate')[0].value;
+  const gender = document.getElementsByName('gender');
+  const genderSelected = returnGender(gender);
   rightContent.innerHTML = '';
-  const h1 = document.createElement('h1');
-  h1.innerText = 'Dados do usuário';
-  h1.className = 'open-account'
-  rightContent.appendChild(h1);
-  const nameData = document.createElement('label');
-  const nameLabel = document.createElement('label');
-  nameLabel.innerText = 'Nome:';
-  nameLabel.className = 'label-input';
-  nameData.innerText = 'CARMO';
-  nameData.className = 'input-style input-size';
-  rightContent.appendChild(nameLabel);
-  rightContent.appendChild(nameData);
-  // const sobrenome
-  // const email
-  // const nascimento
-  // const genero 
 
+  rightContent.appendChild(createTag('h1', `Olá, ${firstName} ${lastName}`, 'open-account'));
 
+  rightContent.appendChild(createTag('label', 'Nome:', 'label-input'));
+  rightContent.appendChild(createTag('label', firstName, 'input-style input-size'));
+
+  rightContent.appendChild(createTag('label', 'Sobrenome:', 'label-input'));
+  rightContent.appendChild(createTag('label', lastName, 'input-style input-size'));
+
+  rightContent.appendChild(createTag('label', 'Celular ou e-mail:', 'label-input'));
+  rightContent.appendChild(createTag('label', phoneEmail, 'input-style input-size'));
+
+  rightContent.appendChild(createTag('label', 'Data de Nascimento:', 'label-input'));
+  rightContent.appendChild(createTag('label', birthdate, 'input-style input-size'));
+
+  rightContent.appendChild(createTag('label', 'Gênero:', 'label-input'));
+  rightContent.appendChild(createTag('label', genderSelected, 'input-style input-size'));
 }
 
 const btnSubmit = document.getElementById('facebook-register');
@@ -65,10 +87,10 @@ btnSubmit.addEventListener('click', function (event) {
 
   if (innerIf) {
     pMensageInvalid.innerText = 'Campos inválidos';
+  } else {
+    printData();
   }
-  printData();
 });
-
 
 const radioFemale = document.getElementById('female');
 const radioMale = document.getElementById('male');
@@ -93,4 +115,3 @@ radioPerson.addEventListener('change', function () {
     addDivPerson.appendChild(inputRadio);
   }
 });
-

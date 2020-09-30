@@ -15,19 +15,6 @@ buttonRegister.addEventListener('click', function (event) {
       const form = document.getElementById('form2');
       form.innerHTML = 'Campos inválidos';
     }
-    // } else {
-    const name = document.getElementById('firstname').value;
-    const lastName = document.getElementById('lastname').value;
-    const fullName = `${name} ${lastName}`;
-    const email = document.getElementById('phone_email').value;
-    const birthDate = document.getElementById('birthdate').value;
-    const gender = document.querySelectorAll('input .gender').value;
-    const rightContent = document.getElementById('right-content');
-    rightContent.innerHTML = `Olá, ${fullName}.
-    Seu email é ${email}.
-    Sua data de nascimento é ${birthDate}.
-    Seu gênero é ${gender}`;
-    // }
   }
 });
 

@@ -14,7 +14,7 @@ const radioMasculino = document.getElementById('male');
 const radioPersonalizado = document.getElementById('other');
 const campoInvalido = document.getElementById('campo-invalido');
 const ContainerPersonalizado = document.getElementById('container-personalizado');
-const inputOther = document.getElementById('other');
+
 
 
 function getGender() {
@@ -60,9 +60,9 @@ btnCadastro.addEventListener('click', function () {
   }
 });
 
-inputOther.addEventListener('click', function () {
-  const input = document.createElement('input');
-  input.setAttribute('name', 'gender-custom');
-  input.setAttribute('placeholder', 'Gênero (opcional)');
+radioPersonalizado.addEventListener('click', function () {
+  const ElementInput = document.createElement('input');
+  ElementInput.setAttribute('name', 'gender-custom');
+  ElementInput.setAttribute('placeholder', 'Gênero (opcional)');
   ContainerPersonalizado.appendChild(input);
 });

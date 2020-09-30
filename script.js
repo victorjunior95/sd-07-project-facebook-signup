@@ -49,7 +49,7 @@ const validateForm = () => {
     ${genderChoose.value}`;
   } else {
     errorMessage.innerText = 'Campos inválidos';
-  }
+  } 
 };
 
 window.onload = function () {

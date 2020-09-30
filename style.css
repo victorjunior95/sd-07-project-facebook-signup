@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
+   
   .name-form input {
     width: 50%;
   }

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Facebook</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
 </head>
+
 <body>
     <header class="top-bar">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook ">
         <form class='facebook-login'>
             <div class="form-group">
                 <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-                <input type="text" id="user-email-phone" name="Name"/>
+                <input type="text" id="user-email-phone" name="Name" />
             </div>
             <div class="form-group">
                 <label id="user-password-label" for="user-password">Senha</label>
-                <input type="password" id="user-password"/>
+                <input type="password" id="user-password" />
             </div>
             <div class="form-control">
                 <button id="button-login" class="login-button">Entrar</button>
@@ -31,34 +33,34 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-        <form>
-            <div class="dados-content">
-                <div class="name-content">
-                    <input class="first-Name input-camp" type="text" name="firstname" placeholder="Nome">
-                    <input class="last-Name input-camp" type="text" name="lastname" placeholder="Sobrenome">
+            <form>
+                <div class="dados-content">
+                    <div class="name-content">
+                        <input class="first-Name input-camp" type="text" name="firstname" placeholder="Nome">
+                        <input class="last-Name input-camp" type="text" name="lastname" placeholder="Sobrenome">
+                    </div>
+                    <div class="login-content">
+                        <input class="phone-email input-camp" type="text" name="phone_email" placeholder="Celular ou email">
+                        <input class="input-password input-camp" type="password" name="password" placeholder="Nova senha">
+                    </div>
                 </div>
-                <div class="login-content">
-                    <input class="phone-email input-camp" type="text" name="phone_email" placeholder="Celular ou email">
-                    <input class="input-password input-camp" type="password" name="password" placeholder="Nova senha">
+                <div class="birthdate-content">
+                    <label id="label-birthdate">Data de nascimento</label>
+                    <input class="input-camp" type="text" name="birthdate" placeholder="dd/mm/aaaa" />
                 </div>
-            </div>
-            <div class="birthdate-content">
-              <label id="label-birthdate">Data de nascimento</label>
-              <input class="input-camp" type="text" name="birthdate" placeholder="dd/mm/aaaa" />
-            </div>
-            <div class="gender-content">
-              <label class="gender-label" id="label-gender">Gênero</label><br>
-              <input class="option" type="radio" name="genero" value="female" id="female">
-              <label for="female">Feminino</label>
-              <input class="option" type="radio" name="genero" value="male" id="male">
-              <label for="male">Masculino</label>
-              <input class="option" type="radio" name="genero" value="custom" id="custom">
-              <label for="custom">Personalizado</label>
-            </div>
-            <div class="button-content">
-              <button class="register-button" type="submit" id="facebook-register">Cadastre-se</button>
-            </div>
-          </form>
+                <div class="gender-content">
+                    <label class="gender-label" id="label-gender">Gênero</label><br>
+                    <input class="option" type="radio" name="genero" value="female" id="female">
+                    <label for="female">Feminino</label>
+                    <input class="option" type="radio" name="genero" value="male" id="male">
+                    <label for="male">Masculino</label>
+                    <input class="option" type="radio" name="genero" value="custom" id="custom">
+                    <label for="custom">Personalizado</label>
+                </div>
+                <div class="button-content">
+                    <button class="register-button" type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+            </form>
         </div>
     </section>
     <script src="script.js"></script>
@@ -66,7 +68,7 @@
 
 <footer>
     <div class="credits">
-        <p>Projeto realizado por Elano & Emerson</p>
+        <p>Projeto realizado por Elano & Emerson | TRYBE 2020</p>
     </div>
 </footer>
 

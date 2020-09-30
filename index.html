@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook Lucas e Matheus</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="top-bar">
@@ -15,17 +19,26 @@
       />
       <form class="facebook-login">
         <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone"
+          <label
+            class="login-label"
+            id="user-email-phone-label"
+            for="user-email-phone"
             >Email ou telefone</label
           >
-          <input type="text" id="user-email-phone" />
+          <input type="text" class="login-input" id="user-email-phone" />
         </div>
         <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <input id="user-password" type="text" />
+          <label
+            class="login-label"
+            id="user-password-label"
+            for="user-password"
+            >Senha</label
+          >
+          <input class="login-input" id="user-password" type="text" />
         </div>
         <div class="form-control">
-          <button id="button-login">Entrar</button>
+          <button
+          class="login-button" id="button-login">Entrar</button>
         </div>
       </form>
     </header>
@@ -84,7 +97,7 @@
             <label id="label-gender" for="">Gênero</label>
             <br />
             <input
-              class="form-input"
+              class="form-input-radio"
               id="feminino"
               type="radio"
               name="gender"
@@ -92,7 +105,7 @@
             />
             <label for="Feminino">Feminino</label>
             <input
-              class="form-input"
+              class="form-input-radio"
               id="masculino"
               type="radio"
               name="gender"
@@ -100,7 +113,7 @@
             />
             <label for="Masculino">Masculino</label>
             <input
-              class="form-input"
+              class="form-input-radio"
               id="personalizado"
               type="radio"
               name="gender"

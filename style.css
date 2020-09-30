@@ -8,13 +8,57 @@ body {
   justify-content: space-between;
 }
 
+.facebook-logo{
+  height: 44px;
+  margin-top: 9px;
+  width: 117px;
+}
+
 .facebook-login {
   display: flex;
+  margin-right: 292px;
+  width: 230px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-label {
+  color: white;
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px;
+  margin: 12px 12px 4px;
+}
+
+.login-input {
+  border: 1px solid #1b274f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 26px;
+  margin: 0 12px 8px;
+  width: 200px;
+}
+
+.login-button {
+  background: #3a5ea6;
+  border: 1px solid #254170;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  height: 30;
+  line-height: 9px;
+  margin-bottom: 8px;
+  padding: 6px 11px 5px;
+  width: 60px;
 }
 
 .form-control {

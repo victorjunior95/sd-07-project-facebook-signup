@@ -13,7 +13,7 @@ const radioFeminino = document.getElementById('female');
 const radioMasculino = document.getElementById('male');
 const radioPersonalizado = document.getElementById('other');
 const campoInvalido = document.getElementById('campo-invalido');
-const ContainerPersonalizado = document.getElementById('container-personalizado');
+const ContainerPersonalizado = document.querySelector('#container-personalizado');
 function getGender() {
   let gender = '';
   if (radioFeminino.checked) {

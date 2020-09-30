@@ -27,11 +27,19 @@ function validarNovoUsuario() {
     listaForm.genero = document.querySelector('[type=radio]:checked');
     listaForm.dataNasc = document.getElementById('birthdate').value;
     const values = Object.values(listaForm);
+    function exit () {
 
+    };
     values.forEach((element) => {
       if (element === null || element === '') {
         alert('Campos inválidos');
-        exit();
+        exit;
+        listaForm.firstName = '';
+        listaForm.lastName = '';
+        listaForm.phone_email = '';
+        listaForm.password = '';
+        listaForm.genero = '';
+        listaForm.dataNasc = '';
       }
     });
   });

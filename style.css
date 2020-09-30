@@ -8,6 +8,10 @@ a {
   flex-direction: column;
 }
 
+.facebook-login {
+  display: flex;
+}
+
 .form-control {
   align-self: flex-end;
   background-color: rgb(66, 103, 178);
@@ -16,16 +20,13 @@ a {
 }
 
 .form-group {
-  align-items: baseline;
   border: 1px solid black;
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 10px;
   width: 450px;
-}
-
-.form-group input {
-  border: 1.5px solid black;
 }
 
 .fullName {

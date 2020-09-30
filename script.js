@@ -48,19 +48,33 @@ radioButton2.addEventListener('click', function () {
 });
 
 const checks = document.querySelectorAll('.check');
+const erro = document.createElement('p');
+erro.innerText = 'Campos inválidos';
+erro.className = 'invalid';
 function required(event) {
   event.preventDefault();
-  const erro = document.createElement('p');
-  erro.innerText = 'Campos inválidos';
-  erro.className = 'invalid';
+
   const selected = document.querySelector('.selected');
+
   const invalid = document.querySelector('.invalid');
   for (let index = 0; index < checks.length; index += 1) {
     if (invalid) {
-      checks[index].value = check[index].value;
+      erro.innerText = 'Campos inválidos';
     } else if (checks[index].value === '' || !selected) {
       document.querySelector('.form-register').appendChild(erro);
     }
+  }
+}
+
+function hello() {
+  const selected = document.querySelector('.selected');
+  const conteiner = document.querySelector('.right-content');
+  const name = document.querySelector('.name-register');
+  const lastName = document.querySelector('.last-name');
+  const email = document.querySelector('.email');
+  const birth = document.querySelector('.birth-date');
+  if (name.value !== '' && lastName.value !== '' && email.value !== '' && birth.value !== '' && selected) {
+    conteiner.innerHTML = `<h3>Olá,${name.value} ${lastName.value}<br>Email:${email.value}<br>Date de nascimento:${birth.value}<br>Genêro:${selected.value} </h3>`;
   }
 }
 radioButton2.addEventListener('click', function () {
@@ -73,10 +87,12 @@ radioButton2.addEventListener('click', function () {
   if (optional) {
     customOption.name = 'gender';
   } else if (document.querySelector('.personalizado').classList.contains('selected')) {
-    document.querySelector('.gender-selceted').appendChild(customOption);
+    document.querySelector('.gender-selected').appendChild(customOption);
   }
 });
 document.querySelector('#facebook-register').addEventListener('click', required);
+document.querySelector('#facebook-register').addEventListener('click', hello);
+
 
 document.getElementById('button-login').addEventListener('click', function () {
   const emailValue = document.querySelector('#user-email-phone').value;

@@ -36,19 +36,15 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form class="form-register">
                 <div class="name">
-                    <input class='check' type="text" name="firstname" id="" placeholder="Nome"
-                        data-validate-field="name">
-                    <input class='check' type="text" name="lastname" placeholder="Sobrenome"
+                    <input class='check name-register' type="text" name="firstname" id="" placeholder="Nome">
+                    <input class='check last-name' type="text" name="lastname" placeholder="Sobrenome"
                         data-validate-field="last-name">
                 </div>
-                <input class='check' type="text" name="phone_email" placeholder="Celular ou email"
-                    data-validate-field="email">
-                <input class='check' type="password" name="password" id="" placeholder="Nova senha"
-                    data-validate-field="password">
+                <input class='check email' type="text" name="phone_email" placeholder="Celular ou email">
+                <input class='check' type="password" name="password" id="" placeholder="Nova senha">
                 <div class="date">
                     <label id="label-birthdate">Data de nascimento</label>
-                    <input class='check' type="text" placeholder="dd/mm/aaaa" name="birthdate"
-                        data-validate-field="date">
+                    <input class='check birth-date' type="text" placeholder="dd/mm/aaaa" name="birthdate">
                 </div>
                 <div class="gender-container">
                     <label id="label-gender" for="">Gênero</label>
@@ -63,7 +59,7 @@
                             <input type="radio" class="radio-button2 personalizado" name="gender" value="Personalizado">
                             Personalizado</label>
                     </div>
-                    <div class= "gender-selceted"></div>
+                    <div class="gender-selected"></div>
                 </div>
 
                 <button id="facebook-register" type="submit">Cadastre-se</button>

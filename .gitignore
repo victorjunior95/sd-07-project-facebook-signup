@@ -1,1 +1,11 @@
 node_modules/
+cypress.json
+package-lock.json
+package.json
+reporter.json
+cypress/fixtures/example.json
+cypress/integration/project.spec.js
+cypress/plugins/index.js
+cypress/support/commands.js
+cypress/support/index.js
+cypress/reports/mochawesome.json

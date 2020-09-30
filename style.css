@@ -1,6 +1,7 @@
 body , html {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -200,7 +201,9 @@ main {
 }
 
 .input-size {
-  margin-left: 10px;
+  background-color: white;
+  display: block;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -319,8 +322,13 @@ main {
   font-size: 13px;
   font-weight: 700;
   line-height: 16px;
+  margin-bottom: 70px;
   margin-top: 10px;
   padding-top: 15px;
+}
+
+footer {
+  height: 150px;
 }
 
 .countries {
@@ -331,11 +339,9 @@ main {
   font-family: helvetica, arial, sans-serif;
   font-size: 12px;
   list-style-type: none;
-  margin: 20px auto;
+  margin: 20px auto 0;
   padding: 0;
   padding-right: 0;
-
-  /* text-align: -webkit-match-parent; */
   vertical-align: top;
   width: 1150px;
 }
@@ -343,4 +349,96 @@ main {
 .country {
   margin: 0 10px 0 0;
   padding: 0;
+}
+
+.button-plus {
+  background-color: rgb(246, 247, 249);
+  border: 1px solid rgb(206, 208, 212);
+  border-radius: 2px;
+  box-sizing: content-box;
+  color: #4b4f56;
+  cursor: pointer;
+  display: inline-block;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+}
+
+.button-plus:hover {
+  background-color: rgb(233, 235, 238);
+}
+
+.plus-sign {
+  background-image: url('/imgs/icons.png');
+  background-position: -26px -286px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  bottom: 1px;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  vertical-align: middle;
+  width: 12px;
+}
+
+.footer-line {
+  border-bottom: 1px solid rgb(221, 223, 226);
+  font-size: 1px;
+  height: 8px;
+  margin: 0 auto 8px;
+  width: 1150px;
+}
+
+.div-footer-table {
+  margin: 0 auto 20px;
+  width: 1150px;
+}
+
+.footer-table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.tr-footer {
+  margin-bottom: 10px;
+}
+
+.td-footer {
+  padding: 0 13px;
+}
+
+.td-footer:first-child {
+  padding-left: 0;
+}
+
+.information-sign {
+  background-image: url('imgs/icons.png');
+  background-position: -196px -251px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  top: 1px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.div-infortation-sign {
+  padding-right: 0;
+}
+
+.copyright {
+  color: rgb(115, 115, 115);
+  font-size: 11px;
+  margin: 20px auto;
+  width: 1150px;
 }

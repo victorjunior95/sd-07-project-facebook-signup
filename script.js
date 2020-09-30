@@ -16,6 +16,17 @@ buttonRegister.addEventListener('click', function (event) {
       form.innerHTML = 'Campos inválidos';
     }
   }
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const fullName = `${firstName} ${lastName}`;
+  const email = document.getElementById('phone_email').value;
+  const birthDate = document.getElementById('birthdate').value;
+  const gender = document.querySelectorAll('input .gender').value;
+  const rightContent = document.getElementById('right-content');
+  rightContent.innerHTML = `Olá, ${fullName}.
+  Seu email é ${email}.
+  Sua data de nascimento é ${birthDate}.
+  Seu gênero é ${gender}`;
 });
 
 const other = document.getElementById('Personalizado');

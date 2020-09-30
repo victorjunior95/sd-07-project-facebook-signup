@@ -1,5 +1,23 @@
 body {
+  background: linear-gradient(180deg, white 0%, rgb(205, 211, 228) 100%);
   margin: 0;
+}
+
+h1 {
+  color: rgb(16, 50, 83);
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+}
+
+h3 {
+  color: rgb(16, 50, 83);
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
 }
 
 .top-bar {
@@ -74,7 +92,7 @@ body {
 
 .left-content {
   height: 434px;
-  margin: 72px 66px 205px 34px;
+  margin: 72px 66px 205px;
   width: 800px;
 }
 
@@ -94,7 +112,36 @@ body {
 
 .right-content {
   flex-direction: column;
+  margin: 64px 164px;
   width: 300px;
+}
+
+.form-input {
+  background: white;
+  border: 1px solid #b5c0d2;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 32px;
+  margin: 8px;
+  margin-left: 0;
+  width: 382px;
+}
+
+.fullname .form-input {
+  background: white;
+  border: 1px solid rgb(181, 192, 210);
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 32px;
+}
+
+.label {
+  color: #858991;
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 14px;
 }
 
 .fullname {

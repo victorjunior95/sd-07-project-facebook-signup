@@ -1,5 +1,5 @@
 const login = document.getElementById('button-login');
-const genderSelect = document.querySelector('#custom');
+const genderSelect = document.getElementById('custom');
 const buttonSubmit = document.querySelector('#facebook-register');
 
 function checkEmpty(element) {
@@ -54,13 +54,14 @@ login.addEventListener('click', () => {
   alert(`${email}`);
 });
 
-genderSelect.addEventListener('change', () => {
-  const form = document.querySelector('#custom-input');
-  form.innerHTML = '';
-  const text = document.createElement('input');
-  text.setAttribute('name', 'gender-custom');
-  text.placeholder = 'Gênero (opcional)';
-  form.appendChild(text);
+genderSelect.addEventListener('click', () => {
+  if (genderSelect.checked) {
+    const containerCustom = document.getElementById('custom-input');
+    const text = document.createElement('input');
+    text.setAttribute('name', 'gender-custom');
+    text.placeholder = 'Gênero (opcional)';
+    containerCustom.appendChild(text);
+  }
 });
 
 buttonSubmit.addEventListener('click', (e) => {

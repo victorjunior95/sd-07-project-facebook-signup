@@ -8,22 +8,18 @@ a {
   flex-direction: column;
 }
 
-.btn-login {
-  align-self: center;
-}
-
 .form-control {
   align-self: flex-end;
   background-color: rgb(66, 103, 178);
   color: white;
+  display: inline;
 }
 
-.facebook-login {
+.form-group {
   align-items: baseline;
+  border: 1px solid black;
   color: white;
   display: flex;
-  height: auto;
-  justify-content: space-between;
   margin-top: 10px;
   width: 450px;
 }

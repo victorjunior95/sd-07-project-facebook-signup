@@ -113,6 +113,10 @@ body {
   width: 60%;
 }
 
+.right-content p {
+  white-space: nowrap;
+}
+
 .right-content {
   background-color: #f0f2f5;
   color: rgb(66, 103, 178);

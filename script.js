@@ -30,13 +30,14 @@ function submit(e) {
   const rightContent = document.querySelector('.right-content');
   const welcome = document.createElement('p');
   welcome.innerText = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
-  rightContent.innerHTML = welcome;
+  rightContent.appendChild(welcome);
   return rightContent;
 }
 buttonSubmit.addEventListener('click', submit);
 const genderSelect = document.getElementById('custom');
 function addCustom() {
-  if (genderSelect.checked) {
+  const alreadyExists = document.querySelector('#custom-input').children.length > 0 ? false : true;
+  if (genderSelect.checked && alreadyExists) {
     const containerCustom = document.getElementById('custom-input');
     const text = document.createElement('input');
     text.setAttribute('name', 'gender-custom');

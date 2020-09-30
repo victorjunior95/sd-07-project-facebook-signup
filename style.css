@@ -8,19 +8,21 @@ a {
   flex-direction: column;
 }
 
+.btn-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+}
+
 .facebook-login {
+  align-items: baseline;
   display: flex;
 }
 
 .form-control {
   align-self: flex-end;
-  background-color: rgb(66, 103, 178);
-  color: white;
-  display: inline;
 }
 
 .form-group {
-  border: 1px solid black;
   color: white;
   display: flex;
   flex-direction: column;

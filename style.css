@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
 }
 
-.facebook-logo{
+.facebook-logo {
   height: 44px;
   margin-top: 9px;
   width: 117px;
@@ -51,6 +51,7 @@ body {
   border-radius: 2px;
   box-sizing: border-box;
   color: white;
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
   font-size: 9px;
   font-style: normal;
   font-weight: 400;
@@ -72,7 +73,23 @@ body {
 }
 
 .left-content {
+  height: 434px;
+  margin: 72px 66px 205px 34px;
   width: 800px;
+}
+
+.slogan-facebook {
+  color: #103253;
+  font-family: Roboto, Arial Narrow Bold, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  width: 502px;
+}
+
+.networking-facebook {
+  width: 600px;
 }
 
 .right-content {

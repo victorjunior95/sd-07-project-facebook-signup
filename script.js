@@ -30,7 +30,7 @@ function submit(e) {
   const rightContent = document.querySelector('.right-content');
   const welcome = document.createElement('p');
   welcome.innerText = `Olá, ${name} ${lastName} ${gender} ${phoneOrEmail} ${birth}`;
-  rightContent.appendChild(welcome);
+  rightContent.innerHTML = welcome;
   return rightContent;
 }
 buttonSubmit.addEventListener('click', submit);

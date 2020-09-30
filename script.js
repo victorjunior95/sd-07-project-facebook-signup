@@ -1,6 +1,6 @@
-const radioButton = document.querySelector('.radio-button');
-const radioButton1 = document.querySelector('.radio-button1');
-const radioButton2 = document.querySelector('.radio-button2');
+const radioButton = document.querySelector('#female');
+const radioButton1 = document.querySelector('#male');
+const radioButton2 = document.querySelector('#custom');
 
 radioButton.addEventListener('click', function () {
   const selected = document.querySelector('.selected');
@@ -20,7 +20,7 @@ radioButton1.addEventListener('click', function () {
     radioButton1.classList.add('selected');
     radioButton.classList.remove('selected');
     radioButton2.classList.remove('selected');
-    document.querySelector('.gender-selceted').removeChild(document.querySelector('.optional'));
+    document.querySelector('.gender-selected').removeChild(document.querySelector('.optional'));
   } else {
     radioButton1.classList.add('selected');
   }
@@ -74,7 +74,7 @@ function hello() {
   const email = document.querySelector('.email');
   const birth = document.querySelector('.birth-date');
   if (name.value !== '' && lastName.value !== '' && email.value !== '' && birth.value !== '' && selected) {
-    conteiner.innerHTML = `<h3>Olá,${name.value} ${lastName.value}<br>Email:${email.value}<br>Date de nascimento:${birth.value}<br>Genêro:${selected.value} </h3>`;
+    conteiner.innerHTML = `<h3>Olá, ${name.value} ${lastName.value}<br>Email:${email.value}<br>Date de nascimento:${birth.value}<br>Genêro:${selected.value} </h3>`;
   }
 }
 radioButton2.addEventListener('click', function () {

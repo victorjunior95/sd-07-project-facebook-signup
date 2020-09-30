@@ -16,7 +16,7 @@ body {
 .header-info {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100vw;
 }
 
@@ -39,6 +39,8 @@ body {
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .left-content {
@@ -204,5 +206,97 @@ body {
     font-size: small;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media screen and ( min-width : 416px ) {
+
+  .header-info {
+    color: white;
+    font-size: small;
+    font-weight: 900;
+  }
+
+  .header-info input {
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 17px;
+    width: 130px;
+  }
+
+  .header-info label {
+    margin-bottom: 5px;
+  }
+
+  .form-group {
+    margin-left: 10px;
+  }
+
+  .form-control button {
+    background-color: rgb(58, 94, 166);
+    border: 1px solid black;
+    border-radius: 2px;
+    color: white;
+    font-weight: 900;
+    height: 21px;
+    margin-left: 10px;
+  }
+
+  .left-content p {
+    color: rgb(26, 59, 90);
+    font-weight: 900;
+    margin-bottom: -5px;
+    margin-top: 30px;
+    text-align: justify;
+    width: 400px;
+  }
+
+  .right-content p {
+    margin-top: -14px;
+  }
+
+  .user-name input {
+    height: 20px;
+    width: 160px;
+  }
+
+  .right-content form input {
+    height: 20px;
+    margin-bottom: 7px;
+  }
+
+  .right-content label:nth-child( 1 ) {
+    color: gray;
+    font-size: small;
+    font-weight: 900;
+  }
+
+  .user-name input:nth-child( 2 ) {
+    margin-left: 8px;
+  }
+
+  .right-content form input:nth-child( 3 ) {
+    width: 337px;
+  }
+
+  .psw {
+    height: 20px;
+    width: 337px;
+  }
+
+  .gender-selector {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .right-content button {
+    background-color: rgb(83, 137, 69);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    height: 30px;
+    width: 150px;
   }
 }

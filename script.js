@@ -27,7 +27,9 @@ function validarNovoUsuario() {
     listaForm.genero = document.querySelector('[type=radio]:checked');
     listaForm.dataNasc = document.getElementById('birthdate').value;
     const values = Object.values(listaForm);
-    function exit();
+    function exit(){
+      return false;
+    };
     values.forEach((element) => {
       if (element === null || element === '') {
         alert('Campos inválidos');

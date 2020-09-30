@@ -35,7 +35,9 @@ h2 {
 .facebook-login {
   color: white;
   display: flex;
-  /* margin-right: 10px; --> Karine, precisei tirar aqui, pra passa no teste do Cypress */
+
+  /* margin-right: 10px; --> Karine, precisei tirar
+   aqui, pra passar no teste do Cypress */
 }
 
 .form-group {

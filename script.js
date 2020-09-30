@@ -62,7 +62,7 @@ btnCadastro.addEventListener('click', function () {
 
 inputOther.addEventListener('click', function () {
   const input = document.createElement('input');
-  input.setAttribute('name', 'gender-custom');
+  input.setAttribute('name', 'gender');
   input.setAttribute('placeholder', 'Gênero');
   ContainerPersonalizado.appendChild(input);
 });

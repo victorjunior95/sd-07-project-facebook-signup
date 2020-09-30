@@ -1,116 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="top-bar">
+      <img
+        class="facebook-logo"
+        src="imgs/facebook-logo.png"
+        alt="logo do facebook"
+      />
 
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone"
+            >Email ou telefone</label
+          >
 
+          <input type="text" id="user-email-phone" name="user-email-phone" />
+        </div>
 
+        <div class="form-group">
+          <label id="user-password-label" class="senha-login">Senha</label>
+          <input id="user-password" type="text" name="senha" class="senha" />
+        </div>
 
+        <a
+          href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar"
+          class="esqueceu-conta"
+          >Esqueceu a conta?</a
+        >
 
-        <form class="facebook-login">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-
-                <input type="text" id="user-email-phone" name="user-email-phone"></div>
-
-
-
-            <div class="form-group">
-                <label id="user-password-label" class="senha-login">Senha</label>
-                <input id="user-password" type="text" name="senha" class="senha">
-            </div>
-
-            <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar"
-                class="esqueceu-conta">Esqueceu a conta?</a>
-
-
-
-            <div class="form-control">
-                <button id="button-login" class="button-login">Entrar</button>
-            </div>
-        </form>
-
-
-
+        <div class="form-control">
+          <button id="button-login" class="button-login">Entrar</button>
+        </div>
+      </form>
     </header>
     <main class="main-content">
-        <section class="left-content">
-            <p class="p-section-left-main" id="facebook-slogan">O Facebook ajuda você a se conectar e <br>compartilhar
-                com as pessoas que
-                fazem parte<br> da sua vida.
-            </p>
-            <img id="facebook-networking" src="imgs/networking.png" alt="imagem de um networking global">
-        </section>
-        <section class="right-content">
-            <h1>Abra uma conta</h1>
-            <p class="quick-easy">É rápido e fácil.</p>
-            <form action="">
-                <div class="position-nome-sobrenome">
-                    <input type="text" class="nome-sobrenome" name="firstname" placeholder="Nome">
-                    <input type="text" class="nome-sobrenome" name="lastname" placeholder="Sobrenome">
-                </div>
-                <div>
-                    <input type="text" class="celular-email-novasenha" name="phone_email"
-                        placeholder="Celular ou email">
+      <section class="left-content">
+        <p class="p-section-left-main" id="facebook-slogan">
+          O Facebook ajuda você a se conectar e <br />compartilhar com as
+          pessoas que fazem parte<br />
+          da sua vida.
+        </p>
+        <img
+          id="facebook-networking"
+          src="imgs/networking.png"
+          alt="imagem de um networking global"
+        />
+      </section>
+      <section class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="">
+          <div class="position-nome-sobrenome">
+            <input
+              type="text"
+              class="nome-sobrenome"
+              id="firstname"
+              name="firstname"
+              placeholder="Nome"
+            />
+            <input
+              type="text"
+              class="nome-sobrenome"
+              id="lastname"
+              name="lastname"
+              placeholder="Sobrenome"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="celular-email-novasenha"
+              id="phone_email"
+              name="phone_email"
+              placeholder="Celular ou email"
+            />
 
-                    <input type="password" class="celular-email-novasenha" name="password" placeholder="Nova senha">
-                </div>
+            <input
+              type="password"
+              class="celular-email-novasenha"
+              id="password"
+              name="password"
+              placeholder="Nova senha"
+            />
+          </div>
 
+          <label
+            id="label-birthdate"
+            class="label-div-data-nascimento"
+            for="data-nascimento"
+            >Data de nascimento</label
+          >
+          <div class="div-data-nascimento">
+            <input
+              class="input-data-nascimento"
+              type="text"
+              id="data-nascimento"
+              name="birthdate"
+              placeholder="dd/mm/aaaa"
+            />
 
+            <img
+              src="image/moreinfo.png"
+              class="image-moreinfo"
+              alt="imagem para mais informações"
+            />
+          </div>
 
-                <label id="label-birthdate" class="label-div-data-nascimento" for="data-nascimento">Data de
-                    nascimento</label>
-                <div class="div-data-nascimento">
-                    <input class="input-data-nascimento" type="date" id="data-nascimento" name="birthdate"
-                        placeholder="dd/mm/aaaa">
-                    <img src="image/moreinfo.png" class="image-moreinfo" alt="imagem para mais informações">
-                </div>
+          <section class="gender-container">
+            <label for="" id="label-gender">Gênero</label>
 
+            <div class="buttons-gender">
+              <input type="radio" id="female" name="gender" value="Feminino" />
+              <label for="female">Feminino</label>
+              <input type="radio" id="male" name="gender" value="Masculino" />
+              <label for="male">Masculino</label>
+              <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="Personalizado"
+              />
+              <label for="other">Personalizado</label>
+            </div>
+            <div id="container-personalizado"></div>
+          </section>
 
-                <section class="gender-container">
-                    <label for="" id="label-gender">Gênero</label>
-
-                    <div class="buttons-gender">
-                      <input type="radio" id="female" name="button-gender" value="Feminino">
-                      <label for="female">Feminino</label>
-                      <input type="radio" id="male" name="button-gender" value="Masculino">
-                      <label for="male">Masculino</label>
-                      <input type="radio" id="other" name="button-gender" value="Personalizado">
-                      <label for="other">Personalizado</label>
-                    </div>
-
-                  </section>
-
-
-                <div>
-                    <img src="image/moreinfo.png" class="image-moreinfo" alt="">
-                </div>
-                <p class="termos">Ao clicar em Cadastre-se, você concorda com nossos<br> <a
-                        href="https://www.facebook.com/legal/terms/update">Termos</a>, <a
-                        href="https://www.facebook.com/about/privacy/update">Política de Dados</a> e <a
-                        href="https://www.facebook.com/policies/cookies/">Política de Cookies</a>. Você pode<br>
-                    receber notificações por SMS e pode cancelar isso quando<br> quiser.</p>
-                <button type="submit" id="facebook-register" class="button-cadastro">Cadastre-se</button>
-            </form>
-            <p class="pagina-empresa-celebridade"><a
-                    href="https://www.facebook.com/pages/create/?ref_type=registration_form">Criar uma Página</a>
-                para uma celebridade, banda ou empresa.</p>
-
-        </section>
-
-
-
+          <div>
+            <img src="image/moreinfo.png" class="image-moreinfo" alt="" />
+          </div>
+          <p class="termos">
+            Ao clicar em Cadastre-se, você concorda com nossos<br />
+            <a href="https://www.facebook.com/legal/terms/update">Termos</a>,
+            <a href="https://www.facebook.com/about/privacy/update"
+              >Política de Dados</a
+            >
+            e
+            <a href="https://www.facebook.com/policies/cookies/"
+              >Política de Cookies</a
+            >. Você pode<br />
+            receber notificações por SMS e pode cancelar isso quando<br />
+            quiser.
+          </p>
+          <button type="submit" id="facebook-register" class="button-cadastro">
+            Cadastre-se
+          </button>
+          <p id="campo-invalido"></p>
+        </form>
+        <p class="pagina-empresa-celebridade">
+          <a
+            href="https://www.facebook.com/pages/create/?ref_type=registration_form"
+            >Criar uma Página</a
+          >
+          para uma celebridade, banda ou empresa.
+        </p>
+      </section>
     </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

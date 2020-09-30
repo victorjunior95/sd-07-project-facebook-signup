@@ -66,9 +66,7 @@ buttonFacebookRegister.addEventListener('click', (event) => {
     nome = `${form[0].value} ${form[1].value}`;
     email = `${form[2].value}`;
     gender = document.querySelector('input[name="gender"]:checked').value;
-    if (gender === 'Personalizado') {
-      dataNascimento = `${form[4].value}`;
-    }
+    dataNascimento = `${form[4].value}`;
     cleanRightContentDiv();
     returnMsg(nome, email, dataNascimento, gender);
   }

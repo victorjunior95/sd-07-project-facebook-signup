@@ -1,16 +1,36 @@
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.button-login {
+  background-color: #3f61a5;
+  border-color: rgb(143, 171, 228);
+  color: white;
+  font-weight: bold;
+}
+
+.button-register {
+  align-self: center;
+  background-color: rgb(99, 156, 13);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .facebook-login {
-  align-items: flex-start;
+  align-items: center;
   color: white;
   display: flex;
-  justify-content: flex-end;
-
 }
 
 .facebook-logo {
   align-items: flex-start;
   display: flex;
   justify-content: flex-start;
-
 }
 
 .facebook-slogan {
@@ -19,60 +39,51 @@
   margin-top: 40px;
   width: 450px;
   word-spacing: -1px;
-
 }
 
 .form-control {
   align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-
+  font-size: small;
 }
 
 .firstname-lastname {
   display: flex;
   flex-direction: row;
-
 }
 
 .gender {
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
 .left-content {
-  float: left;
   width: 800px;
-
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-
+  justify-content: center;
+  margin: 2rem auto 0;
+  padding: 0.6rem 12.5%;
 }
 
 .right-content {
-  float: right;
   width: 300px;
-
 }
 
 .top-bar {
   align-items: center;
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
-  height: 82px;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 13px;
-
+  padding: 0.6rem 12.5%;
 }

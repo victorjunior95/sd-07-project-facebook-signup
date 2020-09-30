@@ -12,7 +12,8 @@ a {
   align-self: center;
 }
 
-.btn-login button {
+.form-control {
+  align-self: flex-end;
   background-color: rgb(66, 103, 178);
   color: white;
 }
@@ -56,5 +57,5 @@ a {
   align-items: flex-end;
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

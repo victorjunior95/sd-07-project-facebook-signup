@@ -61,13 +61,16 @@
 
         <label class="label-input" id="label-gender" for="gender">Gênero</label>
         <div class="conteiner-radio">
-          <input required id="Female" name="gender" value="Feminino" type="radio">
+          <input data-click="gender" required id="Female" name="gender" value="Feminino" type="radio">
           <label for="Female">Feminino</label>
-          <input name="gender" value="Masculino" type="radio" id="Male">
+          <input data-click="gender" name="gender" value="Masculino" type="radio" id="Male">
           <label for="Male">Masculino</label>
-          <input name="gender" value="Personalizado" type="radio" id="Person">
+          <input data-click="gender" name="gender" value="Personalizado" type="radio" id="Person">
           <label for="Person">Personalizado</label>
         </div>
+        <input name="gender-custom" placeholder="Gênero (opcional)"
+          class="input-register input-large isInputDisplayNone" type="text">
+
         <span id="span" class="material-icons interrogation2">help</span>
         <p class="politic">Ao clicar em Cadastre-se, você concorda com nossos <br>
           <a class="term" href="#"><em>Termos, Política de Dados</em></a> e <a class="term" href="#"><em>Política de
@@ -75,7 +78,7 @@
           Você pode
           receber
           notificações por SMS e pode cancelar isso quando quiser.</p>
-        <p class="errorField isMensager">Campos inválidos</p>
+        <p class="errorField isMensagerDisplayNone">Campos inválidos</p>
         <button data-click="submit" class="button-submit other" id="facebook-register"
           type="submit">Cadastre-se</button>
 

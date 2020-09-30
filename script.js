@@ -13,26 +13,56 @@ const radioFeminino = document.getElementById('female');
 const radioMasculino = document.getElementById('male');
 const radioPersonalizado = document.getElementById('other');
 const campoInvalido = document.getElementById('campo-invalido');
+const ContainerPersonalizado = document.getElementById('container-personalizado');
+const inputOther = document.getElementById('other');
+
+
+function getGender() {
+  let gender = '';
+  if (radioFeminino.checked) {
+    gender = 'Feminino';
+  } else if (radioMasculino.checked) {
+    gender = 'Masculino';
+  } else if (radioPersonalizado.checked) {
+    gender = 'Personalizado';
+  }
+  return gender;
+}
 
 const btnCadastro = document.getElementById('facebook-register');
 btnCadastro.addEventListener('click', function () {
   event.preventDefault();
 
-  if (inputFirstname.value === '') {
-    campoInvalido.innerHTML = 'campos inválidos';
-  } else if (inputLastname.value === '') {
-    campoInvalido.innerHTML = 'campos inválidos';
-  } else if (inputPhoneEmail.value === '') {
-    campoInvalido.innerHTML = 'campos inválidos';
-  } else if (inputPassword.value === '') {
-    campoInvalido.innerHTML = 'campos inválidos';
-  } else if (inputDataNascimento.value === '') {
-    campoInvalido.innerHTML = 'campos inválidos';
-  } else if (
-    radioFeminino.checked === false &&
-    radioMasculino.checked === false &&
-    radioPersonalizado.checked === false
+
+  const pessoa = {
+    inputFirstname: inputFirstname.value,
+    inputLastname: inputLastname.value,
+    inputPhoneEmail: inputPhoneEmail.value,
+    inputPassword: inputPassword.value,
+    inputDataNascimento: inputDataNascimento.value,
+    gender: getGender(),
+  };
+  if (
+    (pessoa.inputFirstname === '') ||
+    (pessoa.inputLastname === '') ||
+    (pessoa.inputPhoneEmail === '') ||
+    (pessoa.inputPassword === '') ||
+    (pessoa.inputDataNascimento === '')
   ) {
-    campoInvalido.innerHTML = 'campos inválidos';
+    campoInvalido.innerHTML = 'Campos inválidos';
+  } else {
+    document.querySelector(
+      '.right-content',
+    ).innerHTML = `<p>Olá, ${pessoa.inputFirstname} ${pessoa.inputLastname}</p>
+    <p>${pessoa.inputPhoneEmail}</p>
+    <p>${pessoa.inputDataNascimento}</p>
+    <p>${pessoa.gender}</p>`;
   }
+});
+
+inputOther.addEventListener('click', function () {
+  const input = document.createElement('input');
+  input.setAttribute('name', 'gender-custom');
+  input.setAttribute('placeholder', 'Gênero');
+  ContainerPersonalizado.appendChild(input);
 });

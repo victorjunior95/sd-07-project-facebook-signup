@@ -22,12 +22,12 @@ a {
   color: white;
   display: flex;
   height: auto;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 10px;
   width: 450px;
 }
 
-.form-group input{
+.form-group input {
   border: 1.5px solid black;
 }
 

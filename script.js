@@ -20,7 +20,7 @@ buttonRegister.addEventListener('click', function (event) {
   const email = document.getElementById('phone_email');
   const birthDate = document.getElementById('birthdate');
   const rightContent = document.getElementById('right-content');
-  const fields = document.querySelectorAll('#form2 input');
+  const fields = document.querySelectorAll('.test');
   const form = document.getElementById('form2');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {

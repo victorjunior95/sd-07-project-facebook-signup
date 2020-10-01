@@ -21,7 +21,7 @@ buttonRegister.addEventListener('click', function (event) {
   const birthDate = document.getElementById('birthdate');
   const rightContent = document.getElementById('right-content');
   const fields = document.querySelectorAll('#form2 input');
-  const form = document.getElementById('form2');
+  const form = document.getElementById('.main-content form');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
       const error = document.createElement('p');

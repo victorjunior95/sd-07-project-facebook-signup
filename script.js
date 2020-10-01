@@ -18,7 +18,8 @@ personalizedGender.addEventListener('click', function () {
   inputGender.name = 'gender-custom';
 });
 
-// Validar campos preenchidos com botão 'Cadastre-se
+// Validar campos preenchidos com botão 'Cadastre-se 
+// Baseado no trecho do código do 'herculesgabriel-project-facebook'
 const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', function (event) {
   event.preventDefault();
@@ -30,4 +31,23 @@ registerButton.addEventListener('click', function (event) {
       invalidAlert.innerText = 'Campos inválidos';
     }
   });
+  // Substituição do formulario com preenchimento válido
+  if (document.querySelector('#invalid-camp').innerText === '') {
+    const firstname = document.getElementsByName('firstname')[0].value;
+    const lastname = document.getElementsByName('lastname')[0].value;
+    const phoneEmail = document.getElementsByName('phone_email')[0].value;
+    const birthdate = document.getElementsByName('birthdate')[0].value;
+    let gender = '';
+    const genderList = document.getElementsByName('gender');
+    genderList.forEach((element) => {
+      if (element.checked) {
+        gender = element.value;
+      }
+    });
+    const validContent = document.querySelector('.right-content');
+    validContent.innerText = `Olá, ${firstname} ${lastname}!\n
+      ${phoneEmail}\n
+      ${birthdate}\n
+      ${gender}`;
+  }
 });

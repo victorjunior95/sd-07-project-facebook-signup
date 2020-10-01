@@ -41,31 +41,33 @@
       <h3 class="quick-easy">É rápido e fácil.</h3>
       <form action="" class="name">
         <div class='fullName'>
-          <input id='name' class="input" name='firstname' type="text" placeholder="Nome" data-validate-field="name">
-          <input id='lastname' class="input" name='lastname' type="text" placeholder="Sobrenome" data-validate-field="lastname">
+          <input id='name' class="input" name='firstname' type="text" placeholder="Nome">
+          <input id='lastname' class="input lastname" name='lastname' type="text" placeholder="Sobrenome">
         </div>
 
-        <input id='phoneEmail' class="input" name='phone_email' type="text" placeholder="Celular ou email" data-validate-field="phoneEmail">
-        <input class="input" name='password' type="password" placeholder="Nova senha" data-validate-field="password">
+        <div class="phoneEmailPassword">
+          <input id='phoneEmail' class="input" name='phone_email' type="text" placeholder="Celular ou email">
+          <input class="input" name='password' type="password" placeholder="Nova senha">
+        </div>
 
         <div class="birthdate">
           <label id='label-birthdate' for="">Data de nascimento</label>
-          <input id='date' class="input" name='birthdate' placeholder="dd/mm/aaaa" type="text" data-validate-field="date">
+          <input id='date' class="input" name='birthdate' placeholder="dd/mm/aaaa" type="text">
         </div>
 
         <div class="radios-container">
-          <label id="label-gender" for="">Gênero</label>
+          <label id="label-gender" class="gender" for="">Gênero</label>
           <div class='radios'>
-            <input class='inputRadios' name="gender" value='Feminino' type="radio" data-validate-field="radio">
+            <input class='inputRadios' name="gender" value='Feminino' type="radio">
             <label for="">Feminino</label>
-            <input class='inputRadios' name="gender" value='Masculino' type="radio" data-validate-field="radio">
+            <input class='inputRadios' name="gender" value='Masculino' type="radio">
             <label for="">Masculino</label>
-            <input class='inputRadios' name="gender" id="personalizado" value="Personalizado" type="radio" data-validate-field="radio">
+            <input class='inputRadios' name="gender" id="personalizado" value="Personalizado" type="radio">
             <label for="personalizado">Personalizado</label>
           </div>
         </div>
 
-        <button id='facebook-register' type="submit">Cadastre-se</button>
+        <button id='facebook-register' class="btn-register" type="submit">Cadastre-se</button>
       </form>
     </div>
   </div>

@@ -15,67 +15,40 @@ const showMessagerErrorForm = () => {
   }
 };
 
-/* const getStorageInputFormValue = () => {
+const getStorageInputFormValue = () => {
   const rightContent = document.querySelector('.right-content');
   rightContent.innerHTML = `<h2>Olá, ${localStorage.getItem('firstname')}
   ${localStorage.getItem('lastname')}</h2>
   <p>${localStorage.getItem('phone_email')}</p>
   <p>${localStorage.getItem('birthdate')}</p>
-  <p>${localStorage.getItem('gender')}</p>`
-} */
-
-/* const logValueForm = () => {
-  const form = document.querySelector('.form-register');
-  if (validateFormInput()) {
-
-
-    window.onload = () => {
-      form.remove();
-      getStorageInputFormValue();
-    }
-
-
-  } else {
-    window.onload = () => {
-      form.remove();
-      getStorageInputFormValue();
-    }
-  }
-}
+  <p>${localStorage.getItem('gender')}</p>`;
+};
 
 const setStorageInputFormValue = (input) => {
-  localStorage.setItem(input.name, input.value);
-
-}
- */
-
-
-/*
-  // another way of writing the function
-  const showMessagerErrorForm = (boolean) => {
-  const pElementCurrent = document.querySelector('.errorField');
-
-  if (boolean) {
-    if (pElementCurrent) {
-      pElementCurrent.remove();
-    }
-    const pElement = document.createElement('p');
-    pElement.className = 'errorField';
-    pElement.innerHTML = 'Campos inválidos';
-    document.querySelector('.form-register').appendChild(pElement);
+  if (input.type !== 'radio') {
+    localStorage.setItem(input.name, input.value);
+  } else if (input.checked) {
+    localStorage.setItem(input.name, input.value);
   }
 };
- */
 
 const validateFormInput = () => {
-  const inputs = document.querySelectorAll('input[required]');
-  for (let index = 0; index <= inputs.length; index += 1) {
-    if (!inputs[index].checkValidity()) {
+  const inputs = document.querySelectorAll('.form-register input');
+  let boolean = true;
+  inputs.forEach((input) => {
+    if (!input.checkValidity()) {
+      boolean = false;
       showMessagerErrorForm();
-      return false;
     }
+    setStorageInputFormValue(input);
+  });
+  return boolean;
+};
+
+const logFormDisplay = () => {
+  if (validateFormInput()) {
+    getStorageInputFormValue();
   }
-  return true;
 };
 
 const showInputGenderCustom = (event) => {
@@ -98,7 +71,7 @@ const controllerEventsClicks = (type) => {
         callAlertValueInput();
         break;
       case 'submit':
-        validateFormInput();
+        logFormDisplay();
         break;
       case 'gender':
         showInputGenderCustom(event);
@@ -122,51 +95,6 @@ const handleEventsController = (...types) => {
     }
   });
 };
-
-const female = document.getElementById('Female');
-const male = document.getElementById('Male');
-const person = document.getElementById('Person');
-
-function sexGender() {
-  let sex = '';
-  if (female.checked) {
-    sex = 'Feminino';
-  } else if (male.checked) {
-    sex = 'Masculino';
-  } else if (person.checked) {
-    sex = 'Personalizado';
-  }
-  return sex;
-}
-
-const cadastro = document.querySelector('#facebook-register');
-const name = document.querySelector('input[name="firstname"]');
-const lastName = document.querySelector('input[name="lastname"]');
-const email = document.querySelector('input[name="phone_email"]');
-const password = document.querySelector('input[name="password"]');
-const birthdate = document.querySelector('input[name="birthdate"]');
-
-cadastro.addEventListener('click', function (event) {
-  event.preventDefault();
-  const errorField = document.querySelector('.errorField');
-  const confirm = {
-    name: name.value,
-    lastname: lastName.value,
-    email: email.value,
-    password: password.value,
-    birthdate: birthdate.value,
-    gender: sexGender(),
-  };
-  if ((confirm.name === '') || (confirm.lastname === '') || (confirm.email === '') || (confirm.password === '') || (confirm.birthdate === '')) {
-    errorField.innerHTML = 'Campos inválidos';
-  } else {
-    document.querySelector('.right-content').innerHTML =
-      `<p>Olá, ${confirm.name} ${confirm.lastname}</p>
-    <p>${confirm.email}</p>
-    <p>${confirm.birthdate}</p>
-    <p>${confirm.gender}</p>`;
-  }
-});
 
 window.onload = () => {
   handleEventsController('click');

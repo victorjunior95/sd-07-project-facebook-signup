@@ -13,7 +13,7 @@
   <header>
     <div class="top-bar">
       <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo facebook" />
-      <form class="facebook-login">
+      <form action="" method="" class="facebook-login">
         <p class="form-group">
           <label id="user-email-phone-label" class="labelText" for="email">Email ou telefone</label>
           <input id="user-email-phone" class="inputText" type="text" />
@@ -41,7 +41,7 @@
     <div class="right-content">
       <h1 class="title-form">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" class="form-register">
+      <form onsubmit="return false" action="" method="" class="form-register">
 
 
         <div class="conteiner-open">
@@ -61,7 +61,7 @@
 
         <label class="label-input" id="label-gender" for="gender">Gênero</label>
         <div class="conteiner-radio">
-          <input data-click="gender" required id="Female" name="gender" value="Feminino" type="radio">
+          <input data-click="gender" id="Female" name="gender" value="Feminino" type="radio">
           <label for="Female">Feminino</label>
           <input data-click="gender" name="gender" value="Masculino" type="radio" id="Male">
           <label for="Male">Masculino</label>

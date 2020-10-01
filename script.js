@@ -74,6 +74,7 @@ const validateFormInput = () => {
       return false;
     }
   }
+  return true;
 };
 
 const showInputGenderCustom = (event) => {

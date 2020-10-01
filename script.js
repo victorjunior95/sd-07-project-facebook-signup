@@ -1,3 +1,5 @@
+
+
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 
@@ -9,6 +11,12 @@ buttonLogin.addEventListener('click', function () {
 const buttonRegister = document.getElementById('facebook-register');
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
+  const firstName = document.getElementById('firstname');
+  const lastName = document.getElementById('lastname');
+  const email = document.getElementById('phone_email');
+  const birthDate = document.getElementById('birthdate');
+  const gender = document.querySelectorAll('input .gender');
+  const rightContent = document.getElementById('right-content');
   const fields = document.querySelectorAll('#form2 input');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
@@ -18,16 +26,10 @@ buttonRegister.addEventListener('click', function (event) {
       form.appendChild(error);
       break;
     } else {
-      const firstName = document.getElementById('firstname').value;
-      const lastName = document.getElementById('lastname').value;
-      const email = document.getElementById('phone_email').value;
-      const birthDate = document.getElementById('birthdate').value;
-      const gender = document.querySelectorAll('input .gender').value;
-      const rightContent = document.getElementById('right-content');
-      rightContent.innerHTML = `Olá, ${firstName} ${lastName}.
-      Seu email é ${email}.
-      Sua data de nascimento é ${birthDate}.
-      Seu gênero é ${gender}`;
+      rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
+      Seu email é ${email.value}.
+      Sua data de nascimento é ${birthDate.value}.
+      Seu gênero é ${gender.value}`;
     }
   }
 });

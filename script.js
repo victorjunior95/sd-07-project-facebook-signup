@@ -47,7 +47,7 @@ const validateFormInput = () => {
 const showInputGenderCustom = (event) => {
   const textInput = document.querySelector('input[name="gender-custom"]');
   const radioInputValue = event.target.value;
-  if (radioInputValue === 'confirmalizado') {
+  if (radioInputValue === 'Personalizado') {
     if (textInput.classList.contains('isInputDisplayNone')) {
       textInput.classList.remove('isInputDisplayNone');
     }
@@ -93,7 +93,7 @@ const female = document.getElementById('Female');
 const male = document.getElementById('Male');
 const person = document.getElementById('Person');
 
-function gender() {
+function sexGender() {
   let sex = '';
   if (female.checked) {
     sex = 'Feminino';
@@ -121,7 +121,7 @@ cadastro.addEventListener('click', function (event) {
     email: email.value,
     password: password.value,
     birthdate: birthdate.value,
-    gender: gender(),
+    gender: sexGender(),
   };
   if ((confirm.name === '') || (confirm.lastname === '') || (confirm.email === '') || (confirm.password === '') || (confirm.birthdate === '')) {
     errorField.innerHTML = 'Campos inválidos';

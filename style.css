@@ -28,7 +28,6 @@ header {
   align-items: center;
   flex-direction: column;
   display: flex;
-  flex-direction: column;
 }
 
 .form-control {

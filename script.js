@@ -100,7 +100,7 @@ function sexGender() {
   } else if (male.checked) {
     sex = 'Masculino';
   } else if (person.checked) {
-    sex = 'personalizado';
+    sex = 'Personalizado';
   }
   return sex;
 }

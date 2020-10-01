@@ -15,5 +15,5 @@ personalizedGender.addEventListener('click', function () {
   selectGender.appendChild(inputGender);
   inputGender.type = 'text';
   inputGender.placeholder = 'Gênero (opcional)';
-  inputGender.className = 'gender-option';
+  inputGender.name = 'gender-option';
 });

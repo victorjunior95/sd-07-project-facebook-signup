@@ -18,7 +18,7 @@ personalizedGender.addEventListener('click', function () {
   inputGender.name = 'gender-custom';
 });
 
-// Validar campos preenchidos com botão 'Cadastre-se 
+// Validar campos preenchidos com botão 'Cadastre-se'
 // Baseado no trecho do código do 'herculesgabriel-project-facebook'
 const registerButton = document.querySelector('#facebook-register');
 registerButton.addEventListener('click', function (event) {

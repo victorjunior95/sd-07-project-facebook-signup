@@ -20,14 +20,14 @@ buttonRegister.addEventListener('click', function (event) {
   const email = document.getElementById('phone_email');
   const birthDate = document.getElementById('birthdate');
   const rightContent = document.getElementById('right-content');
-  const fields = document.querySelectorAll('#form2 input');
+  const fields = document.getElementsByTagName('input');
   const form = document.getElementById('form2');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
       // const error = document.createElement('p');
       // error.innerText = 'Campos inválidos';
-      form.innerHTML = 'Campos inválidos';
-      break;
+      form.innerText = 'Campos inválidos';
+      // break;
     } else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
       Seu email é ${email.value}.

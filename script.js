@@ -66,6 +66,7 @@ const setStorageInputFormValue = (input) => {
   }
 };
  */
+
 const validateFormInput = () => {
   const inputs = document.querySelectorAll('input[required]');
   for (let index = 0; index <= inputs.length; index += 1) {

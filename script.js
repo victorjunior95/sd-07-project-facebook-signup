@@ -64,10 +64,10 @@ buttonRegister.addEventListener('click', function (event) {
       p.innerHTML = 'Campos inválidos';
       break;
     }
-  }
-  verificaRadio();
-  if (verificaRadio() === 'true') {
-    mostraTudo();
+    verificaRadio();
+    if (verificaRadio() === 'true') {
+      mostraTudo();
+    }
   }
 });
 

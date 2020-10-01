@@ -14,12 +14,12 @@ masculino.addEventListener('click', function () {
 });
 const personalizado = document.getElementById('personalizado');
 personalizado.addEventListener('click', function () {
-  if (personalizado.checked = true) {
-    const genero = getElementById('generoPersonalizado');
-    genero.classList.remove('visible');
-  } else {
-    genero.className = ('visible');
-  }  
+  personalizado.checked = true;
+  const novoCampoGenero = document.createElement('input');
+  novoCampoGenero.name = 'gender-custom';
+  novoCampoGenero.placeholder = 'Gênero (opcional)';
+  const generoPersonalizado = document.getElementsByClassName('generoPersonalizado');
+  generoPersonalizado[0].appendChild(novoCampoGenero);
 });
 
 const facebookRegister = document.getElementById('facebook-register');

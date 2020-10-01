@@ -31,7 +31,6 @@ const showMessagerErrorForm = () => {
   }
 };
  */
-
 const validateFormInput = () => {
   const inputs = document.querySelectorAll("input[required]");
   let breakLoop = true;

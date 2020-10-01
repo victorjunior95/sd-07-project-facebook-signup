@@ -31,7 +31,7 @@ body {
 }
 
 .form-group label {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -45,9 +45,9 @@ body {
   background-color: #637aad;
   border: 1px solid #314179;
   box-shadow: inset 0 1px 0 0 #7a8eb9;
-  color: #ffffff;
+  color: white;
   cursor: pointer;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
   padding: 6px 12px;
@@ -65,7 +65,7 @@ body {
 }
 
 .main-content {
-  background: linear-gradient(to bottom, #ffffff, #b6c2d9);
+  background: linear-gradient(to bottom, white, #b6c2d9);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,8 +84,8 @@ body {
 
 .left-content p {
   color: rgb(66, 103, 178);
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-family: Arial;
 }
 
 .main-content .right-content {
@@ -95,14 +95,14 @@ body {
 }
 
 .right-content .title {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   margin-bottom: 0;
   margin-top: 15px;
 }
 
 .right-content .quick-easy {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 5px;
 }
 
@@ -121,13 +121,13 @@ body {
 
 .main-content .right-content .label-gray {
   color: #465362;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .main-content .right-content .label-radio {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .right-content .conteiner-nome-sobrenome {
@@ -158,7 +158,7 @@ body {
   box-shadow: inset 0 1px 0 0 #9acc85;
   color: white;
   cursor: pointer;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 600;
   margin-top: 10px;

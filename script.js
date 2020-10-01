@@ -1,16 +1,16 @@
 // events system
 const callAlertValueInput = () => {
-  const inputTextEmail = document.querySelector('input#user-email-phone');
+  const inputTextEmail = document.querySelector("input#user-email-phone");
   window.alert(inputTextEmail.value);
 };
 
 // Error messagens forms empty
 const showMessagerErrorForm = () => {
-  const pElement = document.querySelector('.errorField');
-  if (pElement.classList.contains('isMensagerDisplayNone')) {
-    pElement.classList.remove('isMensagerDisplayNone');
+  const pElement = document.querySelector(".errorField");
+  if (pElement.classList.contains("isMensagerDisplayNone")) {
+    pElement.classList.remove("isMensagerDisplayNone");
     setTimeout(() => {
-      pElement.classList.add('isMensagerDisplayNone');
+      pElement.classList.add("isMensagerDisplayNone");
     }, 2000);
   }
 };
@@ -31,8 +31,9 @@ const showMessagerErrorForm = () => {
   }
 };
  */
+
 const validateFormInput = () => {
-  const inputs = document.querySelectorAll('input[required]');
+  const inputs = document.querySelectorAll("input[required]");
   let breakLoop = true;
   inputs.forEach((input) => {
     if (breakLoop) {
@@ -47,12 +48,12 @@ const validateFormInput = () => {
 const showInputGenderCustom = (event) => {
   const textInput = document.querySelector('input[name="gender-custom"]');
   const radioInputValue = event.target.value;
-  if (radioInputValue === 'Personalizado') {
-    if (textInput.classList.contains('isInputDisplayNone')) {
-      textInput.classList.remove('isInputDisplayNone');
+  if (radioInputValue === "Personalizado") {
+    if (textInput.classList.contains("isInputDisplayNone")) {
+      textInput.classList.remove("isInputDisplayNone");
     }
-  } else if (!textInput.classList.contains('isInputDisplayNone')) {
-    textInput.classList.add('isInputDisplayNone');
+  } else if (!textInput.classList.contains("isInputDisplayNone")) {
+    textInput.classList.add("isInputDisplayNone");
   }
 };
 
@@ -60,13 +61,13 @@ const controllerEventsClicks = (type) => {
   document.addEventListener(type, (event) => {
     const eventDataSet = event.target.dataset.click;
     switch (eventDataSet) {
-      case 'alertButton':
+      case "alertButton":
         callAlertValueInput();
         break;
-      case 'submit':
+      case "submit":
         validateFormInput();
         break;
-      case 'gender':
+      case "gender":
         showInputGenderCustom(event);
         break;
 
@@ -79,7 +80,7 @@ const controllerEventsClicks = (type) => {
 const handleEventsController = (...types) => {
   types.forEach((type) => {
     switch (type) {
-      case 'click':
+      case "click":
         controllerEventsClicks(type);
         break;
 
@@ -90,5 +91,5 @@ const handleEventsController = (...types) => {
 };
 
 window.onload = () => {
-  handleEventsController('click');
+  handleEventsController("click");
 };

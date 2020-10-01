@@ -126,7 +126,8 @@ cadastro.addEventListener('click', function (event) {
   if ((confirm.name === '') || (confirm.lastname === '') || (confirm.email === '') || (confirm.password === '') || (confirm.birthdate === '')) {
     errorField.innerHTML = 'Campos inválidos';
   } else {
-    document.querySelector('.right-content').innerHTML = `<p>Olá, ${confirm.name} ${confirm.lastname}</p>
+    document.querySelector('.right-content').innerHTML =
+      `<p>Olá, ${confirm.name} ${confirm.lastname}</p>
     <p>${confirm.email}</p>
     <p>${confirm.birthdate}</p>
     <p>${confirm.gender}</p>`;

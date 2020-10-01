@@ -41,12 +41,12 @@ body {
 }
 
 .form-control button {
-  box-shadow: inset 0px 1px 0px 0px #7a8eb9;
   background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
   background-color: #637aad;
   border: 1px solid #314179;
-  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #7a8eb9;
   color: #ffffff;
+  cursor: pointer;
   font-family: Arial;
   font-size: 13px;
   font-weight: 700;
@@ -74,8 +74,8 @@ body {
 .main-content .left-content {
   display: flex;
   flex-direction: column;
-  width: 800px;
   padding-right: 60px;
+  width: 800px;
 }
 
 .left-content img {
@@ -86,7 +86,6 @@ body {
   color: rgb(66, 103, 178);
   font-weight: 600;
   font-family: Arial;
-  flex-wrap: wrap;
 }
 
 .main-content .right-content {
@@ -95,14 +94,14 @@ body {
   width: 300px;
 }
 
-.right-content h1 {
+.right-content .title {
   font-family: Arial;
   font-size: xx-large;
-  margin-top: 15px;
   margin-bottom: 0;
+  margin-top: 15px;
 }
 
-.right-content h4 {
+.right-content .quick-easy {
   font-family: Arial;
   margin-top: 5px;
 }
@@ -118,7 +117,6 @@ body {
 
 .main-content .right-content .inputs-normal {
   height: 30px;
-  
 }
 
 .main-content .right-content .label-gray {
@@ -128,7 +126,7 @@ body {
   margin-bottom: 10px;
 }
 
-.main-content .right-content .label-radio{
+.main-content .right-content .label-radio {
   font-family: Arial;
 }
 
@@ -145,21 +143,21 @@ body {
   display: flex;
 }
 
-.right-content .conteiner-radio label{
+.right-content .conteiner-radio label {
   display: flex;
   margin-right: 10px;
 }
 
-
 .main-form button {
   align-self: flex-start;
-  box-shadow: inset 0px 1px 0px 0px #9acc85;
+
   background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
   background-color: #74ad5a;
   border: 1px solid #3b6e22;
   border-radius: 10%;
-  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #9acc85;
   color: white;
+  cursor: pointer;
   font-family: Arial;
   font-size: 15px;
   font-weight: 600;

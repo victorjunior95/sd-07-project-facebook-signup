@@ -39,6 +39,7 @@ const validateFormInput = () => {
       if (!input.checkValidity()) {
         breakLoop = false;
         showMessagerErrorForm();
+        console.log(input)
       }
     }
   });
@@ -88,6 +89,7 @@ const handleEventsController = (...types) => {
     }
   });
 };
+
 
 window.onload = () => {
   handleEventsController('click');

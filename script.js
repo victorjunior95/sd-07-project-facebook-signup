@@ -1,5 +1,3 @@
-
-
 const buttonLogin = document.getElementById('button-login');
 const userEmailPhone = document.getElementById('user-email-phone');
 
@@ -8,6 +6,12 @@ buttonLogin.addEventListener('click', function () {
   alert(text);
 });
 
+let selectedGender = '';
+const genderContainer = document.getElementById('gender-container');
+genderContainer.addEventListener('click', function (event) {
+  selectedGender = event.target.value;
+})
+
 const buttonRegister = document.getElementById('facebook-register');
 buttonRegister.addEventListener('click', function (event) {
   event.preventDefault();
@@ -15,21 +19,19 @@ buttonRegister.addEventListener('click', function (event) {
   const lastName = document.getElementById('lastname');
   const email = document.getElementById('phone_email');
   const birthDate = document.getElementById('birthdate');
-  const gender = document.querySelectorAll('input .gender');
   const rightContent = document.getElementById('right-content');
   const fields = document.querySelectorAll('#form2 input');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
-      const form = document.getElementById('form2');
       const error = document.createElement('p');
       error.innerText = 'Campos inválidos';
-      form.appendChild(error);
+      document.getElementById('form2').appendChild(error);
       break;
     } else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
       Seu email é ${email.value}.
       Sua data de nascimento é ${birthDate.value}.
-      Seu gênero é ${gender.value}`;
+      Seu gênero é ${selectedGender}`;
     }
   }
 });

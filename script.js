@@ -45,7 +45,7 @@ const validateFormInput = () => {
 };
 
 const showInputGenderCustom = (event) => {
-  const textInput = document.querySelector('input[name='gender - custom']');
+  const textInput = document.querySelector('input[name="gender-custom"]');
   const radioInputValue = event.target.value;
   if (radioInputValue === 'Personalizado') {
     if (textInput.classList.contains('isInputDisplayNone')) {

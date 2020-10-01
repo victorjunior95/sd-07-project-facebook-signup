@@ -15,6 +15,41 @@ const showMessagerErrorForm = () => {
   }
 };
 
+/* const getStorageInputFormValue = () => {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = `<h2>Olá, ${localStorage.getItem('firstname')}
+  ${localStorage.getItem('lastname')}</h2>
+  <p>${localStorage.getItem('phone_email')}</p>
+  <p>${localStorage.getItem('birthdate')}</p>
+  <p>${localStorage.getItem('gender')}</p>`
+} */
+
+/* const logValueForm = () => {
+  const form = document.querySelector('.form-register');
+  if (validateFormInput()) {
+
+
+    window.onload = () => {
+      form.remove();
+      getStorageInputFormValue();
+    }
+
+
+  } else {
+    window.onload = () => {
+      form.remove();
+      getStorageInputFormValue();
+    }
+  }
+}
+
+const setStorageInputFormValue = (input) => {
+  localStorage.setItem(input.name, input.value);
+
+}
+ */
+
+
 /*
   // another way of writing the function
   const showMessagerErrorForm = (boolean) => {
@@ -33,15 +68,12 @@ const showMessagerErrorForm = () => {
  */
 const validateFormInput = () => {
   const inputs = document.querySelectorAll('input[required]');
-  let breakLoop = true;
-  inputs.forEach((input) => {
-    if (breakLoop) {
-      if (!input.checkValidity()) {
-        breakLoop = false;
-        showMessagerErrorForm();
-      }
+  for (let index = 0; index <= inputs.length; index += 1) {
+    if (!inputs[index].checkValidity()) {
+      showMessagerErrorForm();
+      return false;
     }
-  });
+  }
 };
 
 const showInputGenderCustom = (event) => {
@@ -88,7 +120,6 @@ const handleEventsController = (...types) => {
     }
   });
 };
-
 
 window.onload = () => {
   handleEventsController('click');

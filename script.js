@@ -10,7 +10,7 @@ let selectedGender = '';
 const genderContainer = document.getElementById('gender-container');
 genderContainer.addEventListener('click', function (event) {
   selectedGender = event.target.value;
-})
+});
 
 const buttonRegister = document.getElementById('facebook-register');
 buttonRegister.addEventListener('click', function (event) {
@@ -42,6 +42,5 @@ other.addEventListener('click', function () {
   newField.type = 'text';
   newField.name = 'gender-custom';
   newField.placeholder = 'Gênero (opcional)';
-  const genderContainer = document.getElementById('gender-container');
   genderContainer.appendChild(newField);
 });

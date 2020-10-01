@@ -48,7 +48,7 @@ const validateFormInput = () => {
 const showInputGenderCustom = (event) => {
   const textInput = document.querySelector('input[name="gender-custom"]');
   const radioInputValue = event.target.value;
-  if (radioInputValue === 'Personalizado') {
+  if (radioInputValue === 'confirmalizado') {
     if (textInput.classList.contains('isInputDisplayNone')) {
       textInput.classList.remove('isInputDisplayNone');
     }
@@ -90,6 +90,49 @@ const handleEventsController = (...types) => {
   });
 };
 
+const female = document.getElementById('Female');
+const male = document.getElementById('Male');
+const person = document.getElementById('Person');
+
+function gender() {
+  let gender = '';
+  if (female.checked) {
+    gender = 'Feminino';
+  } else if (male.checked) {
+    gender = 'Masculino';
+  } else if (person.checked) {
+    gender = 'confirmalizado';
+  }
+  return gender;
+}
+
+const cadastro = document.querySelector('#facebook-register');
+const name = document.querySelector('input[name="firstname"]');
+const lastName = document.querySelector('input[name="lastname"]');
+const email = document.querySelector('input[name="phone_email"]');
+const password = document.querySelector('input[name="password"]');
+const birthdate = document.querySelector('input[name="birthdate"]');
+
+cadastro.addEventListener('click', function (event) {
+  event.preventDefault();
+  const errorField = document.querySelector('.errorField');
+  const confirm = {
+    name: name.value,
+    lastname: lastName.value,
+    email: email.value,
+    password: password.value,
+    birthdate: birthdate.value,
+    gender: gender(),
+  };
+  if ((confirm.name === '') || (confirm.lastname === '') || (confirm.email === '') || (confirm.password === '') || (confirm.birthdate === '')) {
+    errorField.innerHTML = 'Campos inválidos';
+  } else {
+    document.querySelector('.right-content').innerHTML = `<p>Olá, ${confirm.name} ${confirm.lastname}</p>
+    <p>${confirm.email}</p>
+    <p>${confirm.birthdate}</p>
+    <p>${confirm.gender}</p>`;
+  }
+});
 
 window.onload = () => {
   handleEventsController('click');

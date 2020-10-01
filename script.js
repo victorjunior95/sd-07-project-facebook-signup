@@ -8,7 +8,7 @@ button.addEventListener('click', function alertEmail() {
 
 // Cria campo de texto para o gênero personalizado
 const personalizedGender = document.querySelector('#personalized');
-const selectGender = document.querySelector('.select-gender-buttons');
+const selectGender = document.querySelector('#select-gender-textbox');
 const inputGender = document.createElement('input');
 
 personalizedGender.addEventListener('click', function () {

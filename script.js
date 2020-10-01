@@ -39,7 +39,6 @@ const validateFormInput = () => {
       if (!input.checkValidity()) {
         breakLoop = false;
         showMessagerErrorForm();
-        console.log(input)
       }
     }
   });

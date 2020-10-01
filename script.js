@@ -24,9 +24,9 @@ buttonRegister.addEventListener('click', function (event) {
   const form = document.getElementById('form2');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
-      const error = document.createElement('p');
-      error.innerText = 'Campos inválidos';
-      form.innerHTML = error;
+      // const error = document.createElement('p');
+      // error.innerText = 'Campos inválidos';
+      form.innerHTML = 'Campos inválidos';
       break;
     } else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.

@@ -121,6 +121,54 @@ const handleEventsController = (...types) => {
   });
 };
 
+<<<<<<< HEAD
+=======
+const female = document.getElementById('Female');
+const male = document.getElementById('Male');
+const person = document.getElementById('Person');
+
+function sexGender() {
+  let sex = '';
+  if (female.checked) {
+    sex = 'Feminino';
+  } else if (male.checked) {
+    sex = 'Masculino';
+  } else if (person.checked) {
+    sex = 'Personalizado';
+  }
+  return sex;
+}
+
+const cadastro = document.querySelector('#facebook-register');
+const name = document.querySelector('input[name="firstname"]');
+const lastName = document.querySelector('input[name="lastname"]');
+const email = document.querySelector('input[name="phone_email"]');
+const password = document.querySelector('input[name="password"]');
+const birthdate = document.querySelector('input[name="birthdate"]');
+
+cadastro.addEventListener('click', function (event) {
+  event.preventDefault();
+  const errorField = document.querySelector('.errorField');
+  const confirm = {
+    name: name.value,
+    lastname: lastName.value,
+    email: email.value,
+    password: password.value,
+    birthdate: birthdate.value,
+    gender: sexGender(),
+  };
+  if ((confirm.name === '') || (confirm.lastname === '') || (confirm.email === '') || (confirm.password === '') || (confirm.birthdate === '')) {
+    errorField.innerHTML = 'Campos inválidos';
+  } else {
+    document.querySelector('.right-content').innerHTML =
+      `<p>Olá, ${confirm.name} ${confirm.lastname}</p>
+    <p>${confirm.email}</p>
+    <p>${confirm.birthdate}</p>
+    <p>${confirm.gender}</p>`;
+  }
+});
+
+>>>>>>> 738e2e5c5bede618ad46eec4b81656dfa1b92f66
 window.onload = () => {
   handleEventsController('click');
 };

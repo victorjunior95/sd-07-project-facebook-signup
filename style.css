@@ -27,6 +27,7 @@ body {
 .form-control {
   align-self: flex-end;
   padding-bottom: 15px;
+  padding-right: 10px;
 }
 
 .main-content {
@@ -49,4 +50,8 @@ body {
 
 .radio-button {
   font-size: 15px;
+}
+
+.visible {
+  display: none;
 }

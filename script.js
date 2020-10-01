@@ -94,15 +94,15 @@ const male = document.getElementById('Male');
 const person = document.getElementById('Person');
 
 function gender() {
-  let gender = '';
+  let sex = '';
   if (female.checked) {
-    gender = 'Feminino';
+    sex = 'Feminino';
   } else if (male.checked) {
-    gender = 'Masculino';
+    sex = 'Masculino';
   } else if (person.checked) {
-    gender = 'confirmalizado';
+    sex = 'personalizado';
   }
-  return gender;
+  return sex;
 }
 
 const cadastro = document.querySelector('#facebook-register');

@@ -121,8 +121,6 @@ const handleEventsController = (...types) => {
   });
 };
 
-<<<<<<< HEAD
-=======
 const female = document.getElementById('Female');
 const male = document.getElementById('Male');
 const person = document.getElementById('Person');
@@ -168,7 +166,6 @@ cadastro.addEventListener('click', function (event) {
   }
 });
 
->>>>>>> 738e2e5c5bede618ad46eec4b81656dfa1b92f66
 window.onload = () => {
   handleEventsController('click');
 };

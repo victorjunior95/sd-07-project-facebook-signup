@@ -21,11 +21,12 @@ buttonRegister.addEventListener('click', function (event) {
   const birthDate = document.getElementById('birthdate');
   const rightContent = document.getElementById('right-content');
   const fields = document.querySelectorAll('#form2 input');
+  const form = document.getElementById('form2');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
       const error = document.createElement('p');
       error.innerText = 'Campos inválidos';
-      document.getElementById('form2').appendChild(error);
+      form.appendChild(error);
       break;
     } else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="top-bar">
-      <div>
+      <div class="logo-container">
         <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo" />
       </div>
 
@@ -24,6 +24,7 @@
           <input id="user-password" type="password" />
         </div>
         <div class="form-control">
+          <label for=""></label>
           <button id="button-login">Entrar</button>
         </div>
       </form>
@@ -52,6 +53,7 @@
               name="firstname"
               placeholder="Nome"
               id="firstname"
+              class="first-name inputs-normal"
               required
             />
             <input
@@ -59,6 +61,7 @@
               name="lastname"
               placeholder="Sobrenome"
               required
+              class="inputs-normal"
             />
           </div>
 
@@ -67,6 +70,7 @@
             name="phone_email"
             placeholder="Celular ou email"
             required
+            class="inputs-normal"
           />
 
           <input
@@ -74,18 +78,22 @@
             name="password"
             placeholder="Nova senha"
             required
+            class="inputs-normal"
           />
 
-          <label id="label-birthdate" for="data-nasc">Data de nascimento</label>
+          <label id="label-birthdate" class="label-gray" for="data-nasc"
+            >Data de nascimento</label
+          >
           <input
             type="text"
             name="birthdate"
             placeholder="dd/mm/aaaa"
             id="data-nasc"
             required
+            class="inputs-normal"
           />
 
-          <label id="label-gender" for="">Gênero</label>
+          <label id="label-gender" class="label-gray" for="">Gênero</label>
           <div class="conteiner-radio">
             <input
               type="radio"
@@ -95,7 +103,7 @@
               value="Feminino"
               required
             />
-            <label for="feminino">Feminino</label>
+            <label for="feminino" class="label-radio">Feminino</label>
             <input
               type="radio"
               name="gender"
@@ -104,7 +112,7 @@
               value="Masculino"
               required
             />
-            <label for="masculino">Masculino</label>
+            <label for="masculino"  class="label-radio">Masculino</label>
             <input
               type="radio"
               name="gender"
@@ -113,7 +121,7 @@
               value="Personalizado"
               required
             />
-            <label class="radio-personalizado" for="personalizado"
+            <label class="radio-personalizado label-radio" for="personalizado"
               >Personalizado</label
             >
           </div>

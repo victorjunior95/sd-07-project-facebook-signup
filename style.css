@@ -9,6 +9,11 @@ body {
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  padding: 15px 150px;
+}
+
+.logo-container {
+  display: flex;
 }
 
 .facebook-login {
@@ -22,13 +27,45 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
+}
+
+.form-group label {
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .form-control {
   align-self: flex-end;
+  padding-bottom: 5px;
+}
+
+.form-control button {
+  box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+  background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+  background-color: #637aad;
+  border: 1px solid #314179;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.form-control button:hover {
+  background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+  background-color: #5972a7;
+}
+
+.form-control button:active {
+  position: relative;
+  top: 1px;
 }
 
 .main-content {
+  background: linear-gradient(to bottom, #ffffff, #b6c2d9);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,6 +75,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 800px;
+  padding-right: 60px;
+}
+
+.left-content img {
+  width: 600px;
+}
+
+.left-content p {
+  color: rgb(66, 103, 178);
+  font-weight: 600;
+  font-family: Arial;
+  flex-wrap: wrap;
 }
 
 .main-content .right-content {
@@ -46,15 +95,85 @@ body {
   width: 300px;
 }
 
+.right-content h1 {
+  font-family: Arial;
+  font-size: xx-large;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.right-content h4 {
+  font-family: Arial;
+  margin-top: 5px;
+}
+
 .main-content .right-content form {
   display: flex;
   flex-direction: column;
 }
 
+.main-content .right-content form input {
+  margin-bottom: 10px;
+}
+
+.main-content .right-content .inputs-normal {
+  height: 30px;
+  
+}
+
+.main-content .right-content .label-gray {
+  color: #465362;
+  font-family: Arial;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-content .right-content .label-radio{
+  font-family: Arial;
+}
+
 .right-content .conteiner-nome-sobrenome {
   display: flex;
+  justify-content: space-between;
+}
+
+.right-content .conteiner-nome-sobrenome .first-name {
+  margin-right: 10px;
 }
 
 .right-content .conteiner-radio {
   display: flex;
+}
+
+.right-content .conteiner-radio label{
+  display: flex;
+  margin-right: 10px;
+}
+
+
+.main-form button {
+  align-self: flex-start;
+  box-shadow: inset 0px 1px 0px 0px #9acc85;
+  background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+  background-color: #74ad5a;
+  border: 1px solid #3b6e22;
+  border-radius: 10%;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.main-form button:hover {
+  background: linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+  background-color: #68a54b;
+}
+
+.main-form button:active {
+  position: relative;
+  top: 1px;
 }

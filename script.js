@@ -81,6 +81,7 @@ personalizado.addEventListener('click', function () {
   const inputPersonalizado = document.createElement('input');
   inputPersonalizado.placeholder = 'Gênero (opcional)';
   inputPersonalizado.name = 'gender-custom';
+  inputPersonalizado.classList.add('inputs-normal');
   containerRadio.appendChild(inputPersonalizado);
 });
 

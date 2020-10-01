@@ -13,7 +13,10 @@ buttonRegister.addEventListener('click', function (event) {
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
       const form = document.getElementById('form2');
-      form.innerHTML = 'Campos inválidos';
+      const error = document.createElement('p');
+      error.innerText = 'Campos inválidos';
+      form.appendChild(error);
+      break;
     } else {
       const firstName = document.getElementById('firstname').value;
       const lastName = document.getElementById('lastname').value;

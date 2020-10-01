@@ -25,7 +25,8 @@ header {
 }
 
 input {
-  border: solid 1px rgb(9, 9, 138);
+  border: groove 1px rgb(9, 9, 138);
+  border-radius: 3px;
   margin-right: 10px;
 }
 
@@ -41,12 +42,13 @@ input {
 .button-login {
   background-color: rgb(75, 110, 195);
   border: solid 1px rgb(9, 9, 138);
+  border-radius: 3px;
   color: white;
   font-weight: 600;
 }
 
 .button-login:hover {
-  background-color: rgb(95, 130, 215);
+  background-color: rgb(85, 120, 205);
 }
 
 .main-content {
@@ -90,6 +92,7 @@ input {
 .facebook-register {
   background-color: rgb(80, 155, 80);
   border: solid 1px rgb(60, 135, 60);
+  border-radius: 3px;
   padding: 5px;
   width: 200px;
 }

@@ -15,5 +15,19 @@ personalizedGender.addEventListener('click', function () {
   selectGender.appendChild(inputGender);
   inputGender.type = 'text';
   inputGender.placeholder = 'Gênero (opcional)';
-  inputGender.name = 'gender-option';
+  inputGender.name = 'gender-custom';
+});
+
+// Validar campos preenchidos com botão 'Cadastre-se
+const registerButton = document.querySelector('#facebook-register');
+registerButton.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  const emptyInput = document.querySelectorAll('.new-account-form input');
+  emptyInput.forEach(function (element) {
+    if (element.value === '') {
+      const invalidAlert = document.querySelector('#invalid-camp');
+      invalidAlert.innerText = 'Campos inválidos';
+    }
+  });
 });

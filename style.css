@@ -29,6 +29,11 @@ a {
 .facebook-login {
   align-items: baseline;
   display: flex;
+  width: 600px;
+}
+
+.facebook-login input {
+  width: 230px;
 }
 
 .form-control {
@@ -70,6 +75,7 @@ a {
   background-color: rgba(209, 209, 209, 0.4);
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .name {

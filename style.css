@@ -16,11 +16,11 @@ a {
 }
 
 .btn-register {
-  background-color:rgba(101, 169, 82, 1);
+  background-color: rgba(101, 169, 82, 1);
   border-radius: 5%;
   color: white;
-  font-weight: 700;
   font-size: medium;
+  font-weight: 700;
   height: 30px;
   margin-top: 10px;
   width: 150px;
@@ -40,8 +40,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
   margin-right: 15px;
+  margin-top: 10px;
   width: 450px;
 }
 
@@ -86,8 +86,8 @@ a {
 }
 
 .termos {
-  font-size: smaller;
   color: gray;
+  font-size: smaller;
 }
 
 .top-bar {

@@ -40,10 +40,9 @@ function mostraTudo() {
 const p = document.createElement('p');
 const mainForm = document.querySelector('.main-form');
 mainForm.appendChild(p);
+const radios = document.querySelectorAll('.radio');
 
 function verificaRadio() {
-  const radios = document.querySelectorAll('.radio');
-
   if (
     radios[0].checked === false &&
     radios[1].checked === false &&
@@ -64,10 +63,10 @@ buttonRegister.addEventListener('click', function (event) {
       p.innerHTML = 'Campos inválidos';
       break;
     }
-  }
-  verificaRadio();
-  if (verificaRadio() === 'true') {
-    mostraTudo();
+    verificaRadio();
+    if (verificaRadio() === 'true') {
+      mostraTudo();
+    }
   }
 });
 

@@ -66,17 +66,6 @@ function required(event) {
   }
 }
 
-function hello() {
-  const selected = document.querySelector('.selected');
-  const conteiner = document.querySelector('.right-content');
-  const name = document.querySelector('.name-register');
-  const lastName = document.querySelector('.last-name');
-  const email = document.querySelector('.email');
-  const birth = document.querySelector('.birth-date');
-  if (name.value !== '' && lastName.value !== '' && email.value !== '' && birth.value !== '' && selected) {
-    conteiner.innerHTML = `<h3>Olá, ${name.value} ${lastName.value}<br>Email:${email.value}<br>Date de nascimento:${birth.value}<br>Genêro:${selected.value} </h3>`;
-  }
-}
 radioButton2.addEventListener('click', function () {
   const customOption = document.createElement('input');
   customOption.name = 'gender-custom';
@@ -85,11 +74,27 @@ radioButton2.addEventListener('click', function () {
   customOption.type = 'text';
   const optional = document.querySelector('.optional');
   if (optional) {
-    customOption.name = 'gender';
+    customOption.name = 'gender-custom';
   } else if (document.querySelector('#custom').classList.contains('selected')) {
     document.querySelector('.gender-selected').appendChild(customOption);
   }
 });
+function hello() {
+  const selected = document.querySelector('.selected');
+  const conteiner = document.querySelector('.right-content');
+  const name = document.querySelector('.name-register');
+  const lastName = document.querySelector('.last-name');
+  const email = document.querySelector('.email');
+  const birth = document.querySelector('.birth-date');
+  const optional = document.querySelector('.optional');
+  if (optional && optional.value !== '') {
+    selected.value = document.querySelector('.optional').value;
+  }
+  if (name.value !== '' && lastName.value !== '' && email.value !== '' && birth.value !== '' && selected) {
+    conteiner.innerHTML = `<h3>Olá, ${name.value} ${lastName.value}<br>Email:${email.value}<br>Date de nascimento:${birth.value}<br>Genêro:${selected.value} </h3>`;
+  }
+}
+
 document.querySelector('#facebook-register').addEventListener('click', required);
 document.querySelector('#facebook-register').addEventListener('click', hello);
 

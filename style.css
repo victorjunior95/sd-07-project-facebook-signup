@@ -1,52 +1,24 @@
-.facebook-logo {
-  height: 70px;
-  justify-content: flex-start;
-  width: 220px;
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
 }
 
-.top-bar {
-  align-items: center;
-  background-color: rgb(66, 103, 178);
-  color: white;
-  display: flex;
-  height: 70px;
-  justify-content: space-around;
+.facebook-logo {
+  justify-content: flex-start;
 }
 
 .facebook-login {
   display: flex;
 }
 
-.check-top {
-  border: 1px solid black;
-  height: 19px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
-}
-
-.check {
-  border: solid rgb(141, 141, 167) 1px;
-  border-radius: 4px;
-  margin: 5px;
-  padding: 5px;
 }
 
 .form-control {
   align-self: flex-end;
-  padding-left: 10px;
-}
-
-.enter {
-  background-color: rgb(66, 103, 178);
-  border: 1px solid rgb(58, 65, 131);
-  border-radius: 2px;
-  color: white;
-  cursor: pointer;
-  height: 23px;
 }
 
 .main-content {
@@ -55,14 +27,7 @@
   justify-content: center;
 }
 
-.slogan {
-  color: rgb(20, 55, 124);
-  flex-wrap: wrap;
-  font-size: 20px;
-}
-
 .left-content {
-  font-family: Arial, Helvetica, sans-serif;
   width: 800px;
 }
 

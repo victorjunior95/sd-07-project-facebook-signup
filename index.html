@@ -81,7 +81,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <label for="" id="label-birthdate">Data de nascimento</label>
             <input
               type="text"
               id="birthdate"
@@ -90,14 +90,39 @@
               placeholder="dd/mm/aaaa"
             />
           </div>
-            <div class="genders">
-              <label for="gender" id="label-gender">Gênero</label>
-              <div class="radio-gender">
-                <label><input type="radio" id="feminino" name="gender" value="Feminino">Feminino</label>
-                <label><input type="radio" id="masculino" name="gender" value="Masculino">Masculino</label>
-                <label><input type="radio" id="personalizado" name="gender" value="Personalizado">Personalizado</label>
-              </div>
+          <label id="label-gender">Gênero</label>
+          <div class="genders">
+            <div class="radio-gender">
+              <label for="f">Feminino</label>
+              <input
+                type="radio"
+                name="gender"
+                class="radio"
+                id="Feminino"
+                value="Feminino"
+              />
             </div>
+            <div class="radio-gender">
+              <label for="m">Masculino</label>
+              <input
+                type="radio"
+                name="gender"
+                class="radio"
+                id="Masculino"
+                value="Masculino"
+              />
+            </div>
+            <div class="radio-gender">
+              <label for="p">Personalizado</label>
+              <input
+                type="radio"
+                name="gender"
+                class="radio custom"
+                id="Personalizado"
+                value="Personalizado"
+              />
+            </div>
+          </div>
           <div class="text-gender">
             <input
               type="text"

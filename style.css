@@ -106,7 +106,7 @@ input {
   flex-direction: row-reverse;
 }
 
-.radio-gender label{
+.radio-gender label {
   align-items: center;
   display: flex;
   margin-right: 5px;

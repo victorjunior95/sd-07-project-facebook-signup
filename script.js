@@ -41,7 +41,7 @@ formRegister.addEventListener('submit', (event) => {
 
 document.addEventListener('click', function (event) {
   const genderCustomText = document.getElementById('gender-custom');
-  if (event.target.classList.contains('custom')) {
+  if (event.target.classList.contains('custom') || event.target.id === genderCustomText.id) {
     genderCustomText.style = '';
     return true;
   }

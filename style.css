@@ -1,5 +1,5 @@
 body {
-  margin: auto;
+  margin: 0;
 }
 
 .top-bar {
@@ -17,9 +17,19 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: 10px;
 }
 
 .input-email-senha {
   margin-right: 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
 }

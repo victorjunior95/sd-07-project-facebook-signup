@@ -4,6 +4,7 @@ body {
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  color: white;
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -16,4 +17,9 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.input-email-senha {
+  margin-right: 10px;
 }

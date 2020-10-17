@@ -34,16 +34,27 @@
   <p class="quick-easy">É rápido e fácil</p>
   <form action="" method="GET">
     <div>
-      <input class="input-form" type="text" name="firstname" placeholder="Nome">
-      <input class="input-form" type="text" name="lastname" placeholder="Sobrenome">
-      <input class="input-form-big" type="text" name="phone_email" placeholder="Celular ou email">
-      <input class="input-form-big" type="password" name="password" placeholder="Nova Senha">
+      <input class="input-form" type="text" name="firstname" placeholder="Nome" data-validate-field="fitstname">
+      <input class="input-form" type="text" name="lastname" placeholder="Sobrenome" data-validate-field="lastname">
+      <input class="input-form-big" type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="phone_email">
+      <input class="input-form-big" type="password" name="password" placeholder="Nova Senha" data-validate-field="password">
       <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-      <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+      <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate">
     </div>
+    <label for="" class="genero" id="label-gender">Gênero</label>
+    <div class="radio">
+      <input id="feminino" type="radio" name="gender" value="Feminino" data-validate-field="gender">
+      <label for="feminino">Feminino</label>
+      <input id="masculino" type="radio" name="gender" value="Masculino" data-validate-field="gender">
+      <label for="masculino">Masculino</label>
+      <input id="personalizado" type="radio" name="gender" value="Personalizado" data-validate-field="gender">
+      <label for="personalizado">Personalizado</label>
+    </div>
+    <button type="submit">Cadastre-se</button>
   </form>
 </div>
   </section>
 </body>
+<script src="just-validate.min.js"></script>
 <script src="script.js"></script>
 </html>

@@ -41,51 +41,66 @@
         <div class="right-content">
             <h1>Abra uma conta</h1>
             <p class="quick-easy">É rápido e fácil.</p>
-            <form>
+            <form class="js-form">
                 <div class="form-content-row">
-
-                    <input id="firstname" type="text" placeholder="Nome"></input>
-
-                    <input id="lastname" type="text" placeholder="Sobrenome"></input>
-
-
+                    <div class="form-group">
+                        <input id="firstname" type="text" name="firstname" placeholder="Nome" data-validate-field="firstname"></input>
+                    </div>
+                    <div class="form-group">
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" data-validate-field="lastname"></input>
+                    </div>
                 </div>
-                
-                    
+
+
                  <div class="form-content-column">
-                    <input id="phone_email" type="text" placeholder="Celular ou email"></input>   
-                    
-                    <input id="password" type="password" placeholder="Nova senha"></input>   
-               
-                    <label id="label-birthdate" for="user">Data de nascimento</label>
-                    <input id="user" type="date" name="birthdate" placeholder="dd/mm/aaaa"></input>
-                 
+                    <div class="form-group">
+                        <input id="phone-email" type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="password" type="password" name="password" placeholder="Nova senha" data-validate-field="password"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-birthdate" for="user">Data de nascimento</label>
+                        <input id="user" type="date" name="birthdate" placeholder="dd/mm/aaaa" data-validate-field="birthdate"></input>
+                    </div>
+
+
                     <label id="label-gender">Gênero</label>
-                    
+
                 </div>
 
                 <div class="form-content-row">
-                    <input id="femenino" type="radio" name="genero" value="femenino"></input>
-                    
-                    <label for="femenino">Femenino</label>
+                        <input id="feminino" type="radio" name="gender" value="Feminino" data-validate-field="gender"></input>
 
-                    <input id="masculino" type="radio" name="genero" value="masculino"></input>
+                        <label for="feminino">Feminino</label>
 
-                    <label for="masculino">Masculino</label>
-                    
-                    <input id="personalizado" type="radio" name="genero" value="personalizado"></input>
+                        <input id="masculino" type="radio" name="gender" value="Masculino" data-validate-field="gender"></input>
 
-                    <label for="personalizado">Personalizado</label>
+                        <label for="masculino">Masculino</label>
+
+                        <input id="personalizado" type="radio" name="gender" value="Personalizado" data-validate-field="gender"></input>
+
+                        <label for="personalizado">Personalizado</label>
 
                 </div>
-                 
+
+                <div>
+                    <input id="gender-custom" type="text" name="gender-custom" placeholder="Gênero (opcional)" data-validate-field="gender_custom"></input>
+                </div>
+
+                <div>
+                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+
             </form>
 
-        
+
         </div>
     </section>
 
 </body>
-
+<script src="libs/just-validate.min.js"></script>
 <script src="script.js"></script>
 </html>

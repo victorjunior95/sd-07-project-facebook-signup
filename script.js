@@ -25,3 +25,4 @@ for (let i = 2; i < inputs.length - 3; i += 1) {
   if (inputs[i].value === '') {
     errorMessage.innerText = 'Campos inválidos';
     errorMessage.style.display = 'inline';
+    

@@ -24,6 +24,7 @@ function submitAction(verify) {
 }
 
 function handleForm(event) {
+event.preventDefault();
 }
 
 function createCustomGender() {

@@ -13,18 +13,17 @@ const masculino = document.getElementById('masculino');
 masculino.addEventListener('click', function () {
   masculino.checked = true;
 });
-const personalizado = document.getElementById('personalizado');
-personalizado.addEventListener('click', function () {
-  personalizado.checked = true;
-  const novoCampoGenero = document.createElement('input');
-  novoCampoGenero.name = 'gender-custom';
-  novoCampoGenero.placeholder = 'Gênero (opcional)';
-  const generoPersonalizado = document.getElementsByClassName('generoPersonalizado');
-  generoPersonalizado[0].appendChild(novoCampoGenero);
+const divRadios = document.querySelector('.radios-container');
+document.getElementById('personalizado').addEventListener('click', function () {
+  const textInput = document.createElement('input');
+  textInput.name = 'gender-custom';
+  textInput.placeholder = 'Gênero (opcional)';
+  divRadios.appendChild(textInput);
 });
 
 const facebookRegister = document.getElementById('facebook-register');
 facebookRegister.addEventListener('click', function (event) {
+  const personalizado = document.getElementById('personalizado');
   event.preventDefault();
   let camposVazios = 0;
   const campos = document.querySelectorAll('.campo');
@@ -33,7 +32,6 @@ facebookRegister.addEventListener('click', function (event) {
       camposVazios += 1;
     }
   }
-
   let gender = '';
   if (feminino.checked !== false ||
     masculino.checked !== false ||

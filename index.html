@@ -1,78 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facebook - entre ou cadastre-se</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-	<header>
-		<div class="top-bar">
-			<img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
-			<form class="facebook-login">
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Projeto Facebook</title>
+			<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class='top-bar'>
+			<img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+			<form class='facebook-login'>
 				<div class="form-group">
-					<label id="user-email-phone-label">Email ou telefone</label>
-					<input type="email" id="user-email-phone">
+					<label id="user-email-phone-label" for="login">Email ou telefone</label>
+					<input id="user-email-phone" type="text">
 				</div>
+
 				<div class="form-group">
-					<label id="user-password-label">Senha</label>
-					<input type="password" id="user-password">
+					<label id="user-password-label" for="user-password">Senha</label>
+					<input id="user-password" type="text">
+					<a href="">Esqueceu sua conta?</a>
 				</div>
+
 				<div class="form-control">
-					<button id="button-login">Entrar</button>
+					<button id="button-login" class="btn-login">Entrar</button>
+					<p></p>
 				</div>
 			</form>
+		</header>
+
+		<div class="main-content">
+			<div class="left-content">
+				<p id="facebook-slogan">
+					O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+				</p>
+				<img id="facebook-networking" src="imgs/networking.png" alt="">
+			</div>
+
+			<div class="right-content">
+				<h1>Abra uma conta</h1>
+				<h3 class="quick-easy">É rápido e fácil.</h3>
+				<form action="" class="name">
+					<div class='fullName'>
+						<input id='name' class="input" name='firstname' type="text" placeholder="Nome">
+						<input id='lastname' class="input lastname" name='lastname' type="text" placeholder="Sobrenome">
+					</div>
+
+					<div class="phoneEmailPassword">
+						<input id='phoneEmail' class="input" name='phone_email' type="text" placeholder="Celular ou email">
+						<input class="input" name='password' type="password" placeholder="Nova senha">
+					</div>
+
+					<div class="birthdate">
+						<label id='label-birthdate' for="">Data de nascimento</label>
+						<input id='date' class="input" name='birthdate' placeholder="dd/mm/aaaa" type="text">
+					</div>
+
+					<div class="radios-container">
+						<label id="label-gender" class="gender" for="">Gênero</label>
+						<div class='radios'>
+							<input class='inputRadios' name="gender" value='Feminino' type="radio">
+							<label for="">Feminino</label>
+							<input class='inputRadios' name="gender" value='Masculino' type="radio">
+							<label for="">Masculino</label>
+							<input class='inputRadios' name="gender" id="personalizado" value="Personalizado" type="radio">
+							<label for="personalizado">Personalizado</label>
+						</div>
+					</div>
+					<p class="termos">Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.
+					</p>
+					<button id='facebook-register' class="btn-register" type="submit">Cadastre-se</button>
+				</form>
+			</div>
 		</div>
-	</header>
-	<main class="main-content">
-		<div class="left-content">
-			<p id="facebook-slogan">
-				O Facebook ajuda você a se conectar e <br>
-				compartilhar com as pessoas que fazem parte <br>
-				da sua vida.
-			</p>
-			<img src="imgs/networking.png" id="facebook-networking">
-		</div>
-		<div id="inscricao" class="right-content">
-			<h1>Abra uma conta</h1>
-			<h3 class="quick-easy">É rápido e fácil.</h3>
-			<form action="" class="name">
-        <div class='fullName'>
-          <input id='name' class="input" name='firstname' type="text" placeholder="Nome">
-          <input id='lastname' class="input lastname" name='lastname' type="text" placeholder="Sobrenome">
-        </div>
-
-        <div class="phoneEmailPassword">
-          <input id='phoneEmail' class="input" name='phone_email' type="text" placeholder="Celular ou email">
-          <input class="input" name='password' type="password" placeholder="Nova senha">
-        </div>
-
-        <div class="birthdate">
-          <label id='label-birthdate' for="">Data de nascimento</label>
-          <input id='date' class="input" name='birthdate' placeholder="dd/mm/aaaa" type="text">
-        </div>
-
-        <div class="radios-botton">
-          <label id="label-gender" class="gender" for="">Gênero</label>
-          <div class='radios'>
-            <input class='inputRadios' name="gender" value='Feminino' type="radio">
-            <label for="">Feminino</label>
-            <input class='inputRadios' name="gender" value='Masculino' type="radio">
-            <label for="">Masculino</label>
-            <input class='inputRadios' name="gender" id="personalizado" value="Personalizado" type="radio">
-            <label for="personalizado">Personalizado</label>
-          </div>
-        </div>
-        <p class="termos">Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.
-        </p>
-        <button id='facebook-register' class="btn-register" type="submit">Cadastre-se</button>
-      </form>
-		</div>
-	</main>
-
-</body>
-<script src="script.js"></script>
+		<footer>
+			<span> Facebook © 2020</span>
+		</footer>
+		<script src="dist/just-validate.min.js"></script>
+		<script src="script.js"></script>
+	</body>
 </html>

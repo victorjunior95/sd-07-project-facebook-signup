@@ -49,14 +49,14 @@ input {
 }
 
 .button-login {
-    align-self: auto;
+  align-self: auto;
 }
 
 .gender-container {
   display: flex;
   flex-wrap: wrap;
 }
-  
+
 .user-email-phone-label , .user-password-label {
   margin-left: 10px;
 }

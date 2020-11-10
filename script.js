@@ -25,7 +25,7 @@ buttonRegister.addEventListener('click', function (event) {
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
       form.innerText = 'Campos inválidos';
-        
+  
     } else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
         Seu email é ${email.value}.
@@ -37,9 +37,9 @@ buttonRegister.addEventListener('click', function (event) {
 
 const other = document.getElementById('Personalizado');
 other.addEventListener('click', function () {
-    const newField = document.createElement('input');
-    newField.type = 'text';
-    newField.name = 'gender-custom';
-    newField.placeholder = 'Gênero (opcional)';
-    genderContainer.appendChild(newField);
-  });
+  const newField = document.createElement('input');
+  newField.type = 'text';
+  newField.name = 'gender-custom';
+  newField.placeholder = 'Gênero (opcional)';
+  genderContainer.appendChild(newField);
+});

@@ -73,5 +73,3 @@ for (let i = 0; i < maleFemaleButtons.length; i += 1) {
 optionalGender.addEventListener('input', function () {
     optionalGender = document.querySelector('span:first-of-type > input').value;
   });
-
-  

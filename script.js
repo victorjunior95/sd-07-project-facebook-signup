@@ -24,19 +24,19 @@ buttonRegister.addEventListener('click', function (event) {
   const form = document.getElementById('form2');
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].value === '') {
-        form.innerText = 'Campos inválidos';
-        // break;
-      } else {
-        rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
+      form.innerText = 'Campos inválidos';
+        
+    } else {
+      rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
         Seu email é ${email.value}.
         Sua data de nascimento é ${birthDate.value}.
         Seu gênero é ${selectedGender}`;
-      }
     }
-  });
-  
-  const other = document.getElementById('Personalizado');
-  other.addEventListener('click', function () {
+  }
+});
+
+const other = document.getElementById('Personalizado');
+other.addEventListener('click', function () {
     const newField = document.createElement('input');
     newField.type = 'text';
     newField.name = 'gender-custom';

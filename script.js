@@ -26,8 +26,7 @@ buttonRegister.addEventListener('click', function (event) {
     if (fields[index].value === '') {
       form.innerText = 'Campos inválidos';
 
-    } 
-    else {
+    }else {
       rightContent.innerHTML = `Olá, ${firstName.value} ${lastName.value}.
         Seu email é ${email.value}.
         Sua data de nascimento é ${birthDate.value}.

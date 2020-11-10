@@ -1,74 +1,59 @@
-const inputs = document.querySelectorAll('input');
-const rightContent = document.querySelector('.right-content');
-let chosenGender = '';
-let optionalGender = document.querySelector('span:first-of-type > input');
-const buttonLogin = document.querySelector('#button-login');
-const submitButton = document.querySelector('#facebook-register');
-const customizedButton = inputs[9];
-const maleFemaleButtons = [];
-maleFemaleButtons.push(inputs[7]);
-maleFemaleButtons.push(inputs[8]);
-
-buttonLogin.addEventListener('click', function () {
-  alert(inputs[0].value);
-});
-
-function showFormContent() {
-  const isEmpty = chosenGender === 'empty';
-  let formContent = `Olá, ${inputs[2].value} ${inputs[3].value} `;
-  formContent += `${inputs[4].value} `;
-  formContent += `${inputs[6].value} `;
-  formContent += isEmpty ? 'vazio ' : `${chosenGender} `;
-
-  return formContent;
-}
-
-submitButton.addEventListener('click', function (event) {
-  const errorMessage = document.querySelector('span');
-  let isEmpty = true;
-  if (inputs[7].checked || inputs[8].checked || inputs[9].checked) {
-    isEmpty = false;
-    if (inputs[7].checked) {
-        chosenGender = 'Feminino';
-      } else if (inputs[8].checked) {
-        chosenGender = 'Masculino';
-        chosenGender = 'Personalizado';
+function plotInvalid() {
+    const formField = document.querySelector('.create-account');
+    const msgError = document.createElement('p');
+    msgError.textContent = 'Campos inválidos';
+    formField.appendChild(msgError);
+  }
+  
+  function plotText() {
+    const formField = document.querySelector('.create-account');
+    const formValues = new FormData(formField);
+    const boxText = document.querySelector('.right-content');
+    boxText.innerHTML = '';
+    boxText.innerHTML = `<p> Olá, ${formValues.get('firstname')} ${formValues.get('lastname')}
+    ${formValues.get('phone_email')} ${formValues.get('birthdate')} ${formValues.get('gender')}
+    </p>`;
+  }
+  
+  function submitAction(verify) {
+    if (verify) {
+      plotText();
+    } else {
+      plotInvalid();
     }
-}
-
-for (let i = 2; i < inputs.length - 3; i += 1) {
-  if (inputs[i].value === '') {
-    errorMessage.innerText = 'Campos inválidos';
-    errorMessage.style.display = 'inline';
-    isEmpty = true;
-    break;
-  } else {
-    isEmpty = false;
   }
-}
-
-if (isEmpty) {
-  event.preventDefault();
-} else {
-    const p = document.createElement('p');
-    p.innerText = showFormContent();
-    rightContent.innerHTML = '';
-    rightContent.appendChild(p);
+  
+  function handleForm(event) {
+    event.preventDefault();
   }
-});
-
-customizedButton.addEventListener('change', function (event) {
-  const span = document.querySelector('span:first-of-type');
-  span.style.display = 'inline';
-  chosenGender = event.target.value;
-});
-
-for (let i = 0; i < maleFemaleButtons.length; i += 1) {
-  maleFemaleButtons[i].addEventListener('change', function () {
-    const span = document.querySelector('span:first-of-type');
-    span.style.display = 'none';
+  
+  function createCustomGender() {
+    const genderCustom = document.querySelector('.hidden-input');
+    genderCustom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+  }
+  const btnLogin = document.querySelector('#button-login');
+  const formElements = document.querySelectorAll('.create-account [name]');
+  const btnFormSubmit = document.querySelector('#facebook-register');
+  const btnCustomGender = document.querySelector('#Personalizado');
+  const formCreate = document.querySelector('.create-account');
+  
+  formCreate.addEventListener('submit', handleForm);
+  
+  btnCustomGender.addEventListener('click', createCustomGender);
+  
+  btnLogin.addEventListener('click', () => {
+    const emailValue = document.querySelector('#user-email-phone');
+    alert(emailValue.value);
   });
-}
-optionalGender.addEventListener('input', function () {
-    optionalGender = document.querySelector('span:first-of-type > input').value;
+  
+  btnFormSubmit.addEventListener('click', () => {
+    let verifyElements = true;
+    for (let index = 0; index < formElements.length; index += 1) {
+      if (formElements[index].validity.valid === false) {
+        
+        verifyElements = false;
+        break;
+      }
+    }
+    submitAction(verifyElements);
   });

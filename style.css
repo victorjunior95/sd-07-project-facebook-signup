@@ -1,118 +1,63 @@
 body {
-    background-color: white;
     margin: 0;
-    padding: 0;
   }
-
-  header {
-    background-color: rgb(66, 103, 178);
-  }
-
   .top-bar {
-    align-items: center;
-    background-color: rgb(66, 103, 178);
+    background: rgb(66, 103, 178);
     display: flex;
-    height: 80px;
+    height: 100px;
     justify-content: space-between;
-    margin: auto;
-    max-width: 1200px;
   }
-
+  .facebook-logo {
+    align-self: center;
+  }
   .facebook-login {
-    color: white;
+    align-items: center;
     display: flex;
-    font-weight: 500;
   }
-
-  input {
-    border: groove 1px rgb(9, 9, 138);
-    border-radius: 3px;
-    margin-right: 10px;
-  }
-  
   .form-group {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
   }
-
+  /* Atributos abaixo do align-self são um quebra galho para centralizar o botão. */
   .form-control {
-    align-self: flex-end;
-  }
-
-  .button-login {
-    background-color: rgb(75, 110, 195);
-    border: solid 1px rgb(9, 9, 138);
-    border-radius: 3px;
-    color: white;
-    font-weight: 600;
-  }
-  
-  .button-login:hover {
-    background-color: rgb(85, 120, 205);
-}
-
-.main-content {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  max-width: 1200px;
-}
-
-.left-content {
-  width: 800px;
-}
-
-.right-content {
-  width: 300px;
-}
-
-.register {
-  display: flex;
-  flex-direction: column;
-}
-
-.name-last-name {
-  display: flex;
-}
-
-.name {
-  margin-right: 0;
-  width: 50%;
-}
-
-.last-name {
-  width: 50%;
-}
-
-.genders {
-  display: flex;
-  flex-direction: row;
-}
-
-.facebook-register {
-  background-color: rgb(80, 155, 80);
-  border: solid 1px rgb(60, 135, 60);
-  border-radius: 3px;
-  padding: 5px;
-  width: 200px;
-}
-
-.facebook-register:hover {
-    background-color: rgb(90, 165, 90);
-  }
-
-  .radio-gender {
     align-items: center;
+    align-self: flex-end;
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 8px;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    margin-left: 10px;
   }
-
-  .radio-gender input {
-    margin: 0;
+  /* width é pra centralizar o conteúdo e ficar mais parecido com o proposto. */
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .left-content {
+    width: 800px;
+  }
+  .right-content {
+    width: 300px;
+  }
+  .wrapper {
+    display: flex;
+  }
+  input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .button-login {
+    align-self: auto;
+  }
+  .gender-container {
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  .error-message {
-    color: red;
-    font-weight: 600;
+  .user-email-phone-label , .user-password-label {
+    margin-left: 10px;
   }
+  

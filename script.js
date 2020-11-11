@@ -1,66 +1,56 @@
-function verifyEmptyInput(values) {
-  for (let index = 0; index < values.length; index += 1) {
-    if (values[index] === '') return true;
-  }
+const divRadios = document.querySelector('.radios-container');
+const name = document.getElementById('name');
+const lastname = document.getElementById('lastname');
+const phoneEmail = document.getElementById('phoneEmail');
+const birthday = document.getElementById('date');
+const rightContent = document.querySelector('.right-content');
+const formName = document.querySelector('.name');
+const inputs = document.querySelectorAll('.input');
 
+function insertValuesParagraph(valueRadio) {
+  const p = document.createElement('p');
+  p.innerText = `Olá, ${name.value} ${lastname.value}`;
+  p.innerText += phoneEmail.value;
+  p.innerText += birthday.value;
+  p.innerText += valueRadio;
+  rightContent.innerHTML = '';
+  rightContent.appendChild(p);
+}
+
+function getValueRadios() {
+  const radios = document.querySelectorAll('.inputRadios');
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      return radios[index].value;
+    }
+  }
   return false;
 }
 
-function login(user) {
-  const rightContent = document.getElementsByClassName('right-content')[0];
-
-  rightContent.innerHTML = `<p>Olá, ${user.firstname} ${user.lastname}</p>`;
-  rightContent.innerHTML += `<p>${user.phoneEmail}</p>`;
-  rightContent.innerHTML += `<p>${user.birthdate}</p>`;
-  rightContent.innerHTML += `<p>${user.gender}</p>`;
+function checkEmptyFields() {
+  let result = true;
+  inputs.forEach((input) => {
+    if (input.value === '') result = false;
+  });
+  return result;
 }
 
-const btnLogin = document.getElementById('button-login');
-btnLogin.addEventListener('click', function () {
-  const email = document.forms['form-login'].email.value;
-
-  if (!verifyEmptyInput([email])) {
-    alert(email);
-  }
+document.getElementById('button-login').addEventListener('click', function () {
+  alert(document.getElementById('user-email-phone').value);
 });
 
-const btnValidate = document.getElementById('facebook-register');
-btnValidate.addEventListener('click', function () {
-  const firstname = document.forms['form-register'].firstname.value;
-  const lastname = document.forms['form-register'].lastname.value;
-  const phoneEmail = document.forms['form-register'].phone_email.value;
-  const password = document.forms['form-register'].password.value;
-  const birthdate = document.forms['form-register'].birthdate.value;
-  const gender = document.forms['form-register'].gender.value;
-
-  if (verifyEmptyInput([firstname, lastname, phoneEmail, password, birthdate, gender])) {
-    const formRegister = document.getElementsByClassName('facebook-register')[0];
-    formRegister.innerHTML += 'Campos inválidos';
-  } else {
-    login({ firstname, lastname, phoneEmail, birthdate, gender });
-  }
+document.getElementById('facebook-register').addEventListener('click', function (event) {
+  event.preventDefault();
+  const boolean = checkEmptyFields();
+  if (boolean) {
+    const valueRadio = getValueRadios();
+    insertValuesParagraph(valueRadio);
+  } else formName.innerHTML = 'Campos inválidos';
 });
 
-const gender = document.forms['form-register'].gender;
-gender[2].addEventListener('click', function () {
-  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
-
-  if (!divGenderPersonalized.innerHTML) {
-    const inputTextGender = document.createElement('input');
-    inputTextGender.id = 'o-text';
-    inputTextGender.name = 'gender-custom';
-    inputTextGender.placeholder = 'Gênero (opcional)';
-
-    divGenderPersonalized.appendChild(inputTextGender);
-  }
-});
-
-gender[1].addEventListener('click', function () {
-  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
-  divGenderPersonalized.innerHTML = '';
-});
-
-gender[0].addEventListener('click', function () {
-  const divGenderPersonalized = document.getElementsByClassName('gender-personalized')[0];
-  divGenderPersonalized.innerHTML = '';
+document.getElementById('personalizado').addEventListener('click', function () {
+  const textInput = document.createElement('input');
+  textInput.name = 'gender-custom';
+  textInput.placeholder = 'Gênero (opcional)';
+  divRadios.appendChild(textInput);
 });

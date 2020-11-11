@@ -9,8 +9,8 @@
 }
 
 .facebook-logo {
-  width: 117px;
   padding: 20px;
+  width: 117px;
 }
 
 .facebook-login {
@@ -47,7 +47,7 @@
 
 .facebook-slogan {
   color: rgb(14, 56, 95);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-family: Lucida Sans, Lucida Sans Unicode, sans-serif;
   font-size: 25px;
   font-weight: 700;
   width: 70%;

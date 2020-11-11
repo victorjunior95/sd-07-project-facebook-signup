@@ -1,104 +1,75 @@
-* {
-  border: 0;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode','Tahoma', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .top-bar {
+  align-items: center;
   background-color: rgb(66, 103, 178);
   display: flex;
-  flex-direction: row;
-  height: 75px;
+  height: 100px;
   justify-content: space-between;
-  padding-top: 25px;
+  position: relative;
   width: 100%;
 }
 
 .facebook-logo {
-  align-self: flex-start;
+  width: 117px;
 }
 
 .facebook-login {
+  align-items: flex-end;
   display: flex;
-}
-
-.facebook-login input {
-  border: 1px solid black;
-  height: 25px;
-  margin-right: 15px;
-  width: 180px;
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
+  font-weight: 700;
 }
 
 .form-control {
   align-self: flex-end;
 }
 
-.form-control button {
-  height: 30px;
-  margin-top: 8px;
-  width: 60px;
-}
-
 .main-content {
   display: flex;
-  justify-content: space-between;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
 
 .left-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 800px;
 }
 
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  width: 70%;
+}
+
+
 .right-content {
+  display: flex;
   width: 300px;
 }
 
-.names-container {
+.facebook-signup {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.facebook-signup div {
   display: flex;
 }
 
-.gender {
-  display: flex;
+.facebook-signup div input {
+  box-sizing: border-box;
+  width: 50%;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1128px;
-}
-
-.header {
-  background-color: rgb(66, 103, 178);
-}
-
-label {
-  color: white;
-  font-weight: 700;
-}
-
-sup {
-  color: white;
-  margin-top: 5px;
-  opacity: 0.7;
-}
-
-.form-control button {
-  background-color: #2C5FA7;
-  border-radius: 5px;
-  color: white;
-  font-weight: 700;
-}
-
-.inputs {
-  align-items: center;
-  display: flex;
-  padding-bottom: 20px;
-}
-
-#user-password-label {
-  margin-top: 23px;
+.invisible {
+  display: none;
 }
